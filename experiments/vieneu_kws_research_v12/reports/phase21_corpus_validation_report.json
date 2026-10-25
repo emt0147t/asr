@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-24T20:10:00+07:00",
+    "phase": "Phase 21 Corpus Validation",
+    "dev_sequences": 20,
+    "test_sequences": 40,
+    "component_clips": 160,
+    "dev_manifest_sha256": "57abdfcf3ba126f1372ec280af4b0e1e00dd81ef9f8da9ac6decb3ba8bc3cae3",
+    "test_manifest_sha256": "1093629730c2b1d1d022d2a6623de1c0c3302fc1e271d16691a55b68a1087d32",
+    "components_manifest_sha256": "b590a7eab92e21c584b59a90dda688c40a00dd32ad1ab3fdee313db417294d04"
+  },
+  "validation_checks": {
+    "manifest_file_integrity": "PASS",
+    "sample_rate_and_channels": "PASS (16000 Hz, 1 channel)",
+    "signal_amplitude_bounds": "PASS (peak <= 1.0, finite float32)",
+    "voice_disjointness_dev_vs_test": "PASS (0 overlapping voices)",
+    "voice_disjointness_test_vs_dataset_v12": "PASS (4/4 test voices strictly unseen in v12)",
+    "oov_text_disjointness": "PASS (0 overlapping OOV lexemes)",
+    "noise_track_disjointness": "PASS (0 overlapping noise tracks)",
+    "event_chronological_ordering": "PASS (all acoustic gaps >= 0 ms)",
+    "validation_passed": true
+  },
+  "violations": []
+}

@@ -1,0 +1,302 @@
+{
+  "Candidate_D0_H1_seed44": {
+    "isolated": {
+      "macro_f1": 0.6034632034632035,
+      "accuracy": 0.7098214285714286,
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          7,
+          1
+        ],
+        [
+          2,
+          8,
+          50,
+          0,
+          132
+        ]
+      ],
+      "oov_total": 192,
+      "oov_fa": 60,
+      "oov_fa_rate": 0.3125,
+      "phonetic_oov_fa": 39,
+      "phonetic_oov_total": 112,
+      "phonetic_oov_fa_rate": 0.3482142857142857,
+      "general_oov_fa": 21,
+      "general_oov_total": 80,
+      "general_oov_fa_rate": 0.2625,
+      "per_class": {
+        "TRAI": {
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285714,
+          "support": 8
+        },
+        "PHAI": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 8
+        },
+        "LEN": {
+          "precision": 0.13793103448275862,
+          "recall": 1.0,
+          "f1": 0.24242424242424243,
+          "support": 8
+        },
+        "XUONG": {
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333,
+          "support": 8
+        },
+        "REJECT": {
+          "precision": 0.9635036496350365,
+          "recall": 0.6875,
+          "f1": 0.8024316109422492,
+          "support": 192
+        }
+      }
+    },
+    "streaming_canonical_vad": {
+      "exact_sequence_accuracy": 0.08,
+      "exact_sequence_matches": 8,
+      "event_precision": 0.7380281690140845,
+      "event_recall": 0.6517412935323383,
+      "event_f1": 0.69220607661823,
+      "total_gt_commands": 402,
+      "total_detected_commands": 355,
+      "true_positives": 262,
+      "oov_false_activations": 77,
+      "silence_noise_false_activations": 16,
+      "fa_per_minute_oov": 47.883537287490874,
+      "fa_per_minute_silence": 1.5223169584820755,
+      "oov_duration_min": 1.6080683333333339,
+      "silence_duration_min": 10.510294791666666
+    }
+  },
+  "Baseline_E1_seed42": {
+    "isolated": {
+      "macro_f1": 0.517156862745098,
+      "accuracy": 0.6294642857142857,
+      "confusion_matrix": [
+        [
+          7,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          13,
+          12,
+          52,
+          5,
+          110
+        ]
+      ],
+      "oov_total": 192,
+      "oov_fa": 82,
+      "oov_fa_rate": 0.4270833333333333,
+      "phonetic_oov_fa": 55,
+      "phonetic_oov_total": 112,
+      "phonetic_oov_fa_rate": 0.49107142857142855,
+      "general_oov_fa": 27,
+      "general_oov_total": 80,
+      "general_oov_fa_rate": 0.3375,
+      "per_class": {
+        "TRAI": {
+          "precision": 0.35,
+          "recall": 0.875,
+          "f1": 0.5,
+          "support": 8
+        },
+        "PHAI": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "f1": 0.5714285714285714,
+          "support": 8
+        },
+        "LEN": {
+          "precision": 0.13333333333333333,
+          "recall": 1.0,
+          "f1": 0.23529411764705882,
+          "support": 8
+        },
+        "XUONG": {
+          "precision": 0.6153846153846154,
+          "recall": 1.0,
+          "f1": 0.7619047619047619,
+          "support": 8
+        },
+        "REJECT": {
+          "precision": 0.990990990990991,
+          "recall": 0.5729166666666666,
+          "f1": 0.7260726072607261,
+          "support": 192
+        }
+      }
+    },
+    "streaming_canonical_vad": {
+      "exact_sequence_accuracy": 0.28,
+      "exact_sequence_matches": 28,
+      "event_precision": 0.7609195402298851,
+      "event_recall": 0.8233830845771144,
+      "event_f1": 0.7909199522102747,
+      "total_gt_commands": 402,
+      "total_detected_commands": 435,
+      "true_positives": 331,
+      "oov_false_activations": 82,
+      "silence_noise_false_activations": 22,
+      "fa_per_minute_oov": 50.9928578905747,
+      "fa_per_minute_silence": 2.093185817912854,
+      "oov_duration_min": 1.6080683333333339,
+      "silence_duration_min": 10.510294791666666
+    }
+  },
+  "Baseline_v11_seed42": {
+    "isolated": {
+      "macro_f1": 0.32681376898585524,
+      "accuracy": 0.3169642857142857,
+      "confusion_matrix": [
+        [
+          3,
+          4,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          7,
+          1
+        ],
+        [
+          9,
+          48,
+          82,
+          8,
+          45
+        ]
+      ],
+      "oov_total": 192,
+      "oov_fa": 147,
+      "oov_fa_rate": 0.765625,
+      "phonetic_oov_fa": 81,
+      "phonetic_oov_total": 112,
+      "phonetic_oov_fa_rate": 0.7232142857142857,
+      "general_oov_fa": 66,
+      "general_oov_total": 80,
+      "general_oov_fa_rate": 0.825,
+      "per_class": {
+        "TRAI": {
+          "precision": 0.25,
+          "recall": 0.375,
+          "f1": 0.3,
+          "support": 8
+        },
+        "PHAI": {
+          "precision": 0.13333333333333333,
+          "recall": 1.0,
+          "f1": 0.23529411764705882,
+          "support": 8
+        },
+        "LEN": {
+          "precision": 0.08888888888888889,
+          "recall": 1.0,
+          "f1": 0.16326530612244897,
+          "support": 8
+        },
+        "XUONG": {
+          "precision": 0.4666666666666667,
+          "recall": 0.875,
+          "f1": 0.6086956521739131,
+          "support": 8
+        },
+        "REJECT": {
+          "precision": 0.9574468085106383,
+          "recall": 0.234375,
+          "f1": 0.37656903765690375,
+          "support": 192
+        }
+      }
+    },
+    "streaming_canonical_vad": {
+      "exact_sequence_accuracy": 0.01,
+      "exact_sequence_matches": 1,
+      "event_precision": 0.5,
+      "event_recall": 0.7164179104477612,
+      "event_f1": 0.588957055214724,
+      "total_gt_commands": 402,
+      "total_detected_commands": 576,
+      "true_positives": 288,
+      "oov_false_activations": 204,
+      "silence_noise_false_activations": 84,
+      "fa_per_minute_oov": 126.86028060581998,
+      "fa_per_minute_silence": 7.992164032030897,
+      "oov_duration_min": 1.6080683333333339,
+      "silence_duration_min": 10.510294791666666
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "status": "DATASET_INTEGRITY_VERIFIED_AND_LOCKED",
+  "total_clips": 1000,
+  "manifest_csv_sha256": "b22e8f7f955fcccf2436ba1b11c61c7f02f528e9aa834f1f5e85a61d1e0f99c3",
+  "sample_rate_verified": 16000,
+  "sample_length_verified": 16000,
+  "channels_verified": "mono",
+  "clipping_detected": false,
+  "category_counts": {
+    "target_commands": 200,
+    "phonetic_minimal_pairs": 200,
+    "syntactic_carrier_collisions": 200,
+    "general_conversational_non_targets": 300,
+    "acoustic_background_and_silence": 100
+  },
+  "class_counts": {
+    "TRAI": 50,
+    "PHAI": 50,
+    "LEN": 50,
+    "XUONG": 50,
+    "REJECT": 800
+  },
+  "speaker_counts": {
+    "spk_north_01": 122,
+    "spk_north_02": 122,
+    "spk_north_03": 110,
+    "spk_north_04": 110,
+    "spk_north_05": 109,
+    "spk_north_06": 109,
+    "spk_north_07": 109,
+    "spk_north_08": 109,
+    "NONE": 100
+  },
+  "dataset_locked": true,
+  "lock_timestamp": "2026-10-19T14:00:59Z"
+}

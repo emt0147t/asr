@@ -1,0 +1,61 @@
+{
+  "campaign": "vieneu_kws_research_v11",
+  "objective": "Hard-negative training and locked evaluation of bounded-utterance Vietnamese KWS CNN",
+  "architecture": {
+    "model_name": "CorrectedVietnameseKWSNet",
+    "parameters": 138469,
+    "input_channels": 1,
+    "num_classes": 5,
+    "classes": ["TRAI", "PHAI", "LEN", "XUONG", "REJECT"],
+    "frontend": "LogMelFrontend",
+    "frontend_params": {
+      "sample_rate": 16000,
+      "n_fft": 512,
+      "win_length": 400,
+      "hop_length": 160,
+      "n_mels": 40,
+      "f_min": 20.0,
+      "f_max": 8000.0
+    }
+  },
+  "training_hyperparameters": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "lr_scheduler": "CosineAnnealingLR",
+    "epochs": 25,
+    "batch_size": 32,
+    "label_smoothing": 0.05,
+    "grad_clip_norm": 5.0
+  },
+  "candidate_variants": {
+    "variant_v11_baseline": {
+      "description": "Standard balanced sample weighting on v11 dataset",
+      "w_cmd": 1.0,
+      "w_prefix_hn": 1.0,
+      "w_hn": 1.0,
+      "w_sil": 1.0
+    },
+    "variant_v11_hard_negative_weighted": {
+      "description": "Focal weighting on hard negatives and minimal pairs",
+      "w_cmd": 1.5,
+      "w_prefix_hn": 1.5,
+      "w_hn": 1.5,
+      "w_sil": 0.5
+    },
+    "variant_v11_prefix_aware": {
+      "description": "Target-prefix penalized weighting with high focus on multi-word distractors",
+      "w_cmd": 2.0,
+      "w_prefix_hn": 2.5,
+      "w_hn": 1.5,
+      "w_sil": 0.5
+    }
+  },
+  "seeds": [42, 43, 44],
+  "threshold_sweep_range": [0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70],
+  "acceptance_criteria": {
+    "mean_command_recall_min": 0.95,
+    "per_command_recall_min": 0.95,
+    "non_target_far_max": 0.05
+  }
+}

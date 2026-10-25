@@ -1,0 +1,1208 @@
+[
+  {
+    "candidate_id": "variant_v11_baseline_seed42",
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_baseline_seed42.pt",
+    "sha256": "06869ca5f59c110ce8aa5f1ef677b4574360698b7d43497b50e8481f9550af35",
+    "best_epoch": 23,
+    "optimal_theta": 0.4,
+    "val_metrics_at_optimal_theta": {
+      "cmd_recall": 0.0,
+      "non_target_far": 1.0
+    },
+    "sweep_records": [
+      {
+        "theta": 0.2,
+        "cmd_recall": 0.9375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.85,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.25,
+        "cmd_recall": 0.9375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.85,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.3,
+        "cmd_recall": 0.9375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.85,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.35,
+        "cmd_recall": 0.93125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.85,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.4,
+        "cmd_recall": 0.93125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.85,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.45,
+        "cmd_recall": 0.91875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.85,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.5,
+        "cmd_recall": 0.91875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.85,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.55,
+        "cmd_recall": 0.88125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.775,
+          "PHAI": 0.8,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.6,
+        "cmd_recall": 0.825,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.6,
+          "PHAI": 0.75,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.65,
+        "cmd_recall": 0.7625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.45,
+          "PHAI": 0.65,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.7,
+        "cmd_recall": 0.66875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.25,
+          "PHAI": 0.475,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      }
+    ]
+  },
+  {
+    "candidate_id": "variant_v11_baseline_seed43",
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_baseline_seed43.pt",
+    "sha256": "5d4eaf9650822adcc0a0940c1c99f691ca9faa4936a1aa8ba90c4f89c4945a47",
+    "best_epoch": 15,
+    "optimal_theta": 0.2,
+    "val_metrics_at_optimal_theta": {
+      "cmd_recall": 0.98125,
+      "non_target_far": 0.0
+    },
+    "sweep_records": [
+      {
+        "theta": 0.2,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.25,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.3,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.35,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.4,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.45,
+        "cmd_recall": 0.96875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.5,
+        "cmd_recall": 0.95625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.85,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.55,
+        "cmd_recall": 0.91875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.775,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.6,
+        "cmd_recall": 0.90625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.725,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.65,
+        "cmd_recall": 0.875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.675,
+          "PHAI": 0.875,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.7,
+        "cmd_recall": 0.83125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.55,
+          "PHAI": 0.825,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      }
+    ]
+  },
+  {
+    "candidate_id": "variant_v11_baseline_seed44",
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_baseline_seed44.pt",
+    "sha256": "deca3a6301736dcf2655d51fcdb1e332882354bbad95e0e3fa309602e5271c68",
+    "best_epoch": 21,
+    "optimal_theta": 0.2,
+    "val_metrics_at_optimal_theta": {
+      "cmd_recall": 0.96875,
+      "non_target_far": 0.0
+    },
+    "sweep_records": [
+      {
+        "theta": 0.2,
+        "cmd_recall": 0.96875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.25,
+        "cmd_recall": 0.9625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.3,
+        "cmd_recall": 0.9625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.35,
+        "cmd_recall": 0.9625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.4,
+        "cmd_recall": 0.9625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.45,
+        "cmd_recall": 0.95,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        }
+      },
+      {
+        "theta": 0.5,
+        "cmd_recall": 0.94375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        }
+      },
+      {
+        "theta": 0.55,
+        "cmd_recall": 0.91875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.875,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        }
+      },
+      {
+        "theta": 0.6,
+        "cmd_recall": 0.9,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.85,
+          "PHAI": 0.85,
+          "LEN": 1.0,
+          "XUONG": 0.9
+        }
+      },
+      {
+        "theta": 0.65,
+        "cmd_recall": 0.8625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.75,
+          "LEN": 1.0,
+          "XUONG": 0.875
+        }
+      },
+      {
+        "theta": 0.7,
+        "cmd_recall": 0.74375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.625,
+          "PHAI": 0.525,
+          "LEN": 0.975,
+          "XUONG": 0.85
+        }
+      }
+    ]
+  },
+  {
+    "candidate_id": "variant_v11_hard_negative_weighted_seed42",
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_hard_negative_weighted_seed42.pt",
+    "sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "best_epoch": 24,
+    "optimal_theta": 0.2,
+    "val_metrics_at_optimal_theta": {
+      "cmd_recall": 0.975,
+      "non_target_far": 0.0
+    },
+    "sweep_records": [
+      {
+        "theta": 0.2,
+        "cmd_recall": 0.975,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.25,
+        "cmd_recall": 0.975,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.3,
+        "cmd_recall": 0.975,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.35,
+        "cmd_recall": 0.96875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.4,
+        "cmd_recall": 0.96875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.45,
+        "cmd_recall": 0.9625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.5,
+        "cmd_recall": 0.9625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.55,
+        "cmd_recall": 0.95625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.6,
+        "cmd_recall": 0.925,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.875,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.65,
+        "cmd_recall": 0.89375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.8,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.7,
+        "cmd_recall": 0.86875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.8,
+          "PHAI": 0.75,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        }
+      }
+    ]
+  },
+  {
+    "candidate_id": "variant_v11_hard_negative_weighted_seed43",
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_hard_negative_weighted_seed43.pt",
+    "sha256": "37bf49f54803031dbb963141c096687bc6748b45e4c563cdae5be8daeb2a8147",
+    "best_epoch": 22,
+    "optimal_theta": 0.2,
+    "val_metrics_at_optimal_theta": {
+      "cmd_recall": 0.98125,
+      "non_target_far": 0.0
+    },
+    "sweep_records": [
+      {
+        "theta": 0.2,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.25,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.3,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.35,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.4,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.45,
+        "cmd_recall": 0.975,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.5,
+        "cmd_recall": 0.96875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.55,
+        "cmd_recall": 0.96875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.6,
+        "cmd_recall": 0.9625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.65,
+        "cmd_recall": 0.95,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.7,
+        "cmd_recall": 0.93125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.85,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      }
+    ]
+  },
+  {
+    "candidate_id": "variant_v11_hard_negative_weighted_seed44",
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_hard_negative_weighted_seed44.pt",
+    "sha256": "abf1c94f24f2800f3d3954a84480bc6e5b0a5c8c4b6bb72214296fe4a0c4dc60",
+    "best_epoch": 25,
+    "optimal_theta": 0.2,
+    "val_metrics_at_optimal_theta": {
+      "cmd_recall": 0.99375,
+      "non_target_far": 0.0
+    },
+    "sweep_records": [
+      {
+        "theta": 0.2,
+        "cmd_recall": 0.99375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.25,
+        "cmd_recall": 0.99375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.3,
+        "cmd_recall": 0.9875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.35,
+        "cmd_recall": 0.9875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.4,
+        "cmd_recall": 0.9875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.45,
+        "cmd_recall": 0.9875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.5,
+        "cmd_recall": 0.9875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      },
+      {
+        "theta": 0.55,
+        "cmd_recall": 0.96875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.6,
+        "cmd_recall": 0.91875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.85,
+          "LEN": 0.975,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.65,
+        "cmd_recall": 0.8875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.85,
+          "PHAI": 0.775,
+          "LEN": 0.975,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.7,
+        "cmd_recall": 0.85625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.7,
+          "LEN": 0.95,
+          "XUONG": 0.95
+        }
+      }
+    ]
+  },
+  {
+    "candidate_id": "variant_v11_prefix_aware_seed42",
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_prefix_aware_seed42.pt",
+    "sha256": "ca780536bc380e8ddd6467844426239db6aea83017e505801dca085c10bd35dc",
+    "best_epoch": 23,
+    "optimal_theta": 0.2,
+    "val_metrics_at_optimal_theta": {
+      "cmd_recall": 0.9875,
+      "non_target_far": 0.0
+    },
+    "sweep_records": [
+      {
+        "theta": 0.2,
+        "cmd_recall": 0.9875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.25,
+        "cmd_recall": 0.9875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.3,
+        "cmd_recall": 0.975,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.35,
+        "cmd_recall": 0.975,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.4,
+        "cmd_recall": 0.975,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.45,
+        "cmd_recall": 0.975,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.5,
+        "cmd_recall": 0.96875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.55,
+        "cmd_recall": 0.95625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.9,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.6,
+        "cmd_recall": 0.9375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.9,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.65,
+        "cmd_recall": 0.925,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.875,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.7,
+        "cmd_recall": 0.88125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.775,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        }
+      }
+    ]
+  },
+  {
+    "candidate_id": "variant_v11_prefix_aware_seed43",
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_prefix_aware_seed43.pt",
+    "sha256": "a7e0d4b3c294be122ecfbd055bd7c0abee7c830b2abe15353648e11f7b404e79",
+    "best_epoch": 19,
+    "optimal_theta": 0.2,
+    "val_metrics_at_optimal_theta": {
+      "cmd_recall": 0.99375,
+      "non_target_far": 0.0
+    },
+    "sweep_records": [
+      {
+        "theta": 0.2,
+        "cmd_recall": 0.99375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.25,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.3,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.35,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.4,
+        "cmd_recall": 0.98125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.45,
+        "cmd_recall": 0.975,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.5,
+        "cmd_recall": 0.96875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.55,
+        "cmd_recall": 0.9625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.6,
+        "cmd_recall": 0.95625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.65,
+        "cmd_recall": 0.9125,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.75,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        }
+      },
+      {
+        "theta": 0.7,
+        "cmd_recall": 0.8625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.7,
+          "PHAI": 0.9,
+          "LEN": 0.95,
+          "XUONG": 0.9
+        }
+      }
+    ]
+  },
+  {
+    "candidate_id": "variant_v11_prefix_aware_seed44",
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_prefix_aware_seed44.pt",
+    "sha256": "1a684cc83e477d36f40aae06033044184972426434424ff92776f4fa386d178d",
+    "best_epoch": 19,
+    "optimal_theta": 0.35,
+    "val_metrics_at_optimal_theta": {
+      "cmd_recall": 0.99375,
+      "non_target_far": 0.0
+    },
+    "sweep_records": [
+      {
+        "theta": 0.2,
+        "cmd_recall": 0.99375,
+        "non_target_far": 0.008333333333333333,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.25,
+        "cmd_recall": 0.99375,
+        "non_target_far": 0.004166666666666667,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.3,
+        "cmd_recall": 0.99375,
+        "non_target_far": 0.004166666666666667,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.35,
+        "cmd_recall": 0.99375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.4,
+        "cmd_recall": 0.99375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.45,
+        "cmd_recall": 0.9875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.5,
+        "cmd_recall": 0.9875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.55,
+        "cmd_recall": 0.9875,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.6,
+        "cmd_recall": 0.975,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.65,
+        "cmd_recall": 0.95625,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.85,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      {
+        "theta": 0.7,
+        "cmd_recall": 0.9375,
+        "non_target_far": 0.0,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,407 @@
+{
+  "Baseline_v11_seed42": {
+    "confusion_matrix": [
+      [
+        7,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        6,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        6,
+        2
+      ],
+      [
+        15,
+        24,
+        66,
+        32,
+        71
+      ]
+    ],
+    "target_total": 32,
+    "target_correct": 27,
+    "target_accuracy": 0.84375,
+    "target_recall_by_class": {
+      "TRAI": {
+        "correct": 7,
+        "total": 8,
+        "recall": 0.875
+      },
+      "PHAI": {
+        "correct": 6,
+        "total": 8,
+        "recall": 0.75
+      },
+      "LEN": {
+        "correct": 8,
+        "total": 8,
+        "recall": 1.0
+      },
+      "XUONG": {
+        "correct": 6,
+        "total": 8,
+        "recall": 0.75
+      }
+    },
+    "oov_total": 208,
+    "oov_correctly_rejected": 71,
+    "oov_fa_count": 137,
+    "oov_fa_rate": 0.6586538461538461,
+    "overall_total": 240,
+    "overall_correct": 98,
+    "overall_accuracy": 0.4083333333333333,
+    "macro_f1_4cmd": 0.30961191419694517,
+    "macro_f1_5class": 0.34768953135755615,
+    "per_class_f1": {
+      "TRAI": 0.4666666666666667,
+      "PHAI": 0.3157894736842105,
+      "LEN": 0.1951219512195122,
+      "XUONG": 0.2608695652173913,
+      "REJECT": 0.5
+    },
+    "implied_target_match": true
+  },
+  "Baseline_E1_seed42": {
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        0,
+        0,
+        6
+      ],
+      [
+        0,
+        7,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      [
+        0,
+        1,
+        78,
+        4,
+        125
+      ]
+    ],
+    "target_total": 32,
+    "target_correct": 20,
+    "target_accuracy": 0.625,
+    "target_recall_by_class": {
+      "TRAI": {
+        "correct": 2,
+        "total": 8,
+        "recall": 0.25
+      },
+      "PHAI": {
+        "correct": 7,
+        "total": 8,
+        "recall": 0.875
+      },
+      "LEN": {
+        "correct": 8,
+        "total": 8,
+        "recall": 1.0
+      },
+      "XUONG": {
+        "correct": 3,
+        "total": 8,
+        "recall": 0.375
+      }
+    },
+    "oov_total": 208,
+    "oov_correctly_rejected": 125,
+    "oov_fa_count": 83,
+    "oov_fa_rate": 0.39903846153846156,
+    "overall_total": 240,
+    "overall_correct": 145,
+    "overall_accuracy": 0.6041666666666666,
+    "macro_f1_4cmd": 0.4613031914893617,
+    "macro_f1_5class": 0.5139700894233734,
+    "per_class_f1": {
+      "TRAI": 0.4,
+      "PHAI": 0.875,
+      "LEN": 0.1702127659574468,
+      "XUONG": 0.4,
+      "REJECT": 0.7246376811594203
+    },
+    "implied_target_match": true
+  },
+  "Phase28_D2_H1_Candidate": {
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        0,
+        0,
+        7
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        7
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        7
+      ],
+      [
+        0,
+        0,
+        28,
+        0,
+        180
+      ]
+    ],
+    "target_total": 32,
+    "target_correct": 11,
+    "target_accuracy": 0.34375,
+    "target_recall_by_class": {
+      "TRAI": {
+        "correct": 1,
+        "total": 8,
+        "recall": 0.125
+      },
+      "PHAI": {
+        "correct": 1,
+        "total": 8,
+        "recall": 0.125
+      },
+      "LEN": {
+        "correct": 8,
+        "total": 8,
+        "recall": 1.0
+      },
+      "XUONG": {
+        "correct": 1,
+        "total": 8,
+        "recall": 0.125
+      }
+    },
+    "oov_total": 208,
+    "oov_correctly_rejected": 180,
+    "oov_fa_count": 28,
+    "oov_fa_rate": 0.1346153846153846,
+    "overall_total": 240,
+    "overall_correct": 191,
+    "overall_accuracy": 0.7958333333333333,
+    "macro_f1_4cmd": 0.25757575757575757,
+    "macro_f1_5class": 0.38209972586500707,
+    "per_class_f1": {
+      "TRAI": 0.2222222222222222,
+      "PHAI": 0.2222222222222222,
+      "LEN": 0.36363636363636365,
+      "XUONG": 0.2222222222222222,
+      "REJECT": 0.8801955990220048
+    },
+    "implied_target_match": true
+  },
+  "Phase26_Candidate_D0_H1_seed44": {
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        0,
+        0,
+        6
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        3
+      ],
+      [
+        0,
+        0,
+        41,
+        2,
+        165
+      ]
+    ],
+    "target_total": 32,
+    "target_correct": 19,
+    "target_accuracy": 0.59375,
+    "target_recall_by_class": {
+      "TRAI": {
+        "correct": 2,
+        "total": 8,
+        "recall": 0.25
+      },
+      "PHAI": {
+        "correct": 4,
+        "total": 8,
+        "recall": 0.5
+      },
+      "LEN": {
+        "correct": 8,
+        "total": 8,
+        "recall": 1.0
+      },
+      "XUONG": {
+        "correct": 5,
+        "total": 8,
+        "recall": 0.625
+      }
+    },
+    "oov_total": 208,
+    "oov_correctly_rejected": 165,
+    "oov_fa_count": 43,
+    "oov_fa_rate": 0.20673076923076922,
+    "overall_total": 240,
+    "overall_correct": 184,
+    "overall_accuracy": 0.7666666666666667,
+    "macro_f1_4cmd": 0.5035087719298246,
+    "macro_f1_5class": 0.5737914735024089,
+    "per_class_f1": {
+      "TRAI": 0.4,
+      "PHAI": 0.6666666666666666,
+      "LEN": 0.2807017543859649,
+      "XUONG": 0.6666666666666666,
+      "REJECT": 0.8549222797927462
+    },
+    "implied_target_match": true
+  },
+  "Phase28_D0_H1_Candidate": {
+    "confusion_matrix": [
+      [
+        3,
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        7,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      [
+        1,
+        0,
+        48,
+        2,
+        157
+      ]
+    ],
+    "target_total": 32,
+    "target_correct": 21,
+    "target_accuracy": 0.65625,
+    "target_recall_by_class": {
+      "TRAI": {
+        "correct": 3,
+        "total": 8,
+        "recall": 0.375
+      },
+      "PHAI": {
+        "correct": 7,
+        "total": 8,
+        "recall": 0.875
+      },
+      "LEN": {
+        "correct": 8,
+        "total": 8,
+        "recall": 1.0
+      },
+      "XUONG": {
+        "correct": 3,
+        "total": 8,
+        "recall": 0.375
+      }
+    },
+    "oov_total": 208,
+    "oov_correctly_rejected": 157,
+    "oov_fa_count": 51,
+    "oov_fa_rate": 0.24519230769230768,
+    "overall_total": 240,
+    "overall_correct": 178,
+    "overall_accuracy": 0.7416666666666667,
+    "macro_f1_4cmd": 0.5362179487179487,
+    "macro_f1_5class": 0.5959956355701037,
+    "per_class_f1": {
+      "TRAI": 0.5,
+      "PHAI": 0.9333333333333333,
+      "LEN": 0.25,
+      "XUONG": 0.46153846153846156,
+      "REJECT": 0.8351063829787234
+    },
+    "implied_target_match": true
+  }
+}

@@ -1,0 +1,870 @@
+{
+  "runs": {
+    "D0_H0": {
+      "seed42": {
+        "confusion_matrix": [
+          [
+            151,
+            1,
+            0,
+            1,
+            7
+          ],
+          [
+            7,
+            152,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            154,
+            0,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            14,
+            28,
+            16,
+            11,
+            571
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 571,
+        "reject_fa_total": 69,
+        "reject_fa_rate": 0.1078125,
+        "kw_total": 640,
+        "kw_miss_total": 14,
+        "kw_miss_rate": 0.021875,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 69,
+            "fa_rate": 0.26953125
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      },
+      "seed43": {
+        "confusion_matrix": [
+          [
+            157,
+            1,
+            0,
+            0,
+            2
+          ],
+          [
+            4,
+            156,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            153,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            15,
+            31,
+            21,
+            17,
+            556
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 556,
+        "reject_fa_total": 84,
+        "reject_fa_rate": 0.13125,
+        "kw_total": 640,
+        "kw_miss_total": 9,
+        "kw_miss_rate": 0.0140625,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 83,
+            "fa_rate": 0.32421875
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 1,
+            "fa_rate": 0.00625
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      },
+      "seed44": {
+        "confusion_matrix": [
+          [
+            152,
+            1,
+            0,
+            0,
+            7
+          ],
+          [
+            1,
+            159,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            153,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            0,
+            159,
+            1
+          ],
+          [
+            8,
+            38,
+            17,
+            8,
+            569
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 569,
+        "reject_fa_total": 71,
+        "reject_fa_rate": 0.1109375,
+        "kw_total": 640,
+        "kw_miss_total": 15,
+        "kw_miss_rate": 0.0234375,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 71,
+            "fa_rate": 0.27734375
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      }
+    },
+    "D0_H1": {
+      "seed42": {
+        "confusion_matrix": [
+          [
+            151,
+            1,
+            0,
+            0,
+            8
+          ],
+          [
+            4,
+            154,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            157,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            10,
+            32,
+            16,
+            14,
+            568
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 568,
+        "reject_fa_total": 72,
+        "reject_fa_rate": 0.1125,
+        "kw_total": 640,
+        "kw_miss_total": 13,
+        "kw_miss_rate": 0.0203125,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 72,
+            "fa_rate": 0.28125
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      },
+      "seed43": {
+        "confusion_matrix": [
+          [
+            154,
+            3,
+            0,
+            0,
+            3
+          ],
+          [
+            4,
+            156,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            152,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            11,
+            33,
+            16,
+            11,
+            569
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 569,
+        "reject_fa_total": 71,
+        "reject_fa_rate": 0.1109375,
+        "kw_total": 640,
+        "kw_miss_total": 11,
+        "kw_miss_rate": 0.0171875,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 71,
+            "fa_rate": 0.27734375
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      },
+      "seed44": {
+        "confusion_matrix": [
+          [
+            153,
+            1,
+            0,
+            0,
+            6
+          ],
+          [
+            2,
+            158,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            152,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            158,
+            2
+          ],
+          [
+            8,
+            30,
+            18,
+            13,
+            571
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 571,
+        "reject_fa_total": 69,
+        "reject_fa_rate": 0.1078125,
+        "kw_total": 640,
+        "kw_miss_total": 16,
+        "kw_miss_rate": 0.025,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 69,
+            "fa_rate": 0.26953125
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      }
+    },
+    "D1_H0": {
+      "seed42": {
+        "confusion_matrix": [
+          [
+            150,
+            2,
+            0,
+            0,
+            8
+          ],
+          [
+            2,
+            158,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            155,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            155,
+            5
+          ],
+          [
+            6,
+            48,
+            23,
+            8,
+            555
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 555,
+        "reject_fa_total": 85,
+        "reject_fa_rate": 0.1328125,
+        "kw_total": 640,
+        "kw_miss_total": 18,
+        "kw_miss_rate": 0.028125,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 85,
+            "fa_rate": 0.33203125
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      },
+      "seed43": {
+        "confusion_matrix": [
+          [
+            152,
+            1,
+            0,
+            0,
+            7
+          ],
+          [
+            3,
+            157,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            153,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            0,
+            159,
+            1
+          ],
+          [
+            11,
+            30,
+            16,
+            12,
+            571
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 571,
+        "reject_fa_total": 69,
+        "reject_fa_rate": 0.1078125,
+        "kw_total": 640,
+        "kw_miss_total": 15,
+        "kw_miss_rate": 0.0234375,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 69,
+            "fa_rate": 0.26953125
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      },
+      "seed44": {
+        "confusion_matrix": [
+          [
+            151,
+            2,
+            0,
+            0,
+            7
+          ],
+          [
+            3,
+            154,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            155,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            11,
+            36,
+            23,
+            14,
+            556
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 556,
+        "reject_fa_total": 84,
+        "reject_fa_rate": 0.13125,
+        "kw_total": 640,
+        "kw_miss_total": 15,
+        "kw_miss_rate": 0.0234375,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 83,
+            "fa_rate": 0.32421875
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 1,
+            "fa_rate": 0.00625
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      }
+    },
+    "D1_H1": {
+      "seed42": {
+        "confusion_matrix": [
+          [
+            141,
+            5,
+            0,
+            0,
+            14
+          ],
+          [
+            2,
+            153,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            146,
+            0,
+            14
+          ],
+          [
+            0,
+            0,
+            0,
+            153,
+            7
+          ],
+          [
+            4,
+            36,
+            18,
+            9,
+            573
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 573,
+        "reject_fa_total": 67,
+        "reject_fa_rate": 0.1046875,
+        "kw_total": 640,
+        "kw_miss_total": 40,
+        "kw_miss_rate": 0.0625,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 67,
+            "fa_rate": 0.26171875
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      },
+      "seed43": {
+        "confusion_matrix": [
+          [
+            153,
+            1,
+            0,
+            0,
+            6
+          ],
+          [
+            5,
+            155,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            150,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            8,
+            34,
+            18,
+            10,
+            570
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 570,
+        "reject_fa_total": 70,
+        "reject_fa_rate": 0.109375,
+        "kw_total": 640,
+        "kw_miss_total": 16,
+        "kw_miss_rate": 0.025,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 70,
+            "fa_rate": 0.2734375
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      },
+      "seed44": {
+        "confusion_matrix": [
+          [
+            141,
+            2,
+            0,
+            0,
+            17
+          ],
+          [
+            1,
+            159,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            143,
+            0,
+            17
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            3,
+            38,
+            10,
+            9,
+            580
+          ]
+        ],
+        "reject_total": 640,
+        "reject_true_reject": 580,
+        "reject_fa_total": 60,
+        "reject_fa_rate": 0.09375,
+        "kw_total": 640,
+        "kw_miss_total": 34,
+        "kw_miss_rate": 0.053125,
+        "subgroup_fa": {
+          "oov_word": {
+            "total": 256,
+            "fa_count": 60,
+            "fa_rate": 0.234375
+          },
+          "conversation": {
+            "total": 160,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "environmental_noise": {
+            "total": 128,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          },
+          "silence_non_speech": {
+            "total": 96,
+            "fa_count": 0,
+            "fa_rate": 0.0
+          }
+        }
+      }
+    }
+  },
+  "condition_summary": {
+    "D0_H0": {
+      "mean_reject_fa_rate": 0.11666666666666665,
+      "std_reject_fa_rate": 0.012725824711323561,
+      "mean_kw_miss_rate": 0.019791666666666666,
+      "std_kw_miss_rate": 0.005022734771350497,
+      "mean_oov_fa_rate": 0.2903645833333333,
+      "std_oov_fa_rate": 0.02957764763437643,
+      "mean_conv_fa_rate": 0.0020833333333333333,
+      "std_conv_fa_rate": 0.0036084391824351618
+    },
+    "D0_H1": {
+      "mean_reject_fa_rate": 0.11041666666666668,
+      "std_reject_fa_rate": 0.0023867581744561645,
+      "mean_kw_miss_rate": 0.020833333333333332,
+      "std_kw_miss_rate": 0.003932205435036849,
+      "mean_oov_fa_rate": 0.2760416666666667,
+      "std_oov_fa_rate": 0.005966895436140417,
+      "mean_conv_fa_rate": 0.0,
+      "std_conv_fa_rate": 0.0
+    },
+    "D1_H0": {
+      "mean_reject_fa_rate": 0.12395833333333334,
+      "std_reject_fa_rate": 0.014004510062238282,
+      "mean_kw_miss_rate": 0.024999999999999998,
+      "std_kw_miss_rate": 0.0027063293868263712,
+      "mean_oov_fa_rate": 0.30859375,
+      "std_oov_fa_rate": 0.034053897996411515,
+      "mean_conv_fa_rate": 0.0020833333333333333,
+      "std_conv_fa_rate": 0.0036084391824351613
+    },
+    "D1_H1": {
+      "mean_reject_fa_rate": 0.10260416666666666,
+      "std_reject_fa_rate": 0.008018127249135757,
+      "mean_kw_miss_rate": 0.046875,
+      "std_kw_miss_rate": 0.019515618744994995,
+      "mean_oov_fa_rate": 0.2565104166666667,
+      "std_oov_fa_rate": 0.02004531812283939,
+      "mean_conv_fa_rate": 0.0,
+      "std_conv_fa_rate": 0.0
+    }
+  }
+}

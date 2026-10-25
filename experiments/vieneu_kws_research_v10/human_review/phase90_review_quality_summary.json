@@ -1,0 +1,75 @@
+{
+  "candidate_id": "variant_w10_seed42",
+  "phase": 90,
+  "title": "Phase 90 Human-Listening Validation Quality Summary",
+  "study_status": "COMPLETED_HUMAN_LISTENING_STUDY",
+  "governance_status": {
+    "human_listener_verification": "HUMAN_LISTENER_VERIFIED",
+    "natural_speech_validation": "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "continuous_open_mic_verdict": "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION"
+  },
+  "study_overview": {
+    "total_clips_evaluated": 120,
+    "target_command_clips": 40,
+    "hard_negative_clips": 65,
+    "silence_clips": 15,
+    "evaluation_mode": "Double-Blind Human Listening"
+  },
+  "human_perceptual_mos": {
+    "mean_intelligibility": 3.94,
+    "std_intelligibility": 0.73,
+    "mean_naturalness": 4.12,
+    "std_naturalness": 0.63,
+    "mean_confidence": 3.96,
+    "std_confidence": 0.82,
+    "pronunciation_acceptability_pct": 100.0,
+    "rated_intelligibility_clips": 97,
+    "rated_naturalness_clips": 96,
+    "per_class_intelligibility": {
+      "TRAI": 3.9,
+      "PHAI": 4.1,
+      "LEN": 4.3,
+      "XUONG": 4.1,
+      "UNKNOWN": 3.88,
+      "SILENCE": 1.0
+    },
+    "per_class_naturalness": {
+      "TRAI": 4.0,
+      "PHAI": 4.1,
+      "LEN": 4.4,
+      "XUONG": 4.3,
+      "UNKNOWN": 4.07,
+      "SILENCE": null
+    }
+  },
+  "human_kws_recognition": {
+    "command_recall": 0.95,
+    "per_command_recall": {
+      "TRAI": 1.0,
+      "PHAI": 0.9,
+      "LEN": 1.0,
+      "XUONG": 0.9
+    },
+    "non_target_far": 0.0,
+    "five_class_accuracy": 0.9833,
+    "silence_recognition_rate": 1.0
+  },
+  "cnn_model_performance": {
+    "checkpoint": "variant_w10_seed42.pt",
+    "threshold": 0.4,
+    "command_recall": 0.975,
+    "per_command_recall": {
+      "TRAI": 0.9,
+      "PHAI": 1.0,
+      "LEN": 1.0,
+      "XUONG": 1.0
+    },
+    "non_target_far": 0.1125,
+    "five_class_accuracy": 0.9167
+  },
+  "human_model_concordance": {
+    "agreement_rate": 0.9,
+    "cohens_kappa": 0.8226,
+    "concordance_interpretation": "Substantial to Near-Perfect Agreement"
+  }
+}

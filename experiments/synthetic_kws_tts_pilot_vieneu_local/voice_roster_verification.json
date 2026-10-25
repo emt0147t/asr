@@ -1,0 +1,582 @@
+{
+  "engine": "VieNeu-TTS v3 Turbo",
+  "vieneu_sdk_version": "3.8.3",
+  "installed_presets_count": 25,
+  "json_presets_count": 25,
+  "declared_default_voice": "Hải Đăng",
+  "is_default_voice_hai_dang": true,
+  "hai_dang_alias_minh_quan": true,
+  "manifest_unique_voices_count": 8,
+  "manifest_voices_all_in_installed": true,
+  "all_genders_match_upstream": true,
+  "all_regions_match_upstream": true,
+  "total_clips_verified": 32,
+  "mismatches": [],
+  "manifest_voices": [
+    {
+      "voice_id": "Mai Anh",
+      "found_in_installed": true,
+      "manifest_gender": "female",
+      "upstream_gender": "female",
+      "gender_match": true,
+      "manifest_region": "North",
+      "upstream_region_vi": "Bắc",
+      "upstream_region_en": "North",
+      "region_match": true,
+      "manifest_style": "Tin tức",
+      "upstream_style_token": "tin_tuc",
+      "upstream_description": "Nữ · Bắc · Phong cách tin tức",
+      "aliases": [],
+      "featured_rank": 4
+    },
+    {
+      "voice_id": "Trúc Ly",
+      "found_in_installed": true,
+      "manifest_gender": "female",
+      "upstream_gender": "female",
+      "gender_match": true,
+      "manifest_region": "North",
+      "upstream_region_vi": "Bắc",
+      "upstream_region_en": "North",
+      "region_match": true,
+      "manifest_style": "Tự nhiên",
+      "upstream_style_token": "tu_nhien",
+      "upstream_description": "Nữ · Bắc · Phong cách tự nhiên",
+      "aliases": [],
+      "featured_rank": 2
+    },
+    {
+      "voice_id": "Ngọc Trân",
+      "found_in_installed": true,
+      "manifest_gender": "female",
+      "upstream_gender": "female",
+      "gender_match": true,
+      "manifest_region": "Central",
+      "upstream_region_vi": "Trung",
+      "upstream_region_en": "Central",
+      "region_match": true,
+      "manifest_style": "Tự nhiên",
+      "upstream_style_token": "tu_nhien",
+      "upstream_description": "Nữ · Trung · Phong cách tự nhiên",
+      "aliases": [],
+      "featured_rank": 10
+    },
+    {
+      "voice_id": "Thùy Dung",
+      "found_in_installed": true,
+      "manifest_gender": "female",
+      "upstream_gender": "female",
+      "gender_match": true,
+      "manifest_region": "South",
+      "upstream_region_vi": "Nam",
+      "upstream_region_en": "South",
+      "region_match": true,
+      "manifest_style": "Tin tức",
+      "upstream_style_token": "tin_tuc",
+      "upstream_description": "Nữ · Nam · Phong cách tin tức",
+      "aliases": [],
+      "featured_rank": 6
+    },
+    {
+      "voice_id": "Hải Đăng",
+      "found_in_installed": true,
+      "manifest_gender": "male",
+      "upstream_gender": "male",
+      "gender_match": true,
+      "manifest_region": "North",
+      "upstream_region_vi": "Bắc",
+      "upstream_region_en": "North",
+      "region_match": true,
+      "manifest_style": "Tự nhiên",
+      "upstream_style_token": "tu_nhien",
+      "upstream_description": "Nam · Bắc · Phong cách tự nhiên",
+      "aliases": [
+        "Minh Quân Pro",
+        "Minh Quân"
+      ],
+      "featured_rank": 5
+    },
+    {
+      "voice_id": "Phạm Tuyên",
+      "found_in_installed": true,
+      "manifest_gender": "male",
+      "upstream_gender": "male",
+      "gender_match": true,
+      "manifest_region": "North",
+      "upstream_region_vi": "Bắc",
+      "upstream_region_en": "North",
+      "region_match": true,
+      "manifest_style": "Tự nhiên",
+      "upstream_style_token": "tu_nhien",
+      "upstream_description": "Nam · Bắc · Phong cách tự nhiên",
+      "aliases": [],
+      "featured_rank": null
+    },
+    {
+      "voice_id": "Quang Sơn",
+      "found_in_installed": true,
+      "manifest_gender": "male",
+      "upstream_gender": "male",
+      "gender_match": true,
+      "manifest_region": "Central",
+      "upstream_region_vi": "Trung",
+      "upstream_region_en": "Central",
+      "region_match": true,
+      "manifest_style": "Tự nhiên",
+      "upstream_style_token": "tu_nhien",
+      "upstream_description": "Nam · Trung · Phong cách tự nhiên",
+      "aliases": [],
+      "featured_rank": 9
+    },
+    {
+      "voice_id": "Thái Sơn",
+      "found_in_installed": true,
+      "manifest_gender": "male",
+      "upstream_gender": "male",
+      "gender_match": true,
+      "manifest_region": "South",
+      "upstream_region_vi": "Nam",
+      "upstream_region_en": "South",
+      "region_match": true,
+      "manifest_style": "Kể chuyện",
+      "upstream_style_token": "doc_truyen",
+      "upstream_description": "Nam · Nam · Phong cách kể chuyện",
+      "aliases": [],
+      "featured_rank": null
+    }
+  ],
+  "installed_presets": [
+    {
+      "voice_id": "Adam bựa",
+      "display_label": "⭐ Adam bựa — Nam · Bắc · Phong cách tự nhiên",
+      "gender": "male",
+      "region": "Bắc",
+      "style": "tu_nhien",
+      "description": "Nam · Bắc · Phong cách tự nhiên",
+      "featured_rank": 1,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        91,
+        16
+      ]
+    },
+    {
+      "voice_id": "Trúc Ly",
+      "display_label": "⭐ Trúc Ly — Nữ · Bắc · Phong cách tự nhiên",
+      "gender": "female",
+      "region": "Bắc",
+      "style": "tu_nhien",
+      "description": "Nữ · Bắc · Phong cách tự nhiên",
+      "featured_rank": 2,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        59,
+        16
+      ]
+    },
+    {
+      "voice_id": "Thiện Minh",
+      "display_label": "⭐ Thiện Minh — Nam · Bắc · Phong cách kể chuyện",
+      "gender": "male",
+      "region": "Bắc",
+      "style": "doc_truyen",
+      "description": "Nam · Bắc · Phong cách kể chuyện",
+      "featured_rank": 3,
+      "aliases": [
+        "Anh Khôi"
+      ],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        53,
+        16
+      ]
+    },
+    {
+      "voice_id": "Mai Anh",
+      "display_label": "⭐ Mai Anh — Nữ · Bắc · Phong cách tin tức",
+      "gender": "female",
+      "region": "Bắc",
+      "style": "tin_tuc",
+      "description": "Nữ · Bắc · Phong cách tin tức",
+      "featured_rank": 4,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        73,
+        16
+      ]
+    },
+    {
+      "voice_id": "Hải Đăng",
+      "display_label": "⭐ Hải Đăng — Nam · Bắc · Phong cách tự nhiên",
+      "gender": "male",
+      "region": "Bắc",
+      "style": "tu_nhien",
+      "description": "Nam · Bắc · Phong cách tự nhiên",
+      "featured_rank": 5,
+      "aliases": [
+        "Minh Quân Pro",
+        "Minh Quân"
+      ],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        68,
+        16
+      ]
+    },
+    {
+      "voice_id": "Thùy Dung",
+      "display_label": "⭐ Thùy Dung — Nữ · Nam · Phong cách tin tức",
+      "gender": "female",
+      "region": "Nam",
+      "style": "tin_tuc",
+      "description": "Nữ · Nam · Phong cách tin tức",
+      "featured_rank": 6,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        54,
+        16
+      ]
+    },
+    {
+      "voice_id": "Thiền Tâm Đức",
+      "display_label": "⭐ Thiền Tâm Đức — Nam · Bắc · Phong cách kể chuyện",
+      "gender": "male",
+      "region": "Bắc",
+      "style": "doc_truyen",
+      "description": "Nam · Bắc · Phong cách kể chuyện",
+      "featured_rank": 7,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        98,
+        16
+      ]
+    },
+    {
+      "voice_id": "Ngọc Huyền",
+      "display_label": "⭐ Ngọc Huyền — Nữ · Bắc · Giọng đọc tự nhiên",
+      "gender": "female",
+      "region": "Bắc",
+      "style": "tu_nhien",
+      "description": "Nữ · Bắc · Giọng đọc tự nhiên",
+      "featured_rank": 8,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        63,
+        16
+      ]
+    },
+    {
+      "voice_id": "Quang Sơn",
+      "display_label": "⭐ Quang Sơn — Nam · Trung · Phong cách tự nhiên",
+      "gender": "male",
+      "region": "Trung",
+      "style": "tu_nhien",
+      "description": "Nam · Trung · Phong cách tự nhiên",
+      "featured_rank": 9,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        43,
+        16
+      ]
+    },
+    {
+      "voice_id": "Ngọc Trân",
+      "display_label": "⭐ Ngọc Trân — Nữ · Trung · Phong cách tự nhiên",
+      "gender": "female",
+      "region": "Trung",
+      "style": "tu_nhien",
+      "description": "Nữ · Trung · Phong cách tự nhiên",
+      "featured_rank": 10,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        45,
+        16
+      ]
+    },
+    {
+      "voice_id": "Minh Đức",
+      "display_label": "Minh Đức — Nam · Bắc · Phong cách tin tức",
+      "gender": "male",
+      "region": "Bắc",
+      "style": "tin_tuc",
+      "description": "Nam · Bắc · Phong cách tin tức",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        50,
+        16
+      ]
+    },
+    {
+      "voice_id": "Phạm Tuyên",
+      "display_label": "Phạm Tuyên — Nam · Bắc · Phong cách tự nhiên",
+      "gender": "male",
+      "region": "Bắc",
+      "style": "tu_nhien",
+      "description": "Nam · Bắc · Phong cách tự nhiên",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        62,
+        16
+      ]
+    },
+    {
+      "voice_id": "Thái Sơn",
+      "display_label": "Thái Sơn — Nam · Nam · Phong cách kể chuyện",
+      "gender": "male",
+      "region": "Nam",
+      "style": "doc_truyen",
+      "description": "Nam · Nam · Phong cách kể chuyện",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        49,
+        16
+      ]
+    },
+    {
+      "voice_id": "Xuân Vĩnh",
+      "display_label": "Xuân Vĩnh — Nam · Bắc · Phong cách tự nhiên",
+      "gender": "male",
+      "region": "Bắc",
+      "style": "tu_nhien",
+      "description": "Nam · Bắc · Phong cách tự nhiên",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        12,
+        16
+      ]
+    },
+    {
+      "voice_id": "Thanh Bình",
+      "display_label": "Thanh Bình — Nam · Bắc · Phong cách kể chuyện",
+      "gender": "male",
+      "region": "Bắc",
+      "style": "doc_truyen",
+      "description": "Nam · Bắc · Phong cách kể chuyện",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        42,
+        16
+      ]
+    },
+    {
+      "voice_id": "Ngọc Linh",
+      "display_label": "Ngọc Linh — Nữ · Bắc · Phong cách kể chuyện",
+      "gender": "female",
+      "region": "Bắc",
+      "style": "doc_truyen",
+      "description": "Nữ · Bắc · Phong cách kể chuyện",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        58,
+        16
+      ]
+    },
+    {
+      "voice_id": "Đoan Trang",
+      "display_label": "Đoan Trang — Nữ · Bắc · Phong cách tự nhiên",
+      "gender": "female",
+      "region": "Bắc",
+      "style": "tu_nhien",
+      "description": "Nữ · Bắc · Phong cách tự nhiên",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        57,
+        16
+      ]
+    },
+    {
+      "voice_id": "Thục Đoan",
+      "display_label": "Thục Đoan — Nữ · Nam · Phong cách kể chuyện",
+      "gender": "female",
+      "region": "Nam",
+      "style": "doc_truyen",
+      "description": "Nữ · Nam · Phong cách kể chuyện",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        39,
+        16
+      ]
+    },
+    {
+      "voice_id": "Minh Triết",
+      "display_label": "Minh Triết — Nam · Nam · Phong cách tin tức",
+      "gender": "male",
+      "region": "Nam",
+      "style": "tin_tuc",
+      "description": "Nam · Nam · Phong cách tin tức",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        56,
+        16
+      ]
+    },
+    {
+      "voice_id": "Mỹ Duyên",
+      "display_label": "Mỹ Duyên — Nữ · Nam · Phong cách đọc truyện",
+      "gender": "female",
+      "region": "Nam",
+      "style": "doc_truyen",
+      "description": "Nữ · Nam · Phong cách đọc truyện",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        74,
+        16
+      ]
+    },
+    {
+      "voice_id": "Quỳnh Anh",
+      "display_label": "Quỳnh Anh — Nữ · Bắc · Phong cách đọc truyện",
+      "gender": "female",
+      "region": "Bắc",
+      "style": "doc_truyen",
+      "description": "Nữ · Bắc · Phong cách đọc truyện",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        70,
+        16
+      ]
+    },
+    {
+      "voice_id": "Đức Trí",
+      "display_label": "Đức Trí — Nam · Nam · Phong cách đọc truyện",
+      "gender": "male",
+      "region": "Nam",
+      "style": "doc_truyen",
+      "description": "Nam · Nam · Phong cách đọc truyện",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        76,
+        16
+      ]
+    },
+    {
+      "voice_id": "Kim Thanh",
+      "display_label": "Kim Thanh — Nữ · Nam · Phong cách đọc truyện",
+      "gender": "female",
+      "region": "Nam",
+      "style": "doc_truyen",
+      "description": "Nữ · Nam · Phong cách đọc truyện",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        72,
+        16
+      ]
+    },
+    {
+      "voice_id": "Adam",
+      "display_label": "Adam — Nam · Nam · Giọng đọc tự nhiên",
+      "gender": "male",
+      "region": "Nam",
+      "style": "tu_nhien",
+      "description": "Nam · Nam · Giọng đọc tự nhiên",
+      "featured_rank": null,
+      "aliases": [],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        38,
+        16
+      ]
+    },
+    {
+      "voice_id": "Quốc Tuấn",
+      "display_label": "Quốc Tuấn — Nam · Bắc · Phong cách tự nhiên",
+      "gender": "male",
+      "region": "Bắc",
+      "style": "tu_nhien",
+      "description": "Nam · Bắc · Phong cách tự nhiên",
+      "featured_rank": null,
+      "aliases": [
+        "Mạnh Dũng"
+      ],
+      "has_speaker_emb": true,
+      "speaker_emb_dim": 192,
+      "has_codes": true,
+      "codes_shape": [
+        57,
+        16
+      ]
+    }
+  ]
+}

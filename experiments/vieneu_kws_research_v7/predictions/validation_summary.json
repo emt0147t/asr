@@ -1,0 +1,134 @@
+{
+  "variant_a_cascade_v1": {
+    "seed42": {
+      "macro_recall": 0.7937,
+      "false_rejection_rate": 0.2063,
+      "false_acceptance_rate": 0.045,
+      "rejection_rate": 0.955,
+      "per_keyword_recall": {
+        "TRAI": 0.9,
+        "PHAI": 0.775,
+        "LEN": 0.75,
+        "XUONG": 0.75
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed43": {
+      "macro_recall": 0.7063,
+      "false_rejection_rate": 0.2937,
+      "false_acceptance_rate": 0.05,
+      "rejection_rate": 0.95,
+      "per_keyword_recall": {
+        "TRAI": 0.825,
+        "PHAI": 0.625,
+        "LEN": 0.725,
+        "XUONG": 0.65
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed44": {
+      "macro_recall": 0.875,
+      "false_rejection_rate": 0.125,
+      "false_acceptance_rate": 0.05,
+      "rejection_rate": 0.95,
+      "per_keyword_recall": {
+        "TRAI": 0.95,
+        "PHAI": 0.85,
+        "LEN": 0.85,
+        "XUONG": 0.85
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    }
+  },
+  "candidate_a_corrected_baseline": {
+    "seed42": {
+      "macro_recall": 0.775,
+      "false_rejection_rate": 0.225,
+      "false_acceptance_rate": 0.04,
+      "rejection_rate": 0.96,
+      "per_keyword_recall": {
+        "TRAI": 0.725,
+        "PHAI": 0.475,
+        "LEN": 1.0,
+        "XUONG": 0.9
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed43": {
+      "macro_recall": 0.9437,
+      "false_rejection_rate": 0.0563,
+      "false_acceptance_rate": 0.05,
+      "rejection_rate": 0.95,
+      "per_keyword_recall": {
+        "TRAI": 0.85,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 0.925
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed44": {
+      "macro_recall": 0.9437,
+      "false_rejection_rate": 0.0563,
+      "false_acceptance_rate": 0.035,
+      "rejection_rate": 0.965,
+      "per_keyword_recall": {
+        "TRAI": 0.95,
+        "PHAI": 0.875,
+        "LEN": 1.0,
+        "XUONG": 0.95
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    }
+  },
+  "candidate_b_moderately_weighted_hard_negative": {
+    "seed42": {
+      "macro_recall": 0.9625,
+      "false_rejection_rate": 0.0375,
+      "false_acceptance_rate": 0.03,
+      "rejection_rate": 0.97,
+      "per_keyword_recall": {
+        "TRAI": 0.95,
+        "PHAI": 0.95,
+        "LEN": 1.0,
+        "XUONG": 0.95
+      },
+      "all_keywords_ge_95": true,
+      "meets_strict_criteria": true
+    },
+    "seed43": {
+      "macro_recall": 0.9688,
+      "false_rejection_rate": 0.0312,
+      "false_acceptance_rate": 0.05,
+      "rejection_rate": 0.95,
+      "per_keyword_recall": {
+        "TRAI": 0.975,
+        "PHAI": 0.975,
+        "LEN": 1.0,
+        "XUONG": 0.925
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed44": {
+      "macro_recall": 0.9563,
+      "false_rejection_rate": 0.0437,
+      "false_acceptance_rate": 0.04,
+      "rejection_rate": 0.96,
+      "per_keyword_recall": {
+        "TRAI": 0.95,
+        "PHAI": 0.975,
+        "LEN": 1.0,
+        "XUONG": 0.9
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    }
+  }
+}

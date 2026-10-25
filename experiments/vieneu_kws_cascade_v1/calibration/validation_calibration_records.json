@@ -1,0 +1,482 @@
+{
+  "seed42": {
+    "selected": {
+      "theta1": 0.55,
+      "theta2": 0.7,
+      "is_strictly_feasible": false,
+      "rationale": "NO_FEASIBLE_VALIDATION_OPERATING_POINT: FA/hr <= 1.0 unmet on unconstrained speech. Selected Pareto compromise (theta1=0.55, theta2=0.70) for test evaluation."
+    },
+    "sweep": [
+      {
+        "theta1": 0.45,
+        "theta2": 0.4,
+        "val_cmd_recall": 0.9437,
+        "val_cmd_precision": 0.9042,
+        "val_cmd_mean_lat_ms": 382.0,
+        "val_nt_fa_per_hour": 107.89,
+        "val_nt_false_alarms": 27,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.5,
+        "val_cmd_recall": 0.9313,
+        "val_cmd_precision": 0.9085,
+        "val_cmd_mean_lat_ms": 381.8,
+        "val_nt_fa_per_hour": 107.89,
+        "val_nt_false_alarms": 27,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.6,
+        "val_cmd_recall": 0.9313,
+        "val_cmd_precision": 0.9085,
+        "val_cmd_mean_lat_ms": 381.8,
+        "val_nt_fa_per_hour": 99.9,
+        "val_nt_false_alarms": 25,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.7,
+        "val_cmd_recall": 0.9062,
+        "val_cmd_precision": 0.9177,
+        "val_cmd_mean_lat_ms": 380.9,
+        "val_nt_fa_per_hour": 79.92,
+        "val_nt_false_alarms": 20,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.8,
+        "val_cmd_recall": 0.8562,
+        "val_cmd_precision": 0.9514,
+        "val_cmd_mean_lat_ms": 381.0,
+        "val_nt_fa_per_hour": 51.95,
+        "val_nt_false_alarms": 13,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.4,
+        "val_cmd_recall": 0.9437,
+        "val_cmd_precision": 0.9152,
+        "val_cmd_mean_lat_ms": 385.9,
+        "val_nt_fa_per_hour": 103.89,
+        "val_nt_false_alarms": 26,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.5,
+        "val_cmd_recall": 0.9313,
+        "val_cmd_precision": 0.9141,
+        "val_cmd_mean_lat_ms": 385.9,
+        "val_nt_fa_per_hour": 103.89,
+        "val_nt_false_alarms": 26,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.6,
+        "val_cmd_recall": 0.9313,
+        "val_cmd_precision": 0.9141,
+        "val_cmd_mean_lat_ms": 385.9,
+        "val_nt_fa_per_hour": 95.9,
+        "val_nt_false_alarms": 24,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.7,
+        "val_cmd_recall": 0.9062,
+        "val_cmd_precision": 0.9236,
+        "val_cmd_mean_lat_ms": 385.0,
+        "val_nt_fa_per_hour": 75.92,
+        "val_nt_false_alarms": 19,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.8,
+        "val_cmd_recall": 0.8562,
+        "val_cmd_precision": 0.958,
+        "val_cmd_mean_lat_ms": 385.4,
+        "val_nt_fa_per_hour": 43.96,
+        "val_nt_false_alarms": 11,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.4,
+        "val_cmd_recall": 0.9437,
+        "val_cmd_precision": 0.9207,
+        "val_cmd_mean_lat_ms": 391.2,
+        "val_nt_fa_per_hour": 99.9,
+        "val_nt_false_alarms": 25,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.5,
+        "val_cmd_recall": 0.9313,
+        "val_cmd_precision": 0.9198,
+        "val_cmd_mean_lat_ms": 391.2,
+        "val_nt_fa_per_hour": 99.9,
+        "val_nt_false_alarms": 25,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.6,
+        "val_cmd_recall": 0.9313,
+        "val_cmd_precision": 0.9198,
+        "val_cmd_mean_lat_ms": 391.2,
+        "val_nt_fa_per_hour": 91.91,
+        "val_nt_false_alarms": 23,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.7,
+        "val_cmd_recall": 0.9062,
+        "val_cmd_precision": 0.9295,
+        "val_cmd_mean_lat_ms": 390.5,
+        "val_nt_fa_per_hour": 67.93,
+        "val_nt_false_alarms": 17,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.8,
+        "val_cmd_recall": 0.8562,
+        "val_cmd_precision": 0.958,
+        "val_cmd_mean_lat_ms": 391.2,
+        "val_nt_fa_per_hour": 39.96,
+        "val_nt_false_alarms": 10,
+        "strictly_feasible": false
+      }
+    ]
+  },
+  "seed43": {
+    "selected": {
+      "theta1": 0.45,
+      "theta2": 0.6,
+      "is_strictly_feasible": false,
+      "rationale": "NO_FEASIBLE_VALIDATION_OPERATING_POINT: FA/hr <= 1.0 unmet on unconstrained speech. Selected Pareto compromise (theta1=0.45, theta2=0.60) for test evaluation."
+    },
+    "sweep": [
+      {
+        "theta1": 0.45,
+        "theta2": 0.4,
+        "val_cmd_recall": 0.9313,
+        "val_cmd_precision": 0.9141,
+        "val_cmd_mean_lat_ms": 404.5,
+        "val_nt_fa_per_hour": 111.89,
+        "val_nt_false_alarms": 28,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.5,
+        "val_cmd_recall": 0.9313,
+        "val_cmd_precision": 0.9198,
+        "val_cmd_mean_lat_ms": 404.5,
+        "val_nt_fa_per_hour": 111.89,
+        "val_nt_false_alarms": 28,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.6,
+        "val_cmd_recall": 0.9125,
+        "val_cmd_precision": 0.9182,
+        "val_cmd_mean_lat_ms": 404.7,
+        "val_nt_fa_per_hour": 103.89,
+        "val_nt_false_alarms": 26,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.7,
+        "val_cmd_recall": 0.8812,
+        "val_cmd_precision": 0.9216,
+        "val_cmd_mean_lat_ms": 402.6,
+        "val_nt_fa_per_hour": 95.9,
+        "val_nt_false_alarms": 24,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.8,
+        "val_cmd_recall": 0.825,
+        "val_cmd_precision": 0.9429,
+        "val_cmd_mean_lat_ms": 400.9,
+        "val_nt_fa_per_hour": 55.94,
+        "val_nt_false_alarms": 14,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.4,
+        "val_cmd_recall": 0.9125,
+        "val_cmd_precision": 0.9182,
+        "val_cmd_mean_lat_ms": 407.8,
+        "val_nt_fa_per_hour": 111.89,
+        "val_nt_false_alarms": 28,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.5,
+        "val_cmd_recall": 0.9125,
+        "val_cmd_precision": 0.9241,
+        "val_cmd_mean_lat_ms": 407.8,
+        "val_nt_fa_per_hour": 111.89,
+        "val_nt_false_alarms": 28,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.6,
+        "val_cmd_recall": 0.8938,
+        "val_cmd_precision": 0.9226,
+        "val_cmd_mean_lat_ms": 408.0,
+        "val_nt_fa_per_hour": 103.89,
+        "val_nt_false_alarms": 26,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.7,
+        "val_cmd_recall": 0.8688,
+        "val_cmd_precision": 0.9329,
+        "val_cmd_mean_lat_ms": 408.3,
+        "val_nt_fa_per_hour": 91.91,
+        "val_nt_false_alarms": 23,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.8,
+        "val_cmd_recall": 0.8313,
+        "val_cmd_precision": 0.95,
+        "val_cmd_mean_lat_ms": 407.3,
+        "val_nt_fa_per_hour": 59.94,
+        "val_nt_false_alarms": 15,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.4,
+        "val_cmd_recall": 0.9,
+        "val_cmd_precision": 0.9231,
+        "val_cmd_mean_lat_ms": 418.2,
+        "val_nt_fa_per_hour": 107.89,
+        "val_nt_false_alarms": 27,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.5,
+        "val_cmd_recall": 0.9,
+        "val_cmd_precision": 0.929,
+        "val_cmd_mean_lat_ms": 418.2,
+        "val_nt_fa_per_hour": 107.89,
+        "val_nt_false_alarms": 27,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.6,
+        "val_cmd_recall": 0.875,
+        "val_cmd_precision": 0.9272,
+        "val_cmd_mean_lat_ms": 413.9,
+        "val_nt_fa_per_hour": 99.9,
+        "val_nt_false_alarms": 25,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.7,
+        "val_cmd_recall": 0.8438,
+        "val_cmd_precision": 0.9375,
+        "val_cmd_mean_lat_ms": 411.9,
+        "val_nt_fa_per_hour": 87.91,
+        "val_nt_false_alarms": 22,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.8,
+        "val_cmd_recall": 0.7937,
+        "val_cmd_precision": 0.9478,
+        "val_cmd_mean_lat_ms": 407.5,
+        "val_nt_fa_per_hour": 55.94,
+        "val_nt_false_alarms": 14,
+        "strictly_feasible": false
+      }
+    ]
+  },
+  "seed44": {
+    "selected": {
+      "theta1": 0.55,
+      "theta2": 0.7,
+      "is_strictly_feasible": false,
+      "rationale": "NO_FEASIBLE_VALIDATION_OPERATING_POINT: FA/hr <= 1.0 unmet on unconstrained speech. Selected Pareto compromise (theta1=0.55, theta2=0.70) for test evaluation."
+    },
+    "sweep": [
+      {
+        "theta1": 0.45,
+        "theta2": 0.4,
+        "val_cmd_recall": 0.9563,
+        "val_cmd_precision": 0.8895,
+        "val_cmd_mean_lat_ms": 378.3,
+        "val_nt_fa_per_hour": 155.84,
+        "val_nt_false_alarms": 39,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.5,
+        "val_cmd_recall": 0.95,
+        "val_cmd_precision": 0.8889,
+        "val_cmd_mean_lat_ms": 378.3,
+        "val_nt_fa_per_hour": 155.84,
+        "val_nt_false_alarms": 39,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.6,
+        "val_cmd_recall": 0.925,
+        "val_cmd_precision": 0.8862,
+        "val_cmd_mean_lat_ms": 376.4,
+        "val_nt_fa_per_hour": 139.86,
+        "val_nt_false_alarms": 35,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.7,
+        "val_cmd_recall": 0.9187,
+        "val_cmd_precision": 0.9074,
+        "val_cmd_mean_lat_ms": 376.2,
+        "val_nt_fa_per_hour": 115.88,
+        "val_nt_false_alarms": 29,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.45,
+        "theta2": 0.8,
+        "val_cmd_recall": 0.8438,
+        "val_cmd_precision": 0.9441,
+        "val_cmd_mean_lat_ms": 374.2,
+        "val_nt_fa_per_hour": 87.91,
+        "val_nt_false_alarms": 22,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.4,
+        "val_cmd_recall": 0.9563,
+        "val_cmd_precision": 0.8947,
+        "val_cmd_mean_lat_ms": 382.2,
+        "val_nt_fa_per_hour": 155.84,
+        "val_nt_false_alarms": 39,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.5,
+        "val_cmd_recall": 0.95,
+        "val_cmd_precision": 0.8941,
+        "val_cmd_mean_lat_ms": 382.2,
+        "val_nt_fa_per_hour": 155.84,
+        "val_nt_false_alarms": 39,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.6,
+        "val_cmd_recall": 0.925,
+        "val_cmd_precision": 0.8916,
+        "val_cmd_mean_lat_ms": 380.5,
+        "val_nt_fa_per_hour": 139.86,
+        "val_nt_false_alarms": 35,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.7,
+        "val_cmd_recall": 0.9187,
+        "val_cmd_precision": 0.913,
+        "val_cmd_mean_lat_ms": 380.3,
+        "val_nt_fa_per_hour": 115.88,
+        "val_nt_false_alarms": 29,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.5,
+        "theta2": 0.8,
+        "val_cmd_recall": 0.8375,
+        "val_cmd_precision": 0.9437,
+        "val_cmd_mean_lat_ms": 377.7,
+        "val_nt_fa_per_hour": 83.91,
+        "val_nt_false_alarms": 21,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.4,
+        "val_cmd_recall": 0.95,
+        "val_cmd_precision": 0.9102,
+        "val_cmd_mean_lat_ms": 389.2,
+        "val_nt_fa_per_hour": 143.85,
+        "val_nt_false_alarms": 36,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.5,
+        "val_cmd_recall": 0.9437,
+        "val_cmd_precision": 0.9096,
+        "val_cmd_mean_lat_ms": 389.2,
+        "val_nt_fa_per_hour": 143.85,
+        "val_nt_false_alarms": 36,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.6,
+        "val_cmd_recall": 0.9187,
+        "val_cmd_precision": 0.9074,
+        "val_cmd_mean_lat_ms": 388.5,
+        "val_nt_fa_per_hour": 131.87,
+        "val_nt_false_alarms": 33,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.7,
+        "val_cmd_recall": 0.9125,
+        "val_cmd_precision": 0.9299,
+        "val_cmd_mean_lat_ms": 388.4,
+        "val_nt_fa_per_hour": 111.89,
+        "val_nt_false_alarms": 28,
+        "strictly_feasible": false
+      },
+      {
+        "theta1": 0.55,
+        "theta2": 0.8,
+        "val_cmd_recall": 0.8375,
+        "val_cmd_precision": 0.9437,
+        "val_cmd_mean_lat_ms": 385.9,
+        "val_nt_fa_per_hour": 79.92,
+        "val_nt_false_alarms": 20,
+        "strictly_feasible": false
+      }
+    ]
+  }
+}

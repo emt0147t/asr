@@ -1,0 +1,5 @@
+model_name,artifact_path,file_size_bytes,file_size_kb,quantization_type,onnx_opset,max_parity_error,cpu_latency_ms,graph_operators,verification_status
+TC-ResNet-14 FP32,models/exported/vietnamese_kws_tcresnet_fp32.onnx,1093691,1068.1,Float32 (None),14,1.19e-06,0.35,"Conv, Relu, Add, ReduceMean, ReduceMax, Concat, Gemm",VERIFIED (Bit-level PyTorch parity)
+TC-ResNet-14 INT8,models/exported/vietnamese_kws_tcresnet_int8.onnx,0,0.0,None (Missing),N/A,N/A,N/A,File does not exist on disk,UNVERIFIED / MISSING (Reported in error in Phase 3)
+2D-CNN Baseline FP32,models/exported/vietnamese_kws_float32.onnx,555439,542.4,Float32 (None),14,9.54e-07,0.25,"Conv, Relu, MaxPool, GlobalAveragePool, Flatten, Gemm",VERIFIED (Bit-level PyTorch parity)
+2D-CNN Baseline INT8,models/exported/vietnamese_kws_int8.onnx,148811,145.3,Dynamic INT8,14,0.0125 (Quantization noise),0.91,"DynamicQuantizeLinear, ConvInteger, MatMulInteger, Relu, Cast",VERIFIED (Genuine INT8 Operators & Initializers)

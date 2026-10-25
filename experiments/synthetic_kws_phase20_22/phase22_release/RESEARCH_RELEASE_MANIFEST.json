@@ -1,0 +1,157 @@
+{
+  "manifest_version": "1.1.0",
+  "release_candidate_name": "Vietnamese_Synthetic_KWS_TCResNet14_V5_2_RC",
+  "generated_at": "2026-10-17T00:22:00Z",
+  "official_evaluation_status": "SYNTHETIC_RESEARCH_CANDIDATE_WITH_LIMITATIONS",
+  "governance": {
+    "human_speech_data_collection": "STRICTLY_BLOCKED",
+    "unapproved_audio_sources": "EXCLUDED",
+    "natural_speech_validity": "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "production_readiness": "NOT_APPROVED_FOR_PRODUCTION_OR_NATURAL_DEPLOYMENT"
+  },
+  "acoustic_model": {
+    "architecture": "VietnameseTCResNet (TC-ResNet-14)",
+    "num_classes": 6,
+    "input_shape": [1, 1, 40, 101],
+    "canonical_classes": ["TRAI", "PHAI", "LEN", "XUONG", "UNKNOWN", "SILENCE"],
+    "target_keyword_classes": ["TRAI", "PHAI", "LEN", "XUONG"],
+    "checkpoints": [
+      {
+        "seed": 42,
+        "path": "experiments/synthetic_kws_phase13_3_16/model_evaluation/checkpoints/v5_2_tcresnet14_seed_42.pt",
+        "sha256": "4310338165b3e29de6ae95d2628cdd9bf1c3cbdfd9364ba0b57d73843f4e9a19",
+        "test_accuracy": 1.0000,
+        "brier_score": 0.000575,
+        "ece": 0.001007
+      },
+      {
+        "seed": 43,
+        "path": "experiments/synthetic_kws_phase13_3_16/model_evaluation/checkpoints/v5_2_tcresnet14_seed_43.pt",
+        "sha256": "c196ac868034d67c7824f8ec4aa915dbdcccefe99abcea4f2469dc4032af158c",
+        "test_accuracy": 1.0000,
+        "brier_score": 0.000094,
+        "ece": 0.000795
+      },
+      {
+        "seed": 44,
+        "path": "experiments/synthetic_kws_phase13_3_16/model_evaluation/checkpoints/v5_2_tcresnet14_seed_44.pt",
+        "sha256": "4a2de65520c750290a489d2458ba59ff0129524273968408fdc7821c92b21631",
+        "test_accuracy": 1.0000,
+        "brier_score": 0.000919,
+        "ece": 0.002270
+      }
+    ]
+  },
+  "feature_extraction_contract": {
+    "sample_rate": 16000,
+    "window_size_samples": 400,
+    "hop_size_samples": 160,
+    "n_mels": 40,
+    "f_min": 20.0,
+    "f_max": 4000.0,
+    "power": 2.0,
+    "log_compression": "torch.log(mel_spec + 1e-6)"
+  },
+  "streaming_detector_contract": {
+    "algorithm": "Dual-threshold moving-average hysteresis state machine with refractory cooldown",
+    "tau_on": 0.80,
+    "tau_off": 0.35,
+    "smoothing_frames": 3,
+    "min_consecutive_frames": 2,
+    "cooldown_sec": 0.600,
+    "window_size_samples": 16000,
+    "hop_size_samples": 1600,
+    "decision_timestamp": "window_start_sec + 1.0s (causal end of 1.0s analysis window)",
+    "matching_tolerance_sec": 0.600
+  },
+  "dataset_release_candidate": {
+    "generator_version": "v5.2-candidate",
+    "total_samples": 3000,
+    "manifest_path": "experiments/synthetic_kws_phase13_3_16/dataset_release_candidate/manifest.csv",
+    "manifest_sha256": "988553924acdc64ccbdcac448124a9c4919f974f242bbf4d5a55673ac323d2fc",
+    "split_counts": {
+      "train": 2100,
+      "val": 450,
+      "test": 450
+    },
+    "canonical_class_counts": {
+      "TRAI": 500,
+      "PHAI": 500,
+      "LEN": 500,
+      "XUONG": 500,
+      "UNKNOWN": 500,
+      "SILENCE": 500
+    },
+    "regeneration_status": {
+      "verified_matches": 3000,
+      "pass_rate_pct": 100.0,
+      "elapsed_seconds": 101.0
+    }
+  },
+  "nuisance_diagnostic_probes": {
+    "task1_six_class": {
+      "chance_level": 0.1667,
+      "metadata_only_test_acc": 0.5200,
+      "strict_nuisance_test_acc": 0.5267,
+      "spectral_phonetic_test_acc": 0.4156,
+      "neural_tcresnet14_test_acc": 1.0000
+    },
+    "task2_four_target_only": {
+      "chance_level": 0.2500,
+      "metadata_only_test_acc": 0.5267,
+      "strict_nuisance_test_acc": 0.5500,
+      "spectral_phonetic_test_acc": 0.5000,
+      "neural_tcresnet14_test_acc": 1.0000
+    },
+    "task3_binary_target_present": {
+      "majority_baseline": 0.6667,
+      "balanced_prior_baseline": 0.5000,
+      "metadata_only_test_acc": 0.8022,
+      "strict_nuisance_test_acc": 0.8089,
+      "spectral_phonetic_test_acc": 0.7156,
+      "neural_tcresnet14_test_acc": 1.0000
+    },
+    "interpretation": "Nuisance and metadata probes achieve ~52% on 6-class classification primarily through SILENCE separation (100% correct, 75/75) and coarse active-speech envelope detection. On the 4-target keyword discrimination task, the strict nuisance probe achieves 55.00% overall accuracy with class-dependent performance (LEN: 69/75, PHAI: 39/75, TRAI: 34/75, XUONG: 23/75), indicating potential residual nuisance associations without establishing causality; descriptive subset accuracy on the 150 TRAI and PHAI ground-truth samples is 48.67% (73/150), with a conditional ratio of true TRAI among predicted TRAI on that subset of 50.75% (34/67) and full-task TRAI precision of 37.78% (34/90). The metadata probe outputs identical aggregate prediction counts ([30, 45, 0, 0]) for true TRAI and true PHAI. In contrast, TC-ResNet-14 achieves 100.00% accuracy on the frozen test set, demonstrating strong class separation on the tested synthetic distributions, though controlled causal phonetic interventions have not been conducted and validity on natural speech has not been established."
+  },
+  "phase21_evaluation_artifacts": {
+    "heldout_speaker_manifest": {
+      "path": "experiments/synthetic_kws_phase20_22/phase21_robustness/phase21_heldout_manifest.csv",
+      "sha256": "c391e037f470f89ab00af473857e2f357e7509deb94f4620c6baf8f66b2f9b5f",
+      "profiles_count": 24,
+      "clips_count": 288,
+      "accuracy": 1.0000
+    },
+    "target_absent_streaming_csv": {
+      "path": "experiments/synthetic_kws_phase20_22/phase21_robustness/stream_level_target_absent.csv",
+      "sha256": "1b55cc4dc459f5b02e28ea078ea6d243476b95da94c3ae7f6e0e44977217d351",
+      "duration_sec": 10800.0,
+      "hours": 3.0,
+      "streams": 6,
+      "false_triggers": 0,
+      "fp_per_hour": 0.0
+    },
+    "target_present_streaming_csv": {
+      "path": "experiments/synthetic_kws_phase20_22/phase21_robustness/stream_level_target_present.csv",
+      "sha256": "e08f0bd8f59fa696c10a1647d1af6370391437e0d799be8c3c0cacff69030da7",
+      "targets_count": 200,
+      "detected": 200,
+      "recall_pct": 100.0,
+      "precision_pct": 100.0
+    },
+    "target_present_events_csv": {
+      "path": "experiments/synthetic_kws_phase20_22/phase21_robustness/event_level_target_present.csv",
+      "sha256": "6c7cdb6c02c7392ca0321f8e0de6179108682ead3fc6af3cbcac34632642c362"
+    },
+    "counterfactual_study_csv": {
+      "path": "experiments/synthetic_kws_phase20_22/phase21_robustness/counterfactual_trai_phai_results.csv",
+      "sha256": "3a91f374b79701aeff1daea6584a2f47bba3327c13628d2db9753a23362f1fcf",
+      "matched_pairs": 50,
+      "pair_accuracy_pct": 100.0
+    }
+  },
+  "reproducible_entry_points": {
+    "audit": "python experiments/synthetic_kws_phase20_22/phase22_release/reproduce_audit.py",
+    "robustness": "python experiments/synthetic_kws_phase20_22/phase22_release/reproduce_robustness.py",
+    "streaming": "python experiments/synthetic_kws_phase20_22/phase22_release/reproduce_streaming.py"
+  }
+}

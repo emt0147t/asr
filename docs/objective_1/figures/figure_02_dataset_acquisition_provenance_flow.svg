@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .code { font-family: 'JetBrains Mono', Consolas, Monaco, monospace; }
+    .shadow { filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.06)); }
+    .card-shadow { filter: drop-shadow(0px 2px 4px rgba(15, 23, 42, 0.08)); }
+</style>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0EA5E9"/>
+    </marker>
+    <marker id="arrowRose" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#F43F5E"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bgGrad2)" rx="16"/>
+
+  <text x="50" y="50" font-size="24" font-weight="700" fill="#F8FAFC">Figure 2: Dataset Acquisition, Provenance Tracking &amp; Ingestion Lineage</text>
+  <text x="50" y="75" font-size="14" fill="#94A3B8">Audited Data Sources: Synthetic Calibration Commands, Google FLEURS Negatives, Husein Noise &bull; 0 Genuine Human Takes</text>
+
+  <!-- Left: Raw Audio Ingestion Tracks -->
+  <g transform="translate(50, 105)">
+    <rect width="320" height="250" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+    <path d="M 0 10 Q 0 0 10 0 L 310 0 Q 320 0 320 10 L 320 35 L 0 35 Z" fill="#0369A1" opacity="0.4"/>
+    <text x="160" y="24" font-size="13" font-weight="700" fill="#38BDF8" text-anchor="middle">APPROVED PIPELINE AUDIO (2,099 WAVs)</text>
+    
+    <rect x="15" y="45" width="290" height="55" rx="6" fill="#0F172A" stroke="#0284C7"/>
+    <text x="25" y="65" font-size="12" font-weight="600" fill="#E2E8F0">1. Parametric Synthetic Commands</text>
+    <text x="25" y="82" font-size="11" fill="#38BDF8" class="code">TRAI, PHAI, LEN, XUONG (1,000 files)</text>
+    <text x="25" y="94" font-size="10" fill="#94A3B8">Source: calibration_acoustic_generator_v1</text>
+
+    <rect x="15" y="110" width="290" height="55" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="25" y="130" font-size="12" font-weight="600" fill="#E2E8F0">2. Speech Distractors (UNKNOWN)</text>
+    <text x="25" y="147" font-size="11" fill="#94A3B8" class="code">Google FLEURS (579) + Confusing Words (120)</text>
+    <text x="25" y="159" font-size="10" fill="#64748B">Total: 699 approved files &bull; License: CC-BY-4.0</text>
+
+    <rect x="15" y="175" width="290" height="55" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="25" y="195" font-size="12" font-weight="600" fill="#E2E8F0">3. Environmental Noise (SILENCE)</text>
+    <text x="25" y="212" font-size="11" fill="#94A3B8" class="code">husein_mic_noise (400 approved files)</text>
+    <text x="25" y="224" font-size="10" fill="#64748B">License: CC-BY-4.0 &bull; Handling, rumble, quiet</text>
+  </g>
+
+  <!-- Track B: Human Field Recording Campaign Track -->
+  <g transform="translate(50, 380)">
+    <rect width="320" height="280" rx="10" fill="#1E293B" stroke="#F43F5E" stroke-width="1.5"/>
+    <path d="M 0 10 Q 0 0 10 0 L 310 0 Q 320 0 320 10 L 320 35 L 0 35 Z" fill="#BE123C" opacity="0.3"/>
+    <text x="160" y="24" font-size="13" font-weight="700" fill="#FB7185" text-anchor="middle">HUMAN FIELD CAMPAIGN (CURRENT STATE)</text>
+
+    <rect x="15" y="45" width="290" height="60" rx="6" fill="#0F172A" stroke="#F43F5E"/>
+    <text x="25" y="65" font-size="12" font-weight="600" fill="#FB7185">Consent Ledger Status</text>
+    <text x="25" y="82" font-size="11" fill="#CBD5E1">Recorded: 2 entries in ledger</text>
+    <text x="25" y="97" font-size="10" fill="#F43F5E" font-weight="600">&bull; ALL 2 ARE HARNESS FIXTURES (0 genuine)</text>
+
+    <rect x="15" y="115" width="290" height="60" rx="6" fill="#0F172A" stroke="#F43F5E"/>
+    <text x="25" y="135" font-size="12" font-weight="600" fill="#FB7185">Field Collection Manifest</text>
+    <text x="25" y="152" font-size="11" fill="#CBD5E1">Manifest entries: 74 test fixture takes</text>
+    <text x="25" y="167" font-size="10" fill="#F43F5E" font-weight="600">&bull; ALL 74 ARE HARNESS FIXTURES (0 genuine)</text>
+
+    <rect x="15" y="185" width="290" height="80" rx="6" fill="#2A1215" stroke="#E11D48"/>
+    <text x="25" y="205" font-size="12" font-weight="700" fill="#FDA4AF">Audited Human Speech: 0 Utterances</text>
+    <text x="25" y="222" font-size="11" fill="#FECDD3">Target Quota: 1,200 genuine utterances</text>
+    <text x="25" y="238" font-size="10" fill="#FDA4AF">Dialect Target: 50% North, 25% Central, 25% South</text>
+    <text x="25" y="253" font-size="10" fill="#FECDD3">Completion: 0.0% &bull; CRITICAL P0 BLOCKER</text>
+  </g>
+
+  <!-- Middle: Ingestion Quality Gate -->
+  <g transform="translate(420, 105)">
+    <rect width="360" height="555" rx="10" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+    <path d="M 0 10 Q 0 0 10 0 L 350 0 Q 360 0 360 10 L 360 35 L 0 35 Z" fill="#334155" opacity="0.6"/>
+    <text x="180" y="24" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">INGESTION QUALITY GATE (AUDIT RULES)</text>
+
+    <rect x="20" y="50" width="320" height="75" rx="6" fill="#0F172A" stroke="#64748B"/>
+    <text x="35" y="72" font-size="12" font-weight="600" fill="#38BDF8">1. Acoustic Format Standardization</text>
+    <text x="35" y="90" font-size="11" fill="#CBD5E1">&bull; Sample Rate: Exactly 16,000 Hz</text>
+    <text x="35" y="105" font-size="11" fill="#CBD5E1">&bull; Channels: Mono &bull; Depth: 16-bit PCM</text>
+    <text x="35" y="118" font-size="10" fill="#94A3B8">&bull; Length: Exactly 16,000 samples (1.000 s)</text>
+
+    <rect x="20" y="135" width="320" height="115" rx="6" fill="#0F172A" stroke="#64748B"/>
+    <text x="35" y="157" font-size="12" font-weight="600" fill="#FCD34D">2. Automated Quality Filtering</text>
+    <text x="35" y="175" font-size="11" fill="#CBD5E1">&bull; Clipping Check: &ge; 3 consecutive samples at 0 dBFS</text>
+    <text x="35" y="190" font-size="11" fill="#CBD5E1">&bull; Silence Floor: RMS &lt; -45.0 dBFS &rarr; Quarantined</text>
+    <text x="35" y="205" font-size="11" fill="#CBD5E1">&bull; Duration Check: 0.25s &le; duration &le; 5.0s</text>
+    <text x="35" y="220" font-size="11" fill="#CBD5E1">&bull; 141 FLEURS raw clips quarantined for low RMS</text>
+    <text x="35" y="235" font-size="10" fill="#94A3B8">&bull; Format: WAV / M4A (M4A decoding verified in tests)</text>
+
+    <rect x="20" y="260" width="320" height="95" rx="6" fill="#0F172A" stroke="#64748B"/>
+    <text x="35" y="282" font-size="12" font-weight="600" fill="#34D399">3. Integrity &amp; Provenance Checks</text>
+    <text x="35" y="300" font-size="11" fill="#CBD5E1">&bull; SHA-256 Collision Check: Prevents duplicates</text>
+    <text x="35" y="315" font-size="11" fill="#CBD5E1">&bull; Consent Verification: Speaker ID must exist in ledger</text>
+    <text x="35" y="330" font-size="11" fill="#CBD5E1">&bull; Path Traversal Protection: Sanitizes filenames</text>
+    <text x="35" y="343" font-size="10" fill="#94A3B8">&bull; Metadata validation: dialect, device, environment</text>
+
+    <rect x="20" y="365" width="320" height="90" rx="6" fill="#0F172A" stroke="#64748B"/>
+    <text x="35" y="387" font-size="12" font-weight="600" fill="#C084FC">4. Leakage-Proof Splitting Protocol</text>
+    <text x="35" y="405" font-size="11" fill="#CBD5E1">&bull; Speaker-Disjoint Partitioning (0 speaker leak)</text>
+    <text x="35" y="420" font-size="11" fill="#CBD5E1">&bull; Train (134 spk), Val (51 spk), Test (148 spk)</text>
+    <text x="35" y="435" font-size="11" fill="#CBD5E1">&bull; Frozen Test Manifest (SHA-256 locked)</text>
+    <text x="35" y="448" font-size="10" fill="#94A3B8">&bull; Total Approved Pool = 2,099 Files</text>
+
+    <rect x="20" y="465" width="150" height="75" rx="6" fill="#2A1215" stroke="#E11D48"/>
+    <text x="95" y="488" font-size="11" font-weight="700" fill="#FDA4AF" text-anchor="middle">QUARANTINE</text>
+    <text x="95" y="508" font-size="10" fill="#FECDD3" text-anchor="middle">141 raw FLEURS clips</text>
+    <text x="95" y="525" font-size="9" fill="#94A3B8" text-anchor="middle">Excluded from splits</text>
+
+    <rect x="190" y="465" width="150" height="75" rx="6" fill="#064E3B" stroke="#10B981"/>
+    <text x="265" y="488" font-size="11" font-weight="700" fill="#A7F3D0" text-anchor="middle">APPROVED</text>
+    <text x="265" y="508" font-size="10" fill="#6EE7B7" text-anchor="middle">2,099 Clean WAVs</text>
+    <text x="265" y="525" font-size="9" fill="#94A3B8" text-anchor="middle">Standardized 16k PCM</text>
+  </g>
+
+  <line x1="370" y1="230" x2="420" y2="230" stroke="#0EA5E9" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  <line x1="370" y1="520" x2="420" y2="400" stroke="#F43F5E" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowRose)"/>
+
+  <!-- Right: Generated Manifest Manifests -->
+  <g transform="translate(830, 105)">
+    <rect width="320" height="555" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+    <path d="M 0 10 Q 0 0 10 0 L 310 0 Q 320 0 320 10 L 320 35 L 0 35 Z" fill="#0284C7" opacity="0.3"/>
+    <text x="160" y="24" font-size="13" font-weight="700" fill="#38BDF8" text-anchor="middle">ACTUAL MANIFEST ARTIFACTS</text>
+
+    <rect x="15" y="50" width="290" height="85" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="30" y="72" font-size="12" font-weight="600" fill="#E2E8F0">source_registry_v2.csv</text>
+    <text x="30" y="90" font-size="11" fill="#38BDF8">2,240 Total Registered Records</text>
+    <text x="30" y="105" font-size="10" fill="#94A3B8">2,099 Approved &bull; 141 Quarantined / Rejected</text>
+    <text x="30" y="118" font-size="9" fill="#64748B">1,000 Commands &bull; 699 Unknown &bull; 400 Silence</text>
+
+    <rect x="15" y="145" width="290" height="75" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="30" y="167" font-size="12" font-weight="600" fill="#E2E8F0">train_manifest_v2.csv</text>
+    <text x="30" y="185" font-size="11" fill="#38BDF8">1,281 Approved Train Utterances</text>
+    <text x="30" y="200" font-size="10" fill="#94A3B8">TRAI/PHAI/LEN/XUONG: 178 each (712 total)</text>
+    <text x="30" y="213" font-size="9" fill="#64748B">UNKNOWN: 319 &bull; SILENCE: 250</text>
+
+    <rect x="15" y="230" width="290" height="75" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="30" y="252" font-size="12" font-weight="600" fill="#E2E8F0">val_manifest_v2.csv</text>
+    <text x="30" y="270" font-size="11" fill="#38BDF8">284 Approved Val Utterances</text>
+    <text x="30" y="285" font-size="10" fill="#94A3B8">TRAI/PHAI/LEN/XUONG: 36 each (144 total)</text>
+    <text x="30" y="298" font-size="9" fill="#64748B">UNKNOWN: 80 &bull; SILENCE: 60</text>
+
+    <rect x="15" y="315" width="290" height="110" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="1.5"/>
+    <text x="30" y="337" font-size="12" font-weight="700" fill="#34D399">test_manifest_v2.csv (FROZEN)</text>
+    <text x="30" y="355" font-size="11" fill="#FFFFFF">534 Evaluated Utterances</text>
+    <text x="30" y="370" font-size="10" fill="#94A3B8">TRAI/PHAI/LEN/XUONG: 36 each (144 total)</text>
+    <text x="30" y="383" font-size="10" fill="#94A3B8">UNKNOWN: 300 &bull; SILENCE: 90</text>
+    <text x="30" y="398" font-size="9" fill="#34D399" class="code">SHA256: 9E3904C8EA427244F7280A41...</text>
+    <text x="30" y="413" font-size="9" fill="#6EE7B7">Cryptographically Locked Invariant</text>
+
+    <rect x="15" y="435" width="290" height="105" rx="6" fill="#0B132B" stroke="#0284C7"/>
+    <text x="30" y="457" font-size="11" font-weight="700" fill="#38BDF8">AUDITED INTEGRITY STATUS</text>
+    <text x="30" y="475" font-size="10" fill="#E2E8F0">&bull; 0 missing audio files on disk (2,099 found)</text>
+    <text x="30" y="490" font-size="10" fill="#E2E8F0">&bull; Exact label mapping: [0..5] alignment</text>
+    <text x="30" y="505" font-size="10" fill="#E2E8F0">&bull; Disjoint speaker partitions confirmed (0 leak)</text>
+    <text x="30" y="520" font-size="10" fill="#F43F5E">&bull; Core Blocker: 100% synthetic commands</text>
+  </g>
+
+  <line x1="780" y1="380" x2="830" y2="380" stroke="#0EA5E9" stroke-width="2" marker-end="url(#arrowCyan)"/>
+</svg>

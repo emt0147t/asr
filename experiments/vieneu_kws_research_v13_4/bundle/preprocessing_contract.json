@@ -1,0 +1,41 @@
+{
+  "contract_name": "Vietnamese_KWS_Preprocessing_Contract_v13_4_Final",
+  "version": "13.4.0",
+  "description": "Authoritative preprocessing contract for Vietnamese KWS Candidate v11 matching training-time normalization and Phase 13.1 remediated specification",
+  "audio_input": {
+    "sample_rate_hz": 16000,
+    "channels": 1,
+    "format": "PCM_FLOAT32",
+    "duration_seconds": 1.0,
+    "num_samples": 16000,
+    "peak_normalization": {
+      "policy": "clamped_only_if_max_abs_greater_than_1.0",
+      "floor_amplification_allowed": false,
+      "rule": "if max(abs(audio)) > 1.0: audio = audio / max(abs(audio)); else audio is unmodified"
+    },
+    "crop_pad_policy": "pad_right_or_truncate"
+  },
+  "log_mel_spectrogram": {
+    "sample_rate": 16000,
+    "n_fft": 512,
+    "win_length": 400,
+    "hop_length": 160,
+    "window_type": "hann",
+    "center": true,
+    "pad_mode": "reflect",
+    "power": 2.0,
+    "n_mels": 40,
+    "f_min_hz": 20.0,
+    "f_max_hz": 8000.0,
+    "norm": "slaney",
+    "mel_scale": "slaney",
+    "log_compression_eps": 1e-06,
+    "output_tensor_shape": [1, 1, 40, 101]
+  },
+  "decision_logic": {
+    "num_classes": 5,
+    "class_order": ["TRAI", "PHAI", "LEN", "XUONG", "REJECT"],
+    "calibrated_theta_cmd": 0.20,
+    "rule": "If max(prob[TRAI], prob[PHAI], prob[LEN], prob[XUONG]) >= theta_cmd then predict argmax command, else REJECT."
+  }
+}

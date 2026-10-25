@@ -1,0 +1,18 @@
+{
+  "selected_algorithm": "SpeechBandRatioVAD",
+  "selection_rationale": "Selected based on pre-registered criteria: highest Stage A Segmentation F1 (0.6551 vs 0.1299 baseline), lowest merge count (6 vs 104 baseline), highest exact-sequence accuracy on E1 (61.67% vs 16.67%), and lowest P95 latency (460ms vs 1060ms).",
+  "phase": 15,
+  "date_selected": "2026-10-24",
+  "status": "FROZEN_FOR_LOCKED_TEST_EVALUATION",
+  "parameters": {
+    "algorithm": "SpeechBandRatioVAD",
+    "sample_rate": 16000,
+    "speech_band_hz": [300.0, 3400.0],
+    "min_speech_band_ratio": 0.32,
+    "energy_threshold_db": -46.0,
+    "hangover_ms": 140,
+    "preroll_ms": 150,
+    "min_speech_duration_ms": 100,
+    "max_segment_duration_ms": 1200
+  }
+}

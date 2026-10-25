@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "phase": "PHASE 40 Cluster Bootstrap Forensic Audit",
+    "eval_corpus": "edge_tts_eval_v2",
+    "total_clips": 480,
+    "total_synthesis_instances": 120,
+    "total_base_text_clusters": 30,
+    "bootstrap_iterations": 10000,
+    "deterministic_seed": 42
+  },
+  "exact_one_to_one_alignment_verified": true,
+  "source_group_hierarchy": {
+    "commands": {
+      "classes": [
+        "TRAI",
+        "PHAI",
+        "LEN",
+        "XUONG"
+      ],
+      "base_texts_per_class": 1,
+      "synthesis_instances_per_class": 4,
+      "clips_per_class": 16,
+      "total_command_texts": 4,
+      "total_command_synths": 16,
+      "total_command_clips": 64
+    },
+    "reject": {
+      "classes": [
+        "REJECT"
+      ],
+      "base_texts": 26,
+      "synthesis_instances": 104,
+      "clips": 416
+    }
+  },
+  "four_complementary_estimands": {
+    "estimand_A_observed": {
+      "name": "Original Observed Macro-F1 Difference",
+      "d2_h1_macro_f1": 0.8271553287033162,
+      "e1_macro_f1": 0.561519146264909,
+      "delta_percentage_points": 26.563618243840725,
+      "relative_percentage_improvement": 47.30670079646537,
+      "description": "Direct point estimate on full evaluated corpus."
+    },
+    "estimand_B_source_text_cluster": {
+      "name": "Source-Text Cluster Bootstrap Sensitivity Analysis (30 Clusters)",
+      "clustering_unit": "base_text (4 command texts, 16 phonetic hard negatives, 10 general OOVs)",
+      "iterations": 10000,
+      "zero_penalized": {
+        "mean_delta_pp": 14.329596322013344,
+        "ci_95_pp": [
+          1.5699418057573038,
+          27.993596229274498
+        ],
+        "empirical_tail_probability": 0.015,
+        "zero_count": 150
+      },
+      "present_only": {
+        "mean_delta_pp": 22.32914920571835,
+        "ci_95_pp": [
+          5.190553999377533,
+          38.725292456635735
+        ],
+        "empirical_tail_probability": 0.015,
+        "zero_count": 150
+      },
+      "mechanistic_explanation": "In 30-cluster unstratified resampling, the probability that any single command class is absent is (29/30)^30 = 36.17%. The probability that at least one of the 4 command classes is absent is 1 - (1 - 0.3617)^4 = 83.40%. When absent classes are assigned F1 = 0, D2_H1 suffers severe artificial deflation (from ~94% down to 0), causing the cluster-bootstrap mean delta to collapse to +14.48 pp. When evaluated on present classes only, the cluster-bootstrap mean delta rises to +22.48 pp."
+    },
+    "estimand_C_synthesis_instance_cluster": {
+      "name": "Synthesis-Instance Cluster Bootstrap (120 Groups)",
+      "clustering_unit": "clean_synthesis_waveform (text x voice x rate, grouping 4 SNR variants)",
+      "iterations": 10000,
+      "mean_delta_pp": 26.031037627140027,
+      "ci_95_pp": [
+        15.596447603591722,
+        37.27465631970716
+      ],
+      "empirical_tail_probability": 0.0,
+      "zero_count": 0,
+      "p_bound": "p < 0.0001",
+      "methodological_merit": "Groups the 4 derivative SNR versions of each clean synthesis waveform together, avoiding false independence between noise slices while providing 4 independent synthesis instances per command class. Reconciles cleanly with the observed +26.56 pp delta (mean delta: +26.03 pp)."
+    },
+    "estimand_D_clip_iid_diagnostic": {
+      "name": "Clip-Level i.i.d. Bootstrap Diagnostic (N=480)",
+      "clustering_unit": "individual_clip",
+      "iterations": 10000,
+      "mean_delta_pp": 26.63406014951565,
+      "ci_95_pp": [
+        20.453347852547374,
+        33.48498650077744
+      ],
+      "empirical_tail_probability": 0.0,
+      "zero_count": 0,
+      "p_bound": "p < 0.0001",
+      "limitation": "Diagnostic only; underestimates variance due to acoustic correlation across SNR/rate versions."
+    }
+  },
+  "population_level_ci_limitation": "Because the isolated test corpus contains exactly ONE base text per command class ('trái', 'phải', 'lên', 'xuống'), it is statistically impossible to construct a population-level confidence interval across all Vietnamese lexical realizations of commands. All reported confidence intervals apply strictly to performance across speaker voices, speaking rates, and acoustic noise environments for these specific four lexical tokens. They do not generalize to novel command carrier phrases or synonyms.",
+  "audit_of_p_value_0_0147": {
+    "derivation": "Empirical one-sided tail probability from 147 / 10,000 iterations where Delta Macro-F1 <= 0 in zero-penalized text-cluster bootstrap.",
+    "nature": "Empirical bootstrap tail fraction, not a formally calibrated studentized or permutation p-value.",
+    "direction": "One-sided (testing D2 > E1).",
+    "preregistration_status": "Pre-registered in Phase 36 audit as directional superiority test."
+  }
+}

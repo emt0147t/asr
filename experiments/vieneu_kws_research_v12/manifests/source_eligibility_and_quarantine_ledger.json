@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-25T01:20:00+07:00",
+    "phase": "Phase 28-31 Stage B (D2 Assembly)",
+    "total_ledger_records": 6688,
+    "ledger_csv_sha256": "31572fc3e9d26b495625e0d7ae6811a92db3c3fc7b284af14ec29aba15f4091c"
+  },
+  "status_summary": {
+    "APPROVED_TRAINING_BASELINE": 5440,
+    "APPROVED_TRAINING_MATERIAL (EXPOSED_DEV_VOICE)": 592,
+    "APPROVED_TRAINING_MATERIAL (EDGE_TTS_AUGMENTED)": 544,
+    "QUARANTINED_TEST_DATA": 112
+  },
+  "engine_summary": {
+    "Environmental/Acoustic": 3618,
+    "VieNeu-TTS v3 Turbo": 1142,
+    "VieNeu-TTS v3 Nano": 704,
+    "FLEURS": 680,
+    "Microsoft Edge-TTS 7.3.1": 544
+  }
+}

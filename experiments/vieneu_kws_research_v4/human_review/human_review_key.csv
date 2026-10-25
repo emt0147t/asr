@@ -1,0 +1,41 @@
+blind_id,source_type,ground_truth_label,true_text,voice_id,audio_reference,reference_timestamp_sec
+BLIND_REV_001,TARGET_COMMAND,TRAI,TRAI,Kim Thanh,test_stream_continuous_commands.wav,31.921
+BLIND_REV_002,TARGET_COMMAND,TRAI,TRAI,Kim Thanh,test_stream_continuous_commands.wav,11.179
+BLIND_REV_003,TARGET_COMMAND,TRAI,TRAI,Quốc Tuấn,test_stream_continuous_commands.wav,35.646
+BLIND_REV_004,HARD_NEGATIVE_BOUNDARY,UNKNOWN,trãi nghiệm,Quốc Tuấn,test_stream_continuous_nontarget_3h.wav,1344.784
+BLIND_REV_005,NON_TARGET_DISTRACTOR,UNKNOWN,áo len,Kim Thanh,test_stream_continuous_nontarget_3h.wav,150.257
+BLIND_REV_006,NON_TARGET_DISTRACTOR,UNKNOWN,sợi len,Kim Thanh,test_stream_continuous_nontarget_3h.wav,142.933
+BLIND_REV_007,HARD_NEGATIVE_BOUNDARY,UNKNOWN,gãi,Kim Thanh,test_stream_continuous_nontarget_3h.wav,339.285
+BLIND_REV_008,TARGET_COMMAND,TRAI,TRAI,Quốc Tuấn,test_stream_continuous_commands.wav,39.034
+BLIND_REV_009,TARGET_COMMAND,TRAI,TRAI,Kim Thanh,test_stream_continuous_commands.wav,14.361
+BLIND_REV_010,HARD_NEGATIVE_BOUNDARY,UNKNOWN,lo,Kim Thanh,test_stream_continuous_nontarget_3h.wav,663.294
+BLIND_REV_011,NON_TARGET_DISTRACTOR,UNKNOWN,lèn đá,Kim Thanh,test_stream_continuous_nontarget_3h.wav,108.213
+BLIND_REV_012,NON_TARGET_DISTRACTOR,UNKNOWN,xướng ca,Kim Thanh,test_stream_continuous_nontarget_3h.wav,186.114
+BLIND_REV_013,NON_TARGET_DISTRACTOR,UNKNOWN,lẻn vào,Kim Thanh,test_stream_continuous_nontarget_3h.wav,131.538
+BLIND_REV_014,NON_TARGET_DISTRACTOR,UNKNOWN,phái đoàn,Kim Thanh,test_stream_continuous_nontarget_3h.wav,72.392
+BLIND_REV_015,NON_TARGET_DISTRACTOR,UNKNOWN,trãi nghiệm,Kim Thanh,test_stream_continuous_nontarget_3h.wav,6.29
+BLIND_REV_016,HARD_NEGATIVE_BOUNDARY,UNKNOWN,bước xuống,Kim Thanh,test_stream_continuous_nontarget_3h.wav,1009.248
+BLIND_REV_017,HARD_NEGATIVE_BOUNDARY,UNKNOWN,ghi chú,Kim Thanh,test_stream_continuous_nontarget_3h.wav,1189.646
+BLIND_REV_018,NON_TARGET_DISTRACTOR,UNKNOWN,xưởng,Kim Thanh,test_stream_continuous_nontarget_3h.wav,165.397
+BLIND_REV_019,NON_TARGET_DISTRACTOR,UNKNOWN,trại nuôi,Kim Thanh,test_stream_continuous_nontarget_3h.wav,14.385
+BLIND_REV_020,NON_TARGET_DISTRACTOR,UNKNOWN,lén lút,Kim Thanh,test_stream_continuous_nontarget_3h.wav,115.698
+BLIND_REV_021,NON_TARGET_DISTRACTOR,UNKNOWN,thời gian phai,Kim Thanh,test_stream_continuous_nontarget_3h.wav,95.439
+BLIND_REV_022,HARD_NEGATIVE_BOUNDARY,UNKNOWN,trắng,Kim Thanh,test_stream_continuous_nontarget_3h.wav,501.862
+BLIND_REV_023,HARD_NEGATIVE_BOUNDARY,UNKNOWN,xuồng ba lá,Quốc Tuấn,test_stream_continuous_nontarget_3h.wav,1528.185
+BLIND_REV_024,NON_TARGET_DISTRACTOR,UNKNOWN,dòng xuồng,Kim Thanh,test_stream_continuous_nontarget_3h.wav,192.812
+BLIND_REV_025,NON_TARGET_DISTRACTOR,UNKNOWN,phôi phai,Kim Thanh,test_stream_continuous_nontarget_3h.wav,82.263
+BLIND_REV_026,NON_TARGET_DISTRACTOR,UNKNOWN,con trai,Kim Thanh,test_stream_continuous_nontarget_3h.wav,43.101
+BLIND_REV_027,HARD_NEGATIVE_BOUNDARY,UNKNOWN,trắng,Quốc Tuấn,test_stream_continuous_nontarget_3h.wav,1853.08
+BLIND_REV_028,HARD_NEGATIVE_BOUNDARY,UNKNOWN,phải biết,Kim Thanh,test_stream_continuous_nontarget_3h.wav,824.964
+BLIND_REV_029,TARGET_COMMAND,TRAI,TRAI,Kim Thanh,test_stream_continuous_commands.wav,8.554
+BLIND_REV_030,TARGET_COMMAND,TRAI,TRAI,Kim Thanh,test_stream_continuous_commands.wav,3.405
+BLIND_REV_031,HARD_NEGATIVE_BOUNDARY,UNKNOWN,gãi,Quốc Tuấn,test_stream_continuous_nontarget_3h.wav,1683.332
+BLIND_REV_032,NON_TARGET_DISTRACTOR,UNKNOWN,xuồng ba lá,Kim Thanh,test_stream_continuous_nontarget_3h.wav,176.564
+BLIND_REV_033,TARGET_COMMAND,TRAI,TRAI,Kim Thanh,test_stream_continuous_commands.wav,16.907
+BLIND_REV_034,TARGET_COMMAND,TRAI,TRAI,Kim Thanh,test_stream_continuous_commands.wav,20.854
+BLIND_REV_035,TARGET_COMMAND,TRAI,TRAI,Kim Thanh,test_stream_continuous_commands.wav,28.194
+BLIND_REV_036,NON_TARGET_DISTRACTOR,UNKNOWN,trái mùa,Kim Thanh,test_stream_continuous_nontarget_3h.wav,22.027
+BLIND_REV_037,NON_TARGET_DISTRACTOR,UNKNOWN,trải dài,Kim Thanh,test_stream_continuous_nontarget_3h.wav,34.086
+BLIND_REV_038,NON_TARGET_DISTRACTOR,UNKNOWN,phai mờ,Kim Thanh,test_stream_continuous_nontarget_3h.wav,59.164
+BLIND_REV_039,TARGET_COMMAND,TRAI,TRAI,Kim Thanh,test_stream_continuous_commands.wav,5.941
+BLIND_REV_040,TARGET_COMMAND,TRAI,TRAI,Kim Thanh,test_stream_continuous_commands.wav,24.255

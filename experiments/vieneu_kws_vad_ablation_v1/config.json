@@ -1,0 +1,89 @@
+{
+  "experiment_name": "vieneu_kws_vad_ablation_v1",
+  "version": "1.0.0",
+  "workspace": "D:\\trainidentificationaudio",
+  "governance": {
+    "subjective_intelligibility_status": "PENDING_HUMAN_LISTENER_VERIFICATION",
+    "domain_validation_status": "NOT_VALIDATED_ON_NATURAL_SPEECH"
+  },
+  "dataset": {
+    "source_dataset": "experiments/synthetic_kws_dataset_vieneu_6class_v2",
+    "master_manifest": "experiments/synthetic_kws_dataset_vieneu_6class_v2/manifest.csv",
+    "val_manifest": "experiments/synthetic_kws_dataset_vieneu_6class_v2/splits/val_manifest.csv",
+    "test_manifest": "experiments/synthetic_kws_dataset_vieneu_6class_v2/splits/test_manifest.csv",
+    "streaming_assets": {
+      "val_commands_wav": "experiments/vieneu_kws_v2/streaming_simulation/val_stream_continuous_commands.wav",
+      "val_commands_gt": "experiments/vieneu_kws_v2/streaming_simulation/val_stream_commands_ground_truth.csv",
+      "val_nontarget_wav": "experiments/vieneu_kws_v2/streaming_simulation/val_stream_continuous_nontarget.wav",
+      "val_nontarget_gt": "experiments/vieneu_kws_v2/streaming_simulation/val_stream_nontarget_ground_truth.csv",
+      "test_commands_wav": "experiments/vieneu_kws_v2/streaming_simulation/test_stream_continuous_commands.wav",
+      "test_commands_gt": "experiments/vieneu_kws_v2/streaming_simulation/test_stream_commands_ground_truth.csv",
+      "test_nontarget_wav": "experiments/vieneu_kws_v2/streaming_simulation/test_stream_continuous_nontarget.wav",
+      "test_nontarget_gt": "experiments/vieneu_kws_v2/streaming_simulation/test_stream_nontarget_ground_truth.csv"
+    }
+  },
+  "evaluated_conditions": [
+    "A_stage1_alone",
+    "B_cascade_no_vad",
+    "C_stage1_with_vad",
+    "D_cascade_with_vad"
+  ],
+  "vad_configurations": {
+    "energy_gate": {
+      "type": "ShortTimeEnergyGate",
+      "frame_len_samples": 400,
+      "hop_len_samples": 160,
+      "energy_threshold_db": -45.0,
+      "min_speech_frames": 5
+    },
+    "speech_band_vad": {
+      "type": "SpeechBandFormantVAD",
+      "sample_rate": 16000,
+      "speech_band_hz": [300.0, 3400.0],
+      "min_speech_band_ratio": 0.35,
+      "min_energy_db": -48.0,
+      "hangover_frames": 10
+    }
+  },
+  "stage1": {
+    "model_type": "VietnameseKWSNet",
+    "input_samples": 16000,
+    "hop_samples": 1600,
+    "checkpoints": {
+      "seed42": "experiments/vieneu_kws_v2/checkpoints/best_checkpoint_seed42.pt",
+      "seed43": "experiments/vieneu_kws_v2/checkpoints/best_checkpoint_seed43.pt",
+      "seed44": "experiments/vieneu_kws_v2/checkpoints/best_checkpoint_seed44.pt"
+    },
+    "calibrated_thresholds": {
+      "seed42": 0.55,
+      "seed43": 0.45,
+      "seed44": 0.55
+    },
+    "consecutive_hits": 2
+  },
+  "stage2": {
+    "model_type": "TemporalKWSVerifier",
+    "input_samples": 19200,
+    "crop_offset_samples": 4800,
+    "checkpoints": {
+      "seed42": "experiments/vieneu_kws_cascade_v1/checkpoints/best_verifier_seed42.pt",
+      "seed43": "experiments/vieneu_kws_cascade_v1/checkpoints/best_verifier_seed43.pt",
+      "seed44": "experiments/vieneu_kws_cascade_v1/checkpoints/best_verifier_seed44.pt"
+    },
+    "calibrated_thresholds": {
+      "seed42": 0.70,
+      "seed43": 0.60,
+      "seed44": 0.70
+    }
+  },
+  "validation_constraints": {
+    "min_target_command_recall": 0.95,
+    "max_streaming_fa_per_hour": 1.0,
+    "max_detection_latency_ms": 600.0
+  },
+  "streaming": {
+    "debounce_duration_sec": 0.60,
+    "match_window_left_sec": 0.20,
+    "match_window_right_sec": 0.60
+  }
+}

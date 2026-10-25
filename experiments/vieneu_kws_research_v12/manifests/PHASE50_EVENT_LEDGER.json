@@ -1,0 +1,2392 @@
+{
+  "p50_stream_seq_001": [],
+  "p50_stream_seq_002": [],
+  "p50_stream_seq_003": [],
+  "p50_stream_seq_004": [],
+  "p50_stream_seq_005": [],
+  "p50_stream_seq_006": [],
+  "p50_stream_seq_007": [],
+  "p50_stream_seq_008": [],
+  "p50_stream_seq_009": [],
+  "p50_stream_seq_010": [],
+  "p50_stream_seq_011": [
+    {
+      "sequence_id": "p50_stream_seq_011",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "núi",
+      "subgroup": "test_oov_general",
+      "start_time": 0.906,
+      "end_time": 1.51,
+      "duration": 0.603
+    },
+    {
+      "sequence_id": "p50_stream_seq_011",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "trước",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 2.459,
+      "end_time": 2.944,
+      "duration": 0.485
+    },
+    {
+      "sequence_id": "p50_stream_seq_011",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "núi",
+      "subgroup": "test_oov_general",
+      "start_time": 3.401,
+      "end_time": 4.005,
+      "duration": 0.603
+    },
+    {
+      "sequence_id": "p50_stream_seq_011",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "làm",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 4.706,
+      "end_time": 5.281,
+      "duration": 0.575
+    },
+    {
+      "sequence_id": "p50_stream_seq_011",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "quạt",
+      "subgroup": "test_oov_general",
+      "start_time": 6.262,
+      "end_time": 6.721,
+      "duration": 0.46
+    }
+  ],
+  "p50_stream_seq_012": [
+    {
+      "sequence_id": "p50_stream_seq_012",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "quạt",
+      "subgroup": "test_oov_general",
+      "start_time": 1.034,
+      "end_time": 1.493,
+      "duration": 0.46
+    },
+    {
+      "sequence_id": "p50_stream_seq_012",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "bóng",
+      "subgroup": "test_oov_general",
+      "start_time": 2.195,
+      "end_time": 2.829,
+      "duration": 0.633
+    },
+    {
+      "sequence_id": "p50_stream_seq_012",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "đèn",
+      "subgroup": "test_oov_general",
+      "start_time": 3.674,
+      "end_time": 4.24,
+      "duration": 0.566
+    },
+    {
+      "sequence_id": "p50_stream_seq_012",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "phim",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 5.183,
+      "end_time": 5.875,
+      "duration": 0.692
+    },
+    {
+      "sequence_id": "p50_stream_seq_012",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "luôn",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 6.713,
+      "end_time": 7.42,
+      "duration": 0.707
+    },
+    {
+      "sequence_id": "p50_stream_seq_012",
+      "event_index": 5,
+      "label": "REJECT",
+      "text": "trẻ",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 8.413,
+      "end_time": 9.022,
+      "duration": 0.608
+    },
+    {
+      "sequence_id": "p50_stream_seq_012",
+      "event_index": 6,
+      "label": "REJECT",
+      "text": "làm",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 10.023,
+      "end_time": 10.598,
+      "duration": 0.575
+    }
+  ],
+  "p50_stream_seq_013": [
+    {
+      "sequence_id": "p50_stream_seq_013",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "núi",
+      "subgroup": "test_oov_general",
+      "start_time": 0.742,
+      "end_time": 1.466,
+      "duration": 0.724
+    },
+    {
+      "sequence_id": "p50_stream_seq_013",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "phút",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 2.525,
+      "end_time": 3.027,
+      "duration": 0.503
+    },
+    {
+      "sequence_id": "p50_stream_seq_013",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "núi",
+      "subgroup": "test_oov_general",
+      "start_time": 3.907,
+      "end_time": 4.511,
+      "duration": 0.603
+    },
+    {
+      "sequence_id": "p50_stream_seq_013",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "xem",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 4.926,
+      "end_time": 5.657,
+      "duration": 0.731
+    },
+    {
+      "sequence_id": "p50_stream_seq_013",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "áo",
+      "subgroup": "test_oov_general",
+      "start_time": 6.586,
+      "end_time": 7.255,
+      "duration": 0.669
+    },
+    {
+      "sequence_id": "p50_stream_seq_013",
+      "event_index": 5,
+      "label": "REJECT",
+      "text": "xa",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 7.661,
+      "end_time": 8.308,
+      "duration": 0.647
+    }
+  ],
+  "p50_stream_seq_014": [
+    {
+      "sequence_id": "p50_stream_seq_014",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "xuyên",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 0.637,
+      "end_time": 1.239,
+      "duration": 0.601
+    },
+    {
+      "sequence_id": "p50_stream_seq_014",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "hoa",
+      "subgroup": "test_oov_general",
+      "start_time": 2.32,
+      "end_time": 3.088,
+      "duration": 0.769
+    },
+    {
+      "sequence_id": "p50_stream_seq_014",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "bóng",
+      "subgroup": "test_oov_general",
+      "start_time": 3.51,
+      "end_time": 4.144,
+      "duration": 0.633
+    },
+    {
+      "sequence_id": "p50_stream_seq_014",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "lòng",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 4.595,
+      "end_time": 5.257,
+      "duration": 0.662
+    },
+    {
+      "sequence_id": "p50_stream_seq_014",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "áo",
+      "subgroup": "test_oov_general",
+      "start_time": 6.003,
+      "end_time": 6.672,
+      "duration": 0.669
+    },
+    {
+      "sequence_id": "p50_stream_seq_014",
+      "event_index": 5,
+      "label": "REJECT",
+      "text": "trường",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 7.591,
+      "end_time": 8.33,
+      "duration": 0.738
+    },
+    {
+      "sequence_id": "p50_stream_seq_014",
+      "event_index": 6,
+      "label": "REJECT",
+      "text": "đèn",
+      "subgroup": "test_oov_general",
+      "start_time": 9.172,
+      "end_time": 9.836,
+      "duration": 0.664
+    }
+  ],
+  "p50_stream_seq_015": [
+    {
+      "sequence_id": "p50_stream_seq_015",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "bóng",
+      "subgroup": "test_oov_general",
+      "start_time": 0.544,
+      "end_time": 1.085,
+      "duration": 0.541
+    },
+    {
+      "sequence_id": "p50_stream_seq_015",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "hoa",
+      "subgroup": "test_oov_general",
+      "start_time": 1.683,
+      "end_time": 2.32,
+      "duration": 0.637
+    },
+    {
+      "sequence_id": "p50_stream_seq_015",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "sông",
+      "subgroup": "test_oov_general",
+      "start_time": 2.838,
+      "end_time": 3.573,
+      "duration": 0.735
+    },
+    {
+      "sequence_id": "p50_stream_seq_015",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "phát",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 4.005,
+      "end_time": 4.598,
+      "duration": 0.593
+    },
+    {
+      "sequence_id": "p50_stream_seq_015",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "quần",
+      "subgroup": "test_oov_general",
+      "start_time": 5.519,
+      "end_time": 6.129,
+      "duration": 0.61
+    },
+    {
+      "sequence_id": "p50_stream_seq_015",
+      "event_index": 5,
+      "label": "REJECT",
+      "text": "làm",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 7.04,
+      "end_time": 7.718,
+      "duration": 0.677
+    },
+    {
+      "sequence_id": "p50_stream_seq_015",
+      "event_index": 6,
+      "label": "REJECT",
+      "text": "luôn",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 8.474,
+      "end_time": 9.181,
+      "duration": 0.707
+    }
+  ],
+  "p50_stream_seq_016": [
+    {
+      "sequence_id": "p50_stream_seq_016",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "phát",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 0.947,
+      "end_time": 1.462,
+      "duration": 0.516
+    },
+    {
+      "sequence_id": "p50_stream_seq_016",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "núi",
+      "subgroup": "test_oov_general",
+      "start_time": 2.471,
+      "end_time": 3.195,
+      "duration": 0.724
+    },
+    {
+      "sequence_id": "p50_stream_seq_016",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "xanh",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 4.267,
+      "end_time": 4.985,
+      "duration": 0.717
+    },
+    {
+      "sequence_id": "p50_stream_seq_016",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "quần",
+      "subgroup": "test_oov_general",
+      "start_time": 5.61,
+      "end_time": 6.22,
+      "duration": 0.61
+    },
+    {
+      "sequence_id": "p50_stream_seq_016",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "lòng",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 6.739,
+      "end_time": 7.308,
+      "duration": 0.569
+    }
+  ],
+  "p50_stream_seq_017": [
+    {
+      "sequence_id": "p50_stream_seq_017",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "xuyên",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 0.905,
+      "end_time": 1.606,
+      "duration": 0.701
+    },
+    {
+      "sequence_id": "p50_stream_seq_017",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "cây",
+      "subgroup": "test_oov_general",
+      "start_time": 2.646,
+      "end_time": 3.166,
+      "duration": 0.52
+    },
+    {
+      "sequence_id": "p50_stream_seq_017",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "biển",
+      "subgroup": "test_oov_general",
+      "start_time": 4.178,
+      "end_time": 4.737,
+      "duration": 0.559
+    },
+    {
+      "sequence_id": "p50_stream_seq_017",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "phương",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 5.171,
+      "end_time": 5.807,
+      "duration": 0.636
+    }
+  ],
+  "p50_stream_seq_018": [
+    {
+      "sequence_id": "p50_stream_seq_018",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "xuyên",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 1.097,
+      "end_time": 1.798,
+      "duration": 0.701
+    },
+    {
+      "sequence_id": "p50_stream_seq_018",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "xanh",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 2.316,
+      "end_time": 2.933,
+      "duration": 0.617
+    },
+    {
+      "sequence_id": "p50_stream_seq_018",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "trường",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 3.953,
+      "end_time": 4.691,
+      "duration": 0.738
+    },
+    {
+      "sequence_id": "p50_stream_seq_018",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "trường",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 5.291,
+      "end_time": 6.029,
+      "duration": 0.738
+    },
+    {
+      "sequence_id": "p50_stream_seq_018",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "xuyên",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 6.565,
+      "end_time": 7.266,
+      "duration": 0.701
+    }
+  ],
+  "p50_stream_seq_019": [
+    {
+      "sequence_id": "p50_stream_seq_019",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "xanh",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 0.667,
+      "end_time": 1.285,
+      "duration": 0.617
+    },
+    {
+      "sequence_id": "p50_stream_seq_019",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "lòng",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 1.808,
+      "end_time": 2.471,
+      "duration": 0.662
+    },
+    {
+      "sequence_id": "p50_stream_seq_019",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "xa",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 3.109,
+      "end_time": 3.756,
+      "duration": 0.647
+    },
+    {
+      "sequence_id": "p50_stream_seq_019",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "cây",
+      "subgroup": "test_oov_general",
+      "start_time": 4.355,
+      "end_time": 4.997,
+      "duration": 0.642
+    }
+  ],
+  "p50_stream_seq_020": [
+    {
+      "sequence_id": "p50_stream_seq_020",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "phim",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 1.139,
+      "end_time": 1.721,
+      "duration": 0.582
+    },
+    {
+      "sequence_id": "p50_stream_seq_020",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "trưa",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 2.373,
+      "end_time": 2.98,
+      "duration": 0.607
+    },
+    {
+      "sequence_id": "p50_stream_seq_020",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "phút",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 3.855,
+      "end_time": 4.452,
+      "duration": 0.597
+    },
+    {
+      "sequence_id": "p50_stream_seq_020",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "áo",
+      "subgroup": "test_oov_general",
+      "start_time": 4.91,
+      "end_time": 5.579,
+      "duration": 0.669
+    },
+    {
+      "sequence_id": "p50_stream_seq_020",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "làm",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 6.449,
+      "end_time": 7.024,
+      "duration": 0.575
+    }
+  ],
+  "p50_stream_seq_021": [
+    {
+      "sequence_id": "p50_stream_seq_021",
+      "event_index": 0,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 1.057,
+      "end_time": 1.615,
+      "duration": 0.558
+    },
+    {
+      "sequence_id": "p50_stream_seq_021",
+      "event_index": 1,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 2.769,
+      "end_time": 3.422,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_021",
+      "event_index": 2,
+      "label": "PHAI",
+      "text": "sang phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 4.193,
+      "end_time": 5.119,
+      "duration": 0.926
+    },
+    {
+      "sequence_id": "p50_stream_seq_021",
+      "event_index": 3,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 6.282,
+      "end_time": 7.053,
+      "duration": 0.771
+    },
+    {
+      "sequence_id": "p50_stream_seq_021",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "bóng",
+      "subgroup": "test_oov_general",
+      "start_time": 7.621,
+      "end_time": 8.254,
+      "duration": 0.633
+    },
+    {
+      "sequence_id": "p50_stream_seq_021",
+      "event_index": 5,
+      "label": "REJECT",
+      "text": "sông",
+      "subgroup": "test_oov_general",
+      "start_time": 9.422,
+      "end_time": 10.049,
+      "duration": 0.627
+    },
+    {
+      "sequence_id": "p50_stream_seq_021",
+      "event_index": 6,
+      "label": "PHAI",
+      "text": "rẽ phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 10.618,
+      "end_time": 11.446,
+      "duration": 0.828
+    }
+  ],
+  "p50_stream_seq_022": [
+    {
+      "sequence_id": "p50_stream_seq_022",
+      "event_index": 0,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 0.647,
+      "end_time": 1.293,
+      "duration": 0.645
+    },
+    {
+      "sequence_id": "p50_stream_seq_022",
+      "event_index": 1,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 2.25,
+      "end_time": 2.894,
+      "duration": 0.644
+    },
+    {
+      "sequence_id": "p50_stream_seq_022",
+      "event_index": 2,
+      "label": "LEN",
+      "text": "tiến lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 3.489,
+      "end_time": 4.352,
+      "duration": 0.863
+    },
+    {
+      "sequence_id": "p50_stream_seq_022",
+      "event_index": 3,
+      "label": "LEN",
+      "text": "đi lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.115,
+      "end_time": 5.855,
+      "duration": 0.74
+    },
+    {
+      "sequence_id": "p50_stream_seq_022",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "hoa",
+      "subgroup": "test_oov_general",
+      "start_time": 6.282,
+      "end_time": 6.919,
+      "duration": 0.637
+    },
+    {
+      "sequence_id": "p50_stream_seq_022",
+      "event_index": 5,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 7.693,
+      "end_time": 8.337,
+      "duration": 0.644
+    }
+  ],
+  "p50_stream_seq_023": [
+    {
+      "sequence_id": "p50_stream_seq_023",
+      "event_index": 0,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 0.968,
+      "end_time": 1.611,
+      "duration": 0.644
+    },
+    {
+      "sequence_id": "p50_stream_seq_023",
+      "event_index": 1,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 2.314,
+      "end_time": 2.968,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_023",
+      "event_index": 2,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 3.549,
+      "end_time": 4.313,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_023",
+      "event_index": 3,
+      "label": "PHAI",
+      "text": "rẽ phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 4.961,
+      "end_time": 5.789,
+      "duration": 0.828
+    },
+    {
+      "sequence_id": "p50_stream_seq_023",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "bóng",
+      "subgroup": "test_oov_general",
+      "start_time": 6.414,
+      "end_time": 7.047,
+      "duration": 0.633
+    },
+    {
+      "sequence_id": "p50_stream_seq_023",
+      "event_index": 5,
+      "label": "REJECT",
+      "text": "quần",
+      "subgroup": "test_oov_general",
+      "start_time": 7.974,
+      "end_time": 8.584,
+      "duration": 0.61
+    }
+  ],
+  "p50_stream_seq_024": [
+    {
+      "sequence_id": "p50_stream_seq_024",
+      "event_index": 0,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 1.079,
+      "end_time": 1.723,
+      "duration": 0.644
+    },
+    {
+      "sequence_id": "p50_stream_seq_024",
+      "event_index": 1,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 2.311,
+      "end_time": 3.091,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_024",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "áo",
+      "subgroup": "test_oov_general",
+      "start_time": 3.511,
+      "end_time": 4.084,
+      "duration": 0.573
+    },
+    {
+      "sequence_id": "p50_stream_seq_024",
+      "event_index": 3,
+      "label": "PHAI",
+      "text": "sang phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 4.812,
+      "end_time": 5.738,
+      "duration": 0.926
+    },
+    {
+      "sequence_id": "p50_stream_seq_024",
+      "event_index": 4,
+      "label": "LEN",
+      "text": "đi lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 6.182,
+      "end_time": 6.922,
+      "duration": 0.74
+    },
+    {
+      "sequence_id": "p50_stream_seq_024",
+      "event_index": 5,
+      "label": "REJECT",
+      "text": "cây",
+      "subgroup": "test_oov_general",
+      "start_time": 7.895,
+      "end_time": 8.415,
+      "duration": 0.52
+    }
+  ],
+  "p50_stream_seq_025": [
+    {
+      "sequence_id": "p50_stream_seq_025",
+      "event_index": 0,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 0.737,
+      "end_time": 1.381,
+      "duration": 0.644
+    },
+    {
+      "sequence_id": "p50_stream_seq_025",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "luôn",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 2.521,
+      "end_time": 3.122,
+      "duration": 0.601
+    },
+    {
+      "sequence_id": "p50_stream_seq_025",
+      "event_index": 2,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 3.948,
+      "end_time": 4.712,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_025",
+      "event_index": 3,
+      "label": "PHAI",
+      "text": "sang phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.674,
+      "end_time": 6.6,
+      "duration": 0.926
+    },
+    {
+      "sequence_id": "p50_stream_seq_025",
+      "event_index": 4,
+      "label": "XUONG",
+      "text": "lùi xuống",
+      "subgroup": "carrier_context_command",
+      "start_time": 7.301,
+      "end_time": 8.233,
+      "duration": 0.933
+    },
+    {
+      "sequence_id": "p50_stream_seq_025",
+      "event_index": 5,
+      "label": "REJECT",
+      "text": "xuyên",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 8.944,
+      "end_time": 9.545,
+      "duration": 0.601
+    }
+  ],
+  "p50_stream_seq_026": [
+    {
+      "sequence_id": "p50_stream_seq_026",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "lòng",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 0.898,
+      "end_time": 1.56,
+      "duration": 0.662
+    },
+    {
+      "sequence_id": "p50_stream_seq_026",
+      "event_index": 1,
+      "label": "PHAI",
+      "text": "sang phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 2.251,
+      "end_time": 3.176,
+      "duration": 0.926
+    },
+    {
+      "sequence_id": "p50_stream_seq_026",
+      "event_index": 2,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 4.156,
+      "end_time": 4.802,
+      "duration": 0.645
+    },
+    {
+      "sequence_id": "p50_stream_seq_026",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "luôn",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 5.757,
+      "end_time": 6.357,
+      "duration": 0.601
+    },
+    {
+      "sequence_id": "p50_stream_seq_026",
+      "event_index": 4,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 7.032,
+      "end_time": 7.796,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_026",
+      "event_index": 5,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 8.754,
+      "end_time": 9.4,
+      "duration": 0.645
+    },
+    {
+      "sequence_id": "p50_stream_seq_026",
+      "event_index": 6,
+      "label": "XUONG",
+      "text": "đi xuống",
+      "subgroup": "carrier_context_command",
+      "start_time": 10.102,
+      "end_time": 10.946,
+      "duration": 0.844
+    }
+  ],
+  "p50_stream_seq_027": [
+    {
+      "sequence_id": "p50_stream_seq_027",
+      "event_index": 0,
+      "label": "TRAI",
+      "text": "sang trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 0.899,
+      "end_time": 1.904,
+      "duration": 1.004
+    },
+    {
+      "sequence_id": "p50_stream_seq_027",
+      "event_index": 1,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 2.909,
+      "end_time": 3.555,
+      "duration": 0.645
+    },
+    {
+      "sequence_id": "p50_stream_seq_027",
+      "event_index": 2,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 4.059,
+      "end_time": 4.703,
+      "duration": 0.644
+    },
+    {
+      "sequence_id": "p50_stream_seq_027",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "phim",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 5.817,
+      "end_time": 6.4,
+      "duration": 0.582
+    },
+    {
+      "sequence_id": "p50_stream_seq_027",
+      "event_index": 4,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 7.267,
+      "end_time": 7.912,
+      "duration": 0.645
+    }
+  ],
+  "p50_stream_seq_028": [
+    {
+      "sequence_id": "p50_stream_seq_028",
+      "event_index": 0,
+      "label": "PHAI",
+      "text": "rẽ phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 0.745,
+      "end_time": 1.573,
+      "duration": 0.828
+    },
+    {
+      "sequence_id": "p50_stream_seq_028",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "lòng",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 2.72,
+      "end_time": 3.288,
+      "duration": 0.569
+    },
+    {
+      "sequence_id": "p50_stream_seq_028",
+      "event_index": 2,
+      "label": "XUONG",
+      "text": "đi xuống",
+      "subgroup": "carrier_context_command",
+      "start_time": 3.952,
+      "end_time": 4.796,
+      "duration": 0.844
+    },
+    {
+      "sequence_id": "p50_stream_seq_028",
+      "event_index": 3,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 5.661,
+      "end_time": 6.425,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_028",
+      "event_index": 4,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 6.902,
+      "end_time": 7.555,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_028",
+      "event_index": 5,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 8.571,
+      "end_time": 9.35,
+      "duration": 0.78
+    }
+  ],
+  "p50_stream_seq_029": [
+    {
+      "sequence_id": "p50_stream_seq_029",
+      "event_index": 0,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 0.678,
+      "end_time": 1.458,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_029",
+      "event_index": 1,
+      "label": "LEN",
+      "text": "tiến lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 2.489,
+      "end_time": 3.352,
+      "duration": 0.863
+    },
+    {
+      "sequence_id": "p50_stream_seq_029",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "áo",
+      "subgroup": "test_oov_general",
+      "start_time": 3.787,
+      "end_time": 4.36,
+      "duration": 0.573
+    },
+    {
+      "sequence_id": "p50_stream_seq_029",
+      "event_index": 3,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 4.914,
+      "end_time": 5.694,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_029",
+      "event_index": 4,
+      "label": "LEN",
+      "text": "tiến lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 6.503,
+      "end_time": 7.366,
+      "duration": 0.863
+    },
+    {
+      "sequence_id": "p50_stream_seq_029",
+      "event_index": 5,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 7.999,
+      "end_time": 8.653,
+      "duration": 0.654
+    }
+  ],
+  "p50_stream_seq_030": [
+    {
+      "sequence_id": "p50_stream_seq_030",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "xanh",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 1.195,
+      "end_time": 1.913,
+      "duration": 0.717
+    },
+    {
+      "sequence_id": "p50_stream_seq_030",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "xem",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 2.365,
+      "end_time": 3.096,
+      "duration": 0.731
+    },
+    {
+      "sequence_id": "p50_stream_seq_030",
+      "event_index": 2,
+      "label": "LEN",
+      "text": "tiến lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 3.973,
+      "end_time": 4.836,
+      "duration": 0.863
+    },
+    {
+      "sequence_id": "p50_stream_seq_030",
+      "event_index": 3,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 5.962,
+      "end_time": 6.742,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_030",
+      "event_index": 4,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 7.69,
+      "end_time": 8.335,
+      "duration": 0.645
+    },
+    {
+      "sequence_id": "p50_stream_seq_030",
+      "event_index": 5,
+      "label": "PHAI",
+      "text": "rẽ phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 8.771,
+      "end_time": 9.599,
+      "duration": 0.828
+    },
+    {
+      "sequence_id": "p50_stream_seq_030",
+      "event_index": 6,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 10.013,
+      "end_time": 10.776,
+      "duration": 0.764
+    }
+  ],
+  "p50_stream_seq_031": [
+    {
+      "sequence_id": "p50_stream_seq_031",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "trước",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 0.978,
+      "end_time": 1.463,
+      "duration": 0.485
+    },
+    {
+      "sequence_id": "p50_stream_seq_031",
+      "event_index": 1,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 2.334,
+      "end_time": 3.098,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_031",
+      "event_index": 2,
+      "label": "PHAI",
+      "text": "rẽ phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 4.152,
+      "end_time": 4.98,
+      "duration": 0.828
+    },
+    {
+      "sequence_id": "p50_stream_seq_031",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "trẻ",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 5.583,
+      "end_time": 6.191,
+      "duration": 0.608
+    },
+    {
+      "sequence_id": "p50_stream_seq_031",
+      "event_index": 4,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 6.845,
+      "end_time": 7.608,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_031",
+      "event_index": 5,
+      "label": "TRAI",
+      "text": "rẽ trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 8.698,
+      "end_time": 9.6,
+      "duration": 0.903
+    },
+    {
+      "sequence_id": "p50_stream_seq_031",
+      "event_index": 6,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 10.303,
+      "end_time": 10.957,
+      "duration": 0.654
+    }
+  ],
+  "p50_stream_seq_032": [
+    {
+      "sequence_id": "p50_stream_seq_032",
+      "event_index": 0,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 0.988,
+      "end_time": 1.642,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_032",
+      "event_index": 1,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 2.216,
+      "end_time": 2.987,
+      "duration": 0.771
+    },
+    {
+      "sequence_id": "p50_stream_seq_032",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "xa",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 3.967,
+      "end_time": 4.715,
+      "duration": 0.748
+    },
+    {
+      "sequence_id": "p50_stream_seq_032",
+      "event_index": 3,
+      "label": "TRAI",
+      "text": "rẽ trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.518,
+      "end_time": 6.421,
+      "duration": 0.903
+    },
+    {
+      "sequence_id": "p50_stream_seq_032",
+      "event_index": 4,
+      "label": "TRAI",
+      "text": "rẽ trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 7.123,
+      "end_time": 8.026,
+      "duration": 0.903
+    }
+  ],
+  "p50_stream_seq_033": [
+    {
+      "sequence_id": "p50_stream_seq_033",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "phim",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 0.841,
+      "end_time": 1.532,
+      "duration": 0.692
+    },
+    {
+      "sequence_id": "p50_stream_seq_033",
+      "event_index": 1,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 2.694,
+      "end_time": 3.338,
+      "duration": 0.644
+    },
+    {
+      "sequence_id": "p50_stream_seq_033",
+      "event_index": 2,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 4.04,
+      "end_time": 4.684,
+      "duration": 0.644
+    },
+    {
+      "sequence_id": "p50_stream_seq_033",
+      "event_index": 3,
+      "label": "TRAI",
+      "text": "rẽ trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.57,
+      "end_time": 6.473,
+      "duration": 0.903
+    },
+    {
+      "sequence_id": "p50_stream_seq_033",
+      "event_index": 4,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 7.011,
+      "end_time": 7.783,
+      "duration": 0.771
+    }
+  ],
+  "p50_stream_seq_034": [
+    {
+      "sequence_id": "p50_stream_seq_034",
+      "event_index": 0,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 0.947,
+      "end_time": 1.727,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_034",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "quần",
+      "subgroup": "test_oov_general",
+      "start_time": 2.244,
+      "end_time": 2.854,
+      "duration": 0.61
+    },
+    {
+      "sequence_id": "p50_stream_seq_034",
+      "event_index": 2,
+      "label": "PHAI",
+      "text": "rẽ phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 3.577,
+      "end_time": 4.405,
+      "duration": 0.828
+    },
+    {
+      "sequence_id": "p50_stream_seq_034",
+      "event_index": 3,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 5.32,
+      "end_time": 6.084,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_034",
+      "event_index": 4,
+      "label": "TRAI",
+      "text": "rẽ trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 6.804,
+      "end_time": 7.707,
+      "duration": 0.903
+    }
+  ],
+  "p50_stream_seq_035": [
+    {
+      "sequence_id": "p50_stream_seq_035",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "phim",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 0.751,
+      "end_time": 1.333,
+      "duration": 0.582
+    },
+    {
+      "sequence_id": "p50_stream_seq_035",
+      "event_index": 1,
+      "label": "LEN",
+      "text": "đi lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 2.342,
+      "end_time": 3.081,
+      "duration": 0.74
+    },
+    {
+      "sequence_id": "p50_stream_seq_035",
+      "event_index": 2,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 3.72,
+      "end_time": 4.5,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_035",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "bóng",
+      "subgroup": "test_oov_general",
+      "start_time": 5.629,
+      "end_time": 6.262,
+      "duration": 0.633
+    },
+    {
+      "sequence_id": "p50_stream_seq_035",
+      "event_index": 4,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 7.246,
+      "end_time": 8.026,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_035",
+      "event_index": 5,
+      "label": "TRAI",
+      "text": "sang trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 9.092,
+      "end_time": 10.096,
+      "duration": 1.004
+    }
+  ],
+  "p50_stream_seq_036": [
+    {
+      "sequence_id": "p50_stream_seq_036",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "lòng",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 1.052,
+      "end_time": 1.715,
+      "duration": 0.662
+    },
+    {
+      "sequence_id": "p50_stream_seq_036",
+      "event_index": 1,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 2.229,
+      "end_time": 2.883,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_036",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "xanh",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 3.952,
+      "end_time": 4.669,
+      "duration": 0.717
+    },
+    {
+      "sequence_id": "p50_stream_seq_036",
+      "event_index": 3,
+      "label": "PHAI",
+      "text": "sang phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.432,
+      "end_time": 6.357,
+      "duration": 0.926
+    },
+    {
+      "sequence_id": "p50_stream_seq_036",
+      "event_index": 4,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 7.197,
+      "end_time": 7.96,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_036",
+      "event_index": 5,
+      "label": "TRAI",
+      "text": "sang trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 8.668,
+      "end_time": 9.673,
+      "duration": 1.004
+    }
+  ],
+  "p50_stream_seq_037": [
+    {
+      "sequence_id": "p50_stream_seq_037",
+      "event_index": 0,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 0.801,
+      "end_time": 1.455,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_037",
+      "event_index": 1,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 2.211,
+      "end_time": 2.855,
+      "duration": 0.644
+    },
+    {
+      "sequence_id": "p50_stream_seq_037",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "đèn",
+      "subgroup": "test_oov_general",
+      "start_time": 3.463,
+      "end_time": 4.128,
+      "duration": 0.664
+    },
+    {
+      "sequence_id": "p50_stream_seq_037",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "áo",
+      "subgroup": "test_oov_general",
+      "start_time": 4.587,
+      "end_time": 5.16,
+      "duration": 0.573
+    },
+    {
+      "sequence_id": "p50_stream_seq_037",
+      "event_index": 4,
+      "label": "PHAI",
+      "text": "rẽ phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.811,
+      "end_time": 6.639,
+      "duration": 0.828
+    }
+  ],
+  "p50_stream_seq_038": [
+    {
+      "sequence_id": "p50_stream_seq_038",
+      "event_index": 0,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 1.127,
+      "end_time": 1.898,
+      "duration": 0.771
+    },
+    {
+      "sequence_id": "p50_stream_seq_038",
+      "event_index": 1,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 3.031,
+      "end_time": 3.81,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_038",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "sông",
+      "subgroup": "test_oov_general",
+      "start_time": 4.937,
+      "end_time": 5.564,
+      "duration": 0.627
+    },
+    {
+      "sequence_id": "p50_stream_seq_038",
+      "event_index": 3,
+      "label": "LEN",
+      "text": "đi lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 6.53,
+      "end_time": 7.269,
+      "duration": 0.74
+    },
+    {
+      "sequence_id": "p50_stream_seq_038",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "phim",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 7.783,
+      "end_time": 8.365,
+      "duration": 0.582
+    },
+    {
+      "sequence_id": "p50_stream_seq_038",
+      "event_index": 5,
+      "label": "XUONG",
+      "text": "lùi xuống",
+      "subgroup": "carrier_context_command",
+      "start_time": 8.892,
+      "end_time": 9.825,
+      "duration": 0.933
+    }
+  ],
+  "p50_stream_seq_039": [
+    {
+      "sequence_id": "p50_stream_seq_039",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "xanh",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 0.724,
+      "end_time": 1.442,
+      "duration": 0.717
+    },
+    {
+      "sequence_id": "p50_stream_seq_039",
+      "event_index": 1,
+      "label": "REJECT",
+      "text": "phim",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 1.99,
+      "end_time": 2.572,
+      "duration": 0.582
+    },
+    {
+      "sequence_id": "p50_stream_seq_039",
+      "event_index": 2,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 3.119,
+      "end_time": 3.773,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_039",
+      "event_index": 3,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 4.331,
+      "end_time": 5.095,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_039",
+      "event_index": 4,
+      "label": "LEN",
+      "text": "tiến lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.724,
+      "end_time": 6.587,
+      "duration": 0.863
+    }
+  ],
+  "p50_stream_seq_040": [
+    {
+      "sequence_id": "p50_stream_seq_040",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "trước",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 1.197,
+      "end_time": 1.782,
+      "duration": 0.585
+    },
+    {
+      "sequence_id": "p50_stream_seq_040",
+      "event_index": 1,
+      "label": "XUONG",
+      "text": "lùi xuống",
+      "subgroup": "carrier_context_command",
+      "start_time": 2.834,
+      "end_time": 3.767,
+      "duration": 0.933
+    },
+    {
+      "sequence_id": "p50_stream_seq_040",
+      "event_index": 2,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 4.939,
+      "end_time": 5.583,
+      "duration": 0.644
+    },
+    {
+      "sequence_id": "p50_stream_seq_040",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "hoa",
+      "subgroup": "test_oov_general",
+      "start_time": 6.677,
+      "end_time": 7.446,
+      "duration": 0.769
+    },
+    {
+      "sequence_id": "p50_stream_seq_040",
+      "event_index": 4,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 8.64,
+      "end_time": 9.198,
+      "duration": 0.558
+    }
+  ],
+  "p50_stream_seq_041": [
+    {
+      "sequence_id": "p50_stream_seq_041",
+      "event_index": 0,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 0.728,
+      "end_time": 1.374,
+      "duration": 0.645
+    },
+    {
+      "sequence_id": "p50_stream_seq_041",
+      "event_index": 1,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 2.425,
+      "end_time": 3.196,
+      "duration": 0.771
+    },
+    {
+      "sequence_id": "p50_stream_seq_041",
+      "event_index": 2,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 3.6,
+      "end_time": 4.254,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_041",
+      "event_index": 3,
+      "label": "XUONG",
+      "text": "đi xuống",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.27,
+      "end_time": 6.114,
+      "duration": 0.844
+    },
+    {
+      "sequence_id": "p50_stream_seq_041",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "cây",
+      "subgroup": "test_oov_general",
+      "start_time": 7.093,
+      "end_time": 7.735,
+      "duration": 0.642
+    },
+    {
+      "sequence_id": "p50_stream_seq_041",
+      "event_index": 5,
+      "label": "REJECT",
+      "text": "đèn",
+      "subgroup": "test_oov_general",
+      "start_time": 8.773,
+      "end_time": 9.339,
+      "duration": 0.566
+    },
+    {
+      "sequence_id": "p50_stream_seq_041",
+      "event_index": 6,
+      "label": "TRAI",
+      "text": "sang trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 10.055,
+      "end_time": 11.06,
+      "duration": 1.004
+    }
+  ],
+  "p50_stream_seq_042": [
+    {
+      "sequence_id": "p50_stream_seq_042",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "đèn",
+      "subgroup": "test_oov_general",
+      "start_time": 0.986,
+      "end_time": 1.553,
+      "duration": 0.566
+    },
+    {
+      "sequence_id": "p50_stream_seq_042",
+      "event_index": 1,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 2.107,
+      "end_time": 2.887,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_042",
+      "event_index": 2,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 3.878,
+      "end_time": 4.649,
+      "duration": 0.771
+    },
+    {
+      "sequence_id": "p50_stream_seq_042",
+      "event_index": 3,
+      "label": "PHAI",
+      "text": "rẽ phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.595,
+      "end_time": 6.422,
+      "duration": 0.828
+    },
+    {
+      "sequence_id": "p50_stream_seq_042",
+      "event_index": 4,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 7.214,
+      "end_time": 7.868,
+      "duration": 0.654
+    }
+  ],
+  "p50_stream_seq_043": [
+    {
+      "sequence_id": "p50_stream_seq_043",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "trưa",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 0.925,
+      "end_time": 1.674,
+      "duration": 0.749
+    },
+    {
+      "sequence_id": "p50_stream_seq_043",
+      "event_index": 1,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 2.08,
+      "end_time": 2.86,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_043",
+      "event_index": 2,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 3.322,
+      "end_time": 3.976,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_043",
+      "event_index": 3,
+      "label": "TRAI",
+      "text": "rẽ trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 4.561,
+      "end_time": 5.464,
+      "duration": 0.903
+    },
+    {
+      "sequence_id": "p50_stream_seq_043",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "phương",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 6.179,
+      "end_time": 6.816,
+      "duration": 0.636
+    },
+    {
+      "sequence_id": "p50_stream_seq_043",
+      "event_index": 5,
+      "label": "TRAI",
+      "text": "sang trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 7.818,
+      "end_time": 8.822,
+      "duration": 1.004
+    }
+  ],
+  "p50_stream_seq_044": [
+    {
+      "sequence_id": "p50_stream_seq_044",
+      "event_index": 0,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 0.552,
+      "end_time": 1.332,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_044",
+      "event_index": 1,
+      "label": "PHAI",
+      "text": "sang phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 1.835,
+      "end_time": 2.761,
+      "duration": 0.926
+    },
+    {
+      "sequence_id": "p50_stream_seq_044",
+      "event_index": 2,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 3.369,
+      "end_time": 4.132,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_044",
+      "event_index": 3,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 5.276,
+      "end_time": 6.047,
+      "duration": 0.771
+    },
+    {
+      "sequence_id": "p50_stream_seq_044",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "sông",
+      "subgroup": "test_oov_general",
+      "start_time": 7.125,
+      "end_time": 7.86,
+      "duration": 0.735
+    },
+    {
+      "sequence_id": "p50_stream_seq_044",
+      "event_index": 5,
+      "label": "LEN",
+      "text": "tiến lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 8.646,
+      "end_time": 9.509,
+      "duration": 0.863
+    }
+  ],
+  "p50_stream_seq_045": [
+    {
+      "sequence_id": "p50_stream_seq_045",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "áo",
+      "subgroup": "test_oov_general",
+      "start_time": 1.024,
+      "end_time": 1.598,
+      "duration": 0.573
+    },
+    {
+      "sequence_id": "p50_stream_seq_045",
+      "event_index": 1,
+      "label": "PHAI",
+      "text": "sang phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 2.405,
+      "end_time": 3.331,
+      "duration": 0.926
+    },
+    {
+      "sequence_id": "p50_stream_seq_045",
+      "event_index": 2,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 4.003,
+      "end_time": 4.657,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_045",
+      "event_index": 3,
+      "label": "PHAI",
+      "text": "rẽ phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.717,
+      "end_time": 6.544,
+      "duration": 0.828
+    },
+    {
+      "sequence_id": "p50_stream_seq_045",
+      "event_index": 4,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 7.56,
+      "end_time": 8.204,
+      "duration": 0.644
+    },
+    {
+      "sequence_id": "p50_stream_seq_045",
+      "event_index": 5,
+      "label": "REJECT",
+      "text": "hoa",
+      "subgroup": "test_oov_general",
+      "start_time": 8.721,
+      "end_time": 9.359,
+      "duration": 0.637
+    }
+  ],
+  "p50_stream_seq_046": [
+    {
+      "sequence_id": "p50_stream_seq_046",
+      "event_index": 0,
+      "label": "LEN",
+      "text": "đi lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 1.043,
+      "end_time": 1.783,
+      "duration": 0.74
+    },
+    {
+      "sequence_id": "p50_stream_seq_046",
+      "event_index": 1,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 2.34,
+      "end_time": 2.994,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_046",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "quạt",
+      "subgroup": "test_oov_general",
+      "start_time": 4.138,
+      "end_time": 4.598,
+      "duration": 0.46
+    },
+    {
+      "sequence_id": "p50_stream_seq_046",
+      "event_index": 3,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 5.252,
+      "end_time": 5.896,
+      "duration": 0.644
+    }
+  ],
+  "p50_stream_seq_047": [
+    {
+      "sequence_id": "p50_stream_seq_047",
+      "event_index": 0,
+      "label": "REJECT",
+      "text": "sông",
+      "subgroup": "test_oov_general",
+      "start_time": 0.648,
+      "end_time": 1.275,
+      "duration": 0.627
+    },
+    {
+      "sequence_id": "p50_stream_seq_047",
+      "event_index": 1,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 2.426,
+      "end_time": 3.198,
+      "duration": 0.771
+    },
+    {
+      "sequence_id": "p50_stream_seq_047",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "phát",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 3.74,
+      "end_time": 4.256,
+      "duration": 0.516
+    },
+    {
+      "sequence_id": "p50_stream_seq_047",
+      "event_index": 3,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 4.933,
+      "end_time": 5.586,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_047",
+      "event_index": 4,
+      "label": "LEN",
+      "text": "tiến lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 6.067,
+      "end_time": 6.931,
+      "duration": 0.863
+    },
+    {
+      "sequence_id": "p50_stream_seq_047",
+      "event_index": 5,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 7.437,
+      "end_time": 8.209,
+      "duration": 0.771
+    },
+    {
+      "sequence_id": "p50_stream_seq_047",
+      "event_index": 6,
+      "label": "LEN",
+      "text": "tiến lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 9.059,
+      "end_time": 9.922,
+      "duration": 0.863
+    }
+  ],
+  "p50_stream_seq_048": [
+    {
+      "sequence_id": "p50_stream_seq_048",
+      "event_index": 0,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 0.999,
+      "end_time": 1.644,
+      "duration": 0.645
+    },
+    {
+      "sequence_id": "p50_stream_seq_048",
+      "event_index": 1,
+      "label": "TRAI",
+      "text": "rẽ trái",
+      "subgroup": "carrier_context_command",
+      "start_time": 2.134,
+      "end_time": 3.037,
+      "duration": 0.903
+    },
+    {
+      "sequence_id": "p50_stream_seq_048",
+      "event_index": 2,
+      "label": "PHAI",
+      "text": "rẽ phải",
+      "subgroup": "carrier_context_command",
+      "start_time": 4.012,
+      "end_time": 4.84,
+      "duration": 0.828
+    },
+    {
+      "sequence_id": "p50_stream_seq_048",
+      "event_index": 3,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 5.658,
+      "end_time": 6.421,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_048",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "lớp",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 7.395,
+      "end_time": 7.842,
+      "duration": 0.447
+    },
+    {
+      "sequence_id": "p50_stream_seq_048",
+      "event_index": 5,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 8.757,
+      "end_time": 9.411,
+      "duration": 0.654
+    }
+  ],
+  "p50_stream_seq_049": [
+    {
+      "sequence_id": "p50_stream_seq_049",
+      "event_index": 0,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 0.773,
+      "end_time": 1.553,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_049",
+      "event_index": 1,
+      "label": "TRAI",
+      "text": "trái",
+      "subgroup": "isolated_command",
+      "start_time": 2.721,
+      "end_time": 3.501,
+      "duration": 0.78
+    },
+    {
+      "sequence_id": "p50_stream_seq_049",
+      "event_index": 2,
+      "label": "REJECT",
+      "text": "xa",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 4.42,
+      "end_time": 5.168,
+      "duration": 0.748
+    },
+    {
+      "sequence_id": "p50_stream_seq_049",
+      "event_index": 3,
+      "label": "REJECT",
+      "text": "lớp",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 5.779,
+      "end_time": 6.226,
+      "duration": 0.447
+    },
+    {
+      "sequence_id": "p50_stream_seq_049",
+      "event_index": 4,
+      "label": "LEN",
+      "text": "tiến lên",
+      "subgroup": "carrier_context_command",
+      "start_time": 6.94,
+      "end_time": 7.803,
+      "duration": 0.863
+    },
+    {
+      "sequence_id": "p50_stream_seq_049",
+      "event_index": 5,
+      "label": "PHAI",
+      "text": "phải",
+      "subgroup": "isolated_command",
+      "start_time": 8.395,
+      "end_time": 9.049,
+      "duration": 0.654
+    }
+  ],
+  "p50_stream_seq_050": [
+    {
+      "sequence_id": "p50_stream_seq_050",
+      "event_index": 0,
+      "label": "LEN",
+      "text": "lên",
+      "subgroup": "isolated_command",
+      "start_time": 0.747,
+      "end_time": 1.401,
+      "duration": 0.654
+    },
+    {
+      "sequence_id": "p50_stream_seq_050",
+      "event_index": 1,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 2.23,
+      "end_time": 2.994,
+      "duration": 0.764
+    },
+    {
+      "sequence_id": "p50_stream_seq_050",
+      "event_index": 2,
+      "label": "XUONG",
+      "text": "xuống",
+      "subgroup": "isolated_command",
+      "start_time": 3.935,
+      "end_time": 4.581,
+      "duration": 0.645
+    },
+    {
+      "sequence_id": "p50_stream_seq_050",
+      "event_index": 3,
+      "label": "XUONG",
+      "text": "đi xuống",
+      "subgroup": "carrier_context_command",
+      "start_time": 5.636,
+      "end_time": 6.48,
+      "duration": 0.844
+    },
+    {
+      "sequence_id": "p50_stream_seq_050",
+      "event_index": 4,
+      "label": "REJECT",
+      "text": "lòng",
+      "subgroup": "test_oov_phonetic",
+      "start_time": 6.999,
+      "end_time": 7.661,
+      "duration": 0.662
+    }
+  ]
+}

@@ -1,0 +1,5386 @@
+{
+  "metadata": {
+    "phase": 19,
+    "title": "Controlled Offline Profile B Validation",
+    "date": "2026-10-24",
+    "governance_labels": [
+      "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+      "NOT_VALIDATED_ON_NATURAL_SPEECH",
+      "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+      "NOT_VALIDATED_PENDING_DATA"
+    ],
+    "evaluation_label": "OBSERVED_TEST_REPRODUCTION_NOT_INDEPENDENT_VALIDATION",
+    "artifacts_verified": {
+      "e1_onnx": "20ecc2964d88d5a9d1d15b1c665e9697a32d702b1e3dd12ab1e5f829aff016b8",
+      "vad_config": "af5c3891fe73f831bb2972f2ce4722b3cbb6b669ad306bd408b8e941ee7de9b3",
+      "dev_manifest": "1ebf11f8c7048e162e04d24df92b40e75b026c7059d9a9af5afcbab1274587c3",
+      "test_manifest": "d0342e3f80c1307801c81637ba5b02e002c598aded35577b525afc106a8b5876"
+    }
+  },
+  "gate_c_dev_replay": {
+    "corpus_split": "dev",
+    "manifest_path": "experiments/vieneu_kws_research_v12/manifests/vad_dev_corpus_manifest.csv",
+    "total_sequences": 60,
+    "exact_correct_sequences": 37,
+    "exact_sequence_accuracy": 0.6167,
+    "total_target_events": 192,
+    "matched_commands": 168,
+    "missed_commands": 23,
+    "substitutions": 1,
+    "oov_false_activations": 4,
+    "silence_false_activations": 0,
+    "duplicate_triggers": 0,
+    "command_precision": 0.9711,
+    "command_recall": 0.875,
+    "command_f1": 0.9205,
+    "total_negative_minutes": 1.73,
+    "total_oov_minutes": 0.12,
+    "total_silence_minutes": 1.61,
+    "false_activations_per_negative_min": 2.32,
+    "false_activations_per_oov_min": 33.42,
+    "median_latency_ms": 289.75,
+    "p95_latency_ms": 460.0,
+    "gap_breakdown": {
+      "100": {
+        "target_events": 32,
+        "matched": 26,
+        "exact_seqs": 6,
+        "total_seqs": 10,
+        "fa_total": 0
+      },
+      "150": {
+        "target_events": 32,
+        "matched": 28,
+        "exact_seqs": 4,
+        "total_seqs": 10,
+        "fa_total": 2
+      },
+      "200": {
+        "target_events": 32,
+        "matched": 28,
+        "exact_seqs": 5,
+        "total_seqs": 10,
+        "fa_total": 1
+      },
+      "250": {
+        "target_events": 32,
+        "matched": 29,
+        "exact_seqs": 7,
+        "total_seqs": 10,
+        "fa_total": 0
+      },
+      "300": {
+        "target_events": 32,
+        "matched": 28,
+        "exact_seqs": 8,
+        "total_seqs": 10,
+        "fa_total": 1
+      },
+      "400": {
+        "target_events": 32,
+        "matched": 29,
+        "exact_seqs": 7,
+        "total_seqs": 10,
+        "fa_total": 0
+      }
+    },
+    "condition_breakdown": {
+      "clean": {
+        "target_events": 48,
+        "matched": 43,
+        "exact_seqs": 8,
+        "total_seqs": 12,
+        "fa_total": 0
+      },
+      "snr20": {
+        "target_events": 42,
+        "matched": 36,
+        "exact_seqs": 7,
+        "total_seqs": 12,
+        "fa_total": 0
+      },
+      "snr15": {
+        "target_events": 36,
+        "matched": 34,
+        "exact_seqs": 9,
+        "total_seqs": 12,
+        "fa_total": 1
+      },
+      "snr10": {
+        "target_events": 24,
+        "matched": 20,
+        "exact_seqs": 6,
+        "total_seqs": 12,
+        "fa_total": 3
+      },
+      "snr05": {
+        "target_events": 42,
+        "matched": 35,
+        "exact_seqs": 7,
+        "total_seqs": 12,
+        "fa_total": 0
+      }
+    },
+    "per_sequence_records": [
+      {
+        "sequence_id": "vad_dev_seq_0001",
+        "nominal_gap_ms": 100,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9769,
+            "start_sec": 0.39,
+            "end_sec": 1.1,
+            "duration_ms": 710.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.994,
+            "start_sec": 1.67,
+            "end_sec": 2.08,
+            "duration_ms": 410.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0002",
+        "nominal_gap_ms": 100,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9958,
+            "start_sec": 0.41,
+            "end_sec": 0.66,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9935,
+            "start_sec": 0.85,
+            "end_sec": 1.26,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.5302,
+            "start_sec": 1.27,
+            "end_sec": 1.94,
+            "duration_ms": 670.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0003",
+        "nominal_gap_ms": 100,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "TRAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9988,
+            "start_sec": 0.37,
+            "end_sec": 0.7,
+            "duration_ms": 330.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9981,
+            "start_sec": 0.73,
+            "end_sec": 1.14,
+            "duration_ms": 410.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0004",
+        "nominal_gap_ms": 100,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9961,
+            "start_sec": 0.41,
+            "end_sec": 0.8,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9985,
+            "start_sec": 0.83,
+            "end_sec": 1.24,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9987,
+            "start_sec": 1.41,
+            "end_sec": 1.8,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0005",
+        "nominal_gap_ms": 100,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9877,
+            "start_sec": 0.43,
+            "end_sec": 0.68,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9954,
+            "start_sec": 0.87,
+            "end_sec": 1.14,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.972,
+            "start_sec": 1.29,
+            "end_sec": 1.7,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9822,
+            "start_sec": 1.81,
+            "end_sec": 2.44,
+            "duration_ms": 630.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0006",
+        "nominal_gap_ms": 100,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9974,
+            "start_sec": 0.39,
+            "end_sec": 0.82,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9991,
+            "start_sec": 1.17,
+            "end_sec": 1.6,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0007",
+        "nominal_gap_ms": 100,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9983,
+            "start_sec": 0.81,
+            "end_sec": 1.08,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9691,
+            "start_sec": 1.31,
+            "end_sec": 1.68,
+            "duration_ms": 370.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0008",
+        "nominal_gap_ms": 100,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9868,
+            "start_sec": 0.45,
+            "end_sec": 0.86,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.976,
+            "start_sec": 1.33,
+            "end_sec": 1.98,
+            "duration_ms": 650.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0009",
+        "nominal_gap_ms": 100,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 3,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9822,
+            "start_sec": 0.49,
+            "end_sec": 0.78,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9949,
+            "start_sec": 0.99,
+            "end_sec": 1.36,
+            "duration_ms": 370.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0010",
+        "nominal_gap_ms": 100,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9968,
+            "start_sec": 0.37,
+            "end_sec": 0.62,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9982,
+            "start_sec": 0.71,
+            "end_sec": 0.98,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.983,
+            "start_sec": 1.21,
+            "end_sec": 1.48,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9961,
+            "start_sec": 1.61,
+            "end_sec": 2.02,
+            "duration_ms": 410.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0011",
+        "nominal_gap_ms": 150,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9978,
+            "start_sec": 0.39,
+            "end_sec": 0.84,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9999,
+            "start_sec": 0.85,
+            "end_sec": 1.24,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9935,
+            "start_sec": 1.29,
+            "end_sec": 1.6,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9527,
+            "start_sec": 1.83,
+            "end_sec": 2.24,
+            "duration_ms": 410.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0012",
+        "nominal_gap_ms": 150,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9977,
+            "start_sec": 1.19,
+            "end_sec": 1.6,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9981,
+            "start_sec": 1.87,
+            "end_sec": 2.28,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9988,
+            "start_sec": 2.29,
+            "end_sec": 2.68,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0013",
+        "nominal_gap_ms": 150,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "TRAI",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.999,
+            "start_sec": 0.37,
+            "end_sec": 0.62,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9972,
+            "start_sec": 0.79,
+            "end_sec": 1.16,
+            "duration_ms": 370.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9784,
+            "start_sec": 1.27,
+            "end_sec": 1.82,
+            "duration_ms": 550.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0014",
+        "nominal_gap_ms": 150,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9879,
+            "start_sec": 0.43,
+            "end_sec": 0.84,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9914,
+            "start_sec": 0.87,
+            "end_sec": 1.34,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9994,
+            "start_sec": 1.43,
+            "end_sec": 1.68,
+            "duration_ms": 250.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0015",
+        "nominal_gap_ms": 150,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9068,
+            "start_sec": 0.41,
+            "end_sec": 0.74,
+            "duration_ms": 330.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9984,
+            "start_sec": 0.95,
+            "end_sec": 1.26,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.827,
+            "start_sec": 1.91,
+            "end_sec": 2.3,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9935,
+            "start_sec": 2.47,
+            "end_sec": 2.78,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0016",
+        "nominal_gap_ms": 150,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 3,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9887,
+            "start_sec": 0.41,
+            "end_sec": 1.04,
+            "duration_ms": 630.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9995,
+            "start_sec": 1.07,
+            "end_sec": 1.38,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9989,
+            "start_sec": 1.53,
+            "end_sec": 1.88,
+            "duration_ms": 350.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0017",
+        "nominal_gap_ms": 150,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 1,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.7921,
+            "start_sec": 1.43,
+            "end_sec": 1.8,
+            "duration_ms": 370.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0018",
+        "nominal_gap_ms": 150,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 3,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9998,
+            "start_sec": 0.41,
+            "end_sec": 0.72,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9705,
+            "start_sec": 1.41,
+            "end_sec": 1.7,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9134,
+            "start_sec": 1.93,
+            "end_sec": 2.24,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0019",
+        "nominal_gap_ms": 150,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9632,
+            "start_sec": 0.45,
+            "end_sec": 0.84,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9636,
+            "start_sec": 0.89,
+            "end_sec": 1.36,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9722,
+            "start_sec": 1.47,
+            "end_sec": 1.86,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0020",
+        "nominal_gap_ms": 150,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9873,
+            "start_sec": 0.35,
+            "end_sec": 0.66,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9912,
+            "start_sec": 1.23,
+            "end_sec": 1.56,
+            "duration_ms": 330.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9726,
+            "start_sec": 1.77,
+            "end_sec": 2.06,
+            "duration_ms": 290.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0021",
+        "nominal_gap_ms": 200,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.997,
+            "start_sec": 0.41,
+            "end_sec": 0.8,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9999,
+            "start_sec": 0.87,
+            "end_sec": 1.26,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9945,
+            "start_sec": 1.51,
+            "end_sec": 1.78,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9963,
+            "start_sec": 2.15,
+            "end_sec": 2.46,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0022",
+        "nominal_gap_ms": 200,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9715,
+            "start_sec": 0.39,
+            "end_sec": 0.7,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9961,
+            "start_sec": 0.97,
+            "end_sec": 1.42,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9817,
+            "start_sec": 1.57,
+            "end_sec": 2.0,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9939,
+            "start_sec": 2.07,
+            "end_sec": 2.44,
+            "duration_ms": 370.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0023",
+        "nominal_gap_ms": 200,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "TRAI",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9999,
+            "start_sec": 0.41,
+            "end_sec": 0.8,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9836,
+            "start_sec": 0.87,
+            "end_sec": 1.18,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.993,
+            "start_sec": 1.57,
+            "end_sec": 1.9,
+            "duration_ms": 330.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0024",
+        "nominal_gap_ms": 200,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9988,
+            "start_sec": 0.41,
+            "end_sec": 0.88,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9777,
+            "start_sec": 0.97,
+            "end_sec": 1.42,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9862,
+            "start_sec": 1.65,
+            "end_sec": 1.94,
+            "duration_ms": 290.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0025",
+        "nominal_gap_ms": 200,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9882,
+            "start_sec": 0.99,
+            "end_sec": 1.24,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9928,
+            "start_sec": 1.55,
+            "end_sec": 1.9,
+            "duration_ms": 350.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9546,
+            "start_sec": 2.23,
+            "end_sec": 2.54,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0026",
+        "nominal_gap_ms": 200,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.7649,
+            "start_sec": 0.35,
+            "end_sec": 0.72,
+            "duration_ms": 370.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9998,
+            "start_sec": 1.51,
+            "end_sec": 1.9,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0027",
+        "nominal_gap_ms": 200,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 3,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9815,
+            "start_sec": 0.0,
+            "end_sec": 0.73,
+            "duration_ms": 730.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.8587,
+            "start_sec": 0.97,
+            "end_sec": 1.24,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9895,
+            "start_sec": 1.23,
+            "end_sec": 1.88,
+            "duration_ms": 650.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0028",
+        "nominal_gap_ms": 200,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 1,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9624,
+            "start_sec": 1.43,
+            "end_sec": 1.78,
+            "duration_ms": 350.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0029",
+        "nominal_gap_ms": 200,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9831,
+            "start_sec": 0.49,
+            "end_sec": 0.76,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9958,
+            "start_sec": 0.99,
+            "end_sec": 1.26,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9825,
+            "start_sec": 1.69,
+            "end_sec": 1.94,
+            "duration_ms": 250.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0030",
+        "nominal_gap_ms": 200,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9966,
+            "start_sec": 0.39,
+            "end_sec": 0.74,
+            "duration_ms": 350.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9666,
+            "start_sec": 0.91,
+            "end_sec": 1.24,
+            "duration_ms": 330.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9757,
+            "start_sec": 1.49,
+            "end_sec": 1.78,
+            "duration_ms": 290.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0031",
+        "nominal_gap_ms": 250,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9947,
+            "start_sec": 0.35,
+            "end_sec": 0.9,
+            "duration_ms": 550.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9999,
+            "start_sec": 0.99,
+            "end_sec": 1.32,
+            "duration_ms": 330.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9961,
+            "start_sec": 2.45,
+            "end_sec": 2.76,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0032",
+        "nominal_gap_ms": 250,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9846,
+            "start_sec": 0.43,
+            "end_sec": 0.84,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.8895,
+            "start_sec": 1.01,
+            "end_sec": 1.4,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9963,
+            "start_sec": 1.73,
+            "end_sec": 2.14,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9996,
+            "start_sec": 2.33,
+            "end_sec": 2.64,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0033",
+        "nominal_gap_ms": 250,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9997,
+            "start_sec": 0.37,
+            "end_sec": 0.76,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9299,
+            "start_sec": 0.89,
+            "end_sec": 1.26,
+            "duration_ms": 370.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9949,
+            "start_sec": 1.63,
+            "end_sec": 2.0,
+            "duration_ms": 370.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9939,
+            "start_sec": 2.37,
+            "end_sec": 2.66,
+            "duration_ms": 290.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0034",
+        "nominal_gap_ms": 250,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "TRAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 3,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9927,
+            "start_sec": 0.37,
+            "end_sec": 0.84,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.997,
+            "start_sec": 1.03,
+            "end_sec": 1.58,
+            "duration_ms": 550.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0035",
+        "nominal_gap_ms": 250,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.7939,
+            "start_sec": 0.35,
+            "end_sec": 0.66,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9829,
+            "start_sec": 0.89,
+            "end_sec": 1.14,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.8205,
+            "start_sec": 1.41,
+            "end_sec": 1.82,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9784,
+            "start_sec": 2.13,
+            "end_sec": 2.52,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0036",
+        "nominal_gap_ms": 250,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9719,
+            "start_sec": 0.37,
+            "end_sec": 0.84,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9997,
+            "start_sec": 1.67,
+            "end_sec": 2.06,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0037",
+        "nominal_gap_ms": 250,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9626,
+            "start_sec": 0.85,
+            "end_sec": 1.16,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.7943,
+            "start_sec": 1.41,
+            "end_sec": 1.78,
+            "duration_ms": 370.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0038",
+        "nominal_gap_ms": 250,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.974,
+            "start_sec": 0.39,
+            "end_sec": 0.68,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.6364,
+            "start_sec": 1.37,
+            "end_sec": 1.7,
+            "duration_ms": 330.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0039",
+        "nominal_gap_ms": 250,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9668,
+            "start_sec": 0.45,
+            "end_sec": 0.84,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.6738,
+            "start_sec": 0.97,
+            "end_sec": 1.4,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.795,
+            "start_sec": 1.55,
+            "end_sec": 1.82,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0040",
+        "nominal_gap_ms": 250,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9999,
+            "start_sec": 0.35,
+            "end_sec": 0.98,
+            "duration_ms": 630.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9576,
+            "start_sec": 1.89,
+            "end_sec": 2.22,
+            "duration_ms": 330.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9154,
+            "start_sec": 2.37,
+            "end_sec": 2.66,
+            "duration_ms": 290.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0041",
+        "nominal_gap_ms": 300,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9945,
+            "start_sec": 0.37,
+            "end_sec": 0.78,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9988,
+            "start_sec": 0.95,
+            "end_sec": 1.46,
+            "duration_ms": 510.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9556,
+            "start_sec": 1.63,
+            "end_sec": 1.94,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9776,
+            "start_sec": 2.27,
+            "end_sec": 2.64,
+            "duration_ms": 370.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0042",
+        "nominal_gap_ms": 300,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.96,
+            "start_sec": 0.39,
+            "end_sec": 0.66,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.8824,
+            "start_sec": 0.93,
+            "end_sec": 1.56,
+            "duration_ms": 630.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.6011,
+            "start_sec": 1.73,
+            "end_sec": 2.16,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9999,
+            "start_sec": 2.33,
+            "end_sec": 2.86,
+            "duration_ms": 530.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0043",
+        "nominal_gap_ms": 300,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9991,
+            "start_sec": 0.39,
+            "end_sec": 0.8,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9937,
+            "start_sec": 0.97,
+            "end_sec": 1.44,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9778,
+            "start_sec": 1.81,
+            "end_sec": 2.32,
+            "duration_ms": 510.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9749,
+            "start_sec": 2.53,
+            "end_sec": 2.8,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0044",
+        "nominal_gap_ms": 300,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.5609,
+            "start_sec": 0.37,
+            "end_sec": 0.76,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9821,
+            "start_sec": 0.93,
+            "end_sec": 1.32,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9916,
+            "start_sec": 1.49,
+            "end_sec": 1.74,
+            "duration_ms": 250.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0045",
+        "nominal_gap_ms": 300,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.8005,
+            "start_sec": 0.39,
+            "end_sec": 0.64,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9934,
+            "start_sec": 0.93,
+            "end_sec": 1.2,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9807,
+            "start_sec": 1.57,
+            "end_sec": 1.96,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.7197,
+            "start_sec": 2.23,
+            "end_sec": 2.64,
+            "duration_ms": 410.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0046",
+        "nominal_gap_ms": 300,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.7919,
+            "start_sec": 0.37,
+            "end_sec": 0.78,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9989,
+            "start_sec": 1.65,
+            "end_sec": 1.98,
+            "duration_ms": 330.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0047",
+        "nominal_gap_ms": 300,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9924,
+            "start_sec": 0.87,
+            "end_sec": 1.18,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9895,
+            "start_sec": 1.57,
+            "end_sec": 1.96,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0048",
+        "nominal_gap_ms": 300,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9592,
+            "start_sec": 1.67,
+            "end_sec": 2.06,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.887,
+            "start_sec": 2.33,
+            "end_sec": 2.6,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0049",
+        "nominal_gap_ms": 300,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 3,
+        "n_emitted_cmds": 1,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.963,
+            "start_sec": 1.01,
+            "end_sec": 1.9,
+            "duration_ms": 890.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0050",
+        "nominal_gap_ms": 300,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9955,
+            "start_sec": 0.39,
+            "end_sec": 0.84,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9934,
+            "start_sec": 1.03,
+            "end_sec": 1.3,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9837,
+            "start_sec": 1.71,
+            "end_sec": 2.1,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.6467,
+            "start_sec": 2.33,
+            "end_sec": 2.64,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0051",
+        "nominal_gap_ms": 400,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9977,
+            "start_sec": 0.39,
+            "end_sec": 0.96,
+            "duration_ms": 570.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.986,
+            "start_sec": 1.23,
+            "end_sec": 1.64,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9955,
+            "start_sec": 1.99,
+            "end_sec": 2.24,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9953,
+            "start_sec": 2.89,
+            "end_sec": 3.28,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0052",
+        "nominal_gap_ms": 400,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9923,
+            "start_sec": 0.45,
+            "end_sec": 0.7,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9885,
+            "start_sec": 1.15,
+            "end_sec": 1.6,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9913,
+            "start_sec": 1.89,
+            "end_sec": 2.28,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9893,
+            "start_sec": 2.53,
+            "end_sec": 3.0,
+            "duration_ms": 470.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0053",
+        "nominal_gap_ms": 400,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "XUONG",
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.992,
+            "start_sec": 0.35,
+            "end_sec": 0.82,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9891,
+            "start_sec": 1.93,
+            "end_sec": 2.32,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9957,
+            "start_sec": 2.87,
+            "end_sec": 3.14,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0054",
+        "nominal_gap_ms": 400,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9946,
+            "start_sec": 0.39,
+            "end_sec": 0.84,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9984,
+            "start_sec": 1.15,
+            "end_sec": 1.58,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9965,
+            "start_sec": 1.87,
+            "end_sec": 2.3,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0055",
+        "nominal_gap_ms": 400,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9952,
+            "start_sec": 1.11,
+            "end_sec": 1.36,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9926,
+            "start_sec": 1.89,
+            "end_sec": 2.3,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9895,
+            "start_sec": 2.67,
+            "end_sec": 3.04,
+            "duration_ms": 370.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0056",
+        "nominal_gap_ms": 400,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9959,
+            "start_sec": 0.55,
+            "end_sec": 0.96,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9841,
+            "start_sec": 2.03,
+            "end_sec": 2.48,
+            "duration_ms": 450.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0057",
+        "nominal_gap_ms": 400,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 1,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9778,
+            "start_sec": 1.13,
+            "end_sec": 1.56,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0058",
+        "nominal_gap_ms": 400,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9933,
+            "start_sec": 0.43,
+            "end_sec": 0.68,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9877,
+            "start_sec": 2.19,
+            "end_sec": 2.56,
+            "duration_ms": 370.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0059",
+        "nominal_gap_ms": 400,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9907,
+            "start_sec": 0.49,
+            "end_sec": 0.86,
+            "duration_ms": 370.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9952,
+            "start_sec": 1.29,
+            "end_sec": 1.7,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.996,
+            "start_sec": 2.17,
+            "end_sec": 2.48,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0060",
+        "nominal_gap_ms": 400,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9152,
+            "start_sec": 0.37,
+            "end_sec": 0.84,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9912,
+            "start_sec": 1.09,
+            "end_sec": 1.38,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.7978,
+            "start_sec": 1.91,
+            "end_sec": 2.58,
+            "duration_ms": 670.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9775,
+            "start_sec": 2.59,
+            "end_sec": 3.04,
+            "duration_ms": 450.0
+          }
+        ]
+      }
+    ]
+  },
+  "gate_d_test_reproduction": {
+    "corpus_split": "test",
+    "manifest_path": "experiments/vieneu_kws_research_v12/manifests/vad_test_corpus_manifest.csv",
+    "total_sequences": 60,
+    "exact_correct_sequences": 31,
+    "exact_sequence_accuracy": 0.5167,
+    "total_target_events": 192,
+    "matched_commands": 157,
+    "missed_commands": 33,
+    "substitutions": 2,
+    "oov_false_activations": 7,
+    "silence_false_activations": 0,
+    "duplicate_triggers": 0,
+    "command_precision": 0.9458,
+    "command_recall": 0.8177,
+    "command_f1": 0.8771,
+    "total_negative_minutes": 1.75,
+    "total_oov_minutes": 0.14,
+    "total_silence_minutes": 1.61,
+    "false_activations_per_negative_min": 4.01,
+    "false_activations_per_oov_min": 49.91,
+    "median_latency_ms": 286.6,
+    "p95_latency_ms": 517.62,
+    "gap_breakdown": {
+      "100": {
+        "target_events": 32,
+        "matched": 26,
+        "exact_seqs": 3,
+        "total_seqs": 10,
+        "fa_total": 2
+      },
+      "150": {
+        "target_events": 32,
+        "matched": 27,
+        "exact_seqs": 7,
+        "total_seqs": 10,
+        "fa_total": 1
+      },
+      "200": {
+        "target_events": 32,
+        "matched": 21,
+        "exact_seqs": 2,
+        "total_seqs": 10,
+        "fa_total": 2
+      },
+      "250": {
+        "target_events": 32,
+        "matched": 22,
+        "exact_seqs": 3,
+        "total_seqs": 10,
+        "fa_total": 1
+      },
+      "300": {
+        "target_events": 32,
+        "matched": 30,
+        "exact_seqs": 8,
+        "total_seqs": 10,
+        "fa_total": 0
+      },
+      "400": {
+        "target_events": 32,
+        "matched": 31,
+        "exact_seqs": 8,
+        "total_seqs": 10,
+        "fa_total": 1
+      }
+    },
+    "condition_breakdown": {
+      "clean": {
+        "target_events": 48,
+        "matched": 41,
+        "exact_seqs": 7,
+        "total_seqs": 12,
+        "fa_total": 0
+      },
+      "snr20": {
+        "target_events": 42,
+        "matched": 36,
+        "exact_seqs": 7,
+        "total_seqs": 12,
+        "fa_total": 0
+      },
+      "snr15": {
+        "target_events": 36,
+        "matched": 30,
+        "exact_seqs": 6,
+        "total_seqs": 12,
+        "fa_total": 1
+      },
+      "snr10": {
+        "target_events": 24,
+        "matched": 18,
+        "exact_seqs": 5,
+        "total_seqs": 12,
+        "fa_total": 6
+      },
+      "snr05": {
+        "target_events": 42,
+        "matched": 32,
+        "exact_seqs": 6,
+        "total_seqs": 12,
+        "fa_total": 0
+      }
+    },
+    "per_sequence_records": [
+      {
+        "sequence_id": "vad_test_seq_0001",
+        "nominal_gap_ms": 100,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.7812,
+            "start_sec": 0.39,
+            "end_sec": 1.32,
+            "duration_ms": 930.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9985,
+            "start_sec": 1.39,
+            "end_sec": 1.68,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9955,
+            "start_sec": 1.91,
+            "end_sec": 2.36,
+            "duration_ms": 450.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0002",
+        "nominal_gap_ms": 100,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9988,
+            "start_sec": 0.35,
+            "end_sec": 0.72,
+            "duration_ms": 370.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.996,
+            "start_sec": 0.89,
+            "end_sec": 1.34,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.7897,
+            "start_sec": 1.35,
+            "end_sec": 2.24,
+            "duration_ms": 890.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0003",
+        "nominal_gap_ms": 100,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "XUONG",
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9835,
+            "start_sec": 0.39,
+            "end_sec": 0.78,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9886,
+            "start_sec": 1.41,
+            "end_sec": 1.86,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9964,
+            "start_sec": 1.91,
+            "end_sec": 2.18,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0004",
+        "nominal_gap_ms": 100,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9919,
+            "start_sec": 0.43,
+            "end_sec": 0.88,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.972,
+            "start_sec": 0.89,
+            "end_sec": 1.32,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9793,
+            "start_sec": 1.33,
+            "end_sec": 1.62,
+            "duration_ms": 290.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0005",
+        "nominal_gap_ms": 100,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9913,
+            "start_sec": 0.37,
+            "end_sec": 0.68,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9981,
+            "start_sec": 0.75,
+            "end_sec": 1.1,
+            "duration_ms": 350.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9805,
+            "start_sec": 1.31,
+            "end_sec": 1.78,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9804,
+            "start_sec": 1.85,
+            "end_sec": 2.16,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0006",
+        "nominal_gap_ms": 100,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 1,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9876,
+            "start_sec": 0.39,
+            "end_sec": 0.82,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0007",
+        "nominal_gap_ms": 100,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 3,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.855,
+            "start_sec": 0.39,
+            "end_sec": 0.76,
+            "duration_ms": 370.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9972,
+            "start_sec": 0.81,
+            "end_sec": 1.08,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9952,
+            "start_sec": 1.31,
+            "end_sec": 1.74,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0008",
+        "nominal_gap_ms": 100,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 3,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9928,
+            "start_sec": 0.45,
+            "end_sec": 0.74,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.6002,
+            "start_sec": 0.91,
+            "end_sec": 1.98,
+            "duration_ms": 1070.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.8634,
+            "start_sec": 2.03,
+            "end_sec": 2.28,
+            "duration_ms": 250.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0009",
+        "nominal_gap_ms": 100,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 3,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.7852,
+            "start_sec": 0.45,
+            "end_sec": 1.32,
+            "duration_ms": 870.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9975,
+            "start_sec": 1.35,
+            "end_sec": 1.62,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0010",
+        "nominal_gap_ms": 100,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9981,
+            "start_sec": 0.39,
+            "end_sec": 0.7,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9978,
+            "start_sec": 0.77,
+            "end_sec": 1.06,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9918,
+            "start_sec": 1.31,
+            "end_sec": 1.74,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.976,
+            "start_sec": 1.77,
+            "end_sec": 2.16,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0011",
+        "nominal_gap_ms": 150,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9799,
+            "start_sec": 0.41,
+            "end_sec": 0.94,
+            "duration_ms": 530.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9955,
+            "start_sec": 0.93,
+            "end_sec": 1.36,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9992,
+            "start_sec": 1.45,
+            "end_sec": 1.72,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9698,
+            "start_sec": 1.97,
+            "end_sec": 2.42,
+            "duration_ms": 450.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0012",
+        "nominal_gap_ms": 150,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9989,
+            "start_sec": 0.43,
+            "end_sec": 0.7,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9945,
+            "start_sec": 0.87,
+            "end_sec": 1.18,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9828,
+            "start_sec": 1.53,
+            "end_sec": 1.86,
+            "duration_ms": 330.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9923,
+            "start_sec": 1.97,
+            "end_sec": 2.4,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0013",
+        "nominal_gap_ms": 150,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9935,
+            "start_sec": 0.39,
+            "end_sec": 0.76,
+            "duration_ms": 370.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.992,
+            "start_sec": 0.79,
+            "end_sec": 1.16,
+            "duration_ms": 370.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9957,
+            "start_sec": 1.33,
+            "end_sec": 1.66,
+            "duration_ms": 330.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9984,
+            "start_sec": 1.83,
+            "end_sec": 2.08,
+            "duration_ms": 250.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0014",
+        "nominal_gap_ms": 150,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9953,
+            "start_sec": 0.39,
+            "end_sec": 0.78,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9943,
+            "start_sec": 0.93,
+            "end_sec": 1.28,
+            "duration_ms": 350.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9786,
+            "start_sec": 1.37,
+            "end_sec": 1.78,
+            "duration_ms": 410.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0015",
+        "nominal_gap_ms": 150,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9948,
+            "start_sec": 0.43,
+            "end_sec": 0.68,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9982,
+            "start_sec": 1.51,
+            "end_sec": 1.86,
+            "duration_ms": 350.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9771,
+            "start_sec": 2.07,
+            "end_sec": 2.34,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0016",
+        "nominal_gap_ms": 150,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.996,
+            "start_sec": 0.05,
+            "end_sec": 0.94,
+            "duration_ms": 890.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9998,
+            "start_sec": 1.57,
+            "end_sec": 2.12,
+            "duration_ms": 550.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0017",
+        "nominal_gap_ms": 150,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 1,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9808,
+            "start_sec": 0.35,
+            "end_sec": 1.2,
+            "duration_ms": 850.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0018",
+        "nominal_gap_ms": 150,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9961,
+            "start_sec": 0.37,
+            "end_sec": 0.66,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9793,
+            "start_sec": 1.39,
+            "end_sec": 1.68,
+            "duration_ms": 290.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0019",
+        "nominal_gap_ms": 150,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 3,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9805,
+            "start_sec": 0.0,
+            "end_sec": 0.85,
+            "duration_ms": 850.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.4726,
+            "start_sec": 0.85,
+            "end_sec": 1.74,
+            "duration_ms": 890.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0020",
+        "nominal_gap_ms": 150,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9991,
+            "start_sec": 0.39,
+            "end_sec": 0.72,
+            "duration_ms": 330.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9987,
+            "start_sec": 0.73,
+            "end_sec": 1.06,
+            "duration_ms": 330.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9979,
+            "start_sec": 1.33,
+            "end_sec": 1.58,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.8513,
+            "start_sec": 1.77,
+            "end_sec": 2.04,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0021",
+        "nominal_gap_ms": 200,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9941,
+            "start_sec": 0.39,
+            "end_sec": 0.78,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9999,
+            "start_sec": 0.95,
+            "end_sec": 1.36,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.997,
+            "start_sec": 1.59,
+            "end_sec": 1.88,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9967,
+            "start_sec": 2.15,
+            "end_sec": 2.48,
+            "duration_ms": 330.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0022",
+        "nominal_gap_ms": 200,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9975,
+            "start_sec": 0.41,
+            "end_sec": 0.66,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9969,
+            "start_sec": 0.83,
+            "end_sec": 1.22,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9319,
+            "start_sec": 1.39,
+            "end_sec": 1.86,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9993,
+            "start_sec": 1.93,
+            "end_sec": 2.22,
+            "duration_ms": 290.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0023",
+        "nominal_gap_ms": 200,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "TRAI",
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.998,
+            "start_sec": 0.37,
+            "end_sec": 0.86,
+            "duration_ms": 490.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9984,
+            "start_sec": 1.01,
+            "end_sec": 1.4,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9987,
+            "start_sec": 2.25,
+            "end_sec": 2.52,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0024",
+        "nominal_gap_ms": 200,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 3,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9884,
+            "start_sec": 0.39,
+            "end_sec": 0.84,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9998,
+            "start_sec": 1.55,
+            "end_sec": 1.96,
+            "duration_ms": 410.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0025",
+        "nominal_gap_ms": 200,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.999,
+            "start_sec": 0.35,
+            "end_sec": 0.7,
+            "duration_ms": 350.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9911,
+            "start_sec": 1.59,
+            "end_sec": 1.84,
+            "duration_ms": 250.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0026",
+        "nominal_gap_ms": 200,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 3,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9925,
+            "start_sec": 0.41,
+            "end_sec": 0.68,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9236,
+            "start_sec": 1.05,
+            "end_sec": 1.5,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9995,
+            "start_sec": 1.61,
+            "end_sec": 1.98,
+            "duration_ms": 370.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0027",
+        "nominal_gap_ms": 200,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 1,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9653,
+            "start_sec": 1.03,
+            "end_sec": 1.28,
+            "duration_ms": 250.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0028",
+        "nominal_gap_ms": 200,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 1,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.8926,
+            "start_sec": 2.23,
+            "end_sec": 2.7,
+            "duration_ms": 470.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0029",
+        "nominal_gap_ms": 200,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 3,
+        "n_emitted_cmds": 1,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9961,
+            "start_sec": 1.77,
+            "end_sec": 2.02,
+            "duration_ms": 250.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0030",
+        "nominal_gap_ms": 200,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9998,
+            "start_sec": 0.37,
+            "end_sec": 0.8,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9847,
+            "start_sec": 0.83,
+            "end_sec": 1.4,
+            "duration_ms": 570.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0031",
+        "nominal_gap_ms": 250,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9729,
+            "start_sec": 0.39,
+            "end_sec": 0.74,
+            "duration_ms": 350.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9999,
+            "start_sec": 0.99,
+            "end_sec": 1.42,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0032",
+        "nominal_gap_ms": 250,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9975,
+            "start_sec": 0.99,
+            "end_sec": 1.34,
+            "duration_ms": 350.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9994,
+            "start_sec": 2.29,
+            "end_sec": 2.68,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0033",
+        "nominal_gap_ms": 250,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9983,
+            "start_sec": 0.39,
+            "end_sec": 0.66,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9834,
+            "start_sec": 2.29,
+            "end_sec": 2.54,
+            "duration_ms": 250.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0034",
+        "nominal_gap_ms": 250,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9904,
+            "start_sec": 0.41,
+            "end_sec": 0.72,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9774,
+            "start_sec": 1.11,
+            "end_sec": 1.36,
+            "duration_ms": 250.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.998,
+            "start_sec": 1.79,
+            "end_sec": 2.06,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0035",
+        "nominal_gap_ms": 250,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9744,
+            "start_sec": 0.07,
+            "end_sec": 1.0,
+            "duration_ms": 930.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.994,
+            "start_sec": 1.03,
+            "end_sec": 1.32,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9759,
+            "start_sec": 1.71,
+            "end_sec": 2.14,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0036",
+        "nominal_gap_ms": 250,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 1,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9867,
+            "start_sec": 1.55,
+            "end_sec": 2.06,
+            "duration_ms": 510.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0037",
+        "nominal_gap_ms": 250,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9903,
+            "start_sec": 1.03,
+            "end_sec": 1.32,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.995,
+            "start_sec": 1.69,
+            "end_sec": 2.1,
+            "duration_ms": 410.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0038",
+        "nominal_gap_ms": 250,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "TRAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9887,
+            "start_sec": 0.43,
+            "end_sec": 0.72,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.5691,
+            "start_sec": 2.23,
+            "end_sec": 3.2,
+            "duration_ms": 970.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0039",
+        "nominal_gap_ms": 250,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 3,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9752,
+            "start_sec": 1.15,
+            "end_sec": 1.78,
+            "duration_ms": 630.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9851,
+            "start_sec": 1.79,
+            "end_sec": 2.12,
+            "duration_ms": 330.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0040",
+        "nominal_gap_ms": 250,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9989,
+            "start_sec": 0.39,
+            "end_sec": 0.66,
+            "duration_ms": 270.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9927,
+            "start_sec": 1.01,
+            "end_sec": 1.32,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9502,
+            "start_sec": 1.73,
+            "end_sec": 2.18,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9987,
+            "start_sec": 2.33,
+            "end_sec": 2.76,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0041",
+        "nominal_gap_ms": 300,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9934,
+            "start_sec": 0.37,
+            "end_sec": 0.92,
+            "duration_ms": 550.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9987,
+            "start_sec": 1.07,
+            "end_sec": 1.48,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.997,
+            "start_sec": 1.63,
+            "end_sec": 2.02,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9836,
+            "start_sec": 2.53,
+            "end_sec": 2.98,
+            "duration_ms": 450.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0042",
+        "nominal_gap_ms": 300,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9931,
+            "start_sec": 0.43,
+            "end_sec": 0.78,
+            "duration_ms": 350.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.835,
+            "start_sec": 1.13,
+            "end_sec": 1.6,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9975,
+            "start_sec": 1.77,
+            "end_sec": 2.28,
+            "duration_ms": 510.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9964,
+            "start_sec": 2.43,
+            "end_sec": 2.9,
+            "duration_ms": 470.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0043",
+        "nominal_gap_ms": 300,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9966,
+            "start_sec": 0.41,
+            "end_sec": 0.84,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9978,
+            "start_sec": 1.03,
+            "end_sec": 1.54,
+            "duration_ms": 510.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9734,
+            "start_sec": 1.81,
+            "end_sec": 2.28,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9946,
+            "start_sec": 2.51,
+            "end_sec": 2.82,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0044",
+        "nominal_gap_ms": 300,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 3,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9989,
+            "start_sec": 0.39,
+            "end_sec": 1.6,
+            "duration_ms": 1210.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9988,
+            "start_sec": 1.83,
+            "end_sec": 2.28,
+            "duration_ms": 450.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0045",
+        "nominal_gap_ms": 300,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9925,
+            "start_sec": 0.45,
+            "end_sec": 0.8,
+            "duration_ms": 350.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9962,
+            "start_sec": 1.19,
+            "end_sec": 1.48,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9939,
+            "start_sec": 1.91,
+            "end_sec": 2.4,
+            "duration_ms": 490.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.969,
+            "start_sec": 2.69,
+            "end_sec": 3.12,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0046",
+        "nominal_gap_ms": 300,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9977,
+            "start_sec": 0.0,
+            "end_sec": 0.91,
+            "duration_ms": 910.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9967,
+            "start_sec": 1.57,
+            "end_sec": 1.84,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0047",
+        "nominal_gap_ms": 300,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9917,
+            "start_sec": 0.89,
+            "end_sec": 1.4,
+            "duration_ms": 510.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.8951,
+            "start_sec": 1.87,
+            "end_sec": 2.3,
+            "duration_ms": 430.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0048",
+        "nominal_gap_ms": 300,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9932,
+            "start_sec": 0.35,
+            "end_sec": 0.76,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9834,
+            "start_sec": 1.91,
+            "end_sec": 2.3,
+            "duration_ms": 390.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0049",
+        "nominal_gap_ms": 300,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "LEN"
+        ],
+        "is_exact_match": false,
+        "n_targets": 3,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.6,
+            "start_sec": 0.51,
+            "end_sec": 1.72,
+            "duration_ms": 1210.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9691,
+            "start_sec": 1.87,
+            "end_sec": 2.18,
+            "duration_ms": 310.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0050",
+        "nominal_gap_ms": 300,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9952,
+            "start_sec": 0.41,
+            "end_sec": 0.7,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9896,
+            "start_sec": 1.07,
+            "end_sec": 1.52,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.7204,
+            "start_sec": 1.59,
+            "end_sec": 2.26,
+            "duration_ms": 670.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9968,
+            "start_sec": 2.41,
+            "end_sec": 2.88,
+            "duration_ms": 470.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0051",
+        "nominal_gap_ms": 400,
+        "condition": "clean",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9962,
+            "start_sec": 0.37,
+            "end_sec": 0.84,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9999,
+            "start_sec": 1.09,
+            "end_sec": 1.62,
+            "duration_ms": 530.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.992,
+            "start_sec": 1.87,
+            "end_sec": 2.26,
+            "duration_ms": 390.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9135,
+            "start_sec": 2.79,
+            "end_sec": 3.26,
+            "duration_ms": 470.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0052",
+        "nominal_gap_ms": 400,
+        "condition": "clean",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": false,
+        "n_targets": 4,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9969,
+            "start_sec": 0.35,
+            "end_sec": 0.76,
+            "duration_ms": 410.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9966,
+            "start_sec": 2.01,
+            "end_sec": 2.54,
+            "duration_ms": 530.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9995,
+            "start_sec": 2.81,
+            "end_sec": 3.3,
+            "duration_ms": 490.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0053",
+        "nominal_gap_ms": 400,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "TRAI",
+          "XUONG",
+          "LEN"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9998,
+            "start_sec": 0.37,
+            "end_sec": 0.86,
+            "duration_ms": 490.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.999,
+            "start_sec": 1.15,
+            "end_sec": 1.62,
+            "duration_ms": 470.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.8016,
+            "start_sec": 2.05,
+            "end_sec": 2.54,
+            "duration_ms": 490.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9915,
+            "start_sec": 2.85,
+            "end_sec": 3.14,
+            "duration_ms": 290.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0054",
+        "nominal_gap_ms": 400,
+        "condition": "snr20",
+        "target_ground_truth": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.998,
+            "start_sec": 0.37,
+            "end_sec": 0.86,
+            "duration_ms": 490.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9991,
+            "start_sec": 1.19,
+            "end_sec": 1.68,
+            "duration_ms": 490.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9989,
+            "start_sec": 1.95,
+            "end_sec": 2.42,
+            "duration_ms": 470.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0055",
+        "nominal_gap_ms": 400,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "LEN",
+          "XUONG",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9969,
+            "start_sec": 0.43,
+            "end_sec": 0.72,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9968,
+            "start_sec": 0.75,
+            "end_sec": 1.48,
+            "duration_ms": 730.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9945,
+            "start_sec": 1.97,
+            "end_sec": 2.4,
+            "duration_ms": 430.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9866,
+            "start_sec": 2.77,
+            "end_sec": 3.3,
+            "duration_ms": 530.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0056",
+        "nominal_gap_ms": 400,
+        "condition": "snr15",
+        "target_ground_truth": [
+          "TRAI",
+          "PHAI"
+        ],
+        "emitted_commands": [
+          "TRAI",
+          "PHAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "TRAI",
+            "confidence": 0.9819,
+            "start_sec": 0.39,
+            "end_sec": 0.94,
+            "duration_ms": 550.0
+          },
+          {
+            "command": "PHAI",
+            "confidence": 0.9991,
+            "start_sec": 1.99,
+            "end_sec": 2.48,
+            "duration_ms": 490.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0057",
+        "nominal_gap_ms": 400,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": false,
+        "n_targets": 2,
+        "n_emitted_cmds": 3,
+        "fa_oov": 1,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.7703,
+            "start_sec": 0.43,
+            "end_sec": 0.74,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9973,
+            "start_sec": 0.95,
+            "end_sec": 1.52,
+            "duration_ms": 570.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9387,
+            "start_sec": 2.01,
+            "end_sec": 2.54,
+            "duration_ms": 530.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0058",
+        "nominal_gap_ms": 400,
+        "condition": "snr10",
+        "target_ground_truth": [
+          "LEN",
+          "XUONG"
+        ],
+        "emitted_commands": [
+          "LEN",
+          "XUONG"
+        ],
+        "is_exact_match": true,
+        "n_targets": 2,
+        "n_emitted_cmds": 2,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "LEN",
+            "confidence": 0.9965,
+            "start_sec": 0.37,
+            "end_sec": 0.68,
+            "duration_ms": 310.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9908,
+            "start_sec": 1.87,
+            "end_sec": 2.32,
+            "duration_ms": 450.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0059",
+        "nominal_gap_ms": 400,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "emitted_commands": [
+          "XUONG",
+          "TRAI",
+          "LEN"
+        ],
+        "is_exact_match": true,
+        "n_targets": 3,
+        "n_emitted_cmds": 3,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "XUONG",
+            "confidence": 0.9925,
+            "start_sec": 0.47,
+            "end_sec": 0.76,
+            "duration_ms": 290.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9956,
+            "start_sec": 1.19,
+            "end_sec": 1.64,
+            "duration_ms": 450.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9982,
+            "start_sec": 1.99,
+            "end_sec": 2.26,
+            "duration_ms": 270.0
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_test_seq_0060",
+        "nominal_gap_ms": 400,
+        "condition": "snr05",
+        "target_ground_truth": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "emitted_commands": [
+          "PHAI",
+          "LEN",
+          "XUONG",
+          "TRAI"
+        ],
+        "is_exact_match": true,
+        "n_targets": 4,
+        "n_emitted_cmds": 4,
+        "fa_oov": 0,
+        "fa_silence": 0,
+        "duplicates": 0,
+        "emitted_events": [
+          {
+            "command": "PHAI",
+            "confidence": 0.9993,
+            "start_sec": 0.09,
+            "end_sec": 0.84,
+            "duration_ms": 750.0
+          },
+          {
+            "command": "LEN",
+            "confidence": 0.9592,
+            "start_sec": 1.19,
+            "end_sec": 1.92,
+            "duration_ms": 730.0
+          },
+          {
+            "command": "XUONG",
+            "confidence": 0.9598,
+            "start_sec": 1.95,
+            "end_sec": 2.58,
+            "duration_ms": 630.0
+          },
+          {
+            "command": "TRAI",
+            "confidence": 0.9848,
+            "start_sec": 2.69,
+            "end_sec": 3.36,
+            "duration_ms": 670.0
+          }
+        ]
+      }
+    ]
+  },
+  "gate_d_parity_with_phase16": {
+    "status": "INVESTIGATE",
+    "reference_metrics": {
+      "exact_sequence_accuracy": 0.5167,
+      "matched_commands": 157,
+      "missed_commands": 33,
+      "substitutions": 2,
+      "oov_false_activations": 6,
+      "silence_false_activations": 0,
+      "duplicate_triggers": 0,
+      "command_precision": 0.9515,
+      "command_recall": 0.8177,
+      "command_f1": 0.8796,
+      "p95_latency_ms": 517.62
+    }
+  }
+}

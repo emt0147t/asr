@@ -1,0 +1,77 @@
+{
+  "PHASE48_FINAL_INFERENCE_AUDIT.md": {
+    "path": "experiments\\vieneu_kws_research_v12\\reports\\PHASE48_FINAL_INFERENCE_AUDIT.md",
+    "sha256": "d2a97af92bbec3a4cf76c70f81b3586665a940735fd5ce563c972d9a1d831dab",
+    "size_bytes": 12126
+  },
+  "PHASE48_REPRODUCED_METRICS.json": {
+    "path": "experiments\\vieneu_kws_research_v12\\reports\\PHASE48_REPRODUCED_METRICS.json",
+    "sha256": "3a6585d31755807c36215df45617ecbc5a48f50f3b0bd75ab7dbd7071f9d723d",
+    "size_bytes": 7884
+  },
+  "PHASE48_CLUSTERED_COMPARISONS.csv": {
+    "path": "experiments\\vieneu_kws_research_v12\\reports\\PHASE48_CLUSTERED_COMPARISONS.csv",
+    "sha256": "ea162068c3f7c48495a9831bf59280f422e33c4ee0bcee8ceffa900de3fa3a7f",
+    "size_bytes": 5012
+  },
+  "PHASE49_TTS_SOURCE_READINESS.md": {
+    "path": "experiments\\vieneu_kws_research_v12\\reports\\PHASE49_TTS_SOURCE_READINESS.md",
+    "sha256": "32daad7c962ec89524cca8c15ee5a2160914559ff04bd740450c9cd343aaa117",
+    "size_bytes": 3949
+  },
+  "PHASE49_SOURCE_PROVENANCE.json": {
+    "path": "experiments\\vieneu_kws_research_v12\\reports\\PHASE49_SOURCE_PROVENANCE.json",
+    "sha256": "7951d07c7d5bb5a9d04115993d84fd477e31791d3d5ca575cf5a1163984ecb23",
+    "size_bytes": 1707
+  },
+  "PHASE49_PILOT_MANIFEST.csv": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE49_PILOT_MANIFEST.csv",
+    "sha256": "8674c7206cff3db4bb370f5cc4a8c0b0a6cae8616fe6c1855916d2d5b941b337",
+    "size_bytes": 19378
+  },
+  "PHASE50_CONFIRMATORY_PREREGISTRATION.md": {
+    "path": "experiments\\vieneu_kws_research_v12\\reports\\PHASE50_CONFIRMATORY_PREREGISTRATION.md",
+    "sha256": "a413bd5d85239f8040e7d7441728d20fff1a71fc68d871a75004aa432a788eb1",
+    "size_bytes": 5353
+  },
+  "PHASE50_LOCKED_MANIFEST.csv": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE50_LOCKED_MANIFEST.csv",
+    "sha256": "b644a7e71badae8394b0e693fa45e1fdafb0a346b939c456b5f33e2941c80297",
+    "size_bytes": 92907
+  },
+  "PHASE50_TONE_PROBE_MANIFEST.csv": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE50_TONE_PROBE_MANIFEST.csv",
+    "sha256": "341aec1843a99b6d59506d64f06b2d03aa971b119acceb0c61195e9a5b89a109",
+    "size_bytes": 18555
+  },
+  "PHASE50_STREAMING_MANIFEST.csv": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE50_STREAMING_MANIFEST.csv",
+    "sha256": "d7f712ecc1ac7c37923a1ffca95f4474b5a863642b13316038113c0d56b97aed",
+    "size_bytes": 13159
+  },
+  "PHASE50_EVENT_LEDGER.csv": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE50_EVENT_LEDGER.csv",
+    "sha256": "b36e10c84abcc42b8d2bb050b6d00c31a22050894539fde96fffaa5fa93b7026",
+    "size_bytes": 16559
+  },
+  "PHASE50_EVENT_LEDGER.json": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE50_EVENT_LEDGER.json",
+    "sha256": "ca22dc9a100b73242b3868f20d94e4d8c3df13025d43e193f60cf7755a8cf9cc",
+    "size_bytes": 59918
+  },
+  "PHASE50_SHA256_MANIFEST.json": {
+    "path": "experiments\\vieneu_kws_research_v12\\reports\\PHASE50_SHA256_MANIFEST.json",
+    "sha256": "e990fc0e0b68fce314579096f3e3e007fa29bda16157ac5e345199a7aa6f4ed6",
+    "size_bytes": 629
+  },
+  "PHASE51_FINAL_EVALUATION_RESULTS.json": {
+    "path": "experiments\\vieneu_kws_research_v12\\reports\\PHASE51_FINAL_EVALUATION_RESULTS.json",
+    "sha256": "bba646f6b30dade16504b79ec627dfa1287975c59df82389767666c9c8ac38f6",
+    "size_bytes": 21304
+  },
+  "PHASE48_51_FINAL_REPORT.md": {
+    "path": "experiments\\vieneu_kws_research_v12\\reports\\PHASE48_51_FINAL_REPORT.md",
+    "sha256": "5073f48697395977d71a8f7304305d78f8c7ea0cbde623c48be17640b3dfb7ed",
+    "size_bytes": 28072
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "seed42": {
+    "checkpoint": "experiments/vieneu_kws_v2/checkpoints/best_checkpoint_seed42.pt",
+    "best_epoch": 24,
+    "val_macro_f1": 0.8275847577794574
+  },
+  "seed43": {
+    "checkpoint": "experiments/vieneu_kws_v2/checkpoints/best_checkpoint_seed43.pt",
+    "best_epoch": 25,
+    "val_macro_f1": 0.8430851124690312
+  },
+  "seed44": {
+    "checkpoint": "experiments/vieneu_kws_v2/checkpoints/best_checkpoint_seed44.pt",
+    "best_epoch": 24,
+    "val_macro_f1": 0.8577144423129625
+  }
+}

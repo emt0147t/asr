@@ -1,0 +1,14 @@
+{
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python_version": "3.11.9",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "torchaudio": "2.6.0+cu124",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "soundfile": "0.14.0"
+  },
+  "cuda_available": true
+}

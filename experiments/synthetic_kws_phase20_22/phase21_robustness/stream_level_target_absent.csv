@@ -1,0 +1,7 @@
+stream_id,duration_sec,windows_evaluated,false_triggers_count,false_triggers_per_hour,seed
+ta_stream_01,1800.0,17991,0,0.0,800000
+ta_stream_02,1800.0,17991,0,0.0,815000
+ta_stream_03,1800.0,17991,0,0.0,830000
+ta_stream_04,1800.0,17991,0,0.0,845000
+ta_stream_05,1800.0,17991,0,0.0,860000
+ta_stream_06,1800.0,17991,0,0.0,875000

@@ -1,0 +1,951 @@
+{
+  "clean_baseline": {
+    "name": "Clean Baseline",
+    "category": "in_distribution_clean",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9688,
+      "std_command_recall": 0.0063,
+      "mean_false_acceptance_rate": 0.0583,
+      "std_false_acceptance_rate": 0.0076,
+      "mean_5class_accuracy": 0.9537,
+      "std_5class_accuracy": 0.0064,
+      "mean_cpu_latency_ms": 1.64,
+      "p90_cpu_latency_ms": 2.05,
+      "meets_recall_target_ge_95": true,
+      "meets_far_target_le_5": false,
+      "target_status": "EXCEEDS_FAR_CEILING"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 154,
+        "macro_command_recall": 0.9625,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 12,
+        "non_target_far": 0.06,
+        "overall_5class_accuracy": 0.95,
+        "rejection_rate": 0.525,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "mean_latency_ms": 1.64,
+        "p90_latency_ms": 1.88
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 156,
+        "macro_command_recall": 0.975,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 10,
+        "non_target_far": 0.05,
+        "overall_5class_accuracy": 0.9611,
+        "rejection_rate": 0.5361,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "mean_latency_ms": 1.53,
+        "p90_latency_ms": 2.0
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 155,
+        "macro_command_recall": 0.9688,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 13,
+        "non_target_far": 0.065,
+        "overall_5class_accuracy": 0.95,
+        "rejection_rate": 0.525,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "mean_latency_ms": 1.76,
+        "p90_latency_ms": 2.26
+      }
+    }
+  },
+  "snr_20db": {
+    "name": "Additive Noise (+20 dB SNR)",
+    "category": "noise",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9437,
+      "std_command_recall": 0.0063,
+      "mean_false_acceptance_rate": 0.0567,
+      "std_false_acceptance_rate": 0.0076,
+      "mean_5class_accuracy": 0.9435,
+      "std_5class_accuracy": 0.007,
+      "mean_cpu_latency_ms": 1.82,
+      "p90_cpu_latency_ms": 2.11,
+      "meets_recall_target_ge_95": false,
+      "meets_far_target_le_5": false,
+      "target_status": "BELOW_RECALL_TARGET"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 150,
+        "macro_command_recall": 0.9375,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 13,
+        "non_target_far": 0.065,
+        "overall_5class_accuracy": 0.9361,
+        "rejection_rate": 0.5278,
+        "per_keyword_recall": {
+          "TRAI": 0.775,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "mean_latency_ms": 2.05,
+        "p90_latency_ms": 2.43
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 152,
+        "macro_command_recall": 0.95,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 10,
+        "non_target_far": 0.05,
+        "overall_5class_accuracy": 0.95,
+        "rejection_rate": 0.5389,
+        "per_keyword_recall": {
+          "TRAI": 0.85,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "mean_latency_ms": 1.77,
+        "p90_latency_ms": 2.0
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 151,
+        "macro_command_recall": 0.9437,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 11,
+        "non_target_far": 0.055,
+        "overall_5class_accuracy": 0.9444,
+        "rejection_rate": 0.5306,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "mean_latency_ms": 1.64,
+        "p90_latency_ms": 1.9
+      }
+    }
+  },
+  "snr_10db": {
+    "name": "Additive Noise (+10 dB SNR)",
+    "category": "noise",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.8667,
+      "std_command_recall": 0.0157,
+      "mean_false_acceptance_rate": 0.1017,
+      "std_false_acceptance_rate": 0.0454,
+      "mean_5class_accuracy": 0.8843,
+      "std_5class_accuracy": 0.0185,
+      "mean_cpu_latency_ms": 1.84,
+      "p90_cpu_latency_ms": 1.96,
+      "meets_recall_target_ge_95": false,
+      "meets_far_target_le_5": false,
+      "target_status": "BELOW_RECALL_TARGET"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 141,
+        "macro_command_recall": 0.8812,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 27,
+        "non_target_far": 0.135,
+        "overall_5class_accuracy": 0.8722,
+        "rejection_rate": 0.4972,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.725,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "mean_latency_ms": 1.87,
+        "p90_latency_ms": 2.09
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 136,
+        "macro_command_recall": 0.85,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 10,
+        "non_target_far": 0.05,
+        "overall_5class_accuracy": 0.9056,
+        "rejection_rate": 0.5667,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.775,
+          "LEN": 0.875,
+          "XUONG": 0.85
+        },
+        "mean_latency_ms": 1.86,
+        "p90_latency_ms": 1.95
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 139,
+        "macro_command_recall": 0.8688,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 24,
+        "non_target_far": 0.12,
+        "overall_5class_accuracy": 0.875,
+        "rejection_rate": 0.5,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.725,
+          "LEN": 0.975,
+          "XUONG": 0.95
+        },
+        "mean_latency_ms": 1.78,
+        "p90_latency_ms": 1.85
+      }
+    }
+  },
+  "snr_5db": {
+    "name": "Additive Noise (+5 dB SNR)",
+    "category": "noise",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.6625,
+      "std_command_recall": 0.1305,
+      "mean_false_acceptance_rate": 0.135,
+      "std_false_acceptance_rate": 0.0312,
+      "mean_5class_accuracy": 0.775,
+      "std_5class_accuracy": 0.0721,
+      "mean_cpu_latency_ms": 1.89,
+      "p90_cpu_latency_ms": 2.12,
+      "meets_recall_target_ge_95": false,
+      "meets_far_target_le_5": false,
+      "target_status": "BELOW_RECALL_TARGET"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 120,
+        "macro_command_recall": 0.75,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 20,
+        "non_target_far": 0.1,
+        "overall_5class_accuracy": 0.8333,
+        "rejection_rate": 0.5472,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.525,
+          "LEN": 0.85,
+          "XUONG": 0.75
+        },
+        "mean_latency_ms": 1.83,
+        "p90_latency_ms": 1.93
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 82,
+        "macro_command_recall": 0.5125,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 32,
+        "non_target_far": 0.16,
+        "overall_5class_accuracy": 0.6944,
+        "rejection_rate": 0.5861,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.55,
+          "LEN": 0.25,
+          "XUONG": 0.3
+        },
+        "mean_latency_ms": 1.98,
+        "p90_latency_ms": 2.37
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 116,
+        "macro_command_recall": 0.725,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 29,
+        "non_target_far": 0.145,
+        "overall_5class_accuracy": 0.7972,
+        "rejection_rate": 0.4833,
+        "per_keyword_recall": {
+          "TRAI": 0.85,
+          "PHAI": 0.45,
+          "LEN": 0.65,
+          "XUONG": 0.95
+        },
+        "mean_latency_ms": 1.85,
+        "p90_latency_ms": 2.05
+      }
+    }
+  },
+  "snr_0db": {
+    "name": "Additive Noise (0 dB SNR)",
+    "category": "noise",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.3937,
+      "std_command_recall": 0.0658,
+      "mean_false_acceptance_rate": 0.3283,
+      "std_false_acceptance_rate": 0.1855,
+      "mean_5class_accuracy": 0.5482,
+      "std_5class_accuracy": 0.1255,
+      "mean_cpu_latency_ms": 1.85,
+      "p90_cpu_latency_ms": 2.09,
+      "meets_recall_target_ge_95": false,
+      "meets_far_target_le_5": false,
+      "target_status": "BELOW_RECALL_TARGET"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 64,
+        "macro_command_recall": 0.4,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 33,
+        "non_target_far": 0.165,
+        "overall_5class_accuracy": 0.6417,
+        "rejection_rate": 0.5528,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.125,
+          "LEN": 0.1,
+          "XUONG": 0.4
+        },
+        "mean_latency_ms": 1.79,
+        "p90_latency_ms": 1.9
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 52,
+        "macro_command_recall": 0.325,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 106,
+        "non_target_far": 0.53,
+        "overall_5class_accuracy": 0.4056,
+        "rejection_rate": 0.3111,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.325,
+          "LEN": 0.0,
+          "XUONG": 0.0
+        },
+        "mean_latency_ms": 1.78,
+        "p90_latency_ms": 1.85
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 73,
+        "macro_command_recall": 0.4562,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 58,
+        "non_target_far": 0.29,
+        "overall_5class_accuracy": 0.5972,
+        "rejection_rate": 0.4,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.075,
+          "LEN": 0.025,
+          "XUONG": 0.9
+        },
+        "mean_latency_ms": 1.97,
+        "p90_latency_ms": 2.51
+      }
+    }
+  },
+  "gain_minus_12db": {
+    "name": "Gain Attenuation (-12 dB)",
+    "category": "gain",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.8875,
+      "std_command_recall": 0.0545,
+      "mean_false_acceptance_rate": 0.3183,
+      "std_false_acceptance_rate": 0.0978,
+      "mean_5class_accuracy": 0.7732,
+      "std_5class_accuracy": 0.0772,
+      "mean_cpu_latency_ms": 1.79,
+      "p90_cpu_latency_ms": 1.96,
+      "meets_recall_target_ge_95": false,
+      "meets_far_target_le_5": false,
+      "target_status": "BELOW_RECALL_TARGET"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 136,
+        "macro_command_recall": 0.85,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 69,
+        "non_target_far": 0.345,
+        "overall_5class_accuracy": 0.7417,
+        "rejection_rate": 0.3778,
+        "per_keyword_recall": {
+          "TRAI": 0.525,
+          "PHAI": 1.0,
+          "LEN": 0.9,
+          "XUONG": 0.975
+        },
+        "mean_latency_ms": 1.86,
+        "p90_latency_ms": 2.13
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 152,
+        "macro_command_recall": 0.95,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 42,
+        "non_target_far": 0.21,
+        "overall_5class_accuracy": 0.8611,
+        "rejection_rate": 0.4528,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 1.0,
+          "LEN": 0.975,
+          "XUONG": 1.0
+        },
+        "mean_latency_ms": 1.72,
+        "p90_latency_ms": 1.83
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 138,
+        "macro_command_recall": 0.8625,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 80,
+        "non_target_far": 0.4,
+        "overall_5class_accuracy": 0.7167,
+        "rejection_rate": 0.3361,
+        "per_keyword_recall": {
+          "TRAI": 0.475,
+          "PHAI": 1.0,
+          "LEN": 0.975,
+          "XUONG": 1.0
+        },
+        "mean_latency_ms": 1.79,
+        "p90_latency_ms": 1.92
+      }
+    }
+  },
+  "gain_plus_6db": {
+    "name": "Gain Boost (+6 dB with Soft Saturation)",
+    "category": "gain",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9146,
+      "std_command_recall": 0.0096,
+      "mean_false_acceptance_rate": 0.0083,
+      "std_false_acceptance_rate": 0.0029,
+      "mean_5class_accuracy": 0.9574,
+      "std_5class_accuracy": 0.0042,
+      "mean_cpu_latency_ms": 1.82,
+      "p90_cpu_latency_ms": 2.03,
+      "meets_recall_target_ge_95": false,
+      "meets_far_target_le_5": true,
+      "target_status": "BELOW_RECALL_TARGET"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 145,
+        "macro_command_recall": 0.9062,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 2,
+        "non_target_far": 0.01,
+        "overall_5class_accuracy": 0.9528,
+        "rejection_rate": 0.5722,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.875,
+          "LEN": 1.0,
+          "XUONG": 0.8
+        },
+        "mean_latency_ms": 1.74,
+        "p90_latency_ms": 1.83
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 148,
+        "macro_command_recall": 0.925,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 2,
+        "non_target_far": 0.01,
+        "overall_5class_accuracy": 0.9611,
+        "rejection_rate": 0.5694,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.875,
+          "LEN": 1.0,
+          "XUONG": 0.825
+        },
+        "mean_latency_ms": 1.94,
+        "p90_latency_ms": 2.3
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 146,
+        "macro_command_recall": 0.9125,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 1,
+        "non_target_far": 0.005,
+        "overall_5class_accuracy": 0.9583,
+        "rejection_rate": 0.5722,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.875,
+          "LEN": 0.975,
+          "XUONG": 0.85
+        },
+        "mean_latency_ms": 1.77,
+        "p90_latency_ms": 1.95
+      }
+    }
+  },
+  "clipping_half": {
+    "name": "Mild Digital Clipping (Threshold 0.50)",
+    "category": "clipping",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9458,
+      "std_command_recall": 0.0096,
+      "mean_false_acceptance_rate": 0.0333,
+      "std_false_acceptance_rate": 0.0029,
+      "mean_5class_accuracy": 0.9574,
+      "std_5class_accuracy": 0.0032,
+      "mean_cpu_latency_ms": 1.92,
+      "p90_cpu_latency_ms": 2.29,
+      "meets_recall_target_ge_95": false,
+      "meets_far_target_le_5": true,
+      "target_status": "BELOW_RECALL_TARGET"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 151,
+        "macro_command_recall": 0.9437,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 7,
+        "non_target_far": 0.035,
+        "overall_5class_accuracy": 0.9556,
+        "rejection_rate": 0.5417,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "mean_latency_ms": 1.74,
+        "p90_latency_ms": 1.85
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 150,
+        "macro_command_recall": 0.9375,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 6,
+        "non_target_far": 0.03,
+        "overall_5class_accuracy": 0.9556,
+        "rejection_rate": 0.5611,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.8
+        },
+        "mean_latency_ms": 2.09,
+        "p90_latency_ms": 2.79
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 153,
+        "macro_command_recall": 0.9563,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 7,
+        "non_target_far": 0.035,
+        "overall_5class_accuracy": 0.9611,
+        "rejection_rate": 0.5444,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "mean_latency_ms": 1.93,
+        "p90_latency_ms": 2.22
+      }
+    }
+  },
+  "reverb_rt60_200ms": {
+    "name": "Reverberation (RT60 = 0.20s)",
+    "category": "reverberation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9292,
+      "std_command_recall": 0.0321,
+      "mean_false_acceptance_rate": 0.0333,
+      "std_false_acceptance_rate": 0.0029,
+      "mean_5class_accuracy": 0.95,
+      "std_5class_accuracy": 0.0155,
+      "mean_cpu_latency_ms": 2.87,
+      "p90_cpu_latency_ms": 3.63,
+      "meets_recall_target_ge_95": false,
+      "meets_far_target_le_5": true,
+      "target_status": "BELOW_RECALL_TARGET"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 143,
+        "macro_command_recall": 0.8938,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 7,
+        "non_target_far": 0.035,
+        "overall_5class_accuracy": 0.9333,
+        "rejection_rate": 0.5667,
+        "per_keyword_recall": {
+          "TRAI": 0.8,
+          "PHAI": 0.85,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "mean_latency_ms": 3.1,
+        "p90_latency_ms": 4.18
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 153,
+        "macro_command_recall": 0.9563,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 6,
+        "non_target_far": 0.03,
+        "overall_5class_accuracy": 0.9639,
+        "rejection_rate": 0.5583,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "mean_latency_ms": 3.15,
+        "p90_latency_ms": 4.05
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 150,
+        "macro_command_recall": 0.9375,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 7,
+        "non_target_far": 0.035,
+        "overall_5class_accuracy": 0.9528,
+        "rejection_rate": 0.5611,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "mean_latency_ms": 2.37,
+        "p90_latency_ms": 2.67
+      }
+    }
+  },
+  "speed_0_90x": {
+    "name": "Playback Speed 0.90x (Slow Speech)",
+    "category": "speed",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9729,
+      "std_command_recall": 0.0201,
+      "mean_false_acceptance_rate": 0.0367,
+      "std_false_acceptance_rate": 0.0076,
+      "mean_5class_accuracy": 0.9676,
+      "std_5class_accuracy": 0.0128,
+      "mean_cpu_latency_ms": 1.81,
+      "p90_cpu_latency_ms": 1.96,
+      "meets_recall_target_ge_95": true,
+      "meets_far_target_le_5": true,
+      "target_status": "MEETS_BOUNDED_TARGETS"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 152,
+        "macro_command_recall": 0.95,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 9,
+        "non_target_far": 0.045,
+        "overall_5class_accuracy": 0.9528,
+        "rejection_rate": 0.5389,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "mean_latency_ms": 1.84,
+        "p90_latency_ms": 2.01
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 157,
+        "macro_command_recall": 0.9812,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 6,
+        "non_target_far": 0.03,
+        "overall_5class_accuracy": 0.975,
+        "rejection_rate": 0.5444,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "mean_latency_ms": 1.83,
+        "p90_latency_ms": 1.97
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 158,
+        "macro_command_recall": 0.9875,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 7,
+        "non_target_far": 0.035,
+        "overall_5class_accuracy": 0.975,
+        "rejection_rate": 0.5417,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "mean_latency_ms": 1.75,
+        "p90_latency_ms": 1.91
+      }
+    }
+  },
+  "speed_1_10x": {
+    "name": "Playback Speed 1.10x (Fast Speech)",
+    "category": "speed",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9708,
+      "std_command_recall": 0.0095,
+      "mean_false_acceptance_rate": 0.0733,
+      "std_false_acceptance_rate": 0.0076,
+      "mean_5class_accuracy": 0.9463,
+      "std_5class_accuracy": 0.0042,
+      "mean_cpu_latency_ms": 1.78,
+      "p90_cpu_latency_ms": 2.0,
+      "meets_recall_target_ge_95": true,
+      "meets_far_target_le_5": false,
+      "target_status": "EXCEEDS_FAR_CEILING"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 154,
+        "macro_command_recall": 0.9625,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 15,
+        "non_target_far": 0.075,
+        "overall_5class_accuracy": 0.9417,
+        "rejection_rate": 0.5167,
+        "per_keyword_recall": {
+          "TRAI": 0.85,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "mean_latency_ms": 1.75,
+        "p90_latency_ms": 1.95
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 155,
+        "macro_command_recall": 0.9688,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 13,
+        "non_target_far": 0.065,
+        "overall_5class_accuracy": 0.95,
+        "rejection_rate": 0.5278,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "mean_latency_ms": 1.71,
+        "p90_latency_ms": 1.94
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 157,
+        "macro_command_recall": 0.9812,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 16,
+        "non_target_far": 0.08,
+        "overall_5class_accuracy": 0.9472,
+        "rejection_rate": 0.5111,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "mean_latency_ms": 1.89,
+        "p90_latency_ms": 2.1
+      }
+    }
+  },
+  "shift_minus_150ms": {
+    "name": "Early Onset Shift (-150 ms)",
+    "category": "temporal_shift",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9646,
+      "std_command_recall": 0.0036,
+      "mean_false_acceptance_rate": 0.0367,
+      "std_false_acceptance_rate": 0.0104,
+      "mean_5class_accuracy": 0.9639,
+      "std_5class_accuracy": 0.0048,
+      "mean_cpu_latency_ms": 2.06,
+      "p90_cpu_latency_ms": 2.46,
+      "meets_recall_target_ge_95": true,
+      "meets_far_target_le_5": true,
+      "target_status": "MEETS_BOUNDED_TARGETS"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 154,
+        "macro_command_recall": 0.9625,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 8,
+        "non_target_far": 0.04,
+        "overall_5class_accuracy": 0.9611,
+        "rejection_rate": 0.5361,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "mean_latency_ms": 2.26,
+        "p90_latency_ms": 2.97
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 154,
+        "macro_command_recall": 0.9625,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 5,
+        "non_target_far": 0.025,
+        "overall_5class_accuracy": 0.9694,
+        "rejection_rate": 0.5556,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "mean_latency_ms": 1.96,
+        "p90_latency_ms": 2.12
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 155,
+        "macro_command_recall": 0.9688,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 9,
+        "non_target_far": 0.045,
+        "overall_5class_accuracy": 0.9611,
+        "rejection_rate": 0.5389,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "mean_latency_ms": 1.95,
+        "p90_latency_ms": 2.29
+      }
+    }
+  },
+  "shift_plus_150ms": {
+    "name": "Late Onset Shift (+150 ms)",
+    "category": "temporal_shift",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9834,
+      "std_command_recall": 0.013,
+      "mean_false_acceptance_rate": 0.095,
+      "std_false_acceptance_rate": 0.018,
+      "mean_5class_accuracy": 0.9398,
+      "std_5class_accuracy": 0.0153,
+      "mean_cpu_latency_ms": 1.88,
+      "p90_cpu_latency_ms": 2.15,
+      "meets_recall_target_ge_95": true,
+      "meets_far_target_le_5": false,
+      "target_status": "EXCEEDS_FAR_CEILING"
+    },
+    "per_seed": {
+      "seed42": {
+        "target_denominator": 160,
+        "target_hits": 155,
+        "macro_command_recall": 0.9688,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 22,
+        "non_target_far": 0.11,
+        "overall_5class_accuracy": 0.925,
+        "rejection_rate": 0.4944,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "mean_latency_ms": 1.94,
+        "p90_latency_ms": 2.3
+      },
+      "seed43": {
+        "target_denominator": 160,
+        "target_hits": 159,
+        "macro_command_recall": 0.9938,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 15,
+        "non_target_far": 0.075,
+        "overall_5class_accuracy": 0.9556,
+        "rejection_rate": 0.5167,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "mean_latency_ms": 1.8,
+        "p90_latency_ms": 2.02
+      },
+      "seed44": {
+        "target_denominator": 160,
+        "target_hits": 158,
+        "macro_command_recall": 0.9875,
+        "non_target_denominator": 200,
+        "raw_false_acceptances": 20,
+        "non_target_far": 0.1,
+        "overall_5class_accuracy": 0.9389,
+        "rejection_rate": 0.5028,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "mean_latency_ms": 1.9,
+        "p90_latency_ms": 2.12
+      }
+    }
+  }
+}

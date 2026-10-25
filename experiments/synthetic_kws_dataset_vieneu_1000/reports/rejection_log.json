@@ -1,0 +1,200 @@
+[
+  {
+    "sample_id": "vnkws_trai_0026",
+    "reason": "Clipping in raw output: peak=1.0429",
+    "seed": 100205,
+    "voice": "Hải Đăng"
+  },
+  {
+    "sample_id": "vnkws_trai_0027",
+    "reason": "Clipping in raw output: peak=1.1030",
+    "seed": 100206,
+    "voice": "Hải Đăng"
+  },
+  {
+    "sample_id": "vnkws_trai_0112",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 101101,
+    "voice": "Quang Sơn"
+  },
+  {
+    "sample_id": "vnkws_trai_0117",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 101106,
+    "voice": "Quang Sơn"
+  },
+  {
+    "sample_id": "vnkws_trai_0120",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 101109,
+    "voice": "Quang Sơn"
+  },
+  {
+    "sample_id": "vnkws_phai_0102",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 111001,
+    "voice": "Đoan Trang"
+  },
+  {
+    "sample_id": "vnkws_phai_0131",
+    "reason": "Clipping in raw output: peak=1.0418",
+    "seed": 111300,
+    "voice": "Minh Triết"
+  },
+  {
+    "sample_id": "vnkws_phai_0131",
+    "reason": "Clipping in raw output: peak=1.0457",
+    "seed": 161300,
+    "voice": "Minh Triết"
+  },
+  {
+    "sample_id": "vnkws_phai_0132",
+    "reason": "Clipping in raw output: peak=1.0353",
+    "seed": 111301,
+    "voice": "Minh Triết"
+  },
+  {
+    "sample_id": "vnkws_phai_0136",
+    "reason": "Clipping in raw output: peak=1.0373",
+    "seed": 111305,
+    "voice": "Minh Triết"
+  },
+  {
+    "sample_id": "vnkws_phai_0161",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 111600,
+    "voice": "Mỹ Duyên"
+  },
+  {
+    "sample_id": "vnkws_phai_0243",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 112402,
+    "voice": "Kim Thanh"
+  },
+  {
+    "sample_id": "vnkws_phai_0246",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 112405,
+    "voice": "Kim Thanh"
+  },
+  {
+    "sample_id": "vnkws_phai_0248",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 112407,
+    "voice": "Kim Thanh"
+  },
+  {
+    "sample_id": "vnkws_phai_0248",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 162407,
+    "voice": "Kim Thanh"
+  },
+  {
+    "sample_id": "vnkws_len_0107",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 121006,
+    "voice": "Đoan Trang"
+  },
+  {
+    "sample_id": "vnkws_len_0110",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 121009,
+    "voice": "Đoan Trang"
+  },
+  {
+    "sample_id": "vnkws_len_0113",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 121102,
+    "voice": "Quang Sơn"
+  },
+  {
+    "sample_id": "vnkws_len_0162",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 121601,
+    "voice": "Mỹ Duyên"
+  },
+  {
+    "sample_id": "vnkws_len_0166",
+    "reason": "Duration out of bounds: 1.040s",
+    "seed": 121605,
+    "voice": "Mỹ Duyên"
+  },
+  {
+    "sample_id": "vnkws_len_0167",
+    "reason": "Duration out of bounds: 1.040s",
+    "seed": 121606,
+    "voice": "Mỹ Duyên"
+  },
+  {
+    "sample_id": "vnkws_len_0168",
+    "reason": "Duration out of bounds: 1.040s",
+    "seed": 121607,
+    "voice": "Mỹ Duyên"
+  },
+  {
+    "sample_id": "vnkws_len_0170",
+    "reason": "Duration out of bounds: 1.040s",
+    "seed": 121609,
+    "voice": "Mỹ Duyên"
+  },
+  {
+    "sample_id": "vnkws_len_0249",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 122408,
+    "voice": "Kim Thanh"
+  },
+  {
+    "sample_id": "vnkws_xuong_0031",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 130300,
+    "voice": "Thiền Tâm Đức"
+  },
+  {
+    "sample_id": "vnkws_xuong_0111",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 131100,
+    "voice": "Quang Sơn"
+  },
+  {
+    "sample_id": "vnkws_xuong_0120",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 131109,
+    "voice": "Quang Sơn"
+  },
+  {
+    "sample_id": "vnkws_xuong_0188",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 131807,
+    "voice": "Phạm Tuyên"
+  },
+  {
+    "sample_id": "vnkws_xuong_0231",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 132300,
+    "voice": "Đức Trí"
+  },
+  {
+    "sample_id": "vnkws_xuong_0236",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 132305,
+    "voice": "Đức Trí"
+  },
+  {
+    "sample_id": "vnkws_xuong_0238",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 132307,
+    "voice": "Đức Trí"
+  },
+  {
+    "sample_id": "vnkws_xuong_0238",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 182307,
+    "voice": "Đức Trí"
+  },
+  {
+    "sample_id": "vnkws_xuong_0240",
+    "reason": "Duration out of bounds: 0.880s",
+    "seed": 132309,
+    "voice": "Đức Trí"
+  }
+]

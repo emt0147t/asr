@@ -1,0 +1,1849 @@
+{
+  "seed": 42,
+  "selected_threshold": 0.6,
+  "is_strictly_feasible": false,
+  "selection_rationale": "Strict constraints unachievable due to synthetic UNKNOWN phoneme overlap. Selected Pareto compromise (Target Rec 93.1% >= 90%, UNK FA reduced to 37.5%).",
+  "constraints": {
+    "min_target_recall": 0.95,
+    "max_fa_unknown": 0.05,
+    "max_fa_silence": 0.05
+  },
+  "candidate_evaluations": [
+    {
+      "threshold": 0.5,
+      "val_score": 0.7378258081626758,
+      "clean": {
+        "threshold": 0.5,
+        "accuracy": 0.8958333333333334,
+        "macro_f1": 0.8920652399234165,
+        "macro_recall": 0.8958333333333334,
+        "macro_precision": 0.8962487194940736,
+        "target_recall": 0.94375,
+        "unknown_recall": 0.6,
+        "unknown_false_activation_rate": 0.4,
+        "unknown_false_activation_count": 16,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.004166666666666667,
+        "rejection_count": 1,
+        "per_class_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.875,
+          "LEN": 0.975,
+          "XUONG": 1.0,
+          "UNKNOWN": 0.6,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            37,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            4,
+            35,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            39,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            0,
+            0
+          ],
+          [
+            2,
+            11,
+            3,
+            0,
+            24,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.5,
+        "accuracy": 0.3675,
+        "macro_f1": 0.3779338007209479,
+        "macro_recall": 0.3675,
+        "macro_precision": 0.6035403949141673,
+        "target_recall": 0.4,
+        "unknown_recall": 0.37375,
+        "unknown_false_activation_rate": 0.62,
+        "unknown_false_activation_count": 496,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.58,
+        "silence_false_activation_count": 464,
+        "rejection_rate": 0.010416666666666666,
+        "rejection_count": 50,
+        "per_class_recall": {
+          "TRAI": 0.72625,
+          "PHAI": 0.33,
+          "LEN": 0.31125,
+          "XUONG": 0.2325,
+          "UNKNOWN": 0.37375,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            581,
+            16,
+            0,
+            0,
+            198,
+            5
+          ],
+          [
+            392,
+            264,
+            0,
+            0,
+            142,
+            2
+          ],
+          [
+            385,
+            4,
+            249,
+            0,
+            149,
+            13
+          ],
+          [
+            377,
+            1,
+            0,
+            186,
+            194,
+            42
+          ],
+          [
+            393,
+            62,
+            41,
+            0,
+            299,
+            5
+          ],
+          [
+            357,
+            63,
+            44,
+            0,
+            151,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.6,
+      "val_score": 0.7332965183790638,
+      "clean": {
+        "threshold": 0.6,
+        "accuracy": 0.8916666666666667,
+        "macro_f1": 0.8887351574318956,
+        "macro_recall": 0.8916666666666666,
+        "macro_precision": 0.8896214008859357,
+        "target_recall": 0.93125,
+        "unknown_recall": 0.625,
+        "unknown_false_activation_rate": 0.375,
+        "unknown_false_activation_count": 15,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.016666666666666666,
+        "rejection_count": 4,
+        "per_class_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.825,
+          "LEN": 0.975,
+          "XUONG": 1.0,
+          "UNKNOWN": 0.625,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            37,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            4,
+            33,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            39,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            0,
+            0
+          ],
+          [
+            2,
+            10,
+            3,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.6,
+        "accuracy": 0.36125,
+        "macro_f1": 0.3706063605891235,
+        "macro_recall": 0.36125,
+        "macro_precision": 0.615473790589335,
+        "target_recall": 0.3840625,
+        "unknown_recall": 0.4,
+        "unknown_false_activation_rate": 0.59375,
+        "unknown_false_activation_count": 475,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.5375,
+        "silence_false_activation_count": 430,
+        "rejection_rate": 0.04,
+        "rejection_count": 192,
+        "per_class_recall": {
+          "TRAI": 0.71,
+          "PHAI": 0.3175,
+          "LEN": 0.305,
+          "XUONG": 0.20375,
+          "UNKNOWN": 0.4,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            568,
+            13,
+            0,
+            0,
+            214,
+            5
+          ],
+          [
+            379,
+            254,
+            0,
+            0,
+            165,
+            2
+          ],
+          [
+            376,
+            3,
+            244,
+            0,
+            164,
+            13
+          ],
+          [
+            367,
+            1,
+            0,
+            163,
+            227,
+            42
+          ],
+          [
+            384,
+            58,
+            33,
+            0,
+            320,
+            5
+          ],
+          [
+            353,
+            51,
+            26,
+            0,
+            185,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.7,
+      "val_score": 0.7197273869070063,
+      "clean": {
+        "threshold": 0.7,
+        "accuracy": 0.875,
+        "macro_f1": 0.8732745368389357,
+        "macro_recall": 0.875,
+        "macro_precision": 0.8724190218092657,
+        "target_recall": 0.90625,
+        "unknown_recall": 0.625,
+        "unknown_false_activation_rate": 0.375,
+        "unknown_false_activation_count": 15,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.03333333333333333,
+        "rejection_count": 8,
+        "per_class_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.775,
+          "LEN": 0.95,
+          "XUONG": 1.0,
+          "UNKNOWN": 0.625,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            36,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            4,
+            31,
+            0,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            38,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            0,
+            0
+          ],
+          [
+            2,
+            10,
+            3,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.7,
+        "accuracy": 0.35375,
+        "macro_f1": 0.3614507037325045,
+        "macro_recall": 0.35375,
+        "macro_precision": 0.6268737197570223,
+        "target_recall": 0.3653125,
+        "unknown_recall": 0.43,
+        "unknown_false_activation_rate": 0.56375,
+        "unknown_false_activation_count": 451,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.49875,
+        "silence_false_activation_count": 399,
+        "rejection_rate": 0.0725,
+        "rejection_count": 348,
+        "per_class_recall": {
+          "TRAI": 0.69375,
+          "PHAI": 0.29,
+          "LEN": 0.2925,
+          "XUONG": 0.185,
+          "UNKNOWN": 0.43,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            555,
+            9,
+            0,
+            0,
+            231,
+            5
+          ],
+          [
+            364,
+            232,
+            0,
+            0,
+            202,
+            2
+          ],
+          [
+            365,
+            1,
+            234,
+            0,
+            187,
+            13
+          ],
+          [
+            358,
+            1,
+            0,
+            148,
+            251,
+            42
+          ],
+          [
+            375,
+            50,
+            26,
+            0,
+            344,
+            5
+          ],
+          [
+            345,
+            41,
+            13,
+            0,
+            216,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.75,
+      "val_score": 0.7172727199035138,
+      "clean": {
+        "threshold": 0.75,
+        "accuracy": 0.875,
+        "macro_f1": 0.8732745368389357,
+        "macro_recall": 0.875,
+        "macro_precision": 0.8724190218092657,
+        "target_recall": 0.90625,
+        "unknown_recall": 0.625,
+        "unknown_false_activation_rate": 0.375,
+        "unknown_false_activation_count": 15,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.03333333333333333,
+        "rejection_count": 8,
+        "per_class_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.775,
+          "LEN": 0.95,
+          "XUONG": 1.0,
+          "UNKNOWN": 0.625,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            36,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            4,
+            31,
+            0,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            38,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            0,
+            0
+          ],
+          [
+            2,
+            10,
+            3,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.75,
+        "accuracy": 0.34625,
+        "macro_f1": 0.3532684803875292,
+        "macro_recall": 0.34625,
+        "macro_precision": 0.6307114146970445,
+        "target_recall": 0.351875,
+        "unknown_recall": 0.43875,
+        "unknown_false_activation_rate": 0.555,
+        "unknown_false_activation_count": 444,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.47875,
+        "silence_false_activation_count": 383,
+        "rejection_rate": 0.09,
+        "rejection_count": 432,
+        "per_class_recall": {
+          "TRAI": 0.6775,
+          "PHAI": 0.26875,
+          "LEN": 0.28875,
+          "XUONG": 0.1725,
+          "UNKNOWN": 0.43875,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            542,
+            9,
+            0,
+            0,
+            244,
+            5
+          ],
+          [
+            362,
+            215,
+            0,
+            0,
+            221,
+            2
+          ],
+          [
+            358,
+            1,
+            231,
+            0,
+            197,
+            13
+          ],
+          [
+            349,
+            1,
+            0,
+            138,
+            270,
+            42
+          ],
+          [
+            372,
+            49,
+            23,
+            0,
+            351,
+            5
+          ],
+          [
+            343,
+            35,
+            5,
+            0,
+            232,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.8,
+      "val_score": 0.7084094984950318,
+      "clean": {
+        "threshold": 0.8,
+        "accuracy": 0.8625,
+        "macro_f1": 0.8626920873053082,
+        "macro_recall": 0.8624999999999999,
+        "macro_precision": 0.8629560141755263,
+        "target_recall": 0.88125,
+        "unknown_recall": 0.65,
+        "unknown_false_activation_rate": 0.35,
+        "unknown_false_activation_count": 14,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.05416666666666667,
+        "rejection_count": 13,
+        "per_class_recall": {
+          "TRAI": 0.85,
+          "PHAI": 0.725,
+          "LEN": 0.95,
+          "XUONG": 1.0,
+          "UNKNOWN": 0.65,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            34,
+            0,
+            0,
+            0,
+            6,
+            0
+          ],
+          [
+            4,
+            29,
+            0,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            0,
+            38,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            0,
+            0
+          ],
+          [
+            2,
+            10,
+            2,
+            0,
+            26,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.8,
+        "accuracy": 0.341875,
+        "macro_f1": 0.3484167912710534,
+        "macro_recall": 0.341875,
+        "macro_precision": 0.6361052160860071,
+        "target_recall": 0.3428125,
+        "unknown_recall": 0.44875,
+        "unknown_false_activation_rate": 0.545,
+        "unknown_false_activation_count": 436,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.46,
+        "silence_false_activation_count": 368,
+        "rejection_rate": 0.10458333333333333,
+        "rejection_count": 502,
+        "per_class_recall": {
+          "TRAI": 0.66375,
+          "PHAI": 0.26375,
+          "LEN": 0.2825,
+          "XUONG": 0.16125,
+          "UNKNOWN": 0.44875,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            531,
+            7,
+            0,
+            0,
+            257,
+            5
+          ],
+          [
+            355,
+            211,
+            0,
+            0,
+            232,
+            2
+          ],
+          [
+            354,
+            1,
+            226,
+            0,
+            206,
+            13
+          ],
+          [
+            344,
+            1,
+            0,
+            129,
+            284,
+            42
+          ],
+          [
+            368,
+            46,
+            22,
+            0,
+            359,
+            5
+          ],
+          [
+            338,
+            30,
+            0,
+            0,
+            247,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.85,
+      "val_score": 0.7081938855338653,
+      "clean": {
+        "threshold": 0.85,
+        "accuracy": 0.8625,
+        "macro_f1": 0.8652219905128452,
+        "macro_recall": 0.8624999999999999,
+        "macro_precision": 0.8718952861810005,
+        "target_recall": 0.85625,
+        "unknown_recall": 0.75,
+        "unknown_false_activation_rate": 0.25,
+        "unknown_false_activation_count": 10,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.0875,
+        "rejection_count": 21,
+        "per_class_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.7,
+          "LEN": 0.9,
+          "XUONG": 1.0,
+          "UNKNOWN": 0.75,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            33,
+            0,
+            0,
+            0,
+            7,
+            0
+          ],
+          [
+            4,
+            28,
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            0,
+            0
+          ],
+          [
+            2,
+            7,
+            1,
+            0,
+            30,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.85,
+        "accuracy": 0.336875,
+        "macro_f1": 0.3417949739162455,
+        "macro_recall": 0.33687500000000004,
+        "macro_precision": 0.6412008505487609,
+        "target_recall": 0.3296875,
+        "unknown_recall": 0.47125,
+        "unknown_false_activation_rate": 0.5225,
+        "unknown_false_activation_count": 418,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.44,
+        "silence_false_activation_count": 352,
+        "rejection_rate": 0.12458333333333334,
+        "rejection_count": 598,
+        "per_class_recall": {
+          "TRAI": 0.64375,
+          "PHAI": 0.255,
+          "LEN": 0.275,
+          "XUONG": 0.145,
+          "UNKNOWN": 0.47125,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            515,
+            6,
+            0,
+            0,
+            274,
+            5
+          ],
+          [
+            343,
+            204,
+            0,
+            0,
+            251,
+            2
+          ],
+          [
+            350,
+            1,
+            220,
+            0,
+            216,
+            13
+          ],
+          [
+            341,
+            1,
+            0,
+            116,
+            300,
+            42
+          ],
+          [
+            357,
+            41,
+            20,
+            0,
+            377,
+            5
+          ],
+          [
+            330,
+            22,
+            0,
+            0,
+            263,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.9,
+      "val_score": 0.6998143019233714,
+      "clean": {
+        "threshold": 0.9,
+        "accuracy": 0.8541666666666666,
+        "macro_f1": 0.8580229015011623,
+        "macro_recall": 0.8541666666666666,
+        "macro_precision": 0.8681464269699563,
+        "target_recall": 0.84375,
+        "unknown_recall": 0.75,
+        "unknown_false_activation_rate": 0.25,
+        "unknown_false_activation_count": 10,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.1,
+        "rejection_count": 24,
+        "per_class_recall": {
+          "TRAI": 0.8,
+          "PHAI": 0.675,
+          "LEN": 0.9,
+          "XUONG": 1.0,
+          "UNKNOWN": 0.75,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            32,
+            0,
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            3,
+            27,
+            0,
+            0,
+            10,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            0,
+            0
+          ],
+          [
+            2,
+            7,
+            1,
+            0,
+            30,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.9,
+        "accuracy": 0.3283333333333333,
+        "macro_f1": 0.33066090290852584,
+        "macro_recall": 0.3283333333333333,
+        "macro_precision": 0.6464877222214925,
+        "target_recall": 0.3109375,
+        "unknown_recall": 0.495,
+        "unknown_false_activation_rate": 0.49875,
+        "unknown_false_activation_count": 399,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.42,
+        "silence_false_activation_count": 336,
+        "rejection_rate": 0.15145833333333333,
+        "rejection_count": 727,
+        "per_class_recall": {
+          "TRAI": 0.6175,
+          "PHAI": 0.23875,
+          "LEN": 0.26375,
+          "XUONG": 0.12375,
+          "UNKNOWN": 0.495,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            494,
+            5,
+            0,
+            0,
+            296,
+            5
+          ],
+          [
+            327,
+            191,
+            0,
+            0,
+            280,
+            2
+          ],
+          [
+            342,
+            1,
+            211,
+            0,
+            233,
+            13
+          ],
+          [
+            332,
+            1,
+            0,
+            99,
+            326,
+            42
+          ],
+          [
+            346,
+            38,
+            15,
+            0,
+            396,
+            5
+          ],
+          [
+            322,
+            14,
+            0,
+            0,
+            279,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.92,
+      "val_score": 0.6980667174642147,
+      "clean": {
+        "threshold": 0.92,
+        "accuracy": 0.8541666666666666,
+        "macro_f1": 0.8592106802633118,
+        "macro_recall": 0.8541666666666666,
+        "macro_precision": 0.8737486149250855,
+        "target_recall": 0.8375,
+        "unknown_recall": 0.775,
+        "unknown_false_activation_rate": 0.225,
+        "unknown_false_activation_count": 9,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.1125,
+        "rejection_count": 27,
+        "per_class_recall": {
+          "TRAI": 0.775,
+          "PHAI": 0.675,
+          "LEN": 0.9,
+          "XUONG": 1.0,
+          "UNKNOWN": 0.775,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            31,
+            0,
+            0,
+            0,
+            9,
+            0
+          ],
+          [
+            2,
+            27,
+            0,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            0,
+            0
+          ],
+          [
+            1,
+            7,
+            1,
+            0,
+            31,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.92,
+        "accuracy": 0.32145833333333335,
+        "macro_f1": 0.32206413759965485,
+        "macro_recall": 0.3214583333333333,
+        "macro_precision": 0.648930084018177,
+        "target_recall": 0.29875,
+        "unknown_recall": 0.5025,
+        "unknown_false_activation_rate": 0.49125,
+        "unknown_false_activation_count": 393,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.40125,
+        "silence_false_activation_count": 321,
+        "rejection_rate": 0.16895833333333332,
+        "rejection_count": 811,
+        "per_class_recall": {
+          "TRAI": 0.60125,
+          "PHAI": 0.2275,
+          "LEN": 0.25875,
+          "XUONG": 0.1075,
+          "UNKNOWN": 0.5025,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            481,
+            3,
+            0,
+            0,
+            311,
+            5
+          ],
+          [
+            320,
+            182,
+            0,
+            0,
+            296,
+            2
+          ],
+          [
+            334,
+            1,
+            207,
+            0,
+            245,
+            13
+          ],
+          [
+            325,
+            1,
+            0,
+            86,
+            346,
+            42
+          ],
+          [
+            345,
+            36,
+            12,
+            0,
+            402,
+            5
+          ],
+          [
+            309,
+            12,
+            0,
+            0,
+            294,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.95,
+      "val_score": 0.6734467685588412,
+      "clean": {
+        "threshold": 0.95,
+        "accuracy": 0.8208333333333333,
+        "macro_f1": 0.8308652735581709,
+        "macro_recall": 0.8208333333333334,
+        "macro_precision": 0.8597338935574229,
+        "target_recall": 0.7875,
+        "unknown_recall": 0.775,
+        "unknown_false_activation_rate": 0.225,
+        "unknown_false_activation_count": 9,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.14583333333333334,
+        "rejection_count": 35,
+        "per_class_recall": {
+          "TRAI": 0.675,
+          "PHAI": 0.675,
+          "LEN": 0.875,
+          "XUONG": 0.925,
+          "UNKNOWN": 0.775,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            27,
+            0,
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            2,
+            27,
+            0,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            0,
+            35,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            37,
+            3,
+            0
+          ],
+          [
+            1,
+            7,
+            1,
+            0,
+            31,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.95,
+        "accuracy": 0.30875,
+        "macro_f1": 0.3061369235604053,
+        "macro_recall": 0.30875,
+        "macro_precision": 0.6528104832385512,
+        "target_recall": 0.2753125,
+        "unknown_recall": 0.52,
+        "unknown_false_activation_rate": 0.47375,
+        "unknown_false_activation_count": 379,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.3775,
+        "silence_false_activation_count": 302,
+        "rejection_rate": 0.19875,
+        "rejection_count": 954,
+        "per_class_recall": {
+          "TRAI": 0.57,
+          "PHAI": 0.205,
+          "LEN": 0.23625,
+          "XUONG": 0.09,
+          "UNKNOWN": 0.52,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            456,
+            1,
+            0,
+            0,
+            338,
+            5
+          ],
+          [
+            310,
+            164,
+            0,
+            0,
+            324,
+            2
+          ],
+          [
+            326,
+            0,
+            189,
+            0,
+            272,
+            13
+          ],
+          [
+            312,
+            0,
+            0,
+            72,
+            374,
+            42
+          ],
+          [
+            336,
+            34,
+            9,
+            0,
+            416,
+            5
+          ],
+          [
+            296,
+            6,
+            0,
+            0,
+            313,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.97,
+      "val_score": 0.6556689572424357,
+      "clean": {
+        "threshold": 0.97,
+        "accuracy": 0.8,
+        "macro_f1": 0.8131221723288832,
+        "macro_recall": 0.7999999999999999,
+        "macro_precision": 0.8596070148489504,
+        "target_recall": 0.74375,
+        "unknown_recall": 0.825,
+        "unknown_false_activation_rate": 0.175,
+        "unknown_false_activation_count": 7,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.18333333333333332,
+        "rejection_count": 44,
+        "per_class_recall": {
+          "TRAI": 0.625,
+          "PHAI": 0.625,
+          "LEN": 0.8,
+          "XUONG": 0.925,
+          "UNKNOWN": 0.825,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            0,
+            15,
+            0
+          ],
+          [
+            2,
+            25,
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            32,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            37,
+            3,
+            0
+          ],
+          [
+            1,
+            6,
+            0,
+            0,
+            33,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.97,
+        "accuracy": 0.296875,
+        "macro_f1": 0.2882781220407248,
+        "macro_recall": 0.29687499999999994,
+        "macro_precision": 0.6566811616817799,
+        "target_recall": 0.25125,
+        "unknown_recall": 0.545,
+        "unknown_false_activation_rate": 0.44875,
+        "unknown_false_activation_count": 359,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.3625,
+        "silence_false_activation_count": 290,
+        "rejection_rate": 0.22541666666666665,
+        "rejection_count": 1082,
+        "per_class_recall": {
+          "TRAI": 0.54125,
+          "PHAI": 0.18,
+          "LEN": 0.22375,
+          "XUONG": 0.06,
+          "UNKNOWN": 0.545,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            433,
+            0,
+            0,
+            0,
+            362,
+            5
+          ],
+          [
+            307,
+            144,
+            0,
+            0,
+            347,
+            2
+          ],
+          [
+            318,
+            0,
+            179,
+            0,
+            290,
+            13
+          ],
+          [
+            305,
+            0,
+            0,
+            48,
+            405,
+            42
+          ],
+          [
+            325,
+            27,
+            7,
+            0,
+            436,
+            5
+          ],
+          [
+            286,
+            4,
+            0,
+            0,
+            325,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.98,
+      "val_score": 0.6358548418460178,
+      "clean": {
+        "threshold": 0.98,
+        "accuracy": 0.775,
+        "macro_f1": 0.7897070250011428,
+        "macro_recall": 0.775,
+        "macro_precision": 0.854404761904762,
+        "target_recall": 0.7,
+        "unknown_recall": 0.85,
+        "unknown_false_activation_rate": 0.15,
+        "unknown_false_activation_count": 6,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.21666666666666667,
+        "rejection_count": 52,
+        "per_class_recall": {
+          "TRAI": 0.55,
+          "PHAI": 0.575,
+          "LEN": 0.75,
+          "XUONG": 0.925,
+          "UNKNOWN": 0.85,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            22,
+            0,
+            0,
+            0,
+            18,
+            0
+          ],
+          [
+            2,
+            23,
+            0,
+            0,
+            15,
+            0
+          ],
+          [
+            0,
+            0,
+            30,
+            0,
+            10,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            37,
+            3,
+            0
+          ],
+          [
+            1,
+            5,
+            0,
+            0,
+            34,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.98,
+        "accuracy": 0.29083333333333333,
+        "macro_f1": 0.27686641448405963,
+        "macro_recall": 0.29083333333333333,
+        "macro_precision": 0.6650334706957752,
+        "target_recall": 0.235625,
+        "unknown_recall": 0.57125,
+        "unknown_false_activation_rate": 0.4225,
+        "unknown_false_activation_count": 338,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.36,
+        "silence_false_activation_count": 288,
+        "rejection_rate": 0.24625,
+        "rejection_count": 1182,
+        "per_class_recall": {
+          "TRAI": 0.525,
+          "PHAI": 0.15875,
+          "LEN": 0.2175,
+          "XUONG": 0.04125,
+          "UNKNOWN": 0.57125,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            420,
+            0,
+            0,
+            0,
+            375,
+            5
+          ],
+          [
+            298,
+            127,
+            0,
+            0,
+            373,
+            2
+          ],
+          [
+            308,
+            0,
+            174,
+            0,
+            305,
+            13
+          ],
+          [
+            297,
+            0,
+            0,
+            33,
+            428,
+            42
+          ],
+          [
+            316,
+            17,
+            5,
+            0,
+            457,
+            5
+          ],
+          [
+            285,
+            3,
+            0,
+            0,
+            327,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    },
+    {
+      "threshold": 0.99,
+      "val_score": 0.6065563098282206,
+      "clean": {
+        "threshold": 0.99,
+        "accuracy": 0.7375,
+        "macro_f1": 0.7567191157142165,
+        "macro_recall": 0.7374999999999999,
+        "macro_precision": 0.8490301003344483,
+        "target_recall": 0.6375,
+        "unknown_recall": 0.875,
+        "unknown_false_activation_rate": 0.125,
+        "unknown_false_activation_count": 5,
+        "silence_recall": 1.0,
+        "silence_false_activation_rate": 0.0,
+        "silence_false_activation_count": 0,
+        "rejection_rate": 0.2625,
+        "rejection_count": 63,
+        "per_class_recall": {
+          "TRAI": 0.5,
+          "PHAI": 0.525,
+          "LEN": 0.675,
+          "XUONG": 0.85,
+          "UNKNOWN": 0.875,
+          "SILENCE": 1.0
+        },
+        "confusion_matrix": [
+          [
+            20,
+            0,
+            0,
+            0,
+            20,
+            0
+          ],
+          [
+            2,
+            21,
+            0,
+            0,
+            17,
+            0
+          ],
+          [
+            0,
+            0,
+            27,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            34,
+            6,
+            0
+          ],
+          [
+            1,
+            4,
+            0,
+            0,
+            35,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        ]
+      },
+      "corrupted": {
+        "threshold": 0.99,
+        "accuracy": 0.278125,
+        "macro_f1": 0.25617642942756386,
+        "macro_recall": 0.278125,
+        "macro_precision": 0.6650785392078732,
+        "target_recall": 0.2115625,
+        "unknown_recall": 0.59125,
+        "unknown_false_activation_rate": 0.4025,
+        "unknown_false_activation_count": 322,
+        "silence_recall": 0.23125,
+        "silence_false_activation_rate": 0.3575,
+        "silence_false_activation_count": 286,
+        "rejection_rate": 0.2725,
+        "rejection_count": 1308,
+        "per_class_recall": {
+          "TRAI": 0.50625,
+          "PHAI": 0.12,
+          "LEN": 0.19375,
+          "XUONG": 0.02625,
+          "UNKNOWN": 0.59125,
+          "SILENCE": 0.23125
+        },
+        "confusion_matrix": [
+          [
+            405,
+            0,
+            0,
+            0,
+            390,
+            5
+          ],
+          [
+            288,
+            96,
+            0,
+            0,
+            414,
+            2
+          ],
+          [
+            300,
+            0,
+            155,
+            0,
+            332,
+            13
+          ],
+          [
+            284,
+            0,
+            0,
+            21,
+            453,
+            42
+          ],
+          [
+            306,
+            11,
+            5,
+            0,
+            473,
+            5
+          ],
+          [
+            283,
+            3,
+            0,
+            0,
+            329,
+            185
+          ]
+        ]
+      },
+      "is_feasible": false
+    }
+  ]
+}

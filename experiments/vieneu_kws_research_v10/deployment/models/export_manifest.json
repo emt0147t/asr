@@ -1,0 +1,131 @@
+{
+  "candidate_id": "variant_w10_seed42",
+  "phase": 91,
+  "source_checkpoint": {
+    "path": "experiments\\vieneu_kws_research_v9\\artifacts\\checkpoints\\variant_w10_seed42.pt",
+    "sha256": "7374af469a4bc4df5e124aae27720a8c11e688413f045eec3ee4ffd79c836bed",
+    "parameter_count": 138469
+  },
+  "exported_models": {
+    "torchscript": {
+      "filename": "variant_w10_seed42_torchscript.pt",
+      "sha256": "1197c8320ae1ee8f0ff77625ae582752752446fc6a64221feb20692f51bf088c",
+      "size_kb": 576.87,
+      "format": "TorchScript (eval traced)"
+    },
+    "onnx_fp32": {
+      "filename": "variant_w10_seed42_fp32.onnx",
+      "sha256": "1f401625c59a85eb0ccabebf707ff45d77e6ee37d88bf6d83ce3b5c978a348ef",
+      "size_kb": 542.73,
+      "opset_version": 17,
+      "input_names": [
+        "log_mel"
+      ],
+      "input_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "output_names": [
+        "logits",
+        "probabilities"
+      ],
+      "output_shapes": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    "onnx_int8": {
+      "filename": "variant_w10_seed42_int8.onnx",
+      "sha256": "0be86f127e85a7839c0cd7bbae5417f714caacca09ec41f05d5c66bd508828a7",
+      "size_kb": 146.95,
+      "quantization_type": "dynamic_int8",
+      "compression_ratio": 3.69
+    }
+  },
+  "parity_verification": {
+    "fixtures_evaluated": 6,
+    "max_deviation_torchscript": 0.0,
+    "max_deviation_onnx_fp32": 3.11434268951416e-06,
+    "max_deviation_onnx_int8_probs": 0.11621645092964172,
+    "label_mismatches_torchscript": 0,
+    "label_mismatches_onnx_fp32": 0,
+    "label_mismatches_onnx_int8": 0,
+    "tolerance_fp32": 0.0001,
+    "status": "PARITY_VERIFIED"
+  },
+  "fixtures_detail": [
+    {
+      "wav_file": "demo_01_trai.wav",
+      "py_prediction": "LEN",
+      "ts_prediction": "LEN",
+      "onnx_fp32_prediction": "LEN",
+      "onnx_int8_prediction": "LEN",
+      "max_diff_torchscript_logits": 0.0,
+      "max_diff_onnx_fp32_logits": 1.4901161193847656e-06,
+      "max_diff_onnx_int8_probs": 0.011506527662277222
+    },
+    {
+      "wav_file": "demo_02_phai.wav",
+      "py_prediction": "LEN",
+      "ts_prediction": "LEN",
+      "onnx_fp32_prediction": "LEN",
+      "onnx_int8_prediction": "LEN",
+      "max_diff_torchscript_logits": 0.0,
+      "max_diff_onnx_fp32_logits": 2.86102294921875e-06,
+      "max_diff_onnx_int8_probs": 0.06457029283046722
+    },
+    {
+      "wav_file": "demo_03_len.wav",
+      "py_prediction": "LEN",
+      "ts_prediction": "LEN",
+      "onnx_fp32_prediction": "LEN",
+      "onnx_int8_prediction": "LEN",
+      "max_diff_torchscript_logits": 0.0,
+      "max_diff_onnx_fp32_logits": 3.11434268951416e-06,
+      "max_diff_onnx_int8_probs": 0.11621645092964172
+    },
+    {
+      "wav_file": "demo_04_xuong.wav",
+      "py_prediction": "LEN",
+      "ts_prediction": "LEN",
+      "onnx_fp32_prediction": "LEN",
+      "onnx_int8_prediction": "LEN",
+      "max_diff_torchscript_logits": 0.0,
+      "max_diff_onnx_fp32_logits": 2.2649765014648438e-06,
+      "max_diff_onnx_int8_probs": 0.06623038649559021
+    },
+    {
+      "wav_file": "demo_05_unknown.wav",
+      "py_prediction": "LEN",
+      "ts_prediction": "LEN",
+      "onnx_fp32_prediction": "LEN",
+      "onnx_int8_prediction": "LEN",
+      "max_diff_torchscript_logits": 0.0,
+      "max_diff_onnx_fp32_logits": 2.1457672119140625e-06,
+      "max_diff_onnx_int8_probs": 0.05716801434755325
+    },
+    {
+      "wav_file": "demo_06_silence.wav",
+      "py_prediction": "REJECT",
+      "ts_prediction": "REJECT",
+      "onnx_fp32_prediction": "REJECT",
+      "onnx_int8_prediction": "REJECT",
+      "max_diff_torchscript_logits": 0.0,
+      "max_diff_onnx_fp32_logits": 2.86102294921875e-06,
+      "max_diff_onnx_int8_probs": 0.003645479679107666
+    }
+  ],
+  "governance": {
+    "human_listener_verification": "PENDING_HUMAN_LISTENER_VERIFICATION",
+    "natural_speech_validation": "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "continuous_open_mic_verdict": "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "stream_name": "test_stream_continuous_nontarget_3h",
+  "wav_file": "test_stream_continuous_nontarget_3h.wav",
+  "ground_truth_file": "test_stream_continuous_nontarget_3h_ground_truth.json",
+  "duration_seconds": 10800.0,
+  "duration_hours": 3.0,
+  "active_speech_duration_seconds": 960.0,
+  "active_speech_duration_hours": 0.2667,
+  "active_speech_percentage": 8.89,
+  "num_events": 960,
+  "background_family": "airflow_pink",
+  "num_passes": 2,
+  "sha256": "1d325a33a03ba3ce97ea3884a2b064583d7c972465cffa298ac2b75762b85abe"
+}

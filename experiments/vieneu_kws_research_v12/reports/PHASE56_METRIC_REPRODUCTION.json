@@ -1,0 +1,289 @@
+{
+  "Baseline_v11": {
+    "val_loss": 0.6448195795528591,
+    "val_accuracy": 0.78046875,
+    "val_macro_f1": 0.7945143014916507,
+    "overall_macro_f1": 0.7885633031370081,
+    "min_cmd_recall": 0.7875,
+    "oov_fa_rate": 0.3421875,
+    "oov_rejection_precision": 0.913232104121475,
+    "per_class": {
+      "TRAI": {
+        "precision": 0.863013698630137,
+        "recall": 0.7875,
+        "f1": 0.8235294117647058,
+        "support": 160
+      },
+      "PHAI": {
+        "precision": 0.6553191489361702,
+        "recall": 0.9625,
+        "f1": 0.779746835443038,
+        "support": 160
+      },
+      "LEN": {
+        "precision": 0.6398305084745762,
+        "recall": 0.94375,
+        "f1": 0.7626262626262627,
+        "support": 160
+      },
+      "XUONG": {
+        "precision": 0.7277227722772277,
+        "recall": 0.91875,
+        "f1": 0.8121546961325967,
+        "support": 160
+      },
+      "REJECT": {
+        "precision": 0.913232104121475,
+        "recall": 0.6578125,
+        "f1": 0.7647593097184378,
+        "support": 640
+      }
+    }
+  },
+  "Baseline_E1": {
+    "val_loss": 0.2119570731483691,
+    "val_accuracy": 0.91953125,
+    "val_macro_f1": 0.9222169347865081,
+    "overall_macro_f1": 0.9214402144958731,
+    "min_cmd_recall": 0.95625,
+    "oov_fa_rate": 0.1390625,
+    "oov_rejection_precision": 0.9839285714285714,
+    "per_class": {
+      "TRAI": {
+        "precision": 0.9329268292682927,
+        "recall": 0.95625,
+        "f1": 0.9444444444444444,
+        "support": 160
+      },
+      "PHAI": {
+        "precision": 0.7684729064039408,
+        "recall": 0.975,
+        "f1": 0.859504132231405,
+        "support": 160
+      },
+      "LEN": {
+        "precision": 0.8633879781420765,
+        "recall": 0.9875,
+        "f1": 0.9212827988338192,
+        "support": 160
+      },
+      "XUONG": {
+        "precision": 0.9352941176470588,
+        "recall": 0.99375,
+        "f1": 0.9636363636363636,
+        "support": 160
+      },
+      "REJECT": {
+        "precision": 0.9839285714285714,
+        "recall": 0.8609375,
+        "f1": 0.9183333333333333,
+        "support": 640
+      }
+    }
+  },
+  "Phase28_D2_H1": {
+    "val_loss": 0.18068744311749468,
+    "val_accuracy": 0.9390625,
+    "val_macro_f1": 0.9388403357430594,
+    "overall_macro_f1": 0.939098158562085,
+    "min_cmd_recall": 0.95625,
+    "oov_fa_rate": 0.0921875,
+    "oov_rejection_precision": 0.9748322147651006,
+    "per_class": {
+      "TRAI": {
+        "precision": 0.9503105590062112,
+        "recall": 0.95625,
+        "f1": 0.9532710280373832,
+        "support": 160
+      },
+      "PHAI": {
+        "precision": 0.8235294117647058,
+        "recall": 0.9625,
+        "f1": 0.8876080691642652,
+        "support": 160
+      },
+      "LEN": {
+        "precision": 0.927710843373494,
+        "recall": 0.9625,
+        "f1": 0.9447852760736196,
+        "support": 160
+      },
+      "XUONG": {
+        "precision": 0.9411764705882353,
+        "recall": 1.0,
+        "f1": 0.9696969696969697,
+        "support": 160
+      },
+      "REJECT": {
+        "precision": 0.9748322147651006,
+        "recall": 0.9078125,
+        "f1": 0.9401294498381877,
+        "support": 640
+      }
+    }
+  },
+  "Phase26_D0_H1": {
+    "val_loss": 0.20803385297622298,
+    "val_accuracy": 0.93125,
+    "val_macro_f1": 0.9321768619488612,
+    "overall_macro_f1": 0.9318865588337426,
+    "min_cmd_recall": 0.95,
+    "oov_fa_rate": 0.1078125,
+    "oov_rejection_precision": 0.9727427597955707,
+    "per_class": {
+      "TRAI": {
+        "precision": 0.9386503067484663,
+        "recall": 0.95625,
+        "f1": 0.9473684210526315,
+        "support": 160
+      },
+      "PHAI": {
+        "precision": 0.8359788359788359,
+        "recall": 0.9875,
+        "f1": 0.9054441260744985,
+        "support": 160
+      },
+      "LEN": {
+        "precision": 0.8941176470588236,
+        "recall": 0.95,
+        "f1": 0.9212121212121213,
+        "support": 160
+      },
+      "XUONG": {
+        "precision": 0.9239766081871345,
+        "recall": 0.9875,
+        "f1": 0.9546827794561934,
+        "support": 160
+      },
+      "REJECT": {
+        "precision": 0.9727427597955707,
+        "recall": 0.8921875,
+        "f1": 0.9307253463732681,
+        "support": 640
+      }
+    }
+  },
+  "D3_A": {
+    "val_loss": 0.223189034400275,
+    "val_accuracy": 0.92890625,
+    "val_macro_f1": 0.9296246841620408,
+    "overall_macro_f1": 0.929638539720038,
+    "min_cmd_recall": 0.95625,
+    "oov_fa_rate": 0.121875,
+    "oov_rejection_precision": 0.9876977152899824,
+    "per_class": {
+      "TRAI": {
+        "precision": 0.95625,
+        "recall": 0.95625,
+        "f1": 0.95625,
+        "support": 160
+      },
+      "PHAI": {
+        "precision": 0.7929292929292929,
+        "recall": 0.98125,
+        "f1": 0.8770949720670391,
+        "support": 160
+      },
+      "LEN": {
+        "precision": 0.8594594594594595,
+        "recall": 0.99375,
+        "f1": 0.9217391304347826,
+        "support": 160
+      },
+      "XUONG": {
+        "precision": 0.9404761904761905,
+        "recall": 0.9875,
+        "f1": 0.9634146341463414,
+        "support": 160
+      },
+      "REJECT": {
+        "precision": 0.9876977152899824,
+        "recall": 0.878125,
+        "f1": 0.9296939619520265,
+        "support": 640
+      }
+    }
+  },
+  "D3_B": {
+    "val_loss": 0.23546917408530135,
+    "val_accuracy": 0.909375,
+    "val_macro_f1": 0.9143310023430914,
+    "overall_macro_f1": 0.9124964158511786,
+    "min_cmd_recall": 0.91875,
+    "oov_fa_rate": 0.15,
+    "oov_rejection_precision": 0.9679715302491103,
+    "per_class": {
+      "TRAI": {
+        "precision": 0.9865771812080537,
+        "recall": 0.91875,
+        "f1": 0.9514563106796117,
+        "support": 160
+      },
+      "PHAI": {
+        "precision": 0.8288770053475936,
+        "recall": 0.96875,
+        "f1": 0.8933717579250721,
+        "support": 160
+      },
+      "LEN": {
+        "precision": 0.8061224489795918,
+        "recall": 0.9875,
+        "f1": 0.8876404494382022,
+        "support": 160
+      },
+      "XUONG": {
+        "precision": 0.8602150537634409,
+        "recall": 1.0,
+        "f1": 0.9248554913294798,
+        "support": 160
+      },
+      "REJECT": {
+        "precision": 0.9679715302491103,
+        "recall": 0.85,
+        "f1": 0.9051580698835274,
+        "support": 640
+      }
+    }
+  },
+  "D3_C": {
+    "val_loss": 0.1982674633654824,
+    "val_accuracy": 0.93046875,
+    "val_macro_f1": 0.9322478912946036,
+    "overall_macro_f1": 0.9316999523799453,
+    "min_cmd_recall": 0.95,
+    "oov_fa_rate": 0.1140625,
+    "oov_rejection_precision": 0.9775862068965517,
+    "per_class": {
+      "TRAI": {
+        "precision": 0.9559748427672956,
+        "recall": 0.95,
+        "f1": 0.9529780564263323,
+        "support": 160
+      },
+      "PHAI": {
+        "precision": 0.8082901554404145,
+        "recall": 0.975,
+        "f1": 0.8838526912181303,
+        "support": 160
+      },
+      "LEN": {
+        "precision": 0.9017341040462428,
+        "recall": 0.975,
+        "f1": 0.9369369369369369,
+        "support": 160
+      },
+      "XUONG": {
+        "precision": 0.9142857142857143,
+        "recall": 1.0,
+        "f1": 0.9552238805970149,
+        "support": 160
+      },
+      "REJECT": {
+        "precision": 0.9775862068965517,
+        "recall": 0.8859375,
+        "f1": 0.9295081967213115,
+        "support": 640
+      }
+    }
+  }
+}

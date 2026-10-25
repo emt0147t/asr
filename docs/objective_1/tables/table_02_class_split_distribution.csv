@@ -1,0 +1,8 @@
+class_label,class_id,train_samples,val_samples,test_samples,total_samples,train_pct,val_pct,test_pct
+TRAI,0,178,36,36,250,71.2,14.4,14.4
+PHAI,1,178,36,36,250,71.2,14.4,14.4
+LEN,2,178,36,36,250,71.2,14.4,14.4
+XUONG,3,178,36,36,250,71.2,14.4,14.4
+UNKNOWN,4,319,80,300,699,45.6,11.4,42.9
+SILENCE,5,250,60,90,400,62.5,15.0,22.5
+TOTAL,ALL,1281,284,534,2099,61.0,13.5,25.4

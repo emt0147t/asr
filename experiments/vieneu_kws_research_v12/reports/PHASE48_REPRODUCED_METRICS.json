@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "phase": "Phase 48 (Final Inference & Dependency-Aware Audit)",
+    "timestamp_utc": "2026-10-25T14:23:45.733919+00:00",
+    "isolated_manifest_sha256": "179d173f2d4347b8d6030c7bb0a5d61179e8100b306577958e0d93288e92e4ee",
+    "models_evaluated": [
+      "Baseline_v11_seed42",
+      "Baseline_E1_seed42",
+      "Phase28_D2_H1_Candidate",
+      "Phase28_D0_H1_Candidate",
+      "Phase26_Candidate_D0_H1_seed44"
+    ],
+    "governance_labels": [
+      "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+      "NOT_VALIDATED_ON_NATURAL_SPEECH",
+      "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+      "NOT_VALIDATED_PENDING_DATA"
+    ]
+  },
+  "oov_reconciliation": {
+    "Baseline_v11_seed42": {
+      "aggregate_oov_far": {
+        "numerator_fa": 347,
+        "denominator_clips": 416,
+        "rate": 0.8341346153846154,
+        "clean_waveform_groups": 104,
+        "base_text_groups": 26,
+        "instance_level_fa": 104,
+        "instance_level_far": 1.0
+      },
+      "phonetic_oov_far": {
+        "numerator_fa": 214,
+        "denominator_clips": 256,
+        "rate": 0.8359375,
+        "clean_waveform_groups": 64,
+        "base_text_groups": 16
+      },
+      "general_oov_far": {
+        "numerator_fa": 133,
+        "denominator_clips": 160,
+        "rate": 0.83125,
+        "clean_waveform_groups": 40,
+        "base_text_groups": 10
+      },
+      "tone_probe_far": {
+        "numerator_fa": 87,
+        "denominator_clips": 96,
+        "rate": 0.90625,
+        "clean_waveform_groups": 24,
+        "base_text_groups": 6,
+        "rule_of_three_clip_ucb95": null,
+        "rule_of_three_instance_ucb95": null,
+        "rule_of_three_lexeme_ucb95": null
+      }
+    },
+    "Baseline_E1_seed42": {
+      "aggregate_oov_far": {
+        "numerator_fa": 179,
+        "denominator_clips": 416,
+        "rate": 0.43028846153846156,
+        "clean_waveform_groups": 104,
+        "base_text_groups": 26,
+        "instance_level_fa": 74,
+        "instance_level_far": 0.7115384615384616
+      },
+      "phonetic_oov_far": {
+        "numerator_fa": 110,
+        "denominator_clips": 256,
+        "rate": 0.4296875,
+        "clean_waveform_groups": 64,
+        "base_text_groups": 16
+      },
+      "general_oov_far": {
+        "numerator_fa": 69,
+        "denominator_clips": 160,
+        "rate": 0.43125,
+        "clean_waveform_groups": 40,
+        "base_text_groups": 10
+      },
+      "tone_probe_far": {
+        "numerator_fa": 23,
+        "denominator_clips": 96,
+        "rate": 0.23958333333333334,
+        "clean_waveform_groups": 24,
+        "base_text_groups": 6,
+        "rule_of_three_clip_ucb95": null,
+        "rule_of_three_instance_ucb95": null,
+        "rule_of_three_lexeme_ucb95": null
+      }
+    },
+    "Phase28_D2_H1_Candidate": {
+      "aggregate_oov_far": {
+        "numerator_fa": 88,
+        "denominator_clips": 416,
+        "rate": 0.21153846153846154,
+        "clean_waveform_groups": 104,
+        "base_text_groups": 26,
+        "instance_level_fa": 39,
+        "instance_level_far": 0.375
+      },
+      "phonetic_oov_far": {
+        "numerator_fa": 55,
+        "denominator_clips": 256,
+        "rate": 0.21484375,
+        "clean_waveform_groups": 64,
+        "base_text_groups": 16
+      },
+      "general_oov_far": {
+        "numerator_fa": 33,
+        "denominator_clips": 160,
+        "rate": 0.20625,
+        "clean_waveform_groups": 40,
+        "base_text_groups": 10
+      },
+      "tone_probe_far": {
+        "numerator_fa": 0,
+        "denominator_clips": 96,
+        "rate": 0.0,
+        "clean_waveform_groups": 24,
+        "base_text_groups": 6,
+        "rule_of_three_clip_ucb95": 0.03072367683353283,
+        "rule_of_three_instance_ucb95": 0.11734615615494881,
+        "rule_of_three_lexeme_ucb95": 0.39303776899708276
+      }
+    },
+    "Phase28_D0_H1_Candidate": {
+      "aggregate_oov_far": {
+        "numerator_fa": 135,
+        "denominator_clips": 416,
+        "rate": 0.3245192307692308,
+        "clean_waveform_groups": 104,
+        "base_text_groups": 26,
+        "instance_level_fa": 58,
+        "instance_level_far": 0.5576923076923077
+      },
+      "phonetic_oov_far": {
+        "numerator_fa": 86,
+        "denominator_clips": 256,
+        "rate": 0.3359375,
+        "clean_waveform_groups": 64,
+        "base_text_groups": 16
+      },
+      "general_oov_far": {
+        "numerator_fa": 49,
+        "denominator_clips": 160,
+        "rate": 0.30625,
+        "clean_waveform_groups": 40,
+        "base_text_groups": 10
+      },
+      "tone_probe_far": {
+        "numerator_fa": 1,
+        "denominator_clips": 96,
+        "rate": 0.010416666666666666,
+        "clean_waveform_groups": 24,
+        "base_text_groups": 6,
+        "rule_of_three_clip_ucb95": null,
+        "rule_of_three_instance_ucb95": null,
+        "rule_of_three_lexeme_ucb95": null
+      }
+    },
+    "Phase26_Candidate_D0_H1_seed44": {
+      "aggregate_oov_far": {
+        "numerator_fa": 92,
+        "denominator_clips": 416,
+        "rate": 0.22115384615384615,
+        "clean_waveform_groups": 104,
+        "base_text_groups": 26,
+        "instance_level_fa": 36,
+        "instance_level_far": 0.34615384615384615
+      },
+      "phonetic_oov_far": {
+        "numerator_fa": 53,
+        "denominator_clips": 256,
+        "rate": 0.20703125,
+        "clean_waveform_groups": 64,
+        "base_text_groups": 16
+      },
+      "general_oov_far": {
+        "numerator_fa": 39,
+        "denominator_clips": 160,
+        "rate": 0.24375,
+        "clean_waveform_groups": 40,
+        "base_text_groups": 10
+      },
+      "tone_probe_far": {
+        "numerator_fa": 0,
+        "denominator_clips": 96,
+        "rate": 0.0,
+        "clean_waveform_groups": 24,
+        "base_text_groups": 6,
+        "rule_of_three_clip_ucb95": 0.03072367683353283,
+        "rule_of_three_instance_ucb95": 0.11734615615494881,
+        "rule_of_three_lexeme_ucb95": 0.39303776899708276
+      }
+    }
+  },
+  "tone_probe_uncertainty_hierarchy": {
+    "clip_level": {
+      "N": 96,
+      "ucb95_percent": 3.07
+    },
+    "instance_level": {
+      "N": 24,
+      "ucb95_percent": 11.75
+    },
+    "lexeme_level": {
+      "N": 6,
+      "ucb95_percent": 39.3
+    }
+  },
+  "paired_clustered_tests": {
+    "Phase28_D2_H1_Candidate_vs_Baseline_v11_seed42": {
+      "m1": "Phase28_D2_H1_Candidate",
+      "m2": "Baseline_v11_seed42",
+      "mean_difference_accuracy_pp": 51.24999999999999,
+      "ci95_pp": [
+        43.0100586529174,
+        59.489941347082585
+      ],
+      "t_statistic": 12.315014843634522,
+      "p_value_t": 5.650785460223645e-23,
+      "wilcoxon_statistic": 357.0,
+      "p_value_wilcoxon": 4.834680185993292e-16,
+      "n_clusters": 120
+    },
+    "Phase28_D2_H1_Candidate_vs_Baseline_E1_seed42": {
+      "m1": "Phase28_D2_H1_Candidate",
+      "m2": "Baseline_E1_seed42",
+      "mean_difference_accuracy_pp": 16.666666666666664,
+      "ci95_pp": [
+        11.351168871847944,
+        21.982164461485386
+      ],
+      "t_statistic": 6.208261441132895,
+      "p_value_t": 8.098411209135645e-09,
+      "wilcoxon_statistic": 276.0,
+      "p_value_wilcoxon": 5.0215157513696965e-08,
+      "n_clusters": 120
+    },
+    "Phase28_D2_H1_Candidate_vs_Phase26_Candidate_D0_H1_seed44": {
+      "m1": "Phase28_D2_H1_Candidate",
+      "m2": "Phase26_Candidate_D0_H1_seed44",
+      "mean_difference_accuracy_pp": -1.25,
+      "ci95_pp": [
+        -5.588548023196221,
+        3.088548023196221
+      ],
+      "t_statistic": -0.5704673514658161,
+      "p_value_t": 0.5694363497525643,
+      "wilcoxon_statistic": 514.0,
+      "p_value_wilcoxon": 0.5823088105070422,
+      "n_clusters": 120
+    }
+  }
+}

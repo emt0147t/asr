@@ -1,0 +1,24 @@
+{
+  "dataset_name": "vieneu_kws_research_v11",
+  "timestamp": "2026-10-19T11:23:59",
+  "splits": {
+    "test": {
+      "total_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480,
+      "manifest_sha256": "8b6ea4cc4ab46be62f3f799a9aedac2f31cfa86298fc2e3d4cb13fca00ac08c0"
+    },
+    "val": {
+      "total_clips": 400,
+      "command_clips": 160,
+      "non_target_clips": 240,
+      "manifest_sha256": "299f15fd7d6af00f57ff73175d0cee5ec677ae4390bef4d7fcaac8ac3a04fdcd"
+    },
+    "train": {
+      "total_clips": 2000,
+      "command_clips": 800,
+      "non_target_clips": 1200,
+      "manifest_sha256": "98a48f43ad86cee72865b923576c3a0d74cdc114c4e027d7adf566e4df358e53"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "discrepancies": [
+    {
+      "id": "DISC-09",
+      "title": "Ambiguous Window Function in Frontend Documentation vs. Canonical Periodic Hann Implementation",
+      "date": "2026-10-16",
+      "severity": "MEDIUM_DOCUMENTATION_DISCREPANCY",
+      "status": "RESOLVED_IN_PHASE_7",
+      "description": "Phase 6 export documentation (export_audit.md and model_config.json) contained ambiguous phrasing: 'window_type: Hamming (or Hann as verified)' and 'Periodic Hann / Hamming Window'. Executable implementation in src/preprocessing/feature_extractor.py uses torchaudio T.MelSpectrogram with default window_fn (torch.hann_window(400, periodic=True)).",
+      "evidence": {
+        "torchaudio_spectrogram_window_type": "torch.Tensor of shape [400]",
+        "window_sample_0": 0.0,
+        "max_abs_diff_against_periodic_hann": 0.0,
+        "max_abs_diff_against_symmetric_hann": 0.00602543354,
+        "max_abs_diff_against_periodic_hamming": 0.0800000131,
+        "numpy_reference_function": "librosa.stft(..., window='hann')",
+        "reproducibility_verdict": "Periodic Hann window is the sole mathematical implementation in the code."
+      },
+      "resolution": "Preserve historical Phase 6 artifacts without retroactive alteration. Establish experiments/synthetic_kws_demo/frontend_golden/frontend_contract.md as the verified specification confirming Periodic Hann Window. Golden vectors and manifest reflect Periodic Hann Window."
+    }
+  ]
+}

@@ -27,18 +27,22 @@ def load_and_resample(file_path: Path) -> Tuple[np.ndarray, int]:
     """
     Loads audio file and resamples to TARGET_SR (16 kHz) mono.
     Fast path uses soundfile directly when format is WAV/FLAC.
+    Fallback uses librosa (with audioread/ffmpeg backend for M4A/AAC/MP3).
     """
+    import warnings
     try:
         audio, sr = sf.read(str(file_path), dtype="float32")
         if audio.ndim > 1:
             audio = np.mean(audio, axis=1)
         if sr != TARGET_SR:
             audio = librosa.resample(audio, orig_sr=sr, target_sr=TARGET_SR)
-        return audio, TARGET_SR
+        return audio.astype(np.float32), TARGET_SR
     except Exception:
-        # Fallback to librosa.load for mp3/opus
-        audio, sr = librosa.load(str(file_path), sr=TARGET_SR, mono=True)
-        return audio, sr
+        # Fallback to librosa.load for m4a/aac/mp3/opus via audioread/ffmpeg
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            audio, sr = librosa.load(str(file_path), sr=TARGET_SR, mono=True)
+        return audio.astype(np.float32), TARGET_SR
 
 
 def check_clipping(audio: np.ndarray, threshold: float = 0.999, max_consecutive: int = 3) -> bool:

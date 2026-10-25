@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" width="1100" height="600">
+  <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .code { font-family: 'JetBrains Mono', Consolas, Monaco, monospace; }
+    .shadow { filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.06)); }
+    .card-shadow { filter: drop-shadow(0px 2px 4px rgba(15, 23, 42, 0.08)); }
+</style>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="600" fill="url(#bgGrad3)" rx="16"/>
+
+  <text x="50" y="45" font-size="22" font-weight="700" fill="#F8FAFC">Figure 3: Audited Dataset Class Distribution Partitioned by Split (V2)</text>
+  <text x="50" y="70" font-size="13" fill="#94A3B8">Verified Manifest Allocations across Train (1,281), Validation (284), and Held-Out Test (534) Partitions</text>
+
+  <!-- Legend -->
+  <g transform="translate(750, 40)">
+    <rect x="0" y="0" width="16" height="16" rx="3" fill="#3B82F6"/>
+    <text x="24" y="13" font-size="12" fill="#E2E8F0">Train (1,281)</text>
+
+    <rect x="120" y="0" width="16" height="16" rx="3" fill="#10B981"/>
+    <text x="144" y="13" font-size="12" fill="#E2E8F0">Val (284)</text>
+
+    <rect x="220" y="0" width="16" height="16" rx="3" fill="#F59E0B"/>
+    <text x="244" y="13" font-size="12" fill="#E2E8F0">Test (534)</text>
+  </g>
+
+  <!-- Gridlines for max=350. Baseline Y=500. Scale=1.085 -->
+  <!-- 300: Y = 500 - 325.5 = 174.5 -->
+  <line x1="80" y1="174" x2="1040" y2="174" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="65" y="179" font-size="11" fill="#64748B" text-anchor="end">300</text>
+  <!-- 200: Y = 500 - 217.0 = 283.0 -->
+  <line x1="80" y1="283" x2="1040" y2="283" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="65" y="288" font-size="11" fill="#64748B" text-anchor="end">200</text>
+  <!-- 100: Y = 500 - 108.5 = 391.5 -->
+  <line x1="80" y1="391.5" x2="1040" y2="391.5" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="65" y="396" font-size="11" fill="#64748B" text-anchor="end">100</text>
+  <!-- 0 baseline -->
+  <line x1="80" y1="500" x2="1040" y2="500" stroke="#64748B" stroke-width="1.5"/>
+  <text x="65" y="504" font-size="11" fill="#64748B" text-anchor="end">0</text>
+
+  <!-- TRAI: Train=178 (h=193.1, y=306.9), Val=36 (h=39.1, y=460.9), Test=36 (h=39.1, y=460.9) -->
+  <g transform="translate(130, 0)">
+    <rect x="0" y="306.9" width="24" height="193.1" rx="4" fill="#3B82F6"/>
+    <text x="12" y="299" font-size="11" font-weight="600" fill="#93C5FD" text-anchor="middle">178</text>
+    <rect x="28" y="460.9" width="24" height="39.1" rx="4" fill="#10B981"/>
+    <text x="40" y="453" font-size="11" font-weight="600" fill="#6EE7B7" text-anchor="middle">36</text>
+    <rect x="56" y="460.9" width="24" height="39.1" rx="4" fill="#F59E0B"/>
+    <text x="68" y="453" font-size="11" font-weight="600" fill="#FCD34D" text-anchor="middle">36</text>
+    <text x="40" y="525" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">TRAI</text>
+    <text x="40" y="542" font-size="10" fill="#94A3B8" text-anchor="middle">Total: 250</text>
+  </g>
+
+  <!-- PHAI: Train=178, Val=36, Test=36 -->
+  <g transform="translate(280, 0)">
+    <rect x="0" y="306.9" width="24" height="193.1" rx="4" fill="#3B82F6"/>
+    <text x="12" y="299" font-size="11" font-weight="600" fill="#93C5FD" text-anchor="middle">178</text>
+    <rect x="28" y="460.9" width="24" height="39.1" rx="4" fill="#10B981"/>
+    <text x="40" y="453" font-size="11" font-weight="600" fill="#6EE7B7" text-anchor="middle">36</text>
+    <rect x="56" y="460.9" width="24" height="39.1" rx="4" fill="#F59E0B"/>
+    <text x="68" y="453" font-size="11" font-weight="600" fill="#FCD34D" text-anchor="middle">36</text>
+    <text x="40" y="525" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">PHAI</text>
+    <text x="40" y="542" font-size="10" fill="#94A3B8" text-anchor="middle">Total: 250</text>
+  </g>
+
+  <!-- LEN: Train=178, Val=36, Test=36 -->
+  <g transform="translate(430, 0)">
+    <rect x="0" y="306.9" width="24" height="193.1" rx="4" fill="#3B82F6"/>
+    <text x="12" y="299" font-size="11" font-weight="600" fill="#93C5FD" text-anchor="middle">178</text>
+    <rect x="28" y="460.9" width="24" height="39.1" rx="4" fill="#10B981"/>
+    <text x="40" y="453" font-size="11" font-weight="600" fill="#6EE7B7" text-anchor="middle">36</text>
+    <rect x="56" y="460.9" width="24" height="39.1" rx="4" fill="#F59E0B"/>
+    <text x="68" y="453" font-size="11" font-weight="600" fill="#FCD34D" text-anchor="middle">36</text>
+    <text x="40" y="525" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">LEN</text>
+    <text x="40" y="542" font-size="10" fill="#94A3B8" text-anchor="middle">Total: 250</text>
+  </g>
+
+  <!-- XUONG: Train=178, Val=36, Test=36 -->
+  <g transform="translate(580, 0)">
+    <rect x="0" y="306.9" width="24" height="193.1" rx="4" fill="#3B82F6"/>
+    <text x="12" y="299" font-size="11" font-weight="600" fill="#93C5FD" text-anchor="middle">178</text>
+    <rect x="28" y="460.9" width="24" height="39.1" rx="4" fill="#10B981"/>
+    <text x="40" y="453" font-size="11" font-weight="600" fill="#6EE7B7" text-anchor="middle">36</text>
+    <rect x="56" y="460.9" width="24" height="39.1" rx="4" fill="#F59E0B"/>
+    <text x="68" y="453" font-size="11" font-weight="600" fill="#FCD34D" text-anchor="middle">36</text>
+    <text x="40" y="525" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">XUONG</text>
+    <text x="40" y="542" font-size="10" fill="#94A3B8" text-anchor="middle">Total: 250</text>
+  </g>
+
+  <!-- UNKNOWN: Train=319 (h=346.1, y=153.9), Val=80 (h=86.8, y=413.2), Test=300 (h=325.5, y=174.5) -->
+  <g transform="translate(730, 0)">
+    <rect x="0" y="153.9" width="24" height="346.1" rx="4" fill="#3B82F6"/>
+    <text x="12" y="146" font-size="11" font-weight="600" fill="#93C5FD" text-anchor="middle">319</text>
+    <rect x="28" y="413.2" width="24" height="86.8" rx="4" fill="#10B981"/>
+    <text x="40" y="405" font-size="11" font-weight="600" fill="#6EE7B7" text-anchor="middle">80</text>
+    <rect x="56" y="174.5" width="24" height="325.5" rx="4" fill="#F59E0B"/>
+    <text x="68" y="167" font-size="11" font-weight="600" fill="#FCD34D" text-anchor="middle">300</text>
+    <text x="40" y="525" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">UNKNOWN</text>
+    <text x="40" y="542" font-size="10" fill="#94A3B8" text-anchor="middle">Total: 699</text>
+  </g>
+
+  <!-- SILENCE: Train=250 (h=271.3, y=228.7), Val=60 (h=65.1, y=434.9), Test=90 (h=97.7, y=402.3) -->
+  <g transform="translate(880, 0)">
+    <rect x="0" y="228.7" width="24" height="271.3" rx="4" fill="#3B82F6"/>
+    <text x="12" y="221" font-size="11" font-weight="600" fill="#93C5FD" text-anchor="middle">250</text>
+    <rect x="28" y="434.9" width="24" height="65.1" rx="4" fill="#10B981"/>
+    <text x="40" y="427" font-size="11" font-weight="600" fill="#6EE7B7" text-anchor="middle">60</text>
+    <rect x="56" y="402.3" width="24" height="97.7" rx="4" fill="#F59E0B"/>
+    <text x="68" y="395" font-size="11" font-weight="600" fill="#FCD34D" text-anchor="middle">90</text>
+    <text x="40" y="525" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">SILENCE</text>
+    <text x="40" y="542" font-size="10" fill="#94A3B8" text-anchor="middle">Total: 400</text>
+  </g>
+
+  <text x="550" y="580" font-size="12" fill="#94A3B8" text-anchor="middle">Audited Total Pool: Exactly 2,099 Files (1,000 Commands &bull; 699 Unknown &bull; 400 Silence) across Train, Val, and Test Manifests</text>
+</svg>

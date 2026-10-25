@@ -1,0 +1,38 @@
+{
+  "1_stage1_cnn_baseline": {
+    "seed42": {
+      "theta_cmd": 0.9
+    },
+    "seed43": {
+      "theta_cmd": 0.8
+    },
+    "seed44": {
+      "theta_cmd": 0.9
+    }
+  },
+  "2_cascade_v1_bounded": {
+    "seed42": {
+      "theta_s1": 0.6,
+      "theta_s2": 0.3
+    },
+    "seed43": {
+      "theta_s1": 0.3,
+      "theta_s2": 0.6
+    },
+    "seed44": {
+      "theta_s1": 0.4,
+      "theta_s2": 0.3
+    }
+  },
+  "3_bounded_kws_net": {
+    "seed42": {
+      "theta_reject": 0.4
+    },
+    "seed43": {
+      "theta_reject": 0.2
+    },
+    "seed44": {
+      "theta_reject": 0.7
+    }
+  }
+}

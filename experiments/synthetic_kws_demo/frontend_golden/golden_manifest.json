@@ -1,0 +1,1022 @@
+{
+  "manifest_version": "1.0.0",
+  "generated_at": "2026-10-16",
+  "governance": "HUMAN DATA COLLECTION REMAINS STRICTLY BLOCKED. Golden vectors are synthetic reference fixtures.",
+  "verified_frontend_contract": {
+    "sample_rate": 16000,
+    "channels": 1,
+    "samples": 16000,
+    "duration_sec": 1.0,
+    "stft_parameters": {
+      "n_fft": 512,
+      "win_length": 400,
+      "hop_length": 160,
+      "window_function": "Periodic Hann Window (torch.hann_window(400, periodic=True))",
+      "center": true,
+      "pad_mode": "reflect",
+      "normalized": false,
+      "power": 2.0
+    },
+    "mel_filterbank_parameters": {
+      "n_mels": 40,
+      "f_min": 20.0,
+      "f_max": 8000.0,
+      "mel_scale": "slaney",
+      "norm": "slaney (area-normalized)"
+    },
+    "compression_parameters": {
+      "log_type": "natural_logarithm (ln)",
+      "epsilon": 1e-06,
+      "formula": "ln(mel_power_spectrum + 1.0e-6)"
+    },
+    "output_tensor_spec": {
+      "shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "layout": "(Batch, Channels, Mel_Bands, Time_Frames)",
+      "dtype": "float32"
+    },
+    "class_ordering": {
+      "0": "TRAI",
+      "1": "PHAI",
+      "2": "LEN",
+      "3": "XUONG",
+      "4": "UNKNOWN",
+      "5": "SILENCE"
+    }
+  },
+  "source_checkpoint": {
+    "path": "experiments\\synthetic_kws_v4\\checkpoints\\arm_b_onset_no_resample.pt",
+    "sha256": "6A0FD55CD6F16F5B683951127076EEC72506C31EE670F896AAEACE5981CF1D96"
+  },
+  "onnx_model": {
+    "path": "experiments\\synthetic_kws_demo\\export\\arm_b_tcresnet14.onnx",
+    "sha256": "8A5AC4C105DF52F1749AE11B6BB2124B3A672486601EFF308ACC7E257FF97625"
+  },
+  "total_cases": 12,
+  "cases": [
+    {
+      "case_id": "case_01_trai_demo",
+      "case_name": "TRAI Canonical Demonstration Fixture",
+      "category": "canonical_demo",
+      "intended_label": "TRAI",
+      "description": "Native onset-aware stop closure (25ms) + transient burst (15ms) for 'tr\u00e1i'.",
+      "wav_artifact": {
+        "filename": "case_01_trai_demo.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_01_trai_demo.wav",
+        "sha256": "3DBEDBEB636F448E14606CB4D829955C9B3230A3F29F82CA69C044EAD7593F24",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_01_trai_demo_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_01_trai_demo_logmel.npy",
+        "sha256": "40C537BBC3F29EB883922EA4DE401559DE7D01AD2371B3BFAB74690B67AD0818",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815510749816895,
+        "max_value": 2.764732837677002,
+        "mean_value": -10.337868690490723,
+        "std_value": 4.725538730621338
+      },
+      "pytorch_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.8840109705924988,
+        "logits": [
+          3.6467631,
+          0.7540516,
+          -2.4265494,
+          -2.4861553,
+          0.9805348,
+          -2.6763587
+        ],
+        "probabilities": [
+          0.884011,
+          0.048997,
+          0.0020363,
+          0.0019185,
+          0.0614511,
+          0.0015862
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.8840109705924988,
+        "logits": [
+          3.6467636,
+          0.7540526,
+          -2.4265499,
+          -2.4861555,
+          0.980534,
+          -2.6763582
+        ],
+        "probabilities": [
+          0.884011,
+          0.048997,
+          0.0020363,
+          0.0019185,
+          0.061451,
+          0.0015862
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 1.0132789611816406e-06,
+        "max_abs_prob_diff": 8.568167686462402e-08,
+        "mean_abs_prob_diff": 1.924733320871989e-08
+      }
+    },
+    {
+      "case_id": "case_02_phai_demo",
+      "case_name": "PHAI Canonical Demonstration Fixture",
+      "category": "canonical_demo",
+      "intended_label": "PHAI",
+      "description": "Continuous labiodental frication (50ms) without closure for 'ph\u1ea3i'.",
+      "wav_artifact": {
+        "filename": "case_02_phai_demo.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_02_phai_demo.wav",
+        "sha256": "05908190E6F1ABA0AA199F1F5A055928771B5383161DEC7E5057135AC0481FF8",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_02_phai_demo_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_02_phai_demo_logmel.npy",
+        "sha256": "57E5433CD5049D78EC69BC9EAA377982C6C3E3D1AF31146A0C749875ABF46C93",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815510749816895,
+        "max_value": 2.112730026245117,
+        "mean_value": -10.091789245605469,
+        "std_value": 4.763184547424316
+      },
+      "pytorch_reference": {
+        "predicted_label": "PHAI",
+        "predicted_class_id": 1,
+        "confidence": 0.9929510354995728,
+        "logits": [
+          -1.1823272,
+          6.0013409,
+          -1.928462,
+          0.6144203,
+          -1.25524,
+          -1.2649213
+        ],
+        "probabilities": [
+          0.0007535,
+          0.992951,
+          0.0003573,
+          0.0045438,
+          0.0007005,
+          0.0006938
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "PHAI",
+        "predicted_class_id": 1,
+        "confidence": 0.9929510354995728,
+        "logits": [
+          -1.1823269,
+          6.0013418,
+          -1.9284631,
+          0.6144204,
+          -1.2552406,
+          -1.2649213
+        ],
+        "probabilities": [
+          0.0007535,
+          0.992951,
+          0.0003573,
+          0.0045438,
+          0.0007005,
+          0.0006938
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 1.0728836059570312e-06,
+        "max_abs_prob_diff": 4.190951585769653e-09,
+        "mean_abs_prob_diff": 1.1593025798598926e-09
+      }
+    },
+    {
+      "case_id": "case_03_len_demo",
+      "case_name": "LEN Canonical Demonstration Fixture",
+      "category": "canonical_demo",
+      "intended_label": "LEN",
+      "description": "Level tone formant resonance for 'l\u00ean'.",
+      "wav_artifact": {
+        "filename": "case_03_len_demo.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_03_len_demo.wav",
+        "sha256": "6EF28010BDF3BA9813F50D7FFB1C4653CD1EB687217072D772BA883537FCA0A1",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_03_len_demo_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_03_len_demo_logmel.npy",
+        "sha256": "C41474B37ED21A903348350DAB7B1E8779D35A7ACFF6BB5F834734D44BB0574B",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815510749816895,
+        "max_value": 3.6843156814575195,
+        "mean_value": -10.15078067779541,
+        "std_value": 4.787219047546387
+      },
+      "pytorch_reference": {
+        "predicted_label": "LEN",
+        "predicted_class_id": 2,
+        "confidence": 0.9685707092285156,
+        "logits": [
+          -1.2721642,
+          -1.7957746,
+          4.2254281,
+          -0.6967861,
+          0.1541653,
+          -2.2205369
+        ],
+        "probabilities": [
+          0.0039679,
+          0.0023505,
+          0.9685707,
+          0.0070541,
+          0.0165198,
+          0.001537
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "LEN",
+        "predicted_class_id": 2,
+        "confidence": 0.9685707092285156,
+        "logits": [
+          -1.2721636,
+          -1.7957742,
+          4.2254272,
+          -0.6967869,
+          0.1541662,
+          -2.2205372
+        ],
+        "probabilities": [
+          0.0039679,
+          0.0023505,
+          0.9685707,
+          0.0070541,
+          0.0165198,
+          0.001537
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 9.5367431640625e-07,
+        "max_abs_prob_diff": 3.166496753692627e-08,
+        "mean_abs_prob_diff": 6.907309095064799e-09
+      }
+    },
+    {
+      "case_id": "case_04_xuong_demo",
+      "case_name": "XUONG Canonical Demonstration Fixture",
+      "category": "canonical_demo",
+      "intended_label": "XUONG",
+      "description": "Sibilant fricative onset + dipping contour for 'xu\u1ed1ng'.",
+      "wav_artifact": {
+        "filename": "case_04_xuong_demo.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_04_xuong_demo.wav",
+        "sha256": "AB0E2171C882705CEE702F2D7F0FCFAAEE77562444E10438ED462B499A9B6FC2",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_04_xuong_demo_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_04_xuong_demo_logmel.npy",
+        "sha256": "BC4CD8928DD7031D9E17F4F18D8CBFCEF0E14BC49E3E13AD92DC3555A88B895D",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815510749816895,
+        "max_value": 2.567234992980957,
+        "mean_value": -10.340222358703613,
+        "std_value": 4.645421981811523
+      },
+      "pytorch_reference": {
+        "predicted_label": "XUONG",
+        "predicted_class_id": 3,
+        "confidence": 0.9844310879707336,
+        "logits": [
+          -0.8236982,
+          -0.2871383,
+          0.0287006,
+          5.2167315,
+          -0.711073,
+          -1.5810069
+        ],
+        "probabilities": [
+          0.0023435,
+          0.0040076,
+          0.0054961,
+          0.9844311,
+          0.0026228,
+          0.0010989
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "XUONG",
+        "predicted_class_id": 3,
+        "confidence": 0.9844310879707336,
+        "logits": [
+          -0.8236984,
+          -0.2871372,
+          0.0287017,
+          5.2167306,
+          -0.7110729,
+          -1.5810068
+        ],
+        "probabilities": [
+          0.0023435,
+          0.0040076,
+          0.0054961,
+          0.9844311,
+          0.0026228,
+          0.0010989
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 1.173466444015503e-06,
+        "max_abs_prob_diff": 1.3504177331924438e-08,
+        "mean_abs_prob_diff": 4.695417980353038e-09
+      }
+    },
+    {
+      "case_id": "case_05_unknown_demo",
+      "case_name": "UNKNOWN Canonical Demonstration Fixture",
+      "category": "canonical_demo",
+      "intended_label": "UNKNOWN",
+      "description": "Out-of-vocabulary non-target confuser ('ch\u00e0o').",
+      "wav_artifact": {
+        "filename": "case_05_unknown_demo.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_05_unknown_demo.wav",
+        "sha256": "A79224CE02A2858A0B2DB79F55A2AA8995D6AE8EBEAFEB93C4DD1B2B1AF41432",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_05_unknown_demo_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_05_unknown_demo_logmel.npy",
+        "sha256": "2F4607EB1068A11EE903F219227665FFD5250149F576E6893CE755E7895112BE",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815510749816895,
+        "max_value": 2.4462943077087402,
+        "mean_value": -10.385766983032227,
+        "std_value": 4.654539585113525
+      },
+      "pytorch_reference": {
+        "predicted_label": "UNKNOWN",
+        "predicted_class_id": 4,
+        "confidence": 0.9887465834617615,
+        "logits": [
+          -0.5263754,
+          -1.1943005,
+          -0.2248484,
+          -1.7722746,
+          5.1125073,
+          -3.5732095
+        ],
+        "probabilities": [
+          0.0035168,
+          0.0018033,
+          0.0047545,
+          0.0010117,
+          0.9887466,
+          0.0001671
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "UNKNOWN",
+        "predicted_class_id": 4,
+        "confidence": 0.9887465834617615,
+        "logits": [
+          -0.5263751,
+          -1.1942997,
+          -0.2248491,
+          -1.7722751,
+          5.1125078,
+          -3.5732102
+        ],
+        "probabilities": [
+          0.0035168,
+          0.0018033,
+          0.0047545,
+          0.0010117,
+          0.9887466,
+          0.0001671
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 8.344650268554688e-07,
+        "max_abs_prob_diff": 6.984919309616089e-09,
+        "mean_abs_prob_diff": 1.8189894035458565e-09
+      }
+    },
+    {
+      "case_id": "case_06_silence_demo",
+      "case_name": "SILENCE Canonical Demonstration Fixture",
+      "category": "canonical_demo",
+      "intended_label": "SILENCE",
+      "description": "Full-buffer unshifted ambient background dither noise.",
+      "wav_artifact": {
+        "filename": "case_06_silence_demo.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_06_silence_demo.wav",
+        "sha256": "FAC98B0B565064B39472EC0B10A6E05EAC279C40A58391C20D40536AE29EAE3B",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_06_silence_demo_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_06_silence_demo_logmel.npy",
+        "sha256": "B4BCDC250DCC5FCA52511CF19560C11FE275CC7A3116DFB197FD5DA6BDF40960",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.693699836730957,
+        "max_value": -10.350903511047363,
+        "mean_value": -12.174131393432617,
+        "std_value": 0.4840088486671448
+      },
+      "pytorch_reference": {
+        "predicted_label": "SILENCE",
+        "predicted_class_id": 5,
+        "confidence": 0.9635806083679199,
+        "logits": [
+          -0.8774942,
+          -1.3341144,
+          -1.1279404,
+          -1.9887456,
+          -1.3495648,
+          3.6114073
+        ],
+        "probabilities": [
+          0.0108239,
+          0.0068561,
+          0.0084259,
+          0.0035626,
+          0.006751,
+          0.9635806
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "SILENCE",
+        "predicted_class_id": 5,
+        "confidence": 0.9635804891586304,
+        "logits": [
+          -0.8774945,
+          -1.3341138,
+          -1.1279402,
+          -1.9887453,
+          -1.3495649,
+          3.6114078
+        ],
+        "probabilities": [
+          0.0108239,
+          0.0068561,
+          0.0084259,
+          0.0035626,
+          0.006751,
+          0.9635805
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 5.960464477539062e-07,
+        "max_abs_prob_diff": 1.1920928955078125e-07,
+        "mean_abs_prob_diff": 2.359350522359212e-08
+      }
+    },
+    {
+      "case_id": "case_07_trai_leading_pad",
+      "case_name": "TRAI with 200ms Leading Zero Padding",
+      "category": "timing_variant",
+      "intended_label": "TRAI",
+      "description": "Speech utterance delayed by 200ms (3,200 zero samples leading) right-padded to 16,000 samples.",
+      "wav_artifact": {
+        "filename": "case_07_trai_leading_pad.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_07_trai_leading_pad.wav",
+        "sha256": "9D629EAA431CFB829471DAB36F1A65EF7DFB0141D07B60CEA6E88D64EEC834AE",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_07_trai_leading_pad_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_07_trai_leading_pad_logmel.npy",
+        "sha256": "0F7CB1B00E8A17D8AF653928A0EC2B0D2EBB2319EBF5C33B331590F201C4F339",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815510749816895,
+        "max_value": 2.764732837677002,
+        "mean_value": -10.342316627502441,
+        "std_value": 4.722629547119141
+      },
+      "pytorch_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.8168438076972961,
+        "logits": [
+          2.9812114,
+          0.2570479,
+          -2.0442367,
+          -2.2073336,
+          1.0362877,
+          -2.6805971
+        ],
+        "probabilities": [
+          0.8168438,
+          0.0535858,
+          0.0053656,
+          0.0045581,
+          0.1168071,
+          0.0028395
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.8168437480926514,
+        "logits": [
+          2.9812102,
+          0.2570481,
+          -2.0442369,
+          -2.2073338,
+          1.0362877,
+          -2.6805961
+        ],
+        "probabilities": [
+          0.8168437,
+          0.0535859,
+          0.0053656,
+          0.0045581,
+          0.1168073,
+          0.0028395
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 1.1920928955078125e-06,
+        "max_abs_prob_diff": 1.2665987014770508e-07,
+        "mean_abs_prob_diff": 4.594524701436361e-08
+      }
+    },
+    {
+      "case_id": "case_08_phai_centered",
+      "case_name": "PHAI with Centered Zero Padding",
+      "category": "timing_variant",
+      "intended_label": "PHAI",
+      "description": "Speech utterance centered with equal 4,000 samples leading and 4,000 samples trailing padding.",
+      "wav_artifact": {
+        "filename": "case_08_phai_centered.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_08_phai_centered.wav",
+        "sha256": "8803390DC207E82A37B20FAA6CC4D97307CFB4D923E816DCD1875103F683A395",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_08_phai_centered_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_08_phai_centered_logmel.npy",
+        "sha256": "143E7D3B2556853F4936B321095CAB30165E052D83F067087CF64F4989C4C63C",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815510749816895,
+        "max_value": 2.112730026245117,
+        "mean_value": -10.092462539672852,
+        "std_value": 4.762821674346924
+      },
+      "pytorch_reference": {
+        "predicted_label": "PHAI",
+        "predicted_class_id": 1,
+        "confidence": 0.950570285320282,
+        "logits": [
+          -0.7293981,
+          4.0846281,
+          -1.011718,
+          0.3273822,
+          -0.3593645,
+          -1.8414397
+        ],
+        "probabilities": [
+          0.007714,
+          0.9505703,
+          0.0058166,
+          0.0221939,
+          0.0111682,
+          0.002537
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "PHAI",
+        "predicted_class_id": 1,
+        "confidence": 0.950570285320282,
+        "logits": [
+          -0.7293982,
+          4.0846281,
+          -1.0117177,
+          0.3273832,
+          -0.3593645,
+          -1.8414403
+        ],
+        "probabilities": [
+          0.007714,
+          0.9505703,
+          0.0058166,
+          0.0221939,
+          0.0111682,
+          0.002537
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 1.0132789611816406e-06,
+        "max_abs_prob_diff": 2.60770320892334e-08,
+        "mean_abs_prob_diff": 4.5013924439748125e-09
+      }
+    },
+    {
+      "case_id": "case_09_silence_pure_zeros",
+      "case_name": "Pure Digital Silence (Exact Zeros)",
+      "category": "numerical_edge_case",
+      "intended_label": "SILENCE",
+      "description": "16,000 exact 0.0 samples. Tests log epsilon stabilizer ln(1e-6) = -13.81551 across all bins.",
+      "wav_artifact": {
+        "filename": "case_09_silence_pure_zeros.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_09_silence_pure_zeros.wav",
+        "sha256": "643F8A8DC8BD9C19225AFFFAD2BECFEC5426180B3749CB208ABDF1A6C8354EFC",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_09_silence_pure_zeros_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_09_silence_pure_zeros_logmel.npy",
+        "sha256": "AE9DEE80D8815E3069E058E1422F83369FC38C5C2FB46BF2F2BC852669509930",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815510749816895,
+        "max_value": -13.815510749816895,
+        "mean_value": -13.815510749816895,
+        "std_value": 0.0
+      },
+      "pytorch_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.3023432195186615,
+        "logits": [
+          0.5645164,
+          -0.343436,
+          -0.9148545,
+          -0.8413699,
+          0.5640057,
+          -0.2754383
+        ],
+        "probabilities": [
+          0.3023432,
+          0.1219499,
+          0.068868,
+          0.0741193,
+          0.3021889,
+          0.1305307
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.3023433983325958,
+        "logits": [
+          0.5645172,
+          -0.3434357,
+          -0.9148546,
+          -0.8413706,
+          0.5640056,
+          -0.2754386
+        ],
+        "probabilities": [
+          0.3023434,
+          0.1219499,
+          0.068868,
+          0.0741193,
+          0.3021888,
+          0.1305306
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 8.344650268554688e-07,
+        "max_abs_prob_diff": 1.7881393432617188e-07,
+        "mean_abs_prob_diff": 7.698933283487956e-08
+      }
+    },
+    {
+      "case_id": "case_10_low_amplitude_ambient",
+      "case_name": "Ultra-Low-Amplitude Gaussian Ambient Floor",
+      "category": "numerical_edge_case",
+      "intended_label": "SILENCE",
+      "description": "Gaussian noise floor with sigma=1e-5 (max abs < 1e-4). Tests low-energy dynamic range.",
+      "wav_artifact": {
+        "filename": "case_10_low_amplitude_ambient.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_10_low_amplitude_ambient.wav",
+        "sha256": "76FAADDF699098E0EE2380664DA33EAB5C94F9EA88B7A1F9D71D747EF203B105",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_10_low_amplitude_ambient_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_10_low_amplitude_ambient_logmel.npy",
+        "sha256": "7AB22413DF386C2F41F494D10CDEC71E9A3B99271258F9BEDFE7F96A24070FB5",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815478324890137,
+        "max_value": -13.799027442932129,
+        "mean_value": -13.814126014709473,
+        "std_value": 0.0017742509953677654
+      },
+      "pytorch_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.3024331331253052,
+        "logits": [
+          0.5643188,
+          -0.3440025,
+          -0.914811,
+          -0.8422284,
+          0.5626718,
+          -0.2746929
+        ],
+        "probabilities": [
+          0.3024331,
+          0.1219412,
+          0.0689051,
+          0.0740924,
+          0.3019354,
+          0.1306927
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.30243319272994995,
+        "logits": [
+          0.564319,
+          -0.3440025,
+          -0.914811,
+          -0.8422282,
+          0.5626713,
+          -0.2746924
+        ],
+        "probabilities": [
+          0.3024332,
+          0.1219412,
+          0.0689051,
+          0.0740924,
+          0.3019353,
+          0.1306927
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 4.76837158203125e-07,
+        "max_abs_prob_diff": 1.1920928955078125e-07,
+        "mean_abs_prob_diff": 4.967053731282552e-08
+      }
+    },
+    {
+      "case_id": "case_11_transient_impulse",
+      "case_name": "Single-Sample Unit Impulse Spike",
+      "category": "numerical_edge_case",
+      "intended_label": "UNKNOWN",
+      "description": "Single impulse spike at sample index 400 (x[400]=0.95). Tests wideband transient filterbank response.",
+      "wav_artifact": {
+        "filename": "case_11_transient_impulse.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_11_transient_impulse.wav",
+        "sha256": "D048C6B8A3286CF0B54F32790A893F462AD1788A0B6781B627F95F852696214E",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_11_transient_impulse_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_11_transient_impulse_logmel.npy",
+        "sha256": "70E105D15A37FD91DF03F7FC1B0D8D0AB8114F6C1AA194A45925919CCE18A11E",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815510749816895,
+        "max_value": -4.353134632110596,
+        "mean_value": -13.628905296325684,
+        "std_value": 1.3128831386566162
+      },
+      "pytorch_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.3136924207210541,
+        "logits": [
+          0.3691679,
+          -0.0979971,
+          -1.2974478,
+          -1.1935776,
+          -0.0564883,
+          -0.3056026
+        ],
+        "probabilities": [
+          0.3136924,
+          0.1966151,
+          0.0592519,
+          0.0657374,
+          0.2049481,
+          0.1597552
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.3136926293373108,
+        "logits": [
+          0.3691688,
+          -0.0979971,
+          -1.2974478,
+          -1.1935782,
+          -0.0564883,
+          -0.3056028
+        ],
+        "probabilities": [
+          0.3136926,
+          0.196615,
+          0.0592518,
+          0.0657373,
+          0.2049481,
+          0.1597551
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 9.5367431640625e-07,
+        "max_abs_prob_diff": 2.086162567138672e-07,
+        "mean_abs_prob_diff": 7.947285970052083e-08
+      }
+    },
+    {
+      "case_id": "case_12_holdout_trai_native",
+      "case_name": "Historical V4 Holdout TRAI Anchor",
+      "category": "holdout_anchor",
+      "intended_label": "TRAI",
+      "description": "Bit-exact anchor clip from the frozen V4 fresh synthetic holdout cohort (SPK_CALIB_031).",
+      "wav_artifact": {
+        "filename": "case_12_holdout_trai_native.wav",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\wavs\\case_12_holdout_trai_native.wav",
+        "sha256": "BAFD3436C66CA3D617F27DA3C71E2DAEDB4BB629A9C6F8DDA5F17AE5D1460BF4",
+        "sample_rate": 16000,
+        "samples": 16000,
+        "duration_sec": 1.0,
+        "channels": 1
+      },
+      "tensor_artifact": {
+        "filename": "case_12_holdout_trai_native_logmel.npy",
+        "path": "experiments\\synthetic_kws_demo\\frontend_golden\\tensors\\case_12_holdout_trai_native_logmel.npy",
+        "sha256": "2A5B9585A5ED42EA825943C476C0CED3BA7C019155B1E517B9404B52083343BE",
+        "shape": [
+          1,
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "min_value": -13.815510749816895,
+        "max_value": 2.1526482105255127,
+        "mean_value": -11.518034934997559,
+        "std_value": 4.100494384765625
+      },
+      "pytorch_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.861146867275238,
+        "logits": [
+          3.0609772,
+          0.4089358,
+          -2.5444212,
+          -1.6503638,
+          0.4098042,
+          -1.832406
+        ],
+        "probabilities": [
+          0.8611469,
+          0.060717,
+          0.0031673,
+          0.007744,
+          0.0607697,
+          0.0064552
+        ]
+      },
+      "onnx_reference": {
+        "predicted_label": "TRAI",
+        "predicted_class_id": 0,
+        "confidence": 0.8611470460891724,
+        "logits": [
+          3.0609784,
+          0.4089364,
+          -2.5444212,
+          -1.6503639,
+          0.4098029,
+          -1.8324057
+        ],
+        "probabilities": [
+          0.861147,
+          0.060717,
+          0.0031673,
+          0.007744,
+          0.0607696,
+          0.0064552
+        ]
+      },
+      "parity": {
+        "argmax_agreement": true,
+        "max_abs_logits_diff": 1.341104507446289e-06,
+        "max_abs_prob_diff": 1.7881393432617188e-07,
+        "mean_abs_prob_diff": 5.832407623529434e-08
+      }
+    }
+  ]
+}

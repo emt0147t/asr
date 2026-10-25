@@ -1,0 +1,248 @@
+{
+  "report_title": "Báo Cáo Trạng Thái Mô Hình KWS Tiếng Việt (Verifiable Model Status Pack)",
+  "generated_timestamp_utc": "2026-10-21T03:04:35.639552+00:00",
+  "generated_timestamp_local": "2026-10-21 10:04:35 UTC+7",
+  "git_state": {
+    "commit_head": "471f1af9957506d54be0534d24817c93957ceee3",
+    "status_summary": "71 modified/untracked files (Working tree clean of staged commits)"
+  },
+  "model_checkpoint": {
+    "identity": "variant_v11_hard_negative_weighted_seed42.pt",
+    "path": "experiments/vieneu_kws_research_v13_4/bundle/checkpoint/variant_v11_hard_negative_weighted_seed42.pt",
+    "file_size_bytes": 566146,
+    "expected_file_size_bytes": 566146,
+    "expected_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "observed_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "status": "PASS",
+    "immutability_verified": true
+  },
+  "onnx_artifact": {
+    "identity": "vietnamese_kws_v11.onnx",
+    "path": "experiments/vieneu_kws_research_v13_4/bundle/onnx/vietnamese_kws_v11.onnx",
+    "file_size_bytes": 555751,
+    "expected_file_size_bytes": 555751,
+    "expected_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+    "observed_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+    "status": "PASS",
+    "immutability_verified": true
+  },
+  "preprocessing_contract": {
+    "source_file": "experiments/vieneu_kws_research_v13_4/bundle/preprocessing_contract.json",
+    "audio_input": {
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "duration_seconds": 1.0,
+      "num_samples": 16000,
+      "clamping_policy": "clamped_only_if_max_abs_greater_than_1.0",
+      "floor_amplification_allowed": false
+    },
+    "spectrogram": {
+      "n_fft": 512,
+      "win_length": 400,
+      "hop_length": 160,
+      "window": "hann",
+      "n_mels": 40,
+      "f_min_hz": 20.0,
+      "f_max_hz": 8000.0,
+      "mel_norm": "slaney",
+      "log_eps": 1e-06,
+      "expected_shape": [
+        1,
+        1,
+        40,
+        101
+      ]
+    },
+    "decision_logic": {
+      "classes": [
+        "TRAI",
+        "PHAI",
+        "LEN",
+        "XUONG",
+        "REJECT"
+      ],
+      "calibrated_theta_cmd": 0.2,
+      "rule": "If max(prob[TRAI], prob[PHAI], prob[LEN], prob[XUONG]) >= theta_cmd then predict argmax command, else REJECT."
+    }
+  },
+  "historical_confirmatory_evaluation_phase13_3": {
+    "evaluation_type": "HISTORICAL_REPORTED_SYNTHETIC_EVALUATION",
+    "dataset_description": "1.000 clips âm thanh tổng hợp từ 8 giọng đọc Miền Bắc mới lạ (0% trùng lặp tập huấn luyện)",
+    "metrics": {
+      "five_class_accuracy": {
+        "reported": "99.20%",
+        "ratio": "992/1000",
+        "status": "VERIFIED_FROM_REPORT"
+      },
+      "command_recall": {
+        "reported": "99.00%",
+        "ratio": "198/200",
+        "status": "VERIFIED_FROM_REPORT"
+      },
+      "per_command_recall": {
+        "TRAI": "98.00% (49/50)",
+        "PHAI": "100.00% (50/50)",
+        "LEN": "98.00% (49/50)",
+        "XUONG": "100.00% (50/50)"
+      },
+      "non_target_far": {
+        "reported": "0.75%",
+        "ratio": "6/800",
+        "status": "VERIFIED_FROM_REPORT"
+      },
+      "command_confusion_rate": {
+        "reported_in_prompt": "0.00% (0/200)",
+        "actual_in_report_matrix": "1.00% (2/200)",
+        "note": "2 clips bị nhầm sang lệnh khác (v13_conf_cmd_trai_006 -> PHAI, v13_conf_cmd_len_007 -> PHAI)"
+      },
+      "cpu_latency": {
+        "mean_ms": 1.8,
+        "p95_ms": 2.12,
+        "target_sla_ms": 50.0
+      }
+    }
+  },
+  "live_parity_check": {
+    "status": "PASS",
+    "evaluated_fixtures_count": 8,
+    "fixtures": [
+      {
+        "fixture": "dev_01_digital_silence.wav",
+        "prediction_pytorch": "REJECT",
+        "prediction_onnx": "REJECT",
+        "confidence_pytorch": 0.0972,
+        "confidence_onnx": 0.0972,
+        "latency_pytorch_ms": 5.46,
+        "latency_onnx_ms": 3.15,
+        "match": true
+      },
+      {
+        "fixture": "dev_02_quiet_ambient_room.wav",
+        "prediction_pytorch": "REJECT",
+        "prediction_onnx": "REJECT",
+        "confidence_pytorch": 0.0067,
+        "confidence_onnx": 0.0067,
+        "latency_pytorch_ms": 2.13,
+        "latency_onnx_ms": 2.56,
+        "match": true
+      },
+      {
+        "fixture": "dev_03_attenuated_trai_peak010.wav",
+        "prediction_pytorch": "REJECT",
+        "prediction_onnx": "REJECT",
+        "confidence_pytorch": 0.0931,
+        "confidence_onnx": 0.0898,
+        "latency_pytorch_ms": 1.78,
+        "latency_onnx_ms": 2.58,
+        "match": true
+      },
+      {
+        "fixture": "dev_04_attenuated_phai_peak005.wav",
+        "prediction_pytorch": "REJECT",
+        "prediction_onnx": "REJECT",
+        "confidence_pytorch": 0.0677,
+        "confidence_onnx": 0.0556,
+        "latency_pytorch_ms": 1.72,
+        "latency_onnx_ms": 2.52,
+        "match": true
+      },
+      {
+        "fixture": "dev_05_normal_len_peak089.wav",
+        "prediction_pytorch": "XUONG",
+        "prediction_onnx": "XUONG",
+        "confidence_pytorch": 0.2088,
+        "confidence_onnx": 0.2325,
+        "latency_pytorch_ms": 1.9,
+        "latency_onnx_ms": 2.55,
+        "match": true
+      },
+      {
+        "fixture": "dev_06_normal_xuong_peak089.wav",
+        "prediction_pytorch": "XUONG",
+        "prediction_onnx": "XUONG",
+        "confidence_pytorch": 0.2989,
+        "confidence_onnx": 0.3393,
+        "latency_pytorch_ms": 1.73,
+        "latency_onnx_ms": 2.57,
+        "match": true
+      },
+      {
+        "fixture": "dev_07_high_amplitude_trai_peak180.wav",
+        "prediction_pytorch": "LEN",
+        "prediction_onnx": "LEN",
+        "confidence_pytorch": 0.31,
+        "confidence_onnx": 0.3186,
+        "latency_pytorch_ms": 1.69,
+        "latency_onnx_ms": 2.5,
+        "match": true
+      },
+      {
+        "fixture": "dev_08_high_amplitude_xuong_peak250.wav",
+        "prediction_pytorch": "XUONG",
+        "prediction_onnx": "XUONG",
+        "confidence_pytorch": 0.3035,
+        "confidence_onnx": 0.3443,
+        "latency_pytorch_ms": 1.71,
+        "latency_onnx_ms": 2.51,
+        "match": true
+      }
+    ]
+  },
+  "live_test_status": {
+    "command": "D:\\trainidentificationaudio\\.venv\\Scripts\\python.exe -m pytest tests/test_vieneu_research_v13_4.py -v",
+    "execution_timestamp_utc": "2026-10-21T03:04:38.250489+00:00",
+    "exit_code": 0,
+    "duration_seconds": 3.33,
+    "passed_count": 5,
+    "failed_count": 0,
+    "skipped_count": 0,
+    "passed_tests": 5,
+    "failed_tests": 0,
+    "skipped_tests": 0,
+    "full_suite_reference": "Toàn bộ workspace: 384/384 tests passed (pytest tests/ -q, 43.43s)"
+  },
+  "mandatory_governance_boundaries": {
+    "canonical_labels": [
+      "NOT_VALIDATED_ON_NATURAL_SPEECH",
+      "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+      "NOT_VALIDATED_PENDING_DATA"
+    ],
+    "descriptions": {
+      "NOT_VALIDATED_ON_NATURAL_SPEECH": "Mô hình mới chỉ được kiểm định trên âm thanh tổng hợp Vieneu TTS v3-Turbo kết hợp nhiễu nhân tạo; chưa từng được kiểm nghiệm trên giọng người thật nói tự nhiên có bản quyền/đồng thuận. Phase 90 chỉ có 1 người chấm bài.",
+      "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION": "Mô hình hoạt động trên đoạn âm thanh cố định 1.0 giây (Bounded-Utterance); chưa có engine VAD và bộ đệm vòng (ring buffer) để nhận dạng micro mở liên tục.",
+      "NOT_VALIDATED_PENDING_DATA": "Mới chỉ kiểm định độc lập trên phương ngữ Miền Bắc; phương ngữ Miền Trung và Miền Nam chưa được kiểm định do thiếu dữ liệu độc lập (theo Sửa đổi Giao thức 13.1-A)."
+    }
+  },
+  "unresolved_discrepancies": [
+    {
+      "id": "DISCREPANCY-01",
+      "topic": "Phase 13.3 Command Confusion Rate (0.00% vs 1.00%)",
+      "description": "Một số tài liệu tóm tắt cũ ghi 'Command Confusion Rate: 0.00% (0/200)'. Tuy nhiên, báo cáo chi tiết PHASE13_3_CONFIRMATORY_EVALUATION.md Mục 5.3 (Ma trận 5x5) ghi nhận có 2 mẫu lệnh bị nhầm sang lệnh khác: v13_conf_cmd_trai_006 (TRAI -> PHAI, conf 0.284) và v13_conf_cmd_len_007 (LEN -> PHAI, conf 0.219). Tỷ lệ nhầm lệnh thực tế là 2/200 = 1.00%, không phải 0.00%.",
+      "impact": "Không ảnh hưởng tới việc đạt tiêu chuẩn nghiệm thu (chuẩn cho phép <= 1.00%), nhưng cần ghi nhận minh bạch số liệu thực tế.",
+      "status": "FLAGGED_AND_CLARIFIED"
+    },
+    {
+      "id": "DISCREPANCY-02",
+      "topic": "Độ trễ Single-Clip Cold Start vs Steady State",
+      "description": "Trong bài kiểm thử test_infer_cli_parity_and_latency, lần suy luận đầu tiên trên dev_files[0] khi chưa nạp bộ nhớ đệm (cold start) có thể đạt 57.02 ms (vượt nhẹ ngưỡng 50 ms). Ở trạng thái steady-state (warm run), độ trễ PyTorch là 1.39 ms - 2.10 ms và ONNX là 2.27 ms - 3.24 ms.",
+      "impact": "Cần lưu ý cơ chế JIT warmup khi triển khai thực tế trên vi xử lý.",
+      "status": "DOCUMENTED"
+    },
+    {
+      "id": "DISCREPANCY-03",
+      "topic": "Lịch Sử Kích Thước Tệp Checkpoint & ONNX (v11 vs Baseline v10)",
+      "description": "Checkpoint đông kết v11 có kích thước 566,146 bytes (~552.9 KB) và ONNX là 555,751 bytes (~542.7 KB). Một số bảng tham chiếu cũ ghi kích thước 479,524 bytes và 485,498 bytes vốn thuộc về bản phát hành v10 trước đó.",
+      "impact": "Đã cập nhật đúng số bytes thực tế và mã SHA-256 chính thống của bản phát hành v11.",
+      "status": "CLARIFIED_IN_REPORT"
+    }
+  ],
+  "prioritized_next_steps": [
+    "1. Bảo toàn Checkpoint và Protocol Đông Kết (Zero-Tampering Invariant).",
+    "2. Duy trì toàn vẹn hồ sơ bằng chứng và khả năng tái lập.",
+    "3. Tìm nguồn TTS phương ngữ Miền Trung / Miền Nam đạt chuẩn provenance hoặc phê duyệt thu âm người thật.",
+    "4. Triển khai chiến dịch thu âm người thật 3 miền (Bắc 40%, Trung 30%, Nam 30%) có cam kết đồng thuận pháp lý.",
+    "5. Phân tích calibration (ECE) và tối ưu hóa ngưỡng kích hoạt theo từng phương ngữ.",
+    "6. Nghiên cứu engine streaming micro mở riêng biệt: VAD C++, ring-buffer, debounce, đo đạc FA/hour.",
+    "7. Triển khai và đo đạc trên phần cứng di động thực tế (Android NDK / iOS CoreAudio) và lượng tử hóa INT8."
+  ]
+}

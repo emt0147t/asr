@@ -1,0 +1,9 @@
+asset_id,category,filename,exact_byte_duplication,exact_decoded_pcm_duplication,max_cross_correlation,closest_historical_track,perceptual_source_overlap_detected,provenance_status
+esc50_1-100210-A-36,vacuum_cleaner,1-100210-A-36.wav,False,False,0.0301,data\raw\noise\extracted\noise\mic-noise\Wind-Mic Distortion-Violent 1.mp3,False,VERIFIED_FRESH_UNSEEN_ENVIRONMENTAL_NOISE
+esc50_1-100210-B-36,vacuum_cleaner,1-100210-B-36.wav,False,False,0.0366,data\raw\noise\extracted\noise\mic-noise\Wind-Mic Distortion-Violent 12.mp3,False,VERIFIED_FRESH_UNSEEN_ENVIRONMENTAL_NOISE
+esc50_1-137-A-32,keyboard_typing,1-137-A-32.wav,False,False,0.0152,data\raw\noise\extracted\noise\mic-noise\Microphone_Touch_and_Movement_2.mp3,False,VERIFIED_FRESH_UNSEEN_ENVIRONMENTAL_NOISE
+esc50_1-21896-A-35,washing_machine,1-21896-A-35.wav,False,False,0.116,data\raw\noise\extracted\noise\mic-noise\Microphone_Touch_and_Movement_2.mp3,False,VERIFIED_FRESH_UNSEEN_ENVIRONMENTAL_NOISE
+esc50_1-21934-A-38,clock_tick,1-21934-A-38.wav,False,False,0.0391,data\raw\noise\extracted\noise\mic-noise\RE201 018 CNTCT TRANSFORMER HUM Sustained H1A.mp3,False,VERIFIED_FRESH_UNSEEN_ENVIRONMENTAL_NOISE
+esc50_1-21935-A-38,clock_tick,1-21935-A-38.wav,False,False,0.0173,data\raw\noise\extracted\noise\mic-noise\RE201 016 CNTCT CASSETTE Tray Tape Movement Motor Engage H1A.mp3,False,VERIFIED_FRESH_UNSEEN_ENVIRONMENTAL_NOISE
+esc50_1-23996-A-35,washing_machine,1-23996-A-35.wav,False,False,0.0805,data\raw\noise\extracted\noise\mic-noise\RE201 018 CNTCT TRANSFORMER HUM Sustained H1A.mp3,False,VERIFIED_FRESH_UNSEEN_ENVIRONMENTAL_NOISE
+esc50_1-53501-A-32,keyboard_typing,1-53501-A-32.wav,False,False,0.0079,data\raw\noise\extracted\noise\mic-noise\EFX EXT Mic Cable Coil Actions.mp3,False,VERIFIED_FRESH_UNSEEN_ENVIRONMENTAL_NOISE

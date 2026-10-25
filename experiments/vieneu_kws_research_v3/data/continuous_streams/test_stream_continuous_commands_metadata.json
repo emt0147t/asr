@@ -1,0 +1,14 @@
+{
+  "stream_name": "test_stream_continuous_commands",
+  "wav_file": "test_stream_continuous_commands.wav",
+  "ground_truth_file": "test_stream_continuous_commands_ground_truth.json",
+  "duration_seconds": 519.149,
+  "duration_hours": 0.1442,
+  "active_speech_duration_seconds": 160.0,
+  "active_speech_duration_hours": 0.0444,
+  "active_speech_percentage": 30.82,
+  "num_events": 160,
+  "background_family": "office_ambient",
+  "num_passes": 1,
+  "sha256": "7ee89c957b1d99d1ca30c22a80e6021cb46517c1712339fb7dee0a999e71b430"
+}

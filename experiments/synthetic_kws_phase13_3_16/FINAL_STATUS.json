@@ -1,0 +1,112 @@
+{
+  "report_type": "synthetic_kws_phases_13_3_to_16_final_status",
+  "project_name": "Vietnamese Synthetic Keyword Spotting",
+  "date": "2026-10-16",
+  "overall_status": {
+    "engineering_correctness": "VERIFIED_PASS",
+    "synthetic_distribution_generalization": "VERIFIED_PASS_WITH_LIMITATIONS",
+    "natural_speech_validity": "NOT_VALIDATED_ON_NATURAL_SPEECH"
+  },
+  "governance_status": {
+    "human_speech_data_collection": "STRICTLY_BLOCKED",
+    "unapproved_audio_ingestion": "BLOCKED",
+    "git_staged_diff_empty": true,
+    "protected_baselines_verified": true
+  },
+  "phase_verdicts": {
+    "phase_13_3": "AUDIT_PASS_WITH_LIMITATIONS",
+    "phase_14": "DATASET_PASS",
+    "phase_15": "TRAINING_EVALUATION_PASS",
+    "phase_16": "ROBUSTNESS_REPRODUCIBILITY_PASS_WITH_LIMITATIONS"
+  },
+  "dataset_release_candidate": {
+    "name": "synthetic_kws_v5_2_release_candidate",
+    "version": "v5.2-release-candidate",
+    "total_samples": 3000,
+    "sample_rate": 16000,
+    "channels": 1,
+    "duration_sec": 1.0,
+    "class_balance": {
+      "TRAI": 500,
+      "PHAI": 500,
+      "LEN": 500,
+      "XUONG": 500,
+      "UNKNOWN": 500,
+      "SILENCE": 500
+    },
+    "split_distribution": {
+      "train": 2100,
+      "val": 450,
+      "test": 450
+    },
+    "split_isolation": {
+      "speaker_leakage": false,
+      "seed_leakage": false,
+      "train_speakers": 8,
+      "val_speakers": 2,
+      "test_speakers": 2
+    },
+    "manifest_path": "experiments/synthetic_kws_phase13_3_16/dataset_release_candidate/manifest.csv"
+  },
+  "nuisance_remediation_summary": {
+    "full_clip_rms_eta_squared": {
+      "v5_baseline": 0.6042,
+      "v5_1_candidate": 0.1215,
+      "v5_2_counterfactual_delta_db": 0.03
+    },
+    "pre_onset_noise_eta_squared": {
+      "v5_baseline": 0.1806,
+      "v5_1_candidate": 0.0282,
+      "v5_2_counterfactual_delta_db": 0.00
+    },
+    "nuisance_probe_cv_accuracy": {
+      "v5_baseline": 0.5200,
+      "v5_1_candidate": 0.3600,
+      "chance_level": 0.2000
+    }
+  },
+  "model_evaluation": {
+    "architecture": "VietnameseTCResNet (TC-ResNet-14, 192 features)",
+    "training_seeds": [42, 43, 44],
+    "test_accuracy_mean": 1.0000,
+    "test_macro_f1_mean": 1.0000,
+    "brier_score_mean": 0.0005,
+    "ece_mean": 0.0014,
+    "trai_phai_cross_confusion": {
+      "trai_predicted_as_phai": 0,
+      "phai_predicted_as_trai": 0
+    },
+    "streaming_false_trigger_rate_fp_per_hour": 424.57,
+    "streaming_evaluation_note": "Boundary sliding window transitions trigger false alarms at tau=0.500; temporal smoothing and adaptive thresholding required."
+  },
+  "synthetic_domain_shift_stress_tests": {
+    "nominal_baseline_acc": 1.0000,
+    "extreme_speaker_anatomy_acc": 0.8417,
+    "adverse_low_snr_acc": 0.8750,
+    "extreme_temporal_shift_acc": 0.9333,
+    "hum_harmonics_stress_acc": 1.0000
+  },
+  "test_suite_status": {
+    "total_tests_collected": 135,
+    "passed": 135,
+    "failed": 0,
+    "duration_seconds": 31.22
+  },
+  "protected_artifact_hashes": {
+    "data/manifests/test_manifest_v2.csv": "MATCH",
+    "data/raw/field_recordings/field_collection_manifest.csv": "MATCH",
+    "data/raw/field_recordings/consent_ledger.json": "MATCH",
+    "experiments/synthetic_kws_v4/checkpoints/arm_b_onset_no_resample.pt": "MATCH",
+    "experiments/synthetic_kws_demo/export/arm_b_tcresnet14.onnx": "MATCH",
+    "experiments/synthetic_kws_demo/android_app/app/src/main/assets/models/arm_b_tcresnet14.onnx": "MATCH",
+    "experiments/synthetic_kws_demo/frontend_golden/golden_manifest.json": "MATCH",
+    "golden_cases_12_of_12": "MATCH"
+  },
+  "unresolved_scientific_limitations": [
+    "Evaluated exclusively on parametric synthetic vocal tract audio; does NOT establish natural human speech recognition accuracy.",
+    "Lexical variation for target words is constrained to fixed keyword targets; lexical diversity is synthetic only.",
+    "Streaming false-trigger rate is high at static tau=0.500 without multi-frame temporal confirmation.",
+    "Natural human speech data collection and field recording ingestion remain strictly blocked pending formal authorization."
+  ],
+  "next_blocking_scientific_decision": "Formal institutional review and approval of human speech collection protocols and field recording consent infrastructure before evaluating model performance on real human speakers."
+}

@@ -1,0 +1,236 @@
+{
+  "gate": "GATE_A_E1_ONNX_EXPORT_AND_PARITY",
+  "status": "PASS",
+  "checkpoint_source": "experiments/vieneu_kws_research_v12/checkpoints/exp_v12_e1_baseline_scale_seed42.pt",
+  "checkpoint_sha256": "f3c0fe8f7ccebb8fe354cb50acb247e0674232044706db0187feb92b1706b878",
+  "onnx_output": "experiments/vieneu_kws_research_v12/onnx/vietnamese_kws_v12_e1.onnx",
+  "onnx_sha256": "20ecc2964d88d5a9d1d15b1c665e9697a32d702b1e3dd12ab1e5f829aff016b8",
+  "onnx_size_kb": 542.73,
+  "tolerance_threshold": 1e-05,
+  "max_abs_logit_diff": 9.5367431640625e-06,
+  "max_abs_prob_diff": 8.344650268554688e-07,
+  "total_fixtures": 10,
+  "label_mismatches": 0,
+  "fixtures": [
+    {
+      "fixture": "parity_dev_01_trai.wav",
+      "py_pred": "REJECT",
+      "onnx_pred": "REJECT",
+      "label_matched": true,
+      "max_abs_logit_diff": 1.9073486328125e-06,
+      "max_abs_prob_diff": 2.980232238769531e-07,
+      "py_probs": {
+        "TRAI": 2.261162626382429e-05,
+        "PHAI": 1.2673453056777362e-05,
+        "LEN": 0.20393972098827362,
+        "XUONG": 0.00045081303687766194,
+        "REJECT": 0.7955741882324219
+      },
+      "onnx_probs": {
+        "TRAI": 2.261167719552759e-05,
+        "PHAI": 1.2673433047893923e-05,
+        "LEN": 0.20393945276737213,
+        "XUONG": 0.00045081385178491473,
+        "REJECT": 0.7955744862556458
+      }
+    },
+    {
+      "fixture": "parity_dev_02_phai.wav",
+      "py_pred": "LEN",
+      "onnx_pred": "LEN",
+      "label_matched": true,
+      "max_abs_logit_diff": 4.76837158203125e-07,
+      "max_abs_prob_diff": 5.960464477539063e-08,
+      "py_probs": {
+        "TRAI": 1.0377322723797988e-05,
+        "PHAI": 8.966635505203158e-06,
+        "LEN": 0.6438172459602356,
+        "XUONG": 0.0002724647056311369,
+        "REJECT": 0.3558909296989441
+      },
+      "onnx_probs": {
+        "TRAI": 1.037732363329269e-05,
+        "PHAI": 8.966644600150175e-06,
+        "LEN": 0.6438173055648804,
+        "XUONG": 0.00027246499666944146,
+        "REJECT": 0.3558908998966217
+      }
+    },
+    {
+      "fixture": "parity_dev_03_len.wav",
+      "py_pred": "REJECT",
+      "onnx_pred": "REJECT",
+      "label_matched": true,
+      "max_abs_logit_diff": 1.6689300537109375e-06,
+      "max_abs_prob_diff": 5.066394805908203e-07,
+      "py_probs": {
+        "TRAI": 7.815125172783155e-06,
+        "PHAI": 2.6891357265412807e-06,
+        "LEN": 0.3504064977169037,
+        "XUONG": 0.0004627156595233828,
+        "REJECT": 0.6491203308105469
+      },
+      "onnx_probs": {
+        "TRAI": 7.815145181666594e-06,
+        "PHAI": 2.689132315936149e-06,
+        "LEN": 0.3504059910774231,
+        "XUONG": 0.00046271621249616146,
+        "REJECT": 0.6491208076477051
+      }
+    },
+    {
+      "fixture": "parity_dev_04_xuong.wav",
+      "py_pred": "LEN",
+      "onnx_pred": "LEN",
+      "label_matched": true,
+      "max_abs_logit_diff": 3.814697265625e-06,
+      "max_abs_prob_diff": 5.364418029785156e-07,
+      "py_probs": {
+        "TRAI": 1.0322959496988915e-05,
+        "PHAI": 2.400426637905184e-06,
+        "LEN": 0.6468127369880676,
+        "XUONG": 0.00131423759739846,
+        "REJECT": 0.35186028480529785
+      },
+      "onnx_probs": {
+        "TRAI": 1.0322990419808775e-05,
+        "PHAI": 2.4004220904316753e-06,
+        "LEN": 0.6468122005462646,
+        "XUONG": 0.0013142440002411604,
+        "REJECT": 0.35186076164245605
+      }
+    },
+    {
+      "fixture": "parity_dev_05_unknown.wav",
+      "py_pred": "LEN",
+      "onnx_pred": "LEN",
+      "label_matched": true,
+      "max_abs_logit_diff": 1.9073486328125e-06,
+      "max_abs_prob_diff": 1.1920928955078125e-07,
+      "py_probs": {
+        "TRAI": 1.4080204664423945e-06,
+        "PHAI": 9.987912790165865e-07,
+        "LEN": 0.8575154542922974,
+        "XUONG": 2.5938974431483075e-05,
+        "REJECT": 0.14245617389678955
+      },
+      "onnx_probs": {
+        "TRAI": 1.4080189885135042e-06,
+        "PHAI": 9.987901421482093e-07,
+        "LEN": 0.8575153350830078,
+        "XUONG": 2.5938996259355918e-05,
+        "REJECT": 0.14245617389678955
+      }
+    },
+    {
+      "fixture": "parity_dev_06_silence.wav",
+      "py_pred": "REJECT",
+      "onnx_pred": "REJECT",
+      "label_matched": true,
+      "max_abs_logit_diff": 5.245208740234375e-06,
+      "max_abs_prob_diff": 2.9558577807620168e-12,
+      "py_probs": {
+        "TRAI": 6.19228828213636e-08,
+        "PHAI": 1.2397955515552894e-06,
+        "LEN": 2.693057297165069e-07,
+        "XUONG": 4.436231790805323e-07,
+        "REJECT": 0.9999979734420776
+      },
+      "onnx_probs": {
+        "TRAI": 6.19231173004664e-08,
+        "PHAI": 1.2397943010000745e-06,
+        "LEN": 2.6930726448881614e-07,
+        "XUONG": 4.4362613493831304e-07,
+        "REJECT": 0.9999979734420776
+      }
+    },
+    {
+      "fixture": "parity_dev_07_ambient_low.wav",
+      "py_pred": "REJECT",
+      "onnx_pred": "REJECT",
+      "label_matched": true,
+      "max_abs_logit_diff": 1.430511474609375e-06,
+      "max_abs_prob_diff": 6.984919309616089e-10,
+      "py_probs": {
+        "TRAI": 6.813007348682731e-05,
+        "PHAI": 0.0005679891910403967,
+        "LEN": 0.0001861195487435907,
+        "XUONG": 0.0004876841849181801,
+        "REJECT": 0.9986900687217712
+      },
+      "onnx_probs": {
+        "TRAI": 6.813007348682731e-05,
+        "PHAI": 0.0005679886671714485,
+        "LEN": 0.00018611973791848868,
+        "XUONG": 0.00048768488341011107,
+        "REJECT": 0.9986900687217712
+      }
+    },
+    {
+      "fixture": "parity_dev_08_transient_impulse.wav",
+      "py_pred": "REJECT",
+      "onnx_pred": "REJECT",
+      "label_matched": true,
+      "max_abs_logit_diff": 3.814697265625e-06,
+      "max_abs_prob_diff": 6.039044819772243e-10,
+      "py_probs": {
+        "TRAI": 2.6046855055028573e-05,
+        "PHAI": 0.00018785812426358461,
+        "LEN": 8.985835302155465e-05,
+        "XUONG": 4.4295695261098444e-05,
+        "REJECT": 0.9996519088745117
+      },
+      "onnx_probs": {
+        "TRAI": 2.6046778657473624e-05,
+        "PHAI": 0.00018785758584272116,
+        "LEN": 8.985774911707267e-05,
+        "XUONG": 4.429548789630644e-05,
+        "REJECT": 0.9996519088745117
+      }
+    },
+    {
+      "fixture": "parity_dev_09_clamped_high.wav",
+      "py_pred": "REJECT",
+      "onnx_pred": "REJECT",
+      "label_matched": true,
+      "max_abs_logit_diff": 9.5367431640625e-06,
+      "max_abs_prob_diff": 8.344650268554688e-07,
+      "py_probs": {
+        "TRAI": 6.007624953063839e-10,
+        "PHAI": 2.883301064571242e-08,
+        "LEN": 0.1387309432029724,
+        "XUONG": 1.2066785071151997e-10,
+        "REJECT": 0.8612690567970276
+      },
+      "onnx_probs": {
+        "TRAI": 6.007664365981213e-10,
+        "PHAI": 2.8833145648832215e-08,
+        "LEN": 0.13873173296451569,
+        "XUONG": 1.2066957155720814e-10,
+        "REJECT": 0.8612682223320007
+      }
+    },
+    {
+      "fixture": "parity_dev_10_short_padded.wav",
+      "py_pred": "REJECT",
+      "onnx_pred": "REJECT",
+      "label_matched": true,
+      "max_abs_logit_diff": 3.337860107421875e-06,
+      "max_abs_prob_diff": 4.774847184307873e-12,
+      "py_probs": {
+        "TRAI": 4.658116381506261e-07,
+        "PHAI": 2.438175442875945e-06,
+        "LEN": 7.405946433891586e-08,
+        "XUONG": 2.279357886436628e-06,
+        "REJECT": 0.9999947547912598
+      },
+      "onnx_probs": {
+        "TRAI": 4.658129739709693e-07,
+        "PHAI": 2.4381706680287607e-06,
+        "LEN": 7.405918722724891e-08,
+        "XUONG": 2.279357886436628e-06,
+        "REJECT": 0.9999947547912598
+      }
+    }
+  ]
+}

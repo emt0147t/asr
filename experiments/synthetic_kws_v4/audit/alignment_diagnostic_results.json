@@ -1,0 +1,1370 @@
+{
+  "Arm A (Control)": {
+    "checkpoint_path": "experiments/synthetic_kws_v4/checkpoints/arm_a_control.pt",
+    "checkpoint_sha256": "3170BD75BC83C3A860F68E0975E1EBB51821EE3BAD0C2C2D58E005E7DE171E23",
+    "conditions": {
+      "A1-B2": {
+        "condition_id": "A1-B2",
+        "condition_name": "Baseline Onset, Center-Aligned (Native)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A1_B2_baseline_centered.csv",
+        "manifest_sha256": "FDBE0981BDCCB25ED64E2B53C250273ADDFF1FF82ABA6F1EC7358659D8634B39",
+        "samples_count": 144,
+        "accuracy": 0.9166666666666666,
+        "macro_f1": 0.6095238095238095,
+        "trai_recall": 0.6666666666666666,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 0.0,
+        "silence_recall": 0.0,
+        "confusion_matrix": [
+          [
+            24,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            36,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          0,
+          0
+        ],
+        "mean_confidence": 0.8742813852926096,
+        "acoustics": {
+          "onset_sample_idx_mean": 3939.5486111111113,
+          "onset_time_ms_mean": 246.22178819444446,
+          "active_duration_sec_mean": 0.5065872395833333,
+          "samples_0_to_399_rms_mean": 0.0,
+          "samples_0_to_399_max_abs_mean": 0.0,
+          "samples_0_to_399_frac_under_005_mean": 1.0,
+          "peak_amplitude_mean": 0.8912385304768881,
+          "hf_ratio_active_50ms_mean": 0.18748857330463267
+        }
+      },
+      "A1-B1": {
+        "condition_id": "A1-B1",
+        "condition_name": "Baseline Onset, Left-Aligned (Shifted)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A1_B1_baseline_left.csv",
+        "manifest_sha256": "7413BC6BB34AC0A819688D178C583B33F932538272C433BDBC58789C063BFEE0",
+        "samples_count": 144,
+        "accuracy": 0.8819444444444444,
+        "macro_f1": 0.5868386243386243,
+        "trai_recall": 0.75,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 0.7777777777777778,
+        "unknown_recall": 0.0,
+        "silence_recall": 0.0,
+        "confusion_matrix": [
+          [
+            27,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            28,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          0,
+          0
+        ],
+        "mean_confidence": 0.6482647377997637,
+        "acoustics": {
+          "onset_sample_idx_mean": 0.0,
+          "onset_time_ms_mean": 0.0,
+          "active_duration_sec_mean": 0.5065872395833333,
+          "samples_0_to_399_rms_mean": 0.10374263146271308,
+          "samples_0_to_399_max_abs_mean": 0.37678570217556423,
+          "samples_0_to_399_frac_under_005_mean": 0.07217013888888889,
+          "peak_amplitude_mean": 0.8912385304768881,
+          "hf_ratio_active_50ms_mean": 0.18748857330463267
+        }
+      },
+      "A2-B1": {
+        "condition_id": "A2-B1",
+        "condition_name": "Onset-Aware, Left-Aligned (Native)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A2_B1_onset_left.csv",
+        "manifest_sha256": "417399C7C670E933269BC6A3836959833436042957C8E0272780A0B90F0E2180",
+        "samples_count": 300,
+        "accuracy": 0.8666666666666667,
+        "macro_f1": 0.8543095547127515,
+        "trai_recall": 0.34,
+        "phai_recall": 0.88,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 0.98,
+        "silence_recall": 1.0,
+        "confusion_matrix": [
+          [
+            17,
+            1,
+            2,
+            0,
+            30,
+            0
+          ],
+          [
+            6,
+            44,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            49,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "mean_confidence": 0.6596079709132513,
+        "acoustics": {
+          "onset_sample_idx_mean": 80.06,
+          "onset_time_ms_mean": 4.925625,
+          "active_duration_sec_mean": 0.48682125000000004,
+          "samples_0_to_399_rms_mean": 0.04886994668767632,
+          "samples_0_to_399_max_abs_mean": 0.1888165283203125,
+          "samples_0_to_399_frac_under_005_mean": 0.42165,
+          "peak_amplitude_mean": 0.709700927734375,
+          "hf_ratio_active_50ms_mean": 0.2051406149368511
+        }
+      },
+      "A2-B2": {
+        "condition_id": "A2-B2",
+        "condition_name": "Onset-Aware, Center-Aligned (Shifted)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A2_B2_onset_centered.csv",
+        "manifest_sha256": "B03CDD2D3F27DE1BDE939530A97ED41B9D493EB3ADAE1D9ABA65BD3175B82C24",
+        "samples_count": 300,
+        "accuracy": 0.8333333333333334,
+        "macro_f1": 0.7777777777777777,
+        "trai_recall": 0.0,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 1.0,
+        "silence_recall": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "mean_confidence": 0.8864167660474778,
+        "acoustics": {
+          "onset_sample_idx_mean": 3478.536666666667,
+          "onset_time_ms_mean": 217.33041666666668,
+          "active_duration_sec_mean": 0.48682125000000004,
+          "samples_0_to_399_rms_mean": 0.00024940681488563616,
+          "samples_0_to_399_max_abs_mean": 0.0007261149088541667,
+          "samples_0_to_399_frac_under_005_mean": 0.9914833333333333,
+          "peak_amplitude_mean": 0.7096895345052083,
+          "hf_ratio_active_50ms_mean": 0.1581274430874016
+        }
+      }
+    }
+  },
+  "Arm B (Onset-Aware, No Resample)": {
+    "checkpoint_path": "experiments/synthetic_kws_v4/checkpoints/arm_b_onset_no_resample.pt",
+    "checkpoint_sha256": "6A0FD55CD6F16F5B683951127076EEC72506C31EE670F896AAEACE5981CF1D96",
+    "conditions": {
+      "A1-B2": {
+        "condition_id": "A1-B2",
+        "condition_name": "Baseline Onset, Center-Aligned (Native)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A1_B2_baseline_centered.csv",
+        "manifest_sha256": "FDBE0981BDCCB25ED64E2B53C250273ADDFF1FF82ABA6F1EC7358659D8634B39",
+        "samples_count": 144,
+        "accuracy": 0.5416666666666666,
+        "macro_f1": 0.2763772175536881,
+        "trai_recall": 0.0,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 0.16666666666666666,
+        "unknown_recall": 0.0,
+        "silence_recall": 0.0,
+        "confusion_matrix": [
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            30,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          0,
+          0
+        ],
+        "mean_confidence": 0.8718887710322937,
+        "acoustics": {
+          "onset_sample_idx_mean": 3939.5486111111113,
+          "onset_time_ms_mean": 246.22178819444446,
+          "active_duration_sec_mean": 0.5065872395833333,
+          "samples_0_to_399_rms_mean": 0.0,
+          "samples_0_to_399_max_abs_mean": 0.0,
+          "samples_0_to_399_frac_under_005_mean": 1.0,
+          "peak_amplitude_mean": 0.8912385304768881,
+          "hf_ratio_active_50ms_mean": 0.18748857330463267
+        }
+      },
+      "A1-B1": {
+        "condition_id": "A1-B1",
+        "condition_name": "Baseline Onset, Left-Aligned (Shifted)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A1_B1_baseline_left.csv",
+        "manifest_sha256": "7413BC6BB34AC0A819688D178C583B33F932538272C433BDBC58789C063BFEE0",
+        "samples_count": 144,
+        "accuracy": 0.75,
+        "macro_f1": 0.4444444444444444,
+        "trai_recall": 0.0,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 0.0,
+        "silence_recall": 0.0,
+        "confusion_matrix": [
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            36,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          0,
+          0
+        ],
+        "mean_confidence": 0.9420131101376481,
+        "acoustics": {
+          "onset_sample_idx_mean": 0.0,
+          "onset_time_ms_mean": 0.0,
+          "active_duration_sec_mean": 0.5065872395833333,
+          "samples_0_to_399_rms_mean": 0.10374263146271308,
+          "samples_0_to_399_max_abs_mean": 0.37678570217556423,
+          "samples_0_to_399_frac_under_005_mean": 0.07217013888888889,
+          "peak_amplitude_mean": 0.8912385304768881,
+          "hf_ratio_active_50ms_mean": 0.18748857330463267
+        }
+      },
+      "A2-B1": {
+        "condition_id": "A2-B1",
+        "condition_name": "Onset-Aware, Left-Aligned (Native)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A2_B1_onset_left.csv",
+        "manifest_sha256": "417399C7C670E933269BC6A3836959833436042957C8E0272780A0B90F0E2180",
+        "samples_count": 300,
+        "accuracy": 0.9933333333333333,
+        "macro_f1": 0.9933306655995732,
+        "trai_recall": 0.96,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 1.0,
+        "silence_recall": 1.0,
+        "confusion_matrix": [
+          [
+            48,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "mean_confidence": 0.9407359846433003,
+        "acoustics": {
+          "onset_sample_idx_mean": 80.06,
+          "onset_time_ms_mean": 4.925625,
+          "active_duration_sec_mean": 0.48682125000000004,
+          "samples_0_to_399_rms_mean": 0.04886994668767632,
+          "samples_0_to_399_max_abs_mean": 0.1888165283203125,
+          "samples_0_to_399_frac_under_005_mean": 0.42165,
+          "peak_amplitude_mean": 0.709700927734375,
+          "hf_ratio_active_50ms_mean": 0.2051406149368511
+        }
+      },
+      "A2-B2": {
+        "condition_id": "A2-B2",
+        "condition_name": "Onset-Aware, Center-Aligned (Shifted)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A2_B2_onset_centered.csv",
+        "manifest_sha256": "B03CDD2D3F27DE1BDE939530A97ED41B9D493EB3ADAE1D9ABA65BD3175B82C24",
+        "samples_count": 300,
+        "accuracy": 0.9633333333333334,
+        "macro_f1": 0.9628842325471538,
+        "trai_recall": 0.78,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 1.0,
+        "silence_recall": 1.0,
+        "confusion_matrix": [
+          [
+            39,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "mean_confidence": 0.8855956356724103,
+        "acoustics": {
+          "onset_sample_idx_mean": 3478.536666666667,
+          "onset_time_ms_mean": 217.33041666666668,
+          "active_duration_sec_mean": 0.48682125000000004,
+          "samples_0_to_399_rms_mean": 0.00024940681488563616,
+          "samples_0_to_399_max_abs_mean": 0.0007261149088541667,
+          "samples_0_to_399_frac_under_005_mean": 0.9914833333333333,
+          "peak_amplitude_mean": 0.7096895345052083,
+          "hf_ratio_active_50ms_mean": 0.1581274430874016
+        }
+      }
+    }
+  },
+  "Arm C (Onset-Aware + Resample)": {
+    "checkpoint_path": "experiments/synthetic_kws_v4/checkpoints/arm_c_onset_with_resample.pt",
+    "checkpoint_sha256": "FD0D4D52C0A9B4EBCA2EA65FA6221842C045AD9330FB3093461BC8A5D28A2B28",
+    "conditions": {
+      "A1-B2": {
+        "condition_id": "A1-B2",
+        "condition_name": "Baseline Onset, Center-Aligned (Native)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A1_B2_baseline_centered.csv",
+        "manifest_sha256": "FDBE0981BDCCB25ED64E2B53C250273ADDFF1FF82ABA6F1EC7358659D8634B39",
+        "samples_count": 144,
+        "accuracy": 0.5833333333333334,
+        "macro_f1": 0.3422097401522674,
+        "trai_recall": 0.5277777777777778,
+        "phai_recall": 0.75,
+        "len_recall": 1.0,
+        "xuong_recall": 0.05555555555555555,
+        "unknown_recall": 0.0,
+        "silence_recall": 0.0,
+        "confusion_matrix": [
+          [
+            19,
+            17,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            9,
+            27,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            34,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          0,
+          0
+        ],
+        "mean_confidence": 0.737939408255948,
+        "acoustics": {
+          "onset_sample_idx_mean": 3939.5486111111113,
+          "onset_time_ms_mean": 246.22178819444446,
+          "active_duration_sec_mean": 0.5065872395833333,
+          "samples_0_to_399_rms_mean": 0.0,
+          "samples_0_to_399_max_abs_mean": 0.0,
+          "samples_0_to_399_frac_under_005_mean": 1.0,
+          "peak_amplitude_mean": 0.8912385304768881,
+          "hf_ratio_active_50ms_mean": 0.18748857330463267
+        }
+      },
+      "A1-B1": {
+        "condition_id": "A1-B1",
+        "condition_name": "Baseline Onset, Left-Aligned (Shifted)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A1_B1_baseline_left.csv",
+        "manifest_sha256": "7413BC6BB34AC0A819688D178C583B33F932538272C433BDBC58789C063BFEE0",
+        "samples_count": 144,
+        "accuracy": 0.6805555555555556,
+        "macro_f1": 0.39723752076230445,
+        "trai_recall": 0.0,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 0.7222222222222222,
+        "unknown_recall": 0.0,
+        "silence_recall": 0.0,
+        "confusion_matrix": [
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            26,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          0,
+          0
+        ],
+        "mean_confidence": 0.8688924887941943,
+        "acoustics": {
+          "onset_sample_idx_mean": 0.0,
+          "onset_time_ms_mean": 0.0,
+          "active_duration_sec_mean": 0.5065872395833333,
+          "samples_0_to_399_rms_mean": 0.10374263146271308,
+          "samples_0_to_399_max_abs_mean": 0.37678570217556423,
+          "samples_0_to_399_frac_under_005_mean": 0.07217013888888889,
+          "peak_amplitude_mean": 0.8912385304768881,
+          "hf_ratio_active_50ms_mean": 0.18748857330463267
+        }
+      },
+      "A2-B1": {
+        "condition_id": "A2-B1",
+        "condition_name": "Onset-Aware, Left-Aligned (Native)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A2_B1_onset_left.csv",
+        "manifest_sha256": "417399C7C670E933269BC6A3836959833436042957C8E0272780A0B90F0E2180",
+        "samples_count": 300,
+        "accuracy": 0.95,
+        "macro_f1": 0.9484702340203061,
+        "trai_recall": 1.0,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 0.7,
+        "silence_recall": 1.0,
+        "confusion_matrix": [
+          [
+            50,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            14,
+            0,
+            1,
+            0,
+            35,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "mean_confidence": 0.9186992364128431,
+        "acoustics": {
+          "onset_sample_idx_mean": 80.06,
+          "onset_time_ms_mean": 4.925625,
+          "active_duration_sec_mean": 0.48682125000000004,
+          "samples_0_to_399_rms_mean": 0.04886994668767632,
+          "samples_0_to_399_max_abs_mean": 0.1888165283203125,
+          "samples_0_to_399_frac_under_005_mean": 0.42165,
+          "peak_amplitude_mean": 0.709700927734375,
+          "hf_ratio_active_50ms_mean": 0.2051406149368511
+        }
+      },
+      "A2-B2": {
+        "condition_id": "A2-B2",
+        "condition_name": "Onset-Aware, Center-Aligned (Shifted)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A2_B2_onset_centered.csv",
+        "manifest_sha256": "B03CDD2D3F27DE1BDE939530A97ED41B9D493EB3ADAE1D9ABA65BD3175B82C24",
+        "samples_count": 300,
+        "accuracy": 0.9233333333333333,
+        "macro_f1": 0.9185116403912055,
+        "trai_recall": 1.0,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 0.54,
+        "silence_recall": 1.0,
+        "confusion_matrix": [
+          [
+            50,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            22,
+            0,
+            1,
+            0,
+            27,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "mean_confidence": 0.8184882403413455,
+        "acoustics": {
+          "onset_sample_idx_mean": 3478.536666666667,
+          "onset_time_ms_mean": 217.33041666666668,
+          "active_duration_sec_mean": 0.48682125000000004,
+          "samples_0_to_399_rms_mean": 0.00024940681488563616,
+          "samples_0_to_399_max_abs_mean": 0.0007261149088541667,
+          "samples_0_to_399_frac_under_005_mean": 0.9914833333333333,
+          "peak_amplitude_mean": 0.7096895345052083,
+          "hf_ratio_active_50ms_mean": 0.1581274430874016
+        }
+      }
+    }
+  },
+  "V3 Champion TC-ResNet-14": {
+    "checkpoint_path": "experiments/synthetic_kws_v3/checkpoints/best_tcresnet14_v3.pt",
+    "checkpoint_sha256": "6930BEDA2EFD03EBFE86A502A6019A765C0F097531C3A11F6DF6F94410B53941",
+    "conditions": {
+      "A1-B2": {
+        "condition_id": "A1-B2",
+        "condition_name": "Baseline Onset, Center-Aligned (Native)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A1_B2_baseline_centered.csv",
+        "manifest_sha256": "FDBE0981BDCCB25ED64E2B53C250273ADDFF1FF82ABA6F1EC7358659D8634B39",
+        "samples_count": 144,
+        "accuracy": 0.9166666666666666,
+        "macro_f1": 0.6095238095238095,
+        "trai_recall": 0.6666666666666666,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 0.0,
+        "silence_recall": 0.0,
+        "confusion_matrix": [
+          [
+            24,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            36,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          0,
+          0
+        ],
+        "mean_confidence": 0.8742813852926096,
+        "acoustics": {
+          "onset_sample_idx_mean": 3939.5486111111113,
+          "onset_time_ms_mean": 246.22178819444446,
+          "active_duration_sec_mean": 0.5065872395833333,
+          "samples_0_to_399_rms_mean": 0.0,
+          "samples_0_to_399_max_abs_mean": 0.0,
+          "samples_0_to_399_frac_under_005_mean": 1.0,
+          "peak_amplitude_mean": 0.8912385304768881,
+          "hf_ratio_active_50ms_mean": 0.18748857330463267
+        }
+      },
+      "A1-B1": {
+        "condition_id": "A1-B1",
+        "condition_name": "Baseline Onset, Left-Aligned (Shifted)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A1_B1_baseline_left.csv",
+        "manifest_sha256": "7413BC6BB34AC0A819688D178C583B33F932538272C433BDBC58789C063BFEE0",
+        "samples_count": 144,
+        "accuracy": 0.8819444444444444,
+        "macro_f1": 0.5868386243386243,
+        "trai_recall": 0.75,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 0.7777777777777778,
+        "unknown_recall": 0.0,
+        "silence_recall": 0.0,
+        "confusion_matrix": [
+          [
+            27,
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            28,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          0,
+          0
+        ],
+        "mean_confidence": 0.6482647377997637,
+        "acoustics": {
+          "onset_sample_idx_mean": 0.0,
+          "onset_time_ms_mean": 0.0,
+          "active_duration_sec_mean": 0.5065872395833333,
+          "samples_0_to_399_rms_mean": 0.10374263146271308,
+          "samples_0_to_399_max_abs_mean": 0.37678570217556423,
+          "samples_0_to_399_frac_under_005_mean": 0.07217013888888889,
+          "peak_amplitude_mean": 0.8912385304768881,
+          "hf_ratio_active_50ms_mean": 0.18748857330463267
+        }
+      },
+      "A2-B1": {
+        "condition_id": "A2-B1",
+        "condition_name": "Onset-Aware, Left-Aligned (Native)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A2_B1_onset_left.csv",
+        "manifest_sha256": "417399C7C670E933269BC6A3836959833436042957C8E0272780A0B90F0E2180",
+        "samples_count": 300,
+        "accuracy": 0.8666666666666667,
+        "macro_f1": 0.8543095547127515,
+        "trai_recall": 0.34,
+        "phai_recall": 0.88,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 0.98,
+        "silence_recall": 1.0,
+        "confusion_matrix": [
+          [
+            17,
+            1,
+            2,
+            0,
+            30,
+            0
+          ],
+          [
+            6,
+            44,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            49,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "mean_confidence": 0.6596079709132513,
+        "acoustics": {
+          "onset_sample_idx_mean": 80.06,
+          "onset_time_ms_mean": 4.925625,
+          "active_duration_sec_mean": 0.48682125000000004,
+          "samples_0_to_399_rms_mean": 0.04886994668767632,
+          "samples_0_to_399_max_abs_mean": 0.1888165283203125,
+          "samples_0_to_399_frac_under_005_mean": 0.42165,
+          "peak_amplitude_mean": 0.709700927734375,
+          "hf_ratio_active_50ms_mean": 0.2051406149368511
+        }
+      },
+      "A2-B2": {
+        "condition_id": "A2-B2",
+        "condition_name": "Onset-Aware, Center-Aligned (Shifted)",
+        "manifest_path": "experiments/synthetic_kws_v4/audit/manifest_diag_A2_B2_onset_centered.csv",
+        "manifest_sha256": "B03CDD2D3F27DE1BDE939530A97ED41B9D493EB3ADAE1D9ABA65BD3175B82C24",
+        "samples_count": 300,
+        "accuracy": 0.8333333333333334,
+        "macro_f1": 0.7777777777777777,
+        "trai_recall": 0.0,
+        "phai_recall": 1.0,
+        "len_recall": 1.0,
+        "xuong_recall": 1.0,
+        "unknown_recall": 1.0,
+        "silence_recall": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "mean_confidence": 0.8864167660474778,
+        "acoustics": {
+          "onset_sample_idx_mean": 3478.536666666667,
+          "onset_time_ms_mean": 217.33041666666668,
+          "active_duration_sec_mean": 0.48682125000000004,
+          "samples_0_to_399_rms_mean": 0.00024940681488563616,
+          "samples_0_to_399_max_abs_mean": 0.0007261149088541667,
+          "samples_0_to_399_frac_under_005_mean": 0.9914833333333333,
+          "peak_amplitude_mean": 0.7096895345052083,
+          "hf_ratio_active_50ms_mean": 0.1581274430874016
+        }
+      }
+    }
+  }
+}

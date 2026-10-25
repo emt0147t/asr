@@ -1,0 +1,85 @@
+{
+  "experiment_name": "vieneu_kws_v2",
+  "version": "2.0.0",
+  "workspace": "D:\\trainidentificationaudio",
+  "dataset": {
+    "dir": "experiments/synthetic_kws_dataset_vieneu_6class_v2",
+    "master_manifest": "experiments/synthetic_kws_dataset_vieneu_6class_v2/manifest.csv",
+    "train_manifest": "experiments/synthetic_kws_dataset_vieneu_6class_v2/splits/train_manifest.csv",
+    "val_manifest": "experiments/synthetic_kws_dataset_vieneu_6class_v2/splits/val_manifest.csv",
+    "test_manifest": "experiments/synthetic_kws_dataset_vieneu_6class_v2/splits/test_manifest.csv",
+    "expected_counts": {
+      "total": 2000,
+      "train": 1360,
+      "val": 320,
+      "test": 320
+    },
+    "classes": ["TRAI", "PHAI", "LEN", "XUONG", "UNKNOWN", "SILENCE"]
+  },
+  "training": {
+    "seeds": [42, 43, 44],
+    "batch_size": 32,
+    "num_epochs": 25,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": {
+      "type": "ReduceLROnPlateau",
+      "mode": "max",
+      "factor": 0.5,
+      "patience": 3,
+      "min_lr": 0.00001
+    },
+    "class_weights": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0],
+    "augmentation": {
+      "time_shift_samples": 400,
+      "gain_min": 0.85,
+      "gain_max": 1.15,
+      "noise_injection_prob": 0.50,
+      "noise_snr_min_db": 5.0,
+      "noise_snr_max_db": 20.0,
+      "noise_types": ["white", "pink", "hvac", "babble"],
+      "specaugment": {
+        "enabled": true,
+        "max_time_mask": 10,
+        "max_freq_mask": 6
+      }
+    }
+  },
+  "audio": {
+    "sample_rate": 16000,
+    "duration_sec": 1.0,
+    "target_samples": 16000,
+    "num_channels": 1
+  },
+  "features": {
+    "type": "log_mel_spectrogram",
+    "sample_rate": 16000,
+    "n_mels": 40,
+    "win_length": 400,
+    "hop_length": 160,
+    "f_min": 20.0,
+    "f_max": 8000.0,
+    "output_shape": [1, 40, 101]
+  },
+  "validation_constraints": {
+    "min_target_command_recall": 0.95,
+    "max_false_activation_unknown": 0.05,
+    "max_false_activation_silence": 0.01,
+    "max_streaming_fa_per_hour": 1.0,
+    "max_detection_latency_ms": 600.0
+  },
+  "streaming": {
+    "window_duration_sec": 1.0,
+    "window_samples": 16000,
+    "hop_duration_sec": 0.10,
+    "hop_samples": 1600,
+    "consecutive_positive_windows": 2,
+    "debounce_duration_sec": 0.60,
+    "match_window_left_sec": 0.20,
+    "match_window_right_sec": 0.50
+  },
+  "governance": {
+    "subjective_intelligibility_status": "PENDING_HUMAN_LISTENER_VERIFICATION",
+    "domain_validation_status": "NOT_VALIDATED_ON_NATURAL_SPEECH"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "governance_contract": {
+    "protocol_version": "v12.0.0",
+    "status_labels": [
+      "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+      "NOT_VALIDATED_ON_NATURAL_SPEECH",
+      "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+      "NOT_VALIDATED_PENDING_DATA"
+    ],
+    "gate_condition": "E1 must be fully trained, audited, and evaluated before E2 may be initiated. No parameter scaling prior to evidence of E1 capacity saturation.",
+    "frozen_v11_baseline": {
+      "checkpoint_path": "experiments/vieneu_kws_research_v13_4/bundle/checkpoint/variant_v11_hard_negative_weighted_seed42.pt",
+      "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+      "onnx_path": "experiments/vieneu_kws_research_v13_4/bundle/onnx/vietnamese_kws_v11.onnx",
+      "onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+      "preprocessing_contract": {
+        "sample_rate_hz": 16000,
+        "input_samples": 16000,
+        "n_mels": 40,
+        "n_fft": 400,
+        "hop_length": 160,
+        "tensor_shape": [1, 1, 40, 101],
+        "command_threshold": 0.20
+      }
+    }
+  },
+  "dataset_v12_manifests": {
+    "master_manifest": "experiments/vieneu_kws_research_v12/manifests/dataset_v12_manifest.csv",
+    "train_manifest": "experiments/vieneu_kws_research_v12/manifests/train_manifest.csv",
+    "val_manifest": "experiments/vieneu_kws_research_v12/manifests/val_manifest.csv",
+    "test_manifest": "experiments/vieneu_kws_research_v12/manifests/test_manifest.csv",
+    "streaming_eval_manifest": "experiments/vieneu_kws_research_v12/manifests/streaming_eval_corpus_manifest.csv"
+  },
+  "experiment_e1": {
+    "experiment_id": "exp_v12_e1_baseline_scale",
+    "hypothesis": "Retraining the exact baseline-scale architecture (CorrectedVietnameseKWSNet, 138,469 trainable parameters) on provenance-controlled, acoustically balanced Dataset v12 (4,000 keyword + 4,000 reject) significantly reduces false acceptance on conversational speech and unseen OOV confusers ('cửa', 'ghế') while maintaining >=95% clean keyword recall, proving that dataset quality resolves live-mic instability without architectural expansion.",
+    "model_architecture": {
+      "model_name": "VietnameseKWS_CNN_v12_E1",
+      "architecture_family": "CorrectedVietnameseKWSNet (Exact v11 byte-for-byte architecture)",
+      "target_parameters": 138469,
+      "trainable_parameters_actual": 138469,
+      "non_trainable_buffers": 580,
+      "total_state_dict_elements": 139049,
+      "conv_channels": [32, 64, 64, 128],
+      "kernel_sizes": [[3, 3], [3, 3], [3, 3], [3, 3]],
+      "pooling": "3x MaxPool2d((2, 2)) + AdaptiveAvgPool2d((1, 1))",
+      "dropout_rate": 0.30,
+      "fc_dims": [128, 64, 5],
+      "num_classes": 5,
+      "class_labels": ["TRAI", "PHAI", "LEN", "XUONG", "REJECT"]
+    },
+    "training_hyperparameters": {
+      "optimizer": "AdamW",
+      "base_learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "lr_scheduler": "CosineAnnealingLR",
+      "t_max_epochs": 40,
+      "eta_min": 1e-5,
+      "batch_size": 64,
+      "max_epochs": 40,
+      "early_stopping_patience": 8,
+      "early_stopping_metric": "val_macro_f1",
+      "loss_function": "WeightedCrossEntropyLoss",
+      "class_weights": {
+        "TRAI": 1.0,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 1.0,
+        "REJECT": 1.25
+      },
+      "data_augmentation_on_the_fly": {
+        "spec_augment": true,
+        "freq_mask_max": 4,
+        "time_mask_max": 10,
+        "random_time_shift_samples": 400
+      }
+    },
+    "evaluation_battery": {
+      "offline_metrics": [
+        "macro_f1",
+        "precision_recall_per_class",
+        "clean_recall_at_theta_0.20",
+        "snr_breakdown_accuracy (20dB, 15dB, 10dB, 5dB, 0dB)",
+        "unseen_oov_rejection_rate ('ghế' and 30 unseen monosyllables)"
+      ],
+      "streaming_metrics": [
+        "target_sequence_recall (LEN->XUONG->TRAI->PHAI)",
+        "repeated_command_resolution (TRAI->TRAI, LEN->LEN)",
+        "false_alarm_rate_per_hour_conversational",
+        "confusion_matrix_live_simulation"
+      ],
+      "success_gate": {
+        "min_macro_f1": 0.94,
+        "min_clean_target_recall": 0.95,
+        "min_oov_rejection_rate": 0.96,
+        "max_far_per_hour": 3.0
+      }
+    }
+  },
+  "experiment_e2": {
+    "experiment_id": "exp_v12_e2_scaled_capacity",
+    "status": "PROPOSED_PENDING_E1_EVALUATION",
+    "prerequisite_check": "Execute ONLY IF Experiment E1 demonstrates underfitting (training loss plateau > 0.25 or validation macro F1 < 0.92) or capacity saturation.",
+    "hypothesis": "Expanding CNN capacity to ~419k parameters with deeper feature representations provides higher acoustic selectivity against complex phonemic confusers in reverberant / low-SNR acoustic regimes without exceeding 12ms edge-inference latency on x86 laptop CPU.",
+    "model_architecture": {
+      "model_name": "VietnameseKWS_CNN_v12_E2",
+      "architecture_family": "Wide Residual 2D-CNN",
+      "target_parameters": 419333,
+      "conv_channels": [48, 96, 192],
+      "kernel_sizes": [[3, 3], [3, 3], [3, 3]],
+      "residual_blocks": 2,
+      "dense_hidden_dim": 256,
+      "num_classes": 5,
+      "class_labels": ["TRAI", "PHAI", "LEN", "XUONG", "REJECT"]
+    },
+    "training_hyperparameters": {
+      "optimizer": "AdamW",
+      "base_learning_rate": 0.0008,
+      "weight_decay": 0.015,
+      "lr_scheduler": "CosineAnnealingWarmRestarts",
+      "batch_size": 64,
+      "max_epochs": 50,
+      "early_stopping_patience": 10,
+      "loss_function": "WeightedCrossEntropyLoss"
+    },
+    "latency_budget": {
+      "max_cpu_latency_ms": 15.0,
+      "max_onnx_size_bytes": 2000000
+    }
+  }
+}

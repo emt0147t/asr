@@ -1,0 +1,10 @@
+source_id,version,license,commercial_permitted,provenance_type,audio_type,downloaded_duration_hr,approved_samples,target_class,governance_status
+google_fleurs_vi,1.0,CC-BY-4.0,YES,continuous_speech_hard_negative,Human Speech (Native Vietnamese),12.4 hrs (dev + test),579,UNKNOWN (4),APPROVED
+husein_mic_noise,1.0,CC-BY-4.0,YES,microphone_ambient_noise,Real-World Acoustic Noise,0.5 hrs (40 MP3 files),400,SILENCE (5),APPROVED
+calibration_acoustic_generator_v1,1.0,In-house (Proprietary),YES,acoustic_reference_utterance,Parametric Synthesis (20 profiles),"0.28 hrs (1,000 WAVs)",1000,"TRAI (0), PHAI (1), LEN (2), XUONG (3)",APPROVED (Cold-Start Reference Only)
+calibration_confusing_words_v1,1.0,In-house (Proprietary),YES,confusing_token_hard_negative,Parametric Synthesis (Phonetic near-misses),0.03 hrs (120 WAVs),120,UNKNOWN (4),APPROVED (Cold-Start Reference Only)
+mozilla_common_voice_vi,cv-corpus-17.0,CC0-1.0,YES,unsegmented_corpus,Human Speech,0.0 hrs (Unauthenticated),0,UNKNOWN (4),CONDITIONAL (Requires User Auth Token)
+vietspeech_vsv1100,v1.0,Claimed Apache-2.0 / Underlying Unconsented,NO (High Legal Risk),scraped_social_media,Scraped Social Audio (YouTube/TikTok),0.0 hrs (Not Downloaded),0,None,QUARANTINED (IP & Privacy Liability)
+vivos,v1.0,CC BY-NC-SA 4.0,NO (Non-Commercial Clause),read_speech,Human Studio Read Speech,0.0 hrs (Excluded),0,None,REJECTED (Strict Directive & License Violation)
+esc_50,v1.0,CC-BY-NC 3.0,NO (Non-Commercial Clause),environmental_sound,Environmental Audio,0.0 hrs (Excluded),0,None,REJECTED (Non-Commercial Clause)
+human_field_recording_campaign_v1,Active Pipeline,Consented Proprietary,YES,human_field_recording,Genuine Human Speech (Target Commands),0.0 hrs (0 verified takes),0,"TRAI, PHAI, LEN, XUONG",ACTIVE PIPELINE (0 Human Takes Collected)

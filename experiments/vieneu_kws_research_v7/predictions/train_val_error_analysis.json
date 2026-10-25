@@ -1,0 +1,29 @@
+{
+  "train_samples_evaluated": 1360,
+  "val_samples_evaluated": 360,
+  "variant_b": {
+    "train_errors": 0,
+    "val_errors": 141
+  },
+  "variant_c": {
+    "train_errors": 0,
+    "val_errors": 96
+  },
+  "cascade_v1": {
+    "train_errors": 0,
+    "val_errors": 42
+  },
+  "error_category_breakdown": {
+    "TARGET_FALSE_REJECTION": 208,
+    "NON_TARGET_FALSE_ACCEPTANCE": 14,
+    "CROSS_COMMAND_CONFUSION": 57
+  },
+  "confusion_family_breakdown": {
+    "target_command": 265,
+    "minimal_pair_tone": 7,
+    "minimal_pair_consonant": 2,
+    "phonetic_phrase_context": 5
+  },
+  "clipped_speech_count": 105,
+  "clipping_related_errors": 0
+}

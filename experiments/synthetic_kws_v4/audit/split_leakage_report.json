@@ -1,0 +1,273 @@
+{
+  "accounting_summary": {
+    "initial_4_groups_evaluated_in_p12": 166514,
+    "complete_all_6_groups_in_p12_2": 181094,
+    "scope_note": "Initial 4 groups computed within-train, within-test, train-val, train-test. Phase 12.2 adds within-val and val-test."
+  },
+  "class_breakdown": {
+    "TRAI": {
+      "cohort_counts": {
+        "train": 178,
+        "val": 36,
+        "test": 50
+      },
+      "pair_counts": {
+        "within_train": 15753,
+        "within_test": 1225,
+        "within_val": 630,
+        "cross_train_val": 6408,
+        "cross_train_test": 8900,
+        "cross_val_test": 1800,
+        "subtotal_initial_4_groups": 32286,
+        "total_all_6_groups": 34716
+      },
+      "within_train": {
+        "mean": 0.969487190246582,
+        "std": 0.019053282216191292
+      },
+      "within_val": {
+        "mean": 0.9722079038619995,
+        "std": 0.01967049390077591
+      },
+      "within_test": {
+        "mean": 0.9665960073471069,
+        "std": 0.02121642231941223
+      },
+      "cross_train_val": {
+        "mean": 0.9684418439865112,
+        "std": 0.019683104008436203
+      },
+      "cross_train_test": {
+        "mean": 0.9675792455673218,
+        "std": 0.01992214471101761,
+        "max": 0.9998854994773865
+      },
+      "cross_val_test": {
+        "mean": 0.966243326663971,
+        "std": 0.02108912356197834,
+        "max": 0.9971802234649658
+      },
+      "diagnosis": "GENERATOR_DEPENDENCE"
+    },
+    "PHAI": {
+      "cohort_counts": {
+        "train": 178,
+        "val": 36,
+        "test": 50
+      },
+      "pair_counts": {
+        "within_train": 15753,
+        "within_test": 1225,
+        "within_val": 630,
+        "cross_train_val": 6408,
+        "cross_train_test": 8900,
+        "cross_val_test": 1800,
+        "subtotal_initial_4_groups": 32286,
+        "total_all_6_groups": 34716
+      },
+      "within_train": {
+        "mean": 0.9667004346847534,
+        "std": 0.02072853408753872
+      },
+      "within_val": {
+        "mean": 0.9687605500221252,
+        "std": 0.02198662795126438
+      },
+      "within_test": {
+        "mean": 0.9666292667388916,
+        "std": 0.020622005686163902
+      },
+      "cross_train_val": {
+        "mean": 0.9667218923568726,
+        "std": 0.02113495208323002
+      },
+      "cross_train_test": {
+        "mean": 0.9664984345436096,
+        "std": 0.02070012502372265,
+        "max": 0.9998536109924316
+      },
+      "cross_val_test": {
+        "mean": 0.9674198627471924,
+        "std": 0.021334435790777206,
+        "max": 0.9975543022155762
+      },
+      "diagnosis": "GENERATOR_DEPENDENCE"
+    },
+    "LEN": {
+      "cohort_counts": {
+        "train": 178,
+        "val": 36,
+        "test": 50
+      },
+      "pair_counts": {
+        "within_train": 15753,
+        "within_test": 1225,
+        "within_val": 630,
+        "cross_train_val": 6408,
+        "cross_train_test": 8900,
+        "cross_val_test": 1800,
+        "subtotal_initial_4_groups": 32286,
+        "total_all_6_groups": 34716
+      },
+      "within_train": {
+        "mean": 0.9713562726974487,
+        "std": 0.01920032501220703
+      },
+      "within_val": {
+        "mean": 0.9712398648262024,
+        "std": 0.020869193598628044
+      },
+      "within_test": {
+        "mean": 0.9721013903617859,
+        "std": 0.019222848117351532
+      },
+      "cross_train_val": {
+        "mean": 0.9701441526412964,
+        "std": 0.020469410344958305
+      },
+      "cross_train_test": {
+        "mean": 0.971308171749115,
+        "std": 0.01950901374220848,
+        "max": 0.9991803169250488
+      },
+      "cross_val_test": {
+        "mean": 0.9693531394004822,
+        "std": 0.021620038896799088,
+        "max": 0.9981781244277954
+      },
+      "diagnosis": "GENERATOR_DEPENDENCE"
+    },
+    "XUONG": {
+      "cohort_counts": {
+        "train": 178,
+        "val": 36,
+        "test": 50
+      },
+      "pair_counts": {
+        "within_train": 15753,
+        "within_test": 1225,
+        "within_val": 630,
+        "cross_train_val": 6408,
+        "cross_train_test": 8900,
+        "cross_val_test": 1800,
+        "subtotal_initial_4_groups": 32286,
+        "total_all_6_groups": 34716
+      },
+      "within_train": {
+        "mean": 0.9753360748291016,
+        "std": 0.0156426802277565
+      },
+      "within_val": {
+        "mean": 0.9781709313392639,
+        "std": 0.015258792787790298
+      },
+      "within_test": {
+        "mean": 0.9727164506912231,
+        "std": 0.017194503918290138
+      },
+      "cross_train_val": {
+        "mean": 0.9751788973808289,
+        "std": 0.0151998121291399
+      },
+      "cross_train_test": {
+        "mean": 0.9741171598434448,
+        "std": 0.01645701378583908,
+        "max": 0.9994893670082092
+      },
+      "cross_val_test": {
+        "mean": 0.9742392897605896,
+        "std": 0.016025755554437637,
+        "max": 0.9981199502944946
+      },
+      "diagnosis": "GENERATOR_DEPENDENCE"
+    },
+    "UNKNOWN": {
+      "cohort_counts": {
+        "train": 120,
+        "val": 36,
+        "test": 50
+      },
+      "pair_counts": {
+        "within_train": 7140,
+        "within_test": 1225,
+        "within_val": 630,
+        "cross_train_val": 4320,
+        "cross_train_test": 6000,
+        "cross_val_test": 1800,
+        "subtotal_initial_4_groups": 18685,
+        "total_all_6_groups": 21115
+      },
+      "within_train": {
+        "mean": 0.9789161086082458,
+        "std": 0.012476343661546707
+      },
+      "within_val": {
+        "mean": 0.9848787784576416,
+        "std": 0.01113093364983797
+      },
+      "within_test": {
+        "mean": 0.9791057705879211,
+        "std": 0.012766632251441479
+      },
+      "cross_train_val": {
+        "mean": 0.980059802532196,
+        "std": 0.011881873942911625
+      },
+      "cross_train_test": {
+        "mean": 0.9789575338363647,
+        "std": 0.012601218186318874,
+        "max": 0.9985641241073608
+      },
+      "cross_val_test": {
+        "mean": 0.9811003804206848,
+        "std": 0.011834999546408653,
+        "max": 0.9972196817398071
+      },
+      "diagnosis": "GENERATOR_DEPENDENCE"
+    },
+    "SILENCE": {
+      "cohort_counts": {
+        "train": 120,
+        "val": 36,
+        "test": 50
+      },
+      "pair_counts": {
+        "within_train": 7140,
+        "within_test": 1225,
+        "within_val": 630,
+        "cross_train_val": 4320,
+        "cross_train_test": 6000,
+        "cross_val_test": 1800,
+        "subtotal_initial_4_groups": 18685,
+        "total_all_6_groups": 21115
+      },
+      "within_train": {
+        "mean": 0.9861586689949036,
+        "std": 0.011919008567929268
+      },
+      "within_val": {
+        "mean": 0.9859669804573059,
+        "std": 0.011866684071719646
+      },
+      "within_test": {
+        "mean": 0.9860221743583679,
+        "std": 0.0118910176679492
+      },
+      "cross_train_val": {
+        "mean": 0.9862810969352722,
+        "std": 0.011894917115569115
+      },
+      "cross_train_test": {
+        "mean": 0.9862626791000366,
+        "std": 0.011906580999493599,
+        "max": 0.9985822439193726
+      },
+      "cross_val_test": {
+        "mean": 0.9862833619117737,
+        "std": 0.011883738450706005,
+        "max": 0.9986125230789185
+      },
+      "diagnosis": "GENERATOR_DEPENDENCE"
+    }
+  }
+}

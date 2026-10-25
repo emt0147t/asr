@@ -1,0 +1,37 @@
+{
+  "PHASE36_39_REPORT_CORRECTIONS.md": {
+    "path": "experiments/vieneu_kws_research_v12/reports/PHASE36_39_REPORT_CORRECTIONS.md",
+    "sha256": "f9a2c4c2ed55f2de3be2810ee286c9580da59fcdf0bc9fedc57cf17a41dfc0dd",
+    "size_bytes": 9131
+  },
+  "PHASE36_39_STATISTICAL_REPRODUCTION.json": {
+    "path": "experiments/vieneu_kws_research_v12/reports/PHASE36_39_STATISTICAL_REPRODUCTION.json",
+    "sha256": "3eeb658db6ab797fc6834d6e92cc1e60d24eeaf52350921b3407c19800ac6f86",
+    "size_bytes": 3877
+  },
+  "PHASE36_39_HISTORICAL_PROVENANCE_AUDIT.json": {
+    "path": "experiments/vieneu_kws_research_v12/reports/PHASE36_39_HISTORICAL_PROVENANCE_AUDIT.json",
+    "sha256": "ef31b367ecba4ff1c377b37c775313536e293f71268a79be86c4cb6484b2c8c9",
+    "size_bytes": 14127
+  },
+  "PHASE36_39_INDEPENDENT_SOURCE_READINESS.md": {
+    "path": "experiments/vieneu_kws_research_v12/reports/PHASE36_39_INDEPENDENT_SOURCE_READINESS.md",
+    "sha256": "5466c1f044a80b46802c06debe4af934ae78bda3fdd4d058b794c2dfd534902d",
+    "size_bytes": 6290
+  },
+  "PHASE36_39_INDEPENDENT_EVAL_PREREGISTRATION.md": {
+    "path": "experiments/vieneu_kws_research_v12/reports/PHASE36_39_INDEPENDENT_EVAL_PREREGISTRATION.md",
+    "sha256": "1da1bc4cbc782988067ac0d0d4c9966f6985401c9dda9f0f1c2afe8343a1244b",
+    "size_bytes": 7417
+  },
+  "audit_phase36_report_corrections.py": {
+    "path": "experiments/vieneu_kws_research_v12/scripts/audit_phase36_report_corrections.py",
+    "sha256": "b048404b07fe3eb0fa6780aef208b58dd6cb97ac7ca9feada2fd72819e35b3b6",
+    "size_bytes": 17103
+  },
+  "audit_phase37_historical_provenance.py": {
+    "path": "experiments/vieneu_kws_research_v12/scripts/audit_phase37_historical_provenance.py",
+    "sha256": "a1a766be5f29cfbafe0d00e9f7e2f87fcfe250df53b095ac92b1c0852500aea6",
+    "size_bytes": 9567
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "candidate_id": "phase26_candidate_d0_h1_seed44",
+  "phase": "Phase 26 \u2014 Factorial Results Audit and Candidate Freeze",
+  "date_frozen": "2026-10-25T01:00:00+07:00",
+  "condition": "D0_H1",
+  "seed": 44,
+  "selection_type": "post_hoc_on_validation",
+  "selection_rationale": "Leading checkpoint from winning condition D0_H1 (highest mean macro-F1: 93.02% \u00b1 0.17%, lowest inter-seed variance \u03c3=0.0017, superior OOV false alarm control: 26.95%, high keyword recall: 97.5%, and single-run macro-F1: 93.22%).",
+  "architecture": "CorrectedVietnameseKWSNet",
+  "trainable_parameters": 138469,
+  "decision_threshold_theta_cmd": 0.2,
+  "validation_metrics": {
+    "val_macro_f1": 0.9321768619488612,
+    "val_accuracy": 0.93125,
+    "val_loss": 0.20803386183670228,
+    "best_epoch": 32,
+    "total_epochs": 40,
+    "per_class": {
+      "TRAI": {
+        "precision": 0.9386503067484663,
+        "recall": 0.95625,
+        "f1": 0.9473684210526315,
+        "support": 160
+      },
+      "PHAI": {
+        "precision": 0.8359788359788359,
+        "recall": 0.9875,
+        "f1": 0.9054441260744985,
+        "support": 160
+      },
+      "LEN": {
+        "precision": 0.8941176470588236,
+        "recall": 0.95,
+        "f1": 0.9212121212121213,
+        "support": 160
+      },
+      "XUONG": {
+        "precision": 0.9239766081871345,
+        "recall": 0.9875,
+        "f1": 0.9546827794561934,
+        "support": 160
+      },
+      "REJECT": {
+        "precision": 0.9727427597955707,
+        "recall": 0.8921875,
+        "f1": 0.9307253463732681,
+        "support": 640
+      }
+    }
+  },
+  "provenance": {
+    "training_manifest": "experiments/vieneu_kws_research_v12/manifests/D0_train_v1.csv",
+    "training_manifest_sha256": "e0bbc0a95a6d18f9724a7784f53a0082ce0fd3aae8a8e15a67ed39b6743ec7f7",
+    "validation_manifest": "experiments/vieneu_kws_research_v12/manifests/validation_v1.csv",
+    "validation_manifest_sha256": "5af8cf9daa96526cba1a742d1e18982cd4c1ed291dc17d139a8d82bf1cb06682",
+    "original_checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase25/D0_H1_seed44/best_model.pt",
+    "checkpoint_sha256": "00b4fc71f863788648d5ea388a99c4cbd4441d9b9f63adc5e56154e329df63f3"
+  },
+  "governance_labels": [
+    "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+    "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+    "NOT_VALIDATED_PENDING_DATA"
+  ],
+  "status": "FROZEN_CANDIDATE_FOR_INDEPENDENT_EVALUATION"
+}

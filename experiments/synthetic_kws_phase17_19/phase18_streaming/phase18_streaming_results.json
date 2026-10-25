@@ -1,0 +1,133 @@
+{
+  "phase": "18",
+  "description": "Synthetic Streaming Detection and False-Trigger Reduction",
+  "baseline_audit": "Reconstruction of Phase 15 baseline: A 186.54s stream with 100ms hop generates ~1,850 evaluation windows. At static threshold tau=0.500 without temporal persistence or refractory cooldown, speech/silence boundary transitions trigger short bursts of 2-4 consecutive window false alarms. Consequently, 22 raw triggers over 3.1 minutes project mathematically to 424.57 triggers/hour. Evaluating a short 3-minute stream creates high variance; a minimum 1.0-hour continuous evaluation is required to measure true steady-state false trigger frequency.",
+  "validation_grid_search": [
+    {
+      "config": {
+        "name": "Method 1: High Threshold (tau=0.85)",
+        "tau_on": 0.85,
+        "tau_off": 0.85,
+        "smooth": 1,
+        "min_f": 1,
+        "cooldown": 0.3
+      },
+      "false_triggers_per_hour": 12.0,
+      "target_recall_pct": 100.0,
+      "event_precision_pct": 58.82,
+      "mean_latency_sec": 0.355
+    },
+    {
+      "config": {
+        "name": "Method 2: Temporal Smoothing (W=3)",
+        "tau_on": 0.8,
+        "tau_off": 0.6,
+        "smooth": 3,
+        "min_f": 1,
+        "cooldown": 0.4
+      },
+      "false_triggers_per_hour": 0.0,
+      "target_recall_pct": 100.0,
+      "event_precision_pct": 85.71,
+      "mean_latency_sec": 0.425
+    },
+    {
+      "config": {
+        "name": "Method 3: Consecutive Persistence (M=2)",
+        "tau_on": 0.75,
+        "tau_off": 0.5,
+        "smooth": 2,
+        "min_f": 2,
+        "cooldown": 0.5
+      },
+      "false_triggers_per_hour": 0.0,
+      "target_recall_pct": 100.0,
+      "event_precision_pct": 88.24,
+      "mean_latency_sec": 0.528
+    },
+    {
+      "config": {
+        "name": "Method 4: Hysteresis + Cooldown (tau=0.80/0.35, M=2, C=600ms)",
+        "tau_on": 0.8,
+        "tau_off": 0.35,
+        "smooth": 3,
+        "min_f": 2,
+        "cooldown": 0.6
+      },
+      "false_triggers_per_hour": 0.0,
+      "target_recall_pct": 100.0,
+      "event_precision_pct": 100.0,
+      "mean_latency_sec": 0.525
+    },
+    {
+      "config": {
+        "name": "Method 5: Strict Hysteresis (tau=0.90/0.30, M=2, C=600ms)",
+        "tau_on": 0.9,
+        "tau_off": 0.3,
+        "smooth": 3,
+        "min_f": 2,
+        "cooldown": 0.6
+      },
+      "false_triggers_per_hour": 0.0,
+      "target_recall_pct": 100.0,
+      "event_precision_pct": 100.0,
+      "mean_latency_sec": 0.545
+    }
+  ],
+  "selected_configuration": {
+    "name": "Method 4: Hysteresis + Cooldown (tau=0.80/0.35, M=2, C=600ms)",
+    "tau_on": 0.8,
+    "tau_off": 0.35,
+    "smooth": 3,
+    "min_f": 2,
+    "cooldown": 0.6
+  },
+  "held_out_1_hour_test_evaluation": {
+    "Baseline (tau=0.50, raw)": {
+      "total_target_absent_audio_evaluated_sec": 3600.0,
+      "target_absent_streams": 4,
+      "false_triggers_count": 339,
+      "false_triggers_per_hour": 339.0,
+      "per_stream_false_triggers": [
+        91,
+        95,
+        77,
+        76
+      ],
+      "target_present_duration_sec": 196.005125,
+      "ground_truth_targets": 50,
+      "true_positives": 50,
+      "missed_targets": 0,
+      "recall_pct": 100.0,
+      "precision_pct": 45.87,
+      "mean_latency_sec": 0.302,
+      "std_latency_sec": 0.079
+    },
+    "Hysteresis + Cooldown (Method 4)": {
+      "total_target_absent_audio_evaluated_sec": 3600.0,
+      "target_absent_streams": 4,
+      "false_triggers_count": 0,
+      "false_triggers_per_hour": 0.0,
+      "per_stream_false_triggers": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "target_present_duration_sec": 196.005125,
+      "ground_truth_targets": 50,
+      "true_positives": 50,
+      "missed_targets": 0,
+      "recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "mean_latency_sec": 0.496,
+      "std_latency_sec": 0.078
+    }
+  },
+  "gate_verdict": "PHASE18_PASS_WITH_LIMITATIONS",
+  "unresolved_limitations": [
+    "Evaluated exclusively on concatenated synthetic non-target audio; real-world acoustic rooms contain non-stationary impulsive transients not modeled here.",
+    "Detection latency includes 1.0s sliding window integration delay (nominal latency ~0.65s).",
+    "Streaming parameters must be re-calibrated if natural speech models are trained."
+  ]
+}

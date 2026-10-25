@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-25T01:30:00+07:00",
+    "phase": "Phase 28-31 Stage E",
+    "total_runs": 12,
+    "factors": {
+      "D": [
+        "D0",
+        "D2"
+      ],
+      "H": [
+        "H0",
+        "H1"
+      ]
+    },
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "condition_summary": {
+    "D0_H0": {
+      "val_macro_f1_mean": 0.92454,
+      "val_macro_f1_std": 0.0012780062597655345,
+      "val_accuracy_mean": 0.92421875,
+      "val_accuracy_std": 0.0015625000000000222,
+      "seeds": [
+        {
+          "condition": "D0_H0",
+          "factor_d": "D0",
+          "factor_h": "H0",
+          "seed": 42,
+          "best_epoch": 23,
+          "val_macro_f1": 0.92317,
+          "overall_macro_f1": 0.9237476676373605,
+          "val_accuracy": 0.92421875,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D0_H0_seed42/best_model.pt",
+          "checkpoint_sha256": "d9b836f78584628c97e6eec3b29e1ab6befe12170b0858a56e5b0be5858b5a85"
+        },
+        {
+          "condition": "D0_H0",
+          "factor_d": "D0",
+          "factor_h": "H0",
+          "seed": 43,
+          "best_epoch": 32,
+          "val_macro_f1": 0.92475,
+          "overall_macro_f1": 0.9252809147197263,
+          "val_accuracy": 0.92578125,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D0_H0_seed43/best_model.pt",
+          "checkpoint_sha256": "111a882989403006cbf9eee1c0da833a2c21040e0b791e598cc621086d769c27"
+        },
+        {
+          "condition": "D0_H0",
+          "factor_d": "D0",
+          "factor_h": "H0",
+          "seed": 44,
+          "best_epoch": 31,
+          "val_macro_f1": 0.9257,
+          "overall_macro_f1": 0.9245560303136063,
+          "val_accuracy": 0.92265625,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D0_H0_seed44/best_model.pt",
+          "checkpoint_sha256": "1a655a64507423597efd982bbc9951e739b22647af976ed9fcf56a870ca4669c"
+        }
+      ]
+    },
+    "D0_H1": {
+      "val_macro_f1_mean": 0.9328233333333333,
+      "val_macro_f1_std": 0.005020849861660234,
+      "val_accuracy_mean": 0.93203125,
+      "val_accuracy_std": 0.00390625,
+      "seeds": [
+        {
+          "condition": "D0_H1",
+          "factor_d": "D0",
+          "factor_h": "H1",
+          "seed": 42,
+          "best_epoch": 32,
+          "val_macro_f1": 0.93779,
+          "overall_macro_f1": 0.9371874897597052,
+          "val_accuracy": 0.9359375,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D0_H1_seed42/best_model.pt",
+          "checkpoint_sha256": "84a3457f105058bb7ca843b830013d00cb6d2e9ce737cb389267a84fcf51a6af"
+        },
+        {
+          "condition": "D0_H1",
+          "factor_d": "D0",
+          "factor_h": "H1",
+          "seed": 43,
+          "best_epoch": 28,
+          "val_macro_f1": 0.92775,
+          "overall_macro_f1": 0.9280329828656582,
+          "val_accuracy": 0.928125,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D0_H1_seed43/best_model.pt",
+          "checkpoint_sha256": "e26c35c87142134a9fb381e1d3691e7d552b4899c8cb539929af7f19fc796615"
+        },
+        {
+          "condition": "D0_H1",
+          "factor_d": "D0",
+          "factor_h": "H1",
+          "seed": 44,
+          "best_epoch": 32,
+          "val_macro_f1": 0.93293,
+          "overall_macro_f1": 0.9326105443733738,
+          "val_accuracy": 0.93203125,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D0_H1_seed44/best_model.pt",
+          "checkpoint_sha256": "2b019e3a0ee9475fe5949c9c07963eaad402db8281b85fffe311a77e0ab14561"
+        }
+      ]
+    },
+    "D2_H0": {
+      "val_macro_f1_mean": 0.9307666666666666,
+      "val_macro_f1_std": 0.004880064890278972,
+      "val_accuracy_mean": 0.9307291666666666,
+      "val_accuracy_std": 0.0032526031241658163,
+      "seeds": [
+        {
+          "condition": "D2_H0",
+          "factor_d": "D2",
+          "factor_h": "H0",
+          "seed": 42,
+          "best_epoch": 31,
+          "val_macro_f1": 0.93051,
+          "overall_macro_f1": 0.93027700681886,
+          "val_accuracy": 0.9296875,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D2_H0_seed42/best_model.pt",
+          "checkpoint_sha256": "3985c4a163f05e4fd4387f3a202f665ec6888a6c23cb9cfe079cdb593eb4e8ff"
+        },
+        {
+          "condition": "D2_H0",
+          "factor_d": "D2",
+          "factor_h": "H0",
+          "seed": 43,
+          "best_epoch": 35,
+          "val_macro_f1": 0.92602,
+          "overall_macro_f1": 0.9268992382736732,
+          "val_accuracy": 0.928125,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D2_H0_seed43/best_model.pt",
+          "checkpoint_sha256": "30207c8d465978d9b6b1e17bc009015af3ca8d5f09e525a913fc045d3d2c1c4c"
+        },
+        {
+          "condition": "D2_H0",
+          "factor_d": "D2",
+          "factor_h": "H0",
+          "seed": 44,
+          "best_epoch": 20,
+          "val_macro_f1": 0.93577,
+          "overall_macro_f1": 0.9353701485611788,
+          "val_accuracy": 0.934375,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D2_H0_seed44/best_model.pt",
+          "checkpoint_sha256": "6f018528bbfb5262d5f0c4401b0f55b3c67fcc0b38b5f8acef3221c133b72635"
+        }
+      ]
+    },
+    "D2_H1": {
+      "val_macro_f1_mean": 0.9327633333333334,
+      "val_macro_f1_std": 0.005733239340314806,
+      "val_accuracy_mean": 0.9330729166666666,
+      "val_accuracy_std": 0.00520181884256205,
+      "seeds": [
+        {
+          "condition": "D2_H1",
+          "factor_d": "D2",
+          "factor_h": "H1",
+          "seed": 42,
+          "best_epoch": 26,
+          "val_macro_f1": 0.93884,
+          "overall_macro_f1": 0.939098158562085,
+          "val_accuracy": 0.9390625,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D2_H1_seed42/best_model.pt",
+          "checkpoint_sha256": "c6102b4876ddeaa453547c211c5cfc322511c957e18fd488a705a164b18601c8"
+        },
+        {
+          "condition": "D2_H1",
+          "factor_d": "D2",
+          "factor_h": "H1",
+          "seed": 43,
+          "best_epoch": 27,
+          "val_macro_f1": 0.92745,
+          "overall_macro_f1": 0.9284340434284761,
+          "val_accuracy": 0.9296875,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D2_H1_seed43/best_model.pt",
+          "checkpoint_sha256": "c7dc022ff69d297a0945d6488ab49b789fa8ba1b9fcc652908844ce55372d2c9"
+        },
+        {
+          "condition": "D2_H1",
+          "factor_d": "D2",
+          "factor_h": "H1",
+          "seed": 44,
+          "best_epoch": 31,
+          "val_macro_f1": 0.932,
+          "overall_macro_f1": 0.9314412849273233,
+          "val_accuracy": 0.93046875,
+          "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D2_H1_seed44/best_model.pt",
+          "checkpoint_sha256": "a5b9c1ababa87054e0857badb1aa8bea336c9ff4e6a0ec5533160cea013367f2"
+        }
+      ]
+    }
+  },
+  "two_way_anova": {
+    "factor_d": {
+      "SS": 2.852083333333321e-05,
+      "df": 1,
+      "MS": 2.852083333333321e-05,
+      "F": 1.3658209152376812,
+      "p_value": 0.2761745995407473,
+      "partial_eta2": 0.1458303471311911
+    },
+    "factor_h": {
+      "SS": 7.925880000000445e-05,
+      "df": 1,
+      "MS": 7.925880000000445e-05,
+      "F": 3.7955877898605186,
+      "p_value": 0.08723082559233553,
+      "partial_eta2": 0.32178030103113675
+    },
+    "interaction_dh": {
+      "SS": 2.9641633333328825e-05,
+      "df": 1,
+      "MS": 2.9641633333328825e-05,
+      "F": 1.4194943848695554,
+      "p_value": 0.2676314107701824,
+      "partial_eta2": 0.15069751378053536
+    },
+    "error": {
+      "SS": 0.0001670546000000007,
+      "df": 8,
+      "MS": 2.0881825000000087e-05
+    },
+    "total": {
+      "SS": 0.00030447586666666786,
+      "df": 11
+    }
+  },
+  "randomized_block_anova": {
+    "treatment": {
+      "SS": 0.0001374212666666665,
+      "df": 3,
+      "MS": 4.580708888888883e-05,
+      "F": 3.3669765175030615,
+      "p_value": 0.0959718354564496
+    },
+    "block": {
+      "SS": 8.542571666666727e-05,
+      "df": 2,
+      "MS": 4.2712858333333635e-05,
+      "F": 3.1395400688440884,
+      "p_value": 0.11666920806466985
+    },
+    "error": {
+      "SS": 8.16288833333341e-05,
+      "df": 6,
+      "MS": 1.3604813888889017e-05
+    },
+    "total": {
+      "SS": 0.00030447586666666786,
+      "df": 11
+    }
+  },
+  "winning_candidate": {
+    "candidate_id": "phase28_candidate_D0_H1_seed42",
+    "condition": "D0_H1",
+    "seed": 42,
+    "factor_d": "D0",
+    "factor_h": "H1",
+    "val_macro_f1": 0.93779,
+    "val_accuracy": 0.9359375,
+    "checkpoint_path": "experiments/vieneu_kws_research_v12/candidates/phase28_candidate/candidate_checkpoint.pt",
+    "checkpoint_sha256": "84a3457f105058bb7ca843b830013d00cb6d2e9ce737cb389267a84fcf51a6af",
+    "onnx_path": "experiments/vieneu_kws_research_v12/candidates/phase28_candidate/vietnamese_kws_phase28_candidate.onnx",
+    "onnx_sha256": "6458f98ed1159093c4f50251c81387945621033f19ed7760e8bfee2e75579b20",
+    "onnx_max_abs_diff": 1.1444091796875e-05,
+    "onnx_parity_pass": true,
+    "frozen_architecture": "CorrectedVietnameseKWSNet",
+    "total_parameters": 138469,
+    "decision_threshold": 0.2
+  }
+}

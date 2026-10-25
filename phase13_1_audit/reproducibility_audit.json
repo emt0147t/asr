@@ -1,0 +1,125 @@
+{
+  "report_type": "reproducibility_audit",
+  "total_manifest_rows": 120,
+  "files_existing_on_disk": 120,
+  "disk_sha256_matches": 120,
+  "regenerated_sha256_matches_with_generator": 120,
+  "pass_rate_percentage": 100.0,
+  "manifest_schema_audit": {
+    "columns_present": [
+      "recording_id",
+      "split",
+      "class_id",
+      "class_label",
+      "transcript",
+      "generator_version",
+      "generator_recipe",
+      "seed",
+      "simulated_speaker_id",
+      "vtl_scale",
+      "f0_base",
+      "duration_sec",
+      "onset_offset_sec",
+      "snr_db",
+      "noise_type",
+      "sha256",
+      "processed_path",
+      "status"
+    ],
+    "required_core_columns_present": true,
+    "unserialized_parameters": [
+      "open_quotient",
+      "spectral_tilt_db",
+      "jitter_pct",
+      "pilot_seed_base"
+    ],
+    "precision_issue": "vtl_scale is rounded to 4 decimals and f0_base to 2 decimals in CSV, creating floating point delta if reconstructed directly from CSV text rather than master seed."
+  },
+  "reproducibility_verdict": {
+    "programmatic_reproduction": "100% BIT-EXACT across all 120 rows using reproduce_pilot_clip(recording_id, pilot_seed_base=50000).",
+    "row_independent_reconstruction": "LIMITATION IDENTIFIED: An external user possessing only manifest.csv cannot independently reconstruct the exact audio array without pilot_seed_base=50000, because open_quotient, spectral_tilt_db, and jitter_pct were omitted from CSV columns.",
+    "recommendation_v5_1": "Serialize open_quotient, spectral_tilt_db, jitter_pct, and master_seed directly into future manifest columns to enable pure row-level offline reproduction."
+  },
+  "sample_verifications": [
+    {
+      "recording_id": "v5_pilot_trai_001",
+      "class_label": "TRAI",
+      "seed": 50000,
+      "file_exists": true,
+      "disk_sha256_match": true,
+      "regenerated_sha256_match": true
+    },
+    {
+      "recording_id": "v5_pilot_trai_002",
+      "class_label": "TRAI",
+      "seed": 50001,
+      "file_exists": true,
+      "disk_sha256_match": true,
+      "regenerated_sha256_match": true
+    },
+    {
+      "recording_id": "v5_pilot_trai_003",
+      "class_label": "TRAI",
+      "seed": 50002,
+      "file_exists": true,
+      "disk_sha256_match": true,
+      "regenerated_sha256_match": true
+    },
+    {
+      "recording_id": "v5_pilot_trai_004",
+      "class_label": "TRAI",
+      "seed": 50003,
+      "file_exists": true,
+      "disk_sha256_match": true,
+      "regenerated_sha256_match": true
+    },
+    {
+      "recording_id": "v5_pilot_trai_005",
+      "class_label": "TRAI",
+      "seed": 50004,
+      "file_exists": true,
+      "disk_sha256_match": true,
+      "regenerated_sha256_match": true
+    },
+    {
+      "recording_id": "v5_pilot_trai_006",
+      "class_label": "TRAI",
+      "seed": 50005,
+      "file_exists": true,
+      "disk_sha256_match": true,
+      "regenerated_sha256_match": true
+    },
+    {
+      "recording_id": "v5_pilot_phai_001",
+      "class_label": "PHAI",
+      "seed": 50100,
+      "file_exists": true,
+      "disk_sha256_match": true,
+      "regenerated_sha256_match": true
+    },
+    {
+      "recording_id": "v5_pilot_phai_002",
+      "class_label": "PHAI",
+      "seed": 50101,
+      "file_exists": true,
+      "disk_sha256_match": true,
+      "regenerated_sha256_match": true
+    },
+    {
+      "recording_id": "v5_pilot_silence_001",
+      "class_label": "SILENCE",
+      "seed": 50500,
+      "file_exists": true,
+      "disk_sha256_match": true,
+      "regenerated_sha256_match": true
+    },
+    {
+      "recording_id": "v5_pilot_silence_002",
+      "class_label": "SILENCE",
+      "seed": 50501,
+      "file_exists": true,
+      "disk_sha256_match": true,
+      "regenerated_sha256_match": true
+    }
+  ]
+}

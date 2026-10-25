@@ -1,0 +1,297 @@
+{
+  "total_pairs_audited": 444,
+  "all_non_padding_samples_preserved_in_order": true,
+  "max_absolute_sample_difference_across_all_pairs": 0.0,
+  "total_active_speech_samples_truncated": 0,
+  "active_relative_hf_energy_audit": {
+    "window_duration_ms": 50.0,
+    "window_samples": 800,
+    "window_function": "Hann (np.hanning(800))",
+    "time_origin_definition": "First sample with |a| >= 0.005 (or sample 0 if no threshold crossing)",
+    "frequency_cutoff_hz": 3500.0,
+    "denominator_policy": "sum(spectral_magnitudes**2) + 1e-9",
+    "per_class_invariance": {
+      "TRAI": {
+        "samples_count": 50,
+        "native_left_hf_ratio_mean": 0.0014296554849281753,
+        "shifted_center_hf_ratio_mean": 0.0014296554849281753,
+        "max_pairwise_difference": 0.0,
+        "is_invariant": true
+      },
+      "PHAI": {
+        "samples_count": 50,
+        "native_left_hf_ratio_mean": 0.32688615323155146,
+        "shifted_center_hf_ratio_mean": 0.32688615323155146,
+        "max_pairwise_difference": 0.0,
+        "is_invariant": true
+      },
+      "LEN": {
+        "samples_count": 50,
+        "native_left_hf_ratio_mean": 0.0006388936163645825,
+        "shifted_center_hf_ratio_mean": 0.0006388936163645825,
+        "max_pairwise_difference": 0.0,
+        "is_invariant": true
+      },
+      "XUONG": {
+        "samples_count": 50,
+        "native_left_hf_ratio_mean": 0.6191839405495725,
+        "shifted_center_hf_ratio_mean": 0.6191839405495725,
+        "max_pairwise_difference": 0.0,
+        "is_invariant": true
+      },
+      "UNKNOWN": {
+        "samples_count": 50,
+        "native_left_hf_ratio_mean": 0.0006218237309316321,
+        "shifted_center_hf_ratio_mean": 0.0006218237309316321,
+        "max_pairwise_difference": 0.0,
+        "is_invariant": true
+      },
+      "SILENCE": {
+        "samples_count": 50,
+        "native_left_hf_ratio_mean": 0.28208322300775823,
+        "shifted_center_hf_ratio_mean": 4.1919110612591496e-06,
+        "max_pairwise_difference": 0.6309597809538369,
+        "is_invariant": false
+      }
+    },
+    "explanation_of_earlier_discrepancy": "For all 250 speech samples (TRAI, PHAI, LEN, XUONG, UNKNOWN), the active-relative HF ratio is 100% bit-exact invariant between native and centered alignments (max diff = 0.000000). The previously reported macro-averages (20.51% vs 15.81%) differed strictly because the SILENCE class contains no samples >= 0.005. In native alignment, its fallback window (samples 0-799) evaluated ambient dither noise (HF ratio 28.2%), whereas in centered alignment, the first 800 samples consisted of newly padded digital zeros (HF ratio 0.0%). Active speech onset acoustics were 100% preserved."
+  },
+  "onset_definitions_audit": {
+    "definition_1": "First nonzero sample: index of first sample where a != 0.0",
+    "definition_2": "First threshold-crossing sample: index of first sample where |a| >= 0.005",
+    "definition_3": "Synthetic release-burst time: nominal sample index where high-pass burst was injected (sample 400 relative to utterance start in V4 TRAI)",
+    "summary_table": {
+      "A1-B2_baseline_centered": {
+        "TRAI": {
+          "nonzero_ms": 244.3,
+          "thresh_005_ms": 244.7,
+          "burst_ms": "N/A"
+        },
+        "PHAI": {
+          "nonzero_ms": 255.8,
+          "thresh_005_ms": 256.2,
+          "burst_ms": "N/A"
+        }
+      },
+      "A1-B1_baseline_left": {
+        "TRAI": {
+          "nonzero_ms": 0.0,
+          "thresh_005_ms": 0.0,
+          "burst_ms": "N/A"
+        },
+        "PHAI": {
+          "nonzero_ms": 0.0,
+          "thresh_005_ms": 0.0,
+          "burst_ms": "N/A"
+        }
+      },
+      "A2-B1_onset_left_native": {
+        "TRAI": {
+          "nonzero_ms": 0.0,
+          "thresh_005_ms": 25.0,
+          "burst_ms": 25.0
+        },
+        "PHAI": {
+          "nonzero_ms": 0.1,
+          "thresh_005_ms": 0.5,
+          "burst_ms": "N/A"
+        }
+      },
+      "A2-B2_onset_centered": {
+        "TRAI": {
+          "nonzero_ms": 255.1,
+          "thresh_005_ms": 280.1,
+          "burst_ms": 280.1
+        },
+        "PHAI": {
+          "nonzero_ms": 256.0,
+          "thresh_005_ms": 256.4,
+          "burst_ms": "N/A"
+        }
+      }
+    },
+    "centered_v4_onset_sample_3478_explanation": "In Condition A2-B2, the previous table reported mean onset near sample 3478.5 because it averaged the threshold-crossing index across all 300 clips, including UNKNOWN and SILENCE (where fallback or dither crossings skewed the aggregate mean). When disaggregated by class: V4 centered TRAI has its first nonzero sample at sample 4,081.8 (255.1 ms, start of closure gap) and its first threshold crossing (|a| >= 0.005) at sample 4,482.1 (280.1 ms, release burst attack, exactly 400.3 samples after closure start)."
+  },
+  "pairs_sample": [
+    {
+      "pair_id": "BASE_PAIR_000",
+      "cohort": "Baseline Generator (Historical 144)",
+      "class_label": "TRAI",
+      "source_recording_id": "cmd_trai_SPK_CALIB_018_take017",
+      "source_path": "data/processed/audio_16k_1s/TRAI/cmd_trai_SPK_CALIB_018_take017.wav",
+      "source_sha256": "8DAF6D76FC290717D4C7B35ECAA5CEEF2944FB280C956213D257E3B0FD49F0D3",
+      "target_recording_id": "left_cmd_trai_SPK_CALIB_018_take017",
+      "target_path": "experiments/synthetic_kws_v4/audit/diagnostic_audio/A1_B1_baseline_left/left_cmd_trai_SPK_CALIB_018_take017.wav",
+      "target_sha256": "9644D79E3127A78E16E6DCD5546BF84175F42A186014CCBF887CC0651C403909",
+      "operation": "Left-align via trimming leading silence",
+      "leading_silence_trimmed_samples": 3611,
+      "speech_samples_preserved_count": 12389,
+      "right_padding_zeros_added": 3611,
+      "truncated_active_samples": 0,
+      "non_padding_samples_preserved_in_order": true,
+      "max_abs_sample_difference": 0.0
+    },
+    {
+      "pair_id": "BASE_PAIR_001",
+      "cohort": "Baseline Generator (Historical 144)",
+      "class_label": "TRAI",
+      "source_recording_id": "cmd_trai_SPK_CALIB_019_take018",
+      "source_path": "data/processed/audio_16k_1s/TRAI/cmd_trai_SPK_CALIB_019_take018.wav",
+      "source_sha256": "9887D0D1E5F7A0D213A10C1745364AB31C1C771496109FA99CA3FA2EFE7902E8",
+      "target_recording_id": "left_cmd_trai_SPK_CALIB_019_take018",
+      "target_path": "experiments/synthetic_kws_v4/audit/diagnostic_audio/A1_B1_baseline_left/left_cmd_trai_SPK_CALIB_019_take018.wav",
+      "target_sha256": "783310E6FD3BEB701C8A1E52D1CBF8C4F3141A4C957DCD4F1950AA1160C5CFEE",
+      "operation": "Left-align via trimming leading silence",
+      "leading_silence_trimmed_samples": 3636,
+      "speech_samples_preserved_count": 12364,
+      "right_padding_zeros_added": 3636,
+      "truncated_active_samples": 0,
+      "non_padding_samples_preserved_in_order": true,
+      "max_abs_sample_difference": 0.0
+    },
+    {
+      "pair_id": "BASE_PAIR_002",
+      "cohort": "Baseline Generator (Historical 144)",
+      "class_label": "TRAI",
+      "source_recording_id": "cmd_trai_SPK_CALIB_020_take019",
+      "source_path": "data/processed/audio_16k_1s/TRAI/cmd_trai_SPK_CALIB_020_take019.wav",
+      "source_sha256": "0C7BBB1CF2251BE97A6E023182FE113DB81AD8173B8AB4A5F70FB0DCD78D3308",
+      "target_recording_id": "left_cmd_trai_SPK_CALIB_020_take019",
+      "target_path": "experiments/synthetic_kws_v4/audit/diagnostic_audio/A1_B1_baseline_left/left_cmd_trai_SPK_CALIB_020_take019.wav",
+      "target_sha256": "A878F62CDE481485CDCDC4A6CE351DF48AE86DD9065ACE5508B34C066D2D829D",
+      "operation": "Left-align via trimming leading silence",
+      "leading_silence_trimmed_samples": 5025,
+      "speech_samples_preserved_count": 10975,
+      "right_padding_zeros_added": 5025,
+      "truncated_active_samples": 0,
+      "non_padding_samples_preserved_in_order": true,
+      "max_abs_sample_difference": 0.0
+    },
+    {
+      "pair_id": "BASE_PAIR_003",
+      "cohort": "Baseline Generator (Historical 144)",
+      "class_label": "TRAI",
+      "source_recording_id": "cmd_trai_SPK_CALIB_018_take037",
+      "source_path": "data/processed/audio_16k_1s/TRAI/cmd_trai_SPK_CALIB_018_take037.wav",
+      "source_sha256": "1868F97F7DE081C8A14E951728BB9C6E5E937942974B3754D5BD90D99A8698C7",
+      "target_recording_id": "left_cmd_trai_SPK_CALIB_018_take037",
+      "target_path": "experiments/synthetic_kws_v4/audit/diagnostic_audio/A1_B1_baseline_left/left_cmd_trai_SPK_CALIB_018_take037.wav",
+      "target_sha256": "7A73ACF1B7479EE62AE5B5F4E78D10767235823E519B53905D2B13308FC3F80B",
+      "operation": "Left-align via trimming leading silence",
+      "leading_silence_trimmed_samples": 5183,
+      "speech_samples_preserved_count": 10817,
+      "right_padding_zeros_added": 5183,
+      "truncated_active_samples": 0,
+      "non_padding_samples_preserved_in_order": true,
+      "max_abs_sample_difference": 0.0
+    },
+    {
+      "pair_id": "BASE_PAIR_004",
+      "cohort": "Baseline Generator (Historical 144)",
+      "class_label": "TRAI",
+      "source_recording_id": "cmd_trai_SPK_CALIB_019_take038",
+      "source_path": "data/processed/audio_16k_1s/TRAI/cmd_trai_SPK_CALIB_019_take038.wav",
+      "source_sha256": "EF7ED9CAF365BFFDD4ED2AACE116F041CAABFAC21BA6C7CF663645B5FA17D5DF",
+      "target_recording_id": "left_cmd_trai_SPK_CALIB_019_take038",
+      "target_path": "experiments/synthetic_kws_v4/audit/diagnostic_audio/A1_B1_baseline_left/left_cmd_trai_SPK_CALIB_019_take038.wav",
+      "target_sha256": "482AC0471A87913C28D1C6D40F8991CFA51B107DF24A96A8F032F9672F620B21",
+      "operation": "Left-align via trimming leading silence",
+      "leading_silence_trimmed_samples": 3790,
+      "speech_samples_preserved_count": 12210,
+      "right_padding_zeros_added": 3790,
+      "truncated_active_samples": 0,
+      "non_padding_samples_preserved_in_order": true,
+      "max_abs_sample_difference": 0.0
+    },
+    {
+      "pair_id": "BASE_PAIR_005",
+      "cohort": "Baseline Generator (Historical 144)",
+      "class_label": "TRAI",
+      "source_recording_id": "cmd_trai_SPK_CALIB_020_take039",
+      "source_path": "data/processed/audio_16k_1s/TRAI/cmd_trai_SPK_CALIB_020_take039.wav",
+      "source_sha256": "44FF081FFFE951D49E5CF7527DFC3CE9F8D106795DBE965B00FAD3813E526220",
+      "target_recording_id": "left_cmd_trai_SPK_CALIB_020_take039",
+      "target_path": "experiments/synthetic_kws_v4/audit/diagnostic_audio/A1_B1_baseline_left/left_cmd_trai_SPK_CALIB_020_take039.wav",
+      "target_sha256": "B30080808FAC0366F7F84545EB9EE2C61EE2EFA975F810070880C1612F9CFBED",
+      "operation": "Left-align via trimming leading silence",
+      "leading_silence_trimmed_samples": 4694,
+      "speech_samples_preserved_count": 11306,
+      "right_padding_zeros_added": 4694,
+      "truncated_active_samples": 0,
+      "non_padding_samples_preserved_in_order": true,
+      "max_abs_sample_difference": 0.0
+    },
+    {
+      "pair_id": "BASE_PAIR_006",
+      "cohort": "Baseline Generator (Historical 144)",
+      "class_label": "TRAI",
+      "source_recording_id": "cmd_trai_SPK_CALIB_018_take057",
+      "source_path": "data/processed/audio_16k_1s/TRAI/cmd_trai_SPK_CALIB_018_take057.wav",
+      "source_sha256": "BACF491154B04AA2114CE60538FB635E2C6B1AB2B4590BC74A543678E5844A00",
+      "target_recording_id": "left_cmd_trai_SPK_CALIB_018_take057",
+      "target_path": "experiments/synthetic_kws_v4/audit/diagnostic_audio/A1_B1_baseline_left/left_cmd_trai_SPK_CALIB_018_take057.wav",
+      "target_sha256": "722C9492F20AD96267C1A91C7D1EB9A5A09A05E7277E5593F83FF60FD5FF9624",
+      "operation": "Left-align via trimming leading silence",
+      "leading_silence_trimmed_samples": 3197,
+      "speech_samples_preserved_count": 12803,
+      "right_padding_zeros_added": 3197,
+      "truncated_active_samples": 0,
+      "non_padding_samples_preserved_in_order": true,
+      "max_abs_sample_difference": 0.0
+    },
+    {
+      "pair_id": "BASE_PAIR_007",
+      "cohort": "Baseline Generator (Historical 144)",
+      "class_label": "TRAI",
+      "source_recording_id": "cmd_trai_SPK_CALIB_019_take058",
+      "source_path": "data/processed/audio_16k_1s/TRAI/cmd_trai_SPK_CALIB_019_take058.wav",
+      "source_sha256": "BD06629487941A171569DC8727FAFCD401AE38BB253AB11D1D15ADC6FB2FEA62",
+      "target_recording_id": "left_cmd_trai_SPK_CALIB_019_take058",
+      "target_path": "experiments/synthetic_kws_v4/audit/diagnostic_audio/A1_B1_baseline_left/left_cmd_trai_SPK_CALIB_019_take058.wav",
+      "target_sha256": "099FC658D31CBCD950E9BED1E90AED8B4E0C690687C0FD98D232F20972593D43",
+      "operation": "Left-align via trimming leading silence",
+      "leading_silence_trimmed_samples": 4976,
+      "speech_samples_preserved_count": 11024,
+      "right_padding_zeros_added": 4976,
+      "truncated_active_samples": 0,
+      "non_padding_samples_preserved_in_order": true,
+      "max_abs_sample_difference": 0.0
+    },
+    {
+      "pair_id": "BASE_PAIR_008",
+      "cohort": "Baseline Generator (Historical 144)",
+      "class_label": "TRAI",
+      "source_recording_id": "cmd_trai_SPK_CALIB_020_take059",
+      "source_path": "data/processed/audio_16k_1s/TRAI/cmd_trai_SPK_CALIB_020_take059.wav",
+      "source_sha256": "F50E42FA3026F0A994BEAC475839FB2FF9557F3064E98916EE524AA510DD2692",
+      "target_recording_id": "left_cmd_trai_SPK_CALIB_020_take059",
+      "target_path": "experiments/synthetic_kws_v4/audit/diagnostic_audio/A1_B1_baseline_left/left_cmd_trai_SPK_CALIB_020_take059.wav",
+      "target_sha256": "499769578A1180DE9D4C2DF594F88A420CB1DCCBCEB5EB1B1A53056E0420DF79",
+      "operation": "Left-align via trimming leading silence",
+      "leading_silence_trimmed_samples": 3770,
+      "speech_samples_preserved_count": 12230,
+      "right_padding_zeros_added": 3770,
+      "truncated_active_samples": 0,
+      "non_padding_samples_preserved_in_order": true,
+      "max_abs_sample_difference": 0.0
+    },
+    {
+      "pair_id": "BASE_PAIR_009",
+      "cohort": "Baseline Generator (Historical 144)",
+      "class_label": "TRAI",
+      "source_recording_id": "cmd_trai_SPK_CALIB_018_take077",
+      "source_path": "data/processed/audio_16k_1s/TRAI/cmd_trai_SPK_CALIB_018_take077.wav",
+      "source_sha256": "D31454652544492D33D5090F6F577DC7A2E8AE46547CC4B5B0BAE07290C17569",
+      "target_recording_id": "left_cmd_trai_SPK_CALIB_018_take077",
+      "target_path": "experiments/synthetic_kws_v4/audit/diagnostic_audio/A1_B1_baseline_left/left_cmd_trai_SPK_CALIB_018_take077.wav",
+      "target_sha256": "10EB35BF73412876E5D6C68715F58AC3AE7E78559076AD8FB61B41E6E2EF34B3",
+      "operation": "Left-align via trimming leading silence",
+      "leading_silence_trimmed_samples": 3595,
+      "speech_samples_preserved_count": 12405,
+      "right_padding_zeros_added": 3595,
+      "truncated_active_samples": 0,
+      "non_padding_samples_preserved_in_order": true,
+      "max_abs_sample_difference": 0.0
+    }
+  ]
+}

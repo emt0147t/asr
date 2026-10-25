@@ -1,0 +1,61 @@
+{
+  "split_policy_name": "Vietnamese KWS Dataset v12 Strict Disjoint Split Policy",
+  "version": "12.0.0",
+  "target_split_ratios": {
+    "train": 0.68,
+    "val": 0.16,
+    "test": 0.16
+  },
+  "leakage_prevention": {
+    "voice_disjoint": true,
+    "source_utterance_disjoint": true,
+    "oov_lexeme_disjoint": true,
+    "noise_asset_disjoint": true,
+    "fleurs_recording_disjoint": true
+  },
+  "voice_allocation": {
+    "train": [
+      "Adam", "Adam bựa", "Hải Đăng", "Minh Triết", "Minh Đức", "Mỹ Duyên",
+      "Ngọc Huyền", "Ngọc Linh", "Quang Sơn", "Thanh Bình", "Thiền Tâm Đức",
+      "Thiện Minh", "Thái Sơn", "Thục Đoan", "Trúc Ly", "Xuân Vĩnh", "Đoan Trang"
+    ],
+    "val": [
+      "Mai Anh", "Ngọc Trân", "Phạm Tuyên", "Thùy Dung"
+    ],
+    "test": [
+      "Kim Thanh", "Quốc Tuấn", "Quỳnh Anh", "Đức Trí"
+    ]
+  },
+  "oov_lexicon": {
+    "train": [
+      "cửa", "mở", "bàn", "nhà", "dừng", "bật", "tắt", "đóng", "chạy", "vào",
+      "ra", "trời", "phát", "trại", "trạm", "tròn", "trước", "trắng", "phòng", "phút",
+      "phần", "phím", "phố", "làm", "lấy", "lúc", "luôn", "lại", "lời", "xuồng",
+      "xem", "xong", "xanh", "xa", "xuất", "gặp", "hẹn", "nhớ", "quên", "biết",
+      "hiểu", "đọc", "viết", "hát", "đàn", "mua", "bán", "ăn", "uống", "ngủ",
+      "thức", "chào", "cứu", "hủy", "lưu", "xóa", "khóa", "được", "không", "nhập"
+    ],
+    "val": [
+      "đi", "đứng", "nghe", "nói", "hỏi", "tìm", "chọn", "xoay", "lùi", "quay",
+      "trông", "trẻ", "trường", "phim", "phục", "phấn", "lược", "lớp", "lửa", "xốp"
+    ],
+    "test_unseen": [
+      "ghế", "xúc", "xinh", "đếm", "cân", "đo", "trưa", "trà", "trách", "phở",
+      "pháo", "phép", "lá", "làng", "lạc", "xôi", "xương", "xích", "bắt", "buông"
+    ]
+  },
+  "noise_asset_allocation": {
+    "train_track_indices": [
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+    ],
+    "val_track_indices": [
+      28, 29, 30, 31, 32, 33
+    ],
+    "test_track_indices": [
+      34, 35, 36, 37, 38, 39
+    ]
+  },
+  "target_snr_db_levels": [20.0, 15.0, 10.0, 5.0, 0.0],
+  "clean_ratio": 0.30,
+  "noisy_ratio": 0.70
+}

@@ -1,0 +1,164 @@
+{
+  "report_type": "synthetic_kws_phases_20_to_22_final_status",
+  "project_name": "Vietnamese Synthetic Keyword Spotting",
+  "date": "2026-10-17",
+  "candidate_version": "v5.2-rc1-research",
+  "overall_status": {
+    "engineering_correctness": "VERIFIED_PASS",
+    "synthetic_distribution_generalization": "VERIFIED_PASS_WITH_LIMITATIONS",
+    "natural_speech_validity": "NOT_VALIDATED_ON_NATURAL_SPEECH"
+  },
+  "governance_status": {
+    "human_speech_data_collection": "STRICTLY_BLOCKED",
+    "unapproved_audio_ingestion": "BLOCKED",
+    "git_staged_diff_empty": true,
+    "protected_baselines_verified": true
+  },
+  "phase_verdicts": {
+    "phase_20": "PHASE20_PASS_WITH_LIMITATIONS",
+    "phase_21": "PHASE21_PASS_WITH_LIMITATIONS",
+    "phase_22": "SYNTHETIC_RESEARCH_CANDIDATE_WITH_LIMITATIONS"
+  },
+  "dataset_revalidation_and_regeneration": {
+    "manifest_rows": 3000,
+    "actual_disk_wav_files": 3000,
+    "unique_audio_hashes": 3000,
+    "duplicate_audio_hashes": 0,
+    "class_balance": {
+      "TRAI": 500,
+      "PHAI": 500,
+      "LEN": 500,
+      "XUONG": 500,
+      "UNKNOWN": 500,
+      "SILENCE": 500
+    },
+    "split_isolation": {
+      "speaker_overlap": 0,
+      "seed_overlap": 0
+    },
+    "full_manifest_regeneration": {
+      "total_attempted": 3000,
+      "exact_sha256_matches": 3000,
+      "pass_rate_pct": 100.0,
+      "elapsed_seconds": 101.0,
+      "serialization_format": "PCM_16 WAV 16000Hz mono via soundfile"
+    }
+  },
+  "model_evaluation_and_uncertainty": {
+    "architecture": "VietnameseTCResNet (TC-ResNet-14)",
+    "frozen_test_set_size": 450,
+    "observed_errors": 0,
+    "accuracy": 1.0000,
+    "macro_f1": 1.0000,
+    "wilson_score_95_ci": [0.9915, 1.0000],
+    "rule_of_three_max_error_bound_95_pct": 0.00667,
+    "multi_seed_metrics": {
+      "seed_42": {
+        "accuracy": 1.0000,
+        "brier_score": 0.000575,
+        "ece": 0.001007
+      },
+      "seed_43": {
+        "accuracy": 1.0000,
+        "brier_score": 0.000094,
+        "ece": 0.000795
+      },
+      "seed_44": {
+        "accuracy": 1.0000,
+        "brier_score": 0.000919,
+        "ece": 0.002270
+      }
+    },
+    "speaker_profiles_in_frozen_test_set": 2,
+    "simulated_test_speakers": ["SPK_TEST_01_FEMALE", "SPK_TEST_02_MALE"]
+  },
+  "shortcut_diagnostic_probes": {
+    "feature_exclusion_verified": true,
+    "task1_six_class": {
+      "chance_level": 0.1667,
+      "metadata_only_test_accuracy": 0.5200,
+      "strict_nuisance_acoustic_test_accuracy": 0.5267,
+      "spectral_phonetic_test_accuracy": 0.4156,
+      "neural_model_test_accuracy": 1.0000
+    },
+    "task2_four_target_only": {
+      "chance_level": 0.2500,
+      "metadata_only_test_accuracy": 0.5267,
+      "strict_nuisance_acoustic_test_accuracy": 0.5500,
+      "spectral_phonetic_test_accuracy": 0.5000,
+      "neural_model_test_accuracy": 1.0000
+    },
+    "task3_binary_target_present": {
+      "majority_baseline": 0.6667,
+      "balanced_prior_baseline": 0.5000,
+      "metadata_only_test_accuracy": 0.8022,
+      "strict_nuisance_acoustic_test_accuracy": 0.8089,
+      "spectral_phonetic_test_accuracy": 0.7156,
+      "neural_model_test_accuracy": 1.0000
+    },
+    "interpretation": "Nuisance and metadata probes achieve ~52% on 6-class classification primarily through SILENCE separation (100% correct, 75/75) and coarse active-speech envelope detection. On the 4-target keyword discrimination task, the strict nuisance probe achieves 55.00% overall accuracy with class-dependent performance (LEN: 69/75, PHAI: 39/75, TRAI: 34/75, XUONG: 23/75), indicating potential residual nuisance associations without establishing causality; descriptive subset accuracy on the 150 TRAI and PHAI ground-truth samples is 48.67% (73/150), with a conditional ratio of true TRAI among predicted TRAI on that subset of 50.75% (34/67) and full-task TRAI precision of 37.78% (34/90). The metadata probe outputs identical aggregate prediction counts ([30, 45, 0, 0]) for true TRAI and true PHAI. In contrast, TC-ResNet-14 achieves 100.00% accuracy on the frozen test set, demonstrating strong class separation on the tested synthetic distributions, though controlled causal phonetic interventions have not been conducted and validity on natural speech has not been established."
+  },
+  "extended_speaker_generalization": {
+    "newly_sampled_heldout_profiles": 24,
+    "heldout_clips_count": 288,
+    "overall_accuracy": 1.0000,
+    "macro_f1": 1.0000,
+    "wilson_score_95_ci": [0.9868, 1.0000],
+    "trai_phai_confusion": 0,
+    "unknown_false_alarms": 0,
+    "silence_false_alarms": 0
+  },
+  "extended_streaming_evaluation": {
+    "target_absent_streaming": {
+      "evaluated_duration_sec": 10800.0,
+      "evaluated_hours": 3.00,
+      "streams_count": 6,
+      "sliding_windows_evaluated": 107946,
+      "false_triggers_count": 0,
+      "false_triggers_per_hour": 0.0,
+      "poisson_rule_of_three_95_pct_upper_bound_fp_hr": 1.00
+    },
+    "target_present_streaming": {
+      "ground_truth_targets_count": 200,
+      "streams_count": 8,
+      "true_positives": 200,
+      "false_positives": 0,
+      "missed_targets": 0,
+      "recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "latency_stats": {
+        "mean_sec": 0.506,
+        "median_sec": 0.503,
+        "p90_sec": 0.600,
+        "p95_sec": 0.636,
+        "std_sec": 0.081
+      },
+      "per_keyword_recall": {
+        "LEN": {"total": 48, "detected": 48, "recall_pct": 100.0},
+        "PHAI": {"total": 48, "detected": 48, "recall_pct": 100.0},
+        "TRAI": {"total": 56, "detected": 56, "recall_pct": 100.0},
+        "XUONG": {"total": 48, "detected": 48, "recall_pct": 100.0}
+      }
+    },
+    "frozen_detector_configuration": {
+      "tau_on": 0.80,
+      "tau_off": 0.35,
+      "smoothing_frames": 3,
+      "min_consecutive_frames": 2,
+      "cooldown_sec": 0.600,
+      "window_size_samples": 16000,
+      "hop_size_samples": 1600
+    }
+  },
+  "factorial_counterfactual_study": {
+    "evaluated_matched_pairs": 50,
+    "correctly_distinguished_pairs": 50,
+    "pair_accuracy_pct": 100.0
+  },
+  "scientific_limitations": [
+    "Evaluations were conducted strictly within parametric synthetic speech synthesizer distributions.",
+    "Zero errors on synthetic benchmarks provide finite-sample bounds (<= 0.67% error on test set, <= 1.00 FP/hr streaming), but do not establish natural speech validity.",
+    "Lexical variation is limited to the defined target and distractor vocabulary; phonological dialect variation (Northern, Central, Southern Vietnamese accents) is unrepresented.",
+    "Official governance status remains strictly NOT_VALIDATED_ON_NATURAL_SPEECH."
+  ]
+}

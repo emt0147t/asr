@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-24T20:00:00+07:00",
+    "phase": "Phase 21 Provenance Audit",
+    "total_clips_audited": 8000,
+    "manifest_sha256": "bca9cb604d6b21668a70d4690297bffac25be935bd3843de3c3d3435dfb77806",
+    "split_policy_sha256": "24702bfd64b19457e75c7c7d08b60ec8a10321dc73e0e2496ae591b3d5dac1bb"
+  },
+  "provenance_summary": {
+    "source_type_breakdown": {
+      "ambient_silence": {
+        "count": 600,
+        "percentage": 7.5,
+        "splits": {
+          "train": 408,
+          "val": 96,
+          "test": 96
+        },
+        "labels": {
+          "REJECT": 600
+        },
+        "reject_subgroups": {
+          "silence_non_speech": 600
+        }
+      },
+      "conversation_fleurs": {
+        "count": 1000,
+        "percentage": 12.5,
+        "splits": {
+          "train": 680,
+          "val": 160,
+          "test": 160
+        },
+        "labels": {
+          "REJECT": 1000
+        },
+        "reject_subgroups": {
+          "conversation": 1000
+        }
+      },
+      "environmental_noise": {
+        "count": 800,
+        "percentage": 10.0,
+        "splits": {
+          "train": 544,
+          "val": 128,
+          "test": 128
+        },
+        "labels": {
+          "REJECT": 800
+        },
+        "reject_subgroups": {
+          "environmental_noise": 800
+        }
+      },
+      "noise_augmented": {
+        "count": 2800,
+        "percentage": 35.0,
+        "splits": {
+          "train": 1904,
+          "val": 448,
+          "test": 448
+        },
+        "labels": {
+          "TRAI": 700,
+          "PHAI": 700,
+          "LEN": 700,
+          "XUONG": 700
+        },
+        "reject_subgroups": {}
+      },
+      "noise_augmented_oov": {
+        "count": 1120,
+        "percentage": 14.0,
+        "splits": {
+          "train": 762,
+          "val": 179,
+          "test": 179
+        },
+        "labels": {
+          "REJECT": 1120
+        },
+        "reject_subgroups": {
+          "oov_word": 1120
+        }
+      },
+      "tts_synthetic_clean": {
+        "count": 1200,
+        "percentage": 15.0,
+        "splits": {
+          "train": 816,
+          "val": 192,
+          "test": 192
+        },
+        "labels": {
+          "TRAI": 300,
+          "PHAI": 300,
+          "LEN": 300,
+          "XUONG": 300
+        },
+        "reject_subgroups": {}
+      },
+      "tts_synthetic_oov_clean": {
+        "count": 480,
+        "percentage": 6.0,
+        "splits": {
+          "train": 326,
+          "val": 77,
+          "test": 77
+        },
+        "labels": {
+          "REJECT": 480
+        },
+        "reject_subgroups": {
+          "oov_word": 480
+        }
+      }
+    },
+    "external_datasets_referenced": [
+      {
+        "name": "FLEURS Vietnamese",
+        "type": "human speech (reading)",
+        "clips": 1000,
+        "license": "CC-BY-4.0"
+      },
+      {
+        "name": "Husein Microphone Noise",
+        "type": "environmental noise",
+        "clips": 800,
+        "license": "MIT / Public"
+      },
+      {
+        "name": "Synthetic Parametric Silence",
+        "type": "algorithmic acoustic noise",
+        "clips": 600,
+        "license": "Proprietary Generated"
+      }
+    ],
+    "synthetic_speech_clips": 5600
+  },
+  "diversity_analysis": {
+    "generator_diversity": {
+      "unique_tts_families": 1,
+      "tts_engine_name": "VieNeu-TTS v3 Turbo",
+      "engine_version": "3.8.3",
+      "finding": "Dataset v12 has ZERO TTS architecture diversity; all 5,600 synthetic speech clips were generated exclusively by VieNeu-TTS v3 Turbo."
+    },
+    "voice_diversity": {
+      "total_synthetic_voices": 32,
+      "split_counts": {
+        "test": 8,
+        "train": 20,
+        "val": 4
+      },
+      "train_voices": [
+        "Thái Sơn",
+        "Thanh Bình",
+        "Thanh",
+        "Đoan Trang",
+        "Minh Triết",
+        "Ngọc Huyền",
+        "Thiền Tâm Đức",
+        "Adam",
+        "Minh Đức",
+        "Ngọc Linh",
+        "Trúc Ly",
+        "Adam bựa",
+        "Mỹ Duyên",
+        "Hải Đăng",
+        "Minh",
+        "Quang Sơn",
+        "Xuân Vĩnh",
+        "Thục Đoan",
+        "Thiện Minh",
+        "Hải"
+      ],
+      "val_voices": [
+        "Phạm Tuyên",
+        "Thùy Dung",
+        "Ngọc Trân",
+        "Mai Anh"
+      ],
+      "test_voices": [
+        "Kim",
+        "Quốc Tuấn",
+        "Quỳnh Anh",
+        "Đức Trí",
+        "Quỳnh",
+        "Đức",
+        "Quốc",
+        "Kim Thanh"
+      ],
+      "zero_voice_leakage": true,
+      "finding": "Voice partition is strictly disjoint (17 train / 4 val / 4 test). However, all 25 preset voices of VieNeu-TTS v3 Turbo were exhausted across dataset v12."
+    },
+    "text_diversity": {
+      "positive_commands": [
+        "Lên",
+        "Xuống",
+        "Phải",
+        "Trái"
+      ],
+      "oov_train_lexemes_count": 63,
+      "oov_val_lexemes_count": 30,
+      "oov_test_unseen_lexemes_count": 31,
+      "oov_test_unseen_list": [
+        "chia sẻ",
+        "chào",
+        "cứu",
+        "ghế",
+        "gửi đi",
+        "hủy",
+        "khóa",
+        "không",
+        "làng",
+        "lá",
+        "lưu",
+        "lạc",
+        "nhận tin",
+        "nhập",
+        "pháo",
+        "phép",
+        "phóng",
+        "phở",
+        "thu",
+        "trà",
+        "trách",
+        "trưa",
+        "tìm kiếm",
+        "tải về",
+        "xuất bản",
+        "xích",
+        "xóa",
+        "xôi",
+        "xương",
+        "đăng nhập",
+        "được"
+      ],
+      "zero_oov_leakage": true,
+      "finding": "Target commands have zero lexical variation (exactly 4 canonical monosyllables). OOV confusers have 100 disjoint words across splits, but represent a bounded dictionary."
+    },
+    "acoustic_condition_diversity": {
+      "clean_clips": 2680,
+      "noisy_clips": 5320,
+      "snr_db_levels": {
+        "20.0": 793,
+        "15.0": 789,
+        "10.0": 780,
+        "5.0": 780,
+        "0.0": 778
+      },
+      "unique_noise_tracks": 52,
+      "finding": "Acoustic variation in dataset v12 is predominantly driven by additive noise at 5 discrete SNR levels (0, 5, 10, 15, 20 dB) from 40 mic-noise tracks."
+    },
+    "source_level_independence": {
+      "source_utterance_disjoint": true,
+      "finding": "Within the VieNeu-TTS v3 Turbo distribution, train/val/test splits maintain strict disjointness for voice presets, source IDs, OOV words, and noise tracks."
+    }
+  },
+  "critical_limitations_identified": [
+    "Dataset v12 was generated by a single TTS model (VieNeu-TTS v3 Turbo). Any claims of general synthetic robustness are strictly bounded to this single model family.",
+    "All 25 preset voices of VieNeu-TTS v3 Turbo were used in dataset v12; no unseen voice exists in the v3 Turbo engine.",
+    "To evaluate true generator-level generalization, an independent synthetic corpus MUST be generated using an alternative generator architecture (e.g., VieNeu v3 Nano) and previously unobserved synthetic voices."
+  ]
+}

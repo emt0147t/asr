@@ -1,0 +1,282 @@
+{
+  "report_type": "counterfactual_generator_audit",
+  "experiment_1_word_swap_fixed_nuisance": {
+    "description": "Target word variation under identical speaker, timing (onset=0.15s), duration (0.45s), gain (0.85), and room tone noise (25dB)",
+    "results": {
+      "TRAI": {
+        "sample_id": "diag_exp1_fixed_nuisance_trai",
+        "clip_rms": 0.155817,
+        "first_25ms_rms": 0.012026,
+        "body_first_25ms_peak": 0.85,
+        "spectral_centroid_hz": 1312.0,
+        "hf_energy_ratio": 0.008579
+      },
+      "PHAI": {
+        "sample_id": "diag_exp1_fixed_nuisance_phai",
+        "clip_rms": 0.084033,
+        "first_25ms_rms": 0.00767,
+        "body_first_25ms_peak": 0.736826,
+        "spectral_centroid_hz": 2952.0,
+        "hf_energy_ratio": 0.210533
+      },
+      "LEN": {
+        "sample_id": "diag_exp1_fixed_nuisance_len",
+        "clip_rms": 0.214522,
+        "first_25ms_rms": 0.016486,
+        "body_first_25ms_peak": 0.757442,
+        "spectral_centroid_hz": 907.2,
+        "hf_energy_ratio": 0.000272
+      },
+      "XUONG": {
+        "sample_id": "diag_exp1_fixed_nuisance_xuong",
+        "clip_rms": 0.154803,
+        "first_25ms_rms": 0.013342,
+        "body_first_25ms_peak": 0.704303,
+        "spectral_centroid_hz": 2629.3,
+        "hf_energy_ratio": 0.053051
+      }
+    }
+  },
+  "experiment_2_nuisance_sweeps": {
+    "noise_type_sweep": {
+      "TRAI": {
+        "room_tone": {
+          "clip_rms": 0.177755,
+          "spectral_centroid_hz": 1356.3,
+          "hf_energy_ratio": 0.007848
+        },
+        "dither": {
+          "clip_rms": 0.173362,
+          "spectral_centroid_hz": 1669.6,
+          "hf_energy_ratio": 0.012305
+        },
+        "hum": {
+          "clip_rms": 0.175882,
+          "spectral_centroid_hz": 1361.6,
+          "hf_energy_ratio": 0.007805
+        }
+      },
+      "PHAI": {
+        "room_tone": {
+          "clip_rms": 0.063423,
+          "spectral_centroid_hz": 2893.8,
+          "hf_energy_ratio": 0.229166
+        },
+        "dither": {
+          "clip_rms": 0.063925,
+          "spectral_centroid_hz": 2964.9,
+          "hf_energy_ratio": 0.232328
+        },
+        "hum": {
+          "clip_rms": 0.063131,
+          "spectral_centroid_hz": 2910.5,
+          "hf_energy_ratio": 0.228179
+        }
+      },
+      "LEN": {
+        "room_tone": {
+          "clip_rms": 0.209127,
+          "spectral_centroid_hz": 879.3,
+          "hf_energy_ratio": 0.000192
+        },
+        "dither": {
+          "clip_rms": 0.20834,
+          "spectral_centroid_hz": 1932.2,
+          "hf_energy_ratio": 0.004518
+        },
+        "hum": {
+          "clip_rms": 0.210526,
+          "spectral_centroid_hz": 885.6,
+          "hf_energy_ratio": 0.000189
+        }
+      },
+      "XUONG": {
+        "room_tone": {
+          "clip_rms": 0.173363,
+          "spectral_centroid_hz": 2445.7,
+          "hf_energy_ratio": 0.038482
+        },
+        "dither": {
+          "clip_rms": 0.168727,
+          "spectral_centroid_hz": 2531.8,
+          "hf_energy_ratio": 0.042929
+        },
+        "hum": {
+          "clip_rms": 0.175353,
+          "spectral_centroid_hz": 2485.2,
+          "hf_energy_ratio": 0.038286
+        }
+      }
+    },
+    "snr_sweep": {
+      "TRAI": {
+        "15dB": {
+          "first_25ms_rms": 0.048657,
+          "clip_rms": 0.173747,
+          "spectral_centroid_hz": 1167.6
+        },
+        "25dB": {
+          "first_25ms_rms": 0.016105,
+          "clip_rms": 0.176798,
+          "spectral_centroid_hz": 1227.1
+        },
+        "35dB": {
+          "first_25ms_rms": 0.005096,
+          "clip_rms": 0.17648,
+          "spectral_centroid_hz": 1241.0
+        }
+      },
+      "PHAI": {
+        "15dB": {
+          "first_25ms_rms": 0.020962,
+          "clip_rms": 0.077017,
+          "spectral_centroid_hz": 2544.4
+        },
+        "25dB": {
+          "first_25ms_rms": 0.006723,
+          "clip_rms": 0.075927,
+          "spectral_centroid_hz": 2638.7
+        },
+        "35dB": {
+          "first_25ms_rms": 0.002135,
+          "clip_rms": 0.076084,
+          "spectral_centroid_hz": 2660.9
+        }
+      },
+      "LEN": {
+        "15dB": {
+          "first_25ms_rms": 0.045184,
+          "clip_rms": 0.193545,
+          "spectral_centroid_hz": 788.8
+        },
+        "25dB": {
+          "first_25ms_rms": 0.015153,
+          "clip_rms": 0.200313,
+          "spectral_centroid_hz": 836.9
+        },
+        "35dB": {
+          "first_25ms_rms": 0.004885,
+          "clip_rms": 0.204003,
+          "spectral_centroid_hz": 858.1
+        }
+      },
+      "XUONG": {
+        "15dB": {
+          "first_25ms_rms": 0.039181,
+          "clip_rms": 0.157779,
+          "spectral_centroid_hz": 2338.0
+        },
+        "25dB": {
+          "first_25ms_rms": 0.012149,
+          "clip_rms": 0.150538,
+          "spectral_centroid_hz": 2486.8
+        },
+        "35dB": {
+          "first_25ms_rms": 0.003818,
+          "clip_rms": 0.149307,
+          "spectral_centroid_hz": 2517.6
+        }
+      }
+    },
+    "speaker_profile_sweep": {
+      "TRAI": {
+        "female_like": {
+          "spectral_centroid_hz": 1542.5,
+          "hf_energy_ratio": 0.011357,
+          "clip_rms": 0.156077
+        },
+        "neutral": {
+          "spectral_centroid_hz": 1402.9,
+          "hf_energy_ratio": 0.008598,
+          "clip_rms": 0.171622
+        },
+        "male_like": {
+          "spectral_centroid_hz": 1272.9,
+          "hf_energy_ratio": 0.008038,
+          "clip_rms": 0.142496
+        }
+      },
+      "PHAI": {
+        "female_like": {
+          "spectral_centroid_hz": 2833.3,
+          "hf_energy_ratio": 0.178762,
+          "clip_rms": 0.099133
+        },
+        "neutral": {
+          "spectral_centroid_hz": 2897.6,
+          "hf_energy_ratio": 0.217453,
+          "clip_rms": 0.082963
+        },
+        "male_like": {
+          "spectral_centroid_hz": 2981.9,
+          "hf_energy_ratio": 0.257782,
+          "clip_rms": 0.075972
+        }
+      },
+      "LEN": {
+        "female_like": {
+          "spectral_centroid_hz": 965.5,
+          "hf_energy_ratio": 0.000806,
+          "clip_rms": 0.206637
+        },
+        "neutral": {
+          "spectral_centroid_hz": 909.6,
+          "hf_energy_ratio": 0.00028,
+          "clip_rms": 0.206945
+        },
+        "male_like": {
+          "spectral_centroid_hz": 761.2,
+          "hf_energy_ratio": 8.4e-05,
+          "clip_rms": 0.167802
+        }
+      },
+      "XUONG": {
+        "female_like": {
+          "spectral_centroid_hz": 2474.5,
+          "hf_energy_ratio": 0.036797,
+          "clip_rms": 0.179554
+        },
+        "neutral": {
+          "spectral_centroid_hz": 2706.8,
+          "hf_energy_ratio": 0.061036,
+          "clip_rms": 0.134315
+        },
+        "male_like": {
+          "spectral_centroid_hz": 2718.6,
+          "hf_energy_ratio": 0.066946,
+          "clip_rms": 0.126738
+        }
+      }
+    }
+  },
+  "experiment_3_fixed_noise_floor_test": {
+    "description": "Proves that the class correlation of first-25ms background energy is an artifact of SNR-relative scaling coupled with speech RMS, rather than an inherent feature.",
+    "results": {
+      "TRAI": {
+        "standard_generator_first_25ms_rms": 0.01425,
+        "fixed_floor_first_25ms_rms": 0.00518,
+        "ratio_std_to_fixed": 2.7507
+      },
+      "PHAI": {
+        "standard_generator_first_25ms_rms": 0.008736,
+        "fixed_floor_first_25ms_rms": 0.00518,
+        "ratio_std_to_fixed": 1.6864
+      },
+      "LEN": {
+        "standard_generator_first_25ms_rms": 0.016898,
+        "fixed_floor_first_25ms_rms": 0.00518,
+        "ratio_std_to_fixed": 3.2619
+      },
+      "XUONG": {
+        "standard_generator_first_25ms_rms": 0.012707,
+        "fixed_floor_first_25ms_rms": 0.00518,
+        "ratio_std_to_fixed": 2.453
+      }
+    }
+  },
+  "counterfactual_conclusions": {
+    "nuisance_robustness": "Phonetic contrast between classes (high HF ratio for PHAI, stop burst for TRAI, lateral resonance for LEN) persists robustly across all noise types, SNRs, and speaker profiles.",
+    "artifact_confirmed": "PHAI consistently has ~50-60% lower clip RMS under identical peak target due to the high crest factor of unvoiced frication noise. This lower speech RMS drives a lower pre-onset background RMS under SNR-relative mixing.",
+    "generator_recommendation": "Decouple background noise scaling from utterance peak crest factor by either: (a) setting background floor to an absolute dBFS range independent of speech RMS, or (b) normalizing speech by vowel body RMS rather than overall peak amplitude."
+  }
+}

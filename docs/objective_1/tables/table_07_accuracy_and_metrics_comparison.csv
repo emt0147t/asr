@@ -1,0 +1,7 @@
+model_configuration,evaluation_split,test_accuracy_pct,six_class_macro_f1,trai_recall_pct,phai_recall_pct,len_recall_pct,xuong_recall_pct,unknown_recall_pct,silence_recall_pct,northern_accuracy_pct,northern_trai_recall_pct,audit_verdict
+Phase 2 Baseline (Historical),test_manifest.csv (5 classes),97.52,0.7812,69.44,100.0,100.0,100.0,100.0,0.0,79.17,16.67,"Defective: SILENCE had 0 test support; true 6-class F1 was 0.7812, not 0.9374"
+Phase 2 Baseline (Reproduced on v2),"test_manifest_v2.csv (6 classes, 534 samples)",97.75,0.9466,69.44,100.0,100.0,100.0,98.33,100.0,79.17,16.67,Reproduced: 11 of 12 Northern TRAI misclassified as PHAI
+Baseline Retrained (Baseline Aug),"test_manifest_v2.csv (6 classes, 534 samples)",96.25,0.9381,75.0,94.44,100.0,97.22,97.0,97.78,81.25,25.0,Modest TRAI gain; slight regression on PHAI
+Baseline Retrained (Advanced Aug),"test_manifest_v2.csv (6 classes, 534 samples)",95.13,0.8857,58.33,75.0,97.22,97.22,97.33,98.89,68.75,8.33,Over-regularized 2D-CNN; severe degradation on TRAI/PHAI
+Temporal-CNN (Advanced Aug),"test_manifest_v2.csv (6 classes, 534 samples)",95.88,0.9205,63.89,94.44,100.0,97.22,97.67,98.89,75.0,8.33,Improved noise robustness; failed to resolve Northern TRAI
+TC-ResNet-14 (Advanced Aug) [Champion],"test_manifest_v2.csv (6 classes, 534 samples)",96.63,0.9402,75.0,100.0,100.0,94.44,97.67,100.0,79.17,25.0,"Champion: Perfect PHAI, LEN, SILENCE; Northern TRAI recall capped at 25.0% by synthetic data"

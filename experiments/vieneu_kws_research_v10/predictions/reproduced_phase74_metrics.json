@@ -1,0 +1,90 @@
+{
+  "dataset_name": "Phase 74 Fresh Locked Synthetic Test Set",
+  "split_manifest": "experiments/vieneu_kws_research_v8/data/splits/test_manifest.csv",
+  "manifest_sha256": "79e9aa0b20bb921d348b55101af78157276cb56b1059fabb129a0d745d1da2e4",
+  "total_clips": 720,
+  "target_command_clips": 160,
+  "non_target_clips": 560,
+  "speaker_voices": [
+    "Kim Thanh",
+    "Quốc Tuấn",
+    "Quỳnh Anh",
+    "Đức Trí"
+  ],
+  "text_prompts_type": "80 brand-new unseen texts (0 overlap with history)",
+  "cross_seed_aggregate": {
+    "mean_command_recall": 0.9979,
+    "std_command_recall": 0.0036,
+    "mean_false_acceptance_rate": 0.0203,
+    "std_false_acceptance_rate": 0.0057,
+    "mean_5class_accuracy": 0.9838,
+    "std_5class_accuracy": 0.004,
+    "mean_cpu_latency_ms": 1.73,
+    "std_cpu_latency_ms": 0.03
+  },
+  "per_seed": {
+    "seed42": {
+      "macro_command_recall": 1.0,
+      "recall_95ci": [
+        0.9766,
+        1.0
+      ],
+      "non_target_far": 0.0268,
+      "far_95ci": [
+        0.0163,
+        0.0437
+      ],
+      "raw_false_acceptances": 15,
+      "non_target_denominator": 560,
+      "5class_accuracy": 0.9792,
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      }
+    },
+    "seed43": {
+      "macro_command_recall": 0.9938,
+      "recall_95ci": [
+        0.9655,
+        0.9989
+      ],
+      "non_target_far": 0.0161,
+      "far_95ci": [
+        0.0085,
+        0.0303
+      ],
+      "raw_false_acceptances": 9,
+      "non_target_denominator": 560,
+      "5class_accuracy": 0.9861,
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 0.975,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      }
+    },
+    "seed44": {
+      "macro_command_recall": 1.0,
+      "recall_95ci": [
+        0.9766,
+        1.0
+      ],
+      "non_target_far": 0.0179,
+      "far_95ci": [
+        0.0097,
+        0.0326
+      ],
+      "raw_false_acceptances": 10,
+      "non_target_denominator": 560,
+      "5class_accuracy": 0.9861,
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      }
+    }
+  }
+}

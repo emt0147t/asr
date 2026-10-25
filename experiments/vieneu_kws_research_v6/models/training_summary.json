@@ -1,0 +1,84 @@
+{
+  "variant_b_standard_bounded_cnn": {
+    "seed42": {
+      "epoch": 24,
+      "val_acc": 0.7277777777777777,
+      "val_cmd_recall": 0.4125,
+      "val_nt_far": 0.02,
+      "composite_score": 0.6395,
+      "per_cmd_recall": {
+        "TRAI": 0.55,
+        "PHAI": 0.3,
+        "LEN": 0.025,
+        "XUONG": 0.775
+      }
+    },
+    "seed43": {
+      "epoch": 25,
+      "val_acc": 0.8416666666666667,
+      "val_cmd_recall": 0.65625,
+      "val_nt_far": 0.01,
+      "composite_score": 0.78975,
+      "per_cmd_recall": {
+        "TRAI": 0.25,
+        "PHAI": 0.85,
+        "LEN": 0.675,
+        "XUONG": 0.85
+      }
+    },
+    "seed44": {
+      "epoch": 25,
+      "val_acc": 0.8472222222222222,
+      "val_cmd_recall": 0.74375,
+      "val_nt_far": 0.07,
+      "composite_score": 0.8182499999999999,
+      "per_cmd_recall": {
+        "TRAI": 0.35,
+        "PHAI": 0.85,
+        "LEN": 0.925,
+        "XUONG": 0.85
+      }
+    }
+  },
+  "variant_c_hard_negative_ablation": {
+    "seed42": {
+      "epoch": 23,
+      "val_acc": 0.7638888888888888,
+      "val_cmd_recall": 0.5125,
+      "val_nt_far": 0.035,
+      "composite_score": 0.6935,
+      "per_cmd_recall": {
+        "TRAI": 0.575,
+        "PHAI": 0.475,
+        "LEN": 0.15,
+        "XUONG": 0.85
+      }
+    },
+    "seed43": {
+      "epoch": 25,
+      "val_acc": 0.8916666666666667,
+      "val_cmd_recall": 0.81875,
+      "val_nt_far": 0.05,
+      "composite_score": 0.87125,
+      "per_cmd_recall": {
+        "TRAI": 0.525,
+        "PHAI": 0.85,
+        "LEN": 1.0,
+        "XUONG": 0.9
+      }
+    },
+    "seed44": {
+      "epoch": 19,
+      "val_acc": 0.8027777777777778,
+      "val_cmd_recall": 0.74375,
+      "val_nt_far": 0.15,
+      "composite_score": 0.78625,
+      "per_cmd_recall": {
+        "TRAI": 0.675,
+        "PHAI": 0.525,
+        "LEN": 0.825,
+        "XUONG": 0.95
+      }
+    }
+  }
+}

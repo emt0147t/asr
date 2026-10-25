@@ -1,0 +1,484 @@
+{
+  "metrics_reproduced": true,
+  "mismatches": [],
+  "recomputed_metrics": {
+    "1_stage1_cnn_baseline": {
+      "seed42": {
+        "cmd_recall": 0.9187,
+        "far": 0.1536,
+        "tnr": 0.8464,
+        "accuracy": 0.8625,
+        "per_kw_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.9,
+          "LEN": 0.85,
+          "XUONG": 1.0
+        }
+      },
+      "seed43": {
+        "cmd_recall": 0.975,
+        "far": 0.2036,
+        "tnr": 0.7964,
+        "accuracy": 0.8361,
+        "per_kw_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 0.925,
+          "XUONG": 1.0
+        }
+      },
+      "seed44": {
+        "cmd_recall": 0.9563,
+        "far": 0.175,
+        "tnr": 0.825,
+        "accuracy": 0.8542,
+        "per_kw_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.9,
+          "LEN": 0.95,
+          "XUONG": 1.0
+        }
+      }
+    },
+    "2_cascade_v1_bounded": {
+      "seed42": {
+        "cmd_recall": 0.9812,
+        "far": 0.1268,
+        "tnr": 0.8732,
+        "accuracy": 0.8972,
+        "per_kw_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 0.975,
+          "XUONG": 0.95
+        }
+      },
+      "seed43": {
+        "cmd_recall": 0.9563,
+        "far": 0.1357,
+        "tnr": 0.8643,
+        "accuracy": 0.8847,
+        "per_kw_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 0.925,
+          "XUONG": 0.925
+        }
+      },
+      "seed44": {
+        "cmd_recall": 0.9375,
+        "far": 0.1839,
+        "tnr": 0.8161,
+        "accuracy": 0.8431,
+        "per_kw_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 0.825,
+          "XUONG": 0.925
+        }
+      }
+    },
+    "3_bounded_kws_net": {
+      "seed42": {
+        "cmd_recall": 0.9,
+        "far": 0.2357,
+        "tnr": 0.7643,
+        "accuracy": 0.7944,
+        "per_kw_recall": {
+          "TRAI": 0.775,
+          "PHAI": 0.825,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      "seed43": {
+        "cmd_recall": 0.8375,
+        "far": 0.25,
+        "tnr": 0.75,
+        "accuracy": 0.7694,
+        "per_kw_recall": {
+          "TRAI": 0.425,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      "seed44": {
+        "cmd_recall": 0.8187,
+        "far": 0.1161,
+        "tnr": 0.8839,
+        "accuracy": 0.8694,
+        "per_kw_recall": {
+          "TRAI": 0.55,
+          "PHAI": 0.8,
+          "LEN": 0.925,
+          "XUONG": 1.0
+        }
+      }
+    }
+  },
+  "confusion_matrices": {
+    "1_stage1_cnn_baseline": {
+      "seed42": {
+        "TRAI": {
+          "TRAI": 37,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 3
+        },
+        "PHAI": {
+          "TRAI": 0,
+          "PHAI": 36,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 4
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 34,
+          "XUONG": 0,
+          "REJECT": 6
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 40,
+          "REJECT": 0
+        },
+        "REJECT": {
+          "TRAI": 31,
+          "PHAI": 12,
+          "LEN": 25,
+          "XUONG": 18,
+          "REJECT": 474
+        }
+      },
+      "seed43": {
+        "TRAI": {
+          "TRAI": 39,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 1
+        },
+        "PHAI": {
+          "TRAI": 0,
+          "PHAI": 40,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 37,
+          "XUONG": 0,
+          "REJECT": 3
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 40,
+          "REJECT": 0
+        },
+        "REJECT": {
+          "TRAI": 34,
+          "PHAI": 15,
+          "LEN": 31,
+          "XUONG": 34,
+          "REJECT": 446
+        }
+      },
+      "seed44": {
+        "TRAI": {
+          "TRAI": 39,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 1
+        },
+        "PHAI": {
+          "TRAI": 0,
+          "PHAI": 36,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 4
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 38,
+          "XUONG": 0,
+          "REJECT": 2
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 40,
+          "REJECT": 0
+        },
+        "REJECT": {
+          "TRAI": 24,
+          "PHAI": 10,
+          "LEN": 45,
+          "XUONG": 19,
+          "REJECT": 462
+        }
+      }
+    },
+    "2_cascade_v1_bounded": {
+      "seed42": {
+        "TRAI": {
+          "TRAI": 40,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "PHAI": {
+          "TRAI": 0,
+          "PHAI": 40,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 39,
+          "XUONG": 0,
+          "REJECT": 1
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 38,
+          "REJECT": 2
+        },
+        "REJECT": {
+          "TRAI": 26,
+          "PHAI": 13,
+          "LEN": 23,
+          "XUONG": 9,
+          "REJECT": 489
+        }
+      },
+      "seed43": {
+        "TRAI": {
+          "TRAI": 39,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 1
+        },
+        "PHAI": {
+          "TRAI": 0,
+          "PHAI": 40,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 37,
+          "XUONG": 0,
+          "REJECT": 3
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 37,
+          "REJECT": 3
+        },
+        "REJECT": {
+          "TRAI": 28,
+          "PHAI": 16,
+          "LEN": 20,
+          "XUONG": 12,
+          "REJECT": 484
+        }
+      },
+      "seed44": {
+        "TRAI": {
+          "TRAI": 40,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "PHAI": {
+          "TRAI": 0,
+          "PHAI": 40,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 33,
+          "XUONG": 0,
+          "REJECT": 7
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 37,
+          "REJECT": 3
+        },
+        "REJECT": {
+          "TRAI": 35,
+          "PHAI": 22,
+          "LEN": 31,
+          "XUONG": 15,
+          "REJECT": 457
+        }
+      }
+    },
+    "3_bounded_kws_net": {
+      "seed42": {
+        "TRAI": {
+          "TRAI": 31,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 9
+        },
+        "PHAI": {
+          "TRAI": 2,
+          "PHAI": 33,
+          "LEN": 0,
+          "XUONG": 1,
+          "REJECT": 4
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 40,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 40,
+          "REJECT": 0
+        },
+        "REJECT": {
+          "TRAI": 13,
+          "PHAI": 24,
+          "LEN": 74,
+          "XUONG": 21,
+          "REJECT": 428
+        }
+      },
+      "seed43": {
+        "TRAI": {
+          "TRAI": 17,
+          "PHAI": 18,
+          "LEN": 0,
+          "XUONG": 1,
+          "REJECT": 4
+        },
+        "PHAI": {
+          "TRAI": 3,
+          "PHAI": 37,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 40,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 40,
+          "REJECT": 0
+        },
+        "REJECT": {
+          "TRAI": 34,
+          "PHAI": 17,
+          "LEN": 69,
+          "XUONG": 20,
+          "REJECT": 420
+        }
+      },
+      "seed44": {
+        "TRAI": {
+          "TRAI": 22,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 18
+        },
+        "PHAI": {
+          "TRAI": 0,
+          "PHAI": 32,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 8
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 37,
+          "XUONG": 0,
+          "REJECT": 3
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 40,
+          "REJECT": 0
+        },
+        "REJECT": {
+          "TRAI": 6,
+          "PHAI": 13,
+          "LEN": 28,
+          "XUONG": 18,
+          "REJECT": 495
+        }
+      }
+    }
+  },
+  "cpu_latency_benchmark": {
+    "1_stage1_cnn": {
+      "mean_ms": 1.41,
+      "median_ms": 1.34,
+      "p90_ms": 1.65,
+      "min_ms": 1.19,
+      "max_ms": 3.15
+    },
+    "2_cascade_v1": {
+      "mean_ms": 4.89,
+      "median_ms": 4.71,
+      "p90_ms": 5.82,
+      "min_ms": 4.2,
+      "max_ms": 7.1
+    },
+    "3_bounded_kws_net": {
+      "mean_ms": 2.08,
+      "median_ms": 1.94,
+      "p90_ms": 2.52,
+      "min_ms": 1.69,
+      "max_ms": 3.14
+    }
+  }
+}

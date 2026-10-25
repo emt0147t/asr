@@ -1,0 +1,1943 @@
+{
+  "Arm A (Control)": {
+    "arm_name": "Arm A (Control)",
+    "param_count": 272934,
+    "ckpt_size_kb": 1095.44921875,
+    "partitions": {
+      "Validation Partition (SPK 015-017, 216 clips)": {
+        "partition_name": "Validation Partition (SPK 015-017, 216 clips)",
+        "sample_count": 216,
+        "overall_accuracy": 0.8287037037037037,
+        "macro_f1": 0.7997927914781847,
+        "precision": [
+          1.0,
+          0.6792452830188679,
+          0.6792452830188679,
+          1.0,
+          0.9230769230769231,
+          1.0
+        ],
+        "recall": [
+          0.2222222222222222,
+          1.0,
+          1.0,
+          0.75,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.36363636363636365,
+          0.8089887640449438,
+          0.8089887640449438,
+          0.8571428571428571,
+          0.96,
+          1.0
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          36,
+          36
+        ],
+        "confusion_matrix": [
+          [
+            8,
+            17,
+            8,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            27,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            36,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            36
+          ]
+        ],
+        "command_misses": {
+          "target_total": 144,
+          "target_correct": 107,
+          "target_miss_count": 37,
+          "target_miss_rate_pct": 25.694444444444443
+        },
+        "false_activations": {
+          "unknown_total": 36,
+          "unknown_fa_count": 0,
+          "unknown_fa_rate_pct": 0.0,
+          "silence_total": 36,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 36,
+          "trai_recall": 0.2222222222222222,
+          "trai_as_phai": 17,
+          "phai_total": 36,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 0.4369180551293539,
+          "p50": 0.4372000039438717,
+          "p90": 0.4846500014537014,
+          "p99": 0.6146450083178933
+        },
+        "latency_model_ms": {
+          "mean": 1.0177578707818478,
+          "p50": 0.9752499972819351,
+          "p90": 1.1267999943811446,
+          "p99": 1.4901849994203076
+        },
+        "latency_e2e_ms": {
+          "mean": 1.4687699080645364,
+          "p50": 1.4287500016507693,
+          "p90": 1.608500002475921,
+          "p99": 2.014190000772942
+        }
+      },
+      "Historical Test Holdout (SPK 018-020, 216 clips [Diagnostic])": {
+        "partition_name": "Historical Test Holdout (SPK 018-020, 216 clips [Diagnostic])",
+        "sample_count": 216,
+        "overall_accuracy": 0.9444444444444444,
+        "macro_f1": 0.9428571428571427,
+        "precision": [
+          1.0,
+          0.75,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.6666666666666666,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.8,
+          0.8571428571428571,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          36,
+          36
+        ],
+        "confusion_matrix": [
+          [
+            24,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            36,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            36,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            36
+          ]
+        ],
+        "command_misses": {
+          "target_total": 144,
+          "target_correct": 132,
+          "target_miss_count": 12,
+          "target_miss_rate_pct": 8.333333333333332
+        },
+        "false_activations": {
+          "unknown_total": 36,
+          "unknown_fa_count": 0,
+          "unknown_fa_rate_pct": 0.0,
+          "silence_total": 36,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 36,
+          "trai_recall": 0.6666666666666666,
+          "trai_as_phai": 12,
+          "phai_total": 36,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 1.0339643511003858,
+          "p50": 0.7556000055046752,
+          "p90": 1.5241500004776753,
+          "p99": 6.766354998399021
+        },
+        "latency_model_ms": {
+          "mean": 1.7359537036504156,
+          "p50": 1.4043499904801138,
+          "p90": 2.4996499996632338,
+          "p99": 7.239969996589932
+        },
+        "latency_e2e_ms": {
+          "mean": 2.8300189806031995,
+          "p50": 2.2131999940029345,
+          "p90": 4.363599997304846,
+          "p99": 9.859149994736072
+        }
+      },
+      "V2 Fresh Holdout (SPK 021-025, 300 clips [Diagnostic])": {
+        "partition_name": "V2 Fresh Holdout (SPK 021-025, 300 clips [Diagnostic])",
+        "sample_count": 300,
+        "overall_accuracy": 0.9366666666666666,
+        "macro_f1": 0.9364649648620599,
+        "precision": [
+          0.8863636363636364,
+          0.8035714285714286,
+          0.9433962264150944,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.78,
+          0.9,
+          1.0,
+          0.94,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.8297872340425532,
+          0.8490566037735849,
+          0.970873786407767,
+          0.9690721649484536,
+          1.0,
+          1.0
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "confusion_matrix": [
+          [
+            39,
+            11,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            45,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            47,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "command_misses": {
+          "target_total": 200,
+          "target_correct": 181,
+          "target_miss_count": 19,
+          "target_miss_rate_pct": 9.5
+        },
+        "false_activations": {
+          "unknown_total": 50,
+          "unknown_fa_count": 0,
+          "unknown_fa_rate_pct": 0.0,
+          "silence_total": 50,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 50,
+          "trai_recall": 0.78,
+          "trai_as_phai": 11,
+          "phai_total": 50,
+          "phai_recall": 0.9,
+          "phai_as_trai": 5
+        },
+        "latency_feat_ms": {
+          "mean": 0.7519303336933566,
+          "p50": 0.6559999965247698,
+          "p90": 1.0577199893305078,
+          "p99": 2.124331995146337
+        },
+        "latency_model_ms": {
+          "mean": 1.3781809997938883,
+          "p50": 1.250850000360515,
+          "p90": 1.8981599918333818,
+          "p99": 3.4811970042937808
+        },
+        "latency_e2e_ms": {
+          "mean": 2.1763530004924783,
+          "p50": 1.9611500028986484,
+          "p90": 3.063589992234484,
+          "p99": 5.816864992229966
+        }
+      },
+      "V3 Fresh Holdout (SPK 026-030, 300 clips [Diagnostic])": {
+        "partition_name": "V3 Fresh Holdout (SPK 026-030, 300 clips [Diagnostic])",
+        "sample_count": 300,
+        "overall_accuracy": 0.94,
+        "macro_f1": 0.9399038461538461,
+        "precision": [
+          0.7962962962962963,
+          0.8478260869565217,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.86,
+          0.78,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.8269230769230769,
+          0.8125,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "confusion_matrix": [
+          [
+            43,
+            7,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            39,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "command_misses": {
+          "target_total": 200,
+          "target_correct": 182,
+          "target_miss_count": 18,
+          "target_miss_rate_pct": 9.0
+        },
+        "false_activations": {
+          "unknown_total": 50,
+          "unknown_fa_count": 0,
+          "unknown_fa_rate_pct": 0.0,
+          "silence_total": 50,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 50,
+          "trai_recall": 0.86,
+          "trai_as_phai": 7,
+          "phai_total": 50,
+          "phai_recall": 0.78,
+          "phai_as_trai": 11
+        },
+        "latency_feat_ms": {
+          "mean": 0.783575999327392,
+          "p50": 0.7055000023683533,
+          "p90": 1.05845999205485,
+          "p99": 2.050779003329803
+        },
+        "latency_model_ms": {
+          "mean": 1.465510666409197,
+          "p50": 1.2999500031583011,
+          "p90": 1.862550010264386,
+          "p99": 4.56350700755137
+        },
+        "latency_e2e_ms": {
+          "mean": 2.2975743335458296,
+          "p50": 2.0580499913194217,
+          "p90": 2.9221800112281935,
+          "p99": 6.830175997893091
+        }
+      },
+      "V4 Fresh Holdout (SPK 031-035, 300 clips [Untouched])": {
+        "partition_name": "V4 Fresh Holdout (SPK 031-035, 300 clips [Untouched])",
+        "sample_count": 300,
+        "overall_accuracy": 0.8666666666666667,
+        "macro_f1": 0.8543095547127515,
+        "precision": [
+          0.7083333333333334,
+          0.9777777777777777,
+          0.9615384615384616,
+          1.0,
+          0.620253164556962,
+          1.0
+        ],
+        "recall": [
+          0.34,
+          0.88,
+          1.0,
+          1.0,
+          0.98,
+          1.0
+        ],
+        "f1": [
+          0.4594594594594595,
+          0.9263157894736842,
+          0.9803921568627451,
+          1.0,
+          0.7596899224806202,
+          1.0
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "confusion_matrix": [
+          [
+            17,
+            1,
+            2,
+            0,
+            30,
+            0
+          ],
+          [
+            6,
+            44,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            49,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "command_misses": {
+          "target_total": 200,
+          "target_correct": 161,
+          "target_miss_count": 39,
+          "target_miss_rate_pct": 19.5
+        },
+        "false_activations": {
+          "unknown_total": 50,
+          "unknown_fa_count": 1,
+          "unknown_fa_rate_pct": 2.0,
+          "silence_total": 50,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 50,
+          "trai_recall": 0.34,
+          "trai_as_phai": 1,
+          "phai_total": 50,
+          "phai_recall": 0.88,
+          "phai_as_trai": 6
+        },
+        "latency_feat_ms": {
+          "mean": 0.5867253333174934,
+          "p50": 0.5276499941828661,
+          "p90": 0.7061500029521995,
+          "p99": 1.289070991915649
+        },
+        "latency_model_ms": {
+          "mean": 1.2544843333307654,
+          "p50": 1.151949996710755,
+          "p90": 1.5804899929207752,
+          "p99": 2.4818720053008287
+        },
+        "latency_e2e_ms": {
+          "mean": 1.8624643328560826,
+          "p50": 1.7098499884014018,
+          "p90": 2.294640000036453,
+          "p99": 3.8036770018516104
+        }
+      }
+    }
+  },
+  "Arm B (Onset-Aware, No Resample)": {
+    "arm_name": "Arm B (Onset-Aware, No Resample)",
+    "param_count": 272934,
+    "ckpt_size_kb": 1096.2734375,
+    "partitions": {
+      "Validation Partition (SPK 015-017, 216 clips)": {
+        "partition_name": "Validation Partition (SPK 015-017, 216 clips)",
+        "sample_count": 216,
+        "overall_accuracy": 1.0,
+        "macro_f1": 1.0,
+        "precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          36,
+          36
+        ],
+        "confusion_matrix": [
+          [
+            36,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            36,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            36,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            36
+          ]
+        ],
+        "command_misses": {
+          "target_total": 144,
+          "target_correct": 144,
+          "target_miss_count": 0,
+          "target_miss_rate_pct": 0.0
+        },
+        "false_activations": {
+          "unknown_total": 36,
+          "unknown_fa_count": 0,
+          "unknown_fa_rate_pct": 0.0,
+          "silence_total": 36,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 36,
+          "trai_recall": 1.0,
+          "trai_as_phai": 0,
+          "phai_total": 36,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 0.5532245371863677,
+          "p50": 0.530650002474431,
+          "p90": 0.64744999690447,
+          "p99": 0.7545350090367718
+        },
+        "latency_model_ms": {
+          "mean": 1.2171259260395784,
+          "p50": 1.1473499980638735,
+          "p90": 1.3706499958061613,
+          "p99": 2.0760500017786394
+        },
+        "latency_e2e_ms": {
+          "mean": 1.789224073676181,
+          "p50": 1.695550003205426,
+          "p90": 1.9991000008303672,
+          "p99": 3.221460000349903
+        }
+      },
+      "Historical Test Holdout (SPK 018-020, 216 clips [Diagnostic])": {
+        "partition_name": "Historical Test Holdout (SPK 018-020, 216 clips [Diagnostic])",
+        "sample_count": 216,
+        "overall_accuracy": 0.6944444444444444,
+        "macro_f1": 0.6097105508870214,
+        "precision": [
+          0.0,
+          0.5,
+          0.5454545454545454,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.0,
+          1.0,
+          1.0,
+          0.16666666666666666,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.0,
+          0.6666666666666666,
+          0.7058823529411765,
+          0.2857142857142857,
+          1.0,
+          1.0
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          36,
+          36
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            30,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            36,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            36
+          ]
+        ],
+        "command_misses": {
+          "target_total": 144,
+          "target_correct": 78,
+          "target_miss_count": 66,
+          "target_miss_rate_pct": 45.83333333333333
+        },
+        "false_activations": {
+          "unknown_total": 36,
+          "unknown_fa_count": 0,
+          "unknown_fa_rate_pct": 0.0,
+          "silence_total": 36,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 36,
+          "trai_recall": 0.0,
+          "trai_as_phai": 36,
+          "phai_total": 36,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 0.5210407403797878,
+          "p50": 0.5065000004833564,
+          "p90": 0.5757499966421165,
+          "p99": 0.6846799959021155
+        },
+        "latency_model_ms": {
+          "mean": 1.1448055554663168,
+          "p50": 1.1176499974681064,
+          "p90": 1.2682999949902296,
+          "p99": 1.4636099993367677
+        },
+        "latency_e2e_ms": {
+          "mean": 1.683087500808782,
+          "p50": 1.6456000012112781,
+          "p90": 1.858449999417644,
+          "p99": 2.028990002872888
+        }
+      },
+      "V2 Fresh Holdout (SPK 021-025, 300 clips [Diagnostic])": {
+        "partition_name": "V2 Fresh Holdout (SPK 021-025, 300 clips [Diagnostic])",
+        "sample_count": 300,
+        "overall_accuracy": 0.8333333333333334,
+        "macro_f1": 0.7777777777777777,
+        "precision": [
+          0.0,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.0,
+          0.6666666666666666,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "command_misses": {
+          "target_total": 200,
+          "target_correct": 150,
+          "target_miss_count": 50,
+          "target_miss_rate_pct": 25.0
+        },
+        "false_activations": {
+          "unknown_total": 50,
+          "unknown_fa_count": 0,
+          "unknown_fa_rate_pct": 0.0,
+          "silence_total": 50,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 50,
+          "trai_recall": 0.0,
+          "trai_as_phai": 50,
+          "phai_total": 50,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 0.520277000129378,
+          "p50": 0.5036500078858808,
+          "p90": 0.5869499960681426,
+          "p99": 0.765906995802652
+        },
+        "latency_model_ms": {
+          "mean": 1.1628203332171931,
+          "p50": 1.104700000723824,
+          "p90": 1.3515299986465834,
+          "p99": 1.5986649873957497
+        },
+        "latency_e2e_ms": {
+          "mean": 1.6999803329720937,
+          "p50": 1.629599995794706,
+          "p90": 1.9454199937172236,
+          "p99": 2.298023987677879
+        }
+      },
+      "V3 Fresh Holdout (SPK 026-030, 300 clips [Diagnostic])": {
+        "partition_name": "V3 Fresh Holdout (SPK 026-030, 300 clips [Diagnostic])",
+        "sample_count": 300,
+        "overall_accuracy": 0.8333333333333334,
+        "macro_f1": 0.7777777777777777,
+        "precision": [
+          0.0,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.0,
+          0.6666666666666666,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "command_misses": {
+          "target_total": 200,
+          "target_correct": 150,
+          "target_miss_count": 50,
+          "target_miss_rate_pct": 25.0
+        },
+        "false_activations": {
+          "unknown_total": 50,
+          "unknown_fa_count": 0,
+          "unknown_fa_rate_pct": 0.0,
+          "silence_total": 50,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 50,
+          "trai_recall": 0.0,
+          "trai_as_phai": 50,
+          "phai_total": 50,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 0.6065959999978077,
+          "p50": 0.5031000036979094,
+          "p90": 0.6241000053705649,
+          "p99": 2.0425529935164253
+        },
+        "latency_model_ms": {
+          "mean": 1.3562973330166035,
+          "p50": 1.0933000012300909,
+          "p90": 1.4014200001838624,
+          "p99": 5.1248670007043975
+        },
+        "latency_e2e_ms": {
+          "mean": 1.9821720001345966,
+          "p50": 1.6158499929588288,
+          "p90": 2.085140009876341,
+          "p99": 6.301080999837707
+        }
+      },
+      "V4 Fresh Holdout (SPK 031-035, 300 clips [Untouched])": {
+        "partition_name": "V4 Fresh Holdout (SPK 031-035, 300 clips [Untouched])",
+        "sample_count": 300,
+        "overall_accuracy": 0.9933333333333333,
+        "macro_f1": 0.9933306655995732,
+        "precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9615384615384616,
+          1.0
+        ],
+        "recall": [
+          0.96,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.9795918367346939,
+          1.0,
+          1.0,
+          1.0,
+          0.9803921568627451,
+          1.0
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "confusion_matrix": [
+          [
+            48,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            50,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "command_misses": {
+          "target_total": 200,
+          "target_correct": 198,
+          "target_miss_count": 2,
+          "target_miss_rate_pct": 1.0
+        },
+        "false_activations": {
+          "unknown_total": 50,
+          "unknown_fa_count": 0,
+          "unknown_fa_rate_pct": 0.0,
+          "silence_total": 50,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 50,
+          "trai_recall": 0.96,
+          "trai_as_phai": 0,
+          "phai_total": 50,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 0.500653333341082,
+          "p50": 0.4755500049213879,
+          "p90": 0.5708399956347421,
+          "p99": 0.9524899997632013
+        },
+        "latency_model_ms": {
+          "mean": 1.1206036666893244,
+          "p50": 1.0612000041874126,
+          "p90": 1.239390001865104,
+          "p99": 1.7466400105331554
+        },
+        "latency_e2e_ms": {
+          "mean": 1.6378223335292812,
+          "p50": 1.5592499912600033,
+          "p90": 1.8545800005085769,
+          "p99": 2.453167001513065
+        }
+      }
+    }
+  },
+  "Arm C (Onset-Aware + Resample)": {
+    "arm_name": "Arm C (Onset-Aware + Resample)",
+    "param_count": 272934,
+    "ckpt_size_kb": 1096.42578125,
+    "partitions": {
+      "Validation Partition (SPK 015-017, 216 clips)": {
+        "partition_name": "Validation Partition (SPK 015-017, 216 clips)",
+        "sample_count": 216,
+        "overall_accuracy": 1.0,
+        "macro_f1": 1.0,
+        "precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          36,
+          36
+        ],
+        "confusion_matrix": [
+          [
+            36,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            36,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            36,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            36
+          ]
+        ],
+        "command_misses": {
+          "target_total": 144,
+          "target_correct": 144,
+          "target_miss_count": 0,
+          "target_miss_rate_pct": 0.0
+        },
+        "false_activations": {
+          "unknown_total": 36,
+          "unknown_fa_count": 0,
+          "unknown_fa_rate_pct": 0.0,
+          "silence_total": 36,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 36,
+          "trai_recall": 1.0,
+          "trai_as_phai": 0,
+          "phai_total": 36,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 0.48233888958714455,
+          "p50": 0.4631000047083944,
+          "p90": 0.5423000038717873,
+          "p99": 0.6739800010109318
+        },
+        "latency_model_ms": {
+          "mean": 1.1046944441154158,
+          "p50": 1.044299999193754,
+          "p90": 1.1812000011559576,
+          "p99": 1.7892300013045301
+        },
+        "latency_e2e_ms": {
+          "mean": 1.602353703573398,
+          "p50": 1.5305499982787296,
+          "p90": 1.7290999894612469,
+          "p99": 2.385664996108971
+        }
+      },
+      "Historical Test Holdout (SPK 018-020, 216 clips [Diagnostic])": {
+        "partition_name": "Historical Test Holdout (SPK 018-020, 216 clips [Diagnostic])",
+        "sample_count": 216,
+        "overall_accuracy": 0.6481481481481481,
+        "macro_f1": 0.6081323591998865,
+        "precision": [
+          0.4318181818181818,
+          0.6136363636363636,
+          0.5142857142857142,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.5277777777777778,
+          0.75,
+          1.0,
+          0.05555555555555555,
+          0.5555555555555556,
+          1.0
+        ],
+        "f1": [
+          0.475,
+          0.675,
+          0.6792452830188679,
+          0.10526315789473684,
+          0.7142857142857143,
+          1.0
+        ],
+        "support": [
+          36,
+          36,
+          36,
+          36,
+          36,
+          36
+        ],
+        "confusion_matrix": [
+          [
+            19,
+            17,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            9,
+            27,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            34,
+            2,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0,
+            20,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            36
+          ]
+        ],
+        "command_misses": {
+          "target_total": 144,
+          "target_correct": 84,
+          "target_miss_count": 60,
+          "target_miss_rate_pct": 41.66666666666667
+        },
+        "false_activations": {
+          "unknown_total": 36,
+          "unknown_fa_count": 16,
+          "unknown_fa_rate_pct": 44.44444444444444,
+          "silence_total": 36,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 36,
+          "trai_recall": 0.5277777777777778,
+          "trai_as_phai": 17,
+          "phai_total": 36,
+          "phai_recall": 0.75,
+          "phai_as_trai": 9
+        },
+        "latency_feat_ms": {
+          "mean": 0.48816296260122694,
+          "p50": 0.47694999375380576,
+          "p90": 0.5416499989223666,
+          "p99": 0.6786100035242268
+        },
+        "latency_model_ms": {
+          "mean": 1.0860458336268224,
+          "p50": 1.0583499970380217,
+          "p90": 1.2184999941382557,
+          "p99": 1.4306299999589096
+        },
+        "latency_e2e_ms": {
+          "mean": 1.5900638892937289,
+          "p50": 1.5511500096181408,
+          "p90": 1.757250000082422,
+          "p99": 2.063069995347177
+        }
+      },
+      "V2 Fresh Holdout (SPK 021-025, 300 clips [Diagnostic])": {
+        "partition_name": "V2 Fresh Holdout (SPK 021-025, 300 clips [Diagnostic])",
+        "sample_count": 300,
+        "overall_accuracy": 0.76,
+        "macro_f1": 0.7285225047697125,
+        "precision": [
+          0.0,
+          0.5,
+          0.9615384615384616,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.0,
+          1.0,
+          1.0,
+          0.98,
+          0.58,
+          1.0
+        ],
+        "f1": [
+          0.0,
+          0.6666666666666666,
+          0.9803921568627451,
+          0.98989898989899,
+          0.7341772151898734,
+          1.0
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            49,
+            0,
+            0
+          ],
+          [
+            20,
+            0,
+            1,
+            0,
+            29,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "command_misses": {
+          "target_total": 200,
+          "target_correct": 149,
+          "target_miss_count": 51,
+          "target_miss_rate_pct": 25.5
+        },
+        "false_activations": {
+          "unknown_total": 50,
+          "unknown_fa_count": 21,
+          "unknown_fa_rate_pct": 42.0,
+          "silence_total": 50,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 50,
+          "trai_recall": 0.0,
+          "trai_as_phai": 50,
+          "phai_total": 50,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 0.4878139994010174,
+          "p50": 0.47229998745024204,
+          "p90": 0.5309399974066764,
+          "p99": 0.8248840046871914
+        },
+        "latency_model_ms": {
+          "mean": 1.0967359999388766,
+          "p50": 1.0566999990260229,
+          "p90": 1.242019998608157,
+          "p99": 1.6485279951302785
+        },
+        "latency_e2e_ms": {
+          "mean": 1.5998166665667668,
+          "p50": 1.5478999994229525,
+          "p90": 1.795639989722986,
+          "p99": 2.389717006299179
+        }
+      },
+      "V3 Fresh Holdout (SPK 026-030, 300 clips [Diagnostic])": {
+        "partition_name": "V3 Fresh Holdout (SPK 026-030, 300 clips [Diagnostic])",
+        "sample_count": 300,
+        "overall_accuracy": 0.7766666666666666,
+        "macro_f1": 0.7345879288655063,
+        "precision": [
+          0.0,
+          0.5,
+          0.8771929824561403,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.0,
+          1.0,
+          1.0,
+          0.94,
+          0.72,
+          1.0
+        ],
+        "f1": [
+          0.0,
+          0.6666666666666666,
+          0.9345794392523364,
+          0.9690721649484536,
+          0.8372093023255814,
+          1.0
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            47,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            4,
+            0,
+            36,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "command_misses": {
+          "target_total": 200,
+          "target_correct": 147,
+          "target_miss_count": 53,
+          "target_miss_rate_pct": 26.5
+        },
+        "false_activations": {
+          "unknown_total": 50,
+          "unknown_fa_count": 14,
+          "unknown_fa_rate_pct": 28.000000000000004,
+          "silence_total": 50,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 50,
+          "trai_recall": 0.0,
+          "trai_as_phai": 50,
+          "phai_total": 50,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 0.49403200013330206,
+          "p50": 0.4713000016636215,
+          "p90": 0.5322300043189898,
+          "p99": 0.7222869977704247
+        },
+        "latency_model_ms": {
+          "mean": 1.120528999696641,
+          "p50": 1.0438500030431896,
+          "p90": 1.2316000036662444,
+          "p99": 2.260745998501079
+        },
+        "latency_e2e_ms": {
+          "mean": 1.6307439999945927,
+          "p50": 1.5424499943037517,
+          "p90": 1.7608700014534406,
+          "p99": 2.9850220061780375
+        }
+      },
+      "V4 Fresh Holdout (SPK 031-035, 300 clips [Untouched])": {
+        "partition_name": "V4 Fresh Holdout (SPK 031-035, 300 clips [Untouched])",
+        "sample_count": 300,
+        "overall_accuracy": 0.95,
+        "macro_f1": 0.9484702340203061,
+        "precision": [
+          0.78125,
+          1.0,
+          0.9803921568627451,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.7,
+          1.0
+        ],
+        "f1": [
+          0.8771929824561403,
+          1.0,
+          0.9900990099009901,
+          1.0,
+          0.8235294117647058,
+          1.0
+        ],
+        "support": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "confusion_matrix": [
+          [
+            50,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            50,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            50,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            50,
+            0,
+            0
+          ],
+          [
+            14,
+            0,
+            1,
+            0,
+            35,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            50
+          ]
+        ],
+        "command_misses": {
+          "target_total": 200,
+          "target_correct": 200,
+          "target_miss_count": 0,
+          "target_miss_rate_pct": 0.0
+        },
+        "false_activations": {
+          "unknown_total": 50,
+          "unknown_fa_count": 15,
+          "unknown_fa_rate_pct": 30.0,
+          "silence_total": 50,
+          "silence_fa_count": 0,
+          "silence_fa_rate_pct": 0.0
+        },
+        "trai_phai_specifics": {
+          "trai_total": 50,
+          "trai_recall": 1.0,
+          "trai_as_phai": 0,
+          "phai_total": 50,
+          "phai_recall": 1.0,
+          "phai_as_trai": 0
+        },
+        "latency_feat_ms": {
+          "mean": 0.4742663332338755,
+          "p50": 0.46159999328665435,
+          "p90": 0.5236199984210543,
+          "p99": 0.6431490073737223
+        },
+        "latency_model_ms": {
+          "mean": 1.0754069999287215,
+          "p50": 1.038449991028756,
+          "p90": 1.1675899979309179,
+          "p99": 1.399495003715856
+        },
+        "latency_e2e_ms": {
+          "mean": 1.5648473330171935,
+          "p50": 1.5152999985730276,
+          "p90": 1.710189995355904,
+          "p99": 1.995584999385755
+        }
+      }
+    }
+  }
+}

@@ -26,6 +26,7 @@ if str(Path.cwd()) not in sys.path:
 
 import time
 import json
+from typing import Optional
 import numpy as np
 import pandas as pd
 import soundfile as sf
@@ -42,17 +43,55 @@ CLASS_NAMES = ["TRAI", "PHAI", "LEN", "XUONG", "UNKNOWN", "SILENCE"]
 
 def evaluate_model(manifest_path: str = "data/manifests/test_manifest_v2.csv",
                    ckpt_path_str: str = "models/checkpoints/best_kws_model.pt",
-                   report_out: str = "reports/phase3_baseline_reproduction.md"):
+                   report_out: str = "reports/phase3_baseline_reproduction.md",
+                   train_manifest_path: Optional[str] = "data/manifests/train_manifest_v2.csv",
+                   val_manifest_path: Optional[str] = "data/manifests/val_manifest_v2.csv",
+                   validation_profile: Optional[str] = None):
+    if validation_profile is None or str(validation_profile).strip() == "":
+        raise ValueError("Evaluation halted: validation_profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+    active_profile = str(validation_profile).strip().lower()
+    if active_profile not in ("benchmark", "human_campaign"):
+        raise ValueError(f"Evaluation halted: Unknown validation_profile '{active_profile}'. Permitted: ['benchmark', 'human_campaign']")
+
     print("=" * 60)
-    print("RUNNING COMPREHENSIVE 6-CLASS EVALUATION")
+    print(f"RUNNING COMPREHENSIVE 6-CLASS EVALUATION (Profile: {active_profile})")
     print("=" * 60)
 
     device = torch.device("cpu")  # Evaluate latency on CPU for mobile relevance
-    ckpt_path = Path(ckpt_path_str)
     test_csv = Path(manifest_path)
+    if not test_csv.exists():
+        raise FileNotFoundError(f"Missing test manifest: {test_csv}")
 
-    if not ckpt_path.exists() or not test_csv.exists():
-        raise FileNotFoundError("Missing checkpoint or test_manifest.csv")
+    df_test = pd.read_csv(test_csv)
+    print(f"Test samples to evaluate: {len(df_test)}")
+
+    # Enforce held-out test partition boundary before evaluation (fail-closed)
+    if not train_manifest_path:
+        raise ValueError("Evaluation halted: Train manifest path is required for held-out test isolation.")
+    if not val_manifest_path:
+        raise ValueError("Evaluation halted: Validation manifest path is required for held-out test isolation.")
+
+    tr_p = Path(train_manifest_path)
+    va_p = Path(val_manifest_path)
+    if not tr_p.exists():
+        raise FileNotFoundError(f"Evaluation halted: Train manifest required for held-out test isolation is missing: {tr_p}")
+    if not va_p.exists():
+        raise FileNotFoundError(f"Evaluation halted: Validation manifest required for held-out test isolation is missing: {va_p}")
+
+    from src.acquisition.campaign_validator import validate_split_manifests_preflight
+    try:
+        df_tr = pd.read_csv(tr_p)
+        df_va = pd.read_csv(va_p)
+    except Exception as e:
+        raise ValueError(f"Evaluation halted: Could not read train or validation manifest for isolation check: {e}") from e
+
+    is_valid, split_errs, _ = validate_split_manifests_preflight(df_tr, df_va, df_test, validation_profile=active_profile)
+    if not is_valid:
+        raise ValueError(f"Evaluation halted: Test partition violates disjointness boundary: {split_errs}")
+
+    ckpt_path = Path(ckpt_path_str)
+    if not ckpt_path.exists():
+        raise FileNotFoundError(f"Missing checkpoint: {ckpt_path}")
 
     checkpoint = torch.load(ckpt_path, map_location=device)
     model = VietnameseKWSNet(num_classes=6)
@@ -61,9 +100,6 @@ def evaluate_model(manifest_path: str = "data/manifests/test_manifest_v2.csv",
     model.eval()
 
     extractor = LogMelFeatureExtractor(sample_rate=16000, n_mels=40)
-
-    df_test = pd.read_csv(test_csv)
-    print(f"Test samples to evaluate: {len(df_test)}")
 
     y_true = []
     y_pred = []
@@ -194,10 +230,10 @@ def evaluate_model(manifest_path: str = "data/manifests/test_manifest_v2.csv",
 
 | Performance Dimension | Measured Metric | Target Benchmark | Status |
 | :--- | :--- | :---: | :---: |
-| **Overall Accuracy** | **{accuracy * 100.0:.2f}%** | $> 90.0\%$ | **PASS** |
+| **Overall Accuracy** | **{accuracy * 100.0:.2f}%** | $> 90.0\\%$ | **PASS** |
 | **Macro-F1 Score** | **{macro_f1:.4f}** | $> 0.85$ | **PASS** |
-| **False Acceptance Rate on UNKNOWN** | **{far_unknown:.2f}% ({fa_unknown}/{total_unknown})** | $< 5.0\%$ | **PASS** |
-| **False Acceptance Rate on SILENCE** | **{far_silence:.2f}% ({fa_silence}/{total_silence})** | $< 2.0\%$ | **PASS** |
+| **False Acceptance Rate on UNKNOWN** | **{far_unknown:.2f}% ({fa_unknown}/{total_unknown})** | $< 5.0\\%$ | **PASS** |
+| **False Acceptance Rate on SILENCE** | **{far_silence:.2f}% ({fa_silence}/{total_silence})** | $< 2.0\\%$ | **PASS** |
 | **False Alarms Per Hour (FA/hr)** | **{fa_per_hour:.2f} FA/hour** | $< 10.0$ FA/hr | **PASS** |
 | **On-Device CPU Inference Latency (P50)**| **{p50_lat:.2f} ms** | $< 30.0$ ms | **PASS** |
 | **On-Device CPU Inference Latency (P90)**| **{p90_lat:.2f} ms** | $< 50.0$ ms | **PASS** |
@@ -266,7 +302,7 @@ Rows represent Ground Truth; Columns represent Model Predictions:
   - **90th Percentile (P90):** {p90_lat:.2f} ms
   - **99th Percentile (P99):** {p99_lat:.2f} ms
   - **Mean:** {mean_lat:.2f} ms
-- **Mobile Feasibility:** Single-window inference consumes $< 15$ ms on CPU, easily enabling real-time streaming with a 100 ms hop size (10 inferences per second consumes $< 15\%$ of a single CPU core).
+- **Mobile Feasibility:** Single-window inference consumes $< 15$ ms on CPU, easily enabling real-time streaming with a 100 ms hop size (10 inferences per second consumes $< 15\\%$ of a single CPU core).
 """
 
     report_file = Path(report_out)
@@ -282,5 +318,18 @@ if __name__ == "__main__":
     parser.add_argument("--manifest", type=str, default="data/manifests/test_manifest_v2.csv", help="Test manifest CSV")
     parser.add_argument("--checkpoint", type=str, default="models/checkpoints/best_kws_model.pt", help="Checkpoint path")
     parser.add_argument("--report", type=str, default="reports/phase3_baseline_reproduction.md", help="Output report MD")
+    parser.add_argument("--train-manifest", type=str, default="data/manifests/train_manifest_v2.csv", help="Train manifest CSV for leakage check")
+    parser.add_argument("--val-manifest", type=str, default="data/manifests/val_manifest_v2.csv", help="Val manifest CSV for leakage check")
+    parser.add_argument("--validation-profile", "--profile", dest="validation_profile", type=str, default=None, choices=["benchmark", "human_campaign"], help="Validation profile: benchmark or human_campaign (required)")
     args = parser.parse_args()
-    evaluate_model(manifest_path=args.manifest, ckpt_path_str=args.checkpoint, report_out=args.report)
+    if not args.validation_profile:
+        print("[ERROR] --validation-profile or --profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+        sys.exit(1)
+    evaluate_model(
+        manifest_path=args.manifest,
+        ckpt_path_str=args.checkpoint,
+        report_out=args.report,
+        train_manifest_path=args.train_manifest,
+        val_manifest_path=args.val_manifest,
+        validation_profile=args.validation_profile
+    )

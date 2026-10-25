@@ -1,0 +1,526 @@
+{
+  "p58_stream_cmd_01": [
+    {
+      "sequence_id": "p58_stream_cmd_01",
+      "label": "TRAI",
+      "text": "sang tr\u00e1i",
+      "start_time": 1.184,
+      "end_time": 1.602,
+      "duration_seconds": 0.418
+    },
+    {
+      "sequence_id": "p58_stream_cmd_01",
+      "label": "LEN",
+      "text": "b\u01b0\u1edbc l\u00ean",
+      "start_time": 2.902,
+      "end_time": 3.308,
+      "duration_seconds": 0.406
+    }
+  ],
+  "p58_stream_cmd_02": [
+    {
+      "sequence_id": "p58_stream_cmd_02",
+      "label": "PHAI",
+      "text": "b\u1ebb l\u00e1i ph\u1ea3i",
+      "start_time": 1.108,
+      "end_time": 1.7,
+      "duration_seconds": 0.592
+    },
+    {
+      "sequence_id": "p58_stream_cmd_02",
+      "label": "TRAI",
+      "text": "sang tr\u00e1i",
+      "start_time": 3.024,
+      "end_time": 3.442,
+      "duration_seconds": 0.418
+    }
+  ],
+  "p58_stream_cmd_03": [
+    {
+      "sequence_id": "p58_stream_cmd_03",
+      "label": "TRAI",
+      "text": "b\u1ebb l\u00e1i tr\u00e1i",
+      "start_time": 1.17,
+      "end_time": 1.704,
+      "duration_seconds": 0.534
+    },
+    {
+      "sequence_id": "p58_stream_cmd_03",
+      "label": "LEN",
+      "text": "ch\u1ea1y l\u00ean",
+      "start_time": 3.204,
+      "end_time": 3.575,
+      "duration_seconds": 0.372
+    },
+    {
+      "sequence_id": "p58_stream_cmd_03",
+      "label": "LEN",
+      "text": "ch\u1ea1y l\u00ean",
+      "start_time": 5.239,
+      "end_time": 5.611,
+      "duration_seconds": 0.372
+    }
+  ],
+  "p58_stream_cmd_04": [
+    {
+      "sequence_id": "p58_stream_cmd_04",
+      "label": "TRAI",
+      "text": "cua tr\u00e1i",
+      "start_time": 1.086,
+      "end_time": 1.469,
+      "duration_seconds": 0.383
+    },
+    {
+      "sequence_id": "p58_stream_cmd_04",
+      "label": "PHAI",
+      "text": "b\u1ebb l\u00e1i ph\u1ea3i",
+      "start_time": 3.024,
+      "end_time": 3.616,
+      "duration_seconds": 0.592
+    },
+    {
+      "sequence_id": "p58_stream_cmd_04",
+      "label": "LEN",
+      "text": "b\u01b0\u1edbc l\u00ean",
+      "start_time": 4.746,
+      "end_time": 5.153,
+      "duration_seconds": 0.406
+    }
+  ],
+  "p58_stream_cmd_05": [
+    {
+      "sequence_id": "p58_stream_cmd_05",
+      "label": "XUONG",
+      "text": "\u0111i xu\u1ed1ng",
+      "start_time": 0.803,
+      "end_time": 1.186,
+      "duration_seconds": 0.383
+    },
+    {
+      "sequence_id": "p58_stream_cmd_05",
+      "label": "PHAI",
+      "text": "b\u1ebb l\u00e1i ph\u1ea3i",
+      "start_time": 2.2,
+      "end_time": 2.792,
+      "duration_seconds": 0.592
+    },
+    {
+      "sequence_id": "p58_stream_cmd_05",
+      "label": "LEN",
+      "text": "b\u01b0\u1edbc l\u00ean",
+      "start_time": 3.845,
+      "end_time": 4.251,
+      "duration_seconds": 0.406
+    }
+  ],
+  "p58_stream_cmd_06": [
+    {
+      "sequence_id": "p58_stream_cmd_06",
+      "label": "PHAI",
+      "text": "r\u1ebd ph\u1ea3i",
+      "start_time": 0.826,
+      "end_time": 1.221,
+      "duration_seconds": 0.395
+    },
+    {
+      "sequence_id": "p58_stream_cmd_06",
+      "label": "TRAI",
+      "text": "r\u1ebd tr\u00e1i",
+      "start_time": 2.353,
+      "end_time": 2.795,
+      "duration_seconds": 0.441
+    },
+    {
+      "sequence_id": "p58_stream_cmd_06",
+      "label": "XUONG",
+      "text": "\u0111i xu\u1ed1ng",
+      "start_time": 4.574,
+      "end_time": 4.957,
+      "duration_seconds": 0.383
+    }
+  ],
+  "p58_stream_cmd_07": [
+    {
+      "sequence_id": "p58_stream_cmd_07",
+      "label": "LEN",
+      "text": "ch\u1ea1y l\u00ean",
+      "start_time": 0.737,
+      "end_time": 1.108,
+      "duration_seconds": 0.372
+    },
+    {
+      "sequence_id": "p58_stream_cmd_07",
+      "label": "XUONG",
+      "text": "b\u01b0\u1edbc xu\u1ed1ng",
+      "start_time": 2.291,
+      "end_time": 2.663,
+      "duration_seconds": 0.372
+    }
+  ],
+  "p58_stream_cmd_08": [
+    {
+      "sequence_id": "p58_stream_cmd_08",
+      "label": "TRAI",
+      "text": "sang tr\u00e1i",
+      "start_time": 1.107,
+      "end_time": 1.525,
+      "duration_seconds": 0.418
+    },
+    {
+      "sequence_id": "p58_stream_cmd_08",
+      "label": "TRAI",
+      "text": "b\u1ebb l\u00e1i tr\u00e1i",
+      "start_time": 2.709,
+      "end_time": 3.243,
+      "duration_seconds": 0.534
+    }
+  ],
+  "p58_stream_cmd_09": [
+    {
+      "sequence_id": "p58_stream_cmd_09",
+      "label": "LEN",
+      "text": "ch\u1ea1y l\u00ean",
+      "start_time": 1.079,
+      "end_time": 1.451,
+      "duration_seconds": 0.372
+    },
+    {
+      "sequence_id": "p58_stream_cmd_09",
+      "label": "LEN",
+      "text": "ch\u1ea1y l\u00ean",
+      "start_time": 2.6,
+      "end_time": 2.971,
+      "duration_seconds": 0.372
+    }
+  ],
+  "p58_stream_cmd_10": [
+    {
+      "sequence_id": "p58_stream_cmd_10",
+      "label": "LEN",
+      "text": "\u0111i l\u00ean",
+      "start_time": 1.017,
+      "end_time": 1.377,
+      "duration_seconds": 0.36
+    }
+  ],
+  "p58_stream_cmd_11": [
+    {
+      "sequence_id": "p58_stream_cmd_11",
+      "label": "LEN",
+      "text": "ch\u1ea1y l\u00ean",
+      "start_time": 1.048,
+      "end_time": 1.419,
+      "duration_seconds": 0.372
+    }
+  ],
+  "p58_stream_cmd_12": [
+    {
+      "sequence_id": "p58_stream_cmd_12",
+      "label": "TRAI",
+      "text": "r\u1ebd tr\u00e1i",
+      "start_time": 1.007,
+      "end_time": 1.448,
+      "duration_seconds": 0.441
+    },
+    {
+      "sequence_id": "p58_stream_cmd_12",
+      "label": "PHAI",
+      "text": "b\u1ebb l\u00e1i ph\u1ea3i",
+      "start_time": 2.954,
+      "end_time": 3.546,
+      "duration_seconds": 0.592
+    }
+  ],
+  "p58_stream_cmd_13": [
+    {
+      "sequence_id": "p58_stream_cmd_13",
+      "label": "LEN",
+      "text": "\u0111i l\u00ean",
+      "start_time": 0.88,
+      "end_time": 1.24,
+      "duration_seconds": 0.36
+    }
+  ],
+  "p58_stream_cmd_14": [
+    {
+      "sequence_id": "p58_stream_cmd_14",
+      "label": "LEN",
+      "text": "ch\u1ea1y l\u00ean",
+      "start_time": 0.797,
+      "end_time": 1.168,
+      "duration_seconds": 0.372
+    },
+    {
+      "sequence_id": "p58_stream_cmd_14",
+      "label": "PHAI",
+      "text": "b\u1ebb l\u00e1i ph\u1ea3i",
+      "start_time": 2.568,
+      "end_time": 3.16,
+      "duration_seconds": 0.592
+    }
+  ],
+  "p58_stream_cmd_15": [
+    {
+      "sequence_id": "p58_stream_cmd_15",
+      "label": "TRAI",
+      "text": "cua tr\u00e1i",
+      "start_time": 0.89,
+      "end_time": 1.273,
+      "duration_seconds": 0.383
+    },
+    {
+      "sequence_id": "p58_stream_cmd_15",
+      "label": "XUONG",
+      "text": "l\u00f9i xu\u1ed1ng",
+      "start_time": 2.818,
+      "end_time": 3.282,
+      "duration_seconds": 0.464
+    }
+  ],
+  "p58_stream_cmd_16": [
+    {
+      "sequence_id": "p58_stream_cmd_16",
+      "label": "LEN",
+      "text": "ti\u1ebfn l\u00ean",
+      "start_time": 0.692,
+      "end_time": 1.156,
+      "duration_seconds": 0.464
+    },
+    {
+      "sequence_id": "p58_stream_cmd_16",
+      "label": "TRAI",
+      "text": "cua tr\u00e1i",
+      "start_time": 2.423,
+      "end_time": 2.806,
+      "duration_seconds": 0.383
+    },
+    {
+      "sequence_id": "p58_stream_cmd_16",
+      "label": "XUONG",
+      "text": "\u0111i xu\u1ed1ng",
+      "start_time": 4.45,
+      "end_time": 4.833,
+      "duration_seconds": 0.383
+    }
+  ],
+  "p58_stream_cmd_17": [
+    {
+      "sequence_id": "p58_stream_cmd_17",
+      "label": "XUONG",
+      "text": "\u0111i xu\u1ed1ng",
+      "start_time": 0.607,
+      "end_time": 0.99,
+      "duration_seconds": 0.383
+    }
+  ],
+  "p58_stream_cmd_18": [
+    {
+      "sequence_id": "p58_stream_cmd_18",
+      "label": "TRAI",
+      "text": "b\u1ebb l\u00e1i tr\u00e1i",
+      "start_time": 1.108,
+      "end_time": 1.642,
+      "duration_seconds": 0.534
+    }
+  ],
+  "p58_stream_cmd_19": [
+    {
+      "sequence_id": "p58_stream_cmd_19",
+      "label": "TRAI",
+      "text": "r\u1ebd tr\u00e1i",
+      "start_time": 0.78,
+      "end_time": 1.221,
+      "duration_seconds": 0.441
+    }
+  ],
+  "p58_stream_cmd_20": [
+    {
+      "sequence_id": "p58_stream_cmd_20",
+      "label": "TRAI",
+      "text": "sang tr\u00e1i",
+      "start_time": 0.772,
+      "end_time": 1.19,
+      "duration_seconds": 0.418
+    },
+    {
+      "sequence_id": "p58_stream_cmd_20",
+      "label": "PHAI",
+      "text": "b\u1ebb l\u00e1i ph\u1ea3i",
+      "start_time": 2.617,
+      "end_time": 3.209,
+      "duration_seconds": 0.592
+    },
+    {
+      "sequence_id": "p58_stream_cmd_20",
+      "label": "LEN",
+      "text": "ti\u1ebfn l\u00ean",
+      "start_time": 4.68,
+      "end_time": 5.144,
+      "duration_seconds": 0.464
+    }
+  ],
+  "p58_stream_cmd_21": [
+    {
+      "sequence_id": "p58_stream_cmd_21",
+      "label": "PHAI",
+      "text": "sang ph\u1ea3i",
+      "start_time": 0.694,
+      "end_time": 1.054,
+      "duration_seconds": 0.36
+    },
+    {
+      "sequence_id": "p58_stream_cmd_21",
+      "label": "PHAI",
+      "text": "b\u1ebb l\u00e1i ph\u1ea3i",
+      "start_time": 2.532,
+      "end_time": 3.124,
+      "duration_seconds": 0.592
+    }
+  ],
+  "p58_stream_cmd_22": [
+    {
+      "sequence_id": "p58_stream_cmd_22",
+      "label": "XUONG",
+      "text": "ch\u1ea1y xu\u1ed1ng",
+      "start_time": 1.038,
+      "end_time": 1.514,
+      "duration_seconds": 0.476
+    }
+  ],
+  "p58_stream_cmd_23": [
+    {
+      "sequence_id": "p58_stream_cmd_23",
+      "label": "XUONG",
+      "text": "ch\u1ea1y xu\u1ed1ng",
+      "start_time": 1.197,
+      "end_time": 1.673,
+      "duration_seconds": 0.476
+    },
+    {
+      "sequence_id": "p58_stream_cmd_23",
+      "label": "TRAI",
+      "text": "sang tr\u00e1i",
+      "start_time": 3.28,
+      "end_time": 3.698,
+      "duration_seconds": 0.418
+    }
+  ],
+  "p58_stream_cmd_24": [
+    {
+      "sequence_id": "p58_stream_cmd_24",
+      "label": "XUONG",
+      "text": "ch\u1ea1y xu\u1ed1ng",
+      "start_time": 1.047,
+      "end_time": 1.523,
+      "duration_seconds": 0.476
+    },
+    {
+      "sequence_id": "p58_stream_cmd_24",
+      "label": "TRAI",
+      "text": "r\u1ebd tr\u00e1i",
+      "start_time": 3.292,
+      "end_time": 3.733,
+      "duration_seconds": 0.441
+    }
+  ],
+  "p58_stream_cmd_25": [
+    {
+      "sequence_id": "p58_stream_cmd_25",
+      "label": "TRAI",
+      "text": "cua tr\u00e1i",
+      "start_time": 0.688,
+      "end_time": 1.071,
+      "duration_seconds": 0.383
+    }
+  ],
+  "p58_stream_cmd_26": [
+    {
+      "sequence_id": "p58_stream_cmd_26",
+      "label": "TRAI",
+      "text": "b\u1ebb l\u00e1i tr\u00e1i",
+      "start_time": 0.693,
+      "end_time": 1.227,
+      "duration_seconds": 0.534
+    },
+    {
+      "sequence_id": "p58_stream_cmd_26",
+      "label": "TRAI",
+      "text": "b\u1ebb l\u00e1i tr\u00e1i",
+      "start_time": 3.014,
+      "end_time": 3.549,
+      "duration_seconds": 0.534
+    },
+    {
+      "sequence_id": "p58_stream_cmd_26",
+      "label": "TRAI",
+      "text": "cua tr\u00e1i",
+      "start_time": 5.169,
+      "end_time": 5.552,
+      "duration_seconds": 0.383
+    }
+  ],
+  "p58_stream_cmd_27": [
+    {
+      "sequence_id": "p58_stream_cmd_27",
+      "label": "LEN",
+      "text": "ch\u1ea1y l\u00ean",
+      "start_time": 0.952,
+      "end_time": 1.324,
+      "duration_seconds": 0.372
+    }
+  ],
+  "p58_stream_cmd_28": [
+    {
+      "sequence_id": "p58_stream_cmd_28",
+      "label": "PHAI",
+      "text": "r\u1ebd ph\u1ea3i",
+      "start_time": 0.96,
+      "end_time": 1.355,
+      "duration_seconds": 0.395
+    },
+    {
+      "sequence_id": "p58_stream_cmd_28",
+      "label": "PHAI",
+      "text": "r\u1ebd ph\u1ea3i",
+      "start_time": 2.637,
+      "end_time": 3.031,
+      "duration_seconds": 0.395
+    },
+    {
+      "sequence_id": "p58_stream_cmd_28",
+      "label": "XUONG",
+      "text": "b\u01b0\u1edbc xu\u1ed1ng",
+      "start_time": 4.512,
+      "end_time": 4.884,
+      "duration_seconds": 0.372
+    }
+  ],
+  "p58_stream_cmd_29": [
+    {
+      "sequence_id": "p58_stream_cmd_29",
+      "label": "XUONG",
+      "text": "ch\u1ea1y xu\u1ed1ng",
+      "start_time": 0.67,
+      "end_time": 1.146,
+      "duration_seconds": 0.476
+    },
+    {
+      "sequence_id": "p58_stream_cmd_29",
+      "label": "XUONG",
+      "text": "l\u00f9i xu\u1ed1ng",
+      "start_time": 2.882,
+      "end_time": 3.347,
+      "duration_seconds": 0.464
+    }
+  ],
+  "p58_stream_cmd_30": [
+    {
+      "sequence_id": "p58_stream_cmd_30",
+      "label": "TRAI",
+      "text": "sang tr\u00e1i",
+      "start_time": 1.187,
+      "end_time": 1.605,
+      "duration_seconds": 0.418
+    }
+  ]
+}

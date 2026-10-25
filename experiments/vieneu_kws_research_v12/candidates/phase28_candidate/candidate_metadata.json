@@ -1,0 +1,18 @@
+{
+  "candidate_id": "phase28_candidate_D0_H1_seed42",
+  "condition": "D0_H1",
+  "seed": 42,
+  "factor_d": "D0",
+  "factor_h": "H1",
+  "val_macro_f1": 0.93779,
+  "val_accuracy": 0.9359375,
+  "checkpoint_path": "experiments/vieneu_kws_research_v12/candidates/phase28_candidate/candidate_checkpoint.pt",
+  "checkpoint_sha256": "84a3457f105058bb7ca843b830013d00cb6d2e9ce737cb389267a84fcf51a6af",
+  "onnx_path": "experiments/vieneu_kws_research_v12/candidates/phase28_candidate/vietnamese_kws_phase28_candidate.onnx",
+  "onnx_sha256": "6458f98ed1159093c4f50251c81387945621033f19ed7760e8bfee2e75579b20",
+  "onnx_max_abs_diff": 1.1444091796875e-05,
+  "onnx_parity_pass": true,
+  "frozen_architecture": "CorrectedVietnameseKWSNet",
+  "total_parameters": 138469,
+  "decision_threshold": 0.2
+}

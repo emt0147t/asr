@@ -1,0 +1,641 @@
+﻿sample_id,transcription,confusion_family,voice_id,ground_truth,predicted_label,confidence,rejection_status,is_correct,prob_TRAI,prob_PHAI,prob_LEN,prob_XUONG,prob_REJECT
+v11_cmd_test_trai_00_00,trái,target_command,Kim Thanh,TRAI,TRAI,0.921,ACCEPTED,True,0.921,0.0684,0.0005,0.0039,0.0061
+v11_cmd_test_trai_00_01,trái,target_command,Kim Thanh,TRAI,TRAI,0.8434,ACCEPTED,True,0.8434,0.138,0.0024,0.007,0.0092
+v11_cmd_test_trai_00_02,trái,target_command,Kim Thanh,TRAI,TRAI,0.9083,ACCEPTED,True,0.9083,0.0826,0.0007,0.0047,0.0037
+v11_cmd_test_trai_00_03,trái,target_command,Kim Thanh,TRAI,TRAI,0.7886,ACCEPTED,True,0.7886,0.2047,0.0014,0.0024,0.0028
+v11_cmd_test_trai_00_04,trái,target_command,Kim Thanh,TRAI,TRAI,0.8356,ACCEPTED,True,0.8356,0.1571,0.0009,0.0026,0.0037
+v11_cmd_test_trai_00_05,trái,target_command,Kim Thanh,TRAI,TRAI,0.8507,ACCEPTED,True,0.8507,0.1392,0.0013,0.0033,0.0055
+v11_cmd_test_trai_00_06,trái,target_command,Kim Thanh,TRAI,TRAI,0.8887,ACCEPTED,True,0.8887,0.1048,0.0006,0.0027,0.0032
+v11_cmd_test_trai_00_07,trái,target_command,Kim Thanh,TRAI,TRAI,0.834,ACCEPTED,True,0.834,0.162,0.0007,0.0013,0.002
+v11_cmd_test_trai_00_08,trái,target_command,Kim Thanh,TRAI,TRAI,0.8959,ACCEPTED,True,0.8959,0.0906,0.0007,0.0048,0.0081
+v11_cmd_test_trai_00_09,trái,target_command,Kim Thanh,TRAI,TRAI,0.8286,ACCEPTED,True,0.8286,0.1673,0.0006,0.0013,0.0023
+v11_cmd_test_trai_01_00,trái,target_command,Quốc Tuấn,TRAI,TRAI,0.8268,ACCEPTED,True,0.8268,0.1624,0.0015,0.005,0.0043
+v11_cmd_test_trai_01_01,trái,target_command,Quốc Tuấn,TRAI,TRAI,0.763,ACCEPTED,True,0.763,0.2308,0.0013,0.0018,0.0032
+v11_cmd_test_trai_01_02,trái,target_command,Quốc Tuấn,TRAI,TRAI,0.8145,ACCEPTED,True,0.8145,0.1783,0.0014,0.0029,0.0028
+v11_cmd_test_trai_01_03,trái,target_command,Quốc Tuấn,TRAI,TRAI,0.8227,ACCEPTED,True,0.8227,0.1686,0.0016,0.0046,0.0025
+v11_cmd_test_trai_01_04,trái,target_command,Quốc Tuấn,TRAI,TRAI,0.8378,ACCEPTED,True,0.8378,0.1483,0.0021,0.0068,0.0049
+v11_cmd_test_trai_01_05,trái,target_command,Quốc Tuấn,TRAI,TRAI,0.7758,ACCEPTED,True,0.7758,0.2092,0.0033,0.0075,0.0042
+v11_cmd_test_trai_01_06,trái,target_command,Quốc Tuấn,TRAI,TRAI,0.8212,ACCEPTED,True,0.8212,0.1715,0.0012,0.0031,0.0029
+v11_cmd_test_trai_01_07,trái,target_command,Quốc Tuấn,TRAI,TRAI,0.7109,ACCEPTED,True,0.7109,0.2789,0.003,0.0041,0.0031
+v11_cmd_test_trai_01_08,trái,target_command,Quốc Tuấn,TRAI,TRAI,0.8013,ACCEPTED,True,0.8013,0.1909,0.0016,0.004,0.0022
+v11_cmd_test_trai_01_09,trái,target_command,Quốc Tuấn,TRAI,TRAI,0.8497,ACCEPTED,True,0.8497,0.1427,0.0011,0.0038,0.0028
+v11_cmd_test_trai_02_00,trái,target_command,Quỳnh Anh,TRAI,TRAI,0.7563,ACCEPTED,True,0.7563,0.2016,0.0112,0.0222,0.0087
+v11_cmd_test_trai_02_01,trái,target_command,Quỳnh Anh,TRAI,TRAI,0.8058,ACCEPTED,True,0.8058,0.1886,0.0012,0.0022,0.0023
+v11_cmd_test_trai_02_02,trái,target_command,Quỳnh Anh,TRAI,TRAI,0.7748,ACCEPTED,True,0.7748,0.1815,0.005,0.0147,0.024
+v11_cmd_test_trai_02_03,trái,target_command,Quỳnh Anh,TRAI,TRAI,0.5456,ACCEPTED,True,0.5456,0.4433,0.0059,0.0025,0.0027
+v11_cmd_test_trai_02_04,trái,target_command,Quỳnh Anh,TRAI,TRAI,0.5775,ACCEPTED,True,0.5775,0.4046,0.0088,0.0048,0.0044
+v11_cmd_test_trai_02_05,trái,target_command,Quỳnh Anh,TRAI,TRAI,0.781,ACCEPTED,True,0.781,0.2134,0.0014,0.0022,0.002
+v11_cmd_test_trai_02_06,trái,target_command,Quỳnh Anh,TRAI,TRAI,0.8374,ACCEPTED,True,0.8374,0.1561,0.0014,0.0025,0.0026
+v11_cmd_test_trai_02_07,trái,target_command,Quỳnh Anh,TRAI,TRAI,0.7151,ACCEPTED,True,0.7151,0.2779,0.0027,0.0029,0.0013
+v11_cmd_test_trai_02_08,trái,target_command,Quỳnh Anh,TRAI,TRAI,0.6843,ACCEPTED,True,0.6843,0.3079,0.0027,0.0023,0.0029
+v11_cmd_test_trai_02_09,trái,target_command,Quỳnh Anh,TRAI,TRAI,0.7362,ACCEPTED,True,0.7362,0.2288,0.0093,0.0136,0.012
+v11_cmd_test_trai_03_00,trái,target_command,Đức Trí,TRAI,TRAI,0.8467,ACCEPTED,True,0.8467,0.1369,0.0019,0.0072,0.0072
+v11_cmd_test_trai_03_01,trái,target_command,Đức Trí,TRAI,TRAI,0.7867,ACCEPTED,True,0.7867,0.1927,0.0042,0.0087,0.0077
+v11_cmd_test_trai_03_02,trái,target_command,Đức Trí,TRAI,TRAI,0.8693,ACCEPTED,True,0.8693,0.0918,0.0032,0.0184,0.0173
+v11_cmd_test_trai_03_03,trái,target_command,Đức Trí,TRAI,TRAI,0.8849,ACCEPTED,True,0.8849,0.1075,0.0002,0.001,0.0064
+v11_cmd_test_trai_03_04,trái,target_command,Đức Trí,TRAI,TRAI,0.8499,ACCEPTED,True,0.8499,0.1339,0.003,0.0075,0.0056
+v11_cmd_test_trai_03_05,trái,target_command,Đức Trí,TRAI,TRAI,0.8739,ACCEPTED,True,0.8739,0.1131,0.0011,0.0038,0.0081
+v11_cmd_test_trai_03_06,trái,target_command,Đức Trí,TRAI,TRAI,0.846,ACCEPTED,True,0.846,0.1384,0.0018,0.0057,0.0082
+v11_cmd_test_trai_03_07,trái,target_command,Đức Trí,TRAI,TRAI,0.8885,ACCEPTED,True,0.8885,0.0832,0.001,0.0076,0.0197
+v11_cmd_test_trai_03_08,trái,target_command,Đức Trí,TRAI,TRAI,0.8351,ACCEPTED,True,0.8351,0.1475,0.0014,0.005,0.011
+v11_cmd_test_trai_03_09,trái,target_command,Đức Trí,TRAI,TRAI,0.8509,ACCEPTED,True,0.8509,0.1247,0.0027,0.0095,0.0121
+v11_cmd_test_phai_00_00,phải,target_command,Kim Thanh,PHAI,PHAI,0.5104,ACCEPTED,True,0.4825,0.5104,0.0014,0.0006,0.0051
+v11_cmd_test_phai_00_01,phải,target_command,Kim Thanh,PHAI,TRAI,0.4993,ACCEPTED,False,0.4993,0.4955,0.001,0.0005,0.0037
+v11_cmd_test_phai_00_02,phải,target_command,Kim Thanh,PHAI,PHAI,0.5914,ACCEPTED,True,0.4014,0.5914,0.0013,0.0005,0.0053
+v11_cmd_test_phai_00_03,phải,target_command,Kim Thanh,PHAI,PHAI,0.5554,ACCEPTED,True,0.4364,0.5554,0.0017,0.0005,0.0061
+v11_cmd_test_phai_00_04,phải,target_command,Kim Thanh,PHAI,PHAI,0.6202,ACCEPTED,True,0.3713,0.6202,0.0028,0.0008,0.005
+v11_cmd_test_phai_00_05,phải,target_command,Kim Thanh,PHAI,TRAI,0.5617,ACCEPTED,False,0.5617,0.4336,0.0012,0.0007,0.0028
+v11_cmd_test_phai_00_06,phải,target_command,Kim Thanh,PHAI,PHAI,0.605,ACCEPTED,True,0.3835,0.605,0.0034,0.0012,0.0069
+v11_cmd_test_phai_00_07,phải,target_command,Kim Thanh,PHAI,PHAI,0.5202,ACCEPTED,True,0.4565,0.5202,0.0021,0.001,0.0202
+v11_cmd_test_phai_00_08,phải,target_command,Kim Thanh,PHAI,PHAI,0.6408,ACCEPTED,True,0.3516,0.6408,0.0029,0.0008,0.0039
+v11_cmd_test_phai_00_09,phải,target_command,Kim Thanh,PHAI,PHAI,0.5503,ACCEPTED,True,0.4405,0.5503,0.0026,0.0009,0.0057
+v11_cmd_test_phai_01_00,phải,target_command,Quốc Tuấn,PHAI,PHAI,0.6988,ACCEPTED,True,0.2877,0.6988,0.007,0.0012,0.0052
+v11_cmd_test_phai_01_01,phải,target_command,Quốc Tuấn,PHAI,PHAI,0.6482,ACCEPTED,True,0.3342,0.6482,0.0091,0.0024,0.006
+v11_cmd_test_phai_01_02,phải,target_command,Quốc Tuấn,PHAI,PHAI,0.6944,ACCEPTED,True,0.2938,0.6944,0.0053,0.0017,0.0048
+v11_cmd_test_phai_01_03,phải,target_command,Quốc Tuấn,PHAI,PHAI,0.7463,ACCEPTED,True,0.2404,0.7463,0.0072,0.0011,0.005
+v11_cmd_test_phai_01_04,phải,target_command,Quốc Tuấn,PHAI,PHAI,0.7705,ACCEPTED,True,0.2044,0.7705,0.0146,0.0032,0.0073
+v11_cmd_test_phai_01_05,phải,target_command,Quốc Tuấn,PHAI,PHAI,0.8148,ACCEPTED,True,0.164,0.8148,0.0142,0.0007,0.0063
+v11_cmd_test_phai_01_06,phải,target_command,Quốc Tuấn,PHAI,PHAI,0.7525,ACCEPTED,True,0.2363,0.7525,0.0074,0.001,0.0029
+v11_cmd_test_phai_01_07,phải,target_command,Quốc Tuấn,PHAI,PHAI,0.7079,ACCEPTED,True,0.2818,0.7079,0.0051,0.0012,0.0041
+v11_cmd_test_phai_01_08,phải,target_command,Quốc Tuấn,PHAI,PHAI,0.8652,ACCEPTED,True,0.1024,0.8652,0.0224,0.0011,0.0089
+v11_cmd_test_phai_01_09,phải,target_command,Quốc Tuấn,PHAI,PHAI,0.7398,ACCEPTED,True,0.2394,0.7398,0.0137,0.0019,0.0053
+v11_cmd_test_phai_02_00,phải,target_command,Quỳnh Anh,PHAI,PHAI,0.8255,ACCEPTED,True,0.1141,0.8255,0.0488,0.0013,0.0104
+v11_cmd_test_phai_02_01,phải,target_command,Quỳnh Anh,PHAI,PHAI,0.8064,ACCEPTED,True,0.126,0.8064,0.0472,0.0031,0.0173
+v11_cmd_test_phai_02_02,phải,target_command,Quỳnh Anh,PHAI,PHAI,0.8639,ACCEPTED,True,0.1149,0.8639,0.0179,0.0003,0.003
+v11_cmd_test_phai_02_03,phải,target_command,Quỳnh Anh,PHAI,PHAI,0.8412,ACCEPTED,True,0.1273,0.8412,0.0279,0.0007,0.0028
+v11_cmd_test_phai_02_04,phải,target_command,Quỳnh Anh,PHAI,PHAI,0.7547,ACCEPTED,True,0.125,0.7547,0.103,0.0019,0.0154
+v11_cmd_test_phai_02_05,phải,target_command,Quỳnh Anh,PHAI,PHAI,0.8065,ACCEPTED,True,0.1637,0.8065,0.023,0.0009,0.0059
+v11_cmd_test_phai_02_06,phải,target_command,Quỳnh Anh,PHAI,PHAI,0.7304,ACCEPTED,True,0.1007,0.7304,0.1557,0.0026,0.0106
+v11_cmd_test_phai_02_07,phải,target_command,Quỳnh Anh,PHAI,PHAI,0.8188,ACCEPTED,True,0.1753,0.8188,0.0036,0.0003,0.0019
+v11_cmd_test_phai_02_08,phải,target_command,Quỳnh Anh,PHAI,PHAI,0.7971,ACCEPTED,True,0.1859,0.7971,0.0135,0.0005,0.003
+v11_cmd_test_phai_02_09,phải,target_command,Quỳnh Anh,PHAI,PHAI,0.7402,ACCEPTED,True,0.2383,0.7402,0.0132,0.0011,0.0072
+v11_cmd_test_phai_03_00,phải,target_command,Đức Trí,PHAI,PHAI,0.6851,ACCEPTED,True,0.3014,0.6851,0.0083,0.0025,0.0027
+v11_cmd_test_phai_03_01,phải,target_command,Đức Trí,PHAI,PHAI,0.7933,ACCEPTED,True,0.1923,0.7933,0.0094,0.0019,0.0032
+v11_cmd_test_phai_03_02,phải,target_command,Đức Trí,PHAI,PHAI,0.6268,ACCEPTED,True,0.349,0.6268,0.0119,0.0081,0.0043
+v11_cmd_test_phai_03_03,phải,target_command,Đức Trí,PHAI,PHAI,0.7906,ACCEPTED,True,0.1859,0.7906,0.0172,0.0017,0.0046
+v11_cmd_test_phai_03_04,phải,target_command,Đức Trí,PHAI,PHAI,0.8048,ACCEPTED,True,0.1795,0.8048,0.0104,0.002,0.0034
+v11_cmd_test_phai_03_05,phải,target_command,Đức Trí,PHAI,PHAI,0.75,ACCEPTED,True,0.2399,0.75,0.0065,0.0013,0.0023
+v11_cmd_test_phai_03_06,phải,target_command,Đức Trí,PHAI,PHAI,0.8403,ACCEPTED,True,0.1274,0.8403,0.0249,0.0021,0.0053
+v11_cmd_test_phai_03_07,phải,target_command,Đức Trí,PHAI,PHAI,0.8373,ACCEPTED,True,0.1492,0.8373,0.009,0.0012,0.0034
+v11_cmd_test_phai_03_08,phải,target_command,Đức Trí,PHAI,PHAI,0.7091,ACCEPTED,True,0.2744,0.7091,0.0099,0.0036,0.0029
+v11_cmd_test_phai_03_09,phải,target_command,Đức Trí,PHAI,PHAI,0.7523,ACCEPTED,True,0.222,0.7523,0.0148,0.0049,0.0061
+v11_cmd_test_len_00_00,lên,target_command,Kim Thanh,LEN,LEN,0.9801,ACCEPTED,True,0.0014,0.0065,0.9801,0.0022,0.0098
+v11_cmd_test_len_00_01,lên,target_command,Kim Thanh,LEN,LEN,0.9598,ACCEPTED,True,0.0035,0.0115,0.9598,0.0088,0.0164
+v11_cmd_test_len_00_02,lên,target_command,Kim Thanh,LEN,LEN,0.9543,ACCEPTED,True,0.0026,0.0075,0.9543,0.005,0.0306
+v11_cmd_test_len_00_03,lên,target_command,Kim Thanh,LEN,LEN,0.9717,ACCEPTED,True,0.0015,0.0075,0.9717,0.0028,0.0165
+v11_cmd_test_len_00_04,lên,target_command,Kim Thanh,LEN,LEN,0.9681,ACCEPTED,True,0.0017,0.0057,0.9681,0.0049,0.0196
+v11_cmd_test_len_00_05,lên,target_command,Kim Thanh,LEN,LEN,0.9721,ACCEPTED,True,0.0013,0.0066,0.9721,0.0033,0.0168
+v11_cmd_test_len_00_06,lên,target_command,Kim Thanh,LEN,LEN,0.9818,ACCEPTED,True,0.001,0.0046,0.9818,0.0021,0.0105
+v11_cmd_test_len_00_07,lên,target_command,Kim Thanh,LEN,LEN,0.9526,ACCEPTED,True,0.0018,0.005,0.9526,0.0096,0.031
+v11_cmd_test_len_00_08,lên,target_command,Kim Thanh,LEN,LEN,0.9542,ACCEPTED,True,0.0021,0.0065,0.9542,0.0054,0.0318
+v11_cmd_test_len_00_09,lên,target_command,Kim Thanh,LEN,LEN,0.9835,ACCEPTED,True,0.0009,0.0034,0.9835,0.0034,0.0088
+v11_cmd_test_len_01_00,lên,target_command,Quốc Tuấn,LEN,LEN,0.9557,ACCEPTED,True,0.0021,0.0089,0.9557,0.0059,0.0274
+v11_cmd_test_len_01_01,lên,target_command,Quốc Tuấn,LEN,LEN,0.9803,ACCEPTED,True,0.0009,0.0056,0.9803,0.0021,0.0111
+v11_cmd_test_len_01_02,lên,target_command,Quốc Tuấn,LEN,LEN,0.9776,ACCEPTED,True,0.0009,0.0055,0.9776,0.0021,0.0139
+v11_cmd_test_len_01_03,lên,target_command,Quốc Tuấn,LEN,LEN,0.9739,ACCEPTED,True,0.0008,0.0035,0.9739,0.0028,0.0189
+v11_cmd_test_len_01_04,lên,target_command,Quốc Tuấn,LEN,LEN,0.9874,ACCEPTED,True,0.0002,0.0016,0.9874,0.001,0.0098
+v11_cmd_test_len_01_05,lên,target_command,Quốc Tuấn,LEN,LEN,0.9778,ACCEPTED,True,0.001,0.0053,0.9778,0.0029,0.013
+v11_cmd_test_len_01_06,lên,target_command,Quốc Tuấn,LEN,LEN,0.9802,ACCEPTED,True,0.0005,0.0039,0.9802,0.0013,0.0142
+v11_cmd_test_len_01_07,lên,target_command,Quốc Tuấn,LEN,LEN,0.9858,ACCEPTED,True,0.0004,0.0023,0.9858,0.0016,0.0098
+v11_cmd_test_len_01_08,lên,target_command,Quốc Tuấn,LEN,LEN,0.9733,ACCEPTED,True,0.0016,0.0099,0.9733,0.0029,0.0123
+v11_cmd_test_len_01_09,lên,target_command,Quốc Tuấn,LEN,LEN,0.9765,ACCEPTED,True,0.0017,0.01,0.9765,0.0028,0.0089
+v11_cmd_test_len_02_00,lên,target_command,Quỳnh Anh,LEN,LEN,0.982,ACCEPTED,True,0.0005,0.0028,0.982,0.0014,0.0132
+v11_cmd_test_len_02_01,lên,target_command,Quỳnh Anh,LEN,LEN,0.958,ACCEPTED,True,0.0031,0.0097,0.958,0.0085,0.0207
+v11_cmd_test_len_02_02,lên,target_command,Quỳnh Anh,LEN,LEN,0.9622,ACCEPTED,True,0.0012,0.0044,0.9622,0.0043,0.0278
+v11_cmd_test_len_02_03,lên,target_command,Quỳnh Anh,LEN,LEN,0.9712,ACCEPTED,True,0.002,0.0097,0.9712,0.0036,0.0135
+v11_cmd_test_len_02_04,lên,target_command,Quỳnh Anh,LEN,LEN,0.9769,ACCEPTED,True,0.0011,0.0048,0.9769,0.0035,0.0136
+v11_cmd_test_len_02_05,lên,target_command,Quỳnh Anh,LEN,LEN,0.9728,ACCEPTED,True,0.0007,0.004,0.9728,0.0027,0.0198
+v11_cmd_test_len_02_06,lên,target_command,Quỳnh Anh,LEN,LEN,0.968,ACCEPTED,True,0.0016,0.0053,0.968,0.0073,0.0178
+v11_cmd_test_len_02_07,lên,target_command,Quỳnh Anh,LEN,LEN,0.9832,ACCEPTED,True,0.0005,0.0033,0.9832,0.0015,0.0114
+v11_cmd_test_len_02_08,lên,target_command,Quỳnh Anh,LEN,LEN,0.9453,ACCEPTED,True,0.0034,0.0124,0.9453,0.0067,0.0322
+v11_cmd_test_len_02_09,lên,target_command,Quỳnh Anh,LEN,LEN,0.9588,ACCEPTED,True,0.0024,0.0087,0.9588,0.0079,0.0222
+v11_cmd_test_len_03_00,lên,target_command,Đức Trí,LEN,LEN,0.9698,ACCEPTED,True,0.0012,0.0057,0.9698,0.0036,0.0197
+v11_cmd_test_len_03_01,lên,target_command,Đức Trí,LEN,LEN,0.9704,ACCEPTED,True,0.0018,0.007,0.9704,0.0056,0.0153
+v11_cmd_test_len_03_02,lên,target_command,Đức Trí,LEN,LEN,0.9146,ACCEPTED,True,0.0117,0.0396,0.9146,0.0127,0.0214
+v11_cmd_test_len_03_03,lên,target_command,Đức Trí,LEN,LEN,0.9659,ACCEPTED,True,0.0033,0.0104,0.9659,0.009,0.0115
+v11_cmd_test_len_03_04,lên,target_command,Đức Trí,LEN,LEN,0.9801,ACCEPTED,True,0.0014,0.0074,0.9801,0.0026,0.0086
+v11_cmd_test_len_03_05,lên,target_command,Đức Trí,LEN,LEN,0.9578,ACCEPTED,True,0.0015,0.0071,0.9578,0.0041,0.0295
+v11_cmd_test_len_03_06,lên,target_command,Đức Trí,LEN,LEN,0.9341,ACCEPTED,True,0.0057,0.0116,0.9341,0.0186,0.03
+v11_cmd_test_len_03_07,lên,target_command,Đức Trí,LEN,LEN,0.9837,ACCEPTED,True,0.0008,0.0046,0.9837,0.0025,0.0084
+v11_cmd_test_len_03_08,lên,target_command,Đức Trí,LEN,LEN,0.93,ACCEPTED,True,0.0045,0.0186,0.93,0.0085,0.0383
+v11_cmd_test_len_03_09,lên,target_command,Đức Trí,LEN,LEN,0.9735,ACCEPTED,True,0.0022,0.0085,0.9735,0.0053,0.0105
+v11_cmd_test_xuong_00_00,xuống,target_command,Kim Thanh,XUONG,XUONG,0.9712,ACCEPTED,True,0.0109,0.0009,0.0036,0.9712,0.0133
+v11_cmd_test_xuong_00_01,xuống,target_command,Kim Thanh,XUONG,XUONG,0.9816,ACCEPTED,True,0.003,0.0004,0.0043,0.9816,0.0108
+v11_cmd_test_xuong_00_02,xuống,target_command,Kim Thanh,XUONG,XUONG,0.9772,ACCEPTED,True,0.0055,0.0005,0.0061,0.9772,0.0107
+v11_cmd_test_xuong_00_03,xuống,target_command,Kim Thanh,XUONG,XUONG,0.9681,ACCEPTED,True,0.0083,0.0007,0.0047,0.9681,0.0182
+v11_cmd_test_xuong_00_04,xuống,target_command,Kim Thanh,XUONG,XUONG,0.9832,ACCEPTED,True,0.0042,0.0004,0.0034,0.9832,0.0088
+v11_cmd_test_xuong_00_05,xuống,target_command,Kim Thanh,XUONG,XUONG,0.9439,ACCEPTED,True,0.0177,0.0015,0.0065,0.9439,0.0303
+v11_cmd_test_xuong_00_06,xuống,target_command,Kim Thanh,XUONG,XUONG,0.9779,ACCEPTED,True,0.0074,0.0007,0.0045,0.9779,0.0095
+v11_cmd_test_xuong_00_07,xuống,target_command,Kim Thanh,XUONG,XUONG,0.9645,ACCEPTED,True,0.0084,0.0011,0.01,0.9645,0.016
+v11_cmd_test_xuong_00_08,xuống,target_command,Kim Thanh,XUONG,XUONG,0.9536,ACCEPTED,True,0.0163,0.0017,0.0073,0.9536,0.021
+v11_cmd_test_xuong_00_09,xuống,target_command,Kim Thanh,XUONG,XUONG,0.9737,ACCEPTED,True,0.0114,0.0011,0.0037,0.9737,0.0102
+v11_cmd_test_xuong_01_00,xuống,target_command,Quốc Tuấn,XUONG,XUONG,0.9663,ACCEPTED,True,0.0035,0.0007,0.0123,0.9663,0.0171
+v11_cmd_test_xuong_01_01,xuống,target_command,Quốc Tuấn,XUONG,XUONG,0.9926,ACCEPTED,True,0.0012,0.0001,0.0016,0.9926,0.0044
+v11_cmd_test_xuong_01_02,xuống,target_command,Quốc Tuấn,XUONG,XUONG,0.986,ACCEPTED,True,0.0028,0.0004,0.004,0.986,0.0067
+v11_cmd_test_xuong_01_03,xuống,target_command,Quốc Tuấn,XUONG,XUONG,0.9035,ACCEPTED,True,0.0272,0.0074,0.0462,0.9035,0.0157
+v11_cmd_test_xuong_01_04,xuống,target_command,Quốc Tuấn,XUONG,XUONG,0.9808,ACCEPTED,True,0.0036,0.0006,0.0083,0.9808,0.0067
+v11_cmd_test_xuong_01_05,xuống,target_command,Quốc Tuấn,XUONG,XUONG,0.9695,ACCEPTED,True,0.0043,0.0007,0.008,0.9695,0.0175
+v11_cmd_test_xuong_01_06,xuống,target_command,Quốc Tuấn,XUONG,XUONG,0.9585,ACCEPTED,True,0.0116,0.0023,0.0189,0.9585,0.0086
+v11_cmd_test_xuong_01_07,xuống,target_command,Quốc Tuấn,XUONG,XUONG,0.9693,ACCEPTED,True,0.0047,0.0011,0.0171,0.9693,0.0078
+v11_cmd_test_xuong_01_08,xuống,target_command,Quốc Tuấn,XUONG,XUONG,0.9814,ACCEPTED,True,0.0043,0.0007,0.0058,0.9814,0.0078
+v11_cmd_test_xuong_01_09,xuống,target_command,Quốc Tuấn,XUONG,XUONG,0.9895,ACCEPTED,True,0.0015,0.0002,0.0042,0.9895,0.0045
+v11_cmd_test_xuong_02_00,xuống,target_command,Quỳnh Anh,XUONG,XUONG,0.9635,ACCEPTED,True,0.0074,0.0012,0.0166,0.9635,0.0114
+v11_cmd_test_xuong_02_01,xuống,target_command,Quỳnh Anh,XUONG,XUONG,0.9701,ACCEPTED,True,0.0119,0.0011,0.0063,0.9701,0.0106
+v11_cmd_test_xuong_02_02,xuống,target_command,Quỳnh Anh,XUONG,XUONG,0.9673,ACCEPTED,True,0.0128,0.0011,0.0062,0.9673,0.0126
+v11_cmd_test_xuong_02_03,xuống,target_command,Quỳnh Anh,XUONG,XUONG,0.9854,ACCEPTED,True,0.0031,0.0003,0.0045,0.9854,0.0066
+v11_cmd_test_xuong_02_04,xuống,target_command,Quỳnh Anh,XUONG,XUONG,0.9021,ACCEPTED,True,0.021,0.0049,0.0489,0.9021,0.0231
+v11_cmd_test_xuong_02_05,xuống,target_command,Quỳnh Anh,XUONG,XUONG,0.9657,ACCEPTED,True,0.0094,0.0011,0.0114,0.9657,0.0124
+v11_cmd_test_xuong_02_06,xuống,target_command,Quỳnh Anh,XUONG,XUONG,0.9683,ACCEPTED,True,0.0066,0.0014,0.018,0.9683,0.0057
+v11_cmd_test_xuong_02_07,xuống,target_command,Quỳnh Anh,XUONG,XUONG,0.9809,ACCEPTED,True,0.0047,0.0005,0.0066,0.9809,0.0072
+v11_cmd_test_xuong_02_08,xuống,target_command,Quỳnh Anh,XUONG,XUONG,0.9605,ACCEPTED,True,0.0171,0.0018,0.0087,0.9605,0.0119
+v11_cmd_test_xuong_02_09,xuống,target_command,Quỳnh Anh,XUONG,XUONG,0.7624,ACCEPTED,True,0.1644,0.0204,0.0223,0.7624,0.0306
+v11_cmd_test_xuong_03_00,xuống,target_command,Đức Trí,XUONG,XUONG,0.9833,ACCEPTED,True,0.0015,0.0001,0.0024,0.9833,0.0127
+v11_cmd_test_xuong_03_01,xuống,target_command,Đức Trí,XUONG,XUONG,0.9792,ACCEPTED,True,0.0021,0.0004,0.0094,0.9792,0.0089
+v11_cmd_test_xuong_03_02,xuống,target_command,Đức Trí,XUONG,XUONG,0.9828,ACCEPTED,True,0.0017,0.0002,0.0023,0.9828,0.0131
+v11_cmd_test_xuong_03_03,xuống,target_command,Đức Trí,XUONG,XUONG,0.9725,ACCEPTED,True,0.004,0.0006,0.0113,0.9725,0.0116
+v11_cmd_test_xuong_03_04,xuống,target_command,Đức Trí,XUONG,XUONG,0.9867,ACCEPTED,True,0.0022,0.0003,0.0056,0.9867,0.0052
+v11_cmd_test_xuong_03_05,xuống,target_command,Đức Trí,XUONG,XUONG,0.9832,ACCEPTED,True,0.0021,0.0003,0.0045,0.9832,0.0099
+v11_cmd_test_xuong_03_06,xuống,target_command,Đức Trí,XUONG,XUONG,0.9815,ACCEPTED,True,0.0026,0.0003,0.0041,0.9815,0.0115
+v11_cmd_test_xuong_03_07,xuống,target_command,Đức Trí,XUONG,XUONG,0.9823,ACCEPTED,True,0.0032,0.0005,0.0078,0.9823,0.0062
+v11_cmd_test_xuong_03_08,xuống,target_command,Đức Trí,XUONG,XUONG,0.9859,ACCEPTED,True,0.0022,0.0003,0.0058,0.9859,0.0058
+v11_cmd_test_xuong_03_09,xuống,target_command,Đức Trí,XUONG,XUONG,0.9923,ACCEPTED,True,0.001,0.0001,0.002,0.9923,0.0047
+v11_unk_test_targ_000_00,lên mạng tìm việc,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.004,REJECTED_LOW_CONFIDENCE,True,0.0018,0.0023,0.004,0.0008,0.9911
+v11_unk_test_targ_000_01,lên mạng tìm việc,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0009,REJECTED_LOW_CONFIDENCE,True,0.0002,0.0004,0.0009,0.0001,0.9984
+v11_unk_test_targ_000_02,lên mạng tìm việc,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0007,REJECTED_LOW_CONFIDENCE,True,0.0007,0.0006,0.0007,0.0003,0.9977
+v11_unk_test_targ_000_03,lên mạng tìm việc,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0318,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0093,0.0318,0.0007,0.9566
+v11_unk_test_targ_001_00,lên đơn đặt hàng,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0048,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0012,0.0048,0.0001,0.9934
+v11_unk_test_targ_001_01,lên đơn đặt hàng,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0034,REJECTED_LOW_CONFIDENCE,True,0.0006,0.001,0.0034,0.0003,0.9947
+v11_unk_test_targ_001_02,lên đơn đặt hàng,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0036,REJECTED_LOW_CONFIDENCE,True,0.0002,0.0005,0.0036,0.0001,0.9955
+v11_unk_test_targ_001_03,lên đơn đặt hàng,target_prefix_compound,Đức Trí,REJECT,LEN,0.341,ACCEPTED,False,0.002,0.0062,0.341,0.0048,0.6461
+v11_unk_test_targ_002_00,lên hình rất đẹp,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0042,REJECTED_LOW_CONFIDENCE,True,0.001,0.0012,0.0042,0.0006,0.993
+v11_unk_test_targ_002_01,lên hình rất đẹp,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.005,REJECTED_LOW_CONFIDENCE,True,0.0003,0.0006,0.005,0.0003,0.9938
+v11_unk_test_targ_002_02,lên hình rất đẹp,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0042,REJECTED_LOW_CONFIDENCE,True,0.0009,0.0009,0.0042,0.0017,0.9923
+v11_unk_test_targ_002_03,lên hình rất đẹp,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0105,REJECTED_LOW_CONFIDENCE,True,0.0077,0.0071,0.0105,0.0105,0.9642
+v11_unk_test_targ_003_00,lên đời điện thoại,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.003,REJECTED_LOW_CONFIDENCE,True,0.0014,0.0016,0.003,0.0005,0.9934
+v11_unk_test_targ_003_01,lên đời điện thoại,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0027,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0027,0.0013,0.0,0.9954
+v11_unk_test_targ_003_02,lên đời điện thoại,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0015,REJECTED_LOW_CONFIDENCE,True,0.0003,0.0015,0.0014,0.0,0.9968
+v11_unk_test_targ_003_03,lên đời điện thoại,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0274,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0031,0.0274,0.002,0.9658
+v11_unk_test_targ_004_00,lên màu tự nhiên,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0015,REJECTED_LOW_CONFIDENCE,True,0.0008,0.0006,0.0015,0.0003,0.9967
+v11_unk_test_targ_004_01,lên màu tự nhiên,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.004,REJECTED_LOW_CONFIDENCE,True,0.0003,0.0004,0.004,0.0005,0.9948
+v11_unk_test_targ_004_02,lên màu tự nhiên,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0054,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0006,0.0054,0.0029,0.9899
+v11_unk_test_targ_004_03,lên màu tự nhiên,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0281,REJECTED_LOW_CONFIDENCE,True,0.0029,0.0042,0.0281,0.004,0.9608
+v11_unk_test_targ_005_00,lên tay lái vững,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.021,REJECTED_LOW_CONFIDENCE,True,0.0208,0.021,0.0073,0.0055,0.9454
+v11_unk_test_targ_005_01,lên tay lái vững,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0012,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0012,0.0012,0.0001,0.9969
+v11_unk_test_targ_005_02,lên tay lái vững,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0032,REJECTED_LOW_CONFIDENCE,True,0.0018,0.0013,0.0032,0.0012,0.9924
+v11_unk_test_targ_005_03,lên tay lái vững,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0038,REJECTED_LOW_CONFIDENCE,True,0.001,0.0031,0.0038,0.0001,0.992
+v11_unk_test_targ_006_00,lên cấp quản lý,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0034,REJECTED_LOW_CONFIDENCE,True,0.0008,0.0025,0.0034,0.0002,0.9931
+v11_unk_test_targ_006_01,lên cấp quản lý,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0015,REJECTED_LOW_CONFIDENCE,True,0.0009,0.0015,0.0013,0.0003,0.996
+v11_unk_test_targ_006_02,lên cấp quản lý,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0052,REJECTED_LOW_CONFIDENCE,True,0.0022,0.0052,0.0024,0.0003,0.9899
+v11_unk_test_targ_006_03,lên cấp quản lý,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0158,REJECTED_LOW_CONFIDENCE,True,0.0023,0.0088,0.0158,0.0003,0.9728
+v11_unk_test_targ_007_00,bước lên bậc thềm,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.1,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0024,0.1,0.0005,0.8966
+v11_unk_test_targ_007_01,bước lên bậc thềm,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0038,REJECTED_LOW_CONFIDENCE,True,0.0007,0.0022,0.0038,0.0001,0.9931
+v11_unk_test_targ_007_02,bước lên bậc thềm,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0029,REJECTED_LOW_CONFIDENCE,True,0.0003,0.0005,0.0029,0.0002,0.996
+v11_unk_test_targ_007_03,bước lên bậc thềm,target_suffix_compound,Đức Trí,REJECT,REJECT,0.023,REJECTED_LOW_CONFIDENCE,True,0.0029,0.0109,0.023,0.0006,0.9626
+v11_unk_test_targ_008_00,tiến lên phía trước,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0157,REJECTED_LOW_CONFIDENCE,True,0.0011,0.0018,0.0157,0.0009,0.9805
+v11_unk_test_targ_008_01,tiến lên phía trước,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0028,REJECTED_LOW_CONFIDENCE,True,0.0015,0.0005,0.0009,0.0028,0.9942
+v11_unk_test_targ_008_02,tiến lên phía trước,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0039,REJECTED_LOW_CONFIDENCE,True,0.0023,0.0003,0.0008,0.0039,0.9926
+v11_unk_test_targ_008_03,tiến lên phía trước,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0501,REJECTED_LOW_CONFIDENCE,True,0.0033,0.0087,0.0501,0.0034,0.9344
+v11_unk_test_targ_009_00,nhìn lên bầu trời,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0175,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0014,0.0175,0.0024,0.9774
+v11_unk_test_targ_009_01,nhìn lên bầu trời,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0067,REJECTED_LOW_CONFIDENCE,True,0.0067,0.0011,0.0002,0.0016,0.9904
+v11_unk_test_targ_009_02,nhìn lên bầu trời,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.003,REJECTED_LOW_CONFIDENCE,True,0.0024,0.0002,0.0003,0.003,0.9941
+v11_unk_test_targ_009_03,nhìn lên bầu trời,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0039,REJECTED_LOW_CONFIDENCE,True,0.0038,0.0015,0.0016,0.0039,0.9892
+v11_unk_test_targ_010_00,chạy lên trên gác,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0046,REJECTED_LOW_CONFIDENCE,True,0.0039,0.0027,0.0046,0.002,0.9868
+v11_unk_test_targ_010_01,chạy lên trên gác,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0013,REJECTED_LOW_CONFIDENCE,True,0.0008,0.0013,0.0005,0.0002,0.9972
+v11_unk_test_targ_010_02,chạy lên trên gác,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0011,REJECTED_LOW_CONFIDENCE,True,0.0008,0.0006,0.0011,0.0004,0.9971
+v11_unk_test_targ_010_03,chạy lên trên gác,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0043,REJECTED_LOW_CONFIDENCE,True,0.0043,0.002,0.0014,0.0013,0.991
+v11_unk_test_targ_011_00,bay lên không trung,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0209,REJECTED_LOW_CONFIDENCE,True,0.0209,0.0009,0.0004,0.0149,0.963
+v11_unk_test_targ_011_01,bay lên không trung,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0056,REJECTED_LOW_CONFIDENCE,True,0.0026,0.0002,0.0002,0.0056,0.9914
+v11_unk_test_targ_011_02,bay lên không trung,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0491,REJECTED_LOW_CONFIDENCE,True,0.0094,0.0003,0.0008,0.0491,0.9403
+v11_unk_test_targ_011_03,bay lên không trung,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0777,REJECTED_LOW_CONFIDENCE,True,0.0118,0.0008,0.0013,0.0777,0.9084
+v11_unk_test_targ_012_00,leo lên đỉnh núi,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0036,REJECTED_LOW_CONFIDENCE,True,0.0036,0.0011,0.0009,0.0019,0.9926
+v11_unk_test_targ_012_01,leo lên đỉnh núi,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0154,REJECTED_LOW_CONFIDENCE,True,0.0154,0.0078,0.0004,0.0007,0.9758
+v11_unk_test_targ_012_02,leo lên đỉnh núi,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0106,REJECTED_LOW_CONFIDENCE,True,0.0106,0.0022,0.0006,0.0029,0.9837
+v11_unk_test_targ_012_03,leo lên đỉnh núi,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0383,REJECTED_LOW_CONFIDENCE,True,0.003,0.0049,0.0383,0.002,0.9519
+v11_unk_test_mini_013_00,lén nhìn qua khe,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0042,REJECTED_LOW_CONFIDENCE,True,0.0042,0.0039,0.004,0.0017,0.9861
+v11_unk_test_mini_013_01,lén nhìn qua khe,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0036,REJECTED_LOW_CONFIDENCE,True,0.0006,0.0025,0.0036,0.0001,0.9933
+v11_unk_test_mini_013_02,lén nhìn qua khe,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0029,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0029,0.0019,0.0002,0.9938
+v11_unk_test_mini_013_03,lén nhìn qua khe,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.1271,REJECTED_LOW_CONFIDENCE,True,0.0006,0.0037,0.1271,0.0006,0.8679
+v11_unk_test_mini_014_00,lẻn vào phòng khách,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.005,REJECTED_LOW_CONFIDENCE,True,0.0022,0.005,0.0016,0.0002,0.9911
+v11_unk_test_mini_014_01,lẻn vào phòng khách,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0004,REJECTED_LOW_CONFIDENCE,True,0.0003,0.0002,0.0004,0.0002,0.9989
+v11_unk_test_mini_014_02,lẻn vào phòng khách,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0009,REJECTED_LOW_CONFIDENCE,True,0.0004,0.0008,0.0009,0.0002,0.9977
+v11_unk_test_mini_014_03,lẻn vào phòng khách,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0044,REJECTED_LOW_CONFIDENCE,True,0.0008,0.0015,0.0044,0.0004,0.9929
+v11_unk_test_mini_015_00,lễ bái gia tiên,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.01,REJECTED_LOW_CONFIDENCE,True,0.01,0.008,0.0012,0.0005,0.9804
+v11_unk_test_mini_015_01,lễ bái gia tiên,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0019,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0008,0.0019,0.0002,0.9966
+v11_unk_test_mini_015_02,lễ bái gia tiên,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0023,REJECTED_LOW_CONFIDENCE,True,0.0015,0.0016,0.0023,0.0004,0.9942
+v11_unk_test_mini_015_03,lễ bái gia tiên,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0022,REJECTED_LOW_CONFIDENCE,True,0.0014,0.0022,0.001,0.0002,0.9952
+v11_unk_test_mini_016_00,lệ phí cầu đường,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0157,REJECTED_LOW_CONFIDENCE,True,0.0157,0.0017,0.0007,0.0033,0.9786
+v11_unk_test_mini_016_01,lệ phí cầu đường,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0007,REJECTED_LOW_CONFIDENCE,True,0.0007,0.0003,0.0006,0.0006,0.9978
+v11_unk_test_mini_016_02,lệ phí cầu đường,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0034,REJECTED_LOW_CONFIDENCE,True,0.0029,0.0018,0.0034,0.0029,0.989
+v11_unk_test_mini_016_03,lệ phí cầu đường,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0061,REJECTED_LOW_CONFIDENCE,True,0.0044,0.0016,0.0033,0.0061,0.9846
+v11_unk_test_mini_017_00,lề thói cổ hủ,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0055,REJECTED_LOW_CONFIDENCE,True,0.0055,0.0015,0.0008,0.0036,0.9886
+v11_unk_test_mini_017_01,lề thói cổ hủ,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0022,REJECTED_LOW_CONFIDENCE,True,0.0014,0.0009,0.0022,0.0018,0.9937
+v11_unk_test_mini_017_02,lề thói cổ hủ,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0066,REJECTED_LOW_CONFIDENCE,True,0.0066,0.0014,0.0008,0.0035,0.9876
+v11_unk_test_mini_017_03,lề thói cổ hủ,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0095,REJECTED_LOW_CONFIDENCE,True,0.0076,0.0095,0.009,0.0016,0.9722
+v11_unk_test_mini_018_00,lê la hàng quán,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0183,REJECTED_LOW_CONFIDENCE,True,0.0006,0.0032,0.0183,0.0001,0.9778
+v11_unk_test_mini_018_01,lê la hàng quán,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0117,REJECTED_LOW_CONFIDENCE,True,0.0014,0.0035,0.0117,0.0008,0.9825
+v11_unk_test_mini_018_02,lê la hàng quán,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0069,REJECTED_LOW_CONFIDENCE,True,0.0009,0.0047,0.0069,0.0001,0.9875
+v11_unk_test_mini_018_03,lê la hàng quán,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0222,REJECTED_LOW_CONFIDENCE,True,0.0026,0.0099,0.0222,0.0005,0.9649
+v11_unk_test_mini_019_00,mền bông ấm áp,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0079,REJECTED_LOW_CONFIDENCE,True,0.0079,0.0039,0.003,0.0073,0.9779
+v11_unk_test_mini_019_01,mền bông ấm áp,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0028,REJECTED_LOW_CONFIDENCE,True,0.0023,0.0021,0.0017,0.0028,0.9912
+v11_unk_test_mini_019_02,mền bông ấm áp,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0053,REJECTED_LOW_CONFIDENCE,True,0.0007,0.0015,0.0053,0.0009,0.9915
+v11_unk_test_mini_019_03,mền bông ấm áp,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0054,REJECTED_LOW_CONFIDENCE,True,0.0019,0.0015,0.0047,0.0054,0.9866
+v11_unk_test_mini_020_00,bện thừng bện chão,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0031,REJECTED_LOW_CONFIDENCE,True,0.0006,0.0015,0.0031,0.0001,0.9947
+v11_unk_test_mini_020_01,bện thừng bện chão,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0023,REJECTED_LOW_CONFIDENCE,True,0.0023,0.0011,0.0001,0.0002,0.9964
+v11_unk_test_mini_020_02,bện thừng bện chão,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0029,REJECTED_LOW_CONFIDENCE,True,0.0029,0.0005,0.0002,0.0008,0.9956
+v11_unk_test_mini_020_03,bện thừng bện chão,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0134,REJECTED_LOW_CONFIDENCE,True,0.0026,0.0051,0.0134,0.0022,0.9768
+v11_unk_test_mini_021_00,sên bò trên lá,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.002,REJECTED_LOW_CONFIDENCE,True,0.002,0.0011,0.0004,0.0006,0.9958
+v11_unk_test_mini_021_01,sên bò trên lá,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0026,REJECTED_LOW_CONFIDENCE,True,0.0026,0.0011,0.0005,0.0012,0.9947
+v11_unk_test_mini_021_02,sên bò trên lá,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0027,REJECTED_LOW_CONFIDENCE,True,0.0027,0.0016,0.0012,0.0014,0.993
+v11_unk_test_mini_021_03,sên bò trên lá,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0361,REJECTED_LOW_CONFIDENCE,True,0.0361,0.0192,0.0121,0.0315,0.9012
+v11_unk_test_mini_022_00,rên la thảm thiết,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0068,REJECTED_LOW_CONFIDENCE,True,0.0012,0.0024,0.0068,0.0009,0.9887
+v11_unk_test_mini_022_01,rên la thảm thiết,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0079,REJECTED_LOW_CONFIDENCE,True,0.0047,0.0049,0.0079,0.0034,0.9791
+v11_unk_test_mini_022_02,rên la thảm thiết,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0034,REJECTED_LOW_CONFIDENCE,True,0.0006,0.0009,0.0034,0.0004,0.9947
+v11_unk_test_mini_022_03,rên la thảm thiết,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0044,REJECTED_LOW_CONFIDENCE,True,0.0037,0.0044,0.0035,0.0019,0.9865
+v11_unk_test_mini_023_00,lưng ong thon thả,minimal_pair_coda,Kim Thanh,REJECT,REJECT,0.0029,REJECTED_LOW_CONFIDENCE,True,0.0023,0.0013,0.0029,0.0013,0.9922
+v11_unk_test_mini_023_01,lưng ong thon thả,minimal_pair_coda,Quốc Tuấn,REJECT,REJECT,0.0013,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0011,0.0005,0.0005,0.9966
+v11_unk_test_mini_023_02,lưng ong thon thả,minimal_pair_coda,Quỳnh Anh,REJECT,REJECT,0.0025,REJECTED_LOW_CONFIDENCE,True,0.0025,0.0009,0.0004,0.0012,0.9949
+v11_unk_test_mini_023_03,lưng ong thon thả,minimal_pair_coda,Đức Trí,REJECT,REJECT,0.0227,REJECTED_LOW_CONFIDENCE,True,0.0138,0.0029,0.0031,0.0227,0.9575
+v11_unk_test_mini_024_00,lang thang cuối phố,minimal_pair_coda,Kim Thanh,REJECT,REJECT,0.0409,REJECTED_LOW_CONFIDENCE,True,0.0409,0.0092,0.0021,0.0142,0.9337
+v11_unk_test_mini_024_01,lang thang cuối phố,minimal_pair_coda,Quốc Tuấn,REJECT,REJECT,0.0013,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0012,0.0004,0.0006,0.9966
+v11_unk_test_mini_024_02,lang thang cuối phố,minimal_pair_coda,Quỳnh Anh,REJECT,REJECT,0.0013,REJECTED_LOW_CONFIDENCE,True,0.0003,0.0013,0.0011,0.0,0.9973
+v11_unk_test_mini_024_03,lang thang cuối phố,minimal_pair_coda,Đức Trí,REJECT,REJECT,0.0228,REJECTED_LOW_CONFIDENCE,True,0.0039,0.0228,0.0045,0.0001,0.9688
+v11_unk_test_targ_025_00,xuống dòng ghi chú,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0051,REJECTED_LOW_CONFIDENCE,True,0.003,0.0001,0.0002,0.0051,0.9916
+v11_unk_test_targ_025_01,xuống dòng ghi chú,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0045,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0,0.0,0.0045,0.9941
+v11_unk_test_targ_025_02,xuống dòng ghi chú,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0398,REJECTED_LOW_CONFIDENCE,True,0.0021,0.0,0.0,0.0398,0.9581
+v11_unk_test_targ_025_03,xuống dòng ghi chú,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0867,REJECTED_LOW_CONFIDENCE,True,0.0043,0.0001,0.0004,0.0867,0.9085
+v11_unk_test_targ_026_00,xuống nước nhân nhượng,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0033,REJECTED_LOW_CONFIDENCE,True,0.0029,0.0002,0.0003,0.0033,0.9933
+v11_unk_test_targ_026_01,xuống nước nhân nhượng,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0047,REJECTED_LOW_CONFIDENCE,True,0.0014,0.0002,0.0002,0.0047,0.9936
+v11_unk_test_targ_026_02,xuống nước nhân nhượng,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0101,REJECTED_LOW_CONFIDENCE,True,0.0031,0.0001,0.0001,0.0101,0.9867
+v11_unk_test_targ_026_03,xuống nước nhân nhượng,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0255,REJECTED_LOW_CONFIDENCE,True,0.0022,0.0002,0.0008,0.0255,0.9713
+v11_unk_test_targ_027_00,xuống hạng bóng đá,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0059,REJECTED_LOW_CONFIDENCE,True,0.0059,0.0008,0.0007,0.0039,0.9887
+v11_unk_test_targ_027_01,xuống hạng bóng đá,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0037,REJECTED_LOW_CONFIDENCE,True,0.0029,0.0004,0.0002,0.0037,0.9927
+v11_unk_test_targ_027_02,xuống hạng bóng đá,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0053,REJECTED_LOW_CONFIDENCE,True,0.0053,0.0016,0.0007,0.0022,0.9902
+v11_unk_test_targ_027_03,xuống hạng bóng đá,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0163,REJECTED_LOW_CONFIDENCE,True,0.0039,0.0004,0.0005,0.0163,0.9788
+v11_unk_test_targ_028_00,xuống dốc ngoằn ngoèo,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0028,REJECTED_LOW_CONFIDENCE,True,0.0027,0.0002,0.0002,0.0028,0.9941
+v11_unk_test_targ_028_01,xuống dốc ngoằn ngoèo,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.001,REJECTED_LOW_CONFIDENCE,True,0.001,0.0001,0.0,0.0009,0.998
+v11_unk_test_targ_028_02,xuống dốc ngoằn ngoèo,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0029,REJECTED_LOW_CONFIDENCE,True,0.0029,0.0003,0.0001,0.0027,0.994
+v11_unk_test_targ_028_03,xuống dốc ngoằn ngoèo,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0094,REJECTED_LOW_CONFIDENCE,True,0.002,0.0002,0.0003,0.0094,0.9881
+v11_unk_test_targ_029_00,xuống cấp trầm trọng,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0131,REJECTED_LOW_CONFIDENCE,True,0.0077,0.0006,0.0005,0.0131,0.9781
+v11_unk_test_targ_029_01,xuống cấp trầm trọng,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0035,REJECTED_LOW_CONFIDENCE,True,0.0035,0.0005,0.0001,0.0025,0.9934
+v11_unk_test_targ_029_02,xuống cấp trầm trọng,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.036,REJECTED_LOW_CONFIDENCE,True,0.0142,0.0005,0.0003,0.036,0.9489
+v11_unk_test_targ_029_03,xuống cấp trầm trọng,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0169,REJECTED_LOW_CONFIDENCE,True,0.0165,0.0012,0.0005,0.0169,0.9648
+v11_unk_test_targ_030_00,xuống đất trồng cây,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0287,REJECTED_LOW_CONFIDENCE,True,0.0074,0.0002,0.0002,0.0287,0.9635
+v11_unk_test_targ_030_01,xuống đất trồng cây,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0028,REJECTED_LOW_CONFIDENCE,True,0.0028,0.0002,0.0001,0.001,0.9959
+v11_unk_test_targ_030_02,xuống đất trồng cây,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0265,REJECTED_LOW_CONFIDENCE,True,0.0265,0.0065,0.001,0.0037,0.9623
+v11_unk_test_targ_030_03,xuống đất trồng cây,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0524,REJECTED_LOW_CONFIDENCE,True,0.0028,0.0001,0.0001,0.0524,0.9446
+v11_unk_test_targ_031_00,xuống hồ tắm mát,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0593,REJECTED_LOW_CONFIDENCE,True,0.0196,0.0008,0.0004,0.0593,0.9198
+v11_unk_test_targ_031_01,xuống hồ tắm mát,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.012,REJECTED_LOW_CONFIDENCE,True,0.0036,0.0006,0.0003,0.012,0.9835
+v11_unk_test_targ_031_02,xuống hồ tắm mát,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.005,REJECTED_LOW_CONFIDENCE,True,0.005,0.0008,0.0003,0.0048,0.989
+v11_unk_test_targ_031_03,xuống hồ tắm mát,target_prefix_compound,Đức Trí,REJECT,XUONG,0.4704,ACCEPTED,False,0.0129,0.0008,0.0023,0.4704,0.5137
+v11_unk_test_targ_032_00,ngồi xuống nghỉ chân,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0134,REJECTED_LOW_CONFIDENCE,True,0.0082,0.0024,0.0134,0.0112,0.9648
+v11_unk_test_targ_032_01,ngồi xuống nghỉ chân,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0009,REJECTED_LOW_CONFIDENCE,True,0.0009,0.0005,0.0003,0.0005,0.9979
+v11_unk_test_targ_032_02,ngồi xuống nghỉ chân,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0081,REJECTED_LOW_CONFIDENCE,True,0.0081,0.0006,0.0004,0.0043,0.9866
+v11_unk_test_targ_032_03,ngồi xuống nghỉ chân,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0214,REJECTED_LOW_CONFIDENCE,True,0.0214,0.0098,0.0027,0.0112,0.955
+v11_unk_test_targ_033_00,nằm xuống thư giãn,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0093,REJECTED_LOW_CONFIDENCE,True,0.0058,0.0011,0.0015,0.0093,0.9824
+v11_unk_test_targ_033_01,nằm xuống thư giãn,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0137,REJECTED_LOW_CONFIDENCE,True,0.0081,0.0016,0.0014,0.0137,0.9753
+v11_unk_test_targ_033_02,nằm xuống thư giãn,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0053,REJECTED_LOW_CONFIDENCE,True,0.0053,0.0006,0.0002,0.0015,0.9923
+v11_unk_test_targ_033_03,nằm xuống thư giãn,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0413,REJECTED_LOW_CONFIDENCE,True,0.009,0.0004,0.0004,0.0413,0.9489
+v11_unk_test_targ_034_00,bước xuống cầu thang,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0313,REJECTED_LOW_CONFIDENCE,True,0.0161,0.001,0.0014,0.0313,0.9502
+v11_unk_test_targ_034_01,bước xuống cầu thang,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0025,REJECTED_LOW_CONFIDENCE,True,0.0018,0.0002,0.0001,0.0025,0.9954
+v11_unk_test_targ_034_02,bước xuống cầu thang,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0068,REJECTED_LOW_CONFIDENCE,True,0.0068,0.0014,0.0004,0.0015,0.9899
+v11_unk_test_targ_034_03,bước xuống cầu thang,target_suffix_compound,Đức Trí,REJECT,REJECT,0.1883,REJECTED_LOW_CONFIDENCE,True,0.0107,0.0012,0.0031,0.1883,0.7967
+v11_unk_test_targ_035_00,đặt xuống mặt bàn,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0093,REJECTED_LOW_CONFIDENCE,True,0.0079,0.0016,0.0013,0.0093,0.9799
+v11_unk_test_targ_035_01,đặt xuống mặt bàn,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0021,REJECTED_LOW_CONFIDENCE,True,0.0021,0.0004,0.0002,0.0016,0.9957
+v11_unk_test_targ_035_02,đặt xuống mặt bàn,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0063,REJECTED_LOW_CONFIDENCE,True,0.0047,0.0013,0.0011,0.0063,0.9866
+v11_unk_test_targ_035_03,đặt xuống mặt bàn,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0074,REJECTED_LOW_CONFIDENCE,True,0.0059,0.0021,0.0017,0.0074,0.9829
+v11_unk_test_targ_036_00,rơi xuống mặt đất,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0075,REJECTED_LOW_CONFIDENCE,True,0.0075,0.0003,0.0001,0.002,0.99
+v11_unk_test_targ_036_01,rơi xuống mặt đất,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0024,REJECTED_LOW_CONFIDENCE,True,0.0024,0.0005,0.0002,0.0014,0.9955
+v11_unk_test_targ_036_02,rơi xuống mặt đất,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0027,REJECTED_LOW_CONFIDENCE,True,0.0027,0.0009,0.0015,0.0023,0.9927
+v11_unk_test_targ_036_03,rơi xuống mặt đất,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0058,REJECTED_LOW_CONFIDENCE,True,0.0051,0.0004,0.0003,0.0058,0.9884
+v11_unk_test_targ_037_00,lặn xuống đáy biển,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0199,REJECTED_LOW_CONFIDENCE,True,0.0179,0.0145,0.0199,0.0116,0.9361
+v11_unk_test_targ_037_01,lặn xuống đáy biển,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0028,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0005,0.0028,0.0009,0.9953
+v11_unk_test_targ_037_02,lặn xuống đáy biển,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0076,REJECTED_LOW_CONFIDENCE,True,0.0076,0.0024,0.0053,0.0073,0.9775
+v11_unk_test_targ_037_03,lặn xuống đáy biển,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0201,REJECTED_LOW_CONFIDENCE,True,0.011,0.0201,0.0169,0.0032,0.9488
+v11_unk_test_mini_038_00,xưởng may thời trang,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0077,REJECTED_LOW_CONFIDENCE,True,0.0077,0.0011,0.0006,0.0031,0.9874
+v11_unk_test_mini_038_01,xưởng may thời trang,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0008,REJECTED_LOW_CONFIDENCE,True,0.0008,0.0003,0.0001,0.0002,0.9986
+v11_unk_test_mini_038_02,xưởng may thời trang,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0022,REJECTED_LOW_CONFIDENCE,True,0.0019,0.0022,0.0015,0.0004,0.9941
+v11_unk_test_mini_038_03,xưởng may thời trang,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0124,REJECTED_LOW_CONFIDENCE,True,0.0124,0.0055,0.0023,0.004,0.9759
+v11_unk_test_mini_039_00,xướng tên người thắng,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0062,REJECTED_LOW_CONFIDENCE,True,0.0033,0.0008,0.0036,0.0062,0.9862
+v11_unk_test_mini_039_01,xướng tên người thắng,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0027,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0011,0.0014,0.0027,0.993
+v11_unk_test_mini_039_02,xướng tên người thắng,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0015,REJECTED_LOW_CONFIDENCE,True,0.0002,0.0003,0.0015,0.0002,0.9978
+v11_unk_test_mini_039_03,xướng tên người thắng,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0211,REJECTED_LOW_CONFIDENCE,True,0.0059,0.0037,0.0211,0.0102,0.959
+v11_unk_test_mini_040_00,xương ống nấu canh,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0066,REJECTED_LOW_CONFIDENCE,True,0.006,0.0005,0.0007,0.0066,0.9862
+v11_unk_test_mini_040_01,xương ống nấu canh,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0054,REJECTED_LOW_CONFIDENCE,True,0.0007,0.0001,0.0001,0.0054,0.9938
+v11_unk_test_mini_040_02,xương ống nấu canh,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.008,REJECTED_LOW_CONFIDENCE,True,0.008,0.0025,0.0022,0.004,0.9833
+v11_unk_test_mini_040_03,xương ống nấu canh,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.1529,REJECTED_LOW_CONFIDENCE,True,0.0049,0.0004,0.0014,0.1529,0.8405
+v11_unk_test_mini_041_00,xương sườn lợn nướng,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0005,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0001,0.0005,0.0003,0.9985
+v11_unk_test_mini_041_01,xương sườn lợn nướng,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.001,REJECTED_LOW_CONFIDENCE,True,0.0004,0.0001,0.0002,0.001,0.9984
+v11_unk_test_mini_041_02,xương sườn lợn nướng,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0009,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0002,0.0005,0.0009,0.9979
+v11_unk_test_mini_041_03,xương sườn lợn nướng,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.1072,REJECTED_LOW_CONFIDENCE,True,0.0021,0.0003,0.0042,0.1072,0.8863
+v11_unk_test_mini_042_00,xưởng thủ công mỹ nghệ,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0106,REJECTED_LOW_CONFIDENCE,True,0.0058,0.0001,0.0001,0.0106,0.9835
+v11_unk_test_mini_042_01,xưởng thủ công mỹ nghệ,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0116,REJECTED_LOW_CONFIDENCE,True,0.005,0.0004,0.0004,0.0116,0.9827
+v11_unk_test_mini_042_02,xưởng thủ công mỹ nghệ,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0126,REJECTED_LOW_CONFIDENCE,True,0.0035,0.0002,0.0004,0.0126,0.9832
+v11_unk_test_mini_042_03,xưởng thủ công mỹ nghệ,minimal_pair_tone,Đức Trí,REJECT,XUONG,0.4171,ACCEPTED,False,0.0051,0.0003,0.0027,0.4171,0.5748
+v11_unk_test_mini_043_00,xương rồng sa mạc,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0044,REJECTED_LOW_CONFIDENCE,True,0.0044,0.0003,0.0002,0.0014,0.9937
+v11_unk_test_mini_043_01,xương rồng sa mạc,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0054,REJECTED_LOW_CONFIDENCE,True,0.0019,0.0001,0.0001,0.0054,0.9925
+v11_unk_test_mini_043_02,xương rồng sa mạc,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0012,REJECTED_LOW_CONFIDENCE,True,0.0011,0.0003,0.0002,0.0012,0.9971
+v11_unk_test_mini_043_03,xương rồng sa mạc,minimal_pair_tone,Đức Trí,REJECT,XUONG,0.3974,ACCEPTED,False,0.003,0.0003,0.003,0.3974,0.5964
+v11_unk_test_mini_044_00,chuông reo báo thức,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0041,REJECTED_LOW_CONFIDENCE,True,0.0041,0.0001,0.0,0.0013,0.9943
+v11_unk_test_mini_044_01,chuông reo báo thức,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0198,REJECTED_LOW_CONFIDENCE,True,0.0026,0.0002,0.0003,0.0198,0.9771
+v11_unk_test_mini_044_02,chuông reo báo thức,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0033,REJECTED_LOW_CONFIDENCE,True,0.0021,0.0001,0.0001,0.0033,0.9944
+v11_unk_test_mini_044_03,chuông reo báo thức,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.003,REJECTED_LOW_CONFIDENCE,True,0.0015,0.0,0.0,0.003,0.9955
+v11_unk_test_mini_045_00,vuông vắn góc cạnh,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0086,REJECTED_LOW_CONFIDENCE,True,0.0086,0.0028,0.0004,0.0015,0.9867
+v11_unk_test_mini_045_01,vuông vắn góc cạnh,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0016,REJECTED_LOW_CONFIDENCE,True,0.0016,0.0008,0.0002,0.0007,0.9968
+v11_unk_test_mini_045_02,vuông vắn góc cạnh,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0027,REJECTED_LOW_CONFIDENCE,True,0.0024,0.0027,0.0008,0.0007,0.9934
+v11_unk_test_mini_045_03,vuông vắn góc cạnh,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0072,REJECTED_LOW_CONFIDENCE,True,0.0072,0.0056,0.0025,0.007,0.9776
+v11_unk_test_mini_046_00,buông lơi nhẹ nhàng,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0667,REJECTED_LOW_CONFIDENCE,True,0.0002,0.0007,0.0667,0.0003,0.9321
+v11_unk_test_mini_046_01,buông lơi nhẹ nhàng,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0012,REJECTED_LOW_CONFIDENCE,True,0.0008,0.001,0.0012,0.0002,0.9967
+v11_unk_test_mini_046_02,buông lơi nhẹ nhàng,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0042,REJECTED_LOW_CONFIDENCE,True,0.0009,0.0013,0.0042,0.0002,0.9934
+v11_unk_test_mini_046_03,buông lơi nhẹ nhàng,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0111,REJECTED_LOW_CONFIDENCE,True,0.004,0.0111,0.0089,0.0008,0.9751
+v11_unk_test_mini_047_00,suôn sẻ công việc,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0168,REJECTED_LOW_CONFIDENCE,True,0.0168,0.0033,0.0012,0.0054,0.9733
+v11_unk_test_mini_047_01,suôn sẻ công việc,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0011,REJECTED_LOW_CONFIDENCE,True,0.0011,0.0007,0.0007,0.0004,0.9972
+v11_unk_test_mini_047_02,suôn sẻ công việc,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0027,REJECTED_LOW_CONFIDENCE,True,0.0027,0.0023,0.0018,0.0007,0.9925
+v11_unk_test_mini_047_03,suôn sẻ công việc,minimal_pair_consonant,Đức Trí,REJECT,XUONG,0.2554,ACCEPTED,False,0.0447,0.0046,0.0094,0.2554,0.686
+v11_unk_test_mini_048_00,xông hơi giải cảm,minimal_pair_coda,Kim Thanh,REJECT,REJECT,0.0028,REJECTED_LOW_CONFIDENCE,True,0.0028,0.0011,0.0002,0.0007,0.9953
+v11_unk_test_mini_048_01,xông hơi giải cảm,minimal_pair_coda,Quốc Tuấn,REJECT,REJECT,0.0009,REJECTED_LOW_CONFIDENCE,True,0.0009,0.0001,0.0,0.0006,0.9983
+v11_unk_test_mini_048_02,xông hơi giải cảm,minimal_pair_coda,Quỳnh Anh,REJECT,REJECT,0.001,REJECTED_LOW_CONFIDENCE,True,0.001,0.0004,0.0002,0.0003,0.998
+v11_unk_test_mini_048_03,xông hơi giải cảm,minimal_pair_coda,Đức Trí,REJECT,REJECT,0.0065,REJECTED_LOW_CONFIDENCE,True,0.0065,0.0022,0.0008,0.0046,0.9859
+v11_unk_test_mini_049_00,xung quanh hàng rào,minimal_pair_coda,Kim Thanh,REJECT,REJECT,0.0017,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0013,0.0003,0.0003,0.9963
+v11_unk_test_mini_049_01,xung quanh hàng rào,minimal_pair_coda,Quốc Tuấn,REJECT,REJECT,0.0017,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0002,0.0,0.0008,0.9972
+v11_unk_test_mini_049_02,xung quanh hàng rào,minimal_pair_coda,Quỳnh Anh,REJECT,REJECT,0.0004,REJECTED_LOW_CONFIDENCE,True,0.0004,0.0002,0.0001,0.0001,0.9993
+v11_unk_test_mini_049_03,xung quanh hàng rào,minimal_pair_coda,Đức Trí,REJECT,REJECT,0.005,REJECTED_LOW_CONFIDENCE,True,0.005,0.0036,0.0008,0.0026,0.988
+v11_unk_test_targ_050_00,trái tim nhân hậu,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0114,REJECTED_LOW_CONFIDENCE,True,0.0082,0.0004,0.0005,0.0114,0.9795
+v11_unk_test_targ_050_01,trái tim nhân hậu,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0032,REJECTED_LOW_CONFIDENCE,True,0.0032,0.0009,0.0004,0.0015,0.994
+v11_unk_test_targ_050_02,trái tim nhân hậu,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0008,REJECTED_LOW_CONFIDENCE,True,0.0008,0.0003,0.0002,0.0003,0.9985
+v11_unk_test_targ_050_03,trái tim nhân hậu,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0101,REJECTED_LOW_CONFIDENCE,True,0.0101,0.0015,0.0002,0.0021,0.9862
+v11_unk_test_targ_051_00,trái phiếu chính phủ,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0438,REJECTED_LOW_CONFIDENCE,True,0.0194,0.0017,0.001,0.0438,0.9342
+v11_unk_test_targ_051_01,trái phiếu chính phủ,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0013,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0001,0.0,0.0008,0.9977
+v11_unk_test_targ_051_02,trái phiếu chính phủ,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0024,REJECTED_LOW_CONFIDENCE,True,0.0024,0.0002,0.0,0.0001,0.9972
+v11_unk_test_targ_051_03,trái phiếu chính phủ,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0684,REJECTED_LOW_CONFIDENCE,True,0.0142,0.0007,0.001,0.0684,0.9158
+v11_unk_test_targ_052_00,trái phép lấn chiếm,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0963,REJECTED_LOW_CONFIDENCE,True,0.0081,0.0029,0.0319,0.0963,0.8608
+v11_unk_test_targ_052_01,trái phép lấn chiếm,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0005,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0001,0.0001,0.0004,0.9988
+v11_unk_test_targ_052_02,trái phép lấn chiếm,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0009,REJECTED_LOW_CONFIDENCE,True,0.0004,0.0,0.0,0.0009,0.9986
+v11_unk_test_targ_052_03,trái phép lấn chiếm,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0048,REJECTED_LOW_CONFIDENCE,True,0.0048,0.0016,0.0009,0.0014,0.9913
+v11_unk_test_targ_053_00,trái ngược hoàn toàn,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0099,REJECTED_LOW_CONFIDENCE,True,0.008,0.0099,0.0007,0.0003,0.9812
+v11_unk_test_targ_053_01,trái ngược hoàn toàn,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0038,REJECTED_LOW_CONFIDENCE,True,0.0038,0.0031,0.0004,0.0005,0.9923
+v11_unk_test_targ_053_02,trái ngược hoàn toàn,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0028,REJECTED_LOW_CONFIDENCE,True,0.0028,0.0027,0.0001,0.0001,0.9943
+v11_unk_test_targ_053_03,trái ngược hoàn toàn,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0249,REJECTED_LOW_CONFIDENCE,True,0.022,0.0249,0.0017,0.001,0.9504
+v11_unk_test_targ_054_00,trái mùa đắt đỏ,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0292,REJECTED_LOW_CONFIDENCE,True,0.0225,0.0292,0.0006,0.0005,0.9473
+v11_unk_test_targ_054_01,trái mùa đắt đỏ,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0061,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0055,0.003,0.004,0.9814
+v11_unk_test_targ_054_02,trái mùa đắt đỏ,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.016,REJECTED_LOW_CONFIDENCE,True,0.016,0.0053,0.0012,0.0035,0.9739
+v11_unk_test_targ_054_03,trái mùa đắt đỏ,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0278,REJECTED_LOW_CONFIDENCE,True,0.0278,0.0089,0.0003,0.0008,0.9621
+v11_unk_test_targ_055_00,trái luật bị phạt,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0065,REJECTED_LOW_CONFIDENCE,True,0.0065,0.0004,0.0,0.0005,0.9925
+v11_unk_test_targ_055_01,trái luật bị phạt,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0091,REJECTED_LOW_CONFIDENCE,True,0.0067,0.0091,0.0006,0.0003,0.9833
+v11_unk_test_targ_055_02,trái luật bị phạt,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.005,REJECTED_LOW_CONFIDENCE,True,0.0048,0.005,0.0034,0.0026,0.9842
+v11_unk_test_targ_055_03,trái luật bị phạt,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0247,REJECTED_LOW_CONFIDENCE,True,0.0247,0.008,0.0013,0.0036,0.9623
+v11_unk_test_targ_056_00,trái đất xoay tròn,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0274,REJECTED_LOW_CONFIDENCE,True,0.0274,0.0214,0.0011,0.0003,0.9499
+v11_unk_test_targ_056_01,trái đất xoay tròn,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0055,REJECTED_LOW_CONFIDENCE,True,0.0055,0.0018,0.0004,0.0015,0.9908
+v11_unk_test_targ_056_02,trái đất xoay tròn,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0058,REJECTED_LOW_CONFIDENCE,True,0.0058,0.0017,0.0,0.0001,0.9924
+v11_unk_test_targ_056_03,trái đất xoay tròn,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0681,REJECTED_LOW_CONFIDENCE,True,0.0681,0.014,0.0009,0.0067,0.9103
+v11_unk_test_targ_057_00,rẽ trái ngã tư,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.061,REJECTED_LOW_CONFIDENCE,True,0.061,0.0063,0.0001,0.001,0.9316
+v11_unk_test_targ_057_01,rẽ trái ngã tư,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0029,REJECTED_LOW_CONFIDENCE,True,0.0029,0.0019,0.0003,0.0003,0.9946
+v11_unk_test_targ_057_02,rẽ trái ngã tư,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0051,REJECTED_LOW_CONFIDENCE,True,0.0051,0.0016,0.0005,0.0011,0.9917
+v11_unk_test_targ_057_03,rẽ trái ngã tư,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0018,REJECTED_LOW_CONFIDENCE,True,0.0018,0.001,0.0016,0.001,0.9946
+v11_unk_test_targ_058_00,bên trái con đường,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0169,REJECTED_LOW_CONFIDENCE,True,0.0169,0.0041,0.0032,0.0041,0.9717
+v11_unk_test_targ_058_01,bên trái con đường,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0008,REJECTED_LOW_CONFIDENCE,True,0.0008,0.0006,0.0003,0.0002,0.998
+v11_unk_test_targ_058_02,bên trái con đường,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0037,REJECTED_LOW_CONFIDENCE,True,0.0037,0.0013,0.0002,0.0004,0.9944
+v11_unk_test_targ_058_03,bên trái con đường,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0107,REJECTED_LOW_CONFIDENCE,True,0.0107,0.0036,0.0008,0.0021,0.9829
+v11_unk_test_targ_059_00,hướng trái một chút,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.026,REJECTED_LOW_CONFIDENCE,True,0.026,0.0031,0.0002,0.0015,0.9692
+v11_unk_test_targ_059_01,hướng trái một chút,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0093,REJECTED_LOW_CONFIDENCE,True,0.0093,0.0012,0.0004,0.0069,0.9822
+v11_unk_test_targ_059_02,hướng trái một chút,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.005,REJECTED_LOW_CONFIDENCE,True,0.0035,0.0004,0.0003,0.005,0.9908
+v11_unk_test_targ_059_03,hướng trái một chút,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0261,REJECTED_LOW_CONFIDENCE,True,0.0261,0.0015,0.0,0.0007,0.9716
+v11_unk_test_targ_060_00,quay trái góc nhọn,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0052,REJECTED_LOW_CONFIDENCE,True,0.0052,0.0028,0.0,0.0,0.9919
+v11_unk_test_targ_060_01,quay trái góc nhọn,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0035,REJECTED_LOW_CONFIDENCE,True,0.0035,0.0016,0.0,0.0,0.9949
+v11_unk_test_targ_060_02,quay trái góc nhọn,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0025,REJECTED_LOW_CONFIDENCE,True,0.0025,0.0007,0.0,0.0,0.9968
+v11_unk_test_targ_060_03,quay trái góc nhọn,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0141,REJECTED_LOW_CONFIDENCE,True,0.0141,0.0035,0.0001,0.0003,0.9821
+v11_unk_test_targ_061_00,tay trái cầm bút,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0495,REJECTED_LOW_CONFIDENCE,True,0.0495,0.0161,0.0017,0.0073,0.9254
+v11_unk_test_targ_061_01,tay trái cầm bút,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0082,REJECTED_LOW_CONFIDENCE,True,0.0082,0.0056,0.0002,0.0004,0.9856
+v11_unk_test_targ_061_02,tay trái cầm bút,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0082,REJECTED_LOW_CONFIDENCE,True,0.0082,0.0042,0.0011,0.0031,0.9835
+v11_unk_test_targ_061_03,tay trái cầm bút,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0205,REJECTED_LOW_CONFIDENCE,True,0.0205,0.0026,0.0002,0.0009,0.9758
+v11_unk_test_targ_062_00,cửa trái đóng chặt,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0092,REJECTED_LOW_CONFIDENCE,True,0.0092,0.0019,0.0002,0.0006,0.9882
+v11_unk_test_targ_062_01,cửa trái đóng chặt,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0133,REJECTED_LOW_CONFIDENCE,True,0.0133,0.003,0.0002,0.001,0.9825
+v11_unk_test_targ_062_02,cửa trái đóng chặt,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0051,REJECTED_LOW_CONFIDENCE,True,0.0051,0.0009,0.0001,0.0003,0.9936
+v11_unk_test_targ_062_03,cửa trái đóng chặt,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0198,REJECTED_LOW_CONFIDENCE,True,0.0198,0.0017,0.0002,0.0035,0.9748
+v11_unk_test_mini_063_00,trại chăn nuôi gà,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0121,REJECTED_LOW_CONFIDENCE,True,0.0046,0.0121,0.0019,0.0001,0.9814
+v11_unk_test_mini_063_01,trại chăn nuôi gà,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0024,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0024,0.0001,0.0,0.9957
+v11_unk_test_mini_063_02,trại chăn nuôi gà,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0025,REJECTED_LOW_CONFIDENCE,True,0.0025,0.002,0.0001,0.0001,0.9953
+v11_unk_test_mini_063_03,trại chăn nuôi gà,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0085,REJECTED_LOW_CONFIDENCE,True,0.0085,0.0058,0.0001,0.0002,0.9854
+v11_unk_test_mini_064_00,trải thảm len mới,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0051,REJECTED_LOW_CONFIDENCE,True,0.003,0.0051,0.0011,0.0001,0.9907
+v11_unk_test_mini_064_01,trải thảm len mới,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0023,REJECTED_LOW_CONFIDENCE,True,0.0014,0.0023,0.0002,0.0001,0.996
+v11_unk_test_mini_064_02,trải thảm len mới,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0059,REJECTED_LOW_CONFIDENCE,True,0.0059,0.0052,0.0019,0.0012,0.9857
+v11_unk_test_mini_064_03,trải thảm len mới,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0018,REJECTED_LOW_CONFIDENCE,True,0.0007,0.0018,0.0009,0.0,0.9966
+v11_unk_test_mini_065_00,tráng miệng bằng trà,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0143,REJECTED_LOW_CONFIDENCE,True,0.0143,0.007,0.0004,0.0004,0.9779
+v11_unk_test_mini_065_01,tráng miệng bằng trà,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.003,REJECTED_LOW_CONFIDENCE,True,0.003,0.0004,0.0001,0.0006,0.996
+v11_unk_test_mini_065_02,tráng miệng bằng trà,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0034,REJECTED_LOW_CONFIDENCE,True,0.0034,0.0002,0.0,0.0003,0.9961
+v11_unk_test_mini_065_03,tráng miệng bằng trà,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0098,REJECTED_LOW_CONFIDENCE,True,0.0098,0.0039,0.0007,0.0011,0.9845
+v11_unk_test_mini_066_00,trai tráng trong làng,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0049,REJECTED_LOW_CONFIDENCE,True,0.0049,0.0013,0.0002,0.0005,0.993
+v11_unk_test_mini_066_01,trai tráng trong làng,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0013,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0005,0.0,0.0,0.9982
+v11_unk_test_mini_066_02,trai tráng trong làng,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0018,REJECTED_LOW_CONFIDENCE,True,0.0018,0.0004,0.0,0.0,0.9978
+v11_unk_test_mini_066_03,trai tráng trong làng,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0453,REJECTED_LOW_CONFIDENCE,True,0.0453,0.0011,0.0,0.0012,0.9523
+v11_unk_test_mini_067_00,trại hè thanh thiếu niên,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0122,REJECTED_LOW_CONFIDENCE,True,0.0122,0.0046,0.0003,0.0004,0.9825
+v11_unk_test_mini_067_01,trại hè thanh thiếu niên,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0042,REJECTED_LOW_CONFIDENCE,True,0.0042,0.0032,0.003,0.0012,0.9884
+v11_unk_test_mini_067_02,trại hè thanh thiếu niên,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0044,REJECTED_LOW_CONFIDENCE,True,0.0044,0.0016,0.0043,0.0041,0.9855
+v11_unk_test_mini_067_03,trại hè thanh thiếu niên,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0242,REJECTED_LOW_CONFIDENCE,True,0.0242,0.0069,0.0089,0.0198,0.9401
+v11_unk_test_mini_068_00,trải dài theo bờ biển,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0168,REJECTED_LOW_CONFIDENCE,True,0.0048,0.0026,0.0168,0.0119,0.9638
+v11_unk_test_mini_068_01,trải dài theo bờ biển,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0009,REJECTED_LOW_CONFIDENCE,True,0.0009,0.0004,0.0003,0.0005,0.9979
+v11_unk_test_mini_068_02,trải dài theo bờ biển,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0005,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0004,0.0001,0.0001,0.999
+v11_unk_test_mini_068_03,trải dài theo bờ biển,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0738,REJECTED_LOW_CONFIDENCE,True,0.0738,0.0082,0.0001,0.0003,0.9176
+v11_unk_test_mini_069_00,thoái hóa khớp gối,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.034,REJECTED_LOW_CONFIDENCE,True,0.0265,0.034,0.0058,0.0035,0.9302
+v11_unk_test_mini_069_01,thoái hóa khớp gối,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.002,REJECTED_LOW_CONFIDENCE,True,0.002,0.0012,0.0001,0.0003,0.9964
+v11_unk_test_mini_069_02,thoái hóa khớp gối,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0092,REJECTED_LOW_CONFIDENCE,True,0.0053,0.0092,0.0003,0.0002,0.985
+v11_unk_test_mini_069_03,thoái hóa khớp gối,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0086,REJECTED_LOW_CONFIDENCE,True,0.0056,0.0086,0.0033,0.0026,0.9799
+v11_unk_test_mini_070_00,hoài niệm tuổi thơ,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0359,REJECTED_LOW_CONFIDENCE,True,0.0087,0.008,0.0359,0.0048,0.9426
+v11_unk_test_mini_070_01,hoài niệm tuổi thơ,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0026,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0026,0.0008,0.0002,0.9952
+v11_unk_test_mini_070_02,hoài niệm tuổi thơ,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0084,REJECTED_LOW_CONFIDENCE,True,0.0063,0.0023,0.0084,0.0082,0.9749
+v11_unk_test_mini_070_03,hoài niệm tuổi thơ,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0168,REJECTED_LOW_CONFIDENCE,True,0.0168,0.0098,0.0011,0.002,0.9703
+v11_unk_test_mini_071_00,ngoài trời đổ mưa,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.005,REJECTED_LOW_CONFIDENCE,True,0.005,0.0013,0.0,0.0,0.9936
+v11_unk_test_mini_071_01,ngoài trời đổ mưa,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0015,REJECTED_LOW_CONFIDENCE,True,0.0015,0.0015,0.0006,0.0003,0.9961
+v11_unk_test_mini_071_02,ngoài trời đổ mưa,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0151,REJECTED_LOW_CONFIDENCE,True,0.0043,0.0035,0.0151,0.005,0.9721
+v11_unk_test_mini_071_03,ngoài trời đổ mưa,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0076,REJECTED_LOW_CONFIDENCE,True,0.0076,0.002,0.0001,0.0005,0.9898
+v11_unk_test_mini_072_00,choài người với tới,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0116,REJECTED_LOW_CONFIDENCE,True,0.0116,0.0068,0.0002,0.0001,0.9812
+v11_unk_test_mini_072_01,choài người với tới,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0053,REJECTED_LOW_CONFIDENCE,True,0.0053,0.0033,0.0006,0.0014,0.9894
+v11_unk_test_mini_072_02,choài người với tới,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0013,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0012,0.0004,0.0001,0.9969
+v11_unk_test_mini_072_03,choài người với tới,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0995,REJECTED_LOW_CONFIDENCE,True,0.0703,0.0995,0.0042,0.0007,0.8253
+v11_unk_test_mini_073_00,trang trí lớp học,minimal_pair_coda,Kim Thanh,REJECT,REJECT,0.0226,REJECTED_LOW_CONFIDENCE,True,0.0039,0.0021,0.0052,0.0226,0.9662
+v11_unk_test_mini_073_01,trang trí lớp học,minimal_pair_coda,Quốc Tuấn,REJECT,REJECT,0.0041,REJECTED_LOW_CONFIDENCE,True,0.0041,0.0021,0.0009,0.0027,0.9903
+v11_unk_test_mini_073_02,trang trí lớp học,minimal_pair_coda,Quỳnh Anh,REJECT,REJECT,0.0018,REJECTED_LOW_CONFIDENCE,True,0.0018,0.0007,0.0006,0.0007,0.9961
+v11_unk_test_mini_073_03,trang trí lớp học,minimal_pair_coda,Đức Trí,REJECT,REJECT,0.0107,REJECTED_LOW_CONFIDENCE,True,0.0107,0.002,0.0003,0.0023,0.9848
+v11_unk_test_mini_074_00,tranh phong cảnh đẹp,minimal_pair_coda,Kim Thanh,REJECT,REJECT,0.0194,REJECTED_LOW_CONFIDENCE,True,0.0194,0.006,0.0006,0.0016,0.9724
+v11_unk_test_mini_074_01,tranh phong cảnh đẹp,minimal_pair_coda,Quốc Tuấn,REJECT,REJECT,0.0015,REJECTED_LOW_CONFIDENCE,True,0.0015,0.0009,0.0002,0.0003,0.9971
+v11_unk_test_mini_074_02,tranh phong cảnh đẹp,minimal_pair_coda,Quỳnh Anh,REJECT,REJECT,0.0017,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0016,0.0016,0.0004,0.9947
+v11_unk_test_mini_074_03,tranh phong cảnh đẹp,minimal_pair_coda,Đức Trí,REJECT,REJECT,0.0103,REJECTED_LOW_CONFIDENCE,True,0.0103,0.0019,0.0002,0.0007,0.9869
+v11_unk_test_targ_075_00,phải chăng là duyên,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0388,REJECTED_LOW_CONFIDENCE,True,0.0067,0.0132,0.0388,0.0028,0.9385
+v11_unk_test_targ_075_01,phải chăng là duyên,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0003,REJECTED_LOW_CONFIDENCE,True,0.0002,0.0002,0.0003,0.0,0.9993
+v11_unk_test_targ_075_02,phải chăng là duyên,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0416,REJECTED_LOW_CONFIDENCE,True,0.0006,0.0015,0.0416,0.0005,0.9558
+v11_unk_test_targ_075_03,phải chăng là duyên,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0674,REJECTED_LOW_CONFIDENCE,True,0.0058,0.0035,0.0674,0.0228,0.9005
+v11_unk_test_targ_076_00,phải lòng cô gái,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0086,REJECTED_LOW_CONFIDENCE,True,0.0086,0.0018,0.0003,0.0011,0.9883
+v11_unk_test_targ_076_01,phải lòng cô gái,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0047,REJECTED_LOW_CONFIDENCE,True,0.0033,0.0047,0.0001,0.0001,0.9918
+v11_unk_test_targ_076_02,phải lòng cô gái,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0092,REJECTED_LOW_CONFIDENCE,True,0.0092,0.0045,0.0002,0.0003,0.9858
+v11_unk_test_targ_076_03,phải lòng cô gái,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0215,REJECTED_LOW_CONFIDENCE,True,0.0215,0.0145,0.0006,0.0008,0.9626
+v11_unk_test_targ_077_00,phải rồi chính xác,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0117,REJECTED_LOW_CONFIDENCE,True,0.0117,0.0014,0.0,0.0004,0.9866
+v11_unk_test_targ_077_01,phải rồi chính xác,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.006,REJECTED_LOW_CONFIDENCE,True,0.006,0.0013,0.0001,0.0006,0.9921
+v11_unk_test_targ_077_02,phải rồi chính xác,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0124,REJECTED_LOW_CONFIDENCE,True,0.0124,0.0086,0.0057,0.0056,0.9677
+v11_unk_test_targ_077_03,phải rồi chính xác,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0435,REJECTED_LOW_CONFIDENCE,True,0.0435,0.0101,0.0012,0.0052,0.9401
+v11_unk_test_targ_078_00,phải biết tự lập,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0045,REJECTED_LOW_CONFIDENCE,True,0.0029,0.0045,0.0002,0.0001,0.9924
+v11_unk_test_targ_078_01,phải biết tự lập,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0038,REJECTED_LOW_CONFIDENCE,True,0.0034,0.0038,0.002,0.0019,0.9888
+v11_unk_test_targ_078_02,phải biết tự lập,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0062,REJECTED_LOW_CONFIDENCE,True,0.0062,0.0033,0.0028,0.0046,0.9831
+v11_unk_test_targ_078_03,phải biết tự lập,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0029,REJECTED_LOW_CONFIDENCE,True,0.002,0.0029,0.0028,0.0006,0.9916
+v11_unk_test_targ_079_00,phải đạo làm con,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0077,REJECTED_LOW_CONFIDENCE,True,0.0031,0.0077,0.0001,0.0,0.9891
+v11_unk_test_targ_079_01,phải đạo làm con,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0066,REJECTED_LOW_CONFIDENCE,True,0.0062,0.0057,0.0066,0.0041,0.9774
+v11_unk_test_targ_079_02,phải đạo làm con,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0035,REJECTED_LOW_CONFIDENCE,True,0.0013,0.0035,0.0001,0.0,0.9951
+v11_unk_test_targ_079_03,phải đạo làm con,target_prefix_compound,Đức Trí,REJECT,REJECT,0.027,REJECTED_LOW_CONFIDENCE,True,0.0044,0.027,0.0024,0.0002,0.966
+v11_unk_test_targ_080_00,phải lẽ công bằng,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0032,REJECTED_LOW_CONFIDENCE,True,0.0032,0.0012,0.0011,0.0014,0.9932
+v11_unk_test_targ_080_01,phải lẽ công bằng,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0029,REJECTED_LOW_CONFIDENCE,True,0.0029,0.0025,0.001,0.0009,0.9927
+v11_unk_test_targ_080_02,phải lẽ công bằng,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0053,REJECTED_LOW_CONFIDENCE,True,0.0053,0.003,0.0001,0.0001,0.9915
+v11_unk_test_targ_080_03,phải lẽ công bằng,target_prefix_compound,Đức Trí,REJECT,REJECT,0.0028,REJECTED_LOW_CONFIDENCE,True,0.0028,0.0018,0.0012,0.0011,0.9931
+v11_unk_test_targ_081_00,phải phép lịch sự,target_prefix_compound,Kim Thanh,REJECT,REJECT,0.0011,REJECTED_LOW_CONFIDENCE,True,0.001,0.0008,0.0011,0.0006,0.9965
+v11_unk_test_targ_081_01,phải phép lịch sự,target_prefix_compound,Quốc Tuấn,REJECT,REJECT,0.0052,REJECTED_LOW_CONFIDENCE,True,0.0052,0.0037,0.0002,0.0003,0.9905
+v11_unk_test_targ_081_02,phải phép lịch sự,target_prefix_compound,Quỳnh Anh,REJECT,REJECT,0.0025,REJECTED_LOW_CONFIDENCE,True,0.0025,0.0012,0.0009,0.0011,0.9942
+v11_unk_test_targ_081_03,phải phép lịch sự,target_prefix_compound,Đức Trí,REJECT,REJECT,0.004,REJECTED_LOW_CONFIDENCE,True,0.0024,0.004,0.0006,0.0004,0.9925
+v11_unk_test_targ_082_00,rẽ phải vòng xuyến,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0363,REJECTED_LOW_CONFIDENCE,True,0.0363,0.0103,0.0064,0.0228,0.9242
+v11_unk_test_targ_082_01,rẽ phải vòng xuyến,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0017,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0005,0.0004,0.0013,0.9962
+v11_unk_test_targ_082_02,rẽ phải vòng xuyến,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0024,REJECTED_LOW_CONFIDENCE,True,0.0024,0.0007,0.0002,0.0008,0.9958
+v11_unk_test_targ_082_03,rẽ phải vòng xuyến,target_suffix_compound,Đức Trí,REJECT,REJECT,0.004,REJECTED_LOW_CONFIDENCE,True,0.004,0.0018,0.0001,0.0005,0.9936
+v11_unk_test_targ_083_00,bên phải lối đi,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0463,REJECTED_LOW_CONFIDENCE,True,0.0319,0.006,0.0113,0.0463,0.9045
+v11_unk_test_targ_083_01,bên phải lối đi,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0056,REJECTED_LOW_CONFIDENCE,True,0.0024,0.0056,0.0008,0.0002,0.991
+v11_unk_test_targ_083_02,bên phải lối đi,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0013,REJECTED_LOW_CONFIDENCE,True,0.0011,0.0013,0.0013,0.0002,0.9962
+v11_unk_test_targ_083_03,bên phải lối đi,target_suffix_compound,Đức Trí,REJECT,REJECT,0.028,REJECTED_LOW_CONFIDENCE,True,0.028,0.0182,0.0024,0.0031,0.9483
+v11_unk_test_targ_084_00,hướng phải nhìn sang,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0053,REJECTED_LOW_CONFIDENCE,True,0.0053,0.0041,0.0009,0.0012,0.9884
+v11_unk_test_targ_084_01,hướng phải nhìn sang,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0023,REJECTED_LOW_CONFIDENCE,True,0.0015,0.0004,0.0003,0.0023,0.9956
+v11_unk_test_targ_084_02,hướng phải nhìn sang,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.001,REJECTED_LOW_CONFIDENCE,True,0.001,0.0006,0.0007,0.0005,0.9971
+v11_unk_test_targ_084_03,hướng phải nhìn sang,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0122,REJECTED_LOW_CONFIDENCE,True,0.0092,0.0069,0.0064,0.0122,0.9653
+v11_unk_test_targ_085_00,quay phải góc vuông,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0131,REJECTED_LOW_CONFIDENCE,True,0.011,0.0131,0.0,0.0,0.9759
+v11_unk_test_targ_085_01,quay phải góc vuông,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0017,REJECTED_LOW_CONFIDENCE,True,0.0014,0.0017,0.0002,0.0003,0.9965
+v11_unk_test_targ_085_02,quay phải góc vuông,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0059,REJECTED_LOW_CONFIDENCE,True,0.0059,0.0021,0.0019,0.0043,0.9858
+v11_unk_test_targ_085_03,quay phải góc vuông,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0163,REJECTED_LOW_CONFIDENCE,True,0.0163,0.0083,0.0024,0.0071,0.9658
+v11_unk_test_targ_086_00,tay phải giơ cao,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0017,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0012,0.0,0.0,0.9971
+v11_unk_test_targ_086_01,tay phải giơ cao,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0007,REJECTED_LOW_CONFIDENCE,True,0.0007,0.0005,0.0,0.0,0.9987
+v11_unk_test_targ_086_02,tay phải giơ cao,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0006,REJECTED_LOW_CONFIDENCE,True,0.0006,0.0005,0.0001,0.0,0.9988
+v11_unk_test_targ_086_03,tay phải giơ cao,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0061,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0034,0.0001,0.0001,0.9904
+v11_unk_test_targ_087_00,phía phải khán đài,target_suffix_compound,Kim Thanh,REJECT,REJECT,0.0154,REJECTED_LOW_CONFIDENCE,True,0.0059,0.0154,0.0009,0.0002,0.9775
+v11_unk_test_targ_087_01,phía phải khán đài,target_suffix_compound,Quốc Tuấn,REJECT,REJECT,0.0018,REJECTED_LOW_CONFIDENCE,True,0.0018,0.0015,0.0,0.0,0.9967
+v11_unk_test_targ_087_02,phía phải khán đài,target_suffix_compound,Quỳnh Anh,REJECT,REJECT,0.0023,REJECTED_LOW_CONFIDENCE,True,0.0023,0.0016,0.0003,0.0003,0.9956
+v11_unk_test_targ_087_03,phía phải khán đài,target_suffix_compound,Đức Trí,REJECT,REJECT,0.0108,REJECTED_LOW_CONFIDENCE,True,0.0088,0.0108,0.0045,0.0046,0.9713
+v11_unk_test_mini_088_00,phai mờ theo tháng năm,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0108,REJECTED_LOW_CONFIDENCE,True,0.0026,0.0108,0.0013,0.0001,0.9852
+v11_unk_test_mini_088_01,phai mờ theo tháng năm,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0014,REJECTED_LOW_CONFIDENCE,True,0.0014,0.0009,0.0001,0.0002,0.9974
+v11_unk_test_mini_088_02,phai mờ theo tháng năm,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0025,REJECTED_LOW_CONFIDENCE,True,0.0025,0.0017,0.0004,0.0007,0.9947
+v11_unk_test_mini_088_03,phai mờ theo tháng năm,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.014,REJECTED_LOW_CONFIDENCE,True,0.014,0.0122,0.0016,0.0011,0.9711
+v11_unk_test_mini_089_00,phái viên ngoại giao,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.034,REJECTED_LOW_CONFIDENCE,True,0.016,0.034,0.0005,0.0001,0.9494
+v11_unk_test_mini_089_01,phái viên ngoại giao,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0008,REJECTED_LOW_CONFIDENCE,True,0.0005,0.0008,0.0001,0.0,0.9985
+v11_unk_test_mini_089_02,phái viên ngoại giao,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0013,REJECTED_LOW_CONFIDENCE,True,0.0011,0.0013,0.0001,0.0,0.9975
+v11_unk_test_mini_089_03,phái viên ngoại giao,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0174,REJECTED_LOW_CONFIDENCE,True,0.0027,0.0174,0.005,0.0002,0.9748
+v11_unk_test_mini_090_00,phạt nguội giao thông,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0031,REJECTED_LOW_CONFIDENCE,True,0.0025,0.0031,0.0,0.0,0.9943
+v11_unk_test_mini_090_01,phạt nguội giao thông,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0007,REJECTED_LOW_CONFIDENCE,True,0.0007,0.0003,0.0001,0.0001,0.9987
+v11_unk_test_mini_090_02,phạt nguội giao thông,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0007,REJECTED_LOW_CONFIDENCE,True,0.0007,0.0004,0.0003,0.0004,0.9983
+v11_unk_test_mini_090_03,phạt nguội giao thông,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0221,REJECTED_LOW_CONFIDENCE,True,0.0117,0.0221,0.0009,0.0006,0.9647
+v11_unk_test_mini_091_00,phai nhạt màu áo,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0039,REJECTED_LOW_CONFIDENCE,True,0.0015,0.0039,0.0007,0.0002,0.9936
+v11_unk_test_mini_091_01,phai nhạt màu áo,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0072,REJECTED_LOW_CONFIDENCE,True,0.0072,0.0052,0.0033,0.0059,0.9784
+v11_unk_test_mini_091_02,phai nhạt màu áo,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0019,REJECTED_LOW_CONFIDENCE,True,0.0019,0.0012,0.0006,0.0005,0.9958
+v11_unk_test_mini_091_03,phai nhạt màu áo,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0107,REJECTED_LOW_CONFIDENCE,True,0.0068,0.0107,0.0007,0.0003,0.9816
+v11_unk_test_mini_092_00,phái sinh chứng khoán,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0226,REJECTED_LOW_CONFIDENCE,True,0.0226,0.0029,0.0,0.0004,0.974
+v11_unk_test_mini_092_01,phái sinh chứng khoán,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0119,REJECTED_LOW_CONFIDENCE,True,0.0119,0.0031,0.0004,0.0022,0.9824
+v11_unk_test_mini_092_02,phái sinh chứng khoán,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.006,REJECTED_LOW_CONFIDENCE,True,0.0051,0.006,0.0001,0.0,0.9888
+v11_unk_test_mini_092_03,phái sinh chứng khoán,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0171,REJECTED_LOW_CONFIDENCE,True,0.0171,0.0063,0.0002,0.0006,0.9758
+v11_unk_test_mini_093_00,phạt hành chính vi phạm,minimal_pair_tone,Kim Thanh,REJECT,REJECT,0.0046,REJECTED_LOW_CONFIDENCE,True,0.0046,0.0022,0.0007,0.0023,0.9902
+v11_unk_test_mini_093_01,phạt hành chính vi phạm,minimal_pair_tone,Quốc Tuấn,REJECT,REJECT,0.0015,REJECTED_LOW_CONFIDENCE,True,0.0012,0.0015,0.0003,0.0003,0.9967
+v11_unk_test_mini_093_02,phạt hành chính vi phạm,minimal_pair_tone,Quỳnh Anh,REJECT,REJECT,0.0038,REJECTED_LOW_CONFIDENCE,True,0.0023,0.0038,0.0015,0.0005,0.9919
+v11_unk_test_mini_093_03,phạt hành chính vi phạm,minimal_pair_tone,Đức Trí,REJECT,REJECT,0.0161,REJECTED_LOW_CONFIDENCE,True,0.0161,0.0082,0.0022,0.0062,0.9673
+v11_unk_test_mini_094_00,thoái trào văn hóa,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0041,REJECTED_LOW_CONFIDENCE,True,0.0041,0.0013,0.0,0.0,0.9946
+v11_unk_test_mini_094_01,thoái trào văn hóa,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0033,REJECTED_LOW_CONFIDENCE,True,0.0033,0.0015,0.0001,0.0002,0.9949
+v11_unk_test_mini_094_02,thoái trào văn hóa,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0032,REJECTED_LOW_CONFIDENCE,True,0.0032,0.0013,0.0,0.0001,0.9953
+v11_unk_test_mini_094_03,thoái trào văn hóa,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0064,REJECTED_LOW_CONFIDENCE,True,0.0064,0.0014,0.0001,0.0005,0.9917
+v11_unk_test_mini_095_00,khoái trá cười to,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0264,REJECTED_LOW_CONFIDENCE,True,0.0264,0.0036,0.0002,0.001,0.9688
+v11_unk_test_mini_095_01,khoái trá cười to,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0017,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0009,0.0002,0.0006,0.9967
+v11_unk_test_mini_095_02,khoái trá cười to,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0025,REJECTED_LOW_CONFIDENCE,True,0.0025,0.0007,0.0,0.0,0.9968
+v11_unk_test_mini_095_03,khoái trá cười to,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0192,REJECTED_LOW_CONFIDENCE,True,0.0192,0.0042,0.0007,0.0033,0.9726
+v11_unk_test_mini_096_00,hoại sinh chất bẩn,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0057,REJECTED_LOW_CONFIDENCE,True,0.0057,0.0018,0.0001,0.0003,0.9921
+v11_unk_test_mini_096_01,hoại sinh chất bẩn,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0018,REJECTED_LOW_CONFIDENCE,True,0.0018,0.0012,0.0,0.0001,0.9969
+v11_unk_test_mini_096_02,hoại sinh chất bẩn,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0125,REJECTED_LOW_CONFIDENCE,True,0.0081,0.0053,0.0125,0.0062,0.968
+v11_unk_test_mini_096_03,hoại sinh chất bẩn,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0165,REJECTED_LOW_CONFIDENCE,True,0.0121,0.0045,0.0113,0.0165,0.9557
+v11_unk_test_mini_097_00,loại hoa hồng nhung,minimal_pair_consonant,Kim Thanh,REJECT,REJECT,0.0648,REJECTED_LOW_CONFIDENCE,True,0.0449,0.0648,0.0038,0.0009,0.8856
+v11_unk_test_mini_097_01,loại hoa hồng nhung,minimal_pair_consonant,Quốc Tuấn,REJECT,REJECT,0.0047,REJECTED_LOW_CONFIDENCE,True,0.0047,0.0024,0.0012,0.0024,0.9893
+v11_unk_test_mini_097_02,loại hoa hồng nhung,minimal_pair_consonant,Quỳnh Anh,REJECT,REJECT,0.0046,REJECTED_LOW_CONFIDENCE,True,0.003,0.0003,0.0006,0.0046,0.9915
+v11_unk_test_mini_097_03,loại hoa hồng nhung,minimal_pair_consonant,Đức Trí,REJECT,REJECT,0.0569,REJECTED_LOW_CONFIDENCE,True,0.0252,0.0056,0.0066,0.0569,0.9057
+v11_unk_test_mini_098_00,pháo hoa rực rỡ,minimal_pair_coda,Kim Thanh,REJECT,REJECT,0.0084,REJECTED_LOW_CONFIDENCE,True,0.0084,0.0044,0.0002,0.0003,0.9867
+v11_unk_test_mini_098_01,pháo hoa rực rỡ,minimal_pair_coda,Quốc Tuấn,REJECT,REJECT,0.0033,REJECTED_LOW_CONFIDENCE,True,0.0033,0.0011,0.0006,0.0025,0.9926
+v11_unk_test_mini_098_02,pháo hoa rực rỡ,minimal_pair_coda,Quỳnh Anh,REJECT,REJECT,0.005,REJECTED_LOW_CONFIDENCE,True,0.005,0.001,0.0006,0.0033,0.9901
+v11_unk_test_mini_098_03,pháo hoa rực rỡ,minimal_pair_coda,Đức Trí,REJECT,REJECT,0.0061,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0037,0.0009,0.0024,0.987
+v11_unk_test_mini_099_00,phòng họp ban giám đốc,minimal_pair_coda,Kim Thanh,REJECT,REJECT,0.0019,REJECTED_LOW_CONFIDENCE,True,0.0014,0.0019,0.0009,0.0003,0.9956
+v11_unk_test_mini_099_01,phòng họp ban giám đốc,minimal_pair_coda,Quốc Tuấn,REJECT,REJECT,0.0012,REJECTED_LOW_CONFIDENCE,True,0.0012,0.0012,0.0002,0.0004,0.9971
+v11_unk_test_mini_099_02,phòng họp ban giám đốc,minimal_pair_coda,Quỳnh Anh,REJECT,REJECT,0.0025,REJECTED_LOW_CONFIDENCE,True,0.0025,0.0012,0.0007,0.002,0.9936
+v11_unk_test_mini_099_03,phòng họp ban giám đốc,minimal_pair_coda,Đức Trí,REJECT,REJECT,0.018,REJECTED_LOW_CONFIDENCE,True,0.0103,0.018,0.0163,0.0066,0.9489
+v11_sil_test_near_silence_00,[silence],near_silence,near_silence,REJECT,REJECT,0.0106,REJECTED_LOW_CONFIDENCE,True,0.006,0.0106,0.0051,0.006,0.9723
+v11_sil_test_near_silence_01,[silence],near_silence,near_silence,REJECT,REJECT,0.0108,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0108,0.0053,0.006,0.9718
+v11_sil_test_near_silence_02,[silence],near_silence,near_silence,REJECT,REJECT,0.0104,REJECTED_LOW_CONFIDENCE,True,0.006,0.0104,0.0049,0.0059,0.9728
+v11_sil_test_near_silence_03,[silence],near_silence,near_silence,REJECT,REJECT,0.0111,REJECTED_LOW_CONFIDENCE,True,0.0064,0.0111,0.0055,0.0065,0.9706
+v11_sil_test_near_silence_04,[silence],near_silence,near_silence,REJECT,REJECT,0.0108,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0108,0.005,0.0058,0.9724
+v11_sil_test_near_silence_05,[silence],near_silence,near_silence,REJECT,REJECT,0.0108,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0108,0.0051,0.0059,0.9721
+v11_sil_test_near_silence_06,[silence],near_silence,near_silence,REJECT,REJECT,0.0117,REJECTED_LOW_CONFIDENCE,True,0.0069,0.0117,0.0058,0.0068,0.9689
+v11_sil_test_near_silence_07,[silence],near_silence,near_silence,REJECT,REJECT,0.0105,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0105,0.005,0.0061,0.9723
+v11_sil_test_near_silence_08,[silence],near_silence,near_silence,REJECT,REJECT,0.0109,REJECTED_LOW_CONFIDENCE,True,0.0062,0.0109,0.0053,0.0061,0.9715
+v11_sil_test_near_silence_09,[silence],near_silence,near_silence,REJECT,REJECT,0.0115,REJECTED_LOW_CONFIDENCE,True,0.0067,0.0115,0.0055,0.0065,0.9698
+v11_sil_test_near_silence_10,[silence],near_silence,near_silence,REJECT,REJECT,0.0107,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0107,0.0052,0.0059,0.9721
+v11_sil_test_near_silence_11,[silence],near_silence,near_silence,REJECT,REJECT,0.0107,REJECTED_LOW_CONFIDENCE,True,0.0062,0.0107,0.0052,0.0062,0.9717
+v11_sil_test_near_silence_12,[silence],near_silence,near_silence,REJECT,REJECT,0.011,REJECTED_LOW_CONFIDENCE,True,0.0063,0.011,0.0053,0.0061,0.9713
+v11_sil_test_near_silence_13,[silence],near_silence,near_silence,REJECT,REJECT,0.0101,REJECTED_LOW_CONFIDENCE,True,0.0055,0.0101,0.0051,0.0055,0.9739
+v11_sil_test_near_silence_14,[silence],near_silence,near_silence,REJECT,REJECT,0.0107,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0107,0.005,0.0058,0.9724
+v11_sil_test_near_silence_15,[silence],near_silence,near_silence,REJECT,REJECT,0.0106,REJECTED_LOW_CONFIDENCE,True,0.0059,0.0106,0.0052,0.0059,0.9723
+v11_sil_test_near_silence_16,[silence],near_silence,near_silence,REJECT,REJECT,0.0106,REJECTED_LOW_CONFIDENCE,True,0.0062,0.0106,0.005,0.006,0.9721
+v11_sil_test_near_silence_17,[silence],near_silence,near_silence,REJECT,REJECT,0.011,REJECTED_LOW_CONFIDENCE,True,0.0064,0.011,0.0053,0.0062,0.971
+v11_sil_test_near_silence_18,[silence],near_silence,near_silence,REJECT,REJECT,0.0113,REJECTED_LOW_CONFIDENCE,True,0.0066,0.0113,0.0055,0.0065,0.9702
+v11_sil_test_near_silence_19,[silence],near_silence,near_silence,REJECT,REJECT,0.0109,REJECTED_LOW_CONFIDENCE,True,0.0063,0.0109,0.0054,0.0062,0.9712
+v11_sil_test_hvac_hum_00,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0117,REJECTED_LOW_CONFIDENCE,True,0.0063,0.0089,0.0066,0.0117,0.9664
+v11_sil_test_hvac_hum_01,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0126,REJECTED_LOW_CONFIDENCE,True,0.007,0.0101,0.0082,0.0126,0.9621
+v11_sil_test_hvac_hum_02,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0099,REJECTED_LOW_CONFIDENCE,True,0.0058,0.009,0.0074,0.0099,0.9678
+v11_sil_test_hvac_hum_03,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0107,REJECTED_LOW_CONFIDENCE,True,0.0058,0.0087,0.0074,0.0107,0.9674
+v11_sil_test_hvac_hum_04,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0111,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0092,0.008,0.0111,0.9656
+v11_sil_test_hvac_hum_05,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0136,REJECTED_LOW_CONFIDENCE,True,0.0069,0.0095,0.0079,0.0136,0.9622
+v11_sil_test_hvac_hum_06,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0135,REJECTED_LOW_CONFIDENCE,True,0.0063,0.0087,0.008,0.0135,0.9635
+v11_sil_test_hvac_hum_07,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0141,REJECTED_LOW_CONFIDENCE,True,0.007,0.0093,0.0071,0.0141,0.9626
+v11_sil_test_hvac_hum_08,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0117,REJECTED_LOW_CONFIDENCE,True,0.0065,0.0095,0.0077,0.0117,0.9646
+v11_sil_test_hvac_hum_09,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0151,REJECTED_LOW_CONFIDENCE,True,0.0075,0.0098,0.008,0.0151,0.9596
+v11_sil_test_hvac_hum_10,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0106,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0094,0.0079,0.0106,0.9661
+v11_sil_test_hvac_hum_11,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0131,REJECTED_LOW_CONFIDENCE,True,0.0066,0.009,0.0075,0.0131,0.9637
+v11_sil_test_hvac_hum_12,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0104,REJECTED_LOW_CONFIDENCE,True,0.0062,0.0099,0.008,0.0104,0.9654
+v11_sil_test_hvac_hum_13,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0112,REJECTED_LOW_CONFIDENCE,True,0.0063,0.0093,0.0075,0.0112,0.9656
+v11_sil_test_hvac_hum_14,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0141,REJECTED_LOW_CONFIDENCE,True,0.007,0.0095,0.0076,0.0141,0.9617
+v11_sil_test_hvac_hum_15,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0118,REJECTED_LOW_CONFIDENCE,True,0.0065,0.0095,0.0077,0.0118,0.9644
+v11_sil_test_hvac_hum_16,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0115,REJECTED_LOW_CONFIDENCE,True,0.0063,0.0093,0.0077,0.0115,0.9652
+v11_sil_test_hvac_hum_17,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.01,REJECTED_LOW_CONFIDENCE,True,0.0057,0.0089,0.0074,0.01,0.968
+v11_sil_test_hvac_hum_18,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0116,REJECTED_LOW_CONFIDENCE,True,0.0062,0.009,0.0071,0.0116,0.9661
+v11_sil_test_hvac_hum_19,[silence],hvac_hum,hvac_hum,REJECT,REJECT,0.0109,REJECTED_LOW_CONFIDENCE,True,0.0061,0.0091,0.0074,0.0109,0.9666
+v11_sil_test_office_ambient_00,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0048,REJECTED_LOW_CONFIDENCE,True,0.0019,0.0048,0.0023,0.002,0.989
+v11_sil_test_office_ambient_01,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0043,REJECTED_LOW_CONFIDENCE,True,0.0016,0.0043,0.002,0.0017,0.9903
+v11_sil_test_office_ambient_02,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0046,REJECTED_LOW_CONFIDENCE,True,0.0018,0.0046,0.0022,0.002,0.9894
+v11_sil_test_office_ambient_03,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0043,REJECTED_LOW_CONFIDENCE,True,0.0016,0.0043,0.0019,0.0018,0.9904
+v11_sil_test_office_ambient_04,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0048,REJECTED_LOW_CONFIDENCE,True,0.002,0.0048,0.0024,0.0022,0.9886
+v11_sil_test_office_ambient_05,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0049,REJECTED_LOW_CONFIDENCE,True,0.002,0.0049,0.0028,0.0024,0.9878
+v11_sil_test_office_ambient_06,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0044,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0044,0.0022,0.0018,0.9898
+v11_sil_test_office_ambient_07,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0043,REJECTED_LOW_CONFIDENCE,True,0.0016,0.0043,0.0019,0.0017,0.9904
+v11_sil_test_office_ambient_08,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0045,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0045,0.002,0.0017,0.99
+v11_sil_test_office_ambient_09,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0049,REJECTED_LOW_CONFIDENCE,True,0.0016,0.0049,0.0024,0.0017,0.9895
+v11_sil_test_office_ambient_10,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0044,REJECTED_LOW_CONFIDENCE,True,0.0016,0.0044,0.0019,0.0016,0.9905
+v11_sil_test_office_ambient_11,[silence],office_ambient,office_ambient,REJECT,REJECT,0.005,REJECTED_LOW_CONFIDENCE,True,0.0019,0.005,0.0022,0.0019,0.9889
+v11_sil_test_office_ambient_12,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0043,REJECTED_LOW_CONFIDENCE,True,0.0015,0.0043,0.002,0.0015,0.9907
+v11_sil_test_office_ambient_13,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0043,REJECTED_LOW_CONFIDENCE,True,0.0017,0.0043,0.0022,0.0019,0.9899
+v11_sil_test_office_ambient_14,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0046,REJECTED_LOW_CONFIDENCE,True,0.0018,0.0046,0.0023,0.002,0.9893
+v11_sil_test_office_ambient_15,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0055,REJECTED_LOW_CONFIDENCE,True,0.0023,0.0055,0.0028,0.0026,0.9869
+v11_sil_test_office_ambient_16,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0045,REJECTED_LOW_CONFIDENCE,True,0.0016,0.0045,0.0022,0.0017,0.99
+v11_sil_test_office_ambient_17,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0045,REJECTED_LOW_CONFIDENCE,True,0.0018,0.0045,0.0022,0.0019,0.9896
+v11_sil_test_office_ambient_18,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0048,REJECTED_LOW_CONFIDENCE,True,0.0019,0.0048,0.0023,0.0021,0.9888
+v11_sil_test_office_ambient_19,[silence],office_ambient,office_ambient,REJECT,REJECT,0.0048,REJECTED_LOW_CONFIDENCE,True,0.0019,0.0048,0.0024,0.002,0.9889
+v11_sil_test_airflow_pink_00,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0112,REJECTED_LOW_CONFIDENCE,True,0.0065,0.0112,0.0069,0.0072,0.9682
+v11_sil_test_airflow_pink_01,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0117,REJECTED_LOW_CONFIDENCE,True,0.0066,0.0117,0.0076,0.0074,0.9667
+v11_sil_test_airflow_pink_02,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0116,REJECTED_LOW_CONFIDENCE,True,0.0067,0.0116,0.0075,0.0075,0.9667
+v11_sil_test_airflow_pink_03,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0116,REJECTED_LOW_CONFIDENCE,True,0.0066,0.0116,0.008,0.0074,0.9664
+v11_sil_test_airflow_pink_04,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0117,REJECTED_LOW_CONFIDENCE,True,0.0069,0.0117,0.0074,0.0076,0.9663
+v11_sil_test_airflow_pink_05,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0121,REJECTED_LOW_CONFIDENCE,True,0.0072,0.0121,0.0077,0.0078,0.9652
+v11_sil_test_airflow_pink_06,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0115,REJECTED_LOW_CONFIDENCE,True,0.0065,0.0115,0.0078,0.0072,0.967
+v11_sil_test_airflow_pink_07,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0118,REJECTED_LOW_CONFIDENCE,True,0.0067,0.0118,0.0073,0.0072,0.967
+v11_sil_test_airflow_pink_08,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0124,REJECTED_LOW_CONFIDENCE,True,0.007,0.0124,0.0095,0.0081,0.9629
+v11_sil_test_airflow_pink_09,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0112,REJECTED_LOW_CONFIDENCE,True,0.0065,0.0112,0.0067,0.0071,0.9686
+v11_sil_test_airflow_pink_10,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.012,REJECTED_LOW_CONFIDENCE,True,0.0069,0.012,0.008,0.0076,0.9654
+v11_sil_test_airflow_pink_11,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0126,REJECTED_LOW_CONFIDENCE,True,0.0074,0.0126,0.0086,0.0082,0.9632
+v11_sil_test_airflow_pink_12,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0122,REJECTED_LOW_CONFIDENCE,True,0.0073,0.0122,0.0079,0.0082,0.9643
+v11_sil_test_airflow_pink_13,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0128,REJECTED_LOW_CONFIDENCE,True,0.0075,0.0128,0.009,0.0085,0.9621
+v11_sil_test_airflow_pink_14,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0117,REJECTED_LOW_CONFIDENCE,True,0.0068,0.0117,0.0077,0.0076,0.9661
+v11_sil_test_airflow_pink_15,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0115,REJECTED_LOW_CONFIDENCE,True,0.0067,0.0115,0.0074,0.0075,0.9668
+v11_sil_test_airflow_pink_16,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0121,REJECTED_LOW_CONFIDENCE,True,0.0072,0.0121,0.0076,0.008,0.965
+v11_sil_test_airflow_pink_17,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0123,REJECTED_LOW_CONFIDENCE,True,0.0075,0.0123,0.0079,0.0084,0.9639
+v11_sil_test_airflow_pink_18,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0119,REJECTED_LOW_CONFIDENCE,True,0.0067,0.0119,0.0079,0.0075,0.966
+v11_sil_test_airflow_pink_19,[silence],airflow_pink,airflow_pink,REJECT,REJECT,0.0127,REJECTED_LOW_CONFIDENCE,True,0.0074,0.0127,0.0084,0.0081,0.9633

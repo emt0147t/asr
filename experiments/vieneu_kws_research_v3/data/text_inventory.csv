@@ -1,0 +1,941 @@
+text_id,text,split,intended_label,confusion_family,source,tts_voice_id
+txt_train_0001,trai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Adam
+txt_train_0002,trài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0003,trải,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0004,trại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0005,chái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0006,sái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0007,trát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0008,tráo,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0009,trách,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0010,trang,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0011,trái cây,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0012,bên trái,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0013,phai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0014,phài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0015,phái,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0016,phại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0017,thải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0018,thái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Adam
+txt_train_0019,khải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0020,phát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0021,phạt,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0022,pháp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0023,phải chăng,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0024,bên phải,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0025,lèn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0026,lén,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0027,lẻn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0028,lẹn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0029,nén,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0030,khen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0031,chen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0032,đen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0033,lớp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0034,lực,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0035,đi lên,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Adam
+txt_train_0036,lên đường,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0037,xuồng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0038,xuổng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0039,xướng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0040,sương,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0041,sườn,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0042,hướng,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0043,buông,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0044,chuông,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0045,xuất,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0046,xong,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0047,đi xuống,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0048,xuống dốc,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0049,bật,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0050,tắt,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0051,mở,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0052,đóng,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Adam
+txt_train_0053,chạy,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0054,dừng,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0055,nghe,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0056,nói,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0057,hát,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0058,đọc,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0059,viết,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0060,xin chào,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0061,trai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0062,trài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0063,trải,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0064,trại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0065,chái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0066,sái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0067,trát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0068,tráo,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0069,trách,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Adam
+txt_train_0070,trang,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0071,trái cây,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0072,bên trái,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0073,phai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0074,phài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0075,phái,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0076,phại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0077,thải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0078,thái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0079,khải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0080,phát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0081,phạt,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0082,pháp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0083,phải chăng,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0084,bên phải,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0085,lèn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0086,lén,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Adam
+txt_train_0087,lẻn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0088,lẹn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0089,nén,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0090,khen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0091,chen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0092,đen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0093,lớp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0094,lực,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0095,đi lên,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0096,lên đường,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0097,xuồng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0098,xuổng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0099,xướng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0100,sương,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0101,sườn,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0102,hướng,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0103,buông,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Adam
+txt_train_0104,chuông,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0105,xuất,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0106,xong,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0107,đi xuống,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0108,xuống dốc,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0109,bật,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0110,tắt,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0111,mở,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0112,đóng,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0113,chạy,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0114,dừng,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0115,nghe,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0116,nói,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0117,hát,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0118,đọc,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0119,viết,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0120,xin chào,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Adam
+txt_train_0121,trai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0122,trài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0123,trải,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0124,trại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0125,chái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0126,sái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0127,trát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0128,tráo,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0129,trách,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0130,trang,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0131,trái cây,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0132,bên trái,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0133,phai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0134,phài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0135,phái,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0136,phại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0137,thải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Adam
+txt_train_0138,thái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0139,khải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0140,phát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0141,phạt,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0142,pháp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0143,phải chăng,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0144,bên phải,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0145,lèn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0146,lén,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0147,lẻn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0148,lẹn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0149,nén,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0150,khen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0151,chen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0152,đen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0153,lớp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0154,lực,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Adam
+txt_train_0155,đi lên,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0156,lên đường,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0157,xuồng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0158,xuổng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0159,xướng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0160,sương,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0161,sườn,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0162,hướng,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0163,buông,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0164,chuông,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0165,xuất,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0166,xong,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0167,đi xuống,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0168,xuống dốc,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0169,bật,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0170,tắt,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0171,mở,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Adam
+txt_train_0172,đóng,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0173,chạy,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0174,dừng,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0175,nghe,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0176,nói,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0177,hát,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0178,đọc,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0179,viết,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0180,xin chào,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0181,trai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0182,trài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0183,trải,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0184,trại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0185,chái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0186,sái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0187,trát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0188,tráo,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Adam
+txt_train_0189,trách,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0190,trang,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0191,trái cây,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0192,bên trái,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0193,phai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0194,phài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0195,phái,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0196,phại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0197,thải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0198,thái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0199,khải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0200,phát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0201,phạt,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0202,pháp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0203,phải chăng,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0204,bên phải,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0205,lèn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Adam
+txt_train_0206,lén,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0207,lẻn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0208,lẹn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0209,nén,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0210,khen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0211,chen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0212,đen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0213,lớp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0214,lực,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0215,đi lên,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0216,lên đường,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0217,xuồng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0218,xuổng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0219,xướng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0220,sương,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0221,sườn,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0222,hướng,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Adam
+txt_train_0223,buông,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0224,chuông,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0225,xuất,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0226,xong,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0227,đi xuống,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0228,xuống dốc,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0229,bật,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0230,tắt,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0231,mở,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0232,đóng,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0233,chạy,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0234,dừng,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0235,nghe,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0236,nói,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0237,hát,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0238,đọc,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0239,viết,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Adam
+txt_train_0240,xin chào,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0241,trai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0242,trài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0243,trải,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0244,trại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0245,chái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0246,sái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0247,trát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0248,tráo,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0249,trách,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0250,trang,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0251,trái cây,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0252,bên trái,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0253,phai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0254,phài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0255,phái,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0256,phại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Adam
+txt_train_0257,thải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0258,thái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0259,khải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0260,phát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0261,phạt,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0262,pháp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0263,phải chăng,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0264,bên phải,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0265,lèn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0266,lén,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0267,lẻn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0268,lẹn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0269,nén,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0270,khen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0271,chen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0272,đen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0273,lớp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Adam
+txt_train_0274,lực,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0275,đi lên,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0276,lên đường,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0277,xuồng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0278,xuổng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0279,xướng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0280,sương,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0281,sườn,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0282,hướng,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0283,buông,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0284,chuông,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0285,xuất,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0286,xong,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0287,đi xuống,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0288,xuống dốc,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0289,bật,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0290,tắt,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Adam
+txt_train_0291,mở,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0292,đóng,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0293,chạy,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0294,dừng,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0295,nghe,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0296,nói,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0297,hát,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0298,đọc,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0299,viết,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0300,xin chào,train,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0301,trai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0302,trài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0303,trải,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0304,trại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0305,chái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0306,sái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0307,trát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Adam
+txt_train_0308,tráo,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0309,trách,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0310,trang,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0311,trái cây,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0312,bên trái,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0313,phai,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0314,phài,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0315,phái,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0316,phại,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0317,thải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0318,thái,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0319,khải,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0320,phát,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0321,phạt,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0322,pháp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0323,phải chăng,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đoan Trang
+txt_train_0324,bên phải,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Adam
+txt_train_0325,lèn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Adam bựa
+txt_train_0326,lén,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Hải Đăng
+txt_train_0327,lẻn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Triết
+txt_train_0328,lẹn,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Minh Đức
+txt_train_0329,nén,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Mỹ Duyên
+txt_train_0330,khen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Huyền
+txt_train_0331,chen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Linh
+txt_train_0332,đen,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quang Sơn
+txt_train_0333,lớp,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thanh Bình
+txt_train_0334,lực,train,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thiền Tâm Đức
+txt_train_0335,đi lên,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thiện Minh
+txt_train_0336,lên đường,train,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thái Sơn
+txt_train_0337,xuồng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thục Đoan
+txt_train_0338,xuổng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Trúc Ly
+txt_train_0339,xướng,train,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Xuân Vĩnh
+txt_train_0340,sương,train,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đoan Trang
+txt_val_0341,trãi,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0342,mái,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0343,tròn,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0344,trại giam,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0345,phãi,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0346,mải,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0347,phay,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0348,không phải,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0349,lẽn,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0350,quên,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0351,lưng,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0352,tiến lên,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0353,xuỗng,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0354,hưởng,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0355,xanh,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0356,quê hương,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0357,xem,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0358,tìm,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0359,chọn,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0360,bắt đầu,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0361,kết thúc,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0362,cửa sổ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0363,âm lượng,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0364,ánh sáng,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0365,nhiệt độ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0366,thông báo,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0367,bản đồ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0368,tin nhắn,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0369,cuộc gọi,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0370,trợ lý,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Mai Anh
+txt_val_0371,trãi,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0372,mái,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0373,tròn,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0374,trại giam,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0375,phãi,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0376,mải,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0377,phay,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0378,không phải,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0379,lẽn,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0380,quên,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0381,lưng,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0382,tiến lên,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0383,xuỗng,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0384,hưởng,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0385,xanh,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0386,quê hương,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0387,xem,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0388,tìm,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0389,chọn,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0390,bắt đầu,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0391,kết thúc,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0392,cửa sổ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0393,âm lượng,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0394,ánh sáng,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0395,nhiệt độ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0396,thông báo,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0397,bản đồ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0398,tin nhắn,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0399,cuộc gọi,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0400,trợ lý,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Ngọc Trân
+txt_val_0401,trãi,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0402,mái,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0403,tròn,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0404,trại giam,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0405,phãi,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0406,mải,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0407,phay,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0408,không phải,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0409,lẽn,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0410,quên,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0411,lưng,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0412,tiến lên,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0413,xuỗng,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0414,hưởng,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0415,xanh,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0416,quê hương,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0417,xem,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0418,tìm,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0419,chọn,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0420,bắt đầu,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0421,kết thúc,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0422,cửa sổ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0423,âm lượng,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0424,ánh sáng,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0425,nhiệt độ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0426,thông báo,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0427,bản đồ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0428,tin nhắn,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0429,cuộc gọi,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0430,trợ lý,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Phạm Tuyên
+txt_val_0431,trãi,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0432,mái,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0433,tròn,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0434,trại giam,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0435,phãi,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0436,mải,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0437,phay,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0438,không phải,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0439,lẽn,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0440,quên,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0441,lưng,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0442,tiến lên,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0443,xuỗng,val,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0444,hưởng,val,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0445,xanh,val,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0446,quê hương,val,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0447,xem,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0448,tìm,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0449,chọn,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0450,bắt đầu,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0451,kết thúc,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0452,cửa sổ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0453,âm lượng,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0454,ánh sáng,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0455,nhiệt độ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0456,thông báo,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0457,bản đồ,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0458,tin nhắn,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0459,cuộc gọi,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_val_0460,trợ lý,val,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Thùy Dung
+txt_test_0461,trãi nghiệm,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0462,trại nuôi,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0463,trái mùa,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0464,trải dài,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0465,con trai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0466,phai mờ,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0467,phái đoàn,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0468,phôi phai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0469,thời gian phai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0470,lèn đá,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0471,lén lút,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0472,lẻn vào,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0473,sợi len,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0474,áo len,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0475,xưởng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0476,xuồng ba lá,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0477,xướng ca,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0478,dòng xuồng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0479,nhà xưởng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0480,xương khớp,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0481,lái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0482,bái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0483,gái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0484,dài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0485,mài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0486,bài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0487,bải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0488,hải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0489,tải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0490,ngải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0491,gãi,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0492,vải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0493,nem,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0494,men,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0495,sen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0496,quen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0497,xen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0498,ren,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0499,luồng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0500,dưỡng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0501,tường,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0502,lưỡng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0503,vương,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0504,nhường,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0505,trước,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0506,trắng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0507,tra,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0508,trâu,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0509,trĩ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0510,trụ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0511,pháo,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0512,phần,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0513,pha,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0514,phú,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0515,phi,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0516,phở,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0517,leng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0518,lòng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0519,lệnh,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0520,lao,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0521,lo,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0522,lu,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0523,xốp,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0524,xúc,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0525,xuyên,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0526,xứ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0527,xe,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0528,xoài,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0529,lái xe,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0530,trái tim,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0531,trái phiếu,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0532,trái ngược,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0533,tay trái,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0534,hướng trái,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0535,phần mềm,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0536,phải biết,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0537,phải lòng,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0538,bắt buộc phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0539,tay phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0540,hướng phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0541,bước lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0542,lên lớp,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0543,lên kế hoạch,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0544,nổi lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0545,bay lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0546,nhảy lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0547,đi xuống phố,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0548,hạ xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0549,chảy xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0550,rơi xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0551,bước xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0552,nhìn xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0553,hỏi,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0554,lưu,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0555,xóa,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0556,cảm ơn,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0557,hẹn gặp lại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0558,thời tiết hôm nay,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0559,tin tức buổi sáng,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0560,báo thức,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0561,máy tính,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0562,điện thoại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0563,tìm kiếm,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0564,kết nối,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0565,lịch làm việc,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0566,ghi chú,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0567,hủy bỏ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0568,đồng ý,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0569,từ chối,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0570,trở lại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0571,tiếp tục,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0572,hoàn thành,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0573,cài đặt,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0574,hệ thống,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0575,trang chủ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0576,tài khoản,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0577,bảo mật,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0578,thông minh,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0579,công nghệ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0580,phát triển,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Kim Thanh
+txt_test_0581,trãi nghiệm,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0582,trại nuôi,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0583,trái mùa,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0584,trải dài,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0585,con trai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0586,phai mờ,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0587,phái đoàn,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0588,phôi phai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0589,thời gian phai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0590,lèn đá,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0591,lén lút,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0592,lẻn vào,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0593,sợi len,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0594,áo len,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0595,xưởng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0596,xuồng ba lá,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0597,xướng ca,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0598,dòng xuồng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0599,nhà xưởng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0600,xương khớp,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0601,lái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0602,bái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0603,gái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0604,dài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0605,mài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0606,bài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0607,bải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0608,hải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0609,tải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0610,ngải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0611,gãi,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0612,vải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0613,nem,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0614,men,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0615,sen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0616,quen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0617,xen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0618,ren,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0619,luồng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0620,dưỡng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0621,tường,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0622,lưỡng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0623,vương,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0624,nhường,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0625,trước,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0626,trắng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0627,tra,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0628,trâu,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0629,trĩ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0630,trụ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0631,pháo,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0632,phần,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0633,pha,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0634,phú,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0635,phi,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0636,phở,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0637,leng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0638,lòng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0639,lệnh,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0640,lao,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0641,lo,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0642,lu,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0643,xốp,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0644,xúc,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0645,xuyên,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0646,xứ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0647,xe,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0648,xoài,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0649,lái xe,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0650,trái tim,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0651,trái phiếu,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0652,trái ngược,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0653,tay trái,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0654,hướng trái,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0655,phần mềm,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0656,phải biết,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0657,phải lòng,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0658,bắt buộc phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0659,tay phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0660,hướng phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0661,bước lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0662,lên lớp,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0663,lên kế hoạch,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0664,nổi lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0665,bay lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0666,nhảy lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0667,đi xuống phố,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0668,hạ xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0669,chảy xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0670,rơi xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0671,bước xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0672,nhìn xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0673,hỏi,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0674,lưu,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0675,xóa,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0676,cảm ơn,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0677,hẹn gặp lại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0678,thời tiết hôm nay,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0679,tin tức buổi sáng,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0680,báo thức,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0681,máy tính,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0682,điện thoại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0683,tìm kiếm,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0684,kết nối,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0685,lịch làm việc,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0686,ghi chú,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0687,hủy bỏ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0688,đồng ý,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0689,từ chối,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0690,trở lại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0691,tiếp tục,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0692,hoàn thành,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0693,cài đặt,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0694,hệ thống,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0695,trang chủ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0696,tài khoản,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0697,bảo mật,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0698,thông minh,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0699,công nghệ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0700,phát triển,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quốc Tuấn
+txt_test_0701,trãi nghiệm,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0702,trại nuôi,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0703,trái mùa,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0704,trải dài,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0705,con trai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0706,phai mờ,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0707,phái đoàn,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0708,phôi phai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0709,thời gian phai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0710,lèn đá,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0711,lén lút,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0712,lẻn vào,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0713,sợi len,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0714,áo len,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0715,xưởng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0716,xuồng ba lá,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0717,xướng ca,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0718,dòng xuồng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0719,nhà xưởng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0720,xương khớp,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0721,lái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0722,bái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0723,gái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0724,dài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0725,mài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0726,bài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0727,bải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0728,hải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0729,tải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0730,ngải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0731,gãi,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0732,vải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0733,nem,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0734,men,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0735,sen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0736,quen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0737,xen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0738,ren,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0739,luồng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0740,dưỡng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0741,tường,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0742,lưỡng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0743,vương,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0744,nhường,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0745,trước,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0746,trắng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0747,tra,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0748,trâu,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0749,trĩ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0750,trụ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0751,pháo,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0752,phần,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0753,pha,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0754,phú,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0755,phi,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0756,phở,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0757,leng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0758,lòng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0759,lệnh,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0760,lao,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0761,lo,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0762,lu,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0763,xốp,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0764,xúc,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0765,xuyên,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0766,xứ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0767,xe,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0768,xoài,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0769,lái xe,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0770,trái tim,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0771,trái phiếu,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0772,trái ngược,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0773,tay trái,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0774,hướng trái,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0775,phần mềm,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0776,phải biết,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0777,phải lòng,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0778,bắt buộc phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0779,tay phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0780,hướng phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0781,bước lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0782,lên lớp,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0783,lên kế hoạch,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0784,nổi lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0785,bay lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0786,nhảy lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0787,đi xuống phố,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0788,hạ xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0789,chảy xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0790,rơi xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0791,bước xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0792,nhìn xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0793,hỏi,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0794,lưu,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0795,xóa,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0796,cảm ơn,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0797,hẹn gặp lại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0798,thời tiết hôm nay,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0799,tin tức buổi sáng,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0800,báo thức,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0801,máy tính,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0802,điện thoại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0803,tìm kiếm,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0804,kết nối,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0805,lịch làm việc,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0806,ghi chú,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0807,hủy bỏ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0808,đồng ý,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0809,từ chối,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0810,trở lại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0811,tiếp tục,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0812,hoàn thành,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0813,cài đặt,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0814,hệ thống,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0815,trang chủ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0816,tài khoản,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0817,bảo mật,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0818,thông minh,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0819,công nghệ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0820,phát triển,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Quỳnh Anh
+txt_test_0821,trãi nghiệm,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0822,trại nuôi,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0823,trái mùa,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0824,trải dài,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0825,con trai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0826,phai mờ,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0827,phái đoàn,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0828,phôi phai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0829,thời gian phai,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0830,lèn đá,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0831,lén lút,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0832,lẻn vào,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0833,sợi len,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0834,áo len,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0835,xưởng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0836,xuồng ba lá,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0837,xướng ca,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0838,dòng xuồng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0839,nhà xưởng,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0840,xương khớp,test,UNKNOWN,minimal_pair_tone,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0841,lái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0842,bái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0843,gái,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0844,dài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0845,mài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0846,bài,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0847,bải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0848,hải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0849,tải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0850,ngải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0851,gãi,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0852,vải,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0853,nem,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0854,men,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0855,sen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0856,quen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0857,xen,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0858,ren,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0859,luồng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0860,dưỡng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0861,tường,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0862,lưỡng,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0863,vương,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0864,nhường,test,UNKNOWN,minimal_pair_consonant,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0865,trước,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0866,trắng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0867,tra,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0868,trâu,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0869,trĩ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0870,trụ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0871,pháo,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0872,phần,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0873,pha,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0874,phú,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0875,phi,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0876,phở,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0877,leng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0878,lòng,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0879,lệnh,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0880,lao,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0881,lo,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0882,lu,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0883,xốp,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0884,xúc,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0885,xuyên,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0886,xứ,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0887,xe,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0888,xoài,test,UNKNOWN,minimal_pair_vowel_coda,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0889,lái xe,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0890,trái tim,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0891,trái phiếu,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0892,trái ngược,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0893,tay trái,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0894,hướng trái,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0895,phần mềm,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0896,phải biết,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0897,phải lòng,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0898,bắt buộc phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0899,tay phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0900,hướng phải,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0901,bước lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0902,lên lớp,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0903,lên kế hoạch,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0904,nổi lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0905,bay lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0906,nhảy lên,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0907,đi xuống phố,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0908,hạ xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0909,chảy xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0910,rơi xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0911,bước xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0912,nhìn xuống,test,UNKNOWN,phonetic_phrase_context,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0913,hỏi,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0914,lưu,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0915,xóa,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0916,cảm ơn,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0917,hẹn gặp lại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0918,thời tiết hôm nay,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0919,tin tức buổi sáng,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0920,báo thức,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0921,máy tính,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0922,điện thoại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0923,tìm kiếm,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0924,kết nối,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0925,lịch làm việc,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0926,ghi chú,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0927,hủy bỏ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0928,đồng ý,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0929,từ chối,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0930,trở lại,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0931,tiếp tục,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0932,hoàn thành,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0933,cài đặt,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0934,hệ thống,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0935,trang chủ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0936,tài khoản,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0937,bảo mật,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0938,thông minh,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0939,công nghệ,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí
+txt_test_0940,phát triển,test,UNKNOWN,neutral_speech,VieNeu-TTS v3turbo,Đức Trí

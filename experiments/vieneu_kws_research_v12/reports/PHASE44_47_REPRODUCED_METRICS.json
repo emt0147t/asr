@@ -1,0 +1,644 @@
+{
+  "audit_metadata": {
+    "timestamp_utc": "2026-10-25T14:02:46.491879+00:00",
+    "script": "run_phase44_forensic_reproduction.py",
+    "eval_device": "cuda",
+    "manifest_hashes": {
+      "isolated_manifest": "179d173f2d4347b8d6030c7bb0a5d61179e8100b306577958e0d93288e92e4ee",
+      "tone_probe_manifest": "913644e38644d7a8f72fe953e6815e4004af85b707396c0fa2de11f708199880",
+      "streaming_manifest": "4681bdbe11da6c25597787588790f7bf4ac7e1f7957b4c3a1ba30b6b3e90981b",
+      "event_ledger_csv": "84c9af4247b091279149b3ef0dda8ebdbafabbd7679f4f6f465d7064c582c3cb",
+      "event_ledger_json": "7736b3b13e85d1db9772c2b084dae9019f516c8fcfa56f329f12cb860982ef0c",
+      "preregistration_doc": "18ee575eb9712d4f07d5717b7e12008c09decfeb061bb6a82b363d2cb51f95e9",
+      "phase43_results_json": "32c8a9f092567f1b81f828618cc9ec2d7d973a9edcb77003057c616b20e5526b"
+    },
+    "checkpoint_hashes": {
+      "Baseline_v11_seed42": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+      "Baseline_E1_seed42": "f3c0fe8f7ccebb8fe354cb50acb247e0674232044706db0187feb92b1706b878",
+      "Phase28_D2_H1_Candidate": "c6102b4876ddeaa453547c211c5cfc322511c957e18fd488a705a164b18601c8",
+      "Phase28_D0_H1_Candidate": "84a3457f105058bb7ca843b830013d00cb6d2e9ce737cb389267a84fcf51a6af",
+      "Phase26_Candidate_D0_H1_seed44": "00b4fc71f863788648d5ea388a99c4cbd4441d9b9f63adc5e56154e329df63f3"
+    },
+    "governance_labels": [
+      "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+      "NOT_VALIDATED_ON_NATURAL_SPEECH",
+      "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+      "NOT_VALIDATED_PENDING_DATA"
+    ]
+  },
+  "models_classification": {
+    "Baseline_v11_seed42": "planned_primary",
+    "Baseline_E1_seed42": "planned_primary",
+    "Phase28_D2_H1_Candidate": "planned_primary",
+    "Phase28_D0_H1_Candidate": "exploratory",
+    "Phase26_Candidate_D0_H1_seed44": "exploratory"
+  },
+  "reproduced_isolated_metrics": {
+    "Baseline_v11_seed42": {
+      "macro_f1_4cmd": 0.20321279166215878,
+      "macro_f1_5class": 0.2183278090873028,
+      "accuracy": 0.2375,
+      "confusion_matrix": [
+        [
+          10,
+          4,
+          0,
+          0,
+          2
+        ],
+        [
+          3,
+          11,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          12,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          12,
+          3
+        ],
+        [
+          49,
+          73,
+          133,
+          92,
+          69
+        ]
+      ],
+      "per_class": {
+        "TRAI": {
+          "precision": 0.15873015873015872,
+          "recall": 0.625,
+          "f1": 0.25316455696202533,
+          "support": 16
+        },
+        "PHAI": {
+          "precision": 0.125,
+          "recall": 0.6875,
+          "f1": 0.21153846153846154,
+          "support": 16
+        },
+        "LEN": {
+          "precision": 0.0821917808219178,
+          "recall": 0.75,
+          "f1": 0.14814814814814814,
+          "support": 16
+        },
+        "XUONG": {
+          "precision": 0.11538461538461539,
+          "recall": 0.75,
+          "f1": 0.2,
+          "support": 16
+        },
+        "REJECT": {
+          "precision": 0.8734177215189873,
+          "recall": 0.1658653846153846,
+          "f1": 0.2787878787878788,
+          "support": 416
+        }
+      },
+      "phonetic_oov_fa_rate": 0.8359375,
+      "phonetic_oov_fa_count": 214,
+      "phonetic_oov_total": 256,
+      "general_oov_fa_rate": 0.83125,
+      "general_oov_fa_count": 133,
+      "general_oov_total": 160,
+      "overall_oov_fa_rate": 0.8341346153846154,
+      "overall_oov_fa_count": 347,
+      "overall_oov_total": 416,
+      "tone_probe_fa_rate": 0.90625,
+      "tone_probe_fa_count": 87,
+      "tone_probe_total": 96
+    },
+    "Baseline_E1_seed42": {
+      "macro_f1_4cmd": 0.38619744397415795,
+      "macro_f1_5class": 0.45023962432984793,
+      "accuracy": 0.5833333333333334,
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          1,
+          0,
+          14
+        ],
+        [
+          0,
+          15,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          15,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          12,
+          2
+        ],
+        [
+          0,
+          0,
+          113,
+          66,
+          237
+        ]
+      ],
+      "per_class": {
+        "TRAI": {
+          "precision": 1.0,
+          "recall": 0.0625,
+          "f1": 0.11764705882352941,
+          "support": 16
+        },
+        "PHAI": {
+          "precision": 1.0,
+          "recall": 0.9375,
+          "f1": 0.967741935483871,
+          "support": 16
+        },
+        "LEN": {
+          "precision": 0.11450381679389313,
+          "recall": 0.9375,
+          "f1": 0.20408163265306123,
+          "support": 16
+        },
+        "XUONG": {
+          "precision": 0.15384615384615385,
+          "recall": 0.75,
+          "f1": 0.2553191489361702,
+          "support": 16
+        },
+        "REJECT": {
+          "precision": 0.9294117647058824,
+          "recall": 0.5697115384615384,
+          "f1": 0.706408345752608,
+          "support": 416
+        }
+      },
+      "phonetic_oov_fa_rate": 0.4296875,
+      "phonetic_oov_fa_count": 110,
+      "phonetic_oov_total": 256,
+      "general_oov_fa_rate": 0.43125,
+      "general_oov_fa_count": 69,
+      "general_oov_total": 160,
+      "overall_oov_fa_rate": 0.43028846153846156,
+      "overall_oov_fa_count": 179,
+      "overall_oov_total": 416,
+      "tone_probe_fa_rate": 0.23958333333333334,
+      "tone_probe_fa_count": 23,
+      "tone_probe_total": 96
+    },
+    "Phase28_D2_H1_Candidate": {
+      "macro_f1_4cmd": 0.3839854081167351,
+      "macro_f1_5class": 0.4762604914418417,
+      "accuracy": 0.75,
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          12,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          5
+        ],
+        [
+          0,
+          0,
+          72,
+          16,
+          328
+        ]
+      ],
+      "per_class": {
+        "TRAI": {
+          "precision": 1.0,
+          "recall": 0.0625,
+          "f1": 0.11764705882352941,
+          "support": 16
+        },
+        "PHAI": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 16
+        },
+        "LEN": {
+          "precision": 0.14285714285714285,
+          "recall": 0.75,
+          "f1": 0.24,
+          "support": 16
+        },
+        "XUONG": {
+          "precision": 0.4074074074074074,
+          "recall": 0.6875,
+          "f1": 0.5116279069767442,
+          "support": 16
+        },
+        "REJECT": {
+          "precision": 0.9111111111111111,
+          "recall": 0.7884615384615384,
+          "f1": 0.845360824742268,
+          "support": 416
+        }
+      },
+      "phonetic_oov_fa_rate": 0.21484375,
+      "phonetic_oov_fa_count": 55,
+      "phonetic_oov_total": 256,
+      "general_oov_fa_rate": 0.20625,
+      "general_oov_fa_count": 33,
+      "general_oov_total": 160,
+      "overall_oov_fa_rate": 0.21153846153846154,
+      "overall_oov_fa_count": 88,
+      "overall_oov_total": 416,
+      "tone_probe_fa_rate": 0.0,
+      "tone_probe_fa_count": 0,
+      "tone_probe_total": 96
+    },
+    "Phase28_D0_H1_Candidate": {
+      "macro_f1_4cmd": 0.44280611008284854,
+      "macro_f1_5class": 0.5112281282897425,
+      "accuracy": 0.6645833333333333,
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          4,
+          0,
+          7
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          3,
+          9,
+          4
+        ],
+        [
+          3,
+          1,
+          95,
+          36,
+          281
+        ]
+      ],
+      "per_class": {
+        "TRAI": {
+          "precision": 0.625,
+          "recall": 0.3125,
+          "f1": 0.4166666666666667,
+          "support": 16
+        },
+        "PHAI": {
+          "precision": 0.9333333333333333,
+          "recall": 0.875,
+          "f1": 0.9032258064516129,
+          "support": 16
+        },
+        "LEN": {
+          "precision": 0.08928571428571429,
+          "recall": 0.625,
+          "f1": 0.15625,
+          "support": 16
+        },
+        "XUONG": {
+          "precision": 0.2,
+          "recall": 0.5625,
+          "f1": 0.29508196721311475,
+          "support": 16
+        },
+        "REJECT": {
+          "precision": 0.9366666666666666,
+          "recall": 0.6754807692307693,
+          "f1": 0.7849162011173184,
+          "support": 416
+        }
+      },
+      "phonetic_oov_fa_rate": 0.3359375,
+      "phonetic_oov_fa_count": 86,
+      "phonetic_oov_total": 256,
+      "general_oov_fa_rate": 0.30625,
+      "general_oov_fa_count": 49,
+      "general_oov_total": 160,
+      "overall_oov_fa_rate": 0.3245192307692308,
+      "overall_oov_fa_count": 135,
+      "overall_oov_total": 416,
+      "tone_probe_fa_rate": 0.010416666666666666,
+      "tone_probe_fa_count": 1,
+      "tone_probe_total": 96
+    },
+    "Phase26_Candidate_D0_H1_seed44": {
+      "macro_f1_4cmd": 0.4966371373979503,
+      "macro_f1_5class": 0.5678360257078339,
+      "accuracy": 0.7625,
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          13
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          13,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          2,
+          12,
+          2
+        ],
+        [
+          0,
+          0,
+          70,
+          22,
+          324
+        ]
+      ],
+      "per_class": {
+        "TRAI": {
+          "precision": 1.0,
+          "recall": 0.1875,
+          "f1": 0.3157894736842105,
+          "support": 16
+        },
+        "PHAI": {
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333,
+          "support": 16
+        },
+        "LEN": {
+          "precision": 0.15294117647058825,
+          "recall": 0.8125,
+          "f1": 0.25742574257425743,
+          "support": 16
+        },
+        "XUONG": {
+          "precision": 0.35294117647058826,
+          "recall": 0.75,
+          "f1": 0.48,
+          "support": 16
+        },
+        "REJECT": {
+          "precision": 0.9418604651162791,
+          "recall": 0.7788461538461539,
+          "f1": 0.8526315789473684,
+          "support": 416
+        }
+      },
+      "phonetic_oov_fa_rate": 0.20703125,
+      "phonetic_oov_fa_count": 53,
+      "phonetic_oov_total": 256,
+      "general_oov_fa_rate": 0.24375,
+      "general_oov_fa_count": 39,
+      "general_oov_total": 160,
+      "overall_oov_fa_rate": 0.22115384615384615,
+      "overall_oov_fa_count": 92,
+      "overall_oov_total": 416,
+      "tone_probe_fa_rate": 0.0,
+      "tone_probe_fa_count": 0,
+      "tone_probe_total": 96
+    }
+  },
+  "reproduced_streaming_metrics": {
+    "Baseline_v11_seed42": {
+      "total_sequences": 50,
+      "exact_sequence_matches": 4,
+      "exact_sequence_accuracy": 0.08,
+      "total_gt_commands": 97,
+      "total_detected_commands": 318,
+      "true_positive_commands": 52,
+      "command_recall": 0.5360824742268041,
+      "command_precision": 0.16352201257861634,
+      "command_f1": 0.2506024096385542,
+      "silence_duration_min": 1.754,
+      "silence_false_alarms": 34,
+      "silence_fa_per_min": 19.39,
+      "oov_duration_min": 1.416,
+      "oov_false_alarms": 53,
+      "oov_fa_per_min": 37.43,
+      "p50_latency_ms": 373.0,
+      "p95_latency_ms": 781.0
+    },
+    "Baseline_E1_seed42": {
+      "total_sequences": 50,
+      "exact_sequence_matches": 13,
+      "exact_sequence_accuracy": 0.26,
+      "total_gt_commands": 97,
+      "total_detected_commands": 133,
+      "true_positive_commands": 65,
+      "command_recall": 0.6701030927835051,
+      "command_precision": 0.48872180451127817,
+      "command_f1": 0.5652173913043478,
+      "silence_duration_min": 1.754,
+      "silence_false_alarms": 1,
+      "silence_fa_per_min": 0.57,
+      "oov_duration_min": 1.416,
+      "oov_false_alarms": 13,
+      "oov_fa_per_min": 9.18,
+      "p50_latency_ms": 430.0,
+      "p95_latency_ms": 885.6
+    },
+    "Phase28_D2_H1_Candidate": {
+      "total_sequences": 50,
+      "exact_sequence_matches": 17,
+      "exact_sequence_accuracy": 0.34,
+      "total_gt_commands": 97,
+      "total_detected_commands": 54,
+      "true_positive_commands": 22,
+      "command_recall": 0.2268041237113402,
+      "command_precision": 0.4074074074074074,
+      "command_f1": 0.2913907284768212,
+      "silence_duration_min": 1.754,
+      "silence_false_alarms": 1,
+      "silence_fa_per_min": 0.57,
+      "oov_duration_min": 1.416,
+      "oov_false_alarms": 7,
+      "oov_fa_per_min": 4.94,
+      "p50_latency_ms": 721.5,
+      "p95_latency_ms": 947.8
+    },
+    "Phase28_D0_H1_Candidate": {
+      "total_sequences": 50,
+      "exact_sequence_matches": 13,
+      "exact_sequence_accuracy": 0.26,
+      "total_gt_commands": 97,
+      "total_detected_commands": 98,
+      "true_positive_commands": 36,
+      "command_recall": 0.3711340206185567,
+      "command_precision": 0.3673469387755102,
+      "command_f1": 0.3692307692307693,
+      "silence_duration_min": 1.754,
+      "silence_false_alarms": 3,
+      "silence_fa_per_min": 1.71,
+      "oov_duration_min": 1.416,
+      "oov_false_alarms": 11,
+      "oov_fa_per_min": 7.77,
+      "p50_latency_ms": 500.5,
+      "p95_latency_ms": 896.3
+    },
+    "Phase26_Candidate_D0_H1_seed44": {
+      "total_sequences": 50,
+      "exact_sequence_matches": 16,
+      "exact_sequence_accuracy": 0.32,
+      "total_gt_commands": 97,
+      "total_detected_commands": 92,
+      "true_positive_commands": 46,
+      "command_recall": 0.4742268041237113,
+      "command_precision": 0.5,
+      "command_f1": 0.48677248677248675,
+      "silence_duration_min": 1.754,
+      "silence_false_alarms": 5,
+      "silence_fa_per_min": 2.85,
+      "oov_duration_min": 1.416,
+      "oov_false_alarms": 9,
+      "oov_fa_per_min": 6.36,
+      "p50_latency_ms": 508.5,
+      "p95_latency_ms": 885.2
+    }
+  },
+  "claim_reconciliation": {
+    "reported_claim": "+17.33 pp D2_H1 vs v11",
+    "audit_verdict": "VERIFIED_AS_ESTIMAND_C_INSTANCE_CLUSTER_BOOTSTRAP_MEAN",
+    "direct_observed_4cmd_macro_f1_delta_pp": 18.077261645457632,
+    "direct_observed_5class_macro_f1_delta_pp": 25.793268235453894,
+    "estimand_C_instance_cluster_mean_delta_pp": 17.327598238193865,
+    "estimand_C_ci95_pp": [
+      7.567143854716796,
+      27.51864041712994
+    ],
+    "estimand_C_p_value": 0.0005,
+    "estimand_B_text_cluster_mean_delta_pp": 9.546055038508246,
+    "estimand_B_ci95_pp": [
+      -4.848730898101648,
+      22.652178145708714
+    ],
+    "estimand_B_p_value": 0.1139
+  },
+  "trai_recall_forensic_analysis": {
+    "denominator": 16,
+    "per_model_recall": {
+      "Baseline_v11_seed42": 0.625,
+      "Baseline_E1_seed42": 0.0625,
+      "Phase28_D2_H1_Candidate": 0.0625,
+      "Phase28_D0_H1_Candidate": 0.3125,
+      "Phase26_Candidate_D0_H1_seed44": 0.1875
+    },
+    "per_model_confusion_row_TRAI": {
+      "Baseline_v11_seed42": [
+        10,
+        4,
+        0,
+        0,
+        2
+      ],
+      "Baseline_E1_seed42": [
+        1,
+        0,
+        1,
+        0,
+        14
+      ],
+      "Phase28_D2_H1_Candidate": [
+        1,
+        0,
+        0,
+        0,
+        15
+      ],
+      "Phase28_D0_H1_Candidate": [
+        5,
+        0,
+        4,
+        0,
+        7
+      ],
+      "Phase26_Candidate_D0_H1_seed44": [
+        3,
+        0,
+        0,
+        0,
+        13
+      ]
+    },
+    "mean_P_TRAI_on_true_TRAI": {
+      "Baseline_v11_seed42": 0.40005017817020416,
+      "Baseline_E1_seed42": 0.0725432836611617,
+      "Phase28_D2_H1_Candidate": 0.06112148687657282,
+      "Phase28_D0_H1_Candidate": 0.17009303160011768,
+      "Phase26_Candidate_D0_H1_seed44": 0.09765622799390883
+    },
+    "mean_P_REJECT_on_true_TRAI": {
+      "Baseline_v11_seed42": 0.2550836385926232,
+      "Baseline_E1_seed42": 0.8537068925797939,
+      "Phase28_D2_H1_Candidate": 0.887081254273653,
+      "Phase28_D0_H1_Candidate": 0.6734434273093939,
+      "Phase26_Candidate_D0_H1_seed44": 0.8816859796643257
+    }
+  }
+}

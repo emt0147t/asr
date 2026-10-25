@@ -1,0 +1,14 @@
+{
+  "checkpoint/variant_v11_hard_negative_weighted_seed42.pt": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+  "onnx/vietnamese_kws_v11.onnx": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+  "onnx/export_parity_manifest.json": "d6be9f8f0e6d9c832b8d0890e614874c298e6d358da19a0ddc670c45ffe2db80",
+  "infer.py": "688555ba82fb4f8ed78ec6cd992d105a6d7b8a0b89f199d94794cd7e8277330d",
+  "benchmark_latency.py": "d2c6e5d4599fdb3c5a5544980984a5b9cf82ac88dde5f4845ad32232c27d7f0c",
+  "model_config.json": "c23f64424be720a4839cbe37dfffeb7ebf47c348807a93703aa569165188fffc",
+  "preprocessing_contract.json": "ca577646d4d54e03e8623bccb594339fb0d10c15edad3ce3ecd253462d01296e",
+  "requirements.txt": "a15fc04b7945396e1df0e6b7cf572b8d95932b2fa1ca679ae04944e13326b89e",
+  "environment_lock.json": "c2eedfc9a78cc996f89a155f03b430f98395360fb4d7bf41300d61bd893c3948",
+  "MODEL_CARD.md": "ea81aaaf0a7f9c616f3c3fcb5e2d649a673fc46975dd7887dcb034b5bad4081e",
+  "README.md": "0b26c6101d83150b2ef26b1cd071049110e354b9d53eda0001bf1776e6bc44fa",
+  "latency_benchmark_results.json": "6b802cead1e246db63c66da7cbe7b39f729503d9003735f6c0ae7df3439be10a"
+}

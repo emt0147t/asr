@@ -1,0 +1,443 @@
+{
+  "audit_metadata": {
+    "timestamp": "2026-10-25T10:59:12.268204",
+    "audit_phase": "PHASE 32-35 Section B",
+    "repository": "D:\\trainidentificationaudio"
+  },
+  "audio_sha_overlap": {
+    "eval_v2_vs_D0_train": {
+      "eval_v2_count": 480,
+      "target_count": 5440,
+      "overlap_count": 0,
+      "zero_overlap_confirmed": true
+    },
+    "eval_v2_vs_D2_train": {
+      "eval_v2_count": 480,
+      "target_count": 5248,
+      "overlap_count": 0,
+      "zero_overlap_confirmed": true
+    },
+    "eval_v2_vs_validation_v1": {
+      "eval_v2_count": 480,
+      "target_count": 1280,
+      "overlap_count": 0,
+      "zero_overlap_confirmed": true
+    },
+    "eval_v2_vs_eval_v1_isolated": {
+      "eval_v2_count": 480,
+      "target_count": 224,
+      "overlap_count": 0,
+      "zero_overlap_confirmed": true
+    }
+  },
+  "text_and_lexeme_audit": {
+    "pairwise_text_overlap": {
+      "eval_v2_vs_D0_train": {
+        "eval_v2_unique_texts": 30,
+        "target_unique_texts": 432,
+        "overlap_count": 12,
+        "overlapping_texts": [
+          "luôn",
+          "làm",
+          "lên",
+          "phát",
+          "phút",
+          "phải",
+          "trái",
+          "trước",
+          "xa",
+          "xanh",
+          "xem",
+          "xuống"
+        ]
+      },
+      "eval_v2_vs_D2_train": {
+        "eval_v2_unique_texts": 30,
+        "target_unique_texts": 432,
+        "overlap_count": 12,
+        "overlapping_texts": [
+          "luôn",
+          "làm",
+          "lên",
+          "phát",
+          "phút",
+          "phải",
+          "trái",
+          "trước",
+          "xa",
+          "xanh",
+          "xem",
+          "xuống"
+        ]
+      },
+      "eval_v2_vs_validation_v1": {
+        "eval_v2_unique_texts": 30,
+        "target_unique_texts": 170,
+        "overlap_count": 8,
+        "overlapping_texts": [
+          "lên",
+          "lớp",
+          "phim",
+          "phải",
+          "trái",
+          "trường",
+          "trẻ",
+          "xuống"
+        ]
+      },
+      "eval_v2_vs_eval_v1_isolated": {
+        "eval_v2_unique_texts": 30,
+        "target_unique_texts": 28,
+        "overlap_count": 4,
+        "overlapping_texts": [
+          "lên",
+          "phải",
+          "trái",
+          "xuống"
+        ]
+      }
+    },
+    "lexeme_audit": {
+      "eval_v2": {
+        "target_command_texts": [
+          "lên",
+          "phải",
+          "trái",
+          "xuống"
+        ],
+        "hard_negative_texts": [
+          "luôn",
+          "làm",
+          "lòng",
+          "lớp",
+          "phim",
+          "phát",
+          "phút",
+          "phương",
+          "trưa",
+          "trước",
+          "trường",
+          "trẻ",
+          "xa",
+          "xanh",
+          "xem",
+          "xuyên"
+        ],
+        "general_oov_texts": [
+          "biển",
+          "bóng",
+          "cây",
+          "hoa",
+          "núi",
+          "quạt",
+          "quần",
+          "sông",
+          "áo",
+          "đèn"
+        ]
+      },
+      "target_command_overlap": {
+        "eval_vs_d0": [
+          "lên",
+          "phải",
+          "trái",
+          "xuống"
+        ],
+        "eval_vs_d2": [
+          "lên",
+          "phải",
+          "trái",
+          "xuống"
+        ],
+        "note": "Target commands ('bat den', 'tat den', 'bat quat', 'tat quat') are intentionally identical by task definition."
+      },
+      "hard_negative_overlap": {
+        "eval_vs_d0": [],
+        "eval_vs_d2": [],
+        "eval_hard_negs_count": 16,
+        "eval_hard_negs_unseen_in_train": 16
+      },
+      "general_oov_overlap": {
+        "eval_vs_d0": [],
+        "eval_vs_d2": [],
+        "eval_gen_oovs_count": 10,
+        "eval_gen_oovs_unseen_in_train": 10
+      }
+    }
+  },
+  "voice_and_engine_audit": {
+    "manifest_voice_breakdown": {
+      "D0_train": {
+        "total_samples": 5440,
+        "edge_tts_samples": 0,
+        "edge_tts_fraction": 0.0,
+        "edge_tts_voices": {},
+        "total_unique_voices": 700,
+        "top_voices": {
+          "Adam bựa": 280,
+          "Hải Đăng": 266,
+          "Adam": 252,
+          "Thiện Minh": 220,
+          "Thiền Tâm Đức": 220
+        }
+      },
+      "D2_train": {
+        "total_samples": 5440,
+        "edge_tts_samples": 544,
+        "edge_tts_fraction": 0.1,
+        "edge_tts_voices": {
+          "vi-VN-NamMinhNeural": 272,
+          "vi-VN-HoaiMyNeural": 272
+        },
+        "total_unique_voices": 702,
+        "top_voices": {
+          "vi-VN-NamMinhNeural": 272,
+          "vi-VN-HoaiMyNeural": 272,
+          "Adam bựa": 236,
+          "Hải Đăng": 231,
+          "Adam": 216
+        }
+      },
+      "validation_v1": {
+        "total_samples": 1280,
+        "edge_tts_samples": 0,
+        "edge_tts_fraction": 0.0,
+        "edge_tts_voices": {},
+        "total_unique_voices": 164,
+        "top_voices": {
+          "Mai Anh": 271,
+          "Phạm Tuyên": 220,
+          "Ngọc Trân": 220,
+          "Thùy Dung": 185,
+          "17924674336912321482": 1
+        }
+      },
+      "eval_v2_isolated": {
+        "total_samples": 480,
+        "edge_tts_samples": 480,
+        "edge_tts_fraction": 1.0,
+        "edge_tts_voices": {
+          "vi-VN-HoaiMyNeural": 240,
+          "vi-VN-NamMinhNeural": 240
+        },
+        "total_unique_voices": 2,
+        "top_voices": {
+          "vi-VN-HoaiMyNeural": 240,
+          "vi-VN-NamMinhNeural": 240
+        }
+      },
+      "eval_v1_isolated": {
+        "total_samples": 224,
+        "edge_tts_samples": 224,
+        "edge_tts_fraction": 1.0,
+        "edge_tts_voices": {
+          "vi-VN-HoaiMyNeural": 112,
+          "vi-VN-NamMinhNeural": 112
+        },
+        "total_unique_voices": 2,
+        "top_voices": {
+          "vi-VN-HoaiMyNeural": 112,
+          "vi-VN-NamMinhNeural": 112
+        }
+      }
+    },
+    "independence_assessment": {
+      "D0_relationship_to_eval_v2": {
+        "engine_status": "CROSS_GENERATOR (D0 uses VieNeu-TTS, eval uses Edge-TTS)",
+        "voice_status": "CROSS_VOICE (D0 uses 17 VieNeu voices, eval uses 2 Edge-TTS neural voices)",
+        "valid_claim": "Tests zero-shot acoustic generalization across TTS synthesis engines and speaker timbres."
+      },
+      "D2_relationship_to_eval_v2": {
+        "engine_status": "IN_GENERATOR (both D2 and eval use Edge-TTS 7.3.1)",
+        "voice_status": "IN_VOICE (both D2 and eval use vi-VN-HoaiMyNeural and vi-VN-NamMinhNeural)",
+        "valid_claim": "Tests generalization to unseen phonetic hard negatives, unseen conversational OOVs, fast prosody (+10%), and held-out noise tracks (36-39).",
+        "invalid_overclaim": "CANNOT claim cross-generator or unseen-voice generalization for D2, as both voices were exposed in D2 training (544 samples, 10%)."
+      }
+    }
+  },
+  "noise_track_audit": {
+    "tracks_36_39_files": [
+      "Wind-Mic Distortion-Violent 4.mp3",
+      "Wind-Mic Distortion-Violent 6.mp3",
+      "Wind-Mic Distortion-Violent 8.mp3",
+      "Wind-Mic Distortion-Violent 9.mp3"
+    ],
+    "manifest_exposure": {
+      "D0_train": {
+        "manifest_name": "D0_train_v1.csv",
+        "total_rows": 5440,
+        "tracks_36_39_count": 0,
+        "tracks_36_39_pct": 0.0,
+        "breakdown": {}
+      },
+      "D2_train": {
+        "manifest_name": "D2_matched_train_v1.csv",
+        "total_rows": 5440,
+        "tracks_36_39_count": 0,
+        "tracks_36_39_pct": 0.0,
+        "breakdown": {}
+      },
+      "validation_v1": {
+        "manifest_name": "validation_v1.csv",
+        "total_rows": 1280,
+        "tracks_36_39_count": 0,
+        "tracks_36_39_pct": 0.0,
+        "breakdown": {}
+      },
+      "eval_v2_isolated": {
+        "manifest_name": "edge_tts_eval_v2_isolated_test_manifest.csv",
+        "total_rows": 480,
+        "tracks_36_39_count": 360,
+        "tracks_36_39_pct": 75.0,
+        "breakdown": {
+          "mic_noise_track_36": 120,
+          "mic_noise_track_38": 120,
+          "mic_noise_track_39": 120
+        }
+      },
+      "phase21_synthetic_test": {
+        "manifest_name": "synthetic_eval_test_manifest.csv",
+        "total_rows": 40,
+        "tracks_36_39_count": 21,
+        "tracks_36_39_pct": 52.5,
+        "breakdown": {
+          "Wind-Mic Distortion-Violent 4.mp3": 6,
+          "Wind-Mic Distortion-Violent 6.mp3": 6,
+          "Wind-Mic Distortion-Violent 8.mp3": 5,
+          "Wind-Mic Distortion-Violent 9.mp3": 4
+        }
+      },
+      "v12_dataset": {
+        "manifest_name": "dataset_v12_manifest.csv",
+        "total_rows": 8000,
+        "tracks_36_39_count": 499,
+        "tracks_36_39_pct": 6.2375,
+        "breakdown": {
+          "Wind-Mic Distortion-Violent 4.mp3": 127,
+          "Wind-Mic Distortion-Violent 6.mp3": 127,
+          "Wind-Mic Distortion-Violent 8.mp3": 123,
+          "Wind-Mic Distortion-Violent 9.mp3": 122
+        }
+      },
+      "v12_train": {
+        "manifest_name": "train_manifest.csv",
+        "total_rows": 5440,
+        "tracks_36_39_count": 0,
+        "tracks_36_39_pct": 0.0,
+        "breakdown": {}
+      },
+      "v12_val": {
+        "manifest_name": "val_manifest.csv",
+        "total_rows": 1280,
+        "tracks_36_39_count": 0,
+        "tracks_36_39_pct": 0.0,
+        "breakdown": {}
+      },
+      "v12_test": {
+        "manifest_name": "test_manifest.csv",
+        "total_rows": 1280,
+        "tracks_36_39_count": 499,
+        "tracks_36_39_pct": 38.9844,
+        "breakdown": {
+          "Wind-Mic Distortion-Violent 4.mp3": 127,
+          "Wind-Mic Distortion-Violent 6.mp3": 127,
+          "Wind-Mic Distortion-Violent 8.mp3": 123,
+          "Wind-Mic Distortion-Violent 9.mp3": 122
+        }
+      }
+    },
+    "acoustic_family_commentary": "Noise tracks 36-39 were 100% held out from all training manifests (D0_train_v1: 0%, D2_matched_train_v1: 0%, validation_v1: 0%). However, tracks 36-39 were originally drawn from the mic-noise asset directory, where tracks 0-35 were used in training. Therefore, the specific wav files are unseen, but the recording environment / sensor type (mic-noise) is shared."
+  },
+  "chronological_audit": {
+    "file_timestamps": {
+      "eval_v2_isolated_manifest": {
+        "path": "experiments\\vieneu_kws_research_v12\\manifests\\edge_tts_eval_v2_isolated_test_manifest.csv",
+        "exists": true,
+        "ctime_iso": "2026-10-25T01:26:07.049504",
+        "mtime_iso": "2026-10-25T01:26:07.049504",
+        "size_bytes": 155065
+      },
+      "eval_v2_streaming_manifest": {
+        "path": "experiments\\vieneu_kws_research_v12\\manifests\\edge_tts_eval_v2_streaming_manifest.csv",
+        "exists": true,
+        "ctime_iso": "2026-10-25T01:26:07.560141",
+        "mtime_iso": "2026-10-25T01:26:07.560141",
+        "size_bytes": 12353
+      },
+      "eval_v2_streaming_events": {
+        "path": "experiments\\vieneu_kws_research_v12\\manifests\\edge_tts_eval_v2_streaming_events.json",
+        "exists": true,
+        "ctime_iso": "2026-10-25T01:26:07.570845",
+        "mtime_iso": "2026-10-25T01:26:07.572850",
+        "size_bytes": 42594
+      },
+      "preregistration_doc": {
+        "path": "experiments\\vieneu_kws_research_v12\\reports\\PHASE28_31_EVALUATION_PREREGISTRATION.md",
+        "exists": true,
+        "ctime_iso": "2026-10-25T01:23:30.425675",
+        "mtime_iso": "2026-10-25T01:23:30.426190",
+        "size_bytes": 9100
+      },
+      "factorial_training_script": {
+        "path": "experiments\\vieneu_kws_research_v12\\scripts\\run_phase28_factorial_trainings.py",
+        "exists": true,
+        "ctime_iso": "2026-10-25T01:26:29.079884",
+        "mtime_iso": "2026-10-25T01:26:29.080451",
+        "size_bytes": 3492
+      },
+      "factorial_execution_ledger": {
+        "path": "experiments\\vieneu_kws_research_v12\\reports\\phase28_31_factorial_execution_ledger.json",
+        "exists": true,
+        "ctime_iso": "2026-10-25T10:15:06.682810",
+        "mtime_iso": "2026-10-25T10:15:06.693055",
+        "size_bytes": 23076
+      },
+      "eval_execution_script": {
+        "path": "experiments\\vieneu_kws_research_v12\\scripts\\run_phase28_31_evaluation.py",
+        "exists": true,
+        "ctime_iso": "2026-10-25T01:29:17.991429",
+        "mtime_iso": "2026-10-25T10:16:17.918042",
+        "size_bytes": 20355
+      },
+      "final_evaluation_results": {
+        "path": "experiments\\vieneu_kws_research_v12\\reports\\phase28_31_final_evaluation_results.json",
+        "exists": true,
+        "ctime_iso": "2026-10-25T10:16:38.589530",
+        "mtime_iso": "2026-10-25T10:16:38.603075",
+        "size_bytes": 31144
+      },
+      "candidate_d2_checkpoint": {
+        "path": "experiments\\vieneu_kws_research_v12\\candidates\\phase28_d2_candidate\\candidate_checkpoint.pt",
+        "exists": true,
+        "ctime_iso": "2026-10-25T10:15:51.424767",
+        "mtime_iso": "2026-10-25T10:04:12.753944",
+        "size_bytes": 1687586
+      },
+      "candidate_d0_checkpoint": {
+        "path": "experiments\\vieneu_kws_research_v12\\candidates\\phase28_candidate\\candidate_checkpoint.pt",
+        "exists": true,
+        "ctime_iso": "2026-10-25T10:15:30.493145",
+        "mtime_iso": "2026-10-25T01:33:36.939081",
+        "size_bytes": 1687586
+      }
+    },
+    "chronology_summary": {
+      "preregistration_mtime": "2026-10-25T01:23:30.426190",
+      "eval_manifest_mtime": "2026-10-25T01:26:07.049504",
+      "training_ledger_mtime": "2026-10-25T10:15:06.693055",
+      "eval_results_mtime": "2026-10-25T10:16:38.603075",
+      "sequence_strictly_chronological": true,
+      "evaluation_locked_prior_to_test": true
+    }
+  },
+  "governance_conclusion": {
+    "status": "PASS_WITH_DOCUMENTED_PROVENANCE_LIMITATIONS",
+    "key_limitations": [
+      "Zero audio hash overlap confirmed between training and locked evaluation sets.",
+      "Target command texts are naturally shared across train and test by task definition.",
+      "Eval v2 uses the exact same Edge-TTS engine (7.3.1) and voices (HoaiMy, NamMinh) as D2 training data (10% dose).",
+      "Eval v2 measures cross-generator/cross-voice generalization for D0, but within-voice/within-generator generalization (to fast speech, new phrases, and held-out noise slices) for D2.",
+      "Noise tracks 36-39 are strictly zero-exposure in training manifests, though part of the mic-noise acoustic family."
+    ]
+  }
+}

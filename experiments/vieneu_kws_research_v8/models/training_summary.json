@@ -1,0 +1,218 @@
+{
+  "variant_w10": {
+    "w_hn": 1.0,
+    "desc": "Mild Hard-Negative (w_hn=1.0)",
+    "seeds": {
+      "seed42": {
+        "epoch": 22,
+        "train_loss": 0.6991,
+        "val_acc": 0.9611,
+        "val_cmd_recall": 0.9563,
+        "val_nt_far": 0.035,
+        "per_cmd_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "score": 1.9598,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w10_seed42.pt",
+        "checkpoint_sha256": "7374af469a4bc4df5e124aae27720a8c11e688413f045eec3ee4ffd79c836bed"
+      },
+      "seed43": {
+        "epoch": 24,
+        "train_loss": 0.6471,
+        "val_acc": 0.9667,
+        "val_cmd_recall": 0.9812,
+        "val_nt_far": 0.045,
+        "per_cmd_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "score": 1.9708,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w10_seed43.pt",
+        "checkpoint_sha256": "77f468c68b261de506a3fcb022c8d7cc68f8b0c2ad650852b7c300f274dda251"
+      },
+      "seed44": {
+        "epoch": 21,
+        "train_loss": 0.6051,
+        "val_acc": 0.9722,
+        "val_cmd_recall": 0.9688,
+        "val_nt_far": 0.025,
+        "per_cmd_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "score": 1.9712,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w10_seed44.pt",
+        "checkpoint_sha256": "bebab580e4caa6934c98a62b095611e4eef9221a7f4282d36f9a4b6928abde64"
+      }
+    }
+  },
+  "variant_w12": {
+    "w_hn": 1.2,
+    "desc": "Baseline Candidate B Re-implementation (w_hn=1.2)",
+    "seeds": {
+      "seed42": {
+        "epoch": 22,
+        "train_loss": 0.693,
+        "val_acc": 0.9556,
+        "val_cmd_recall": 0.9563,
+        "val_nt_far": 0.045,
+        "per_cmd_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "score": 1.9558,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w12_seed42.pt",
+        "checkpoint_sha256": "a242b3f374a9e5415ce499dfec5dc36d74e54f694c4e91d7d8190a42838cc7f8"
+      },
+      "seed43": {
+        "epoch": 22,
+        "train_loss": 0.6302,
+        "val_acc": 0.975,
+        "val_cmd_recall": 0.9812,
+        "val_nt_far": 0.03,
+        "per_cmd_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "score": 1.9768,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w12_seed43.pt",
+        "checkpoint_sha256": "ea62a1519560bfdfe68fb61f1ed7075be8a350f63e68d8db47165d393fc4e892"
+      },
+      "seed44": {
+        "epoch": 24,
+        "train_loss": 0.6587,
+        "val_acc": 0.9528,
+        "val_cmd_recall": 0.95,
+        "val_nt_far": 0.045,
+        "per_cmd_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "score": 1.952,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w12_seed44.pt",
+        "checkpoint_sha256": "9fed5cccef1309dfc51e73a8c501068cffc655f0acb8ab9e2ea2c15e492e7507"
+      }
+    }
+  },
+  "variant_w14": {
+    "w_hn": 1.4,
+    "desc": "Balanced Hard-Negative Parity (w_hn=1.4)",
+    "seeds": {
+      "seed42": {
+        "epoch": 24,
+        "train_loss": 0.7103,
+        "val_acc": 0.95,
+        "val_cmd_recall": 0.925,
+        "val_nt_far": 0.03,
+        "per_cmd_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.85
+        },
+        "score": 0.943,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w14_seed42.pt",
+        "checkpoint_sha256": "588066356f2859be33cd7c1c78c1332ded6203bf42735cba5012f8f817536e6a"
+      },
+      "seed43": {
+        "epoch": 24,
+        "train_loss": 0.682,
+        "val_acc": 0.9722,
+        "val_cmd_recall": 0.9813,
+        "val_nt_far": 0.035,
+        "per_cmd_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "score": 1.9748,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w14_seed43.pt",
+        "checkpoint_sha256": "2f178666f60dc38381a4b17988ce16dfba658d8204dcea1afb5b7f098f63168f"
+      },
+      "seed44": {
+        "epoch": 22,
+        "train_loss": 0.6822,
+        "val_acc": 0.9583,
+        "val_cmd_recall": 0.9375,
+        "val_nt_far": 0.025,
+        "per_cmd_recall": {
+          "TRAI": 0.9,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.85
+        },
+        "score": 0.9525,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w14_seed44.pt",
+        "checkpoint_sha256": "0a06d419a123f5b35f4b1c7fe08cdbb89af0a7b941b0a4d9881e513c97857de9"
+      }
+    }
+  },
+  "variant_w16": {
+    "w_hn": 1.6,
+    "desc": "Stronger Hard-Negative Suppression (w_hn=1.6)",
+    "seeds": {
+      "seed42": {
+        "epoch": 20,
+        "train_loss": 0.7943,
+        "val_acc": 0.95,
+        "val_cmd_recall": 0.9312,
+        "val_nt_far": 0.035,
+        "per_cmd_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.875,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "score": 0.9447,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w16_seed42.pt",
+        "checkpoint_sha256": "d1f89a17a79e1c13799e2b6c24b3ddc6dde1d604cccb7679054d7a547414cbc1"
+      },
+      "seed43": {
+        "epoch": 20,
+        "train_loss": 0.6681,
+        "val_acc": 0.9556,
+        "val_cmd_recall": 0.9563,
+        "val_nt_far": 0.045,
+        "per_cmd_recall": {
+          "TRAI": 0.875,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "score": 1.9558,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w16_seed43.pt",
+        "checkpoint_sha256": "a2649a64def879f88a8c04ab80fe6e08fc46b07e7035fef9bfb3341a25827b69"
+      },
+      "seed44": {
+        "epoch": 25,
+        "train_loss": 0.7132,
+        "val_acc": 0.9639,
+        "val_cmd_recall": 0.95,
+        "val_nt_far": 0.025,
+        "per_cmd_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "score": 1.96,
+        "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v8\\models\\checkpoints\\variant_w16_seed44.pt",
+        "checkpoint_sha256": "4fff76d11912d7c0bbb815816bd1bd7869f8c4e04f8dec2f12fe5d5f9e02307f"
+      }
+    }
+  }
+}

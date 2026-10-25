@@ -1,0 +1,159 @@
+{
+  "report_type": "v5_1_reproducibility_report",
+  "dataset_name": "synthetic_kws_v5_1_candidate",
+  "version": "v5.1-pilot",
+  "total_rows": 120,
+  "files_existing_on_disk": 120,
+  "disk_sha256_matches": 120,
+  "row_independent_reproduction_matches": 120,
+  "reproduction_pass_rate_pct": 100.0,
+  "row_independent_reproduction_status": "PASS",
+  "manifest_schema": {
+    "columns": [
+      "recording_id",
+      "split",
+      "class_id",
+      "class_label",
+      "acoustic_subclass",
+      "transcript",
+      "generator_version",
+      "generator_recipe",
+      "seed",
+      "simulated_speaker_id",
+      "vtl_scale",
+      "f0_base",
+      "open_quotient",
+      "spectral_tilt_db",
+      "jitter_pct",
+      "duration_sec",
+      "onset_offset_sec",
+      "target_speech_rms_dbfs",
+      "gain_factor",
+      "noise_type",
+      "noise_seed",
+      "background_rms_dbfs",
+      "effective_snr_db",
+      "sample_rate",
+      "channels",
+      "n_samples",
+      "pcm_subtype",
+      "sha256",
+      "processed_path",
+      "status"
+    ],
+    "unrounded_parameters_included": [
+      "vtl_scale",
+      "f0_base",
+      "open_quotient",
+      "spectral_tilt_db",
+      "jitter_pct",
+      "target_speech_rms_dbfs",
+      "gain_factor",
+      "noise_seed",
+      "background_rms_dbfs"
+    ],
+    "master_seed_independence": "CONFIRMED: Any row can be reconstructed strictly from manifest fields without master seed."
+  },
+  "sample_verifications": [
+    {
+      "recording_id": "v5_1_pilot_trai_001",
+      "class_label": "TRAI",
+      "acoustic_subclass": "target_keyword",
+      "seed": 60000,
+      "file_exists": true,
+      "format_ok": true,
+      "disk_sha256_match": true,
+      "row_independent_regen_match": true
+    },
+    {
+      "recording_id": "v5_1_pilot_trai_002",
+      "class_label": "TRAI",
+      "acoustic_subclass": "target_keyword",
+      "seed": 60001,
+      "file_exists": true,
+      "format_ok": true,
+      "disk_sha256_match": true,
+      "row_independent_regen_match": true
+    },
+    {
+      "recording_id": "v5_1_pilot_trai_003",
+      "class_label": "TRAI",
+      "acoustic_subclass": "target_keyword",
+      "seed": 60002,
+      "file_exists": true,
+      "format_ok": true,
+      "disk_sha256_match": true,
+      "row_independent_regen_match": true
+    },
+    {
+      "recording_id": "v5_1_pilot_trai_004",
+      "class_label": "TRAI",
+      "acoustic_subclass": "target_keyword",
+      "seed": 60003,
+      "file_exists": true,
+      "format_ok": true,
+      "disk_sha256_match": true,
+      "row_independent_regen_match": true
+    },
+    {
+      "recording_id": "v5_1_pilot_trai_005",
+      "class_label": "TRAI",
+      "acoustic_subclass": "target_keyword",
+      "seed": 60004,
+      "file_exists": true,
+      "format_ok": true,
+      "disk_sha256_match": true,
+      "row_independent_regen_match": true
+    },
+    {
+      "recording_id": "v5_1_pilot_trai_006",
+      "class_label": "TRAI",
+      "acoustic_subclass": "target_keyword",
+      "seed": 60005,
+      "file_exists": true,
+      "format_ok": true,
+      "disk_sha256_match": true,
+      "row_independent_regen_match": true
+    },
+    {
+      "recording_id": "v5_1_pilot_phai_001",
+      "class_label": "PHAI",
+      "acoustic_subclass": "target_keyword",
+      "seed": 60100,
+      "file_exists": true,
+      "format_ok": true,
+      "disk_sha256_match": true,
+      "row_independent_regen_match": true
+    },
+    {
+      "recording_id": "v5_1_pilot_phai_002",
+      "class_label": "PHAI",
+      "acoustic_subclass": "target_keyword",
+      "seed": 60101,
+      "file_exists": true,
+      "format_ok": true,
+      "disk_sha256_match": true,
+      "row_independent_regen_match": true
+    },
+    {
+      "recording_id": "v5_1_pilot_silence_001",
+      "class_label": "SILENCE",
+      "acoustic_subclass": "ambient_digital_zero",
+      "seed": 60500,
+      "file_exists": true,
+      "format_ok": true,
+      "disk_sha256_match": true,
+      "row_independent_regen_match": true
+    },
+    {
+      "recording_id": "v5_1_pilot_silence_002",
+      "class_label": "SILENCE",
+      "acoustic_subclass": "ambient_digital_zero",
+      "seed": 60501,
+      "file_exists": true,
+      "format_ok": true,
+      "disk_sha256_match": true,
+      "row_independent_regen_match": true
+    }
+  ]
+}

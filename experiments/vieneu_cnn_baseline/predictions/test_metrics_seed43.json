@@ -1,0 +1,80 @@
+{
+  "checkpoint": "best_checkpoint_seed43.pt",
+  "seed": 43,
+  "best_epoch": 27,
+  "val_macro_f1": 1.0,
+  "test_accuracy": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1": 1.0,
+  "per_class": {
+    "TRAI": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 40
+    },
+    "PHAI": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 40
+    },
+    "LEN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 40
+    },
+    "XUONG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 40
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "TRAI",
+      "PHAI",
+      "LEN",
+      "XUONG"
+    ],
+    "matrix": [
+      [
+        40,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "model_parameters": 138404,
+  "checkpoint_size_kb": 1647.970703125,
+  "latency_ms": {
+    "cpu_single_mean": 1.1757571416507875,
+    "cpu_single_std": 0.14767160836257914,
+    "gpu_batched_mean": 2.658403749956051
+  },
+  "total_test_samples": 160,
+  "incorrect_count": 0,
+  "incorrect_samples": []
+}

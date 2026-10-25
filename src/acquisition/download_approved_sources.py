@@ -20,6 +20,8 @@ APPROVED_SOURCES = {
         "archive_name": "dev.tar.gz",
         "tsv_name": "dev.tsv",
         "license": "CC-BY-4.0",
+        "license_verified": True,
+        "status": "APPROVED_VERIFIED",
         "description": "Google FLEURS Vietnamese dev split (361 human-verified read speech recordings)"
     },
     "fleurs_vi_test": {
@@ -29,23 +31,58 @@ APPROVED_SOURCES = {
         "archive_name": "test.tar.gz",
         "tsv_name": "test.tsv",
         "license": "CC-BY-4.0",
+        "license_verified": True,
+        "status": "APPROVED_VERIFIED",
         "description": "Google FLEURS Vietnamese test split (857 human-verified read speech recordings)"
     },
     "mic_noise": {
         "url": "https://huggingface.co/datasets/huseinzol05/noise-dataset/resolve/main/mic-noise.zip",
         "dest_dir": "data/raw/noise",
         "archive_name": "mic-noise.zip",
-        "license": "CC-BY-4.0",
-        "description": "Real microphone and room acoustic background noises for SILENCE class"
+        "license": "UNVERIFIED (Claimed CC-BY-4.0)",
+        "license_verified": False,
+        "status": "BLOCKED_UNVERIFIED_LICENSE",
+        "license_notes": (
+            "External repository lacks verified upstream legal license text and attribution grant. "
+            "BLOCKED as an approved training source. "
+            "Allowed fallback: Ambient room tone recorded during authorized collection sessions "
+            "with verified participant consent and provenance (HUMAN_CONSENTED, sub_category: background_room_tone)."
+        ),
+        "description": "Real microphone and room acoustic background noises for SILENCE class (BLOCKED / UNVERIFIED LICENSE)"
     },
     "mswc_vi_splits": {
         "url": "https://huggingface.co/datasets/MLCommons/ml_spoken_words/resolve/main/data/splits/vi/splits.tar.gz",
         "dest_dir": "data/raw/mswc_vi",
         "archive_name": "splits.tar.gz",
         "license": "CC-BY-4.0",
+        "license_verified": True,
+        "status": "APPROVED_VERIFIED",
         "description": "MLCommons Multilingual Spoken Words Corpus Vietnamese word metadata"
     }
 }
+
+
+def check_source_license_status(source_name: str) -> dict:
+    """
+    Checks whether a candidate external source is legally verified and approved for acquisition/training.
+    Sources marked license_verified == False are strictly BLOCKED (P0-2 remediation).
+    """
+    if source_name not in APPROVED_SOURCES:
+        return {
+            "source_name": source_name,
+            "status": "UNKNOWN_SOURCE",
+            "is_approved": False,
+            "reason": f"Source '{source_name}' is not registered in APPROVED_SOURCES."
+        }
+    src = APPROVED_SOURCES[source_name]
+    is_approved = bool(src.get("license_verified", False)) and src.get("status") == "APPROVED_VERIFIED"
+    return {
+        "source_name": source_name,
+        "status": src.get("status", "UNVERIFIED"),
+        "is_approved": is_approved,
+        "license": src.get("license", "UNKNOWN"),
+        "reason": "" if is_approved else src.get("license_notes", "Source license is unverified.")
+    }
 
 
 class DownloadProgressBar(tqdm):

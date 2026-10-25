@@ -1,0 +1,209 @@
+{
+  "stage": "Stage A - Phase 90 Audit and Baseline Reproduction",
+  "baseline_checkpoint": {
+    "path": "experiments/vieneu_kws_research_v9/artifacts/checkpoints/variant_w10_seed42.pt",
+    "sha256": "7374af469a4bc4df5e124aae27720a8c11e688413f045eec3ee4ffd79c836bed",
+    "architecture": "CorrectedVietnameseKWSNet",
+    "parameters": 138469,
+    "threshold": 0.4
+  },
+  "response_inventory": [
+    {
+      "filename": "reviewer_01_responses.csv",
+      "path": "experiments/vieneu_kws_research_v10/human_review/responses/reviewer_01_responses.csv",
+      "size_bytes": 4355,
+      "sha256": "d8f9d6414e21183ca6417cb04a611ef0d0a8082987bcce54c4e704953c8cf458"
+    }
+  ],
+  "audit_findings": {
+    "num_response_files": 1,
+    "num_independent_reviewers_recorded": 1,
+    "reviewer_ids": [
+      "reviewer_01"
+    ],
+    "total_rows_evaluated": 120,
+    "duplicate_clip_ids_count": 0,
+    "missing_clip_ids_count": 0,
+    "missing_fields": {
+      "comments": 120,
+      "naturalness_1to5": 24,
+      "pronunciation_correct_yn": 24,
+      "confidence_1to5": 24,
+      "intelligibility_1to5": 23
+    },
+    "distributed_workflow_discrepancy": {
+      "planned_packages": 6,
+      "planned_clips_per_reviewer": 20,
+      "actual_response_files": 1,
+      "actual_clips_in_response": 120,
+      "provenance_status": "UNRESOLVED_MULTI_REVIEWER_DISTRIBUTION",
+      "notes": "Planned study specification intended six independent reviewer packages of 20 clips each (reviewer_01_package.zip to reviewer_06_package.zip under distributed_batches/). However, actual responses exist solely as reviewer_01_responses.csv containing all 120 clips evaluated in a single session using the centralized template format. No response files exist for reviewers 02-06. Therefore, the provenance of multi-reviewer distributed execution is marked UNRESOLVED (not executed in field). The single-reviewer provenance is verified for the 120-clip centralized evaluation."
+    }
+  },
+  "reproduced_baseline_denominators": {
+    "total_clips": 120,
+    "target_command_clips": 40,
+    "target_per_command": {
+      "TRAI": 10,
+      "PHAI": 10,
+      "LEN": 10,
+      "XUONG": 10
+    },
+    "non_target_clips": 80,
+    "hard_negative_clips": 65,
+    "silence_clips": 15
+  },
+  "reproduced_baseline_metrics": {
+    "mean_command_recall": 0.975,
+    "per_command_recall": {
+      "TRAI": 0.9,
+      "PHAI": 1.0,
+      "LEN": 1.0,
+      "XUONG": 1.0
+    },
+    "non_target_far": 0.1125,
+    "non_target_false_accepts_count": 9,
+    "overall_accuracy": 0.9167,
+    "total_correct": 110
+  },
+  "error_categorization": {
+    "total_errors": 10,
+    "false_rejections": 1,
+    "false_accepts": 9,
+    "target_prefix_false_accepts": 4,
+    "lexical_tonal_confusions": 0,
+    "acoustic_confusions": 0
+  },
+  "error_cases": [
+    {
+      "review_clip_id": "review_clip_001",
+      "transcription": "x\u01b0\u1edfng in",
+      "ground_truth_canonical": "UNKNOWN",
+      "ground_truth_bounded": "REJECT",
+      "confusion_family": "minimal_pair_tone",
+      "voice_id": "Th\u00f9y Dung",
+      "cnn_predicted_class": "XUONG",
+      "cnn_confidence": 0.7842,
+      "cnn_error_type": "TONAL_MINIMAL_PAIR_FALSE_ACCEPT",
+      "error_hypothesis": "Minimal pair 'x\u01b0\u1edfng in' differs only by tone/vowel from target 'xu\u1ed1ng'.",
+      "evidence": "Confusion family is 'minimal_pair_tone'; model assigned confidence 0.784 to XUONG."
+    },
+    {
+      "review_clip_id": "review_clip_023",
+      "transcription": "th\u00e1i \u0111\u1ed9",
+      "ground_truth_canonical": "UNKNOWN",
+      "ground_truth_bounded": "REJECT",
+      "confusion_family": "minimal_pair_consonant",
+      "voice_id": "Th\u00f9y Dung",
+      "cnn_predicted_class": "XUONG",
+      "cnn_confidence": 0.4342,
+      "cnn_error_type": "LEXICAL_CONFUSION_FALSE_ACCEPT",
+      "error_hypothesis": "Non-target phrase 'th\u00e1i \u0111\u1ed9' triggered false accept on XUONG.",
+      "evidence": "Confusion family is 'minimal_pair_consonant'; model assigned confidence 0.434 to XUONG."
+    },
+    {
+      "review_clip_id": "review_clip_030",
+      "transcription": "xu\u1ed1ng bi\u1ec3n",
+      "ground_truth_canonical": "UNKNOWN",
+      "ground_truth_bounded": "REJECT",
+      "confusion_family": "phonetic_phrase_context",
+      "voice_id": "Ph\u1ea1m Tuy\u00ean",
+      "cnn_predicted_class": "XUONG",
+      "cnn_confidence": 0.6795,
+      "cnn_error_type": "TARGET_PREFIX_FALSE_ACCEPT",
+      "error_hypothesis": "Compound phrase 'xu\u1ed1ng bi\u1ec3n' starts with target keyword 'xu\u1ed1ng', triggering CNN receptive field in 1s window.",
+      "evidence": "Transcription 'xu\u1ed1ng bi\u1ec3n' starts with 'xu\u1ed1ng'; model assigned confidence 0.679."
+    },
+    {
+      "review_clip_id": "review_clip_033",
+      "transcription": "Tr\u00e1i",
+      "ground_truth_canonical": "TRAI",
+      "ground_truth_bounded": "TRAI",
+      "confusion_family": "target_command",
+      "voice_id": "Ng\u1ecdc Tr\u00e2n",
+      "cnn_predicted_class": "PHAI",
+      "cnn_confidence": 0.5378,
+      "cnn_error_type": "COMMAND_SUBSTITUTION",
+      "error_hypothesis": "Target command TRAI misclassified as PHAI.",
+      "evidence": "Model assigned confidence 0.538 to PHAI instead of TRAI."
+    },
+    {
+      "review_clip_id": "review_clip_039",
+      "transcription": "xu\u1ed1ng bi\u1ec3n",
+      "ground_truth_canonical": "UNKNOWN",
+      "ground_truth_bounded": "REJECT",
+      "confusion_family": "phonetic_phrase_context",
+      "voice_id": "Ph\u1ea1m Tuy\u00ean",
+      "cnn_predicted_class": "XUONG",
+      "cnn_confidence": 0.4486,
+      "cnn_error_type": "TARGET_PREFIX_FALSE_ACCEPT",
+      "error_hypothesis": "Compound phrase 'xu\u1ed1ng bi\u1ec3n' starts with target keyword 'xu\u1ed1ng', triggering CNN receptive field in 1s window.",
+      "evidence": "Transcription 'xu\u1ed1ng bi\u1ec3n' starts with 'xu\u1ed1ng'; model assigned confidence 0.449."
+    },
+    {
+      "review_clip_id": "review_clip_050",
+      "transcription": "xu\u1ed1ng h\u1ed1",
+      "ground_truth_canonical": "UNKNOWN",
+      "ground_truth_bounded": "REJECT",
+      "confusion_family": "minimal_pair_tone",
+      "voice_id": "Ph\u1ea1m Tuy\u00ean",
+      "cnn_predicted_class": "XUONG",
+      "cnn_confidence": 0.7708,
+      "cnn_error_type": "TARGET_PREFIX_FALSE_ACCEPT",
+      "error_hypothesis": "Compound phrase 'xu\u1ed1ng h\u1ed1' starts with target keyword 'xu\u1ed1ng', triggering CNN receptive field in 1s window.",
+      "evidence": "Transcription 'xu\u1ed1ng h\u1ed1' starts with 'xu\u1ed1ng'; model assigned confidence 0.771."
+    },
+    {
+      "review_clip_id": "review_clip_096",
+      "transcription": "x\u01b0\u1edfng in",
+      "ground_truth_canonical": "UNKNOWN",
+      "ground_truth_bounded": "REJECT",
+      "confusion_family": "minimal_pair_tone",
+      "voice_id": "Th\u00f9y Dung",
+      "cnn_predicted_class": "XUONG",
+      "cnn_confidence": 0.8633,
+      "cnn_error_type": "TONAL_MINIMAL_PAIR_FALSE_ACCEPT",
+      "error_hypothesis": "Minimal pair 'x\u01b0\u1edfng in' differs only by tone/vowel from target 'xu\u1ed1ng'.",
+      "evidence": "Confusion family is 'minimal_pair_tone'; model assigned confidence 0.863 to XUONG."
+    },
+    {
+      "review_clip_id": "review_clip_099",
+      "transcription": "ph\u00e1t t\u00e0i",
+      "ground_truth_canonical": "UNKNOWN",
+      "ground_truth_bounded": "REJECT",
+      "confusion_family": "phonetic_phrase_context",
+      "voice_id": "Th\u00f9y Dung",
+      "cnn_predicted_class": "TRAI",
+      "cnn_confidence": 0.464,
+      "cnn_error_type": "LEXICAL_CONFUSION_FALSE_ACCEPT",
+      "error_hypothesis": "Non-target phrase 'ph\u00e1t t\u00e0i' triggered false accept on TRAI.",
+      "evidence": "Confusion family is 'phonetic_phrase_context'; model assigned confidence 0.464 to TRAI."
+    },
+    {
+      "review_clip_id": "review_clip_107",
+      "transcription": "xu\u1ed1ng h\u1ed1",
+      "ground_truth_canonical": "UNKNOWN",
+      "ground_truth_bounded": "REJECT",
+      "confusion_family": "minimal_pair_tone",
+      "voice_id": "Ph\u1ea1m Tuy\u00ean",
+      "cnn_predicted_class": "XUONG",
+      "cnn_confidence": 0.9624,
+      "cnn_error_type": "TARGET_PREFIX_FALSE_ACCEPT",
+      "error_hypothesis": "Compound phrase 'xu\u1ed1ng h\u1ed1' starts with target keyword 'xu\u1ed1ng', triggering CNN receptive field in 1s window.",
+      "evidence": "Transcription 'xu\u1ed1ng h\u1ed1' starts with 'xu\u1ed1ng'; model assigned confidence 0.962."
+    },
+    {
+      "review_clip_id": "review_clip_113",
+      "transcription": "x\u01b0\u1edfng in",
+      "ground_truth_canonical": "UNKNOWN",
+      "ground_truth_bounded": "REJECT",
+      "confusion_family": "minimal_pair_tone",
+      "voice_id": "Th\u00f9y Dung",
+      "cnn_predicted_class": "XUONG",
+      "cnn_confidence": 0.5852,
+      "cnn_error_type": "TONAL_MINIMAL_PAIR_FALSE_ACCEPT",
+      "error_hypothesis": "Minimal pair 'x\u01b0\u1edfng in' differs only by tone/vowel from target 'xu\u1ed1ng'.",
+      "evidence": "Confusion family is 'minimal_pair_tone'; model assigned confidence 0.585 to XUONG."
+    }
+  ]
+}

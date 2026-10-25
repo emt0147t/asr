@@ -1,0 +1,515 @@
+{
+  "variant_a_cascade_v1": {
+    "seed42": {
+      "calibrated_params": {
+        "theta_s1": 0.3,
+        "theta_s2": 0.55
+      },
+      "metrics": {
+        "macro_command_recall": 0.9313,
+        "recall_95ci": [
+          0.8811,
+          0.9612
+        ],
+        "false_rejection_rate": 0.0687,
+        "non_target_false_acceptance_rate": 0.0232,
+        "far_95ci": [
+          0.0136,
+          0.0393
+        ],
+        "non_target_rejection_rate": 0.9768,
+        "overall_5class_accuracy": 0.9667,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.85,
+          "LEN": 0.95,
+          "XUONG": 0.925
+        },
+        "per_keyword_precision": {
+          "TRAI": 0.8696,
+          "PHAI": 1.0,
+          "LEN": 0.8444,
+          "XUONG": 1.0
+        },
+        "per_keyword_f1": {
+          "TRAI": 0.9302,
+          "PHAI": 0.9189,
+          "LEN": 0.8941,
+          "XUONG": 0.961
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 34,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 6
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 38,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 37,
+            "REJECT": 3
+          },
+          "REJECT": {
+            "TRAI": 6,
+            "PHAI": 0,
+            "LEN": 7,
+            "XUONG": 0,
+            "REJECT": 547
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 4.06,
+        "median_ms": 2.18,
+        "p90_ms": 7.05,
+        "min_ms": 1.27,
+        "max_ms": 61.33
+      }
+    },
+    "seed43": {
+      "calibrated_params": {
+        "theta_s1": 0.3,
+        "theta_s2": 0.2
+      },
+      "metrics": {
+        "macro_command_recall": 0.9313,
+        "recall_95ci": [
+          0.8811,
+          0.9612
+        ],
+        "false_rejection_rate": 0.0687,
+        "non_target_false_acceptance_rate": 0.0518,
+        "far_95ci": [
+          0.0363,
+          0.0734
+        ],
+        "non_target_rejection_rate": 0.9482,
+        "overall_5class_accuracy": 0.9444,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.925,
+          "LEN": 0.975,
+          "XUONG": 0.875
+        },
+        "per_keyword_precision": {
+          "TRAI": 0.7451,
+          "PHAI": 0.925,
+          "LEN": 0.8478,
+          "XUONG": 0.8537
+        },
+        "per_keyword_f1": {
+          "TRAI": 0.8352,
+          "PHAI": 0.925,
+          "LEN": 0.907,
+          "XUONG": 0.8642
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 38,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 37,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 3
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 39,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 35,
+            "REJECT": 5
+          },
+          "REJECT": {
+            "TRAI": 13,
+            "PHAI": 3,
+            "LEN": 7,
+            "XUONG": 6,
+            "REJECT": 531
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 4.14,
+        "median_ms": 4.42,
+        "p90_ms": 6.89,
+        "min_ms": 1.21,
+        "max_ms": 11.97
+      }
+    },
+    "seed44": {
+      "calibrated_params": {
+        "theta_s1": 0.3,
+        "theta_s2": 0.2
+      },
+      "metrics": {
+        "macro_command_recall": 0.9062,
+        "recall_95ci": [
+          0.8511,
+          0.9424
+        ],
+        "false_rejection_rate": 0.0938,
+        "non_target_false_acceptance_rate": 0.0643,
+        "far_95ci": [
+          0.0468,
+          0.0877
+        ],
+        "non_target_rejection_rate": 0.9357,
+        "overall_5class_accuracy": 0.9292,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.95,
+          "LEN": 0.8,
+          "XUONG": 0.875
+        },
+        "per_keyword_precision": {
+          "TRAI": 0.7273,
+          "PHAI": 0.9268,
+          "LEN": 0.6531,
+          "XUONG": 0.9722
+        },
+        "per_keyword_f1": {
+          "TRAI": 0.8421,
+          "PHAI": 0.9383,
+          "LEN": 0.7191,
+          "XUONG": 0.9211
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 38,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 32,
+            "XUONG": 0,
+            "REJECT": 8
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 35,
+            "REJECT": 5
+          },
+          "REJECT": {
+            "TRAI": 15,
+            "PHAI": 3,
+            "LEN": 17,
+            "XUONG": 1,
+            "REJECT": 524
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 4.24,
+        "median_ms": 4.35,
+        "p90_ms": 6.99,
+        "min_ms": 1.19,
+        "max_ms": 27.38
+      }
+    },
+    "mean_summary": {
+      "mean_command_recall": 0.9229,
+      "mean_false_acceptance_rate": 0.0464,
+      "mean_rejection_accuracy": 0.9536,
+      "mean_5class_accuracy": 0.9468,
+      "mean_cpu_latency_ms": 4.15
+    }
+  },
+  "variant_b_stage1_cnn": {
+    "seed42": {
+      "calibrated_params": {
+        "theta_cmd": 0.85
+      },
+      "metrics": {
+        "macro_command_recall": 0.9563,
+        "recall_95ci": [
+          0.9125,
+          0.9786
+        ],
+        "false_rejection_rate": 0.0437,
+        "non_target_false_acceptance_rate": 0.1393,
+        "far_95ci": [
+          0.1131,
+          0.1704
+        ],
+        "non_target_rejection_rate": 0.8607,
+        "overall_5class_accuracy": 0.8819,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.95,
+          "LEN": 0.975,
+          "XUONG": 1.0
+        },
+        "per_keyword_precision": {
+          "TRAI": 0.4675,
+          "PHAI": 0.8444,
+          "LEN": 0.7091,
+          "XUONG": 0.7407
+        },
+        "per_keyword_f1": {
+          "TRAI": 0.6154,
+          "PHAI": 0.8941,
+          "LEN": 0.8211,
+          "XUONG": 0.8511
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 36,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 4
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 38,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 39,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 41,
+            "PHAI": 7,
+            "LEN": 16,
+            "XUONG": 14,
+            "REJECT": 482
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 1.66,
+        "median_ms": 1.66,
+        "p90_ms": 1.92,
+        "min_ms": 1.18,
+        "max_ms": 3.03
+      }
+    },
+    "seed43": {
+      "calibrated_params": {
+        "theta_cmd": 0.8
+      },
+      "metrics": {
+        "macro_command_recall": 0.9375,
+        "recall_95ci": [
+          0.8888,
+          0.9657
+        ],
+        "false_rejection_rate": 0.0625,
+        "non_target_false_acceptance_rate": 0.1571,
+        "far_95ci": [
+          0.1293,
+          0.1896
+        ],
+        "non_target_rejection_rate": 0.8429,
+        "overall_5class_accuracy": 0.8639,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.8,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "per_keyword_precision": {
+          "TRAI": 0.4872,
+          "PHAI": 0.8,
+          "LEN": 0.7018,
+          "XUONG": 0.6349
+        },
+        "per_keyword_f1": {
+          "TRAI": 0.6441,
+          "PHAI": 0.8,
+          "LEN": 0.8247,
+          "XUONG": 0.7767
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 38,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 32,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 8
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 40,
+            "PHAI": 8,
+            "LEN": 17,
+            "XUONG": 23,
+            "REJECT": 472
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 1.62,
+        "median_ms": 1.68,
+        "p90_ms": 1.86,
+        "min_ms": 1.14,
+        "max_ms": 7.33
+      }
+    },
+    "seed44": {
+      "calibrated_params": {
+        "theta_cmd": 0.75
+      },
+      "metrics": {
+        "macro_command_recall": 0.9875,
+        "recall_95ci": [
+          0.9556,
+          0.9966
+        ],
+        "false_rejection_rate": 0.0125,
+        "non_target_false_acceptance_rate": 0.2554,
+        "far_95ci": [
+          0.221,
+          0.2931
+        ],
+        "non_target_rejection_rate": 0.7446,
+        "overall_5class_accuracy": 0.7986,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "per_keyword_precision": {
+          "TRAI": 0.5333,
+          "PHAI": 0.7755,
+          "LEN": 0.3448,
+          "XUONG": 0.6557
+        },
+        "per_keyword_f1": {
+          "TRAI": 0.6957,
+          "PHAI": 0.8539,
+          "LEN": 0.5128,
+          "XUONG": 0.7921
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 38,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 35,
+            "PHAI": 11,
+            "LEN": 76,
+            "XUONG": 21,
+            "REJECT": 417
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 1.57,
+        "median_ms": 1.57,
+        "p90_ms": 1.8,
+        "min_ms": 1.19,
+        "max_ms": 3.74
+      }
+    },
+    "mean_summary": {
+      "mean_command_recall": 0.9604,
+      "mean_false_acceptance_rate": 0.1839,
+      "mean_rejection_accuracy": 0.8161,
+      "mean_5class_accuracy": 0.8481,
+      "mean_cpu_latency_ms": 1.62
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "phase": "PHASE 36 Report and Statistical Corrections",
+    "eval_corpus": "edge_tts_eval_v2",
+    "sample_size_isolated": 480,
+    "unique_text_clusters": 30,
+    "sample_size_streaming_sequences": 50,
+    "bootstrap_iterations": 10000,
+    "deterministic_seed": 42
+  },
+  "verified_metrics": {
+    "D2_H1_isolated_macro_f1": 0.8271553287033162,
+    "E1_isolated_macro_f1": 0.561519146264909,
+    "D0_H1_isolated_macro_f1": 0.5632155979613607,
+    "percentage_point_difference_d2_vs_e1": 26.563618243840725,
+    "relative_percentage_improvement_d2_vs_e1": 47.30670079646537,
+    "percentage_point_difference_d2_vs_d0": 26.393973074195554,
+    "relative_percentage_improvement_d2_vs_d0": 46.863000900067945,
+    "D2_H1_phonetic_confuser_fa_fraction": "13/256",
+    "D2_H1_phonetic_confuser_fa_rate": 0.05078125,
+    "E1_phonetic_confuser_fa_fraction": "78/256",
+    "E1_phonetic_confuser_fa_rate": 0.3046875,
+    "D2_H1_streaming_command_f1": 0.7218045112781956,
+    "D2_H1_streaming_exact_sequence_accuracy": 0.52,
+    "streaming_silence_fa_observed": 0,
+    "streaming_oov_fa_observed": 0
+  },
+  "bootstrap_audit": {
+    "clip_level_iid_bootstrap": {
+      "resample_unit": "individual_clip (N=480)",
+      "iterations": 10000,
+      "mean_delta_pp": 26.63406014951565,
+      "ci_95_pp": [
+        20.453347852547374,
+        33.48498650077744
+      ],
+      "zero_or_negative_diff_count": 0,
+      "empirical_p_value": 0.0,
+      "p_bound": "p < 0.0001"
+    },
+    "cluster_level_bootstrap": {
+      "resample_unit": "source_text_cluster (30 clusters: 4 commands, 16 hard negatives, 10 general OOVs)",
+      "iterations": 10000,
+      "mean_delta_pp": 14.477308398637694,
+      "ci_95_pp": [
+        1.8473701097370554,
+        27.694221035397355
+      ],
+      "zero_or_negative_diff_count": 147,
+      "empirical_p_value": 0.0147,
+      "methodological_rationale": "Respects correlation between repeated renditions (2 voices x 2 rates x 4 SNRs) derived from one base text. Cluster bootstrap accounts for within-utterance acoustic dependence."
+    },
+    "streaming_sequence_bootstrap": {
+      "resample_unit": "complete_sequence (N=50)",
+      "iterations": 10000,
+      "exact_sequence_accuracy_mean": 52.0,
+      "exact_sequence_accuracy_ci_95": [
+        38.0,
+        66.0
+      ],
+      "methodological_rationale": "Resamples complete multi-event sequences rather than treating events as independent."
+    }
+  },
+  "anova_verification": {
+    "factor_d": {
+      "df": [
+        1,
+        8
+      ],
+      "F": 1.3658209152376815,
+      "p_value": 0.2761745995407472,
+      "partial_eta2": 0.14583034713119114,
+      "interpretation": "Not statistically significant (p > 0.05)"
+    },
+    "factor_h": {
+      "df": [
+        1,
+        8
+      ],
+      "F": 3.7955877898605186,
+      "p_value": 0.08723082559233553,
+      "partial_eta2": 0.32178030103113675,
+      "interpretation": "Suggestive trend (p = 0.0872 > 0.05). Not statistically significant at alpha = 0.05."
+    },
+    "interaction_dh": {
+      "df": [
+        1,
+        8
+      ],
+      "F": 1.4194943848695554,
+      "p_value": 0.2676314107701824,
+      "partial_eta2": 0.15069751378053536,
+      "interpretation": "Not statistically significant (p > 0.05)"
+    },
+    "sample_size_limitation": "N=12 total runs (n=3 per cell), limiting statistical power to detect small-to-moderate main effects."
+  },
+  "language_correction": {
+    "previous_claim": "Zero catastrophic forgetting is confirmed.",
+    "corrected_statement": "No validation Macro-F1 degradation was observed in the reported comparison.",
+    "in_domain_val_macro_f1": {
+      "D0_H1": "93.28% ± 0.50%",
+      "D2_H1": "93.28% ± 0.57%",
+      "delta": "0.00 pp",
+      "two_tailed_t_p": 0.9989
+    }
+  }
+}

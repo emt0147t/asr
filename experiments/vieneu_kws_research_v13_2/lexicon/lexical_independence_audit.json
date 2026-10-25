@@ -1,0 +1,19 @@
+{
+  "status": "LEXICAL_INDEPENDENCE_CONFIRMED",
+  "historical_datasets_checked": [
+    "experiments/vieneu_kws_research_v11/data/splits/train_manifest.csv",
+    "experiments/vieneu_kws_research_v11/data/splits/val_manifest.csv",
+    "experiments/vieneu_kws_research_v11/data/splits/test_manifest.csv",
+    "experiments/vieneu_kws_research_v10/human_review/review_manifest.csv"
+  ],
+  "historical_unique_non_command_texts": 320,
+  "confirmatory_unique_non_command_texts": 700,
+  "lexical_overlap_count": 0,
+  "lexical_overlap_ratio": 0.0,
+  "novel_speaker_count": 8,
+  "novel_speaker_accent": "100% Northern Vietnamese (Bắc)",
+  "regional_accents_held_out": [
+    "Central (Trung)",
+    "Southern (Nam)"
+  ]
+}

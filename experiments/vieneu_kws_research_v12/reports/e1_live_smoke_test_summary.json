@@ -1,0 +1,64 @@
+{
+  "e1_checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\checkpoints\\exp_v12_e1_baseline_scale_seed42.pt",
+  "e1_checkpoint_sha256": "f3c0fe8f7ccebb8fe354cb50acb247e0674232044706db0187feb92b1706b878",
+  "log_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\reports\\e1_live_smoke_test_events.log",
+  "test_results": {
+    "single_TRAI": {
+      "success": true,
+      "detected": [
+        "TRAI"
+      ],
+      "confidence": 0.9463
+    },
+    "single_PHAI": {
+      "success": true,
+      "detected": [
+        "PHAI"
+      ],
+      "confidence": 0.998
+    },
+    "single_LEN": {
+      "success": true,
+      "detected": [
+        "LEN"
+      ],
+      "confidence": 0.9805
+    },
+    "single_XUONG": {
+      "success": true,
+      "detected": [
+        "XUONG"
+      ],
+      "confidence": 0.9862
+    },
+    "sequence_trai_xuong_phai": {
+      "success": true,
+      "detected": [
+        "TRAI",
+        "XUONG",
+        "PHAI"
+      ]
+    },
+    "repeated_trai_trai": {
+      "success": true,
+      "detected": [
+        "TRAI",
+        "TRAI"
+      ]
+    },
+    "oov_control_cua": {
+      "success": true,
+      "detected": [],
+      "note": "Must produce zero accepted commands"
+    },
+    "oov_control_ban": {
+      "success": true,
+      "detected": []
+    },
+    "silence_ambient_room": {
+      "success": true,
+      "detected": []
+    }
+  },
+  "overall_status": "PASS"
+}

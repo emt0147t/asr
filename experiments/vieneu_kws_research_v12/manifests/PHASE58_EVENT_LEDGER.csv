@@ -1,0 +1,59 @@
+sequence_id,label,text,start_time,end_time,duration_seconds
+p58_stream_cmd_01,TRAI,sang trái,1.184,1.602,0.418
+p58_stream_cmd_01,LEN,bước lên,2.902,3.308,0.406
+p58_stream_cmd_02,PHAI,bẻ lái phải,1.108,1.7,0.592
+p58_stream_cmd_02,TRAI,sang trái,3.024,3.442,0.418
+p58_stream_cmd_03,TRAI,bẻ lái trái,1.17,1.704,0.534
+p58_stream_cmd_03,LEN,chạy lên,3.204,3.575,0.372
+p58_stream_cmd_03,LEN,chạy lên,5.239,5.611,0.372
+p58_stream_cmd_04,TRAI,cua trái,1.086,1.469,0.383
+p58_stream_cmd_04,PHAI,bẻ lái phải,3.024,3.616,0.592
+p58_stream_cmd_04,LEN,bước lên,4.746,5.153,0.406
+p58_stream_cmd_05,XUONG,đi xuống,0.803,1.186,0.383
+p58_stream_cmd_05,PHAI,bẻ lái phải,2.2,2.792,0.592
+p58_stream_cmd_05,LEN,bước lên,3.845,4.251,0.406
+p58_stream_cmd_06,PHAI,rẽ phải,0.826,1.221,0.395
+p58_stream_cmd_06,TRAI,rẽ trái,2.353,2.795,0.441
+p58_stream_cmd_06,XUONG,đi xuống,4.574,4.957,0.383
+p58_stream_cmd_07,LEN,chạy lên,0.737,1.108,0.372
+p58_stream_cmd_07,XUONG,bước xuống,2.291,2.663,0.372
+p58_stream_cmd_08,TRAI,sang trái,1.107,1.525,0.418
+p58_stream_cmd_08,TRAI,bẻ lái trái,2.709,3.243,0.534
+p58_stream_cmd_09,LEN,chạy lên,1.079,1.451,0.372
+p58_stream_cmd_09,LEN,chạy lên,2.6,2.971,0.372
+p58_stream_cmd_10,LEN,đi lên,1.017,1.377,0.36
+p58_stream_cmd_11,LEN,chạy lên,1.048,1.419,0.372
+p58_stream_cmd_12,TRAI,rẽ trái,1.007,1.448,0.441
+p58_stream_cmd_12,PHAI,bẻ lái phải,2.954,3.546,0.592
+p58_stream_cmd_13,LEN,đi lên,0.88,1.24,0.36
+p58_stream_cmd_14,LEN,chạy lên,0.797,1.168,0.372
+p58_stream_cmd_14,PHAI,bẻ lái phải,2.568,3.16,0.592
+p58_stream_cmd_15,TRAI,cua trái,0.89,1.273,0.383
+p58_stream_cmd_15,XUONG,lùi xuống,2.818,3.282,0.464
+p58_stream_cmd_16,LEN,tiến lên,0.692,1.156,0.464
+p58_stream_cmd_16,TRAI,cua trái,2.423,2.806,0.383
+p58_stream_cmd_16,XUONG,đi xuống,4.45,4.833,0.383
+p58_stream_cmd_17,XUONG,đi xuống,0.607,0.99,0.383
+p58_stream_cmd_18,TRAI,bẻ lái trái,1.108,1.642,0.534
+p58_stream_cmd_19,TRAI,rẽ trái,0.78,1.221,0.441
+p58_stream_cmd_20,TRAI,sang trái,0.772,1.19,0.418
+p58_stream_cmd_20,PHAI,bẻ lái phải,2.617,3.209,0.592
+p58_stream_cmd_20,LEN,tiến lên,4.68,5.144,0.464
+p58_stream_cmd_21,PHAI,sang phải,0.694,1.054,0.36
+p58_stream_cmd_21,PHAI,bẻ lái phải,2.532,3.124,0.592
+p58_stream_cmd_22,XUONG,chạy xuống,1.038,1.514,0.476
+p58_stream_cmd_23,XUONG,chạy xuống,1.197,1.673,0.476
+p58_stream_cmd_23,TRAI,sang trái,3.28,3.698,0.418
+p58_stream_cmd_24,XUONG,chạy xuống,1.047,1.523,0.476
+p58_stream_cmd_24,TRAI,rẽ trái,3.292,3.733,0.441
+p58_stream_cmd_25,TRAI,cua trái,0.688,1.071,0.383
+p58_stream_cmd_26,TRAI,bẻ lái trái,0.693,1.227,0.534
+p58_stream_cmd_26,TRAI,bẻ lái trái,3.014,3.549,0.534
+p58_stream_cmd_26,TRAI,cua trái,5.169,5.552,0.383
+p58_stream_cmd_27,LEN,chạy lên,0.952,1.324,0.372
+p58_stream_cmd_28,PHAI,rẽ phải,0.96,1.355,0.395
+p58_stream_cmd_28,PHAI,rẽ phải,2.637,3.031,0.395
+p58_stream_cmd_28,XUONG,bước xuống,4.512,4.884,0.372
+p58_stream_cmd_29,XUONG,chạy xuống,0.67,1.146,0.476
+p58_stream_cmd_29,XUONG,lùi xuống,2.882,3.347,0.464
+p58_stream_cmd_30,TRAI,sang trái,1.187,1.605,0.418

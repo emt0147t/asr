@@ -1,0 +1,13 @@
+{
+  "status": "BLOCKED_NO_HUMAN_RESPONSES",
+  "governance_banner": "PENDING_HUMAN_LISTENER_VERIFICATION",
+  "natural_speech_status": "NOT_VALIDATED_ON_NATURAL_SPEECH",
+  "completed_reviewers_count": 0,
+  "total_submitted_files": 0,
+  "validated_clips_count": 0,
+  "missing_inputs": [
+    "Completed response CSVs for 120 review clips in D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v10\\human_review\\responses"
+  ],
+  "anti_fabrication_attestation": "No human listening ratings have been fabricated, prefilled, or simulated from model outputs.",
+  "metrics": null
+}

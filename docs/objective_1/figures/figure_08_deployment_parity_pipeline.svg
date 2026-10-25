@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 640" width="1150" height="640">
+  <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .code { font-family: 'JetBrains Mono', Consolas, Monaco, monospace; }
+    .shadow { filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.06)); }
+    .card-shadow { filter: drop-shadow(0px 2px 4px rgba(15, 23, 42, 0.08)); }
+</style>
+    <linearGradient id="bgGrad8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <marker id="arrowParity" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8"/>
+    </marker>
+  </defs>
+
+  <rect width="1150" height="640" fill="url(#bgGrad8)" rx="16"/>
+
+  <text x="50" y="45" font-size="22" font-weight="700" fill="#F8FAFC">Figure 8: On-Device Deployment, Quantization &amp; Numerical Parity Flow</text>
+  <text x="50" y="70" font-size="13" fill="#94A3B8">Verification Pipeline: PyTorch Golden Checkpoints &rarr; ONNX Opset 14 Export &rarr; INT8 Quantization Audit</text>
+
+  <!-- Step 1: PyTorch Models -->
+  <g transform="translate(50, 110)">
+    <rect width="220" height="480" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    <path d="M 0 10 Q 0 0 10 0 L 210 0 Q 220 0 220 10 L 220 38 L 0 38 Z" fill="#EE4C2C"/>
+    <text x="110" y="24" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">1. PYTORCH CHECKPOINTS</text>
+
+    <rect x="15" y="55" width="190" height="85" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="25" y="75" font-size="12" font-weight="600" fill="#F87171">Model Checkpoints</text>
+    <text x="25" y="93" font-size="10" fill="#CBD5E1" class="code">kws_tcresnet_advanced.pt</text>
+    <text x="25" y="108" font-size="10" fill="#CBD5E1" class="code">best_kws_model.pt</text>
+    <text x="25" y="125" font-size="10" fill="#94A3B8">PyTorch 2.6.0+cu124</text>
+
+    <rect x="15" y="155" width="190" height="110" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="25" y="175" font-size="12" font-weight="600" fill="#E2E8F0">Architecture Specs</text>
+    <text x="25" y="195" font-size="11" fill="#94A3B8">&bull; TC-ResNet: 272,934 params</text>
+    <text x="25" y="212" font-size="11" fill="#94A3B8">&bull; 2D-CNN: 138,534 params</text>
+    <text x="25" y="229" font-size="11" fill="#94A3B8">&bull; Output: Logits [1, 6]</text>
+    <text x="25" y="246" font-size="10" fill="#38BDF8">&bull; CPU Inference: 0.25 - 0.35 ms</text>
+
+    <rect x="15" y="280" width="190" height="190" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="25" y="300" font-size="12" font-weight="600" fill="#E2E8F0">Verified Baselines</text>
+    <text x="25" y="320" font-size="11" fill="#CBD5E1">&bull; TC-ResNet: 96.63% acc</text>
+    <text x="25" y="338" font-size="11" fill="#CBD5E1">&bull; TC-ResNet Macro-F1: 0.9402</text>
+    <text x="25" y="356" font-size="11" fill="#CBD5E1">&bull; Baseline: 97.75% acc</text>
+    <text x="25" y="374" font-size="11" fill="#CBD5E1">&bull; Baseline Macro-F1: 0.9466</text>
+    <text x="25" y="405" font-size="10" fill="#34D399">&bull; Golden Reference for</text>
+    <text x="25" y="420" font-size="10" fill="#34D399">numerical parity check</text>
+  </g>
+
+  <line x1="270" y1="350" x2="310" y2="350" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrowParity)"/>
+
+  <!-- Step 2: ONNX FP32 Export -->
+  <g transform="translate(315, 110)">
+    <rect width="250" height="480" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    <path d="M 0 10 Q 0 0 10 0 L 240 0 Q 250 0 250 10 L 250 38 L 0 38 Z" fill="#0284C7"/>
+    <text x="125" y="24" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">2. ONNX FP32 EXPORT</text>
+
+    <rect x="15" y="55" width="220" height="95" rx="6" fill="#0F172A" stroke="#0284C7"/>
+    <text x="25" y="75" font-size="12" font-weight="600" fill="#38BDF8">Export Configuration</text>
+    <text x="25" y="93" font-size="10" fill="#CBD5E1" class="code">torch.onnx.export()</text>
+    <text x="25" y="108" font-size="10" fill="#94A3B8">Opset Version: 14</text>
+    <text x="25" y="123" font-size="10" fill="#94A3B8">Dynamic Batch: True</text>
+    <text x="25" y="138" font-size="10" fill="#94A3B8">Verified via onnx.checker</text>
+
+    <rect x="15" y="165" width="220" height="95" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="25" y="185" font-size="12" font-weight="600" fill="#E2E8F0">TC-ResNet FP32 Model</text>
+    <text x="25" y="203" font-size="10" fill="#38BDF8" class="code">tcresnet_fp32.onnx</text>
+    <text x="25" y="220" font-size="11" fill="#CBD5E1">&bull; Size: 1,093.7 KB (1,068.1 KiB)</text>
+    <text x="25" y="238" font-size="11" fill="#CBD5E1">&bull; Nodes: 29 (12 Conv, 1 Gemm)</text>
+    <text x="25" y="253" font-size="10" fill="#34D399">&bull; Max Parity Error: 1.19e-06</text>
+
+    <rect x="15" y="275" width="220" height="195" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="25" y="295" font-size="12" font-weight="600" fill="#E2E8F0">Baseline FP32 Model</text>
+    <text x="25" y="313" font-size="10" fill="#94A3B8" class="code">vietnamese_kws_float32.onnx</text>
+    <text x="25" y="330" font-size="11" fill="#CBD5E1">&bull; Size: 555.4 KB (542.4 KiB)</text>
+    <text x="25" y="348" font-size="11" fill="#CBD5E1">&bull; Nodes: 16 (4 Conv, 2 Gemm)</text>
+    <text x="25" y="366" font-size="11" fill="#CBD5E1">&bull; Max Parity Error: 9.54e-07</text>
+    <text x="25" y="405" font-size="10" fill="#34D399">&bull; 100% Class Concordance</text>
+    <text x="25" y="420" font-size="10" fill="#34D399">tested across 534 samples</text>
+  </g>
+
+  <line x1="565" y1="350" x2="605" y2="350" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrowParity)"/>
+
+  <!-- Step 3: Quantization Audit -->
+  <g transform="translate(610, 110)">
+    <rect width="250" height="480" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    <path d="M 0 10 Q 0 0 10 0 L 240 0 Q 250 0 250 10 L 250 38 L 0 38 Z" fill="#7C3AED"/>
+    <text x="125" y="24" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">3. QUANTIZATION AUDIT</text>
+
+    <!-- Verified INT8 -->
+    <rect x="15" y="55" width="220" height="150" rx="6" fill="#064E3B" stroke="#10B981"/>
+    <text x="25" y="75" font-size="12" font-weight="700" fill="#A7F3D0">2D-CNN INT8 (VERIFIED)</text>
+    <text x="25" y="93" font-size="10" fill="#FFFFFF" class="code">vietnamese_kws_int8.onnx</text>
+    <text x="25" y="110" font-size="11" fill="#E2E8F0">&bull; Size: 148.8 KB (145.3 KiB)</text>
+    <text x="25" y="127" font-size="11" fill="#E2E8F0">&bull; Compression: 3.73x reduction</text>
+    <text x="25" y="143" font-size="10" fill="#A7F3D0">&bull; Verified Graph Operators:</text>
+    <text x="35" y="158" font-size="9" fill="#CBD5E1" class="code">DynamicQuantizeLinear, ConvInt</text>
+    <text x="25" y="177" font-size="10" fill="#6EE7B7">&bull; Accuracy: 97.56% (-0.19% drop)</text>
+    <text x="25" y="193" font-size="10" fill="#6EE7B7">&bull; Opset 14 &bull; 12 UINT8 initializers</text>
+
+    <!-- Missing INT8 (Audit finding) -->
+    <rect x="15" y="220" width="220" height="150" rx="6" fill="#2A1215" stroke="#E11D48"/>
+    <text x="25" y="240" font-size="12" font-weight="700" fill="#FDA4AF">TC-ResNet INT8 (MISSING!)</text>
+    <text x="25" y="258" font-size="10" fill="#FECDD3" class="code">vietnamese_kws_tcresnet_int8.onnx</text>
+    <text x="25" y="278" font-size="11" fill="#FECDD3">&bull; Cited in Phase 3 report notes</text>
+    <text x="25" y="295" font-size="11" fill="#FDA4AF" font-weight="600">&bull; AUDIT FINDING: NOT ON DISK</text>
+    <text x="25" y="313" font-size="10" fill="#CBD5E1">&bull; Target Size: ~280 KB</text>
+    <text x="25" y="330" font-size="10" fill="#CBD5E1">&bull; Quantization script exists but</text>
+    <text x="25" y="345" font-size="10" fill="#CBD5E1">artifact was not saved to disk</text>
+    <text x="25" y="360" font-size="10" fill="#FECDD3">&bull; Severity: P2 Defect</text>
+
+    <rect x="15" y="385" width="220" height="85" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="25" y="405" font-size="11" font-weight="600" fill="#E2E8F0">Quantization Method</text>
+    <text x="25" y="422" font-size="10" fill="#94A3B8">&bull; ONNX Dynamic Quantization</text>
+    <text x="25" y="437" font-size="10" fill="#94A3B8">&bull; Activation: uint8 dynamic</text>
+    <text x="25" y="452" font-size="10" fill="#94A3B8">&bull; Weights: uint8 symmetric</text>
+  </g>
+
+  <line x1="860" y1="350" x2="900" y2="350" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrowParity)"/>
+
+  <!-- Step 4: Parity & Mobile Targets -->
+  <g transform="translate(905, 110)">
+    <rect width="200" height="480" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    <path d="M 0 10 Q 0 0 10 0 L 190 0 Q 200 0 200 10 L 200 38 L 0 38 Z" fill="#059669"/>
+    <text x="100" y="24" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">4. PARITY &amp; MOBILE</text>
+
+    <rect x="15" y="55" width="170" height="110" rx="6" fill="#0F172A" stroke="#059669"/>
+    <text x="25" y="75" font-size="11" font-weight="700" fill="#34D399">NUMERICAL PARITY</text>
+    <text x="25" y="93" font-size="10" fill="#CBD5E1">&bull; TC-ResNet Error:</text>
+    <text x="35" y="108" font-size="10" fill="#38BDF8" class="code">1.19e-06 (&lt; 1e-4)</text>
+    <text x="25" y="125" font-size="10" fill="#CBD5E1">&bull; Class Concordance:</text>
+    <text x="35" y="140" font-size="10" fill="#34D399" font-weight="600">100.0% (534/534)</text>
+    <text x="25" y="155" font-size="9" fill="#94A3B8">0 prediction drift</text>
+
+    <rect x="15" y="180" width="170" height="135" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="25" y="200" font-size="11" font-weight="700" fill="#38BDF8">CPU INFERENCE</text>
+    <text x="25" y="220" font-size="10" fill="#CBD5E1">&bull; TC-ResNet: 0.35 ms</text>
+    <text x="25" y="238" font-size="10" fill="#CBD5E1">&bull; Baseline FP32: 0.25 ms</text>
+    <text x="25" y="256" font-size="10" fill="#CBD5E1">&bull; Baseline INT8: 0.91 ms</text>
+    <text x="25" y="276" font-size="10" fill="#34D399">&bull; Streaming budget: 100 ms</text>
+    <text x="25" y="294" font-size="9" fill="#94A3B8">&lt; 1% single CPU core</text>
+    <text x="25" y="307" font-size="9" fill="#94A3B8">utilization</text>
+
+    <rect x="15" y="330" width="170" height="140" rx="6" fill="#0F172A" stroke="#334155"/>
+    <text x="25" y="350" font-size="11" font-weight="700" fill="#E2E8F0">MOBILE TARGETS</text>
+    <text x="25" y="370" font-size="10" fill="#CBD5E1">&bull; Android:</text>
+    <text x="35" y="385" font-size="10" fill="#94A3B8">ONNX Runtime Mobile</text>
+    <text x="35" y="400" font-size="10" fill="#94A3B8">/ NNAPI Delegate</text>
+    <text x="25" y="420" font-size="10" fill="#CBD5E1">&bull; iOS:</text>
+    <text x="35" y="435" font-size="10" fill="#94A3B8">CoreML / ONNX Runtime</text>
+    <text x="35" y="450" font-size="10" fill="#FDA4AF">(Blocked by Win11 host)</text>
+  </g>
+</svg>

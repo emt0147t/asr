@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680">
+  <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .code { font-family: 'JetBrains Mono', Consolas, Monaco, monospace; }
+    .shadow { filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.06)); }
+    .card-shadow { filter: drop-shadow(0px 2px 4px rgba(15, 23, 42, 0.08)); }
+</style>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="680" fill="url(#bgGrad)" rx="16"/>
+
+  <text x="50" y="55" font-size="24" font-weight="700" fill="#F8FAFC">Figure 1: End-to-End Real-Time Vietnamese KWS System Architecture</text>
+  <text x="50" y="82" font-size="14" fill="#94A3B8">Streaming 16 kHz Audio Pipeline &bull; Temporal Convolutional Backbone (VietnameseTCResNet, 272.9k Params) &bull; State Machine Gating</text>
+
+  <!-- Stage 1: Audio Input & Buffering -->
+  <g transform="translate(50, 120)">
+    <rect width="230" height="490" rx="12" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1.5" class="card-shadow"/>
+    <path d="M 0 12 Q 0 0 12 0 L 218 0 Q 230 0 230 12 L 230 42 L 0 42 Z" fill="#0284C7"/>
+    <text x="115" y="26" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">STAGE 1: AUDIO INPUT</text>
+    
+    <rect x="20" y="60" width="190" height="65" rx="8" fill="#0F172A" stroke="#0284C7" stroke-width="1"/>
+    <text x="115" y="85" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Microphone Stream</text>
+    <text x="115" y="105" font-size="11" fill="#38BDF8" text-anchor="middle" class="code">16 kHz &bull; Mono &bull; PCM16</text>
+
+    <line x1="115" y1="125" x2="115" y2="150" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="20" y="150" width="190" height="75" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="115" y="175" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Chunk Ingestion</text>
+    <text x="115" y="195" font-size="11" fill="#94A3B8" text-anchor="middle">Step size: 100 ms (1,600 spl)</text>
+    <text x="115" y="212" font-size="10" fill="#64748B" text-anchor="middle">10 inferences / sec rate</text>
+
+    <line x1="115" y1="225" x2="115" y2="250" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="20" y="250" width="190" height="95" rx="8" fill="#0F172A" stroke="#0284C7" stroke-width="1.5"/>
+    <text x="115" y="275" font-size="13" font-weight="600" fill="#38BDF8" text-anchor="middle">Circular Ring Buffer</text>
+    <text x="115" y="295" font-size="11" fill="#E2E8F0" text-anchor="middle" class="code">Window = 1.0 s (16,000 spl)</text>
+    <text x="115" y="315" font-size="11" fill="#94A3B8" text-anchor="middle">Overlap: 90% (900 ms)</text>
+    <text x="115" y="332" font-size="10" fill="#64748B" text-anchor="middle">FIFO sliding window</text>
+
+    <line x1="115" y1="345" x2="115" y2="370" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="20" y="370" width="190" height="85" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="115" y="395" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Signal Conditioning</text>
+    <text x="115" y="415" font-size="11" fill="#94A3B8" text-anchor="middle">Pre-emphasis: &alpha; = 0.97</text>
+    <text x="115" y="433" font-size="11" fill="#94A3B8" text-anchor="middle">Dynamic range normalization</text>
+  </g>
+
+  <line x1="280" y1="365" x2="310" y2="365" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Stage 2: Feature Extraction -->
+  <g transform="translate(315, 120)">
+    <rect width="240" height="490" rx="12" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1.5" class="card-shadow"/>
+    <path d="M 0 12 Q 0 0 12 0 L 228 0 Q 240 0 240 12 L 240 42 L 0 42 Z" fill="#7C3AED"/>
+    <text x="120" y="26" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">STAGE 2: SPECTROGRAM</text>
+
+    <rect x="20" y="60" width="200" height="75" rx="8" fill="#0F172A" stroke="#7C3AED" stroke-width="1"/>
+    <text x="120" y="85" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">STFT Framing</text>
+    <text x="120" y="105" font-size="11" fill="#C4B5FD" text-anchor="middle">Win = 480 spl (30 ms)</text>
+    <text x="120" y="122" font-size="11" fill="#94A3B8" text-anchor="middle">Hop = 160 spl (10 ms)</text>
+
+    <line x1="120" y1="135" x2="120" y2="160" stroke="#A78BFA" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="20" y="160" width="200" height="85" rx="8" fill="#0F172A" stroke="#7C3AED" stroke-width="1"/>
+    <text x="120" y="185" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Mel Filterbank</text>
+    <text x="120" y="205" font-size="11" fill="#C4B5FD" text-anchor="middle">40 Triangular Filters</text>
+    <text x="120" y="223" font-size="11" fill="#94A3B8" text-anchor="middle">Freq range: 20 Hz &ndash; 7,600 Hz</text>
+
+    <line x1="120" y1="245" x2="120" y2="270" stroke="#A78BFA" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="20" y="270" width="200" height="85" rx="8" fill="#0F172A" stroke="#7C3AED" stroke-width="1"/>
+    <text x="120" y="295" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Log &amp; Normalization</text>
+    <text x="120" y="315" font-size="11" fill="#C4B5FD" text-anchor="middle">Log Compression: ln(S + 1e-6)</text>
+    <text x="120" y="333" font-size="11" fill="#94A3B8" text-anchor="middle">Per-utterance CMVN</text>
+
+    <line x1="120" y1="355" x2="120" y2="385" stroke="#A78BFA" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="20" y="385" width="200" height="70" rx="8" fill="#0F172A" stroke="#A78BFA" stroke-width="1.5"/>
+    <text x="120" y="410" font-size="13" font-weight="600" fill="#A78BFA" text-anchor="middle">Input Feature Tensor</text>
+    <text x="120" y="432" font-size="12" fill="#FFFFFF" text-anchor="middle" class="code">[1, 40, 101] (squeeze channel)</text>
+  </g>
+
+  <line x1="555" y1="365" x2="585" y2="365" stroke="#A78BFA" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Stage 3: VietnameseTCResNet Backbone -->
+  <g transform="translate(590, 120)">
+    <rect width="280" height="490" rx="12" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1.5" class="card-shadow"/>
+    <path d="M 0 12 Q 0 0 12 0 L 268 0 Q 280 0 280 12 L 280 42 L 0 42 Z" fill="#D97706"/>
+    <text x="140" y="26" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">STAGE 3: TC-ResNet BACKBONE</text>
+
+    <rect x="20" y="55" width="240" height="50" rx="6" fill="#0F172A" stroke="#D97706" stroke-width="1"/>
+    <text x="140" y="76" font-size="12" font-weight="600" fill="#FCD34D" text-anchor="middle">Conv1 (Initial Frequency Conv)</text>
+    <text x="140" y="94" font-size="10" fill="#94A3B8" text-anchor="middle" class="code">Conv1D(c=24, k=3, s=1) &bull; BN &bull; ReLU</text>
+
+    <g transform="translate(20, 115)">
+      <rect width="240" height="185" rx="8" fill="#172554" stroke="#3B82F6" stroke-width="1.5"/>
+      <text x="120" y="20" font-size="12" font-weight="700" fill="#60A5FA" text-anchor="middle">6x Temporal Residual Blocks</text>
+      
+      <rect x="10" y="32" width="220" height="35" rx="4" fill="#0F172A"/>
+      <text x="120" y="54" font-size="11" fill="#93C5FD" text-anchor="middle">ResBlock 1 &amp; 2 (C_out = 36, Dil=1)</text>
+
+      <rect x="10" y="73" width="220" height="35" rx="4" fill="#0F172A"/>
+      <text x="120" y="95" font-size="11" fill="#93C5FD" text-anchor="middle">ResBlock 3 &amp; 4 (C_out = 48, Dil=2)</text>
+
+      <rect x="10" y="114" width="220" height="35" rx="4" fill="#0F172A"/>
+      <text x="120" y="136" font-size="11" fill="#93C5FD" text-anchor="middle">ResBlock 5 &amp; 6 (C_out = 64, Dil=4)</text>
+
+      <text x="120" y="168" font-size="9" fill="#94A3B8" text-anchor="middle">1D Temporal Conv (k=9) + Skip Connection</text>
+    </g>
+
+    <rect x="20" y="310" width="240" height="50" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="140" y="331" font-size="12" font-weight="600" fill="#E2E8F0" text-anchor="middle">Mean + Max Pooling Layer</text>
+    <text x="140" y="348" font-size="10" fill="#94A3B8" text-anchor="middle" class="code">Concat(MeanPool, MaxPool) &rarr; [1, 128]</text>
+
+    <rect x="20" y="370" width="240" height="55" rx="6" fill="#0F172A" stroke="#D97706" stroke-width="1"/>
+    <text x="140" y="391" font-size="12" font-weight="600" fill="#FCD34D" text-anchor="middle">Linear Classification Head</text>
+    <text x="140" y="411" font-size="10" fill="#94A3B8" text-anchor="middle" class="code">Dropout(0.2) &rarr; Linear(128, 6) &rarr; Logits</text>
+
+    <text x="140" y="445" font-size="11" font-weight="600" fill="#38BDF8" text-anchor="middle">272,934 Parameters &bull; 1,068 KiB FP32</text>
+    <text x="140" y="462" font-size="10" fill="#94A3B8" text-anchor="middle">CPU Frame Latency: 0.35 ms</text>
+  </g>
+
+  <line x1="870" y1="365" x2="900" y2="365" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Stage 4: Post-Processing & Streaming Gating -->
+  <g transform="translate(905, 120)">
+    <rect width="245" height="490" rx="12" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1.5" class="card-shadow"/>
+    <path d="M 0 12 Q 0 0 12 0 L 233 0 Q 245 0 245 12 L 245 42 L 0 42 Z" fill="#059669"/>
+    <text x="122" y="26" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">STAGE 4: STREAMING GATE</text>
+
+    <rect x="20" y="60" width="205" height="75" rx="8" fill="#0F172A" stroke="#059669" stroke-width="1"/>
+    <text x="122" y="85" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">EMA Posterior Smoothing</text>
+    <text x="122" y="105" font-size="11" fill="#34D399" text-anchor="middle" class="code">p_t = &alpha;&middot;p_raw + (1-&alpha;)&middot;p_t-1</text>
+    <text x="122" y="122" font-size="10" fill="#94A3B8" text-anchor="middle">&alpha; = 0.60 (smoothing factor)</text>
+
+    <line x1="122" y1="135" x2="122" y2="160" stroke="#34D399" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="20" y="160" width="205" height="85" rx="8" fill="#0F172A" stroke="#059669" stroke-width="1"/>
+    <text x="122" y="185" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Dual-Threshold Gate</text>
+    <text x="122" y="205" font-size="11" fill="#34D399" text-anchor="middle">Operating Thresh: &tau; &ge; 0.70</text>
+    <text x="122" y="222" font-size="11" fill="#94A3B8" text-anchor="middle">Margin over UNKNOWN &ge; 0.15</text>
+    <text x="122" y="237" font-size="10" fill="#64748B" text-anchor="middle">M=2 frame persistence</text>
+
+    <line x1="122" y1="245" x2="122" y2="270" stroke="#34D399" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="20" y="270" width="205" height="75" rx="8" fill="#0F172A" stroke="#059669" stroke-width="1"/>
+    <text x="122" y="295" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle">Refractory Lockout</text>
+    <text x="122" y="315" font-size="11" fill="#34D399" text-anchor="middle">Cooldown Window: 600 ms</text>
+    <text x="122" y="332" font-size="10" fill="#94A3B8" text-anchor="middle">Zero duplicate activations</text>
+
+    <line x1="122" y1="345" x2="122" y2="375" stroke="#34D399" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="20" y="375" width="205" height="95" rx="8" fill="#064E3B" stroke="#10B981" stroke-width="1.5"/>
+    <text x="122" y="400" font-size="12" font-weight="700" fill="#A7F3D0" text-anchor="middle">DISPATCHED ACTION</text>
+    <text x="122" y="423" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">TRAI | PHAI | LEN | XUONG</text>
+    <text x="122" y="445" font-size="11" fill="#6EE7B7" text-anchor="middle">Trigger latency: ~706 ms</text>
+    <text x="122" y="460" font-size="10" fill="#A7F3D0" text-anchor="middle">Single-frame inference: 0.35 ms</text>
+  </g>
+
+  <!-- Bottom Legend / Summary -->
+  <rect x="50" y="625" width="1100" height="35" rx="6" fill="#1E293B" stroke="#334155"/>
+  <text x="600" y="647" font-size="12" fill="#94A3B8" text-anchor="middle">Real-Time Invariant: Frame CPU Inference: 0.35 ms (at 100 ms hop) &bull; Continuous Detection Latency: ~706 ms &bull; Evaluated Stream Duration: 8.0 Minutes</text>
+</svg>

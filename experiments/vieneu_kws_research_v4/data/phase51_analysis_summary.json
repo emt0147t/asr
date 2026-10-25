@@ -1,0 +1,96 @@
+{
+  "candidate3_fp_family": {
+    "minimal_pair_vowel_coda": 13,
+    "minimal_pair_consonant": 46,
+    "phonetic_phrase_context": 23,
+    "minimal_pair_tone": 9,
+    "neutral_speech": 2
+  },
+  "candidate3_fp_target": {
+    "PHAI": 47,
+    "TRAI": 13,
+    "XUONG": 22,
+    "LEN": 9,
+    "NONE": 2
+  },
+  "candidate3_fp_voices": {
+    "Kim Thanh": 11,
+    "Qu\u1ed1c Tu\u1ea5n": 17,
+    "\u0110\u1ee9c Tr\u00ed": 60,
+    "Qu\u1ef3nh Anh": 5
+  },
+  "candidate3_top_fp_words": [
+    [
+      "v\u1ea3i",
+      14
+    ],
+    [
+      "b\u00e1i",
+      7
+    ],
+    [
+      "t\u1ea3i",
+      7
+    ],
+    [
+      "b\u01b0\u1edbc xu\u1ed1ng",
+      5
+    ],
+    [
+      "l\u1ec7nh",
+      5
+    ],
+    [
+      "ph\u00fa",
+      4
+    ],
+    [
+      "h\u1ea3i",
+      4
+    ],
+    [
+      "v\u01b0\u01a1ng",
+      4
+    ],
+    [
+      "l\u01b0\u1ee1ng",
+      4
+    ],
+    [
+      "h\u1ea1 xu\u1ed1ng",
+      4
+    ],
+    [
+      "h\u01b0\u1edbng ph\u1ea3i",
+      4
+    ],
+    [
+      "d\u00f2ng xu\u1ed3ng",
+      3
+    ],
+    [
+      "m\u00e0i",
+      3
+    ],
+    [
+      "b\u01b0\u1edbc l\u00ean",
+      3
+    ],
+    [
+      "ph\u00f4i phai",
+      3
+    ]
+  ],
+  "candidate3_fn_by_kw": {
+    "TRAI": 52,
+    "PHAI": 57,
+    "LEN": 7,
+    "XUONG": 19
+  },
+  "candidate3_fn_by_voice": {
+    "Qu\u1ed1c Tu\u1ea5n": 41,
+    "Qu\u1ef3nh Anh": 62,
+    "\u0110\u1ee9c Tr\u00ed": 26,
+    "Kim Thanh": 6
+  }
+}

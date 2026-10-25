@@ -1,0 +1,116 @@
+{
+  "benchmark_id": "research_v6.0_bounded",
+  "campaign": "Phases 60-64",
+  "created_at": "2026-10-18T15:26:24+0700",
+  "total_clips": 2440,
+  "split_counts": {
+    "train": 1360,
+    "val": 360,
+    "test": 720
+  },
+  "class_counts_by_split": {
+    "train": {
+      "UNKNOWN": 340,
+      "SILENCE": 340,
+      "TRAI": 170,
+      "PHAI": 170,
+      "LEN": 170,
+      "XUONG": 170
+    },
+    "val": {
+      "UNKNOWN": 120,
+      "SILENCE": 80,
+      "TRAI": 40,
+      "PHAI": 40,
+      "LEN": 40,
+      "XUONG": 40
+    },
+    "test": {
+      "UNKNOWN": 480,
+      "SILENCE": 80,
+      "TRAI": 40,
+      "PHAI": 40,
+      "LEN": 40,
+      "XUONG": 40
+    }
+  },
+  "bounded_class_counts_by_split": {
+    "train": {
+      "REJECT": 680,
+      "TRAI": 170,
+      "PHAI": 170,
+      "LEN": 170,
+      "XUONG": 170
+    },
+    "val": {
+      "REJECT": 200,
+      "TRAI": 40,
+      "PHAI": 40,
+      "LEN": 40,
+      "XUONG": 40
+    },
+    "test": {
+      "REJECT": 560,
+      "TRAI": 40,
+      "PHAI": 40,
+      "LEN": 40,
+      "XUONG": 40
+    }
+  },
+  "disjoint_non_target_texts": {
+    "train": 80,
+    "val": 40,
+    "test": 80,
+    "overlap_train_val": 0,
+    "overlap_train_test": 0,
+    "overlap_val_test": 0,
+    "overlap_with_historical_texts": 0
+  },
+  "voices": {
+    "train": [
+      "Adam",
+      "Adam bựa",
+      "Hải Đăng",
+      "Minh Triết",
+      "Minh Đức",
+      "Mỹ Duyên",
+      "Ngọc Huyền",
+      "Ngọc Linh",
+      "Quang Sơn",
+      "Thanh Bình",
+      "Thiền Tâm Đức",
+      "Thiện Minh",
+      "Thái Sơn",
+      "Thục Đoan",
+      "Trúc Ly",
+      "Xuân Vĩnh",
+      "Đoan Trang"
+    ],
+    "val": [
+      "Mai Anh",
+      "Ngọc Trân",
+      "Phạm Tuyên",
+      "Thùy Dung"
+    ],
+    "test": [
+      "Kim Thanh",
+      "Quốc Tuấn",
+      "Quỳnh Anh",
+      "Đức Trí"
+    ]
+  },
+  "acoustic_specifications": {
+    "sample_rate": 16000,
+    "duration_samples": 16000,
+    "duration_seconds": 1.0,
+    "channels": 1,
+    "normalization_target_dbfs": -1.0,
+    "speech_centering": "active_speech_energy_centered_with_min_150ms_padding"
+  },
+  "compliance_status": {
+    "governance": "COMPLIANT",
+    "field_recordings_used": false,
+    "consent_ledgers_accessed": false,
+    "status_banner": "PENDING_HUMAN_LISTENER_VERIFICATION | NOT_VALIDATED_ON_NATURAL_SPEECH"
+  }
+}

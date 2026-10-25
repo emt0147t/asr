@@ -1,0 +1,20 @@
+{
+  "1_historical_cascade": {
+    "theta1": 0.5,
+    "theta2": 0.6,
+    "is_strictly_feasible": false,
+    "rationale": "NO_FEASIBLE_VALIDATION_OPERATING_POINT: Could not simultaneously achieve Target Recall >= 95%, Non-Target FA/hr <= 1.0, and Mean Latency <= 600ms across all seeds."
+  },
+  "2_recall_preserving_stage1": {
+    "theta1": 0.5,
+    "theta2": 0.6,
+    "is_strictly_feasible": false,
+    "rationale": "NO_FEASIBLE_VALIDATION_OPERATING_POINT: Could not simultaneously achieve Target Recall >= 95%, Non-Target FA/hr <= 1.0, and Mean Latency <= 600ms across all seeds."
+  },
+  "3_recall_preserving_cascade": {
+    "theta1": 0.5,
+    "theta2": 0.55,
+    "is_strictly_feasible": false,
+    "rationale": "NO_FEASIBLE_VALIDATION_OPERATING_POINT: Could not simultaneously achieve Target Recall >= 95%, Non-Target FA/hr <= 1.0, and Mean Latency <= 600ms across all seeds."
+  }
+}

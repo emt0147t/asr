@@ -1,0 +1,2446 @@
+{
+  "clean_baseline": {
+    "name": "Clean Baseline",
+    "description": "Unperturbed original synthetic audio",
+    "category": "in_distribution_clean",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9688,
+      "std_command_recall": 0.0063,
+      "mean_false_acceptance_rate": 0.0583,
+      "std_false_acceptance_rate": 0.0076,
+      "mean_5class_accuracy": 0.9537,
+      "std_5class_accuracy": 0.0064,
+      "mean_cpu_latency_ms": 1.53,
+      "std_cpu_latency_ms": 0.18
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.9625,
+        "non_target_far": 0.06,
+        "raw_false_acceptances": 12,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.95,
+        "rejection_rate": 0.525,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 36,
+            "PHAI": 4,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 1,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 39,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 2,
+            "PHAI": 0,
+            "LEN": 1,
+            "XUONG": 9,
+            "REJECT": 188
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.44,
+          "median": 1.38,
+          "p90": 1.73,
+          "p99": 2.83
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.975,
+        "non_target_far": 0.05,
+        "raw_false_acceptances": 10,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9611,
+        "rejection_rate": 0.5361,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 38,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 3,
+            "LEN": 0,
+            "XUONG": 6,
+            "REJECT": 190
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.41,
+          "median": 1.36,
+          "p90": 1.73,
+          "p99": 2.83
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.9688,
+        "non_target_far": 0.065,
+        "raw_false_acceptances": 13,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.95,
+        "rejection_rate": 0.525,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 37,
+            "PHAI": 2,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 1,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 39,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 2,
+            "XUONG": 10,
+            "REJECT": 187
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.73,
+          "median": 1.7,
+          "p90": 1.95,
+          "p99": 3.04
+        }
+      }
+    }
+  },
+  "snr_20db": {
+    "name": "Additive Noise (+20 dB SNR)",
+    "description": "Gaussian white noise added at +20 dB SNR",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9437,
+      "std_command_recall": 0.0063,
+      "mean_false_acceptance_rate": 0.0567,
+      "std_false_acceptance_rate": 0.0076,
+      "mean_5class_accuracy": 0.9435,
+      "std_5class_accuracy": 0.007,
+      "mean_cpu_latency_ms": 1.8,
+      "std_cpu_latency_ms": 0.12
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.9375,
+        "non_target_far": 0.065,
+        "raw_false_acceptances": 13,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9361,
+        "rejection_rate": 0.5278,
+        "per_keyword_recall": {
+          "TRAI": 0.775,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 31,
+            "PHAI": 7,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 39,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 2,
+            "LEN": 3,
+            "XUONG": 8,
+            "REJECT": 187
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.87,
+          "median": 1.76,
+          "p90": 2.12,
+          "p99": 3.56
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.95,
+        "non_target_far": 0.05,
+        "raw_false_acceptances": 10,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.95,
+        "rejection_rate": 0.5389,
+        "per_keyword_recall": {
+          "TRAI": 0.85,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 34,
+            "PHAI": 4,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 2,
+            "LEN": 2,
+            "XUONG": 5,
+            "REJECT": 190
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.66,
+          "median": 1.69,
+          "p90": 1.77,
+          "p99": 2.01
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.9437,
+        "non_target_far": 0.055,
+        "raw_false_acceptances": 11,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9444,
+        "rejection_rate": 0.5306,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 33,
+            "PHAI": 6,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 1,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 39,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 4,
+            "XUONG": 7,
+            "REJECT": 189
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.87,
+          "median": 1.75,
+          "p90": 2.26,
+          "p99": 4.5
+        }
+      }
+    }
+  },
+  "snr_10db": {
+    "name": "Additive Noise (+10 dB SNR)",
+    "description": "Gaussian white noise added at +10 dB SNR",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.8666,
+      "std_command_recall": 0.0157,
+      "mean_false_acceptance_rate": 0.1017,
+      "std_false_acceptance_rate": 0.0454,
+      "mean_5class_accuracy": 0.8843,
+      "std_5class_accuracy": 0.0185,
+      "mean_cpu_latency_ms": 1.78,
+      "std_cpu_latency_ms": 0.05
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.8812,
+        "non_target_far": 0.135,
+        "raw_false_acceptances": 27,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.8722,
+        "rejection_rate": 0.4972,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.725,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 33,
+            "PHAI": 3,
+            "LEN": 0,
+            "XUONG": 2,
+            "REJECT": 2
+          },
+          "PHAI": {
+            "TRAI": 8,
+            "PHAI": 29,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 3
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 39,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 2,
+            "LEN": 14,
+            "XUONG": 10,
+            "REJECT": 173
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.82,
+          "median": 1.72,
+          "p90": 1.99,
+          "p99": 3.61
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.85,
+        "non_target_far": 0.05,
+        "raw_false_acceptances": 10,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9056,
+        "rejection_rate": 0.5667,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.775,
+          "LEN": 0.875,
+          "XUONG": 0.85
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 36,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 1,
+            "REJECT": 2
+          },
+          "PHAI": {
+            "TRAI": 6,
+            "PHAI": 31,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 3
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 35,
+            "XUONG": 0,
+            "REJECT": 5
+          },
+          "XUONG": {
+            "TRAI": 2,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 34,
+            "REJECT": 4
+          },
+          "REJECT": {
+            "TRAI": 4,
+            "PHAI": 1,
+            "LEN": 3,
+            "XUONG": 2,
+            "REJECT": 190
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.78,
+          "median": 1.75,
+          "p90": 2.05,
+          "p99": 3.28
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.8687,
+        "non_target_far": 0.12,
+        "raw_false_acceptances": 24,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.875,
+        "rejection_rate": 0.5,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.725,
+          "LEN": 0.975,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 33,
+            "PHAI": 2,
+            "LEN": 0,
+            "XUONG": 2,
+            "REJECT": 3
+          },
+          "PHAI": {
+            "TRAI": 11,
+            "PHAI": 29,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 39,
+            "XUONG": 1,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 9,
+            "XUONG": 14,
+            "REJECT": 176
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.73,
+          "median": 1.73,
+          "p90": 1.91,
+          "p99": 3.1
+        }
+      }
+    }
+  },
+  "snr_5db": {
+    "name": "Additive Noise (+5 dB SNR)",
+    "description": "Broadband noise added at +5 dB SNR",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.6625,
+      "std_command_recall": 0.1305,
+      "mean_false_acceptance_rate": 0.135,
+      "std_false_acceptance_rate": 0.0312,
+      "mean_5class_accuracy": 0.775,
+      "std_5class_accuracy": 0.0721,
+      "mean_cpu_latency_ms": 1.77,
+      "std_cpu_latency_ms": 0.02
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.75,
+        "non_target_far": 0.1,
+        "raw_false_acceptances": 20,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.8333,
+        "rejection_rate": 0.5472,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.525,
+          "LEN": 0.85,
+          "XUONG": 0.75
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 35,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 3,
+            "REJECT": 2
+          },
+          "PHAI": {
+            "TRAI": 17,
+            "PHAI": 21,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 34,
+            "XUONG": 0,
+            "REJECT": 6
+          },
+          "XUONG": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 2,
+            "XUONG": 30,
+            "REJECT": 7
+          },
+          "REJECT": {
+            "TRAI": 8,
+            "PHAI": 0,
+            "LEN": 8,
+            "XUONG": 4,
+            "REJECT": 180
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.78,
+          "median": 1.73,
+          "p90": 1.97,
+          "p99": 3.52
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.5125,
+        "non_target_far": 0.16,
+        "raw_false_acceptances": 32,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.6944,
+        "rejection_rate": 0.5861,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.55,
+          "LEN": 0.25,
+          "XUONG": 0.3
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 38,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "PHAI": {
+            "TRAI": 15,
+            "PHAI": 22,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 3
+          },
+          "LEN": {
+            "TRAI": 5,
+            "PHAI": 0,
+            "LEN": 10,
+            "XUONG": 0,
+            "REJECT": 25
+          },
+          "XUONG": {
+            "TRAI": 15,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 12,
+            "REJECT": 13
+          },
+          "REJECT": {
+            "TRAI": 32,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 168
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.75,
+          "median": 1.74,
+          "p90": 1.91,
+          "p99": 2.81
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.725,
+        "non_target_far": 0.145,
+        "raw_false_acceptances": 29,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.7972,
+        "rejection_rate": 0.4833,
+        "per_keyword_recall": {
+          "TRAI": 0.85,
+          "PHAI": 0.45,
+          "LEN": 0.65,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 34,
+            "PHAI": 0,
+            "LEN": 1,
+            "XUONG": 4,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 18,
+            "PHAI": 18,
+            "LEN": 0,
+            "XUONG": 4,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 26,
+            "XUONG": 13,
+            "REJECT": 1
+          },
+          "XUONG": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 8,
+            "PHAI": 0,
+            "LEN": 2,
+            "XUONG": 19,
+            "REJECT": 171
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.78,
+          "median": 1.76,
+          "p90": 1.93,
+          "p99": 3.02
+        }
+      }
+    }
+  },
+  "snr_0db": {
+    "name": "Additive Noise (0 dB SNR)",
+    "description": "Heavy broadband noise equal to speech power (0 dB SNR)",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.3937,
+      "std_command_recall": 0.0658,
+      "mean_false_acceptance_rate": 0.3283,
+      "std_false_acceptance_rate": 0.1855,
+      "mean_5class_accuracy": 0.5482,
+      "std_5class_accuracy": 0.1255,
+      "mean_cpu_latency_ms": 1.86,
+      "std_cpu_latency_ms": 0.09
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.4,
+        "non_target_far": 0.165,
+        "raw_false_acceptances": 33,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.6417,
+        "rejection_rate": 0.5528,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.125,
+          "LEN": 0.1,
+          "XUONG": 0.4
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 39,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 35,
+            "PHAI": 5,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 17,
+            "PHAI": 0,
+            "LEN": 4,
+            "XUONG": 0,
+            "REJECT": 19
+          },
+          "XUONG": {
+            "TRAI": 12,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 16,
+            "REJECT": 12
+          },
+          "REJECT": {
+            "TRAI": 32,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 1,
+            "REJECT": 167
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.91,
+          "median": 1.8,
+          "p90": 2.25,
+          "p99": 4.7
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.325,
+        "non_target_far": 0.53,
+        "raw_false_acceptances": 106,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.4056,
+        "rejection_rate": 0.3111,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.325,
+          "LEN": 0.0,
+          "XUONG": 0.0
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 39,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 22,
+            "PHAI": 13,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 5
+          },
+          "LEN": {
+            "TRAI": 27,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 12
+          },
+          "XUONG": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 106,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 94
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.91,
+          "median": 1.75,
+          "p90": 2.19,
+          "p99": 7.14
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.4562,
+        "non_target_far": 0.29,
+        "raw_false_acceptances": 58,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.5972,
+        "rejection_rate": 0.4,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.075,
+          "LEN": 0.025,
+          "XUONG": 0.9
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 33,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 7,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 32,
+            "PHAI": 3,
+            "LEN": 0,
+            "XUONG": 5,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 1,
+            "XUONG": 36,
+            "REJECT": 2
+          },
+          "XUONG": {
+            "TRAI": 4,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 36,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 34,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 23,
+            "REJECT": 142
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.75,
+          "median": 1.72,
+          "p90": 1.85,
+          "p99": 2.3
+        }
+      }
+    }
+  },
+  "gain_minus_12db": {
+    "name": "Gain Attenuation (-12 dB)",
+    "description": "Waveform amplitude scaled down by -12 dB (factor 0.251)",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.8875,
+      "std_command_recall": 0.0545,
+      "mean_false_acceptance_rate": 0.3183,
+      "std_false_acceptance_rate": 0.0978,
+      "mean_5class_accuracy": 0.7732,
+      "std_5class_accuracy": 0.0772,
+      "mean_cpu_latency_ms": 1.68,
+      "std_cpu_latency_ms": 0.05
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.85,
+        "non_target_far": 0.345,
+        "raw_false_acceptances": 69,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.7417,
+        "rejection_rate": 0.3778,
+        "per_keyword_recall": {
+          "TRAI": 0.525,
+          "PHAI": 1.0,
+          "LEN": 0.9,
+          "XUONG": 0.975
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 21,
+            "PHAI": 18,
+            "LEN": 0,
+            "XUONG": 1,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 36,
+            "XUONG": 0,
+            "REJECT": 4
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 39,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 12,
+            "PHAI": 25,
+            "LEN": 8,
+            "XUONG": 24,
+            "REJECT": 131
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.65,
+          "median": 1.66,
+          "p90": 1.73,
+          "p99": 1.84
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.95,
+        "non_target_far": 0.21,
+        "raw_false_acceptances": 42,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.8611,
+        "rejection_rate": 0.4528,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 1.0,
+          "LEN": 0.975,
+          "XUONG": 1.0
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 33,
+            "PHAI": 3,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 4
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 39,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 4,
+            "PHAI": 14,
+            "LEN": 9,
+            "XUONG": 15,
+            "REJECT": 158
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.65,
+          "median": 1.66,
+          "p90": 1.76,
+          "p99": 2.64
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.8625,
+        "non_target_far": 0.4,
+        "raw_false_acceptances": 80,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.7167,
+        "rejection_rate": 0.3361,
+        "per_keyword_recall": {
+          "TRAI": 0.475,
+          "PHAI": 1.0,
+          "LEN": 0.975,
+          "XUONG": 1.0
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 19,
+            "PHAI": 20,
+            "LEN": 0,
+            "XUONG": 1,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 39,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 7,
+            "PHAI": 28,
+            "LEN": 16,
+            "XUONG": 29,
+            "REJECT": 120
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.73,
+          "median": 1.67,
+          "p90": 2.07,
+          "p99": 2.63
+        }
+      }
+    }
+  },
+  "gain_plus_6db": {
+    "name": "Gain Boost (+6 dB with Soft Saturation)",
+    "description": "Waveform scaled up by +6 dB (factor 1.995) and passed through tanh",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9146,
+      "std_command_recall": 0.0096,
+      "mean_false_acceptance_rate": 0.0083,
+      "std_false_acceptance_rate": 0.0029,
+      "mean_5class_accuracy": 0.9574,
+      "std_5class_accuracy": 0.0042,
+      "mean_cpu_latency_ms": 1.72,
+      "std_cpu_latency_ms": 0.03
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.9062,
+        "non_target_far": 0.01,
+        "raw_false_acceptances": 2,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9528,
+        "rejection_rate": 0.5722,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.875,
+          "LEN": 1.0,
+          "XUONG": 0.8
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 38,
+            "PHAI": 2,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 4,
+            "PHAI": 35,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 32,
+            "REJECT": 7
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 2,
+            "REJECT": 198
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.71,
+          "median": 1.69,
+          "p90": 1.86,
+          "p99": 2.36
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.925,
+        "non_target_far": 0.01,
+        "raw_false_acceptances": 2,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9611,
+        "rejection_rate": 0.5694,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.875,
+          "LEN": 1.0,
+          "XUONG": 0.825
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 5,
+            "PHAI": 35,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 33,
+            "REJECT": 7
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 1,
+            "REJECT": 198
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.76,
+          "median": 1.7,
+          "p90": 1.99,
+          "p99": 2.69
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.9125,
+        "non_target_far": 0.005,
+        "raw_false_acceptances": 1,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9583,
+        "rejection_rate": 0.5722,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.875,
+          "LEN": 0.975,
+          "XUONG": 0.85
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 38,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 5,
+            "PHAI": 35,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 1,
+            "LEN": 39,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 34,
+            "REJECT": 6
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 1,
+            "REJECT": 199
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.7,
+          "median": 1.69,
+          "p90": 1.8,
+          "p99": 2.28
+        }
+      }
+    }
+  },
+  "clipping_half": {
+    "name": "Mild Digital Clipping (Threshold 0.50)",
+    "description": "Hard clamping of amplitudes exceeding |x| > 0.50",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9459,
+      "std_command_recall": 0.0096,
+      "mean_false_acceptance_rate": 0.0333,
+      "std_false_acceptance_rate": 0.0029,
+      "mean_5class_accuracy": 0.9574,
+      "std_5class_accuracy": 0.0032,
+      "mean_cpu_latency_ms": 1.72,
+      "std_cpu_latency_ms": 0.02
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.9438,
+        "non_target_far": 0.035,
+        "raw_false_acceptances": 7,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9556,
+        "rejection_rate": 0.5417,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 36,
+            "PHAI": 4,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 2,
+            "PHAI": 38,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 37,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 1,
+            "XUONG": 5,
+            "REJECT": 193
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.7,
+          "median": 1.73,
+          "p90": 1.8,
+          "p99": 1.99
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.9375,
+        "non_target_far": 0.03,
+        "raw_false_acceptances": 6,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9556,
+        "rejection_rate": 0.5611,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.8
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 38,
+            "PHAI": 2,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 32,
+            "REJECT": 8
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 2,
+            "LEN": 0,
+            "XUONG": 3,
+            "REJECT": 194
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.74,
+          "median": 1.72,
+          "p90": 1.77,
+          "p99": 1.87
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.9563,
+        "non_target_far": 0.035,
+        "raw_false_acceptances": 7,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9611,
+        "rejection_rate": 0.5444,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.95,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 37,
+            "PHAI": 2,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 2,
+            "PHAI": 38,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 1,
+            "XUONG": 6,
+            "REJECT": 193
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.73,
+          "median": 1.72,
+          "p90": 1.77,
+          "p99": 1.9
+        }
+      }
+    }
+  },
+  "reverb_rt60_200ms": {
+    "name": "Reverberation (RT60 = 0.20s)",
+    "description": "Room impulse response convolution simulating small conference room",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9437,
+      "std_command_recall": 0.0166,
+      "mean_false_acceptance_rate": 0.03,
+      "std_false_acceptance_rate": 0.005,
+      "mean_5class_accuracy": 0.9583,
+      "std_5class_accuracy": 0.01,
+      "mean_cpu_latency_ms": 2.4,
+      "std_cpu_latency_ms": 0.22
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.9312,
+        "non_target_far": 0.035,
+        "raw_false_acceptances": 7,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.95,
+        "rejection_rate": 0.5583,
+        "per_keyword_recall": {
+          "TRAI": 0.8,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 32,
+            "PHAI": 3,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 5
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 7,
+            "REJECT": 193
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 2.19,
+          "median": 2.11,
+          "p90": 2.47,
+          "p99": 3.18
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.9625,
+        "non_target_far": 0.025,
+        "raw_false_acceptances": 5,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9694,
+        "rejection_rate": 0.5556,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 37,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 5,
+            "REJECT": 195
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 2.37,
+          "median": 2.23,
+          "p90": 2.8,
+          "p99": 5.31
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.9375,
+        "non_target_far": 0.03,
+        "raw_false_acceptances": 6,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9556,
+        "rejection_rate": 0.5611,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.925,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 35,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 5
+          },
+          "PHAI": {
+            "TRAI": 2,
+            "PHAI": 37,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 6,
+            "REJECT": 194
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 2.63,
+          "median": 2.43,
+          "p90": 3.46,
+          "p99": 6.74
+        }
+      }
+    }
+  },
+  "speed_0_90x": {
+    "name": "Playback Speed 0.90x (Slow Speech)",
+    "description": "Speech rate reduced by 10% via resampled time-stretch",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9729,
+      "std_command_recall": 0.0201,
+      "mean_false_acceptance_rate": 0.0367,
+      "std_false_acceptance_rate": 0.0076,
+      "mean_5class_accuracy": 0.9676,
+      "std_5class_accuracy": 0.0128,
+      "mean_cpu_latency_ms": 2.0,
+      "std_cpu_latency_ms": 0.33
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.95,
+        "non_target_far": 0.045,
+        "raw_false_acceptances": 9,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9528,
+        "rejection_rate": 0.5389,
+        "per_keyword_recall": {
+          "TRAI": 0.875,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 35,
+            "PHAI": 4,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 1,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 2,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 6,
+            "REJECT": 191
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 2.38,
+          "median": 2.29,
+          "p90": 2.71,
+          "p99": 3.37
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.9812,
+        "non_target_far": 0.03,
+        "raw_false_acceptances": 6,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.975,
+        "rejection_rate": 0.5444,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 37,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 2,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 3,
+            "REJECT": 194
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.83,
+          "median": 1.82,
+          "p90": 1.9,
+          "p99": 1.96
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.9875,
+        "non_target_far": 0.035,
+        "raw_false_acceptances": 7,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.975,
+        "rejection_rate": 0.5417,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 39,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 39,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 0,
+            "LEN": 2,
+            "XUONG": 4,
+            "REJECT": 193
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.79,
+          "median": 1.79,
+          "p90": 1.85,
+          "p99": 1.94
+        }
+      }
+    }
+  },
+  "speed_1_10x": {
+    "name": "Playback Speed 1.10x (Fast Speech)",
+    "description": "Speech rate increased by 10% via resampled time-stretch",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9708,
+      "std_command_recall": 0.0095,
+      "mean_false_acceptance_rate": 0.0733,
+      "std_false_acceptance_rate": 0.0076,
+      "mean_5class_accuracy": 0.9463,
+      "std_5class_accuracy": 0.0042,
+      "mean_cpu_latency_ms": 1.96,
+      "std_cpu_latency_ms": 0.19
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.9625,
+        "non_target_far": 0.075,
+        "raw_false_acceptances": 15,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9417,
+        "rejection_rate": 0.5167,
+        "per_keyword_recall": {
+          "TRAI": 0.85,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 34,
+            "PHAI": 5,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 1,
+            "LEN": 2,
+            "XUONG": 11,
+            "REJECT": 185
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.91,
+          "median": 1.9,
+          "p90": 2.1,
+          "p99": 2.21
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.9688,
+        "non_target_far": 0.065,
+        "raw_false_acceptances": 13,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.95,
+        "rejection_rate": 0.5278,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 37,
+            "PHAI": 2,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 2,
+            "LEN": 1,
+            "XUONG": 9,
+            "REJECT": 187
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 2.17,
+          "median": 2.13,
+          "p90": 2.42,
+          "p99": 3.67
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.9812,
+        "non_target_far": 0.08,
+        "raw_false_acceptances": 16,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9472,
+        "rejection_rate": 0.5111,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 38,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 1,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 1,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 1,
+            "LEN": 1,
+            "XUONG": 13,
+            "REJECT": 184
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.81,
+          "median": 1.81,
+          "p90": 1.89,
+          "p99": 1.96
+        }
+      }
+    }
+  },
+  "shift_minus_150ms": {
+    "name": "Early Onset Shift (-150 ms)",
+    "description": "Waveform shifted left by 2,400 samples (clipped early)",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9646,
+      "std_command_recall": 0.0036,
+      "mean_false_acceptance_rate": 0.0367,
+      "std_false_acceptance_rate": 0.0104,
+      "mean_5class_accuracy": 0.9639,
+      "std_5class_accuracy": 0.0048,
+      "mean_cpu_latency_ms": 2.03,
+      "std_cpu_latency_ms": 0.1
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.9625,
+        "non_target_far": 0.04,
+        "raw_false_acceptances": 8,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9611,
+        "rejection_rate": 0.5361,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 36,
+            "PHAI": 4,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 1,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 39,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 8,
+            "REJECT": 192
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.96,
+          "median": 1.88,
+          "p90": 2.17,
+          "p99": 3.39
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.9625,
+        "non_target_far": 0.025,
+        "raw_false_acceptances": 5,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9694,
+        "rejection_rate": 0.5556,
+        "per_keyword_recall": {
+          "TRAI": 0.925,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.925
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 37,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 2
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 37,
+            "REJECT": 3
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 5,
+            "REJECT": 195
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 2.14,
+          "median": 2.07,
+          "p90": 2.38,
+          "p99": 3.44
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.9688,
+        "non_target_far": 0.045,
+        "raw_false_acceptances": 9,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9611,
+        "rejection_rate": 0.5389,
+        "per_keyword_recall": {
+          "TRAI": 0.95,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 0.95
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 38,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 1,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 38,
+            "REJECT": 2
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 1,
+            "XUONG": 8,
+            "REJECT": 191
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 1.98,
+          "median": 1.99,
+          "p90": 2.18,
+          "p99": 2.71
+        }
+      }
+    }
+  },
+  "shift_plus_150ms": {
+    "name": "Late Onset Shift (+150 ms)",
+    "description": "Waveform shifted right by 2,400 samples (delayed onset)",
+    "category": "controlled_perturbation",
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9834,
+      "std_command_recall": 0.013,
+      "mean_false_acceptance_rate": 0.095,
+      "std_false_acceptance_rate": 0.018,
+      "mean_5class_accuracy": 0.9398,
+      "std_5class_accuracy": 0.0153,
+      "mean_cpu_latency_ms": 2.17,
+      "std_cpu_latency_ms": 0.04
+    },
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 0.9688,
+        "non_target_far": 0.11,
+        "raw_false_acceptances": 22,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.925,
+        "rejection_rate": 0.4944,
+        "per_keyword_recall": {
+          "TRAI": 0.9,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 36,
+            "PHAI": 4,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 1,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 4,
+            "PHAI": 2,
+            "LEN": 5,
+            "XUONG": 11,
+            "REJECT": 178
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 2.18,
+          "median": 2.08,
+          "p90": 2.54,
+          "p99": 4.29
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.9938,
+        "non_target_far": 0.075,
+        "raw_false_acceptances": 15,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9556,
+        "rejection_rate": 0.5167,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 39,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 2,
+            "PHAI": 4,
+            "LEN": 2,
+            "XUONG": 7,
+            "REJECT": 185
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 2.2,
+          "median": 2.12,
+          "p90": 2.56,
+          "p99": 4.08
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 0.9875,
+        "non_target_far": 0.1,
+        "raw_false_acceptances": 20,
+        "non_target_denominator": 200,
+        "5class_accuracy": 0.9389,
+        "rejection_rate": 0.5028,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 0.975
+        },
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 39,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 39,
+            "REJECT": 1
+          },
+          "REJECT": {
+            "TRAI": 2,
+            "PHAI": 0,
+            "LEN": 7,
+            "XUONG": 11,
+            "REJECT": 180
+          }
+        },
+        "cpu_latency_ms": {
+          "mean": 2.12,
+          "median": 2.08,
+          "p90": 2.3,
+          "p99": 3.33
+        }
+      }
+    }
+  }
+}

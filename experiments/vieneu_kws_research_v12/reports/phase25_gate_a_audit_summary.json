@@ -1,0 +1,43 @@
+{
+  "gate": "GATE_A_INPUT_INTEGRITY",
+  "status": "PASS",
+  "d0_audit": {
+    "manifest": "D0_train_v1",
+    "total_rows": 5440,
+    "missing_count": 0,
+    "hash_mismatch_count": 0,
+    "sr_mismatch_count": 0,
+    "channel_mismatch_count": 0,
+    "sample_mismatch_count": 0,
+    "invalid_value_count": 0,
+    "status": "PASS"
+  },
+  "d1_audit": {
+    "manifest": "D1_matched_train_v2",
+    "total_rows": 5440,
+    "missing_count": 0,
+    "hash_mismatch_count": 0,
+    "sr_mismatch_count": 0,
+    "channel_mismatch_count": 0,
+    "sample_mismatch_count": 0,
+    "invalid_value_count": 0,
+    "status": "PASS"
+  },
+  "val_audit": {
+    "manifest": "validation_v1",
+    "total_rows": 1280,
+    "missing_count": 0,
+    "hash_mismatch_count": 0,
+    "sr_mismatch_count": 0,
+    "channel_mismatch_count": 0,
+    "sample_mismatch_count": 0,
+    "invalid_value_count": 0,
+    "status": "PASS"
+  },
+  "quarantine_verified": true,
+  "samplers_verified": true,
+  "d0_sha256": "e0bbc0a95a6d18f9724a7784f53a0082ce0fd3aae8a8e15a67ed39b6743ec7f7",
+  "d1_v2_sha256": "581a08561b4eb3722afa1d6302852363e504f080248844abb3a1be369d93c06e",
+  "val_sha256": "5af8cf9daa96526cba1a742d1e18982cd4c1ed291dc17d139a8d82bf1cb06682",
+  "ledger_sha256": "1113f248f1d62b010c0f27000abe33caf474da1abe52af3f477c731c48aa7407"
+}

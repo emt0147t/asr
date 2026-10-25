@@ -1,0 +1,227 @@
+{
+  "clean_baseline": {
+    "name": "Clean Baseline",
+    "category": "in_distribution_clean",
+    "transformation_type": "Identity (unmodified)",
+    "mathematical_formula": "y[t] = x[t]",
+    "parameters": {},
+    "signal_power_preserved": true,
+    "snr_db": null,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "snr_20db": {
+    "name": "Additive Noise (+20 dB SNR)",
+    "category": "noise",
+    "transformation_type": "Gaussian additive noise",
+    "mathematical_formula": "y[t] = x[t] + n[t], where Var(n) = Var(x) / 10^(20/10)",
+    "parameters": {
+      "snr_db": 20.0,
+      "generator_seed": 777
+    },
+    "signal_power_preserved": true,
+    "snr_db": 20.0,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "snr_10db": {
+    "name": "Additive Noise (+10 dB SNR)",
+    "category": "noise",
+    "transformation_type": "Gaussian additive noise",
+    "mathematical_formula": "y[t] = x[t] + n[t], where Var(n) = Var(x) / 10^(10/10)",
+    "parameters": {
+      "snr_db": 10.0,
+      "generator_seed": 777
+    },
+    "signal_power_preserved": true,
+    "snr_db": 10.0,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "snr_5db": {
+    "name": "Additive Noise (+5 dB SNR)",
+    "category": "noise",
+    "transformation_type": "Gaussian additive noise",
+    "mathematical_formula": "y[t] = x[t] + n[t], where Var(n) = Var(x) / 10^(5/10)",
+    "parameters": {
+      "snr_db": 5.0,
+      "generator_seed": 777
+    },
+    "signal_power_preserved": true,
+    "snr_db": 5.0,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "snr_0db": {
+    "name": "Additive Noise (0 dB SNR)",
+    "category": "noise",
+    "transformation_type": "Gaussian additive noise",
+    "mathematical_formula": "y[t] = x[t] + n[t], where Var(n) = Var(x) / 10^(0/10)",
+    "parameters": {
+      "snr_db": 0.0,
+      "generator_seed": 777
+    },
+    "signal_power_preserved": true,
+    "snr_db": 0.0,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "gain_minus_12db": {
+    "name": "Gain Attenuation (-12 dB)",
+    "category": "gain",
+    "transformation_type": "Linear amplitude scaling",
+    "mathematical_formula": "y[t] = x[t] * 10^(-12/20) = 0.25119 * x[t]",
+    "parameters": {
+      "gain_db": -12.0,
+      "linear_scale": 0.25119
+    },
+    "signal_power_preserved": false,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "gain_plus_6db": {
+    "name": "Gain Boost (+6 dB with Soft Saturation)",
+    "category": "gain",
+    "transformation_type": "Linear scaling + hyperbolic tangent saturation",
+    "mathematical_formula": "y[t] = tanh(x[t] * 10^(6/20)) = tanh(1.99526 * x[t])",
+    "parameters": {
+      "gain_db": 6.0,
+      "linear_scale": 1.99526,
+      "saturation": "tanh"
+    },
+    "signal_power_preserved": false,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "clipping_half": {
+    "name": "Mild Digital Clipping (Threshold 0.50)",
+    "category": "clipping",
+    "transformation_type": "Non-linear hard amplitude clamping",
+    "mathematical_formula": "y[t] = clamp(x[t], -0.50, +0.50)",
+    "parameters": {
+      "clipping_threshold": 0.5
+    },
+    "signal_power_preserved": false,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "reverb_rt60_200ms": {
+    "name": "Reverberation (RT60 = 0.20s)",
+    "category": "reverberation",
+    "transformation_type": "Room Impulse Response (RIR) 1D convolution",
+    "mathematical_formula": "y[t] = 0.70 * x[t] + 0.30 * (x * h)[t], where h is decaying RIR",
+    "parameters": {
+      "rt60_sec": 0.2,
+      "sample_rate": 16000,
+      "dry_mix": 0.7,
+      "wet_mix": 0.3
+    },
+    "signal_power_preserved": false,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "speed_0_90x": {
+    "name": "Playback Speed 0.90x (Slow Speech)",
+    "category": "speed",
+    "transformation_type": "Resampled time stretch",
+    "mathematical_formula": "Resample from sr*0.9 to sr=16000, pad/crop to 16,000 samples",
+    "parameters": {
+      "speed_factor": 0.9,
+      "target_sample_rate": 16000
+    },
+    "signal_power_preserved": true,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "speed_1_10x": {
+    "name": "Playback Speed 1.10x (Fast Speech)",
+    "category": "speed",
+    "transformation_type": "Resampled time stretch",
+    "mathematical_formula": "Resample from sr*1.1 to sr=16000, pad/crop to 16,000 samples",
+    "parameters": {
+      "speed_factor": 1.1,
+      "target_sample_rate": 16000
+    },
+    "signal_power_preserved": true,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "shift_minus_150ms": {
+    "name": "Early Onset Shift (-150 ms)",
+    "category": "temporal_shift",
+    "transformation_type": "Left temporal shift by 2,400 samples",
+    "mathematical_formula": "y[t] = x[t + 2400] for t < 13600, else 0",
+    "parameters": {
+      "shift_samples": -2400,
+      "shift_ms": -150.0
+    },
+    "signal_power_preserved": false,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "shift_plus_150ms": {
+    "name": "Late Onset Shift (+150 ms)",
+    "category": "temporal_shift",
+    "transformation_type": "Right temporal shift by 2,400 samples",
+    "mathematical_formula": "y[t] = 0 for t < 2400, else x[t - 2400]",
+    "parameters": {
+      "shift_samples": 2400,
+      "shift_ms": 150.0
+    },
+    "signal_power_preserved": false,
+    "eval_clips": 360,
+    "evaluation_seeds": [
+      42,
+      43,
+      44
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "Arm A (Control)": {
+    "arm_name": "Arm A (Existing Generator + V3 Augmentation)",
+    "best_epoch": 9,
+    "val_accuracy": 1.0,
+    "val_macro_f1": 1.0,
+    "val_precision": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "val_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "val_f1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "trai_val_recall": 1.0,
+    "phai_val_recall": 1.0,
+    "use_resample": true,
+    "checkpoint": "experiments\\synthetic_kws_v4\\checkpoints\\arm_a_control.pt",
+    "wall_time_sec": 47.74619674682617
+  },
+  "Arm B (Onset-Aware, No Resample)": {
+    "arm_name": "Arm B (Onset-Aware Generator + SpecAugment Only)",
+    "best_epoch": 3,
+    "val_accuracy": 1.0,
+    "val_macro_f1": 1.0,
+    "val_precision": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "val_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "val_f1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "trai_val_recall": 1.0,
+    "phai_val_recall": 1.0,
+    "use_resample": false,
+    "checkpoint": "experiments\\synthetic_kws_v4\\checkpoints\\arm_b_onset_no_resample.pt",
+    "wall_time_sec": 37.71339702606201
+  },
+  "Arm C (Onset-Aware + Resample)": {
+    "arm_name": "Arm C (Onset-Aware Generator + V3 Augmentation)",
+    "best_epoch": 2,
+    "val_accuracy": 1.0,
+    "val_macro_f1": 1.0,
+    "val_precision": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "val_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "val_f1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "trai_val_recall": 1.0,
+    "phai_val_recall": 1.0,
+    "use_resample": true,
+    "checkpoint": "experiments\\synthetic_kws_v4\\checkpoints\\arm_c_onset_with_resample.pt",
+    "wall_time_sec": 52.97243881225586
+  }
+}

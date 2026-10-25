@@ -1,0 +1,61 @@
+{
+  "fixture_name": "parity_dev_09_clamped_high.wav",
+  "audio_sha256": "fec3e592e45df567419f85bcac3ea6ae925b4145eaf232262b946a13baa6be75",
+  "golden_tensor_file": "parity_dev_09_clamped_high_logmel.npy",
+  "golden_tensor_sha256": "97450b18370da69eb56dba379f67fa9f48ab7981d7371539b477c15b76c88b97",
+  "tensor_shape": [
+    1,
+    1,
+    40,
+    101
+  ],
+  "tensor_stats": {
+    "min": -13.815509796142578,
+    "max": 4.8916730880737305,
+    "mean": -12.21540641784668,
+    "std": 4.839538097381592
+  },
+  "decision": {
+    "predicted_class": "XUONG",
+    "rejection_status": "ACCEPTED",
+    "confidence": 0.653062,
+    "threshold": 0.4
+  },
+  "pytorch_reference": {
+    "logits": [
+      -1.755236,
+      -1.599672,
+      -0.124306,
+      0.879591,
+      -3.802217
+    ],
+    "probabilities": {
+      "TRAI": 0.046845,
+      "PHAI": 0.05473,
+      "LEN": 0.239314,
+      "XUONG": 0.653062,
+      "REJECT": 0.006049
+    }
+  },
+  "onnx_fp32": {
+    "logits": [
+      -1.755236,
+      -1.599672,
+      -0.124306,
+      0.879592,
+      -3.802218
+    ],
+    "probabilities": {
+      "TRAI": 0.046845,
+      "PHAI": 0.05473,
+      "LEN": 0.239314,
+      "XUONG": 0.653063,
+      "REJECT": 0.006049
+    },
+    "max_logit_diff_vs_pytorch": 1.6689300537109375e-06
+  },
+  "frontend_parity": {
+    "numpy_portable_max_diff": 9.34600830078125e-05,
+    "c_dll_max_diff": 8.96453857421875e-05
+  }
+}

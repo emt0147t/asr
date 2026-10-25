@@ -1,0 +1,119 @@
+{
+  "report_type": "synthetic_kws_phases_17_to_19_final_status",
+  "project_name": "Vietnamese Synthetic Keyword Spotting",
+  "date": "2026-10-16",
+  "overall_status": {
+    "engineering_correctness": "VERIFIED_PASS",
+    "synthetic_distribution_generalization": "VERIFIED_PASS_WITH_LIMITATIONS",
+    "natural_speech_validity": "NOT_VALIDATED_ON_NATURAL_SPEECH"
+  },
+  "governance_status": {
+    "human_speech_data_collection": "STRICTLY_BLOCKED",
+    "unapproved_audio_ingestion": "BLOCKED",
+    "git_staged_diff_empty": true,
+    "protected_baselines_verified": true
+  },
+  "phase_verdicts": {
+    "phase_17": "PHASE17_PASS_WITH_LIMITATIONS",
+    "phase_18": "PHASE18_PASS_WITH_LIMITATIONS",
+    "phase_19": "PHASE19_PASS_WITH_LIMITATIONS"
+  },
+  "dataset_audit_metrics": {
+    "manifest_rows": 3000,
+    "unique_audio_hashes": 3000,
+    "exact_duplicate_audio_hashes": 0,
+    "split_isolation": {
+      "speaker_leakage": false,
+      "seed_leakage": false
+    },
+    "full_manifest_regeneration": {
+      "attempted": 3000,
+      "exact_sha256_matches": 3000,
+      "pass_rate_pct": 100.0,
+      "status": "PASS"
+    }
+  },
+  "recomputed_model_evaluation": {
+    "architecture": "VietnameseTCResNet (TC-ResNet-14)",
+    "test_set_size": 450,
+    "observed_errors": 0,
+    "accuracy": 1.0000,
+    "macro_f1": 1.0000,
+    "wilson_score_95_ci": [0.9916, 1.0000],
+    "rule_of_three_max_error_bound_95_pct": 0.00667,
+    "brier_score_seed_42": 0.000575,
+    "ece_seed_42": 0.001007
+  },
+  "diagnostic_probes": {
+    "metadata_only_test_accuracy": 0.5200,
+    "strict_nuisance_acoustic_test_accuracy": 0.5267,
+    "acoustic_phonetic_features_test_accuracy": 0.4156,
+    "neural_model_test_accuracy": 1.0000,
+    "chance_level": 0.1667
+  },
+  "streaming_detection_evaluation": {
+    "evaluated_target_absent_audio_duration_sec": 3600.0,
+    "evaluated_target_absent_hours": 1.00,
+    "independent_streams_count": 4,
+    "baseline_detector": {
+      "tau": 0.50,
+      "false_triggers_count": 339,
+      "false_triggers_per_hour": 339.00,
+      "target_recall_pct": 100.0,
+      "event_precision_pct": 45.87,
+      "mean_latency_sec": 0.302
+    },
+    "hysteresis_cooldown_detector": {
+      "tau_on": 0.80,
+      "tau_off": 0.35,
+      "smoothing_frames": 3,
+      "min_consecutive_frames": 2,
+      "cooldown_sec": 0.60,
+      "false_triggers_count": 0,
+      "false_triggers_per_hour": 0.00,
+      "target_recall_pct": 100.0,
+      "event_precision_pct": 100.0,
+      "mean_latency_sec": 0.496,
+      "std_latency_sec": 0.078
+    }
+  },
+  "generalization_and_stress_tests": {
+    "in_range_factorial_sweeps": {
+      "f0_100_to_260_hz_acc": 1.0000,
+      "vtl_085_to_115_acc": 1.0000,
+      "speech_level_minus20_to_minus11_dbfs_acc": 1.0000,
+      "background_minus42_to_minus24_dbfs_acc": 1.0000
+    },
+    "paired_counterfactual_trai_vs_phai": {
+      "trai_accuracy": 1.0000,
+      "phai_accuracy": 1.0000,
+      "cross_confusion": 0
+    },
+    "out_of_range_stress_tests": {
+      "extreme_vtl_070_130_acc": 0.9000,
+      "extreme_f0_70_350_hz_acc": 0.9000,
+      "extreme_noise_snr_2db_acc": 0.6750
+    }
+  },
+  "regression_tests": {
+    "total_tests": 135,
+    "passed": 135,
+    "failed": 0
+  },
+  "protected_artifact_hashes": {
+    "data/manifests/test_manifest_v2.csv": "MATCH",
+    "data/raw/field_recordings/field_collection_manifest.csv": "MATCH",
+    "data/raw/field_recordings/consent_ledger.json": "MATCH",
+    "experiments/synthetic_kws_v4/checkpoints/arm_b_onset_no_resample.pt": "MATCH",
+    "experiments/synthetic_kws_demo/export/arm_b_tcresnet14.onnx": "MATCH",
+    "experiments/synthetic_kws_demo/android_app/app/src/main/assets/models/arm_b_tcresnet14.onnx": "MATCH",
+    "experiments/synthetic_kws_demo/frontend_golden/golden_manifest.json": "MATCH",
+    "golden_cases_12_of_12": "MATCH"
+  },
+  "unresolved_scientific_limitations": [
+    "Evaluated exclusively on parametric synthetic vocal tract audio; does NOT establish natural human speech recognition accuracy.",
+    "Streaming evaluation used concatenated synthetic non-target audio and stationary ambient noise; real room acoustics contain non-stationary human and environmental transients.",
+    "Human data collection remains strictly blocked pending formal authorization."
+  ],
+  "next_blocking_scientific_decision": "Institutional review and authorization protocol for collecting real Vietnamese human speech recordings for in-domain acoustic evaluation."
+}

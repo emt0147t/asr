@@ -1,0 +1,14 @@
+{
+  "stream_name": "val_stream_continuous_nontarget",
+  "wav_file": "val_stream_continuous_nontarget.wav",
+  "ground_truth_file": "val_stream_continuous_nontarget_ground_truth.json",
+  "duration_seconds": 478.458,
+  "duration_hours": 0.1329,
+  "active_speech_duration_seconds": 120.0,
+  "active_speech_duration_hours": 0.0333,
+  "active_speech_percentage": 25.08,
+  "num_events": 120,
+  "background_family": "hvac_hum",
+  "num_passes": 1,
+  "sha256": "771be7e5a40baa28305aa3c201c12ced266b3255813c807b666b1bc309ab42d1"
+}

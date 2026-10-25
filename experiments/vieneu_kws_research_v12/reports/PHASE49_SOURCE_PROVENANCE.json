@@ -1,0 +1,51 @@
+{
+  "candidate_tts_engine": {
+    "name": "Google Translate Text-to-Speech (gTTS)",
+    "library_version": "2.5.4",
+    "api_endpoint": "https://translate.google.com/translate_tts",
+    "language_code": "vi",
+    "license": "MIT License (library code); Google Public Service",
+    "architecture_family": "Proprietary Neural Speech Synthesis (DeepMind / Google Tacotron / WaveNet)",
+    "native_output_sample_rate": 24000,
+    "standardized_sample_rate": 16000,
+    "independence_analysis": {
+      "independent_from_vieneu": true,
+      "independent_from_edge_tts": true,
+      "independent_from_mms_tts": true,
+      "used_in_prior_training": false,
+      "used_in_prior_validation": false,
+      "used_in_prior_model_selection": false,
+      "justification": "Completely distinct commercial neural architecture and training corpus developed independently by Google."
+    }
+  },
+  "pilot_quality_audit": {
+    "total_items_synthesized": 72,
+    "total_clipped": 0,
+    "total_silent": 0,
+    "min_duration_s": 0.4466,
+    "max_duration_s": 1.0451,
+    "mean_duration_s": 0.6724,
+    "deterministic_reproducibility": false,
+    "pronunciation_coverage": {
+      "four_commands": [
+        "trái",
+        "phải",
+        "lên",
+        "xuống"
+      ],
+      "six_tones": [
+        "ma",
+        "má",
+        "mà",
+        "mả",
+        "mã",
+        "mạ"
+      ],
+      "phonetic_confusers": 16,
+      "carrier_phrases": 4
+    }
+  },
+  "governance_status": "PASS_INDEPENDENT_TTS_SOURCE_VALIDATED",
+  "timestamp_utc": "2026-10-25T14:26:42.022381+00:00",
+  "manifest_sha256": "8674c7206cff3db4bb370f5cc4a8c0b0a6cae8616fe6c1855916d2d5b941b337"
+}

@@ -1,0 +1,222 @@
+{
+  "timestamp": "2026-10-15 18:19:53 UTC",
+  "parity_threshold_criterion": {
+    "max_abs_prob_diff_threshold": 0.0001,
+    "class_agreement_threshold": 1.0
+  },
+  "cohort_1_demo_fixtures": {
+    "count": 6,
+    "class_agreements": 6,
+    "agreement_rate": 1.0,
+    "overall_max_abs_prob_diff": 7.450580596923828e-08,
+    "overall_mean_abs_prob_diff": 4.8429582103863096e-09,
+    "fixtures": [
+      {
+        "fixture": "demo_01_trai.wav",
+        "intended_label": "TRAI",
+        "pytorch_predicted_label": "TRAI",
+        "onnx_predicted_label": "TRAI",
+        "class_agreement": true,
+        "pytorch_confidence": 0.8840109705924988,
+        "onnx_confidence": 0.8840109705924988,
+        "max_abs_probability_diff": 7.450580596923828e-08,
+        "mean_abs_probability_diff": 1.501757651567459e-08,
+        "pytorch_probabilities": {
+          "TRAI": 0.8840109705924988,
+          "PHAI": 0.048996951431035995,
+          "LEN": 0.002036345424130559,
+          "XUONG": 0.0019185143755748868,
+          "UNKNOWN": 0.06145106628537178,
+          "SILENCE": 0.0015862098662182689
+        },
+        "onnx_probabilities": {
+          "TRAI": 0.8840109705924988,
+          "PHAI": 0.0489969402551651,
+          "LEN": 0.0020363435614854097,
+          "XUONG": 0.0019185125129297376,
+          "UNKNOWN": 0.06145099177956581,
+          "SILENCE": 0.001586209167726338
+        }
+      },
+      {
+        "fixture": "demo_02_phai.wav",
+        "intended_label": "PHAI",
+        "pytorch_predicted_label": "PHAI",
+        "onnx_predicted_label": "PHAI",
+        "class_agreement": true,
+        "pytorch_confidence": 0.9929510354995728,
+        "onnx_confidence": 0.9929510354995728,
+        "max_abs_probability_diff": 4.190951585769653e-09,
+        "mean_abs_probability_diff": 1.2272115545997053e-09,
+        "pytorch_probabilities": {
+          "TRAI": 0.0007535297772847116,
+          "PHAI": 0.9929510354995728,
+          "LEN": 0.0003573207068257034,
+          "XUONG": 0.004543787334114313,
+          "UNKNOWN": 0.0007005430525168777,
+          "SILENCE": 0.0006937936414033175
+        },
+        "onnx_probabilities": {
+          "TRAI": 0.0007535290205851197,
+          "PHAI": 0.9929510354995728,
+          "LEN": 0.0003573200374376029,
+          "XUONG": 0.004543783143162727,
+          "UNKNOWN": 0.0007005420047789812,
+          "SILENCE": 0.0006937929429113865
+        }
+      },
+      {
+        "fixture": "demo_03_len.wav",
+        "intended_label": "LEN",
+        "pytorch_predicted_label": "LEN",
+        "onnx_predicted_label": "LEN",
+        "class_agreement": true,
+        "pytorch_confidence": 0.9685707092285156,
+        "onnx_confidence": 0.9685707092285156,
+        "max_abs_probability_diff": 3.166496753692627e-08,
+        "mean_abs_probability_diff": 6.441647659727323e-09,
+        "pytorch_probabilities": {
+          "TRAI": 0.003967868629842997,
+          "PHAI": 0.002350478433072567,
+          "LEN": 0.9685707092285156,
+          "XUONG": 0.007054089102894068,
+          "UNKNOWN": 0.016519783064723015,
+          "SILENCE": 0.0015370371984317899
+        },
+        "onnx_probabilities": {
+          "TRAI": 0.003967872355133295,
+          "PHAI": 0.002350478433072567,
+          "LEN": 0.9685707092285156,
+          "XUONG": 0.007054085843265057,
+          "UNKNOWN": 0.016519814729690552,
+          "SILENCE": 0.0015370371984317899
+        }
+      },
+      {
+        "fixture": "demo_04_xuong.wav",
+        "intended_label": "XUONG",
+        "pytorch_predicted_label": "XUONG",
+        "onnx_predicted_label": "XUONG",
+        "class_agreement": true,
+        "pytorch_confidence": 0.9844310879707336,
+        "onnx_confidence": 0.9844310879707336,
+        "max_abs_probability_diff": 2.7939677238464355e-09,
+        "mean_abs_probability_diff": 1.2611659494510263e-09,
+        "pytorch_probabilities": {
+          "TRAI": 0.0023434734903275967,
+          "PHAI": 0.004007605370134115,
+          "LEN": 0.005496066529303789,
+          "XUONG": 0.9844310879707336,
+          "UNKNOWN": 0.0026228444185107946,
+          "SILENCE": 0.0010989172151312232
+        },
+        "onnx_probabilities": {
+          "TRAI": 0.002343474654480815,
+          "PHAI": 0.0040076072327792645,
+          "LEN": 0.005496069323271513,
+          "XUONG": 0.9844310879707336,
+          "UNKNOWN": 0.0026228432543575764,
+          "SILENCE": 0.0010989177972078323
+        }
+      },
+      {
+        "fixture": "demo_05_unknown.wav",
+        "intended_label": "UNKNOWN",
+        "pytorch_predicted_label": "UNKNOWN",
+        "onnx_predicted_label": "UNKNOWN",
+        "class_agreement": true,
+        "pytorch_confidence": 0.9887465834617615,
+        "onnx_confidence": 0.9887465834617615,
+        "max_abs_probability_diff": 2.3283064365386963e-09,
+        "mean_abs_probability_diff": 6.863653534416869e-10,
+        "pytorch_probabilities": {
+          "TRAI": 0.003516813972964883,
+          "PHAI": 0.0018033211817964911,
+          "LEN": 0.0047544571571052074,
+          "XUONG": 0.0010117243509739637,
+          "UNKNOWN": 0.9887465834617615,
+          "SILENCE": 0.00016708066686987877
+        },
+        "onnx_probabilities": {
+          "TRAI": 0.003516813740134239,
+          "PHAI": 0.0018033221131190658,
+          "LEN": 0.004754454828798771,
+          "XUONG": 0.0010117238853126764,
+          "UNKNOWN": 0.9887465834617615,
+          "SILENCE": 0.00016708050679881126
+        }
+      },
+      {
+        "fixture": "demo_06_silence.wav",
+        "intended_label": "SILENCE",
+        "pytorch_predicted_label": "SILENCE",
+        "onnx_predicted_label": "SILENCE",
+        "class_agreement": true,
+        "pytorch_confidence": 0.9635806083679199,
+        "onnx_confidence": 0.9635806083679199,
+        "max_abs_probability_diff": 9.313225746154785e-09,
+        "mean_abs_probability_diff": 4.423782229423523e-09,
+        "pytorch_probabilities": {
+          "TRAI": 0.010823877528309822,
+          "PHAI": 0.0068560694344341755,
+          "LEN": 0.008425886742770672,
+          "XUONG": 0.003562644589692354,
+          "UNKNOWN": 0.006750957109034061,
+          "SILENCE": 0.9635806083679199
+        },
+        "onnx_probabilities": {
+          "TRAI": 0.010823871940374374,
+          "PHAI": 0.0068560694344341755,
+          "LEN": 0.0084258783608675,
+          "XUONG": 0.003562641330063343,
+          "UNKNOWN": 0.006750947795808315,
+          "SILENCE": 0.9635806083679199
+        }
+      }
+    ]
+  },
+  "cohort_2_fresh_holdout_300": {
+    "count": 300,
+    "manifest": "experiments\\synthetic_kws_v4\\fresh_holdout_manifest_6class.csv",
+    "class_agreements": 300,
+    "agreement_rate": 1.0,
+    "overall_max_abs_prob_diff": 7.748603820800781e-07,
+    "overall_mean_abs_prob_diff": 2.0575951268942774e-08,
+    "per_class_max_abs_prob_diff": {
+      "TRAI": 7.748603820800781e-07,
+      "PHAI": 2.384185791015625e-07,
+      "LEN": 3.5762786865234375e-07,
+      "XUONG": 2.384185791015625e-07,
+      "UNKNOWN": 7.450580596923828e-07,
+      "SILENCE": 1.1920928955078125e-07
+    }
+  },
+  "cohort_3_deterministic_synthetic_tensors_50": {
+    "count": 50,
+    "random_seed": 20261016,
+    "class_agreements": 50,
+    "agreement_rate": 1.0,
+    "overall_max_abs_prob_diff": 2.384185791015625e-07,
+    "overall_mean_abs_prob_diff": 1.5236437190813136e-08
+  },
+  "latency_benchmark": {
+    "runs": 100,
+    "warmup_runs": 25,
+    "measurement_boundary": "Isolated model forward pass on CPU (excludes audio file I/O and Log-Mel STFT)",
+    "hardware_environment": "Desktop x86_64 CPU (single-thread execution)",
+    "pytorch_forward_mean_ms": 0.9251869990839623,
+    "pytorch_forward_p95_ms": 0.9888549902825616,
+    "onnxruntime_forward_mean_ms": 0.3032750010606833,
+    "onnxruntime_forward_p95_ms": 0.4198599941446446,
+    "speedup_ratio": 3.0506536834496245
+  },
+  "summary": {
+    "total_test_samples": 356,
+    "total_class_agreements": 356,
+    "overall_agreement_rate": 1.0,
+    "global_max_abs_probability_diff": 7.748603820800781e-07,
+    "parity_threshold_met": true,
+    "status": "PARITY_AUDIT_PASS",
+    "governance_notice": "HUMAN DATA COLLECTION REMAINS STRICTLY BLOCKED. Parity audit conducted solely on synthetic fixtures."
+  }
+}

@@ -1,0 +1,5 @@
+dataset_split,speaker_type,total_speakers,northern_speakers,central_speakers,southern_speakers,female_speakers,male_speakers,leakage_check
+Train (Manifest v2),Synthetic Calibration Profiles,14,5,5,4,7,7,DISJOINT (0 overlap with Val/Test)
+Validation (Manifest v2),Synthetic Calibration Profiles,3,1,1,1,1,2,DISJOINT (0 overlap with Train/Test)
+Test (Manifest v2),Synthetic Calibration Profiles,3,1,1,1,2,1,DISJOINT (0 overlap with Train/Val)
+Human Field Campaign,Real Consenting Human Contributors,0,0,0,0,0,0,0 Human Contributors Registered

@@ -1,0 +1,9 @@
+stream_id,duration_sec,ground_truth_targets,true_positives,false_positives,missed_targets,recall_pct,precision_pct,mean_latency_sec,median_latency_sec,p95_latency_sec
+tp_stream_01,91.1,25,25,0,0,100.0,100.0,0.507,0.511,0.598
+tp_stream_02,86.8,25,25,0,0,100.0,100.0,0.516,0.506,0.638
+tp_stream_03,89.34,25,25,0,0,100.0,100.0,0.506,0.512,0.598
+tp_stream_04,98.59,25,25,0,0,100.0,100.0,0.521,0.524,0.634
+tp_stream_05,88.95,25,25,0,0,100.0,100.0,0.495,0.495,0.622
+tp_stream_06,97.43,25,25,0,0,100.0,100.0,0.494,0.493,0.591
+tp_stream_07,94.43,25,25,0,0,100.0,100.0,0.517,0.521,0.615
+tp_stream_08,92.54,25,25,0,0,100.0,100.0,0.494,0.473,0.637

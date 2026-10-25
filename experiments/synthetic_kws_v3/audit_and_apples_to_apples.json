@@ -1,0 +1,373 @@
+{
+  "audit": {
+    "per_class_counts": {
+      "train": {
+        "TRAI": 178,
+        "PHAI": 178,
+        "LEN": 178,
+        "XUONG": 178,
+        "UNKNOWN": 120,
+        "SILENCE": 120
+      },
+      "validation": {
+        "TRAI": 36,
+        "PHAI": 36,
+        "LEN": 36,
+        "XUONG": 36,
+        "UNKNOWN": 36,
+        "SILENCE": 36
+      },
+      "test_historical": {
+        "TRAI": 36,
+        "PHAI": 36,
+        "LEN": 36,
+        "XUONG": 36,
+        "UNKNOWN": 36,
+        "SILENCE": 36
+      },
+      "fresh_holdout": {
+        "TRAI": 50,
+        "PHAI": 50,
+        "LEN": 50,
+        "XUONG": 50,
+        "UNKNOWN": 50,
+        "SILENCE": 50
+      }
+    },
+    "check_counts_status": "PASS",
+    "speaker_overlap": {
+      "train_val_overlap": [],
+      "train_test_overlap": [],
+      "val_test_overlap": [],
+      "benchmark_fresh_overlap": [],
+      "status": "PASS"
+    },
+    "uniqueness": {
+      "total_rows": 1684,
+      "unique_recording_ids": 1684,
+      "unique_sha256_hashes": 1684,
+      "recording_id_unique": true,
+      "sha256_unique": true,
+      "status": "PASS"
+    },
+    "split_preflight": {
+      "is_valid": true,
+      "errors": [],
+      "diagnostics": {
+        "is_disjoint": true,
+        "invalid_speaker_counts": {},
+        "speaker_status": "VERIFIED_DISJOINT",
+        "recording_status": "VERIFIED_DISJOINT",
+        "session_status": "NOT_VERIFIABLE_COLUMN_ABSENT",
+        "lineage_status": "NOT_VERIFIABLE_COLUMN_ABSENT",
+        "speaker_overlaps": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": []
+        },
+        "session_overlaps": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": []
+        },
+        "recording_overlaps": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": []
+        },
+        "lineage_overlaps": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": []
+        },
+        "train_speaker_count": 14,
+        "val_speaker_count": 3,
+        "test_speaker_count": 3,
+        "validation_profile": "benchmark",
+        "detected_schema_markers": "benchmark"
+      },
+      "status": "PASS"
+    },
+    "train_only_augmentation": {
+      "mechanism": "Synthetic6ClassDataset gates SpecAugment and temporal shift behind `is_train=True`",
+      "evidence": "In train_and_eval_v2.py: val_ds and test_ds instantiated with is_train=False, use_specaugment=False",
+      "status": "PASS"
+    },
+    "unknown_mapping_policy": {
+      "policy": "Confusing words and non-target tokens mapped to class_id=4, class_label='UNKNOWN'",
+      "train_sources": [
+        "calibration_confusing_words_v1"
+      ],
+      "val_test_sources": [
+        "synthetic_negative_test_fixture"
+      ],
+      "fresh_sources": [
+        "synthetic_negative_test_fixture"
+      ],
+      "status": "PASS"
+    },
+    "parent_lineage": {
+      "status": "NOT_VERIFIABLE",
+      "evidence": "Schema lacks parent_recording_id and session_id; cannot verify lineage."
+    }
+  },
+  "apples_to_apples_144": {
+    "v1_baseline": {
+      "model": "V1 Baseline (TC-ResNet-14, 4-class)",
+      "accuracy": 0.9027777777777778,
+      "macro_f1": 0.8989574979951884,
+      "precision": [
+        1.0,
+        0.72,
+        1.0,
+        1.0
+      ],
+      "recall": [
+        0.6111111111111112,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "f1": [
+        0.7586206896551724,
+        0.8372093023255814,
+        1.0,
+        1.0
+      ],
+      "support": [
+        36,
+        36,
+        36,
+        36
+      ],
+      "confusion_matrix": [
+        [
+          22,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          36,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          36,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          36,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "v2_tcresnet": {
+      "model": "V2 TC-ResNet-14 (6-class, mapped)",
+      "accuracy": 0.9375,
+      "macro_f1": 0.9365079365079365,
+      "precision": [
+        1.0,
+        0.8,
+        1.0,
+        1.0
+      ],
+      "recall": [
+        0.75,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "f1": [
+        0.8571428571428571,
+        0.8888888888888888,
+        1.0,
+        1.0
+      ],
+      "support": [
+        36,
+        36,
+        36,
+        36
+      ],
+      "confusion_matrix": [
+        [
+          27,
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          36,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          36,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          36,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "v2_temporalkwsnet": {
+      "model": "V2 TemporalKWSNet (6-class, mapped)",
+      "accuracy": 0.8958333333333334,
+      "macro_f1": 0.8911070780399274,
+      "precision": [
+        1.0,
+        0.7058823529411765,
+        1.0,
+        1.0
+      ],
+      "recall": [
+        0.5833333333333334,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "f1": [
+        0.7368421052631579,
+        0.8275862068965517,
+        1.0,
+        1.0
+      ],
+      "support": [
+        36,
+        36,
+        36,
+        36
+      ],
+      "confusion_matrix": [
+        [
+          21,
+          15,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          36,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          36,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          36,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "v3_tcresnet14": {
+      "model": "V3 TC-ResNet-14-V3 (6-class, mapped)",
+      "accuracy": 0.9166666666666666,
+      "macro_f1": 0.9143,
+      "precision": [
+        1.0,
+        0.75,
+        1.0,
+        1.0
+      ],
+      "recall": [
+        0.6666666666666666,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "f1": [
+        0.8,
+        0.8571,
+        1.0,
+        1.0
+      ],
+      "support": [
+        36,
+        36,
+        36,
+        36
+      ],
+      "confusion_matrix": [
+        [
+          24,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          36,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          36,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          36,
+          0
+        ]
+      ]
+    }
+  }
+}

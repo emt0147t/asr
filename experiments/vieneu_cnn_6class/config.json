@@ -1,0 +1,73 @@
+{
+  "experiment_name": "vieneu_cnn_6class",
+  "version": "1.0.0",
+  "dataset": "experiments/synthetic_kws_dataset_vieneu_6class",
+  "model": {
+    "architecture": "VietnameseKWSNet_6Class",
+    "num_classes": 6,
+    "dropout_p": 0.3,
+    "classes": ["TRAI", "PHAI", "LEN", "XUONG", "UNKNOWN", "SILENCE"],
+    "label_to_id": {
+      "TRAI": 0,
+      "PHAI": 1,
+      "LEN": 2,
+      "XUONG": 3,
+      "UNKNOWN": 4,
+      "SILENCE": 5
+    },
+    "id_to_label": {
+      "0": "TRAI",
+      "1": "PHAI",
+      "2": "LEN",
+      "3": "XUONG",
+      "4": "UNKNOWN",
+      "5": "SILENCE"
+    }
+  },
+  "audio": {
+    "sample_rate": 16000,
+    "clip_duration_sec": 1.0,
+    "target_samples": 16000,
+    "channels": 1
+  },
+  "feature_extractor": {
+    "type": "LogMelSpectrogram",
+    "n_mels": 40,
+    "n_fft": 512,
+    "win_length": 400,
+    "hop_length": 160,
+    "f_min": 20.0,
+    "f_max": 8000.0,
+    "eps": 1e-06,
+    "output_shape": [1, 40, 101]
+  },
+  "training": {
+    "seeds": [42, 43, 44],
+    "primary_seed": 42,
+    "batch_size": 32,
+    "epochs": 40,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "lr_scheduler": "CosineAnnealingLR",
+    "early_stopping_metric": "val_macro_f1",
+    "early_stopping_patience": 10,
+    "min_epochs": 15,
+    "augmentation": {
+      "train_only": true,
+      "time_shift_max_samples": 400,
+      "gain_min": 0.9,
+      "gain_max": 1.1
+    }
+  },
+  "splits": {
+    "train_manifest": "experiments/synthetic_kws_dataset_vieneu_6class/splits/train_manifest.csv",
+    "val_manifest": "experiments/synthetic_kws_dataset_vieneu_6class/splits/val_manifest.csv",
+    "test_manifest": "experiments/synthetic_kws_dataset_vieneu_6class/splits/test_manifest.csv"
+  },
+  "governance": {
+    "subjective_intelligibility_status": "PENDING_HUMAN_LISTENER_VERIFICATION",
+    "domain_validation_status": "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "silence_evaluation_note": "OUT_OF_CONDITION_DIAGNOSTIC"
+  }
+}

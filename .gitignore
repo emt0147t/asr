@@ -1,6 +1,13 @@
 .venv/
+.venv*/
 .pytest_cache/
 __pycache__/
 *.pyc
 *.tar.gz
 *.zip
+*.wav
+data/backups/
+data/candidate_tts/
+data/processed/
+data/raw/
+

@@ -1,0 +1,244 @@
+{
+  "seed42": {
+    "theta_cmd": 0.5,
+    "metrics": {
+      "macro_command_recall": 0.9812,
+      "micro_command_recall": 0.9812,
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 0.925,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "recall_95ci": [
+        0.9463,
+        0.9936
+      ],
+      "non_target_false_acceptance_rate": 0.0518,
+      "far_95ci": [
+        0.0363,
+        0.0734
+      ],
+      "raw_false_acceptance_count": 29,
+      "non_target_denominator": 560,
+      "target_false_rejections": 0,
+      "wrong_accepted_command_labels": 3,
+      "non_target_rejection_rate": 0.9482,
+      "five_class_accuracy": 0.9556,
+      "confusion_matrix": {
+        "TRAI": {
+          "TRAI": 40,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "PHAI": {
+          "TRAI": 3,
+          "PHAI": 37,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 40,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 40,
+          "REJECT": 0
+        },
+        "REJECT": {
+          "TRAI": 7,
+          "PHAI": 2,
+          "LEN": 1,
+          "XUONG": 19,
+          "REJECT": 531
+        }
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "cpu_latency": {
+      "mean_ms": 1.56,
+      "median_ms": 1.57,
+      "p90_ms": 1.64,
+      "p99_ms": 1.78,
+      "max_ms": 3.5,
+      "meets_50ms_budget": true
+    }
+  },
+  "seed43": {
+    "theta_cmd": 0.35,
+    "metrics": {
+      "macro_command_recall": 0.9938,
+      "micro_command_recall": 0.9938,
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 0.975,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "recall_95ci": [
+        0.9655,
+        0.9989
+      ],
+      "non_target_false_acceptance_rate": 0.0696,
+      "far_95ci": [
+        0.0514,
+        0.0938
+      ],
+      "raw_false_acceptance_count": 39,
+      "non_target_denominator": 560,
+      "target_false_rejections": 0,
+      "wrong_accepted_command_labels": 1,
+      "non_target_rejection_rate": 0.9304,
+      "five_class_accuracy": 0.9444,
+      "confusion_matrix": {
+        "TRAI": {
+          "TRAI": 40,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "PHAI": {
+          "TRAI": 1,
+          "PHAI": 39,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 40,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 40,
+          "REJECT": 0
+        },
+        "REJECT": {
+          "TRAI": 12,
+          "PHAI": 0,
+          "LEN": 8,
+          "XUONG": 19,
+          "REJECT": 521
+        }
+      },
+      "all_keywords_ge_95": true,
+      "meets_strict_criteria": false
+    },
+    "cpu_latency": {
+      "mean_ms": 1.54,
+      "median_ms": 1.56,
+      "p90_ms": 1.6,
+      "p99_ms": 1.7,
+      "max_ms": 7.49,
+      "meets_50ms_budget": true
+    }
+  },
+  "seed44": {
+    "theta_cmd": 0.35,
+    "metrics": {
+      "macro_command_recall": 1.0,
+      "micro_command_recall": 1.0,
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "recall_95ci": [
+        0.9766,
+        1.0
+      ],
+      "non_target_false_acceptance_rate": 0.0554,
+      "far_95ci": [
+        0.0393,
+        0.0775
+      ],
+      "raw_false_acceptance_count": 31,
+      "non_target_denominator": 560,
+      "target_false_rejections": 0,
+      "wrong_accepted_command_labels": 0,
+      "non_target_rejection_rate": 0.9446,
+      "five_class_accuracy": 0.9569,
+      "confusion_matrix": {
+        "TRAI": {
+          "TRAI": 40,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "PHAI": {
+          "TRAI": 0,
+          "PHAI": 40,
+          "LEN": 0,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "LEN": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 40,
+          "XUONG": 0,
+          "REJECT": 0
+        },
+        "XUONG": {
+          "TRAI": 0,
+          "PHAI": 0,
+          "LEN": 0,
+          "XUONG": 40,
+          "REJECT": 0
+        },
+        "REJECT": {
+          "TRAI": 5,
+          "PHAI": 0,
+          "LEN": 13,
+          "XUONG": 13,
+          "REJECT": 529
+        }
+      },
+      "all_keywords_ge_95": true,
+      "meets_strict_criteria": false
+    },
+    "cpu_latency": {
+      "mean_ms": 1.64,
+      "median_ms": 1.6,
+      "p90_ms": 1.76,
+      "p99_ms": 2.89,
+      "max_ms": 3.21,
+      "meets_50ms_budget": true
+    }
+  },
+  "cross_seed_summary": {
+    "mean_command_recall": 0.9917,
+    "std_command_recall": 0.0096,
+    "mean_false_acceptance_rate": 0.0589,
+    "std_false_acceptance_rate": 0.0094,
+    "mean_five_class_accuracy": 0.9523,
+    "std_five_class_accuracy": 0.0069,
+    "mean_cpu_latency_ms": 1.58,
+    "std_cpu_latency_ms": 0.05,
+    "all_seeds_meet_all_criteria": false,
+    "sampling_unit_audit": {
+      "independent_clips_per_seed": 720,
+      "target_clips_per_seed": 160,
+      "non_target_clips_per_seed": 560,
+      "note": "Evaluating 3 model seeds on the same 720 clips produces clustered/repeated observations across seeds. Naive pooled binomial Wilson intervals over 3x720=2,160 observations would artificially shrink standard error by sqrt(3). Proper reporting relies on per-seed Wilson intervals and sample standard deviations across seeds."
+    }
+  }
+}

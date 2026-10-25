@@ -1,0 +1,24 @@
+{
+  "candidate_checkpoint_sha256": "00b4fc71f863788648d5ea388a99c4cbd4441d9b9f63adc5e56154e329df63f3",
+  "candidate_onnx_sha256": "2dafa2bbafbbb371ded7eb56220a9c47092cef350957c61a3c311d3d7800fd06",
+  "opset_version": 14,
+  "input_shape": [
+    1,
+    1,
+    40,
+    101
+  ],
+  "output_shape": [
+    1,
+    5
+  ],
+  "classes": [
+    "TRAI",
+    "PHAI",
+    "LEN",
+    "XUONG",
+    "REJECT"
+  ],
+  "max_abs_diff": 3.814697265625e-06,
+  "parity_verified": true
+}

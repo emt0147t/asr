@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 640" width="1150" height="640">
+  <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .code { font-family: 'JetBrains Mono', Consolas, Monaco, monospace; }
+    .shadow { filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.06)); }
+    .card-shadow { filter: drop-shadow(0px 2px 4px rgba(15, 23, 42, 0.08)); }
+</style>
+    <linearGradient id="bgGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1150" height="640" fill="url(#bgGrad7)" rx="16"/>
+
+  <text x="50" y="45" font-size="22" font-weight="700" fill="#F8FAFC">Figure 7: Human Field-Recording Campaign Audit &amp; Data Gap Analysis</text>
+  <text x="50" y="70" font-size="13" fill="#94A3B8">Honest Verification: Planned Minimum Quotas vs. Audited Genuine Human Speech vs. Automated Test Fixtures</text>
+
+  <g transform="translate(50, 110)">
+    <rect width="550" height="490" rx="10" fill="#1E293B" stroke="#334155"/>
+    <path d="M 0 10 Q 0 0 10 0 L 540 0 Q 550 0 550 10 L 550 40 L 0 40 Z" fill="#BE123C"/>
+    <text x="275" y="26" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">OVERALL CAMPAIGN COMPLETION STATUS</text>
+
+    <g transform="translate(275, 140)">
+      <circle cx="0" cy="0" r="75" fill="#0F172A" stroke="#334155" stroke-width="12"/>
+      <circle cx="0" cy="0" r="75" fill="none" stroke="#F43F5E" stroke-width="12" stroke-dasharray="0 471"/>
+      <text x="0" y="10" font-size="34" font-weight="800" fill="#FB7185" text-anchor="middle">0.0%</text>
+      <text x="0" y="32" font-size="11" font-weight="600" fill="#94A3B8" text-anchor="middle">COMPLETE</text>
+      <text x="0" y="105" font-size="14" font-weight="700" fill="#F43F5E" text-anchor="middle">0 / 1,200 Genuine Human Recordings</text>
+    </g>
+
+    <g transform="translate(30, 270)">
+      <rect width="490" height="200" rx="8" fill="#0F172A" stroke="#334155"/>
+      
+      <text x="20" y="25" font-size="11" font-weight="700" fill="#94A3B8">METRIC</text>
+      <text x="180" y="25" font-size="11" font-weight="700" fill="#94A3B8">TARGET GOAL</text>
+      <text x="320" y="25" font-size="11" font-weight="700" fill="#94A3B8">GENUINE AUDITED</text>
+      <text x="440" y="25" font-size="11" font-weight="700" fill="#94A3B8">GAP</text>
+      <line x1="15" y1="35" x2="475" y2="35" stroke="#334155"/>
+
+      <text x="20" y="58" font-size="12" font-weight="600" fill="#E2E8F0">TRAI Utterances</text>
+      <text x="180" y="58" font-size="12" fill="#CBD5E1">300 samples</text>
+      <text x="320" y="58" font-size="12" font-weight="700" fill="#EF4444">0 samples</text>
+      <text x="440" y="58" font-size="12" font-weight="700" fill="#EF4444">-300</text>
+
+      <text x="20" y="86" font-size="12" font-weight="600" fill="#E2E8F0">PHAI Utterances</text>
+      <text x="180" y="86" font-size="12" fill="#CBD5E1">300 samples</text>
+      <text x="320" y="86" font-size="12" font-weight="700" fill="#EF4444">0 samples</text>
+      <text x="440" y="86" font-size="12" font-weight="700" fill="#EF4444">-300</text>
+
+      <text x="20" y="114" font-size="12" font-weight="600" fill="#E2E8F0">LEN Utterances</text>
+      <text x="180" y="114" font-size="12" fill="#CBD5E1">300 samples</text>
+      <text x="320" y="114" font-size="12" font-weight="700" fill="#EF4444">0 samples</text>
+      <text x="440" y="114" font-size="12" font-weight="700" fill="#EF4444">-300</text>
+
+      <text x="20" y="142" font-size="12" font-weight="600" fill="#E2E8F0">XUONG Utterances</text>
+      <text x="180" y="142" font-size="12" fill="#CBD5E1">300 samples</text>
+      <text x="320" y="142" font-size="12" font-weight="700" fill="#EF4444">0 samples</text>
+      <text x="440" y="142" font-size="12" font-weight="700" fill="#EF4444">-300</text>
+
+      <text x="20" y="170" font-size="12" font-weight="600" fill="#E2E8F0">Distinct Human Speakers</text>
+      <text x="180" y="170" font-size="12" fill="#CBD5E1">&ge; 20 speakers</text>
+      <text x="320" y="170" font-size="12" font-weight="700" fill="#EF4444">0 speakers</text>
+      <text x="440" y="170" font-size="12" font-weight="700" fill="#EF4444">-20</text>
+
+      <text x="20" y="192" font-size="11" font-weight="600" fill="#E2E8F0">Verified Consent Forms</text>
+      <text x="180" y="192" font-size="11" fill="#CBD5E1">&ge; 20 records</text>
+      <text x="320" y="192" font-size="11" font-weight="700" fill="#EF4444">0 genuine</text>
+      <text x="440" y="192" font-size="11" font-weight="700" fill="#EF4444">-20</text>
+    </g>
+  </g>
+
+  <g transform="translate(630, 110)">
+    <rect width="470" height="490" rx="10" fill="#1E293B" stroke="#334155"/>
+    <path d="M 0 10 Q 0 0 10 0 L 460 0 Q 470 0 470 10 L 470 40 L 0 40 Z" fill="#334155"/>
+    <text x="235" y="26" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">DIALECT DEFICIT &amp; TEST FIXTURE AUDIT</text>
+
+    <g transform="translate(25, 55)">
+      <text x="0" y="18" font-size="13" font-weight="700" fill="#38BDF8">Dialect Target vs. Actual</text>
+      
+      <text x="0" y="45" font-size="12" fill="#CBD5E1">Northern (Target: 50% &bull; 600 clips)</text>
+      <rect x="0" y="55" width="420" height="16" rx="4" fill="#0F172A"/>
+      <text x="420" y="68" font-size="11" font-weight="700" fill="#EF4444" text-anchor="end">0.0% collected</text>
+
+      <text x="0" y="95" font-size="12" fill="#CBD5E1">Central (Target: 25% &bull; 300 clips)</text>
+      <rect x="0" y="105" width="420" height="16" rx="4" fill="#0F172A"/>
+      <text x="420" y="118" font-size="11" font-weight="700" fill="#EF4444" text-anchor="end">0.0% collected</text>
+
+      <text x="0" y="145" font-size="12" fill="#CBD5E1">Southern (Target: 25% &bull; 300 clips)</text>
+      <rect x="0" y="155" width="420" height="16" rx="4" fill="#0F172A"/>
+      <text x="420" y="168" font-size="11" font-weight="700" fill="#EF4444" text-anchor="end">0.0% collected</text>
+    </g>
+
+    <g transform="translate(25, 260)">
+      <rect width="420" height="210" rx="8" fill="#0B132B" stroke="#0284C7" stroke-width="1.5"/>
+      <text x="20" y="25" font-size="12" font-weight="700" fill="#38BDF8">EXPLICIT FIXTURE DISCLOSURE (NOT REAL DATA)</text>
+      <text x="20" y="48" font-size="11" fill="#E2E8F0">Found in data/raw/field_recordings/:</text>
+      <text x="20" y="68" font-size="11" fill="#CBD5E1">&bull; 74 Audio Takes (WAV and M4A)</text>
+      <text x="20" y="86" font-size="10" fill="#94A3B8" class="code">&bull; SPK_FIELD_N001_TESTSUITE (unit test harness)</text>
+      <text x="20" y="102" font-size="10" fill="#94A3B8" class="code">&bull; SPK_M4A_TEST (M4A decoding test fixture)</text>
+      <text x="20" y="122" font-size="11" fill="#CBD5E1">&bull; Provenance Tag: test_harness / unit_test_mock</text>
+      <text x="20" y="140" font-size="11" fill="#CBD5E1">&bull; Consent Ledger: 2 test fixture identities</text>
+      
+      <rect x="15" y="155" width="390" height="42" rx="6" fill="#1E293B" stroke="#F59E0B"/>
+      <text x="25" y="172" font-size="10" font-weight="700" fill="#FCD34D">AUDIT INTEGRITY INVARIANT CONFIRMED:</text>
+      <text x="25" y="188" font-size="10" fill="#E2E8F0">Test fixtures are strictly quarantined from training manifests.</text>
+    </g>
+  </g>
+</svg>

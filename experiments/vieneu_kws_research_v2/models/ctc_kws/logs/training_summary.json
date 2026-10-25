@@ -1,0 +1,11 @@
+{
+  "seed42": {
+    "ctc_checkpoint": "experiments/vieneu_kws_research_v2/models/ctc_kws/checkpoints/best_ctc_seed42.pt"
+  },
+  "seed43": {
+    "ctc_checkpoint": "experiments/vieneu_kws_research_v2/models/ctc_kws/checkpoints/best_ctc_seed43.pt"
+  },
+  "seed44": {
+    "ctc_checkpoint": "experiments/vieneu_kws_research_v2/models/ctc_kws/checkpoints/best_ctc_seed44.pt"
+  }
+}

@@ -20,6 +20,7 @@ if str(Path.cwd()) not in sys.path:
 import os
 import time
 import json
+from typing import Optional
 import numpy as np
 import pandas as pd
 import soundfile as sf
@@ -89,16 +90,30 @@ class VietnameseKWSDataset(Dataset):
         return log_mel.squeeze(0), label
 
 
-def train_baseline(epochs: int = 25, batch_size: int = 64, lr: float = 1e-3):
+def train_baseline(epochs: int = 25, batch_size: int = 64, lr: float = 1e-3, validation_profile: Optional[str] = None):
+    if validation_profile is None or str(validation_profile).strip() == "":
+        raise ValueError("Baseline training halted: validation_profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+    active_profile = str(validation_profile).strip().lower()
+    if active_profile not in ("benchmark", "human_campaign"):
+        raise ValueError(f"Baseline training halted: Unknown validation_profile '{active_profile}'. Permitted: ['benchmark', 'human_campaign']")
+
     print("=" * 60)
     print("TRAINING VIETNAMESE KWS CNN BASELINE")
     print("=" * 60)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Training on Device: {device}")
+    print(f"Training on Device: {device} | Profile: {active_profile}")
 
     train_csv = Path("data/manifests/train_manifest.csv")
     val_csv = Path("data/manifests/val_manifest.csv")
+
+    # Enforce speaker-disjoint dataset boundary before training
+    from src.acquisition.campaign_validator import validate_split_manifests_preflight
+    df_tr = pd.read_csv(train_csv)
+    df_va = pd.read_csv(val_csv)
+    is_valid, split_errs, _ = validate_split_manifests_preflight(df_tr, df_va, validation_profile=active_profile)
+    if not is_valid:
+        raise ValueError(f"Baseline training halted: Preflight split manifest validation failed: {split_errs}")
 
     train_dataset = VietnameseKWSDataset(train_csv, is_train=True, augment=True)
     val_dataset = VietnameseKWSDataset(val_csv, is_train=False, augment=False)
@@ -204,4 +219,14 @@ def train_baseline(epochs: int = 25, batch_size: int = 64, lr: float = 1e-3):
 
 
 if __name__ == "__main__":
-    train_baseline(epochs=20, batch_size=64, lr=1e-3)
+    import argparse
+    parser = argparse.ArgumentParser(description="Train KWS Baseline")
+    parser.add_argument("--epochs", type=int, default=20)
+    parser.add_argument("--batch_size", type=int, default=64)
+    parser.add_argument("--lr", type=float, default=1e-3)
+    parser.add_argument("--validation_profile", "--profile", dest="validation_profile", type=str, default=None, choices=["benchmark", "human_campaign"], help="Validation profile: benchmark or human_campaign (required)")
+    args = parser.parse_args()
+    if not args.validation_profile:
+        print("[ERROR] --validation_profile or --profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+        sys.exit(1)
+    train_baseline(epochs=args.epochs, batch_size=args.batch_size, lr=args.lr, validation_profile=args.validation_profile)

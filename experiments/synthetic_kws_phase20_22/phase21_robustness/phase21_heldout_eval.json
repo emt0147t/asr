@@ -1,0 +1,231 @@
+{
+  "total_clips_evaluated": 288,
+  "correct_predictions": 288,
+  "overall_accuracy": 1.0,
+  "macro_f1": 1.0,
+  "wilson_score_95_ci": [
+    0.9868,
+    1.0
+  ],
+  "per_class_metrics": {
+    "TRAI": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 48
+    },
+    "PHAI": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 48
+    },
+    "LEN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 48
+    },
+    "XUONG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 48
+    },
+    "UNKNOWN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 48
+    },
+    "SILENCE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 48
+    }
+  },
+  "confusion_matrix": [
+    [
+      48,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      48,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      48,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      48,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      48,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      48
+    ]
+  ],
+  "per_speaker_profile_metrics": {
+    "NONE_AMBIENT": {
+      "accuracy": 1.0,
+      "total_clips": 48,
+      "correct_clips": 48
+    },
+    "SPK_HELD_01_HIGH_FEMALE_1": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_02_HIGH_FEMALE_2": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_03_CHILD_VOICE": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_04_FEMALE_BREATHY": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_05_FEMALE_TENSE": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_06_FEMALE_RESONANT": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_07_MID_FEMALE_1": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_08_MID_FEMALE_2": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_09_MID_FEMALE_SOFT": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_10_MID_FEMALE_BRT": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_11_FEMALE_NASAL": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_12_FEMALE_DEEP": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_13_MID_MALE_1": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_14_MID_MALE_2": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_15_MALE_BREATHY": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_16_MALE_TENSE": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_17_MALE_GRAVELLY": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_18_MALE_SMOOTH": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_19_DEEP_MALE_1": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_20_DEEP_MALE_2": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_21_BASS_VOICE": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_22_MALE_RESONANT": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_23_DEEP_TIGHT": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    },
+    "SPK_HELD_24_EXTRA_LOW": {
+      "accuracy": 1.0,
+      "total_clips": 10,
+      "correct_clips": 10
+    }
+  },
+  "trai_phai_confusion": {
+    "trai_as_phai": 0,
+    "phai_as_trai": 0
+  },
+  "false_alarm_unknown": 0,
+  "false_alarm_silence": 0
+}

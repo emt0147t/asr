@@ -1,0 +1,66 @@
+{
+  "condition": "D3_B",
+  "seed": 42,
+  "ce_weights": [
+    1.1,
+    1.1,
+    1.1,
+    1.1,
+    1.0
+  ],
+  "batch_sampler": {
+    "n_target": 36,
+    "n_oov": 14,
+    "n_acoustic": 14
+  },
+  "use_min_recall_obj": false,
+  "best_epoch": 13,
+  "best_selection_score": 0.9143310023430914,
+  "best_metrics": {
+    "val_loss": 0.23546915508632082,
+    "val_accuracy": 0.909375,
+    "val_macro_f1": 0.9143310023430914,
+    "overall_macro_f1": 0.9124964158511786,
+    "min_cmd_recall": 0.91875,
+    "oov_fa_rate": 0.15,
+    "oov_rejection_precision": 0.9679715302491103,
+    "per_class": {
+      "TRAI": {
+        "precision": 0.9865771812080537,
+        "recall": 0.91875,
+        "f1": 0.9514563106796117,
+        "support": 160
+      },
+      "PHAI": {
+        "precision": 0.8288770053475936,
+        "recall": 0.96875,
+        "f1": 0.8933717579250721,
+        "support": 160
+      },
+      "LEN": {
+        "precision": 0.8061224489795918,
+        "recall": 0.9875,
+        "f1": 0.8876404494382022,
+        "support": 160
+      },
+      "XUONG": {
+        "precision": 0.8602150537634409,
+        "recall": 1.0,
+        "f1": 0.9248554913294798,
+        "support": 160
+      },
+      "REJECT": {
+        "precision": 0.9679715302491103,
+        "recall": 0.85,
+        "f1": 0.9051580698835274,
+        "support": 640
+      }
+    }
+  },
+  "total_epochs": 21,
+  "duration_seconds": 47.26657320000231,
+  "checkpoint_path": "experiments\\vieneu_kws_research_v12\\training_phase54_d3\\D3_B_seed42\\best_checkpoint.pt",
+  "checkpoint_sha256": "b2e0ac163ca2fbd543f590ff0efce8351de91c4732470b653dab0fdf13ca44af",
+  "train_manifest_sha256": "e7498be782afbdde8e2a29b4092ad1359f2ce689da79317fd9e4505afe010b0b",
+  "val_manifest_sha256": "5af8cf9daa96526cba1a742d1e18982cd4c1ed291dc17d139a8d82bf1cb06682"
+}

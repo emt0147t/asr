@@ -1,0 +1,222 @@
+{
+  "candidate_id": "variant_w10",
+  "description": "Frozen Vietnamese Keyword Spotting Compact CNN with hard-negative weight w_hn=1.0 and calibrated rejection thresholds.",
+  "status_banners": [
+    "PENDING_HUMAN_LISTENER_VERIFICATION",
+    "NOT_VALIDATED_ON_NATURAL_SPEECH"
+  ],
+  "architecture": {
+    "name": "CorrectedVietnameseKWSNet",
+    "frontend": "LogMelFrontend",
+    "num_classes": 5,
+    "classes": [
+      "TRAI",
+      "PHAI",
+      "LEN",
+      "XUONG",
+      "REJECT"
+    ],
+    "parameter_count": 138469,
+    "audio_parameters": {
+      "sample_rate": 16000,
+      "clip_duration_sec": 1.0,
+      "clip_duration_samples": 16000,
+      "normalization": "scale down if max amplitude > 1.0; low-energy noise floor unamplified",
+      "padding_convention": "right-padded to 16,000 samples with zeros"
+    },
+    "feature_parameters": {
+      "n_fft": 400,
+      "hop_length": 160,
+      "win_length": 400,
+      "n_mels": 40,
+      "f_min": 20.0,
+      "f_max": 8000.0,
+      "log_offset": 1e-06
+    }
+  },
+  "threshold_decision_logic": {
+    "description": "If max(softmax(logits[:4])) >= theta_cmd, argmax(logits[:4]); else REJECT (class 4).",
+    "calibrated_thresholds": {
+      "seed42": 0.4,
+      "seed43": 0.5,
+      "seed44": 0.35,
+      "ensemble_recommended": 0.4
+    }
+  },
+  "checkpoints": {
+    "seed42": {
+      "checkpoint_filename": "variant_w10_seed42.pt",
+      "sha256": "7374af469a4bc4df5e124aae27720a8c11e688413f045eec3ee4ffd79c836bed",
+      "frozen_path": "experiments/vieneu_kws_research_v9/artifacts/checkpoints/variant_w10_seed42.pt",
+      "parameter_count": 138469,
+      "epoch": 22,
+      "best_val_loss": 0.6991,
+      "val_acc": 0.9611,
+      "w_hn": 1.0,
+      "calibrated_threshold": 0.4
+    },
+    "seed43": {
+      "checkpoint_filename": "variant_w10_seed43.pt",
+      "sha256": "77f468c68b261de506a3fcb022c8d7cc68f8b0c2ad650852b7c300f274dda251",
+      "frozen_path": "experiments/vieneu_kws_research_v9/artifacts/checkpoints/variant_w10_seed43.pt",
+      "parameter_count": 138469,
+      "epoch": 24,
+      "best_val_loss": 0.6471,
+      "val_acc": 0.9667,
+      "w_hn": 1.0,
+      "calibrated_threshold": 0.5
+    },
+    "seed44": {
+      "checkpoint_filename": "variant_w10_seed44.pt",
+      "sha256": "bebab580e4caa6934c98a62b095611e4eef9221a7f4282d36f9a4b6928abde64",
+      "frozen_path": "experiments/vieneu_kws_research_v9/artifacts/checkpoints/variant_w10_seed44.pt",
+      "parameter_count": 138469,
+      "epoch": 21,
+      "best_val_loss": 0.6051,
+      "val_acc": 0.9722,
+      "w_hn": 1.0,
+      "calibrated_threshold": 0.35
+    }
+  },
+  "historical_data_hashes": {
+    "v8_test_manifest": {
+      "path": "experiments/vieneu_kws_research_v8/data/splits/test_manifest.csv",
+      "sha256": "79e9aa0b20bb921d348b55101af78157276cb56b1059fabb129a0d745d1da2e4"
+    },
+    "v8_val_manifest": {
+      "path": "experiments/vieneu_kws_research_v8/data/splits/val_manifest.csv",
+      "sha256": "cb66a769e6101709e707a092cebd851aa7f7d53ea4850d8a73a3a2f7460a8378"
+    },
+    "v8_train_manifest": {
+      "path": "experiments/vieneu_kws_research_v8/data/splits/train_manifest.csv",
+      "sha256": "701a6cc772b2f4d6378e30e2ce2b1745c4716efcd9ab12d649abc015270dee80"
+    },
+    "v8_selected_configs": {
+      "path": "experiments/vieneu_kws_research_v8/calibration/selected_configs.json",
+      "sha256": "330fa3c2f4d616ddb065b9da90cb3080e2fcdf65eb2309a64d10e2a3e7d3de72"
+    }
+  },
+  "saved_predictions_hash": {
+    "v8_per_clip_predictions_csv": "7c7a0e79460c753fb904c3e3aca45491185d42756f6f438248fd08ebd5b7dd8f"
+  },
+  "reproduced_metrics": {
+    "per_seed": {
+      "seed42": {
+        "macro_command_recall": 1.0,
+        "micro_command_recall": 1.0,
+        "recall_95ci": [
+          0.9766,
+          1.0
+        ],
+        "non_target_false_acceptance_rate": 0.0268,
+        "far_95ci": [
+          0.0163,
+          0.0437
+        ],
+        "raw_false_acceptance_count": 15,
+        "non_target_denominator": 560,
+        "5class_accuracy": 0.9792,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      "seed43": {
+        "macro_command_recall": 0.9938,
+        "micro_command_recall": 0.9938,
+        "recall_95ci": [
+          0.9655,
+          0.9989
+        ],
+        "non_target_false_acceptance_rate": 0.0161,
+        "far_95ci": [
+          0.0085,
+          0.0303
+        ],
+        "raw_false_acceptance_count": 9,
+        "non_target_denominator": 560,
+        "5class_accuracy": 0.9861,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      },
+      "seed44": {
+        "macro_command_recall": 1.0,
+        "micro_command_recall": 1.0,
+        "recall_95ci": [
+          0.9766,
+          1.0
+        ],
+        "non_target_false_acceptance_rate": 0.0179,
+        "far_95ci": [
+          0.0097,
+          0.0326
+        ],
+        "raw_false_acceptance_count": 10,
+        "non_target_denominator": 560,
+        "5class_accuracy": 0.9861,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        }
+      }
+    },
+    "cross_seed_aggregate": {
+      "mean_command_recall": 0.9979,
+      "std_command_recall": 0.0036,
+      "mean_false_acceptance_rate": 0.0203,
+      "std_false_acceptance_rate": 0.0057,
+      "mean_5class_accuracy": 0.9838,
+      "std_5class_accuracy": 0.004,
+      "sampling_unit_note": "Evaluated on N=720 locked synthetic clips across 3 seeds. Seed predictions are repeated measurements on the same clips, reported via cross-seed sample mean and sample standard deviation rather than naive pooled interval."
+    }
+  },
+  "voice_provenance_disclosure": {
+    "total_approved_tts_inventory": 25,
+    "training_split_voices": [
+      "Bình Dương",
+      "Cẩm Phả",
+      "Cần Thơ",
+      "Cao Lãnh",
+      "Duy Khánh",
+      "Hà Tĩnh",
+      "Hải Dương",
+      "Hương Ly",
+      "Mai Phương",
+      "Mỹ Tho",
+      "Nam Định",
+      "Nha Trang",
+      "Phương Trang",
+      "Rạch Giá",
+      "Tây Ninh",
+      "Thanh Hóa",
+      "Việt Trì"
+    ],
+    "validation_split_voices": [
+      "Bảo Ngọc",
+      "Diễm My",
+      "Hoàng Kiên",
+      "Tuấn Tú"
+    ],
+    "test_split_voices": [
+      "Kim Thanh",
+      "Quốc Tuấn",
+      "Quỳnh Anh",
+      "Đức Trí"
+    ],
+    "unseen_voice_status": "The 4 test voices were strictly held out from the v8 training partition and evaluated on 80 unseen text prompts. However, they appeared in historical project campaigns (v5-v7). No genuinely unseen approved TTS voices exist without external engines. Performance must NOT be claimed as zero-shot human generalization."
+  },
+  "cpu_timing_specification": {
+    "timing_function": "time.perf_counter()",
+    "batch_size": 1,
+    "torch_threads": 4,
+    "hardware_context": "Intel Core i7 CPU (x86_64, Windows), single-thread sequential batch-1 inference"
+  }
+}

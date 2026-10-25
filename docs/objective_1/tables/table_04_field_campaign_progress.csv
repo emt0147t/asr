@@ -1,0 +1,6 @@
+command_label,vietnamese_word,class_id,genuine_human_takes,target_budget,completion_pct,status
+TRAI,trái,0,0,1500,0.0,Awaiting Human Participant
+PHAI,phải,1,0,1500,0.0,Awaiting Human Participant
+LEN,lên,2,0,1500,0.0,Awaiting Human Participant
+XUONG,xuống,3,0,1500,0.0,Awaiting Human Participant
+TOTAL,—,0-3,0,6000,0.0,Campaign Infrastructure Operational; 0 Takes Ingested

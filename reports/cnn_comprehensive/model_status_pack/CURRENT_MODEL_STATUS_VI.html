@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vietnamese KWS CNN - Model Status Dashboard</title>
+<style>
+    :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --card-bg-subtle: #172033;
+        --border: #334155;
+        --border-highlight: #475569;
+        --text: #f8fafc;
+        --text-muted: #94a3b8;
+        --accent: #38bdf8;
+        --accent-glow: rgba(56, 189, 248, 0.15);
+        --success: #22c55e;
+        --success-glow: rgba(34, 197, 94, 0.15);
+        --warning: #f59e0b;
+        --warning-glow: rgba(245, 158, 11, 0.15);
+        --danger: #ef4444;
+        --danger-glow: rgba(239, 68, 68, 0.15);
+        --purple: #a855f7;
+    }
+    * { box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        margin: 0;
+        padding: 24px;
+        line-height: 1.6;
+    }
+    .container {
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+    header {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 24px;
+        margin-bottom: 28px;
+    }
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    h1 {
+        font-size: 26px;
+        margin: 0 0 6px 0;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+    }
+    .subtitle {
+        color: var(--text-muted);
+        font-size: 14px;
+    }
+    .badge-bar {
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+    .badge-pass { background: var(--success-glow); color: var(--success); border: 1px solid var(--success); }
+    .badge-warn { background: var(--warning-glow); color: var(--warning); border: 1px solid var(--warning); }
+    .badge-danger { background: var(--danger-glow); color: var(--danger); border: 1px solid var(--danger); }
+    .badge-info { background: var(--accent-glow); color: var(--accent); border: 1px solid var(--accent); }
+    .badge-purple { background: rgba(168, 85, 247, 0.15); color: var(--purple); border: 1px solid var(--purple); }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 20px;
+        margin-bottom: 24px;
+    }
+    .card {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    }
+    .card h2 {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 14px;
+        color: var(--accent);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+    }
+    th, td {
+        padding: 8px 10px;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+    }
+    th { color: var(--text-muted); font-weight: 600; font-size: 12px; }
+    .mono {
+        font-family: 'Consolas', 'Courier New', monospace;
+        font-size: 12px;
+        word-break: break-all;
+        color: #e2e8f0;
+    }
+    .metric-hero {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+    }
+    .metric-value {
+        font-size: 22px;
+        font-weight: 800;
+        color: #fff;
+    }
+    .metric-sub {
+        font-size: 12px;
+        color: var(--text-muted);
+    }
+    .callout {
+        background: var(--warning-glow);
+        border-left: 4px solid var(--warning);
+        padding: 14px 16px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    .callout-title {
+        font-weight: 700;
+        color: var(--warning);
+        margin-bottom: 4px;
+    }
+    .gov-box {
+        background: var(--card-bg-subtle);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    .gov-box:last-child { margin-bottom: 0; }
+    footer {
+        margin-top: 40px;
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 12px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-top">
+            <div>
+                <h1>Báo Cáo Trạng Thái Mô Hình KWS Tiếng Việt (Supervisor Review)</h1>
+                <div class="subtitle">
+                    Hệ thống xác thực trạng thái mô hình học máy độc lập &bull; Thời điểm: <strong>2026-10-21 10:04:35 UTC+7</strong>
+                </div>
+            </div>
+            <div style="text-align: right;">
+                <span class="badge badge-purple">READ-ONLY AUDIT MODE</span>
+                <div class="subtitle" style="margin-top: 4px;">Git HEAD: <code class="mono">471f1af995</code></div>
+            </div>
+        </div>
+        <div class="badge-bar">
+            <span class="badge badge-pass">CHECKPOINT SHA-256: PASS</span>
+            <span class="badge badge-pass">ONNX SHA-256: PASS</span>
+            <span class="badge badge-pass">PARITY: PASS (8/8)</span>
+            <span class="badge badge-pass">TEST SUITE: EXIT 0 (5/5 PASSED)</span>
+            <span class="badge badge-info">WORKSPACE: 384/384 PASSED</span>
+            <span class="badge badge-warn">DATASET: SYNTHETIC ONLY</span>
+        </div>
+    </header>
+
+    <!-- SECTION A: EXECUTIVE SUMMARY -->
+    <div class="card" style="margin-bottom: 20px;">
+        <h2>Mục A: Tóm Tắt Điều Hành & Dấu Thời Gian Xác Thực (Executive Summary)</h2>
+        <p style="font-size: 13px; margin: 0 0 10px 0;">
+            Hệ thống xác thực đã kiểm tra trực tiếp trên đĩa cứng đối với ứng viên mô hình đông kết 
+            <strong><code>variant_v11_hard_negative_weighted_seed42.pt</code></strong> và bản xuất <strong><code>vietnamese_kws_v11.onnx</code></strong>.
+            Cả hai tệp đã được kiểm chứng tính bất biến trước và sau khi thực thi. Không có bất kỳ trọng số, hợp đồng tiền xử lý hay ngưỡng quyết định nào bị thay đổi.
+        </p>
+        <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-top: 8px;">
+            <div><span class="metric-sub">Dấu thời gian ISO:</span> <span class="mono" style="font-size: 12px;">2026-10-21T03:04:35.639552+00:00</span></div>
+            <div><span class="metric-sub">Trạng thái Git:</span> <span class="mono" style="font-size: 12px;">71 modified/untracked files (Working tree clean of staged commits)</span></div>
+        </div>
+    </div>
+
+    <!-- SECTIONS B & C: CHECKPOINT & ONNX -->
+    <div class="grid">
+        <div class="card">
+            <h2>Mục B: Checkpoint PyTorch Đông Kết</h2>
+            <table>
+                <tr><td>Tên file</td><td class="mono">variant_v11_hard_negative_weighted_seed42.pt</td></tr>
+                <tr><td>Đường dẫn</td><td class="mono">experiments/vieneu_kws_research_v13_4/bundle/checkpoint/variant_v11_hard_negative_weighted_seed42.pt</td></tr>
+                <tr><td>Dung lượng</td><td>566,146 bytes (~552.9 KB)</td></tr>
+                <tr><td>Expected SHA-256</td><td class="mono">3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2</td></tr>
+                <tr><td>Observed SHA-256</td><td class="mono">3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2</td></tr>
+                <tr><td>Trạng thái</td><td><span class="badge badge-pass">PASS</span></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Mục C: Bản Xuất Mô Hình ONNX</h2>
+            <table>
+                <tr><td>Tên file</td><td class="mono">vietnamese_kws_v11.onnx</td></tr>
+                <tr><td>Đường dẫn</td><td class="mono">experiments/vieneu_kws_research_v13_4/bundle/onnx/vietnamese_kws_v11.onnx</td></tr>
+                <tr><td>Dung lượng</td><td>555,751 bytes (~542.7 KB)</td></tr>
+                <tr><td>Expected SHA-256</td><td class="mono">54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99</td></tr>
+                <tr><td>Observed SHA-256</td><td class="mono">54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99</td></tr>
+                <tr><td>Trạng thái</td><td><span class="badge badge-pass">PASS</span></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECTION D: PREPROCESSING CONTRACT -->
+    <div class="card" style="margin-bottom: 24px;">
+        <h2>Mục D: Hợp Đồng Tiền Xử Lý Âm Thanh Đông Kết (Preprocessing Contract)</h2>
+        <div class="grid" style="margin-bottom: 0;">
+            <div>
+                <table>
+                    <tr><td>Audio Format</td><td>16 kHz, Mono, 1.0000 s (16.000 samples)</td></tr>
+                    <tr><td>Chuẩn hóa biên độ</td><td>Conditional Clamping (chỉ chia cực đại khi max|x| &gt; 1.0)</td></tr>
+                    <tr><td>Khuếch đại nền</td><td><span class="badge badge-pass">NGHIÊM CẤM (Floor Amp: False)</span></td></tr>
+                    <tr><td>STFT Window</td><td>Hann định kỳ, Win: 400 (25ms), Hop: 160 (10ms)</td></tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr><td>FFT Size & Mel</td><td>N_fft=512, 40 Mel bins (20 - 8000 Hz, Slaney)</td></tr>
+                    <tr><td>Nén Logarit</td><td>log_e(Mel + 1e-6) &rarr; Tensor [1, 1, 40, 101]</td></tr>
+                    <tr><td>Không gian nhãn</td><td>TRAI, PHAI, LEN, XUONG, REJECT</td></tr>
+                    <tr><td>Ngưỡng kích hoạt</td><td><strong>&theta;<sub>cmd</sub> = 0.20</strong> (argmax over commands)</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTIONS E & F: PHASE 13.3 & GOVERNANCE BOUNDARIES -->
+    <div class="grid">
+        <div class="card">
+            <h2>Mục E: Kết Quả Xác Nhận Phase 13.3 (Dữ Liệu Tổng Hợp)</h2>
+            <div style="font-size: 11px; color: var(--warning); margin-bottom: 10px;">
+                *Kết quả thẩm định lịch sử trên 1.000 clips âm thanh tổng hợp Vieneu TTS v3-Turbo (8 giọng Bắc mới lạ).
+            </div>
+            <table>
+                <tr>
+                    <td>Five-Class Accuracy</td>
+                    <td>
+                        <div class="metric-hero">
+                            <span class="metric-value" style="color: var(--success);">99.20%</span>
+                            <span class="metric-sub">(992/1000)</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Command Recall</td>
+                    <td>
+                        <div class="metric-hero">
+                            <span class="metric-value" style="color: var(--success);">99.00%</span>
+                            <span class="metric-sub">(198/200)</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Non-Target FAR</td>
+                    <td>
+                        <div class="metric-hero">
+                            <span class="metric-value" style="color: var(--accent);">0.75%</span>
+                            <span class="metric-sub">(6/800)</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Command Confusion</td>
+                    <td>
+                        <div class="metric-hero">
+                            <span class="metric-value" style="color: var(--warning);">1.00%</span>
+                            <span class="metric-sub">(2/200 clips - Flagged)</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CPU Latency</td>
+                    <td>Mean 1.80 ms, P95 2.12 ms (Budget: &le; 50 ms)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Mục F: Ba Ranh Giới Quản Trị Bắt Buộc (Governance Labels)</h2>
+            <div class="gov-box">
+                <span class="badge badge-danger">NOT_VALIDATED_ON_NATURAL_SPEECH</span>
+                <p style="font-size: 12px; color: var(--text-muted); margin: 6px 0 0 0;">
+                    Mô hình mới chỉ được kiểm định trên âm thanh tổng hợp Vieneu TTS v3-Turbo kết hợp nhiễu nhân tạo; chưa từng được kiểm nghiệm trên giọng người thật nói tự nhiên có bản quyền/đồng thuận. Phase 90 chỉ có 1 người chấm bài.
+                </p>
+            </div>
+            <div class="gov-box">
+                <span class="badge badge-warn">NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION</span>
+                <p style="font-size: 12px; color: var(--text-muted); margin: 6px 0 0 0;">
+                    Mô hình hoạt động trên đoạn âm thanh cố định 1.0 giây (Bounded-Utterance); chưa có engine VAD và bộ đệm vòng (ring buffer) để nhận dạng micro mở liên tục.
+                </p>
+            </div>
+            <div class="gov-box">
+                <span class="badge badge-info">NOT_VALIDATED_PENDING_DATA</span>
+                <p style="font-size: 12px; color: var(--text-muted); margin: 6px 0 0 0;">
+                    Mới chỉ kiểm định độc lập trên phương ngữ Miền Bắc; phương ngữ Miền Trung và Miền Nam chưa được kiểm định do thiếu dữ liệu độc lập (theo Sửa đổi Giao thức 13.1-A).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION G: LIVE VERIFICATION -->
+    <div class="card" style="margin-bottom: 24px;">
+        <h2>Mục G: Trạng Thái Kiểm Thử Trực Tiếp (Live Verification & Test Status)</h2>
+        <div style="margin-bottom: 14px; font-size: 13px;">
+            <strong>Lệnh kiểm thử vừa thực thi:</strong> <code class="mono">D:\trainidentificationaudio\.venv\Scripts\python.exe -m pytest tests/test_vieneu_research_v13_4.py -v</code><br/>
+            <strong>Thời gian thực thi:</strong> 3.33s &bull;
+            <strong>Mã thoát (Exit Code):</strong> <span class="badge badge-pass">0 (PASS)</span> &bull;
+            <strong>Số bài test:</strong> <span style="color: var(--success); font-weight: 700;">5 passed</span>, 0 failed, 0 skipped.
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tên Fixture Âm Thanh</th>
+                    <th>Dự Đoán PyTorch</th>
+                    <th>Dự Đoán ONNX</th>
+                    <th>Độ Trễ PyTorch</th>
+                    <th>Độ Trễ ONNX</th>
+                    <th>Trạng Thái Đẳng Cấu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mono">dev_01_digital_silence.wav</td>
+                    <td><span class="badge badge-info">REJECT</span></td>
+                    <td><span class="badge badge-info">REJECT</span></td>
+                    <td>5.46 ms</td>
+                    <td>3.15 ms</td>
+                    <td><span class="badge badge-pass">PASS</span></td>
+                </tr>
+                <tr>
+                    <td class="mono">dev_02_quiet_ambient_room.wav</td>
+                    <td><span class="badge badge-info">REJECT</span></td>
+                    <td><span class="badge badge-info">REJECT</span></td>
+                    <td>2.13 ms</td>
+                    <td>2.56 ms</td>
+                    <td><span class="badge badge-pass">PASS</span></td>
+                </tr>
+                <tr>
+                    <td class="mono">dev_03_attenuated_trai_peak010.wav</td>
+                    <td><span class="badge badge-info">REJECT</span></td>
+                    <td><span class="badge badge-info">REJECT</span></td>
+                    <td>1.78 ms</td>
+                    <td>2.58 ms</td>
+                    <td><span class="badge badge-pass">PASS</span></td>
+                </tr>
+                <tr>
+                    <td class="mono">dev_04_attenuated_phai_peak005.wav</td>
+                    <td><span class="badge badge-info">REJECT</span></td>
+                    <td><span class="badge badge-info">REJECT</span></td>
+                    <td>1.72 ms</td>
+                    <td>2.52 ms</td>
+                    <td><span class="badge badge-pass">PASS</span></td>
+                </tr>
+                <tr>
+                    <td class="mono">dev_05_normal_len_peak089.wav</td>
+                    <td><span class="badge badge-info">XUONG</span></td>
+                    <td><span class="badge badge-info">XUONG</span></td>
+                    <td>1.9 ms</td>
+                    <td>2.55 ms</td>
+                    <td><span class="badge badge-pass">PASS</span></td>
+                </tr>
+                <tr>
+                    <td class="mono">dev_06_normal_xuong_peak089.wav</td>
+                    <td><span class="badge badge-info">XUONG</span></td>
+                    <td><span class="badge badge-info">XUONG</span></td>
+                    <td>1.73 ms</td>
+                    <td>2.57 ms</td>
+                    <td><span class="badge badge-pass">PASS</span></td>
+                </tr>
+                <tr>
+                    <td class="mono">dev_07_high_amplitude_trai_peak180.wav</td>
+                    <td><span class="badge badge-info">LEN</span></td>
+                    <td><span class="badge badge-info">LEN</span></td>
+                    <td>1.69 ms</td>
+                    <td>2.5 ms</td>
+                    <td><span class="badge badge-pass">PASS</span></td>
+                </tr>
+                <tr>
+                    <td class="mono">dev_08_high_amplitude_xuong_peak250.wav</td>
+                    <td><span class="badge badge-info">XUONG</span></td>
+                    <td><span class="badge badge-info">XUONG</span></td>
+                    <td>1.71 ms</td>
+                    <td>2.51 ms</td>
+                    <td><span class="badge badge-pass">PASS</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- SECTION H: LIMITATIONS & DISCREPANCIES -->
+    <div class="callout">
+        <div class="callout-title">SỔ ĐĂNG KÝ BẤT ĐỒNG KỸ THUẬT (DISCREPANCY REGISTER)</div>
+        <ul style="margin: 6px 0 0 0; padding-left: 20px;">
+            <li style="margin-bottom: 8px;">
+                <strong>DISCREPANCY-01 &mdash; Phase 13.3 Command Confusion Rate (0.00% vs 1.00%):</strong> Một số tài liệu tóm tắt cũ ghi 'Command Confusion Rate: 0.00% (0/200)'. Tuy nhiên, báo cáo chi tiết PHASE13_3_CONFIRMATORY_EVALUATION.md Mục 5.3 (Ma trận 5x5) ghi nhận có 2 mẫu lệnh bị nhầm sang lệnh khác: v13_conf_cmd_trai_006 (TRAI -> PHAI, conf 0.284) và v13_conf_cmd_len_007 (LEN -> PHAI, conf 0.219). Tỷ lệ nhầm lệnh thực tế là 2/200 = 1.00%, không phải 0.00%.<br/>
+                <span style="color: var(--text-muted); font-size: 12px;">Ảnh hưởng: Không ảnh hưởng tới việc đạt tiêu chuẩn nghiệm thu (chuẩn cho phép <= 1.00%), nhưng cần ghi nhận minh bạch số liệu thực tế. | Trạng thái: <code>FLAGGED_AND_CLARIFIED</code></span>
+            </li>
+            <li style="margin-bottom: 8px;">
+                <strong>DISCREPANCY-02 &mdash; Độ trễ Single-Clip Cold Start vs Steady State:</strong> Trong bài kiểm thử test_infer_cli_parity_and_latency, lần suy luận đầu tiên trên dev_files[0] khi chưa nạp bộ nhớ đệm (cold start) có thể đạt 57.02 ms (vượt nhẹ ngưỡng 50 ms). Ở trạng thái steady-state (warm run), độ trễ PyTorch là 1.39 ms - 2.10 ms và ONNX là 2.27 ms - 3.24 ms.<br/>
+                <span style="color: var(--text-muted); font-size: 12px;">Ảnh hưởng: Cần lưu ý cơ chế JIT warmup khi triển khai thực tế trên vi xử lý. | Trạng thái: <code>DOCUMENTED</code></span>
+            </li>
+            <li style="margin-bottom: 8px;">
+                <strong>DISCREPANCY-03 &mdash; Lịch Sử Kích Thước Tệp Checkpoint & ONNX (v11 vs Baseline v10):</strong> Checkpoint đông kết v11 có kích thước 566,146 bytes (~552.9 KB) và ONNX là 555,751 bytes (~542.7 KB). Một số bảng tham chiếu cũ ghi kích thước 479,524 bytes và 485,498 bytes vốn thuộc về bản phát hành v10 trước đó.<br/>
+                <span style="color: var(--text-muted); font-size: 12px;">Ảnh hưởng: Đã cập nhật đúng số bytes thực tế và mã SHA-256 chính thống của bản phát hành v11. | Trạng thái: <code>CLARIFIED_IN_REPORT</code></span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ROADMAP -->
+    <div class="card">
+        <h2>Lộ Trình Kỹ Thuật Ưu Tiên Tiếp Theo (Prioritized Technical Roadmap)</h2>
+        <ol style="font-size: 13px; color: var(--text-muted); padding-left: 20px; margin: 0;">
+            <li style="margin-bottom: 4px;">1. Bảo toàn Checkpoint và Protocol Đông Kết (Zero-Tampering Invariant).</li>
+            <li style="margin-bottom: 4px;">2. Duy trì toàn vẹn hồ sơ bằng chứng và khả năng tái lập.</li>
+            <li style="margin-bottom: 4px;">3. Tìm nguồn TTS phương ngữ Miền Trung / Miền Nam đạt chuẩn provenance hoặc phê duyệt thu âm người thật.</li>
+            <li style="margin-bottom: 4px;">4. Triển khai chiến dịch thu âm người thật 3 miền (Bắc 40%, Trung 30%, Nam 30%) có cam kết đồng thuận pháp lý.</li>
+            <li style="margin-bottom: 4px;">5. Phân tích calibration (ECE) và tối ưu hóa ngưỡng kích hoạt theo từng phương ngữ.</li>
+            <li style="margin-bottom: 4px;">6. Nghiên cứu engine streaming micro mở riêng biệt: VAD C++, ring-buffer, debounce, đo đạc FA/hour.</li>
+            <li style="margin-bottom: 4px;">7. Triển khai và đo đạc trên phần cứng di động thực tế (Android NDK / iOS CoreAudio) và lượng tử hóa INT8.</li>
+        </ol>
+    </div>
+
+    <footer>
+        Báo cáo trạng thái kỹ thuật có thể kiểm chứng độc lập &bull; Dự án Vietnamese KWS CNN &bull; 2026-10-21 10:04:35 UTC+7
+    </footer>
+</div>
+</body>
+</html>

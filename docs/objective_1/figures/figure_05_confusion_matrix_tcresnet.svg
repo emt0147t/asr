@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="1000" height="680">
+  <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .code { font-family: 'JetBrains Mono', Consolas, Monaco, monospace; }
+    .shadow { filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.06)); }
+    .card-shadow { filter: drop-shadow(0px 2px 4px rgba(15, 23, 42, 0.08)); }
+</style>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="680" fill="url(#bgGrad5)" rx="16"/>
+
+  <text x="50" y="45" font-size="22" font-weight="700" fill="#F8FAFC">Figure 5: TC-ResNet-14 Confusion Matrix on Frozen Test Set (N = 534)</text>
+  <text x="50" y="70" font-size="13" fill="#94A3B8">Empirical Multi-Class Results on test_manifest_v2.csv &bull; 9 TRAI misclassified as PHAI (25.0% error rate)</text>
+
+  <!-- Predicted Class Header -->
+  <text x="575" y="105" font-size="14" font-weight="700" fill="#38BDF8" text-anchor="middle">PREDICTED CLASS</text>
+  
+  <g transform="translate(320, 115)">
+    <text x="40" y="15" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">TRAI</text>
+    <text x="125" y="15" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">PHAI</text>
+    <text x="210" y="15" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">LEN</text>
+    <text x="295" y="15" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">XUONG</text>
+    <text x="380" y="15" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">UNKNOWN</text>
+    <text x="465" y="15" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">SILENCE</text>
+  </g>
+
+  <!-- True Class Header -->
+  <text x="130" y="335" font-size="14" font-weight="700" fill="#38BDF8" text-anchor="middle" transform="rotate(-90 130 335)">TRUE CLASS</text>
+
+  <!-- Row Labels -->
+  <g transform="translate(180, 140)">
+    <text x="110" y="35" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="end">TRAI (N=36)</text>
+    <text x="110" y="100" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="end">PHAI (N=36)</text>
+    <text x="110" y="165" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="end">LEN (N=36)</text>
+    <text x="110" y="230" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="end">XUONG (N=36)</text>
+    <text x="110" y="295" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="end">UNKNOWN (N=300)</text>
+    <text x="110" y="360" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="end">SILENCE (N=90)</text>
+  </g>
+
+  <!-- Grid Cells -->
+  
+    <g transform="translate(320, 140)">
+      <rect width="80" height="60" rx="6" fill="#047857" stroke="#34D399" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">27</text>
+      <text x="40" y="48" font-size="10" fill="#FFFFFF" opacity="0.8" text-anchor="middle">75.0%</text>
+    </g>
+
+    <g transform="translate(405, 140)">
+      <rect width="80" height="60" rx="6" fill="#7F1D1D" stroke="#EF4444" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#FEE2E2" text-anchor="middle">9</text>
+      <text x="40" y="48" font-size="10" fill="#FEE2E2" opacity="0.8" text-anchor="middle">25.0%</text>
+    </g>
+
+    <g transform="translate(490, 140)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(575, 140)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(660, 140)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(745, 140)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(320, 205)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(405, 205)">
+      <rect width="80" height="60" rx="6" fill="#065F46" stroke="#10B981" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#ECFDF5" text-anchor="middle">36</text>
+      <text x="40" y="48" font-size="10" fill="#ECFDF5" opacity="0.8" text-anchor="middle">100.0%</text>
+    </g>
+
+    <g transform="translate(490, 205)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(575, 205)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(660, 205)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(745, 205)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(320, 270)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(405, 270)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(490, 270)">
+      <rect width="80" height="60" rx="6" fill="#065F46" stroke="#10B981" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#ECFDF5" text-anchor="middle">36</text>
+      <text x="40" y="48" font-size="10" fill="#ECFDF5" opacity="0.8" text-anchor="middle">100.0%</text>
+    </g>
+
+    <g transform="translate(575, 270)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(660, 270)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(745, 270)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(320, 335)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(405, 335)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(490, 335)">
+      <rect width="80" height="60" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#94A3B8" text-anchor="middle">2</text>
+      <text x="40" y="48" font-size="10" fill="#94A3B8" opacity="0.8" text-anchor="middle">5.6%</text>
+    </g>
+
+    <g transform="translate(575, 335)">
+      <rect width="80" height="60" rx="6" fill="#047857" stroke="#34D399" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">34</text>
+      <text x="40" y="48" font-size="10" fill="#FFFFFF" opacity="0.8" text-anchor="middle">94.4%</text>
+    </g>
+
+    <g transform="translate(660, 335)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(745, 335)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(320, 400)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(405, 400)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(490, 400)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(575, 400)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(660, 400)">
+      <rect width="80" height="60" rx="6" fill="#065F46" stroke="#10B981" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#ECFDF5" text-anchor="middle">293</text>
+      <text x="40" y="48" font-size="10" fill="#ECFDF5" opacity="0.8" text-anchor="middle">97.7%</text>
+    </g>
+
+    <g transform="translate(745, 400)">
+      <rect width="80" height="60" rx="6" fill="#7F1D1D" stroke="#EF4444" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#FEE2E2" text-anchor="middle">7</text>
+      <text x="40" y="48" font-size="10" fill="#FEE2E2" opacity="0.8" text-anchor="middle">2.3%</text>
+    </g>
+
+    <g transform="translate(320, 465)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(405, 465)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(490, 465)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(575, 465)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(660, 465)">
+      <rect width="80" height="60" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+      <text x="40" y="48" font-size="10" fill="#475569" opacity="0.8" text-anchor="middle">0.0%</text>
+    </g>
+
+    <g transform="translate(745, 465)">
+      <rect width="80" height="60" rx="6" fill="#065F46" stroke="#10B981" stroke-width="1.5"/>
+      <text x="40" y="32" font-size="16" font-weight="700" fill="#ECFDF5" text-anchor="middle">90</text>
+      <text x="40" y="48" font-size="10" fill="#ECFDF5" opacity="0.8" text-anchor="middle">100.0%</text>
+    </g>
+
+  <!-- Callout box for TRAI -> PHAI error -->
+  <g transform="translate(845, 140)">
+    <rect width="130" height="120" rx="8" fill="#1E293B" stroke="#EF4444" stroke-width="1.5"/>
+    <text x="65" y="25" font-size="11" font-weight="700" fill="#F87171" text-anchor="middle">CRITICAL ERROR</text>
+    <text x="65" y="45" font-size="10" fill="#E2E8F0" text-anchor="middle">TRAI misclassified</text>
+    <text x="65" y="60" font-size="10" fill="#E2E8F0" text-anchor="middle">as PHAI (9 times)</text>
+    <text x="65" y="80" font-size="9" fill="#94A3B8" text-anchor="middle">Shared /aːj/ rhyme</text>
+    <text x="65" y="95" font-size="9" fill="#94A3B8" text-anchor="middle">Weak onset burst</text>
+    <text x="65" y="110" font-size="9" fill="#FCA5A5" text-anchor="middle">25.0% error rate</text>
+  </g>
+
+  <!-- Summary Statistics Footer -->
+  <rect x="180" y="555" width="790" height="90" rx="8" fill="#1E293B" stroke="#334155"/>
+  <text x="200" y="580" font-size="12" font-weight="700" fill="#38BDF8">Audited Metrics on 534 Verified Held-Out Test Samples:</text>
+  <text x="200" y="600" font-size="11" fill="#CBD5E1">&bull; Overall Accuracy: 96.63% (516 / 534 correct) &bull; Macro-F1 (6 Classes): 0.9402</text>
+  <text x="200" y="618" font-size="11" fill="#CBD5E1">&bull; Command-Only Recalls: TRAI = 75.0% &bull; PHAI = 100.0% &bull; LEN = 100.0% &bull; XUONG = 94.4%</text>
+  <text x="200" y="635" font-size="11" fill="#94A3B8">&bull; Rejection Recalls: UNKNOWN = 97.67% (293/300) &bull; SILENCE = 100.0% (90/90)</text>
+</svg>

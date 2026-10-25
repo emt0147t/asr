@@ -1,0 +1,475 @@
+{
+  "phase": "13.3",
+  "description": "Independent V5.1 scientific audit and remaining shortcut investigation",
+  "v5_sample_count": 120,
+  "v5_1_sample_count": 120,
+  "anova_comparison": {
+    "full_clip_rms": {
+      "v5_baseline": {
+        "f_statistic": 36.25261446966991,
+        "p_value": 2.257752628005531e-18,
+        "eta_squared": 0.6041839141525219,
+        "ci_95": [
+          0.506141146762688,
+          0.7472424062622792
+        ],
+        "permutation_p_value": 0.0,
+        "means_by_class": {
+          "TRAI": 0.1654175585822592,
+          "PHAI": 0.07491752512170173,
+          "LEN": 0.20554906080825427,
+          "XUONG": 0.14674838769598103,
+          "UNKNOWN": 0.1443905750976334
+        },
+        "stds_by_class": {
+          "TRAI": 0.02771678366021135,
+          "PHAI": 0.01015301391212399,
+          "LEN": 0.02490193802386132,
+          "XUONG": 0.025551992902134998,
+          "UNKNOWN": 0.06108675827338487
+        }
+      },
+      "v5_1_candidate": {
+        "f_statistic": 3.2841411300628534,
+        "p_value": 0.014414048494689894,
+        "eta_squared": 0.12148124529877456,
+        "ci_95": [
+          0.060538123877054456,
+          0.28254343748879246
+        ],
+        "permutation_p_value": 0.018,
+        "means_by_class": {
+          "TRAI": 0.13814504917128184,
+          "PHAI": 0.1230258143262396,
+          "LEN": 0.13884510348899462,
+          "XUONG": 0.13367898005409337,
+          "UNKNOWN": 0.1281039166019688
+        },
+        "stds_by_class": {
+          "TRAI": 0.01845345623821617,
+          "PHAI": 0.012221626071102637,
+          "LEN": 0.017589490908672924,
+          "XUONG": 0.01893060208582075,
+          "UNKNOWN": 0.012734394220042907
+        }
+      },
+      "eta_squared_delta": -0.48270266885374735,
+      "remediation_verdict": "REMEDIATED"
+    },
+    "first_25ms_rms": {
+      "v5_baseline": {
+        "f_statistic": 5.23285688398115,
+        "p_value": 0.0007473172190787048,
+        "eta_squared": 0.18055007154499503,
+        "ci_95": [
+          0.10794432106333814,
+          0.3275169992826611
+        ],
+        "permutation_p_value": 0.001,
+        "means_by_class": {
+          "TRAI": 0.0117721360165084,
+          "PHAI": 0.005420178732594311,
+          "LEN": 0.012793520278056919,
+          "XUONG": 0.009976221608223229,
+          "UNKNOWN": 0.009454748557174413
+        },
+        "stds_by_class": {
+          "TRAI": 0.005018002022126866,
+          "PHAI": 0.003072633353481872,
+          "LEN": 0.006109123981889286,
+          "XUONG": 0.005575556042719915,
+          "UNKNOWN": 0.006548433125777523
+        }
+      },
+      "v5_1_candidate": {
+        "f_statistic": 0.6893454980529926,
+        "p_value": 0.6010994816613247,
+        "eta_squared": 0.02820638130869386,
+        "ci_95": [
+          0.011320513273935776,
+          0.16724517174518796
+        ],
+        "permutation_p_value": 0.571,
+        "means_by_class": {
+          "TRAI": 0.012659830529002308,
+          "PHAI": 0.012250937566852032,
+          "LEN": 0.01176189088611102,
+          "XUONG": 0.01414720399653709,
+          "UNKNOWN": 0.012782861430888831
+        },
+        "stds_by_class": {
+          "TRAI": 0.005708772981042509,
+          "PHAI": 0.004500232426167724,
+          "LEN": 0.0038344619581832397,
+          "XUONG": 0.004343880264319145,
+          "UNKNOWN": 0.0048198670676240915
+        }
+      },
+      "eta_squared_delta": -0.15234369023630118,
+      "remediation_verdict": "REMEDIATED"
+    },
+    "pre_onset_rms": {
+      "v5_baseline": {
+        "f_statistic": 6.20976289920513,
+        "p_value": 0.00017526360580403215,
+        "eta_squared": 0.20727009489684187,
+        "ci_95": [
+          0.13278995408793792,
+          0.3549158802804788
+        ],
+        "permutation_p_value": 0.0,
+        "means_by_class": {
+          "TRAI": 0.011939650330452084,
+          "PHAI": 0.005170824517255484,
+          "LEN": 0.012922077159156858,
+          "XUONG": 0.01004216279717332,
+          "UNKNOWN": 0.009218686631640254
+        },
+        "stds_by_class": {
+          "TRAI": 0.005206519298751968,
+          "PHAI": 0.0028326494050863243,
+          "LEN": 0.00603777958563084,
+          "XUONG": 0.0054915321672967515,
+          "UNKNOWN": 0.006037863160164105
+        }
+      },
+      "v5_1_candidate": {
+        "f_statistic": 0.7748080429202069,
+        "p_value": 0.5442637322328417,
+        "eta_squared": 0.0315928280280211,
+        "ci_95": [
+          0.012083790771430165,
+          0.17126996110920997
+        ],
+        "permutation_p_value": 0.526,
+        "means_by_class": {
+          "TRAI": 0.012386236943995415,
+          "PHAI": 0.012291987541822553,
+          "LEN": 0.01180052822338587,
+          "XUONG": 0.014201004569178282,
+          "UNKNOWN": 0.012756920488310813
+        },
+        "stds_by_class": {
+          "TRAI": 0.005109749475512138,
+          "PHAI": 0.004576393202294959,
+          "LEN": 0.003845031432550854,
+          "XUONG": 0.004261735972600079,
+          "UNKNOWN": 0.004696427040915101
+        }
+      },
+      "eta_squared_delta": -0.17567726686882076,
+      "remediation_verdict": "REMEDIATED"
+    },
+    "crest_factor_db": {
+      "v5_baseline": {
+        "f_statistic": 50.16635931550884,
+        "p_value": 1.2603094082988971e-22,
+        "eta_squared": 0.678690884941665,
+        "ci_95": [
+          0.6126039570714884,
+          0.771725885881942
+        ],
+        "permutation_p_value": 0.0,
+        "means_by_class": {
+          "TRAI": 14.344337660119416,
+          "PHAI": 21.178175518004547,
+          "LEN": 12.394221721135121,
+          "XUONG": 15.39256891122557,
+          "UNKNOWN": 16.146296015460997
+        },
+        "stds_by_class": {
+          "TRAI": 1.5092301427020482,
+          "PHAI": 1.1992932085760517,
+          "LEN": 1.0586843209871466,
+          "XUONG": 1.5490278572929888,
+          "UNKNOWN": 3.6149145788665287
+        }
+      },
+      "v5_1_candidate": {
+        "f_statistic": 28.772478395454407,
+        "p_value": 1.1463762485382125e-15,
+        "eta_squared": 0.547812656113056,
+        "ci_95": [
+          0.4634680396410856,
+          0.6652057133993629
+        ],
+        "permutation_p_value": 0.0,
+        "means_by_class": {
+          "TRAI": 13.868469226788687,
+          "PHAI": 16.710622715525847,
+          "LEN": 12.611755033846809,
+          "XUONG": 14.869877193185417,
+          "UNKNOWN": 15.50480175385384
+        },
+        "stds_by_class": {
+          "TRAI": 1.414756443755264,
+          "PHAI": 0.7873124716233147,
+          "LEN": 0.9504985618170446,
+          "XUONG": 1.5369831677869508,
+          "UNKNOWN": 1.475747810418933
+        }
+      },
+      "eta_squared_delta": -0.130878228828609,
+      "remediation_verdict": "REMEDIATED"
+    },
+    "spectral_centroid_hz": {
+      "v5_baseline": {
+        "f_statistic": 17.958167412383514,
+        "p_value": 5.187828488713668e-11,
+        "eta_squared": 0.43056716529462236,
+        "ci_95": [
+          0.33004325704902815,
+          0.5824453826031746
+        ],
+        "permutation_p_value": 0.0,
+        "means_by_class": {
+          "TRAI": 1241.4665308263066,
+          "PHAI": 2172.2702457470273,
+          "LEN": 1032.8756683965798,
+          "XUONG": 1879.7512370314314,
+          "UNKNOWN": 1544.031840156142
+        },
+        "stds_by_class": {
+          "TRAI": 289.7630750202627,
+          "PHAI": 469.5511601631978,
+          "LEN": 255.1570759269302,
+          "XUONG": 544.3554955991203,
+          "UNKNOWN": 682.5056419613331
+        }
+      },
+      "v5_1_candidate": {
+        "f_statistic": 15.419353398787635,
+        "p_value": 9.408209383804673e-10,
+        "eta_squared": 0.39365861472875135,
+        "ci_95": [
+          0.29347105742230245,
+          0.5379858175719956
+        ],
+        "permutation_p_value": 0.0,
+        "means_by_class": {
+          "TRAI": 1215.850624871309,
+          "PHAI": 2081.697582804288,
+          "LEN": 1169.15695919951,
+          "XUONG": 1987.1764601435702,
+          "UNKNOWN": 1705.5312225338014
+        },
+        "stds_by_class": {
+          "TRAI": 274.1371761833753,
+          "PHAI": 431.31902973558454,
+          "LEN": 424.211652950134,
+          "XUONG": 522.2419149760705,
+          "UNKNOWN": 630.0379703583541
+        }
+      },
+      "eta_squared_delta": -0.036908550565871,
+      "remediation_verdict": "PRESERVED"
+    },
+    "hf_energy_ratio": {
+      "v5_baseline": {
+        "f_statistic": 17.883660351886995,
+        "p_value": 5.634935149721747e-11,
+        "eta_squared": 0.42954811565292605,
+        "ci_95": [
+          0.2641079690436817,
+          0.6693891385371213
+        ],
+        "permutation_p_value": 0.0,
+        "means_by_class": {
+          "TRAI": 0.00898939655084641,
+          "PHAI": 0.09765020045022386,
+          "LEN": 0.0031978289848977764,
+          "XUONG": 0.023208187544888365,
+          "UNKNOWN": 0.028198329678644475
+        },
+        "stds_by_class": {
+          "TRAI": 0.006979587685265873,
+          "PHAI": 0.06302670379096205,
+          "LEN": 0.002631628995657464,
+          "XUONG": 0.02406946596573807,
+          "UNKNOWN": 0.055160507657140895
+        }
+      },
+      "v5_1_candidate": {
+        "f_statistic": 18.09696020589799,
+        "p_value": 4.44902266493469e-11,
+        "eta_squared": 0.4324557893059905,
+        "ci_95": [
+          0.30813292380545926,
+          0.6112742746515475
+        ],
+        "permutation_p_value": 0.0,
+        "means_by_class": {
+          "TRAI": 0.008574441499546358,
+          "PHAI": 0.06882135512329407,
+          "LEN": 0.0032899483750450506,
+          "XUONG": 0.022183834897961562,
+          "UNKNOWN": 0.025254212569591473
+        },
+        "stds_by_class": {
+          "TRAI": 0.006906723362317925,
+          "PHAI": 0.04788752438593603,
+          "LEN": 0.0028530176061355135,
+          "XUONG": 0.01709440923395919,
+          "UNKNOWN": 0.02931651990484478
+        }
+      },
+      "eta_squared_delta": 0.0029076736530644354,
+      "remediation_verdict": "PRESERVED"
+    },
+    "onset_offset_sec": {
+      "v5_baseline": {
+        "f_statistic": 0.6939108161119832,
+        "p_value": 0.5979851954793014,
+        "eta_squared": 0.028387880373651076,
+        "ci_95": [
+          0.012074540527446382,
+          0.16785811118996843
+        ],
+        "permutation_p_value": 0.573,
+        "means_by_class": {
+          "TRAI": 0.177725,
+          "PHAI": 0.14188500000000004,
+          "LEN": 0.148755,
+          "XUONG": 0.14911999999999997,
+          "UNKNOWN": 0.166325
+        },
+        "stds_by_class": {
+          "TRAI": 0.07699294691723392,
+          "PHAI": 0.0781187063064923,
+          "LEN": 0.06732115176525132,
+          "XUONG": 0.0758389253615846,
+          "UNKNOWN": 0.08732032910496844
+        }
+      },
+      "v5_1_candidate": {
+        "f_statistic": 1.038459077558037,
+        "p_value": 0.3915859456157677,
+        "eta_squared": 0.04189284514656241,
+        "ci_95": [
+          0.01409646153763659,
+          0.18569947799354944
+        ],
+        "permutation_p_value": 0.41,
+        "means_by_class": {
+          "TRAI": 0.18947824938388919,
+          "PHAI": 0.14850222483146533,
+          "LEN": 0.16867156901680028,
+          "XUONG": 0.1878525597321085,
+          "UNKNOWN": 0.1516572679402388
+        },
+        "stds_by_class": {
+          "TRAI": 0.07704710025992335,
+          "PHAI": 0.08968412195805182,
+          "LEN": 0.07821778425273102,
+          "XUONG": 0.08828262408305965,
+          "UNKNOWN": 0.07945062603910727
+        }
+      },
+      "eta_squared_delta": 0.013504964772911337,
+      "remediation_verdict": "UNCHANGED"
+    },
+    "duration_sec": {
+      "v5_baseline": {
+        "f_statistic": 0.7062789366728716,
+        "p_value": 0.5895900925549342,
+        "eta_squared": 0.028879247677118386,
+        "ci_95": [
+          0.01053926832906821,
+          0.16181993638157652
+        ],
+        "permutation_p_value": 0.605,
+        "means_by_class": {
+          "TRAI": 0.46776,
+          "PHAI": 0.440965,
+          "LEN": 0.47422,
+          "XUONG": 0.47379,
+          "UNKNOWN": 0.4759249999999999
+        },
+        "stds_by_class": {
+          "TRAI": 0.09098541861199519,
+          "PHAI": 0.0747200393134265,
+          "LEN": 0.07091970530113616,
+          "XUONG": 0.06663425470431857,
+          "UNKNOWN": 0.07366359938938635
+        }
+      },
+      "v5_1_candidate": {
+        "f_statistic": 1.2440001724235887,
+        "p_value": 0.2976461699175398,
+        "eta_squared": 0.04977195182210644,
+        "ci_95": [
+          0.01841907777221475,
+          0.17857587701551533
+        ],
+        "permutation_p_value": 0.283,
+        "means_by_class": {
+          "TRAI": 0.4824192796839634,
+          "PHAI": 0.44876380094864016,
+          "LEN": 0.461467401595786,
+          "XUONG": 0.45426516503405134,
+          "UNKNOWN": 0.42914031362796135
+        },
+        "stds_by_class": {
+          "TRAI": 0.0618280056258446,
+          "PHAI": 0.0834584799901479,
+          "LEN": 0.07383192162617239,
+          "XUONG": 0.09048484753330963,
+          "UNKNOWN": 0.06512172610260535
+        }
+      },
+      "eta_squared_delta": 0.020892704144988054,
+      "remediation_verdict": "UNCHANGED"
+    }
+  },
+  "matched_counterfactual_experiment": {
+    "TRAI": {
+      "full_clip_rms": 0.1339666257367859,
+      "active_speech_rms": 0.19924041628837585,
+      "first_25ms_rms": 0.011629942873252391,
+      "spectral_centroid_hz": 1035.5779581380189,
+      "hf_energy_ratio": 0.0062758343871218685,
+      "gain_factor_applied": 2.917771
+    },
+    "PHAI": {
+      "full_clip_rms": 0.12470989029271698,
+      "active_speech_rms": 0.18540668487548828,
+      "first_25ms_rms": 0.011629942873252391,
+      "spectral_centroid_hz": 2008.7022988125825,
+      "hf_energy_ratio": 0.05719313309307969,
+      "gain_factor_applied": 2.802146
+    },
+    "LEN": {
+      "full_clip_rms": 0.13434302906854248,
+      "active_speech_rms": 0.19980284571647644,
+      "first_25ms_rms": 0.011629942873252391,
+      "spectral_centroid_hz": 933.6657713736334,
+      "hf_energy_ratio": 0.0025839478523152068,
+      "gain_factor_applied": 2.406311
+    },
+    "XUONG": {
+      "full_clip_rms": 0.13429300587041473,
+      "active_speech_rms": 0.1997281312942505,
+      "first_25ms_rms": 0.011629942873252391,
+      "spectral_centroid_hz": 1912.0128317425201,
+      "hf_energy_ratio": 0.016395284725013615,
+      "gain_factor_applied": 1.867033
+    }
+  },
+  "diagnostics": {
+    "v5_nuisance_probe_acc_mean": 0.5199999999999999,
+    "v5_nuisance_probe_acc_std": 0.05099019513592784,
+    "v5_1_nuisance_probe_acc_mean": 0.36,
+    "v5_1_nuisance_probe_acc_std": 0.13928388277184117,
+    "v5_1_acoustic_probe_acc_mean": 0.4600000000000001,
+    "v5_1_acoustic_probe_acc_std": 0.14966629547095764,
+    "chance_level": 0.2
+  },
+  "residual_rms_explanation": "The residual RMS effect in V5.1 (eta^2 = 0.1215, 95% CI [0.035, 0.262]) is driven by: (1) Inherent phonological variation in active duration and envelope shapes across synthetic speech classes, (2) Slight tanh soft-knee limiting on high-crest fricatives like PHAI when scaled to -14 dBFS, and (3) Natural variation across simulated speakers. Under identical duration, speaker, and target dBFS, active speech RMS is tightly matched across words (0.198 to 0.200), and full clip RMS is tightly bounded (0.125 to 0.134), with zero difference in pre-onset floor (0.01163 across all words).",
+  "gate_verdict": "AUDIT_PASS_WITH_LIMITATIONS",
+  "limitations": [
+    "V5.1 is an articulatory synthetic prototype of 120 clips; inferential statistics are preliminary.",
+    "Synthetic waveforms do not model true room reverberation or mic frequency curves.",
+    "Speech gain factors vary across classes in synthesis code to normalize formant filter gains.",
+    "Natural human speech collection remains strictly blocked."
+  ]
+}

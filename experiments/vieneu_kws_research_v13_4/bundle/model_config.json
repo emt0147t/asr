@@ -1,0 +1,50 @@
+{
+  "model_name": "CorrectedVietnameseKWSNet",
+  "candidate_identifier": "variant_v11_hard_negative_weighted_seed42",
+  "phase_origin": "Phase 11 (Completed in Phase 13.4)",
+  "checkpoint_file": "checkpoint/variant_v11_hard_negative_weighted_seed42.pt",
+  "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+  "onnx_file": "onnx/vietnamese_kws_v11.onnx",
+  "onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+  "architecture": {
+    "type": "CNN_4Block_AdaptivePool",
+    "input_shape": [1, 1, 40, 101],
+    "conv_layers": [
+      {"block": 1, "in_channels": 1, "out_channels": 32, "kernel_size": 3, "padding": 1, "pool": "MaxPool2d(2,2)"},
+      {"block": 2, "in_channels": 32, "out_channels": 64, "kernel_size": 3, "padding": 1, "pool": "MaxPool2d(2,2)"},
+      {"block": 3, "in_channels": 64, "out_channels": 64, "kernel_size": 3, "padding": 1, "pool": "MaxPool2d(2,2)"},
+      {"block": 4, "in_channels": 64, "out_channels": 128, "kernel_size": 3, "padding": 1, "pool": "AdaptiveAvgPool2d((1,1))"}
+    ],
+    "dense_layers": [
+      {"layer": "fc1", "in_features": 128, "out_features": 64, "activation": "ReLU", "dropout": 0.3},
+      {"layer": "fc2", "in_features": 64, "out_features": 5, "activation": "Linear (Logits)"}
+    ],
+    "total_parameters": 135813,
+    "trainable_parameters": 135813
+  },
+  "classes": {
+    "num_classes": 5,
+    "class_order": ["TRAI", "PHAI", "LEN", "XUONG", "REJECT"],
+    "target_commands": ["TRAI", "PHAI", "LEN", "XUONG"],
+    "negative_class": "REJECT"
+  },
+  "decision_logic": {
+    "policy": "argmax_over_commands_with_calibrated_threshold",
+    "calibrated_theta_cmd": 0.20,
+    "formula": "If max(prob[TRAI], prob[PHAI], prob[LEN], prob[XUONG]) >= 0.20 then argmax command else REJECT"
+  },
+  "confirmatory_evaluation_summary": {
+    "dataset_size": 1000,
+    "overall_accuracy": 0.9920,
+    "aggregate_command_recall": 0.9900,
+    "non_target_far": 0.0075,
+    "mean_cpu_latency_ms": 1.80,
+    "p95_cpu_latency_ms": 2.12,
+    "verdict": "CONFIRMATORY_CRITERIA_PASSED"
+  },
+  "governance_tags": [
+    "FROZEN_CNN_RELEASE_CANDIDATE",
+    "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION"
+  ]
+}

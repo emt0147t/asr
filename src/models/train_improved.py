@@ -30,6 +30,7 @@ import time
 import json
 import random
 import argparse
+from typing import Optional
 import numpy as np
 import pandas as pd
 import soundfile as sf
@@ -167,16 +168,31 @@ def train_model(arch: str = "temporal_cnn",
                 epochs: int = 30,
                 batch_size: int = 64,
                 lr: float = 1e-3,
-                seed: int = 42):
+                seed: int = 42,
+                validation_profile: Optional[str] = None):
+    if validation_profile is None or str(validation_profile).strip() == "":
+        raise ValueError("Training halted: validation_profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+    active_profile = str(validation_profile).strip().lower()
+    if active_profile not in ("benchmark", "human_campaign"):
+        raise ValueError(f"Training halted: Unknown validation_profile '{active_profile}'. Permitted: ['benchmark', 'human_campaign']")
+
     set_seed(seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("=" * 65)
     print(f"TRAINING EXPERIMENT: Arch = {arch.upper()} | Augment = {augment_level.upper()}")
-    print(f"Device: {device} | Seed: {seed} | Epochs: {epochs} | LR: {lr}")
+    print(f"Device: {device} | Seed: {seed} | Epochs: {epochs} | LR: {lr} | Profile: {active_profile}")
     print("=" * 65)
 
     train_csv = Path("data/manifests/train_manifest_v2.csv")
     val_csv = Path("data/manifests/val_manifest_v2.csv")
+
+    # Enforce speaker-disjoint dataset boundary before training
+    from src.acquisition.campaign_validator import validate_split_manifests_preflight
+    df_tr = pd.read_csv(train_csv)
+    df_va = pd.read_csv(val_csv)
+    is_valid, split_errs, _ = validate_split_manifests_preflight(df_tr, df_va, validation_profile=active_profile)
+    if not is_valid:
+        raise ValueError(f"Training halted: Preflight split manifest validation failed: {split_errs}")
 
     train_dataset = VietnameseKWSDatasetV2(train_csv, is_train=True, augment_level=augment_level)
     val_dataset = VietnameseKWSDatasetV2(val_csv, is_train=False, augment_level="none")
@@ -302,7 +318,11 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size", type=int, default=64)
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--validation_profile", "--profile", dest="validation_profile", type=str, default=None, choices=["benchmark", "human_campaign"], help="Validation profile: benchmark or human_campaign (required)")
     args = parser.parse_args()
+    if not args.validation_profile:
+        print("[ERROR] --validation_profile or --profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+        sys.exit(1)
 
     train_model(
         arch=args.arch,
@@ -310,5 +330,6 @@ if __name__ == "__main__":
         epochs=args.epochs,
         batch_size=args.batch_size,
         lr=args.lr,
-        seed=args.seed
+        seed=args.seed,
+        validation_profile=args.validation_profile
     )

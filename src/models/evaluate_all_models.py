@@ -30,6 +30,7 @@ if str(Path.cwd()) not in sys.path:
 
 import time
 import json
+from typing import Optional
 import numpy as np
 import pandas as pd
 import soundfile as sf
@@ -151,12 +152,49 @@ def evaluate_checkpoint_on_test(ckpt_path: Path, arch: str, test_manifest_path: 
     }
 
 
-def main():
+def main(test_manifest_path_str: str = "data/manifests/test_manifest_v2.csv",
+         train_manifest_path_str: str = "data/manifests/train_manifest_v2.csv",
+         val_manifest_path_str: str = "data/manifests/val_manifest_v2.csv",
+         validation_profile: Optional[str] = None):
+    if validation_profile is None or str(validation_profile).strip() == "":
+        raise ValueError("Comprehensive evaluation halted: validation_profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+    active_profile = str(validation_profile).strip().lower()
+    if active_profile not in ("benchmark", "human_campaign"):
+        raise ValueError(f"Comprehensive evaluation halted: Unknown validation_profile '{active_profile}'. Permitted: ['benchmark', 'human_campaign']")
+
     print("=" * 65)
-    print("RUNNING COMPREHENSIVE HELD-OUT TEST EVALUATION ON V2 MANIFEST")
+    print(f"RUNNING COMPREHENSIVE HELD-OUT TEST EVALUATION ON V2 MANIFEST (Profile: {active_profile})")
     print("=" * 65)
 
-    test_manifest_path = Path("data/manifests/test_manifest_v2.csv")
+    if not test_manifest_path_str:
+        raise ValueError("Comprehensive evaluation halted: Test manifest path is required.")
+    if not train_manifest_path_str:
+        raise ValueError("Comprehensive evaluation halted: Train manifest path is required for held-out test isolation.")
+    if not val_manifest_path_str:
+        raise ValueError("Comprehensive evaluation halted: Validation manifest path is required for held-out test isolation.")
+
+    test_manifest_path = Path(test_manifest_path_str)
+    train_manifest_path = Path(train_manifest_path_str)
+    val_manifest_path = Path(val_manifest_path_str)
+
+    if not test_manifest_path.exists():
+        raise FileNotFoundError(f"Comprehensive evaluation halted: Missing test manifest: {test_manifest_path}")
+    if not train_manifest_path.exists():
+        raise FileNotFoundError(f"Comprehensive evaluation halted: Missing train manifest required for held-out test isolation: {train_manifest_path}")
+    if not val_manifest_path.exists():
+        raise FileNotFoundError(f"Comprehensive evaluation halted: Missing val manifest required for held-out test isolation: {val_manifest_path}")
+
+    from src.acquisition.campaign_validator import validate_split_manifests_preflight
+    try:
+        df_tr = pd.read_csv(train_manifest_path)
+        df_va = pd.read_csv(val_manifest_path)
+        df_te = pd.read_csv(test_manifest_path)
+    except Exception as e:
+        raise ValueError(f"Comprehensive evaluation halted: Could not read split manifests for isolation check: {e}") from e
+
+    is_valid, split_errs, _ = validate_split_manifests_preflight(df_tr, df_va, df_te, validation_profile=active_profile)
+    if not is_valid:
+        raise ValueError(f"Comprehensive evaluation halted: Test partition violates disjointness boundary: {split_errs}")
 
     experiments = [
         {"name": "Phase 2 Baseline (Historical)", "ckpt": Path("models/checkpoints/best_kws_model.pt"), "arch": "baseline"},
@@ -286,4 +324,19 @@ Rows = Ground Truth; Columns = Model Predictions:
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Evaluate All Models on V2 Held-out Test")
+    parser.add_argument("--test-manifest", type=str, default="data/manifests/test_manifest_v2.csv")
+    parser.add_argument("--train-manifest", type=str, default="data/manifests/train_manifest_v2.csv")
+    parser.add_argument("--val-manifest", type=str, default="data/manifests/val_manifest_v2.csv")
+    parser.add_argument("--validation-profile", "--profile", dest="validation_profile", type=str, default=None, choices=["benchmark", "human_campaign"], help="Validation profile: benchmark or human_campaign (required)")
+    args = parser.parse_args()
+    if not args.validation_profile:
+        print("[ERROR] --validation-profile or --profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+        sys.exit(1)
+    main(
+        test_manifest_path_str=args.test_manifest,
+        train_manifest_path_str=args.train_manifest,
+        val_manifest_path_str=args.val_manifest,
+        validation_profile=args.validation_profile
+    )

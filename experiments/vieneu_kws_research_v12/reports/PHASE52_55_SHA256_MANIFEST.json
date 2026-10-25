@@ -1,0 +1,72 @@
+{
+  "experiments\\vieneu_kws_research_v12\\reports\\PHASE52_55_TRACKA_METRIC_AUDIT.md": {
+    "filename": "PHASE52_55_TRACKA_METRIC_AUDIT.md",
+    "sha256": "0df1b36776a1d1303d773d3dd0d35e241ab27aa1705a1800bcc9f817bb0a74a0",
+    "size_bytes": 12944
+  },
+  "experiments\\vieneu_kws_research_v12\\reports\\phase52_trackA_reconciliation.json": {
+    "filename": "phase52_trackA_reconciliation.json",
+    "sha256": "4c905a8c030ab3a09612ea58a5314fcc8397dd02eff37a8b96b5b6685bf01d79",
+    "size_bytes": 7521
+  },
+  "experiments\\vieneu_kws_research_v12\\reports\\phase52_per_clip_predictions.csv": {
+    "filename": "phase52_per_clip_predictions.csv",
+    "sha256": "840996c7a49b94c94adfedce1b83b19b0e1bab56996a0d61ca0ad08dc94751a8",
+    "size_bytes": 246890
+  },
+  "experiments\\vieneu_kws_research_v12\\reports\\PHASE52_55_REJECT_BIAS_ANALYSIS.md": {
+    "filename": "PHASE52_55_REJECT_BIAS_ANALYSIS.md",
+    "sha256": "c13d356ac2e9cd96805fdf4aa36bb06e14d7dee4d7eb9abfb77c78b6d2a6da19",
+    "size_bytes": 14324
+  },
+  "experiments\\vieneu_kws_research_v12\\reports\\phase53_reject_bias_distributions.json": {
+    "filename": "phase53_reject_bias_distributions.json",
+    "sha256": "b7e5614f18fc119bd11a3bbb676dc4c40741f63e18477efe7292f5fb0bd2f611",
+    "size_bytes": 27911
+  },
+  "experiments\\vieneu_kws_research_v12\\reports\\PHASE54_D3_TRAINING_PREREGISTRATION.md": {
+    "filename": "PHASE54_D3_TRAINING_PREREGISTRATION.md",
+    "sha256": "bc5c2fc59ca6042f70d7f7ff4819f77c2dc1aab5f07dbbf61ebcbb7b466c0410",
+    "size_bytes": 7280
+  },
+  "experiments\\vieneu_kws_research_v12\\reports\\PHASE54_D3_RUN_LEDGER.csv": {
+    "filename": "PHASE54_D3_RUN_LEDGER.csv",
+    "sha256": "98d6b58520864fbb1c4b0cd5a8ce50519e0af330622174ac9884db94c9d480ba",
+    "size_bytes": 882
+  },
+  "experiments\\vieneu_kws_research_v12\\scripts\\train_phase54_d3.py": {
+    "filename": "train_phase54_d3.py",
+    "sha256": "836d33b3a09d9cf81300ce3153acf3d52ddb0f2a90d1e57ddd0e9c48b6a2c565",
+    "size_bytes": 20023
+  },
+  "experiments\\vieneu_kws_research_v12\\training_phase54_d3\\D3_A_seed42\\best_checkpoint.pt": {
+    "filename": "best_checkpoint.pt",
+    "sha256": "56a3627204986e0f584d0e95fd84762382bb073eb7b9f18945c26a13a5027e7e",
+    "size_bytes": 565634
+  },
+  "experiments\\vieneu_kws_research_v12\\training_phase54_d3\\D3_B_seed42\\best_checkpoint.pt": {
+    "filename": "best_checkpoint.pt",
+    "sha256": "b2e0ac163ca2fbd543f590ff0efce8351de91c4732470b653dab0fdf13ca44af",
+    "size_bytes": 565634
+  },
+  "experiments\\vieneu_kws_research_v12\\training_phase54_d3\\D3_C_seed42\\best_checkpoint.pt": {
+    "filename": "best_checkpoint.pt",
+    "sha256": "da5b414328c33644b07c0667c3f9926637baa5f1672119f86393182c53c38ba6",
+    "size_bytes": 565634
+  },
+  "experiments\\vieneu_kws_research_v12\\reports\\PHASE55_VALIDATION_COMPARISON.md": {
+    "filename": "PHASE55_VALIDATION_COMPARISON.md",
+    "sha256": "1b69ed12015001f385a1a86b884fd5e551913ee50eb36d6ba548c5f1ebce3062",
+    "size_bytes": 8533
+  },
+  "experiments\\vieneu_kws_research_v12\\reports\\phase55_validation_comparison.json": {
+    "filename": "phase55_validation_comparison.json",
+    "sha256": "f1d7c097cb82bcf03a176c7ceb349eea017e7da741e8865cdb62af8d03051eec",
+    "size_bytes": 7650
+  },
+  "experiments\\vieneu_kws_research_v12\\reports\\PHASE55_CONFIRMATORY_EVALUATION_PREREGISTRATION.md": {
+    "filename": "PHASE55_CONFIRMATORY_EVALUATION_PREREGISTRATION.md",
+    "sha256": "763d93ca46906a6db2f812ecf720e84fdca582247f1aee808526cbb78487fc4d",
+    "size_bytes": 7022
+  }
+}

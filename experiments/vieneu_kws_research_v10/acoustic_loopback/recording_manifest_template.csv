@@ -1,0 +1,1 @@
+capture_id,timestamp_utc,source_clip_id,source_audio_sha256,playback_device_id,recording_device_id,sample_rate,channel_count,duration_sec,distance_meters,room_notes,preamp_gain_db,clipping_detected_yn,captured_wav_path,captured_sha256,status

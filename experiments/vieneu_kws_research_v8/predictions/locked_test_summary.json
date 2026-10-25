@@ -1,0 +1,1538 @@
+{
+  "variant_w10": {
+    "seed42": {
+      "calibrated_params": {
+        "theta_cmd": 0.4
+      },
+      "metrics": {
+        "macro_command_recall": 1.0,
+        "micro_command_recall": 1.0,
+        "recall_95ci": [
+          0.9766,
+          1.0
+        ],
+        "false_rejection_rate": 0.0,
+        "non_target_false_acceptance_rate": 0.0268,
+        "far_95ci": [
+          0.0163,
+          0.0437
+        ],
+        "raw_false_acceptance_count": 15,
+        "non_target_denominator": 560,
+        "non_target_rejection_rate": 0.9732,
+        "overall_5class_accuracy": 0.9792,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "all_keywords_ge_95": true,
+        "meets_strict_criteria": true,
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 4,
+            "PHAI": 3,
+            "LEN": 0,
+            "XUONG": 8,
+            "REJECT": 545
+          }
+        },
+        "breakdown_by_family": {
+          "target_command": {
+            "total": 160,
+            "correct": 160,
+            "fa": 0
+          },
+          "minimal_pair_tone": {
+            "total": 96,
+            "correct": 0,
+            "fa": 2
+          },
+          "minimal_pair_consonant": {
+            "total": 120,
+            "correct": 0,
+            "fa": 4
+          },
+          "minimal_pair_vowel_coda": {
+            "total": 120,
+            "correct": 0,
+            "fa": 2
+          },
+          "phonetic_phrase_context": {
+            "total": 144,
+            "correct": 0,
+            "fa": 7
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        },
+        "breakdown_by_voice": {
+          "Kim Thanh": {
+            "total": 160,
+            "correct": 40,
+            "fa": 3
+          },
+          "Qu\u1ed1c Tu\u1ea5n": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "Qu\u1ef3nh Anh": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "\u0110\u1ee9c Tr\u00ed": {
+            "total": 160,
+            "correct": 40,
+            "fa": 12
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 1.73,
+        "median_ms": 1.7,
+        "p90_ms": 1.76,
+        "p99_ms": 2.02,
+        "max_ms": 35.81,
+        "total_e2e_perceived_mean_ms": 1001.73,
+        "meets_50ms_budget": true
+      }
+    },
+    "seed43": {
+      "calibrated_params": {
+        "theta_cmd": 0.5
+      },
+      "metrics": {
+        "macro_command_recall": 0.9938,
+        "micro_command_recall": 0.9938,
+        "recall_95ci": [
+          0.9655,
+          0.9989
+        ],
+        "false_rejection_rate": 0.0062,
+        "non_target_false_acceptance_rate": 0.0161,
+        "far_95ci": [
+          0.0085,
+          0.0303
+        ],
+        "raw_false_acceptance_count": 9,
+        "non_target_denominator": 560,
+        "non_target_rejection_rate": 0.9839,
+        "overall_5class_accuracy": 0.9861,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "all_keywords_ge_95": true,
+        "meets_strict_criteria": true,
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 1,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 1,
+            "PHAI": 1,
+            "LEN": 0,
+            "XUONG": 7,
+            "REJECT": 551
+          }
+        },
+        "breakdown_by_family": {
+          "target_command": {
+            "total": 160,
+            "correct": 159,
+            "fa": 0
+          },
+          "minimal_pair_tone": {
+            "total": 96,
+            "correct": 0,
+            "fa": 1
+          },
+          "minimal_pair_consonant": {
+            "total": 120,
+            "correct": 0,
+            "fa": 0
+          },
+          "minimal_pair_vowel_coda": {
+            "total": 120,
+            "correct": 0,
+            "fa": 1
+          },
+          "phonetic_phrase_context": {
+            "total": 144,
+            "correct": 0,
+            "fa": 7
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        },
+        "breakdown_by_voice": {
+          "Kim Thanh": {
+            "total": 160,
+            "correct": 39,
+            "fa": 0
+          },
+          "Qu\u1ed1c Tu\u1ea5n": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "Qu\u1ef3nh Anh": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "\u0110\u1ee9c Tr\u00ed": {
+            "total": 160,
+            "correct": 40,
+            "fa": 9
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 1.76,
+        "median_ms": 1.7,
+        "p90_ms": 1.89,
+        "p99_ms": 2.7,
+        "max_ms": 8.2,
+        "total_e2e_perceived_mean_ms": 1001.76,
+        "meets_50ms_budget": true
+      }
+    },
+    "seed44": {
+      "calibrated_params": {
+        "theta_cmd": 0.35
+      },
+      "metrics": {
+        "macro_command_recall": 1.0,
+        "micro_command_recall": 1.0,
+        "recall_95ci": [
+          0.9766,
+          1.0
+        ],
+        "false_rejection_rate": 0.0,
+        "non_target_false_acceptance_rate": 0.0179,
+        "far_95ci": [
+          0.0097,
+          0.0326
+        ],
+        "raw_false_acceptance_count": 10,
+        "non_target_denominator": 560,
+        "non_target_rejection_rate": 0.9821,
+        "overall_5class_accuracy": 0.9861,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "all_keywords_ge_95": true,
+        "meets_strict_criteria": true,
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 2,
+            "PHAI": 3,
+            "LEN": 0,
+            "XUONG": 5,
+            "REJECT": 550
+          }
+        },
+        "breakdown_by_family": {
+          "target_command": {
+            "total": 160,
+            "correct": 160,
+            "fa": 0
+          },
+          "minimal_pair_tone": {
+            "total": 96,
+            "correct": 0,
+            "fa": 3
+          },
+          "minimal_pair_consonant": {
+            "total": 120,
+            "correct": 0,
+            "fa": 2
+          },
+          "minimal_pair_vowel_coda": {
+            "total": 120,
+            "correct": 0,
+            "fa": 1
+          },
+          "phonetic_phrase_context": {
+            "total": 144,
+            "correct": 0,
+            "fa": 4
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        },
+        "breakdown_by_voice": {
+          "Kim Thanh": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "Qu\u1ed1c Tu\u1ea5n": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "Qu\u1ef3nh Anh": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "\u0110\u1ee9c Tr\u00ed": {
+            "total": 160,
+            "correct": 40,
+            "fa": 10
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 1.71,
+        "median_ms": 1.7,
+        "p90_ms": 1.87,
+        "p99_ms": 2.61,
+        "max_ms": 4.52,
+        "total_e2e_perceived_mean_ms": 1001.71,
+        "meets_50ms_budget": true
+      }
+    },
+    "cross_seed_summary": {
+      "mean_command_recall": 0.9979,
+      "std_command_recall": 0.0036,
+      "mean_false_acceptance_rate": 0.0203,
+      "std_false_acceptance_rate": 0.0057,
+      "mean_5class_accuracy": 0.9838,
+      "std_5class_accuracy": 0.004,
+      "mean_cpu_latency_ms": 1.73,
+      "std_cpu_latency_ms": 0.03,
+      "all_seeds_meet_criteria": true
+    }
+  },
+  "candidate_b_v7_baseline": {
+    "seed42": {
+      "calibrated_params": {
+        "theta_cmd": 0.5
+      },
+      "metrics": {
+        "macro_command_recall": 1.0,
+        "micro_command_recall": 1.0,
+        "recall_95ci": [
+          0.9766,
+          1.0
+        ],
+        "false_rejection_rate": 0.0,
+        "non_target_false_acceptance_rate": 0.025,
+        "far_95ci": [
+          0.0149,
+          0.0415
+        ],
+        "raw_false_acceptance_count": 14,
+        "non_target_denominator": 560,
+        "non_target_rejection_rate": 0.975,
+        "overall_5class_accuracy": 0.9806,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "all_keywords_ge_95": true,
+        "meets_strict_criteria": true,
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 5,
+            "PHAI": 3,
+            "LEN": 0,
+            "XUONG": 6,
+            "REJECT": 546
+          }
+        },
+        "breakdown_by_family": {
+          "target_command": {
+            "total": 160,
+            "correct": 160,
+            "fa": 0
+          },
+          "minimal_pair_tone": {
+            "total": 96,
+            "correct": 0,
+            "fa": 3
+          },
+          "minimal_pair_consonant": {
+            "total": 120,
+            "correct": 0,
+            "fa": 4
+          },
+          "minimal_pair_vowel_coda": {
+            "total": 120,
+            "correct": 0,
+            "fa": 1
+          },
+          "phonetic_phrase_context": {
+            "total": 144,
+            "correct": 0,
+            "fa": 6
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        },
+        "breakdown_by_voice": {
+          "Kim Thanh": {
+            "total": 160,
+            "correct": 40,
+            "fa": 1
+          },
+          "Qu\u1ed1c Tu\u1ea5n": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "Qu\u1ef3nh Anh": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "\u0110\u1ee9c Tr\u00ed": {
+            "total": 160,
+            "correct": 40,
+            "fa": 13
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 1.72,
+        "median_ms": 1.67,
+        "p90_ms": 2.13,
+        "p99_ms": 3.09,
+        "max_ms": 4.21,
+        "total_e2e_perceived_mean_ms": 1001.72,
+        "meets_50ms_budget": true
+      }
+    },
+    "seed43": {
+      "calibrated_params": {
+        "theta_cmd": 0.35
+      },
+      "metrics": {
+        "macro_command_recall": 0.9938,
+        "micro_command_recall": 0.9938,
+        "recall_95ci": [
+          0.9655,
+          0.9989
+        ],
+        "false_rejection_rate": 0.0062,
+        "non_target_false_acceptance_rate": 0.0286,
+        "far_95ci": [
+          0.0177,
+          0.0459
+        ],
+        "raw_false_acceptance_count": 16,
+        "non_target_denominator": 560,
+        "non_target_rejection_rate": 0.9714,
+        "overall_5class_accuracy": 0.9764,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.975,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "all_keywords_ge_95": true,
+        "meets_strict_criteria": true,
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 1,
+            "PHAI": 39,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 3,
+            "LEN": 0,
+            "XUONG": 13,
+            "REJECT": 544
+          }
+        },
+        "breakdown_by_family": {
+          "target_command": {
+            "total": 160,
+            "correct": 159,
+            "fa": 0
+          },
+          "minimal_pair_tone": {
+            "total": 96,
+            "correct": 0,
+            "fa": 3
+          },
+          "minimal_pair_consonant": {
+            "total": 120,
+            "correct": 0,
+            "fa": 0
+          },
+          "minimal_pair_vowel_coda": {
+            "total": 120,
+            "correct": 0,
+            "fa": 1
+          },
+          "phonetic_phrase_context": {
+            "total": 144,
+            "correct": 0,
+            "fa": 9
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 3
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        },
+        "breakdown_by_voice": {
+          "Kim Thanh": {
+            "total": 160,
+            "correct": 39,
+            "fa": 0
+          },
+          "Qu\u1ed1c Tu\u1ea5n": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "Qu\u1ef3nh Anh": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "\u0110\u1ee9c Tr\u00ed": {
+            "total": 160,
+            "correct": 40,
+            "fa": 13
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 3
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 1.64,
+        "median_ms": 1.7,
+        "p90_ms": 1.82,
+        "p99_ms": 2.35,
+        "max_ms": 4.69,
+        "total_e2e_perceived_mean_ms": 1001.64,
+        "meets_50ms_budget": true
+      }
+    },
+    "seed44": {
+      "calibrated_params": {
+        "theta_cmd": 0.35
+      },
+      "metrics": {
+        "macro_command_recall": 1.0,
+        "micro_command_recall": 1.0,
+        "recall_95ci": [
+          0.9766,
+          1.0
+        ],
+        "false_rejection_rate": 0.0,
+        "non_target_false_acceptance_rate": 0.0107,
+        "far_95ci": [
+          0.0049,
+          0.0232
+        ],
+        "raw_false_acceptance_count": 6,
+        "non_target_denominator": 560,
+        "non_target_rejection_rate": 0.9893,
+        "overall_5class_accuracy": 0.9917,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 1.0,
+          "LEN": 1.0,
+          "XUONG": 1.0
+        },
+        "all_keywords_ge_95": true,
+        "meets_strict_criteria": true,
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 40,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 40,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 40,
+            "REJECT": 0
+          },
+          "REJECT": {
+            "TRAI": 0,
+            "PHAI": 2,
+            "LEN": 0,
+            "XUONG": 4,
+            "REJECT": 554
+          }
+        },
+        "breakdown_by_family": {
+          "target_command": {
+            "total": 160,
+            "correct": 160,
+            "fa": 0
+          },
+          "minimal_pair_tone": {
+            "total": 96,
+            "correct": 0,
+            "fa": 2
+          },
+          "minimal_pair_consonant": {
+            "total": 120,
+            "correct": 0,
+            "fa": 0
+          },
+          "minimal_pair_vowel_coda": {
+            "total": 120,
+            "correct": 0,
+            "fa": 0
+          },
+          "phonetic_phrase_context": {
+            "total": 144,
+            "correct": 0,
+            "fa": 4
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        },
+        "breakdown_by_voice": {
+          "Kim Thanh": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "Qu\u1ed1c Tu\u1ea5n": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "Qu\u1ef3nh Anh": {
+            "total": 160,
+            "correct": 40,
+            "fa": 0
+          },
+          "\u0110\u1ee9c Tr\u00ed": {
+            "total": 160,
+            "correct": 40,
+            "fa": 6
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 1.85,
+        "median_ms": 1.82,
+        "p90_ms": 1.95,
+        "p99_ms": 2.28,
+        "max_ms": 3.21,
+        "total_e2e_perceived_mean_ms": 1001.85,
+        "meets_50ms_budget": true
+      }
+    },
+    "cross_seed_summary": {
+      "mean_command_recall": 0.9979,
+      "std_command_recall": 0.0036,
+      "mean_false_acceptance_rate": 0.0214,
+      "std_false_acceptance_rate": 0.0095,
+      "mean_5class_accuracy": 0.9829,
+      "std_5class_accuracy": 0.0079,
+      "mean_cpu_latency_ms": 1.74,
+      "std_cpu_latency_ms": 0.11,
+      "all_seeds_meet_criteria": true
+    }
+  },
+  "cascade_v1": {
+    "seed42": {
+      "calibrated_params": {
+        "theta_s1": 0.35,
+        "theta_s2": 0.7
+      },
+      "metrics": {
+        "macro_command_recall": 0.8812,
+        "micro_command_recall": 0.8812,
+        "recall_95ci": [
+          0.822,
+          0.9226
+        ],
+        "false_rejection_rate": 0.1188,
+        "non_target_false_acceptance_rate": 0.0107,
+        "far_95ci": [
+          0.0049,
+          0.0232
+        ],
+        "raw_false_acceptance_count": 6,
+        "non_target_denominator": 560,
+        "non_target_rejection_rate": 0.9893,
+        "overall_5class_accuracy": 0.9653,
+        "per_keyword_recall": {
+          "TRAI": 1.0,
+          "PHAI": 0.8,
+          "LEN": 0.85,
+          "XUONG": 0.875
+        },
+        "all_keywords_ge_95": false,
+        "meets_strict_criteria": false,
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 40,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 0
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 32,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 8
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 34,
+            "XUONG": 0,
+            "REJECT": 6
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 35,
+            "REJECT": 5
+          },
+          "REJECT": {
+            "TRAI": 6,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 554
+          }
+        },
+        "breakdown_by_family": {
+          "target_command": {
+            "total": 160,
+            "correct": 141,
+            "fa": 0
+          },
+          "minimal_pair_tone": {
+            "total": 96,
+            "correct": 0,
+            "fa": 4
+          },
+          "minimal_pair_consonant": {
+            "total": 120,
+            "correct": 0,
+            "fa": 2
+          },
+          "minimal_pair_vowel_coda": {
+            "total": 120,
+            "correct": 0,
+            "fa": 0
+          },
+          "phonetic_phrase_context": {
+            "total": 144,
+            "correct": 0,
+            "fa": 0
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        },
+        "breakdown_by_voice": {
+          "Kim Thanh": {
+            "total": 160,
+            "correct": 30,
+            "fa": 2
+          },
+          "Qu\u1ed1c Tu\u1ea5n": {
+            "total": 160,
+            "correct": 37,
+            "fa": 0
+          },
+          "Qu\u1ef3nh Anh": {
+            "total": 160,
+            "correct": 34,
+            "fa": 0
+          },
+          "\u0110\u1ee9c Tr\u00ed": {
+            "total": 160,
+            "correct": 40,
+            "fa": 4
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 3.56,
+        "median_ms": 1.84,
+        "p90_ms": 6.59,
+        "p99_ms": 7.49,
+        "max_ms": 13.02,
+        "total_e2e_perceived_mean_ms": 1003.56,
+        "meets_50ms_budget": true
+      }
+    },
+    "seed43": {
+      "calibrated_params": {
+        "theta_s1": 0.35,
+        "theta_s2": 0.8
+      },
+      "metrics": {
+        "macro_command_recall": 0.8125,
+        "micro_command_recall": 0.8125,
+        "recall_95ci": [
+          0.745,
+          0.8654
+        ],
+        "false_rejection_rate": 0.1875,
+        "non_target_false_acceptance_rate": 0.0107,
+        "far_95ci": [
+          0.0049,
+          0.0232
+        ],
+        "raw_false_acceptance_count": 6,
+        "non_target_denominator": 560,
+        "non_target_rejection_rate": 0.9893,
+        "overall_5class_accuracy": 0.95,
+        "per_keyword_recall": {
+          "TRAI": 0.825,
+          "PHAI": 0.875,
+          "LEN": 0.8,
+          "XUONG": 0.75
+        },
+        "all_keywords_ge_95": false,
+        "meets_strict_criteria": false,
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 33,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 7
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 35,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 5
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 32,
+            "XUONG": 0,
+            "REJECT": 8
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 30,
+            "REJECT": 10
+          },
+          "REJECT": {
+            "TRAI": 6,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 554
+          }
+        },
+        "breakdown_by_family": {
+          "target_command": {
+            "total": 160,
+            "correct": 130,
+            "fa": 0
+          },
+          "minimal_pair_tone": {
+            "total": 96,
+            "correct": 0,
+            "fa": 6
+          },
+          "minimal_pair_consonant": {
+            "total": 120,
+            "correct": 0,
+            "fa": 0
+          },
+          "minimal_pair_vowel_coda": {
+            "total": 120,
+            "correct": 0,
+            "fa": 0
+          },
+          "phonetic_phrase_context": {
+            "total": 144,
+            "correct": 0,
+            "fa": 0
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        },
+        "breakdown_by_voice": {
+          "Kim Thanh": {
+            "total": 160,
+            "correct": 21,
+            "fa": 0
+          },
+          "Qu\u1ed1c Tu\u1ea5n": {
+            "total": 160,
+            "correct": 34,
+            "fa": 0
+          },
+          "Qu\u1ef3nh Anh": {
+            "total": 160,
+            "correct": 35,
+            "fa": 0
+          },
+          "\u0110\u1ee9c Tr\u00ed": {
+            "total": 160,
+            "correct": 40,
+            "fa": 6
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 4.12,
+        "median_ms": 4.58,
+        "p90_ms": 6.72,
+        "p99_ms": 8.66,
+        "max_ms": 14.18,
+        "total_e2e_perceived_mean_ms": 1004.12,
+        "meets_50ms_budget": true
+      }
+    },
+    "seed44": {
+      "calibrated_params": {
+        "theta_s1": 0.35,
+        "theta_s2": 0.55
+      },
+      "metrics": {
+        "macro_command_recall": 0.85,
+        "micro_command_recall": 0.85,
+        "recall_95ci": [
+          0.7865,
+          0.8971
+        ],
+        "false_rejection_rate": 0.15,
+        "non_target_false_acceptance_rate": 0.0304,
+        "far_95ci": [
+          0.019,
+          0.0481
+        ],
+        "raw_false_acceptance_count": 17,
+        "non_target_denominator": 560,
+        "non_target_rejection_rate": 0.9696,
+        "overall_5class_accuracy": 0.9431,
+        "per_keyword_recall": {
+          "TRAI": 0.975,
+          "PHAI": 0.825,
+          "LEN": 0.725,
+          "XUONG": 0.875
+        },
+        "all_keywords_ge_95": false,
+        "meets_strict_criteria": false,
+        "confusion_matrix": {
+          "TRAI": {
+            "TRAI": 39,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 1
+          },
+          "PHAI": {
+            "TRAI": 0,
+            "PHAI": 33,
+            "LEN": 0,
+            "XUONG": 0,
+            "REJECT": 7
+          },
+          "LEN": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 29,
+            "XUONG": 0,
+            "REJECT": 11
+          },
+          "XUONG": {
+            "TRAI": 0,
+            "PHAI": 0,
+            "LEN": 0,
+            "XUONG": 35,
+            "REJECT": 5
+          },
+          "REJECT": {
+            "TRAI": 12,
+            "PHAI": 0,
+            "LEN": 3,
+            "XUONG": 2,
+            "REJECT": 543
+          }
+        },
+        "breakdown_by_family": {
+          "target_command": {
+            "total": 160,
+            "correct": 136,
+            "fa": 0
+          },
+          "minimal_pair_tone": {
+            "total": 96,
+            "correct": 0,
+            "fa": 5
+          },
+          "minimal_pair_consonant": {
+            "total": 120,
+            "correct": 0,
+            "fa": 10
+          },
+          "minimal_pair_vowel_coda": {
+            "total": 120,
+            "correct": 0,
+            "fa": 1
+          },
+          "phonetic_phrase_context": {
+            "total": 144,
+            "correct": 0,
+            "fa": 1
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        },
+        "breakdown_by_voice": {
+          "Kim Thanh": {
+            "total": 160,
+            "correct": 29,
+            "fa": 6
+          },
+          "Qu\u1ed1c Tu\u1ea5n": {
+            "total": 160,
+            "correct": 36,
+            "fa": 0
+          },
+          "Qu\u1ef3nh Anh": {
+            "total": 160,
+            "correct": 31,
+            "fa": 3
+          },
+          "\u0110\u1ee9c Tr\u00ed": {
+            "total": 160,
+            "correct": 40,
+            "fa": 8
+          },
+          "near_silence": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "hvac_hum": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "office_ambient": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          },
+          "airflow_pink": {
+            "total": 20,
+            "correct": 0,
+            "fa": 0
+          }
+        }
+      },
+      "cpu_latency": {
+        "mean_ms": 3.37,
+        "median_ms": 1.89,
+        "p90_ms": 6.45,
+        "p99_ms": 7.83,
+        "max_ms": 11.55,
+        "total_e2e_perceived_mean_ms": 1003.37,
+        "meets_50ms_budget": true
+      }
+    },
+    "cross_seed_summary": {
+      "mean_command_recall": 0.8479,
+      "std_command_recall": 0.0344,
+      "mean_false_acceptance_rate": 0.0173,
+      "std_false_acceptance_rate": 0.0114,
+      "mean_5class_accuracy": 0.9528,
+      "std_5class_accuracy": 0.0114,
+      "mean_cpu_latency_ms": 3.68,
+      "std_cpu_latency_ms": 0.39,
+      "all_seeds_meet_criteria": false
+    }
+  }
+}

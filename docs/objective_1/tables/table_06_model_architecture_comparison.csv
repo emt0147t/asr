@@ -1,0 +1,4 @@
+model_name,architecture_type,total_parameters,trainable_parameters,receptive_field_temporal,pytorch_checkpoint_kb,onnx_fp32_kb,onnx_int8_kb,desktop_cpu_latency_ms,notes
+Phase 2 Baseline (VietnameseKWSNet),2D-CNN (Standard),138534,138534,Collapsed by 2x2 MaxPool & AdaptiveAvgPool,1648.5,555.4,148.8,0.25,Fastest inference; collapses temporal trajectory causing 30.6% TRAI error
+Temporal-CNN (TemporalKWSNet),1D-CNN (Time-domain),292582,292582,Extended 1D temporal kernels,1187.2,1150.0,Not Exported,1.44,Higher parameter count; higher CPU latency; modest recall gain
+TC-ResNet-14 [Champion],1D Temporal Residual Network,272934,272934,Residual 1D blocks with Mean+Max pooling,1123.1,1093.7,MISSING FROM DISK,0.35,Champion model; best balance of pitch contour retention and mobile speed

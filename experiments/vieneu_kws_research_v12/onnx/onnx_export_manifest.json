@@ -1,0 +1,131 @@
+{
+  "status": "PARITY_VERIFIED",
+  "source_checkpoint": {
+    "path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\bundle\\checkpoint\\variant_v11_hard_negative_weighted_seed42.pt",
+    "sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "architecture": "CorrectedVietnameseKWSNet",
+    "parameters": 138469
+  },
+  "models": {
+    "onnx_fp32": {
+      "path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\onnx\\variant_v11_kws_model_fp32.onnx",
+      "size_kb": 542.7255859375,
+      "sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+      "opset_version": 17,
+      "max_prob_deviation": 1.1324882507324219e-06,
+      "max_logits_deviation": 4.0531158447265625e-06,
+      "label_mismatch_count": 0,
+      "tolerance_applied": 0.0001,
+      "parity_passed": true
+    },
+    "onnx_int8": {
+      "path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\onnx\\variant_v11_kws_model_int8.onnx",
+      "size_kb": 146.94921875,
+      "sha256": "16e9ba4044a8fa2d15d3c7e4077539382ae1f63f755375192e0813e2faf48601",
+      "quantization": "dynamic_int8",
+      "label_mismatch_count": 0
+    }
+  },
+  "parity_records": [
+    {
+      "wav_file": "parity_dev_01_trai.wav",
+      "py_prediction": "LEN",
+      "onnx_fp32_prediction": "LEN",
+      "onnx_int8_prediction": "LEN",
+      "onnx_fp32_max_prob": 0.35929936170578003,
+      "py_max_prob": 0.3592993915081024,
+      "max_diff_fp32_logits": 1.5869736671447754e-06,
+      "max_diff_fp32_probs": 2.980232238769531e-07
+    },
+    {
+      "wav_file": "parity_dev_02_phai.wav",
+      "py_prediction": "PHAI",
+      "onnx_fp32_prediction": "PHAI",
+      "onnx_int8_prediction": "PHAI",
+      "onnx_fp32_max_prob": 0.21100302040576935,
+      "py_max_prob": 0.2110031396150589,
+      "max_diff_fp32_logits": 1.341104507446289e-06,
+      "max_diff_fp32_probs": 2.682209014892578e-07
+    },
+    {
+      "wav_file": "parity_dev_03_len.wav",
+      "py_prediction": "XUONG",
+      "onnx_fp32_prediction": "XUONG",
+      "onnx_int8_prediction": "XUONG",
+      "onnx_fp32_max_prob": 0.22747762501239777,
+      "py_max_prob": 0.2274777889251709,
+      "max_diff_fp32_logits": 1.4603137969970703e-06,
+      "max_diff_fp32_probs": 3.5762786865234375e-07
+    },
+    {
+      "wav_file": "parity_dev_04_xuong.wav",
+      "py_prediction": "XUONG",
+      "onnx_fp32_prediction": "XUONG",
+      "onnx_int8_prediction": "XUONG",
+      "onnx_fp32_max_prob": 0.2851918935775757,
+      "py_max_prob": 0.2851921021938324,
+      "max_diff_fp32_logits": 1.6391277313232422e-06,
+      "max_diff_fp32_probs": 4.76837158203125e-07
+    },
+    {
+      "wav_file": "parity_dev_05_unknown.wav",
+      "py_prediction": "LEN",
+      "onnx_fp32_prediction": "LEN",
+      "onnx_int8_prediction": "LEN",
+      "onnx_fp32_max_prob": 0.21157139539718628,
+      "py_max_prob": 0.21157138049602509,
+      "max_diff_fp32_logits": 1.6391277313232422e-06,
+      "max_diff_fp32_probs": 4.172325134277344e-07
+    },
+    {
+      "wav_file": "parity_dev_06_silence.wav",
+      "py_prediction": "TRAI",
+      "onnx_fp32_prediction": "TRAI",
+      "onnx_int8_prediction": "TRAI",
+      "onnx_fp32_max_prob": 0.6625996828079224,
+      "py_max_prob": 0.6625996828079224,
+      "max_diff_fp32_logits": 5.960464477539062e-07,
+      "max_diff_fp32_probs": 8.940696716308594e-08
+    },
+    {
+      "wav_file": "parity_dev_07_ambient_low.wav",
+      "py_prediction": "TRAI",
+      "onnx_fp32_prediction": "TRAI",
+      "onnx_int8_prediction": "TRAI",
+      "onnx_fp32_max_prob": 0.6392783522605896,
+      "py_max_prob": 0.6392784714698792,
+      "max_diff_fp32_logits": 4.76837158203125e-07,
+      "max_diff_fp32_probs": 1.1920928955078125e-07
+    },
+    {
+      "wav_file": "parity_dev_08_transient_impulse.wav",
+      "py_prediction": "REJECT",
+      "onnx_fp32_prediction": "REJECT",
+      "onnx_int8_prediction": "REJECT",
+      "onnx_fp32_max_prob": 0.12341040372848511,
+      "py_max_prob": 0.12341082841157913,
+      "max_diff_fp32_logits": 4.0531158447265625e-06,
+      "max_diff_fp32_probs": 1.1324882507324219e-06
+    },
+    {
+      "wav_file": "parity_dev_09_clamped_high.wav",
+      "py_prediction": "XUONG",
+      "onnx_fp32_prediction": "XUONG",
+      "onnx_int8_prediction": "XUONG",
+      "onnx_fp32_max_prob": 0.8898890018463135,
+      "py_max_prob": 0.8898890614509583,
+      "max_diff_fp32_logits": 1.7881393432617188e-06,
+      "max_diff_fp32_probs": 8.568167686462402e-08
+    },
+    {
+      "wav_file": "parity_dev_10_short_padded.wav",
+      "py_prediction": "REJECT",
+      "onnx_fp32_prediction": "REJECT",
+      "onnx_int8_prediction": "REJECT",
+      "onnx_fp32_max_prob": 0.17983436584472656,
+      "py_max_prob": 0.17983457446098328,
+      "max_diff_fp32_logits": 2.384185791015625e-06,
+      "max_diff_fp32_probs": 5.364418029785156e-07
+    }
+  ]
+}

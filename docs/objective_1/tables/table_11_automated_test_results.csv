@@ -1,0 +1,20 @@
+test_id,test_file,test_function,scope,result
+T-01,tests/test_field_acquisition.py,test_consent_enforcement,Speaker Consent & Ledger,PASSED
+T-02,tests/test_field_acquisition.py,test_quality_gate_clipping_rejection,Quality Gate: Saturated Samples,PASSED
+T-03,tests/test_field_acquisition.py,test_quality_gate_silence_rejection,Quality Gate: RMS < -45 dBFS,PASSED
+T-04,tests/test_field_acquisition.py,test_quality_gate_duration_bounds,Quality Gate: 0.25s - 2.50s Bounds,PASSED
+T-05,tests/test_field_acquisition.py,test_raw_preservation_and_standardization,Untouched Raw & 16k PCM Standardization,PASSED
+T-06,tests/test_field_acquisition.py,test_duplicate_sha256_detection,Quality Gate: Bit-level SHA256 Collision,PASSED
+T-07,tests/test_field_acquisition.py,test_mock_cli_recording_session,CLI Interactive Flow Mock Execution,PASSED
+T-08,tests/test_field_acquisition.py,test_audit_field_campaign_generation,Campaign Audit Report Generation,PASSED
+T-09,tests/test_field_acquisition.py,test_security_path_traversal_rejection,Security: Directory Traversal Defense,PASSED
+T-10,tests/test_field_acquisition.py,test_duplicate_recording_id_rejection,Integrity: Duplicate Recording ID Defense,PASSED
+T-11,tests/test_field_acquisition.py,test_m4a_audio_ingestion_and_decoding,Format: M4A/AAC Container Ingestion,PASSED
+T-12,tests/test_field_acquisition.py,test_windows_hardware_recorder_configuration,Hardware: Windows 44.1k Stereo Compatibility,PASSED
+T-13,tests/test_parity.py,test_feature_extractor_shape_and_finite,"Frontend: Log-Mel Shape (1, 40, 101) & Finiteness",PASSED
+T-14,tests/test_parity.py,test_baseline_onnx_model_execution_and_shape,"ONNX: 2D-CNN Execution Shape (1, 6)",PASSED
+T-15,tests/test_parity.py,test_tcresnet_onnx_model_execution_and_parity,"ONNX: TC-ResNet Execution Shape (1, 6)",PASSED
+T-16,tests/test_parity.py,test_pytorch_onnx_numerical_parity_baseline,Parity: PyTorch vs ONNX Max Error < 1e-5,PASSED
+T-17,tests/test_parity.py,test_golden_vectors_reproducibility,Vectors: 6-Class Golden Mobile Vectors,PASSED
+T-18,tests/test_parity.py,test_manifest_speaker_disjointness_v2,Partition: Disjoint Speaker Splits (Train/Val/Test),PASSED
+T-19,tests/test_parity.py,test_manifest_class_completeness_v2,Taxonomy: 6-Class Completeness in test_manifest_v2,PASSED

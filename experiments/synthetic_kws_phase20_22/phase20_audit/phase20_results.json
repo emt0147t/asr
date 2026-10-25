@@ -1,0 +1,695 @@
+{
+  "phase": "20",
+  "description": "Independent Re-Audit of Dataset, Model Metrics, and Streaming Claims",
+  "timestamp": "2026-10-16T17:15:07Z",
+  "gate_verdict": "PHASE20_PASS_WITH_LIMITATIONS",
+  "dataset_integrity_audit": {
+    "manifest_rows": 3000,
+    "actual_disk_wav_files": 3000,
+    "unique_sha256_hashes": 3000,
+    "duplicate_hashes": 0,
+    "class_counts": {
+      "TRAI": 500,
+      "PHAI": 500,
+      "LEN": 500,
+      "XUONG": 500,
+      "UNKNOWN": 500,
+      "SILENCE": 500
+    },
+    "split_counts": {
+      "train": 2100,
+      "val": 450,
+      "test": 450
+    },
+    "subclass_counts": {
+      "target_keyword": 2000,
+      "ambient_room_tone": 316,
+      "open_vocabulary_general": 246,
+      "confuser_initial_sharing": 130,
+      "confuser_rhyme_sharing": 124,
+      "ambient_low_freq_hum": 114,
+      "ambient_digital_zero": 70
+    },
+    "audio_checks": {
+      "all_sr_16000": true,
+      "all_mono": true,
+      "all_16000_samples": true,
+      "all_finite": true,
+      "all_headroom_valid": true
+    },
+    "split_isolation": {
+      "speaker_overlap_train_val": 0,
+      "speaker_overlap_train_test": 0,
+      "speaker_overlap_val_test": 0,
+      "seed_overlap_train_val": 0,
+      "seed_overlap_train_test": 0,
+      "seed_overlap_val_test": 0
+    },
+    "feature_pipeline_leakage": false
+  },
+  "regeneration_audit": {
+    "total_attempted": 3000,
+    "exact_sha256_matches": 3000,
+    "pass_rate_pct": 100.0,
+    "duration_seconds": 101.03,
+    "serialization_format": "PCM_16 WAV 16000Hz mono via soundfile"
+  },
+  "model_evaluation_audit": {
+    "test_clips_evaluated": 450,
+    "seed_evaluations": [
+      {
+        "seed": 42,
+        "checkpoint_sha256": "4310338165b3e29de6ae95d2628cdd9bf1c3cbdfd9364ba0b57d73843f4e9a19",
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "brier_score": 0.0005753367791495545,
+        "ece": 0.0010071570343441433,
+        "per_class": {
+          "TRAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "PHAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "LEN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "XUONG": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "UNKNOWN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "SILENCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          }
+        },
+        "confusion_matrix": [
+          [
+            75,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            75,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            75,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            75,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ]
+      },
+      {
+        "seed": 43,
+        "checkpoint_sha256": "c196ac868034d67c7824f8ec4aa915dbdcccefe99abcea4f2469dc4032af158c",
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "brier_score": 9.381370626717193e-05,
+        "ece": 0.0007949684725867377,
+        "per_class": {
+          "TRAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "PHAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "LEN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "XUONG": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "UNKNOWN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "SILENCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          }
+        },
+        "confusion_matrix": [
+          [
+            75,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            75,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            75,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            75,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ]
+      },
+      {
+        "seed": 44,
+        "checkpoint_sha256": "4a2de65520c750290a489d2458ba59ff0129524273968408fdc7821c92b21631",
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "brier_score": 0.0009186743258913859,
+        "ece": 0.0022697681850857203,
+        "per_class": {
+          "TRAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "PHAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "LEN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "XUONG": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "UNKNOWN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          },
+          "SILENCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 75
+          }
+        },
+        "confusion_matrix": [
+          [
+            75,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            75,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            75,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            75,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ]
+      }
+    ],
+    "uncertainty_analysis": {
+      "test_sample_size": 450,
+      "observed_errors": 0,
+      "point_estimate_accuracy": 1.0,
+      "wilson_score_95_ci": [
+        0.9915,
+        1.0
+      ],
+      "rule_of_three_max_error_bound_95_pct": 0.00667,
+      "simulated_speakers_count_in_test": 2,
+      "simulated_speakers_list": [
+        "SPK_TEST_01_FEMALE",
+        "SPK_TEST_02_MALE"
+      ],
+      "shared_test_split_across_seeds": true,
+      "limitation_statement": "The 450-clip synthetic test set contains only 2 distinct simulated speaker profiles (['SPK_TEST_01_FEMALE', 'SPK_TEST_02_MALE']) across all speech classes. Repeating training across seeds 42, 43, and 44 tests optimization variance on a single frozen test set; it does NOT constitute independent test sample replication. The Wilson score 95% CI of [99.15%, 100.00%] and Rule of Three error bound (<= 0.67%) apply strictly within the support of this parametric generator family and do NOT establish natural human speech accuracy."
+    }
+  },
+  "diagnostic_probes_audit": {
+    "feature_leakage_exclusion_verified": true,
+    "task1_six_class": {
+      "metadata_only": {
+        "val_acc": 0.6088888888888889,
+        "test_acc": 0.52,
+        "confusion_matrix": [
+          [
+            35,
+            38,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            29,
+            46,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            14,
+            23,
+            38,
+            0
+          ],
+          [
+            0,
+            0,
+            16,
+            23,
+            36,
+            0
+          ],
+          [
+            0,
+            0,
+            11,
+            23,
+            41,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ]
+      },
+      "strict_nuisance": {
+        "val_acc": 0.5444444444444444,
+        "test_acc": 0.5266666666666666,
+        "confusion_matrix": [
+          [
+            35,
+            15,
+            3,
+            17,
+            5,
+            0
+          ],
+          [
+            35,
+            37,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            69,
+            3,
+            3,
+            0
+          ],
+          [
+            24,
+            11,
+            18,
+            17,
+            5,
+            0
+          ],
+          [
+            7,
+            19,
+            31,
+            14,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ]
+      },
+      "spectral_phonetic": {
+        "val_acc": 0.4266666666666667,
+        "test_acc": 0.41555555555555557,
+        "confusion_matrix": [
+          [
+            55,
+            5,
+            11,
+            1,
+            3,
+            0
+          ],
+          [
+            4,
+            32,
+            8,
+            29,
+            2,
+            0
+          ],
+          [
+            61,
+            5,
+            2,
+            7,
+            0,
+            0
+          ],
+          [
+            1,
+            5,
+            11,
+            57,
+            1,
+            0
+          ],
+          [
+            53,
+            2,
+            2,
+            17,
+            1,
+            0
+          ],
+          [
+            28,
+            0,
+            0,
+            0,
+            7,
+            40
+          ]
+        ]
+      },
+      "neural_model": {
+        "val_acc": 1.0,
+        "test_acc": 1.0
+      },
+      "chance_level": 0.1667
+    },
+    "task2_four_target_only": {
+      "metadata_only": {
+        "val_acc": 0.5866666666666667,
+        "test_acc": 0.5266666666666666,
+        "confusion_matrix": [
+          [
+            30,
+            45,
+            0,
+            0
+          ],
+          [
+            30,
+            45,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            38,
+            37
+          ],
+          [
+            0,
+            0,
+            30,
+            45
+          ]
+        ]
+      },
+      "strict_nuisance": {
+        "val_acc": 0.57,
+        "test_acc": 0.55,
+        "confusion_matrix": [
+          [
+            34,
+            16,
+            5,
+            20
+          ],
+          [
+            33,
+            39,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            69,
+            6
+          ],
+          [
+            23,
+            11,
+            18,
+            23
+          ]
+        ]
+      },
+      "spectral_phonetic": {
+        "val_acc": 0.5366666666666666,
+        "test_acc": 0.5,
+        "confusion_matrix": [
+          [
+            54,
+            4,
+            16,
+            1
+          ],
+          [
+            5,
+            38,
+            9,
+            23
+          ],
+          [
+            60,
+            5,
+            3,
+            7
+          ],
+          [
+            1,
+            4,
+            15,
+            55
+          ]
+        ]
+      },
+      "neural_model": {
+        "val_acc": 1.0,
+        "test_acc": 1.0
+      },
+      "chance_level": 0.25
+    },
+    "task3_binary_target_present": {
+      "metadata_only": {
+        "val_acc": 0.76,
+        "test_acc": 0.8022222222222222
+      },
+      "strict_nuisance": {
+        "val_acc": 0.7933333333333333,
+        "test_acc": 0.8088888888888889
+      },
+      "spectral_phonetic": {
+        "val_acc": 0.7444444444444445,
+        "test_acc": 0.7155555555555555
+      },
+      "neural_model": {
+        "val_acc": 1.0,
+        "test_acc": 1.0
+      },
+      "majority_baseline": 0.6667,
+      "balanced_prior_baseline": 0.5
+    },
+    "interpretation": "1. 6-Class Task (Chance = 16.67%): The metadata (52.00%) and strict nuisance (52.67%) probes achieve ~52% primarily because SILENCE is separated with 100% precision (75/75) due to lack of speech energy, and speech vs silence envelope separation provides an initial coarse split.\n2. 4-Target Task (Chance = 25.00%): When trained and evaluated strictly on the four target keywords (TRAI, PHAI, LEN, XUONG), the strict nuisance probe achieves 55.00% overall accuracy with class-dependent performance (LEN: 69/75, PHAI: 39/75, TRAI: 34/75, XUONG: 23/75), indicating potential residual nuisance associations without establishing causality. Descriptive subset accuracy on the 150 TRAI and PHAI ground-truth samples is 48.67% (73/150), with a conditional ratio of true TRAI among predicted TRAI on that subset of 50.75% (34/67) and full-task TRAI precision of 37.78% (34/90). The metadata probe (52.67%) outputs identical aggregate prediction counts ([30, 45, 0, 0]) for true TRAI and true PHAI.\n3. Binary Task (Majority = 66.67%): Nuisance features achieve 80.89% binary detection of speech presence versus silence/short foils.\n4. Conclusion: TC-ResNet-14 achieves 100.00% accuracy across the 4 targets on the synthetic test set, demonstrating that learned representations support strong class separation on the tested synthetic distributions. This empirical finding does not prove genuine Vietnamese phonetic recognition or that formant trajectories are the proven causal basis, as controlled causal phonetic interventions were not conducted."
+  },
+  "streaming_metrics_audit": {
+    "verified_target_absent_duration_sec": 3600.0,
+    "verified_target_absent_hours": 1.0,
+    "verified_independent_streams_count": 4,
+    "baseline_false_triggers": 339,
+    "baseline_false_triggers_per_hour": 339.0,
+    "hysteresis_false_triggers": 0,
+    "hysteresis_false_triggers_per_hour": 0.0,
+    "target_present_events_evaluated": 50,
+    "target_present_recall_pct": 100.0,
+    "target_present_precision_pct": 100.0,
+    "target_present_mean_latency_sec": 0.496,
+    "event_matching_rule": {
+      "window_size_samples": 16000,
+      "hop_size_samples": 1600,
+      "decision_timestamp": "window_start_sec + 1.0s (causal end of 1.0s analysis window)",
+      "tolerance_window": "[gt_start_sec, gt_end_sec + 0.60s]",
+      "duplicate_event_handling": "cooldown refractory lock (0.600s) prevents multiple firings on the same keyword instance",
+      "false_discovery_rate_handling": "target-absent and target-present streams are evaluated as independent protocols"
+    },
+    "frozen_detector_parameters": {
+      "name": "Method 4: Hysteresis + Cooldown (tau=0.80/0.35, M=2, C=600ms)",
+      "tau_on": 0.8,
+      "tau_off": 0.35,
+      "smooth": 3,
+      "min_f": 2,
+      "cooldown": 0.6
+    }
+  },
+  "limitations": [
+    "Synthetic generator distribution only: The 100% test accuracy and zero false triggers occur strictly within the parametric vocal tract model and do not generalize to real human speech.",
+    "Limited speaker profile diversity in frozen test set: Contains only 2 distinct speaker profiles (['SPK_TEST_01_FEMALE', 'SPK_TEST_02_MALE']), limiting empirical variance.",
+    "Finite-duration streaming upper bound: 0 false triggers in 1.0 hour provides an approximate Poisson 95% upper bound of <= 3.0 FP/hr, requiring extended >= 3.0-hour streaming in Phase 21 to tighten bounds to <= 1.0 FP/hr.",
+    "Multi-seed test sharing: Seeds 42, 43, 44 evaluate weight initialization variance against the same frozen 450 clips; they do not represent three independent test distributions."
+  ]
+}

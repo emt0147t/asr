@@ -1,0 +1,10 @@
+{
+  "experiments/vieneu_kws_research_v12/reports/PHASE44_47_METRIC_FORENSIC_AUDIT.md": "12fd7b3c946a0f168fffff4f9391a1f84277190acf77bb2b8262d0c6cd667d0c",
+  "experiments/vieneu_kws_research_v12/reports/PHASE44_47_REPRODUCED_METRICS.json": "cbe06152aa736dca5cb6e8a77bc3c673031157b769465cd9ae59ba073e201e98",
+  "experiments/vieneu_kws_research_v12/reports/PHASE44_47_CLASSWISE_FAILURE_ANALYSIS.csv": "ad5eaabca1df85f8fbf444518cd777e85c54bef2c797bbc91784fb8010ff24d7",
+  "experiments/vieneu_kws_research_v12/reports/PHASE44_47_PREREGISTRATION_COMPLIANCE.md": "b6cf0fe0967ddebb987a9aa5c46e00a25a6f091ee15bb3410df10b0fb0945b47",
+  "experiments/vieneu_kws_research_v12/reports/PHASE44_47_MODEL_TRADEOFF_REPORT.md": "4ab8954e3eedc16a6bea743ddc8d29a38500452b3d4e984719d803d17eb58e37",
+  "experiments/vieneu_kws_research_v12/reports/PHASE44_47_CONFIRMATORY_EVAL_PREREGISTRATION.md": "f3433c7e2f61f39560d2721dba6a12587d1453615556cc64cf2b9fd8ac6f127b",
+  "experiments/vieneu_kws_research_v12/scripts/run_phase44_forensic_reproduction.py": "6dc5f4ff71f091c1399c05c6443773437d1b4c515576348fbcb7dc3b96d3e770",
+  "experiments/vieneu_kws_research_v12/scripts/analyze_phase45_tradeoffs.py": "c64283b4b67e10f8637eac8d3996db6c44d360903bf635106c85ef7e6d40d004"
+}

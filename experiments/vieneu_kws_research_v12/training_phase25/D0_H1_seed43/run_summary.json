@@ -1,0 +1,47 @@
+{
+  "condition": "D0_H1",
+  "seed": 43,
+  "factor_d": "D0",
+  "factor_h": "H1",
+  "total_epochs": 40,
+  "best_epoch": 40,
+  "best_val_macro_f1": 0.9290326222558712,
+  "best_val_accuracy": 0.93046875,
+  "best_val_loss": 0.21846282739934395,
+  "best_per_class": {
+    "TRAI": {
+      "precision": 0.9112426035502958,
+      "recall": 0.9625,
+      "f1": 0.9361702127659575,
+      "support": 160
+    },
+    "PHAI": {
+      "precision": 0.8125,
+      "recall": 0.975,
+      "f1": 0.8863636363636364,
+      "support": 160
+    },
+    "LEN": {
+      "precision": 0.9047619047619048,
+      "recall": 0.95,
+      "f1": 0.926829268292683,
+      "support": 160
+    },
+    "XUONG": {
+      "precision": 0.935672514619883,
+      "recall": 1.0,
+      "f1": 0.9667673716012085,
+      "support": 160
+    },
+    "REJECT": {
+      "precision": 0.9810344827586207,
+      "recall": 0.8890625,
+      "f1": 0.9327868852459016,
+      "support": 640
+    }
+  },
+  "training_duration_seconds": 240.36,
+  "checkpoint_sha256": "8e5b21759f561b507be6ce41c7b5eb863ea8ec2e44a2dedc2eaf0a3c7616900b",
+  "train_manifest_sha256": "e0bbc0a95a6d18f9724a7784f53a0082ce0fd3aae8a8e15a67ed39b6743ec7f7",
+  "val_manifest_sha256": "5af8cf9daa96526cba1a742d1e18982cd4c1ed291dc17d139a8d82bf1cb06682"
+}

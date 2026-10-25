@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 620" width="1150" height="620">
+  <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .code { font-family: 'JetBrains Mono', Consolas, Monaco, monospace; }
+    .shadow { filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.06)); }
+    .card-shadow { filter: drop-shadow(0px 2px 4px rgba(15, 23, 42, 0.08)); }
+</style>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1150" height="620" fill="url(#bgGrad4)" rx="16"/>
+
+  <text x="50" y="45" font-size="22" font-weight="700" fill="#F8FAFC">Figure 4: Comparative Performance: Baseline 2D-CNN vs. TC-ResNet-14</text>
+  <text x="50" y="70" font-size="13" fill="#94A3B8">Empirically Verified Checkpoint Metrics on Held-Out Test Set (test_manifest_v2.csv, N = 534)</text>
+
+  <!-- Legend -->
+  <g transform="translate(730, 40)">
+    <rect x="0" y="0" width="18" height="18" rx="4" fill="#64748B"/>
+    <text x="26" y="14" font-size="12" font-weight="600" fill="#E2E8F0">2D-CNN Baseline (138.5k params)</text>
+
+    <rect x="230" y="0" width="18" height="18" rx="4" fill="#0EA5E9"/>
+    <text x="256" y="14" font-size="12" font-weight="600" fill="#E2E8F0">TC-ResNet-14 (272.9k params)</text>
+  </g>
+
+  <!-- Y axis: 0% to 100%, height 380px (Y: 120 to 500), 3.8 px / % -->
+  <line x1="80" y1="120" x2="1080" y2="120" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="65" y="125" font-size="11" fill="#64748B" text-anchor="end">100%</text>
+
+  <line x1="80" y1="196" x2="1080" y2="196" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="65" y="201" font-size="11" fill="#64748B" text-anchor="end">80%</text>
+
+  <line x1="80" y1="272" x2="1080" y2="272" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="65" y="277" font-size="11" fill="#64748B" text-anchor="end">60%</text>
+
+  <line x1="80" y1="348" x2="1080" y2="348" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="65" y="353" font-size="11" fill="#64748B" text-anchor="end">40%</text>
+
+  <line x1="80" y1="424" x2="1080" y2="424" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="65" y="429" font-size="11" fill="#64748B" text-anchor="end">20%</text>
+
+  <line x1="80" y1="500" x2="1080" y2="500" stroke="#64748B" stroke-width="1.5"/>
+  <text x="65" y="504" font-size="11" fill="#64748B" text-anchor="end">0%</text>
+
+  <!-- 1. Overall Accuracy: 97.75% vs 96.63% -->
+  <g transform="translate(140, 0)">
+    <rect x="0" y="128.5" width="42" height="371.5" rx="5" fill="#64748B"/>
+    <text x="21" y="120" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">97.8%</text>
+    <rect x="52" y="132.8" width="42" height="367.2" rx="5" fill="#0EA5E9"/>
+    <text x="73" y="125" font-size="11" font-weight="700" fill="#38BDF8" text-anchor="middle">96.6%</text>
+    <text x="47" y="525" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">Test Accuracy</text>
+    <text x="47" y="542" font-size="10" fill="#94A3B8" text-anchor="middle">522 vs 516 / 534</text>
+  </g>
+
+  <!-- 2. Macro-F1: 94.66% vs 94.02% -->
+  <g transform="translate(350, 0)">
+    <rect x="0" y="140.3" width="42" height="359.7" rx="5" fill="#64748B"/>
+    <text x="21" y="132" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">94.7%</text>
+    <rect x="52" y="142.7" width="42" height="357.3" rx="5" fill="#0EA5E9"/>
+    <text x="73" y="135" font-size="11" font-weight="700" fill="#38BDF8" text-anchor="middle">94.0%</text>
+    <text x="47" y="525" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">6-Class Macro-F1</text>
+    <text x="47" y="542" font-size="10" fill="#94A3B8" text-anchor="middle">Full 6 classes evaluated</text>
+  </g>
+
+  <!-- 3. Overall TRAI Recall: 69.44% vs 75.00% -->
+  <g transform="translate(560, 0)">
+    <rect x="0" y="236.1" width="42" height="263.9" rx="5" fill="#64748B"/>
+    <text x="21" y="228" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">69.4%</text>
+    <rect x="52" y="215.0" width="42" height="285.0" rx="5" fill="#0EA5E9"/>
+    <text x="73" y="207" font-size="11" font-weight="700" fill="#38BDF8" text-anchor="middle">75.0%</text>
+    <text x="47" y="525" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">TRAI Recall (Overall)</text>
+    <text x="47" y="542" font-size="10" fill="#34D399" text-anchor="middle">+5.56% gain (27 vs 25)</text>
+  </g>
+
+  <!-- 4. Northern Dialect TRAI: 16.67% vs 25.00% -->
+  <g transform="translate(770, 0)">
+    <rect x="0" y="436.7" width="42" height="63.3" rx="5" fill="#EF4444"/>
+    <text x="21" y="428" font-size="11" font-weight="600" fill="#FCA5A5" text-anchor="middle">16.7%</text>
+    <rect x="52" y="405.0" width="42" height="95.0" rx="5" fill="#F59E0B"/>
+    <text x="73" y="397" font-size="11" font-weight="700" fill="#FCD34D" text-anchor="middle">25.0%</text>
+    <text x="47" y="525" font-size="13" font-weight="700" fill="#F87171" text-anchor="middle">Northern TRAI Recall</text>
+    <text x="47" y="542" font-size="10" fill="#FCD34D" text-anchor="middle">3/12 vs 2/12 (severely depressed)</text>
+  </g>
+
+  <!-- 5. PHAI Recall: 100.0% vs 100.0% -->
+  <g transform="translate(980, 0)">
+    <rect x="0" y="120.0" width="42" height="380.0" rx="5" fill="#64748B"/>
+    <text x="21" y="112" font-size="11" font-weight="600" fill="#CBD5E1" text-anchor="middle">100%</text>
+    <rect x="52" y="120.0" width="42" height="380.0" rx="5" fill="#0EA5E9"/>
+    <text x="73" y="112" font-size="11" font-weight="700" fill="#38BDF8" text-anchor="middle">100%</text>
+    <text x="47" y="525" font-size="13" font-weight="700" fill="#F1F5F9" text-anchor="middle">PHAI Recall</text>
+    <text x="47" y="542" font-size="10" fill="#34D399" text-anchor="middle">36/36 correct</text>
+  </g>
+
+  <rect x="100" y="570" width="950" height="30" rx="6" fill="#1E293B" stroke="#334155"/>
+  <text x="575" y="590" font-size="11" fill="#94A3B8" text-anchor="middle">Acoustic Analysis: TC-ResNet improves TRAI temporal onset modeling, but Northern TRAI recall remains capped at 25.0% due to synthetic data limitations.</text>
+</svg>

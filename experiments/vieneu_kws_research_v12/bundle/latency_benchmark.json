@@ -1,0 +1,16 @@
+{
+  "device": "cpu",
+  "threads": 4,
+  "num_warmup": 100,
+  "num_trials": 1000,
+  "mean_ms": 2.04,
+  "std_ms": 0.25,
+  "median_ms": 2.041,
+  "p90_ms": 2.221,
+  "p95_ms": 2.336,
+  "p99_ms": 2.55,
+  "min_ms": 1.52,
+  "max_ms": 7.677,
+  "target_ms": 50.0,
+  "status": "PASSED_LATENCY_BUDGET"
+}

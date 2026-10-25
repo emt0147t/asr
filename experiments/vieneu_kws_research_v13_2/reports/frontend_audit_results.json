@@ -1,0 +1,262 @@
+[
+  {
+    "fixture": "dev_01_digital_silence.wav",
+    "training_frontend_512": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "prediction": "REJECT",
+      "confidence": 0.09721975028514862
+    },
+    "remediated_frontend_13_1": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 0.0,
+      "logits_max_diff_vs_tr": 0.0,
+      "prediction": "REJECT",
+      "confidence": 0.09721975028514862,
+      "matches_training_decision": true
+    },
+    "phase92_frontend_400": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 0.0,
+      "logits_max_diff_vs_tr": 0.0,
+      "prediction": "REJECT",
+      "confidence": 0.09721975028514862,
+      "matches_training_decision": true
+    },
+    "portable_numpy_512": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 0.0,
+      "logits_max_diff_vs_tr": 0.0,
+      "prediction": "REJECT",
+      "confidence": 0.09721975028514862,
+      "matches_training_decision": true
+    }
+  },
+  {
+    "fixture": "dev_02_quiet_ambient_room.wav",
+    "training_frontend_512": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "prediction": "REJECT",
+      "confidence": 0.006699283141642809
+    },
+    "remediated_frontend_13_1": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 0.0,
+      "logits_max_diff_vs_tr": 0.0,
+      "prediction": "REJECT",
+      "confidence": 0.006699283141642809,
+      "matches_training_decision": true
+    },
+    "phase92_frontend_400": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 0.3705568313598633,
+      "logits_max_diff_vs_tr": 0.037763118743896484,
+      "prediction": "REJECT",
+      "confidence": 0.006445311009883881,
+      "matches_training_decision": true
+    },
+    "portable_numpy_512": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 3.814697265625e-06,
+      "logits_max_diff_vs_tr": 4.76837158203125e-07,
+      "prediction": "REJECT",
+      "confidence": 0.006699285935610533,
+      "matches_training_decision": true
+    }
+  },
+  {
+    "fixture": "dev_05_normal_len_peak089.wav",
+    "training_frontend_512": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "prediction": "XUONG",
+      "confidence": 0.22750642895698547
+    },
+    "remediated_frontend_13_1": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 0.0,
+      "logits_max_diff_vs_tr": 0.0,
+      "prediction": "XUONG",
+      "confidence": 0.22750642895698547,
+      "matches_training_decision": true
+    },
+    "phase92_frontend_400": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 1.5480985641479492,
+      "logits_max_diff_vs_tr": 0.04889380931854248,
+      "prediction": "XUONG",
+      "confidence": 0.21684880554676056,
+      "matches_training_decision": true
+    },
+    "portable_numpy_512": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 1.9073486328125e-05,
+      "logits_max_diff_vs_tr": 7.152557373046875e-07,
+      "prediction": "XUONG",
+      "confidence": 0.2275065779685974,
+      "matches_training_decision": true
+    }
+  },
+  {
+    "fixture": "dev_06_normal_xuong_peak089.wav",
+    "training_frontend_512": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "prediction": "XUONG",
+      "confidence": 0.28525200486183167
+    },
+    "remediated_frontend_13_1": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 0.0,
+      "logits_max_diff_vs_tr": 0.0,
+      "prediction": "XUONG",
+      "confidence": 0.28525200486183167,
+      "matches_training_decision": true
+    },
+    "phase92_frontend_400": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 1.7443504333496094,
+      "logits_max_diff_vs_tr": 0.11740504205226898,
+      "prediction": "XUONG",
+      "confidence": 0.2568623125553131,
+      "matches_training_decision": true
+    },
+    "portable_numpy_512": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 2.002716064453125e-05,
+      "logits_max_diff_vs_tr": 5.066394805908203e-07,
+      "prediction": "XUONG",
+      "confidence": 0.2852521538734436,
+      "matches_training_decision": true
+    }
+  },
+  {
+    "fixture": "dev_07_high_amplitude_trai_peak180.wav",
+    "training_frontend_512": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "prediction": "LEN",
+      "confidence": 0.3814845085144043
+    },
+    "remediated_frontend_13_1": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 0.0,
+      "logits_max_diff_vs_tr": 0.0,
+      "prediction": "LEN",
+      "confidence": 0.3814845085144043,
+      "matches_training_decision": true
+    },
+    "phase92_frontend_400": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 1.3229479789733887,
+      "logits_max_diff_vs_tr": 0.05357593297958374,
+      "prediction": "LEN",
+      "confidence": 0.3876650631427765,
+      "matches_training_decision": true
+    },
+    "portable_numpy_512": {
+      "spec_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "spec_max_diff_vs_tr": 1.52587890625e-05,
+      "logits_max_diff_vs_tr": 7.152557373046875e-07,
+      "prediction": "LEN",
+      "confidence": 0.3814845383167267,
+      "matches_training_decision": true
+    }
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "issue_1_arm_a_validation_discrepancy": {
+    "status": "RESOLVED",
+    "explanation": "Evaluated on two distinct validation audio distributions: baseline generator (val_manifest_6class.csv, 100% at best ep, 96.76% at ep 25) vs onset-aware generator (val_manifest_onset_aware.csv, 82.87%)."
+  },
+  "issue_2_arm_b_zero_recall_on_older_holdouts": {
+    "status": "RESOLVED",
+    "explanation": "Controlled 2x2 diagnostic proves Arm B's 0.0% TRAI recall on baseline clips is robust to temporal alignment (0.0% when centered at 246ms, 0.0% when left-aligned at 0ms). Arm B requires the 25ms closure and burst acoustics to separate TRAI from PHAI. However, alignment was confounded across generators for other classes (e.g. XUONG jumped from 16.7% to 100% when left-aligned, and Arm A dropped from 34% to 0% when onset audio was centered)."
+  },
+  "DISC-01": {
+    "title": "Arm A Validation Accuracy Discrepancy",
+    "status": "RESOLVED",
+    "reported_issue": "Arm A validation accuracy was reported as 96.76% (best ep 100.00%) in Table 3.1 and 82.87% in Table 4.1.",
+    "root_cause": "The two tables evaluated Arm A on two distinct validation audio distributions: Table 3.1 evaluated on 'val_manifest_6class.csv' (V3 baseline generator without stop closure), whereas Table 4.1 evaluated on 'val_manifest_onset_aware.csv' (V4 onset-aware generator with 25ms stop closure).",
+    "evidence": {
+      "checkpoint": "experiments/synthetic_kws_v4/checkpoints/arm_a_control.pt (SHA-256: 3170BD75BC83C3A860F68E0975E1EBB51821EE3BAD0C2C2D58E005E7DE171E23)",
+      "val_baseline_manifest": "experiments/synthetic_kws_v3/val_manifest_6class.csv (SHA-256: 9133A97A02C3442526FFB9A8A70DC95C4DA694F0B92673A785CAC3460A018BDD)",
+      "val_onset_manifest": "experiments/synthetic_kws_v4/val_manifest_onset_aware.csv (SHA-256: 0C5E03AFA01AA482ADEE3029FC68DBED68E5EC3A090F01B45BA2735EA7621A8B)",
+      "val_baseline_accuracy": 1.0,
+      "val_onset_accuracy": 0.8287037037037037
+    }
+  },
+  "DISC-02": {
+    "title": "Arm B Zero TRAI Recall on Older Holdouts & Alignment Confound",
+    "status": "UNRESOLVED",
+    "reported_issue": "Arm B exhibited 0.0% TRAI recall on Historical 144, Historical 216, V2 Fresh Holdout, and V3 Fresh Holdout. Was this caused by the 25ms closure gap, or confounded by temporal alignment (center-padded vs left-aligned)?",
+    "root_cause": "Controlled 2x2 diagnostic resolves the confound: (1) On baseline clips, Arm B achieves 0.0% TRAI recall under BOTH center-aligned (246ms onset) and left-aligned (0ms onset) conditions (36/36 predicted as PHAI in both). However, the 25ms stop closure alone cannot be concluded as the sole proven cause, because baseline and onset-aware generators co-vary across multiple acoustic dimensions simultaneously (burst frequency, formant transitions, pitch contours, and spectral envelope). (2) Temporal alignment strongly affects other classes and models: XUONG on Arm B jumped from 16.7% to 100.0% when left-aligned, and Arm A dropped from 34.0% to 0.0% when onset-aware TRAI was centered. Therefore, alignment was a co-occurring confound and causal attribution remains unresolved.",
+    "evidence": {
+      "condition_A1_B2_arm_b_trai_recall": 0.0,
+      "condition_A1_B1_arm_b_trai_recall": 0.0,
+      "condition_A2_B1_arm_b_trai_recall": 0.96,
+      "condition_A2_B2_arm_b_trai_recall": 0.78,
+      "condition_A1_B2_arm_b_xuong_recall": 0.1667,
+      "condition_A1_B1_arm_b_xuong_recall": 1.0,
+      "diagnostic_results": "experiments/synthetic_kws_v4/audit/alignment_diagnostic_results.json"
+    }
+  },
+  "DISC-03": {
+    "title": "Lineage Verification in Historical Schema",
+    "status": "NOT_VERIFIABLE",
+    "reported_issue": "Automatic lineage tracking cannot be validated on historical benchmark manifests.",
+    "root_cause": "The historical 16-column benchmark schema does not contain 'parent_recording_id' or 'session_id' columns. These columns are only specified in the proposed human-campaign 24-column schema.",
+    "evidence": {
+      "benchmark_schema_columns": 16,
+      "lineage_columns_present": false
+    }
+  },
+  "DISC-04": {
+    "title": "Pitch Augmentation Terminology Discrepancy",
+    "status": "RESOLVED",
+    "reported_issue": "Arm C description implied isolated pitch augmentation.",
+    "root_cause": "Implementation uses linear rate resampling (librosa/scipy resample), which scales duration, pitch, and formants jointly rather than performing phase-vocoder pitch transposition.",
+    "evidence": {
+      "implementation": "experiments/synthetic_kws_v4/run_ablation.py: resample(audio, int(len(audio) * rate_factor))"
+    }
+  },
+  "DISC-05": {
+    "title": "Arithmetic Contradictions in Markdown Report Recall vs Accuracy / Misses",
+    "status": "RESOLVED",
+    "reported_issue": "In the preliminary V4 report, Arm B Hist 144 reported recalls 0%, 100%, 100%, 100% implied 108/144 = 75.0% accuracy vs reported 54.17%; Arm C Hist 144 reported recalls 52.8%, 75%, 100%, 100% implied 118/144 = 81.94% accuracy vs reported 58.33%; Arm A Val Onset-Aware reported recalls 22.2%, 100%, 100%, 100% implied 28 target misses vs reported 37 misses.",
+    "root_cause": "In the preliminary Markdown report, XUONG recall was mistakenly copy-pasted as 100.0% instead of its actual value from the confusion matrix. The true values are: Arm B Hist. 144 XUONG recall is 16.7% (6/36, 30 predicted as LEN), yielding 0 + 36 + 36 + 6 = 78/144 = 54.17%; Arm C Hist. 144 XUONG recall is 5.6% (2/36, 34 predicted as LEN), yielding 19 + 27 + 36 + 2 = 84/144 = 58.33%; Arm A Val Onset-Aware XUONG recall is 75.0% (27/36, 9 predicted as LEN), yielding 8 + 36 + 36 + 27 = 107 correct target, exactly 144 - 107 = 37 misses, and (107 + 72)/216 = 179/216 = 82.87% accuracy.",
+    "evidence": {
+      "canonical_predictions_csv": "experiments/synthetic_kws_v4/audit/canonical_predictions.csv",
+      "canonical_metrics_json": "experiments/synthetic_kws_v4/audit/canonical_metrics.json",
+      "recomputation_script": "experiments/synthetic_kws_v4/audit/recompute_from_canonical.py"
+    }
+  },
+  "DISC-06": {
+    "title": "Waveform Closure RMS vs Silence Threshold Contradiction",
+    "status": "RESOLVED",
+    "reported_issue": "Table 4 of the audit report claimed a 25ms strictly silent closure (< 0.005) but reported an RMS of 0.05551, which is mathematically impossible for an interval where all samples are < 0.005.",
+    "root_cause": "The audit script used `active = np.where(abs_a > 0.01)[0]` to detect speech start. Because the true closure gap (samples 0 to 400) has a maximum absolute amplitude of 0.001740, this threshold check skipped the closure gap and evaluated samples 400 to 800 (the post-closure burst and vowel attack), which has an RMS of 0.05550. The script erroneously reported this burst window as the closure window in Table 4.",
+    "evidence": {
+      "true_closure_window_samples": "0 to 400 (0.0 to 25.0 ms)",
+      "true_closure_rms_mean": 0.000382,
+      "true_closure_max_abs_max": 0.00174,
+      "true_closure_fraction_under_005": 1.0,
+      "first_sample_ge_005_mean": 400.1,
+      "buggy_samples_400_to_800_rms_mean": 0.0555,
+      "waveform_measurements_json": "experiments/synthetic_kws_v4/audit/waveform_measurements.json",
+      "audit_script": "experiments/synthetic_kws_v4/audit/audit_waveform_measurements.py"
+    }
+  },
+  "DISC-07": {
+    "title": "Temporal Alignment Discrepancy Across Audio Processing Stages",
+    "status": "RESOLVED",
+    "reported_issue": "Older generator clips were described inconsistently as starting at t=0 vs starting at sample 3952.5 (247 ms), and padding differed between centered (older) and right-padded (V4).",
+    "root_cause": "Traced across all 5 processing stages: (1) In raw generated files, speech starts at t=0 (sample 5, 0.31 ms) for older generator. (2) In normalization, audio_normalizer.py applied center-padding (`pad_left = (16000 - len) // 2` ~ 3950 samples), placing active speech at 247 ms in `audio_16k_1s`. (3) In V4 onset generation, build_onset_aware_data.py padded on the right only (`pad_left = 0`), keeping speech left-aligned at sample 0 (burst at sample 400 = 25 ms). (4) Model loads 16,000 samples directly with zero truncation/padding. (5) Feature extractor computes STFT frames where older speech spans frames 25-75 and V4 spans frames 2-55.",
+    "evidence": {
+      "older_raw_first_sample_ge_005": 5,
+      "older_processed_first_sample_ge_005": 3939.5,
+      "v4_processed_first_sample_ge_005": 400.1,
+      "diagnostic_script": "experiments/synthetic_kws_v4/audit/run_alignment_diagnostic.py"
+    }
+  },
+  "DISC-08": {
+    "title": "SILENCE Centering Truncation Fallback in Diagnostic Transform",
+    "status": "RESOLVED",
+    "reported_issue": "In run_alignment_diagnostic.py (Condition A2-B2), the centering logic used `act = np.where(np.abs(a) >= 0.005)[0]` with fallback `last_idx = act[-1] if len(act) > 0 else 8000`. For 25/50 SILENCE clips with peak < 0.005, this truncated the clip to 8,001 samples and zero-padded 3,999 on left and 4,000 on right, omitting 7,999 samples (49.99%) of native ambient noise. For the remaining 25 clips with occasional noise spikes, it truncated trailing samples after the last spike. This violated alignment-only sample preservation.",
+    "root_cause": "A 1.0s SILENCE clip is an ambient room noise and dither bed spanning 16,000 samples. It lacks an acoustic onset or speech release. Applying an onset detection heuristic (>= 0.005) to ambient noise causes arbitrary truncation. When no defensible onset exists, genuinely alignment-only processing requires preserving the full 16,000-sample ambient recording unshifted.",
+    "resolution": "Condition A2-B2-V2 implemented in run_alignment_diagnostic_v2.py preserves all 16,000 samples of all 50 SILENCE clips unshifted (0 samples omitted, max abs diff = 0.0, whole-file SHA-256 matches 50/50). All 4 frozen models maintain 0.0% false alarms on SILENCE. Fixed-window ambient noise spectral ratio is 100% invariant.",
+    "evidence": {
+      "v2_manifest": "experiments/synthetic_kws_v4/audit/manifest_diag_A2_B2_v2_onset_centered.csv",
+      "alignment_preservation_v2_json": "experiments/synthetic_kws_v4/audit/alignment_preservation_v2.json",
+      "silence_samples_preserved_pct": 100.0,
+      "silence_max_abs_sample_diff": 0.0,
+      "silence_false_activation_rate_pct": 0.0
+    }
+  }
+}

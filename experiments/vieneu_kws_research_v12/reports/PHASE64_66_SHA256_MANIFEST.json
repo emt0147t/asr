@@ -1,0 +1,9 @@
+{
+  "experiments/vieneu_kws_research_v12/scripts/run_phase64_forensic_validation_audit.py": "1b9be157d492d185726792b1a737871a2d6309c45f5c5fe24c6873bad1dadde8",
+  "experiments/vieneu_kws_research_v12/reports/PHASE64_VALIDATION_ALIGNED_PREDICTIONS.csv": "127d61f6aebb3858ab5d553206ae6aeb28ea9c4ffbcfb68ed713e731473e6ebe",
+  "experiments/vieneu_kws_research_v12/reports/PHASE64_VALIDATION_MASTER_METRICS.json": "ecb5f218b1faf47bac4ac21fc28b92be986354fcab1dde4fbf75f8301952599e",
+  "experiments/vieneu_kws_research_v12/reports/PHASE64_VALIDATION_RECONCILED_METRICS.csv": "f4dadd5d57ba4e38aa7ce13647b2b3806e6f32df1ad7682b712bda9cb61eba48",
+  "experiments/vieneu_kws_research_v12/reports/PHASE64_VALIDATION_FORENSIC_RECONCILIATION.md": "8ad53427ce1f8b10d673aaf697e033c419338c19459e4d6e5ca227ea0229dce8",
+  "experiments/vieneu_kws_research_v12/reports/PHASE65_PHASE59_CONFIRMATORY_AUDIT_VERIFICATION.md": "dcb89660c4b1bcce1eadb8143a5978cdda727b53db6df43ab95cca15cb5532dd",
+  "experiments/vieneu_kws_research_v12/reports/PHASE66_FINAL_RECONCILED_RESEARCH_DECISION.md": "57edd1b87cbd21db1e12cdfa148f8c3152b90c9af0a49845bffce1414bf63f27"
+}

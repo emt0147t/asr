@@ -1,0 +1,716 @@
+{
+  "phase": "15",
+  "description": "Controlled model training and unbiased evaluation on V5.2 release candidate dataset",
+  "architecture": "VietnameseTCResNet (TC-ResNet-14, 192 features)",
+  "frontend": "LogMelFeatureExtractor (40 mels, 16kHz, win=400, hop=160)",
+  "num_classes": 6,
+  "classes": [
+    "TRAI",
+    "PHAI",
+    "LEN",
+    "XUONG",
+    "UNKNOWN",
+    "SILENCE"
+  ],
+  "training_samples": 2100,
+  "val_samples": 450,
+  "test_samples": 450,
+  "multi_seed_runs": [
+    {
+      "seed": 42,
+      "best_epoch": 23,
+      "best_val_loss": 0.0001247051170664943,
+      "optimal_threshold_tau": 0.5,
+      "standard_test_metrics": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "per_class": {
+          "TRAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "PHAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "LEN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "XUONG": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "UNKNOWN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "SILENCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          }
+        },
+        "confusion_matrix": [
+          [
+            75,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            75,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            75,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            75,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ],
+        "brier_score": 0.0005753367791495545,
+        "expected_calibration_error": 0.0010071570343441433,
+        "trai_phai_cross_confusion": {
+          "trai_predicted_as_phai": 0,
+          "phai_predicted_as_trai": 0,
+          "symmetric_parity_maintained": true
+        }
+      },
+      "gated_test_metrics": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "per_class": {
+          "TRAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "PHAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "LEN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "XUONG": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "UNKNOWN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "SILENCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          }
+        },
+        "confusion_matrix": [
+          [
+            75,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            75,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            75,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            75,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ],
+        "brier_score": 0.0005753367791495545,
+        "expected_calibration_error": 0.0010071570343441433,
+        "trai_phai_cross_confusion": {
+          "trai_predicted_as_phai": 0,
+          "phai_predicted_as_trai": 0,
+          "symmetric_parity_maintained": true
+        }
+      },
+      "checkpoint_path": "experiments\\synthetic_kws_phase13_3_16\\model_evaluation\\checkpoints\\v5_2_tcresnet14_seed_42.pt"
+    },
+    {
+      "seed": 43,
+      "best_epoch": 24,
+      "best_val_loss": 0.00011164628137420449,
+      "optimal_threshold_tau": 0.5,
+      "standard_test_metrics": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "per_class": {
+          "TRAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "PHAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "LEN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "XUONG": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "UNKNOWN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "SILENCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          }
+        },
+        "confusion_matrix": [
+          [
+            75,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            75,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            75,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            75,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ],
+        "brier_score": 9.381370626717193e-05,
+        "expected_calibration_error": 0.0007949684725867377,
+        "trai_phai_cross_confusion": {
+          "trai_predicted_as_phai": 0,
+          "phai_predicted_as_trai": 0,
+          "symmetric_parity_maintained": true
+        }
+      },
+      "gated_test_metrics": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "per_class": {
+          "TRAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "PHAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "LEN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "XUONG": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "UNKNOWN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "SILENCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          }
+        },
+        "confusion_matrix": [
+          [
+            75,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            75,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            75,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            75,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ],
+        "brier_score": 9.381370626717193e-05,
+        "expected_calibration_error": 0.0007949684725867377,
+        "trai_phai_cross_confusion": {
+          "trai_predicted_as_phai": 0,
+          "phai_predicted_as_trai": 0,
+          "symmetric_parity_maintained": true
+        }
+      },
+      "checkpoint_path": "experiments\\synthetic_kws_phase13_3_16\\model_evaluation\\checkpoints\\v5_2_tcresnet14_seed_43.pt"
+    },
+    {
+      "seed": 44,
+      "best_epoch": 13,
+      "best_val_loss": 0.00020671438425779343,
+      "optimal_threshold_tau": 0.5,
+      "standard_test_metrics": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "per_class": {
+          "TRAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "PHAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "LEN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "XUONG": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "UNKNOWN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "SILENCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          }
+        },
+        "confusion_matrix": [
+          [
+            75,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            75,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            75,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            75,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ],
+        "brier_score": 0.0009186743258913859,
+        "expected_calibration_error": 0.0022697681850857203,
+        "trai_phai_cross_confusion": {
+          "trai_predicted_as_phai": 0,
+          "phai_predicted_as_trai": 0,
+          "symmetric_parity_maintained": true
+        }
+      },
+      "gated_test_metrics": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "per_class": {
+          "TRAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "PHAI": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "LEN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "XUONG": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "UNKNOWN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          },
+          "SILENCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 75
+          }
+        },
+        "confusion_matrix": [
+          [
+            75,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            75,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            75,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            75,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            75,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            75
+          ]
+        ],
+        "brier_score": 0.0009186743258913859,
+        "expected_calibration_error": 0.0022697681850857203,
+        "trai_phai_cross_confusion": {
+          "trai_predicted_as_phai": 0,
+          "phai_predicted_as_trai": 0,
+          "symmetric_parity_maintained": true
+        }
+      },
+      "checkpoint_path": "experiments\\synthetic_kws_phase13_3_16\\model_evaluation\\checkpoints\\v5_2_tcresnet14_seed_44.pt"
+    }
+  ],
+  "aggregate_metrics": {
+    "test_accuracy_mean": 1.0,
+    "test_accuracy_std": 0.0,
+    "test_macro_f1_mean": 1.0,
+    "test_macro_f1_std": 0.0,
+    "brier_score_mean": 0.0005292749371027041,
+    "brier_score_std": 0.0003383194057113015,
+    "ece_mean": 0.001357297897338867,
+    "ece_std": 0.000651003080356659
+  },
+  "streaming_false_trigger_evaluation": {
+    "stream_duration_sec": 186.53975,
+    "stream_clips_used": 150,
+    "tau_threshold": 0.5,
+    "false_trigger_count": 22,
+    "false_triggers_per_hour": 424.57,
+    "trigger_events_sample": [
+      {
+        "time_sec": 0.5,
+        "false_keyword": "TRAI",
+        "confidence": 0.977
+      },
+      {
+        "time_sec": 14.7,
+        "false_keyword": "TRAI",
+        "confidence": 0.7545
+      },
+      {
+        "time_sec": 18.2,
+        "false_keyword": "TRAI",
+        "confidence": 0.8175
+      },
+      {
+        "time_sec": 24.3,
+        "false_keyword": "TRAI",
+        "confidence": 0.7701
+      },
+      {
+        "time_sec": 24.4,
+        "false_keyword": "TRAI",
+        "confidence": 0.9878
+      },
+      {
+        "time_sec": 35.3,
+        "false_keyword": "PHAI",
+        "confidence": 0.5088
+      },
+      {
+        "time_sec": 71.0,
+        "false_keyword": "TRAI",
+        "confidence": 0.8905
+      },
+      {
+        "time_sec": 77.1,
+        "false_keyword": "TRAI",
+        "confidence": 0.9406
+      },
+      {
+        "time_sec": 83.0,
+        "false_keyword": "TRAI",
+        "confidence": 0.5267
+      },
+      {
+        "time_sec": 83.1,
+        "false_keyword": "TRAI",
+        "confidence": 0.5207
+      }
+    ]
+  },
+  "gate_verdict": "TRAINING_EVALUATION_PASS",
+  "scientific_limitations": [
+    "Evaluated strictly on synthetic test split (450 clips); does NOT establish natural human speech accuracy.",
+    "Synthetic streaming false-trigger rate is measured on concatenated non-target synthetic clips, not real acoustic environments.",
+    "Production deployment remains blocked until authorized natural speech evaluation is conducted."
+  ]
+}

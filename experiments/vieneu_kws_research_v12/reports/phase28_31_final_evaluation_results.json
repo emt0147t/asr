@@ -1,0 +1,1108 @@
+{
+  "metadata": {
+    "phase": "Phase 28-31 Stage F Locked Final Evaluation",
+    "timestamp": "2026-10-25T09:45:00+07:00",
+    "isolated_manifest_sha256": "73e1c2672253cc483abc20711edd44f914853cf0324d94566688105fb6a4ea17",
+    "streaming_manifest_sha256": "a45b80f06396691f93c6f23e8c297b25a3205279d712bc0ffa937f860caed36a",
+    "streaming_events_sha256": "707d11e447dbe8b93b296dbcd534c1160c1eb6d76a601ff4e6e1c6d75e031ecc",
+    "theta_cmd": 0.2,
+    "vad_algorithm": "SpeechBandRatioVAD"
+  },
+  "models": {
+    "Phase28_D2_H1_Candidate": {
+      "checkpoint_path": "experiments/vieneu_kws_research_v12/candidates/phase28_d2_candidate/candidate_checkpoint.pt",
+      "checkpoint_sha256": "c6102b4876ddeaa453547c211c5cfc322511c957e18fd488a705a164b18601c8",
+      "description": "Phase 28-31 D2_H1 winning seed candidate (D2_H1_seed42, 10% Edge-TTS augmented)",
+      "isolated": {
+        "macro_f1": 0.8271553287033164,
+        "overall_macro_f1": 0.8532029597045078,
+        "accuracy": 0.9291666666666667,
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            16,
+            0
+          ],
+          [
+            2,
+            5,
+            25,
+            2,
+            382
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.8888888888888888,
+            "recall": 1.0,
+            "f1": 0.9411764705882353,
+            "support": 16
+          },
+          "PHAI": {
+            "precision": 0.7619047619047619,
+            "recall": 1.0,
+            "f1": 0.8648648648648649,
+            "support": 16
+          },
+          "LEN": {
+            "precision": 0.3902439024390244,
+            "recall": 1.0,
+            "f1": 0.5614035087719298,
+            "support": 16
+          },
+          "XUONG": {
+            "precision": 0.8888888888888888,
+            "recall": 1.0,
+            "f1": 0.9411764705882353,
+            "support": 16
+          },
+          "REJECT": {
+            "precision": 1.0,
+            "recall": 0.9182692307692307,
+            "f1": 0.9573934837092731,
+            "support": 416
+          }
+        },
+        "oov_total": 416,
+        "oov_fa_count": 34,
+        "oov_fa_rate": 0.08173076923076923,
+        "phonetic_oov_fa_count": 13,
+        "phonetic_oov_total": 256,
+        "phonetic_oov_fa_rate": 0.05078125,
+        "general_oov_fa_count": 21,
+        "general_oov_total": 160,
+        "general_oov_fa_rate": 0.13125,
+        "snr_breakdown": {
+          "clean": {
+            "macro_f1": 0.904040404040404,
+            "accuracy": 0.9666666666666667,
+            "oov_fa_rate": 0.038461538461538464
+          },
+          "15.0": {
+            "macro_f1": 0.7928571428571429,
+            "accuracy": 0.9166666666666666,
+            "oov_fa_rate": 0.09615384615384616
+          },
+          "10.0": {
+            "macro_f1": 0.8555555555555555,
+            "accuracy": 0.9333333333333333,
+            "oov_fa_rate": 0.07692307692307693
+          },
+          "5.0": {
+            "macro_f1": 0.7898692810457517,
+            "accuracy": 0.9,
+            "oov_fa_rate": 0.11538461538461539
+          }
+        },
+        "voice_breakdown": {
+          "vi-VN-HoaiMyNeural": {
+            "macro_f1": 0.8352941176470587,
+            "accuracy": 0.8958333333333334,
+            "oov_fa_rate": 0.1201923076923077
+          },
+          "vi-VN-NamMinhNeural": {
+            "macro_f1": 0.8832866479925303,
+            "accuracy": 0.9625,
+            "oov_fa_rate": 0.04326923076923077
+          }
+        },
+        "rate_breakdown": {
+          "normal": {
+            "macro_f1": 0.8239716939407342,
+            "accuracy": 0.9291666666666667,
+            "oov_fa_rate": 0.08173076923076923
+          },
+          "fast": {
+            "macro_f1": 0.8307414919990985,
+            "accuracy": 0.9291666666666667,
+            "oov_fa_rate": 0.08173076923076923
+          }
+        }
+      },
+      "streaming": {
+        "total_sequences": 50,
+        "exact_sequence_matches": 26,
+        "exact_sequence_accuracy": 0.52,
+        "total_gt_commands": 81,
+        "total_detected_commands": 52,
+        "true_positive_commands": 48,
+        "command_recall": 0.5925925925925926,
+        "command_precision": 0.9230769230769231,
+        "command_f1": 0.7218045112781956,
+        "error_taxonomy": {
+          "misses": 33,
+          "substitutions": 1,
+          "false_insertions": 2,
+          "duplicates": 1,
+          "merges": 0,
+          "splits": 0,
+          "premature_cuts": 1
+        },
+        "silence_duration_min": 1.61,
+        "silence_false_alarms": 0,
+        "silence_fa_per_min": 0.0,
+        "oov_duration_min": 1.26,
+        "oov_false_alarms": 0,
+        "oov_fa_per_min": 0.0,
+        "mean_latency_ms": 321.9,
+        "p50_latency_ms": 297.0,
+        "p95_latency_ms": 421.2,
+        "type_breakdown": {
+          "pure_silence_noise": {
+            "total": 10,
+            "exact": 10,
+            "gt_cmds": 0,
+            "tp_cmds": 0
+          },
+          "pure_oov_conversation": {
+            "total": 10,
+            "exact": 10,
+            "gt_cmds": 0,
+            "tp_cmds": 0
+          },
+          "clean_multi_command": {
+            "total": 15,
+            "exact": 5,
+            "gt_cmds": 36,
+            "tp_cmds": 21
+          },
+          "noisy_multi_command": {
+            "total": 15,
+            "exact": 1,
+            "gt_cmds": 45,
+            "tp_cmds": 27
+          }
+        },
+        "snr_breakdown": {
+          "clean": {
+            "total": 35,
+            "exact": 25,
+            "gt_cmds": 36,
+            "tp_cmds": 21
+          },
+          "15.0": {
+            "total": 5,
+            "exact": 0,
+            "gt_cmds": 15,
+            "tp_cmds": 8
+          },
+          "10.0": {
+            "total": 5,
+            "exact": 0,
+            "gt_cmds": 16,
+            "tp_cmds": 9
+          },
+          "5.0": {
+            "total": 5,
+            "exact": 1,
+            "gt_cmds": 14,
+            "tp_cmds": 10
+          }
+        }
+      },
+      "timings": {
+        "isolated_eval_seconds": 3.4,
+        "streaming_eval_seconds": 0.98
+      }
+    },
+    "Phase28_D0_H1_Candidate": {
+      "checkpoint_path": "experiments/vieneu_kws_research_v12/candidates/phase28_candidate/candidate_checkpoint.pt",
+      "checkpoint_sha256": "84a3457f105058bb7ca843b830013d00cb6d2e9ce737cb389267a84fcf51a6af",
+      "description": "Phase 28-31 D0_H1 winning seed candidate (D0_H1_seed42, VieNeu Turbo only)",
+      "isolated": {
+        "macro_f1": 0.5632155979613607,
+        "overall_macro_f1": 0.6172391450357553,
+        "accuracy": 0.7458333333333333,
+        "confusion_matrix": [
+          [
+            9,
+            0,
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            12,
+            4
+          ],
+          [
+            1,
+            27,
+            78,
+            5,
+            305
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9,
+            "recall": 0.5625,
+            "f1": 0.6923076923076923,
+            "support": 16
+          },
+          "PHAI": {
+            "precision": 0.37209302325581395,
+            "recall": 1.0,
+            "f1": 0.5423728813559322,
+            "support": 16
+          },
+          "LEN": {
+            "precision": 0.1702127659574468,
+            "recall": 1.0,
+            "f1": 0.2909090909090909,
+            "support": 16
+          },
+          "XUONG": {
+            "precision": 0.7058823529411765,
+            "recall": 0.75,
+            "f1": 0.7272727272727273,
+            "support": 16
+          },
+          "REJECT": {
+            "precision": 0.9651898734177216,
+            "recall": 0.7331730769230769,
+            "f1": 0.8333333333333334,
+            "support": 416
+          }
+        },
+        "oov_total": 416,
+        "oov_fa_count": 111,
+        "oov_fa_rate": 0.2668269230769231,
+        "phonetic_oov_fa_count": 53,
+        "phonetic_oov_total": 256,
+        "phonetic_oov_fa_rate": 0.20703125,
+        "general_oov_fa_count": 58,
+        "general_oov_total": 160,
+        "general_oov_fa_rate": 0.3625,
+        "snr_breakdown": {
+          "clean": {
+            "macro_f1": 0.5803571428571428,
+            "accuracy": 0.7833333333333333,
+            "oov_fa_rate": 0.22115384615384615
+          },
+          "15.0": {
+            "macro_f1": 0.5689655172413793,
+            "accuracy": 0.725,
+            "oov_fa_rate": 0.2980769230769231
+          },
+          "10.0": {
+            "macro_f1": 0.5466666666666666,
+            "accuracy": 0.7583333333333333,
+            "oov_fa_rate": 0.25
+          },
+          "5.0": {
+            "macro_f1": 0.5595238095238095,
+            "accuracy": 0.7166666666666667,
+            "oov_fa_rate": 0.2980769230769231
+          }
+        },
+        "voice_breakdown": {
+          "vi-VN-HoaiMyNeural": {
+            "macro_f1": 0.47707088233404027,
+            "accuracy": 0.7125,
+            "oov_fa_rate": 0.27884615384615385
+          },
+          "vi-VN-NamMinhNeural": {
+            "macro_f1": 0.6352941176470588,
+            "accuracy": 0.7791666666666667,
+            "oov_fa_rate": 0.2548076923076923
+          }
+        },
+        "rate_breakdown": {
+          "normal": {
+            "macro_f1": 0.47890062007709067,
+            "accuracy": 0.725,
+            "oov_fa_rate": 0.27884615384615385
+          },
+          "fast": {
+            "macro_f1": 0.6516672982190224,
+            "accuracy": 0.7666666666666667,
+            "oov_fa_rate": 0.2548076923076923
+          }
+        }
+      },
+      "streaming": {
+        "total_sequences": 50,
+        "exact_sequence_matches": 19,
+        "exact_sequence_accuracy": 0.38,
+        "total_gt_commands": 81,
+        "total_detected_commands": 60,
+        "true_positive_commands": 44,
+        "command_recall": 0.5432098765432098,
+        "command_precision": 0.7333333333333333,
+        "command_f1": 0.624113475177305,
+        "error_taxonomy": {
+          "misses": 37,
+          "substitutions": 3,
+          "false_insertions": 12,
+          "duplicates": 1,
+          "merges": 0,
+          "splits": 0,
+          "premature_cuts": 1
+        },
+        "silence_duration_min": 1.61,
+        "silence_false_alarms": 0,
+        "silence_fa_per_min": 0.0,
+        "oov_duration_min": 1.26,
+        "oov_false_alarms": 9,
+        "oov_fa_per_min": 7.17,
+        "mean_latency_ms": 314.3,
+        "p50_latency_ms": 288.0,
+        "p95_latency_ms": 462.6,
+        "type_breakdown": {
+          "pure_silence_noise": {
+            "total": 10,
+            "exact": 10,
+            "gt_cmds": 0,
+            "tp_cmds": 0
+          },
+          "pure_oov_conversation": {
+            "total": 10,
+            "exact": 3,
+            "gt_cmds": 0,
+            "tp_cmds": 0
+          },
+          "clean_multi_command": {
+            "total": 15,
+            "exact": 4,
+            "gt_cmds": 36,
+            "tp_cmds": 19
+          },
+          "noisy_multi_command": {
+            "total": 15,
+            "exact": 2,
+            "gt_cmds": 45,
+            "tp_cmds": 25
+          }
+        },
+        "snr_breakdown": {
+          "clean": {
+            "total": 35,
+            "exact": 17,
+            "gt_cmds": 36,
+            "tp_cmds": 19
+          },
+          "15.0": {
+            "total": 5,
+            "exact": 0,
+            "gt_cmds": 15,
+            "tp_cmds": 6
+          },
+          "10.0": {
+            "total": 5,
+            "exact": 1,
+            "gt_cmds": 16,
+            "tp_cmds": 10
+          },
+          "5.0": {
+            "total": 5,
+            "exact": 1,
+            "gt_cmds": 14,
+            "tp_cmds": 9
+          }
+        }
+      },
+      "timings": {
+        "isolated_eval_seconds": 0.72,
+        "streaming_eval_seconds": 0.68
+      }
+    },
+    "Phase26_Candidate_D0_H1_seed44": {
+      "checkpoint_path": "experiments/vieneu_kws_research_v12/candidates/phase26_candidate_d0_h1_seed44/candidate_checkpoint.pt",
+      "checkpoint_sha256": "00b4fc71f863788648d5ea388a99c4cbd4441d9b9f63adc5e56154e329df63f3",
+      "description": "Phase 26 winning condition candidate (D0_H1_seed44)",
+      "isolated": {
+        "macro_f1": 0.5395604395604395,
+        "overall_macro_f1": 0.5985430164910329,
+        "accuracy": 0.7479166666666667,
+        "confusion_matrix": [
+          [
+            8,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            14,
+            2
+          ],
+          [
+            2,
+            24,
+            73,
+            12,
+            305
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.8,
+            "recall": 0.5,
+            "f1": 0.6153846153846154,
+            "support": 16
+          },
+          "PHAI": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714,
+            "support": 16
+          },
+          "LEN": {
+            "precision": 0.1797752808988764,
+            "recall": 1.0,
+            "f1": 0.3047619047619048,
+            "support": 16
+          },
+          "XUONG": {
+            "precision": 0.5384615384615384,
+            "recall": 0.875,
+            "f1": 0.6666666666666666,
+            "support": 16
+          },
+          "REJECT": {
+            "precision": 0.9682539682539683,
+            "recall": 0.7331730769230769,
+            "f1": 0.8344733242134063,
+            "support": 416
+          }
+        },
+        "oov_total": 416,
+        "oov_fa_count": 111,
+        "oov_fa_rate": 0.2668269230769231,
+        "phonetic_oov_fa_count": 53,
+        "phonetic_oov_total": 256,
+        "phonetic_oov_fa_rate": 0.20703125,
+        "general_oov_fa_count": 58,
+        "general_oov_total": 160,
+        "general_oov_fa_rate": 0.3625,
+        "snr_breakdown": {
+          "clean": {
+            "macro_f1": 0.626984126984127,
+            "accuracy": 0.8166666666666667,
+            "oov_fa_rate": 0.19230769230769232
+          },
+          "15.0": {
+            "macro_f1": 0.5034893267651888,
+            "accuracy": 0.7166666666666667,
+            "oov_fa_rate": 0.2980769230769231
+          },
+          "10.0": {
+            "macro_f1": 0.5502645502645502,
+            "accuracy": 0.75,
+            "oov_fa_rate": 0.25961538461538464
+          },
+          "5.0": {
+            "macro_f1": 0.5142857142857142,
+            "accuracy": 0.7083333333333334,
+            "oov_fa_rate": 0.3173076923076923
+          }
+        },
+        "voice_breakdown": {
+          "vi-VN-HoaiMyNeural": {
+            "macro_f1": 0.4870766488413547,
+            "accuracy": 0.7375,
+            "oov_fa_rate": 0.2548076923076923
+          },
+          "vi-VN-NamMinhNeural": {
+            "macro_f1": 0.5847863247863248,
+            "accuracy": 0.7583333333333333,
+            "oov_fa_rate": 0.27884615384615385
+          }
+        },
+        "rate_breakdown": {
+          "normal": {
+            "macro_f1": 0.519459706959707,
+            "accuracy": 0.7375,
+            "oov_fa_rate": 0.27884615384615385
+          },
+          "fast": {
+            "macro_f1": 0.5666194392609487,
+            "accuracy": 0.7583333333333333,
+            "oov_fa_rate": 0.2548076923076923
+          }
+        }
+      },
+      "streaming": {
+        "total_sequences": 50,
+        "exact_sequence_matches": 20,
+        "exact_sequence_accuracy": 0.4,
+        "total_gt_commands": 81,
+        "total_detected_commands": 58,
+        "true_positive_commands": 43,
+        "command_recall": 0.5308641975308642,
+        "command_precision": 0.7413793103448276,
+        "command_f1": 0.6187050359712232,
+        "error_taxonomy": {
+          "misses": 38,
+          "substitutions": 3,
+          "false_insertions": 11,
+          "duplicates": 1,
+          "merges": 0,
+          "splits": 0,
+          "premature_cuts": 1
+        },
+        "silence_duration_min": 1.61,
+        "silence_false_alarms": 0,
+        "silence_fa_per_min": 0.0,
+        "oov_duration_min": 1.26,
+        "oov_false_alarms": 6,
+        "oov_fa_per_min": 4.78,
+        "mean_latency_ms": 303.2,
+        "p50_latency_ms": 282.0,
+        "p95_latency_ms": 438.5,
+        "type_breakdown": {
+          "pure_silence_noise": {
+            "total": 10,
+            "exact": 10,
+            "gt_cmds": 0,
+            "tp_cmds": 0
+          },
+          "pure_oov_conversation": {
+            "total": 10,
+            "exact": 5,
+            "gt_cmds": 0,
+            "tp_cmds": 0
+          },
+          "clean_multi_command": {
+            "total": 15,
+            "exact": 3,
+            "gt_cmds": 36,
+            "tp_cmds": 17
+          },
+          "noisy_multi_command": {
+            "total": 15,
+            "exact": 2,
+            "gt_cmds": 45,
+            "tp_cmds": 26
+          }
+        },
+        "snr_breakdown": {
+          "clean": {
+            "total": 35,
+            "exact": 18,
+            "gt_cmds": 36,
+            "tp_cmds": 17
+          },
+          "15.0": {
+            "total": 5,
+            "exact": 0,
+            "gt_cmds": 15,
+            "tp_cmds": 6
+          },
+          "10.0": {
+            "total": 5,
+            "exact": 1,
+            "gt_cmds": 16,
+            "tp_cmds": 10
+          },
+          "5.0": {
+            "total": 5,
+            "exact": 1,
+            "gt_cmds": 14,
+            "tp_cmds": 10
+          }
+        }
+      },
+      "timings": {
+        "isolated_eval_seconds": 0.67,
+        "streaming_eval_seconds": 0.64
+      }
+    },
+    "Baseline_E1_seed42": {
+      "checkpoint_path": "experiments/vieneu_kws_research_v12/checkpoints/exp_v12_e1_baseline_scale_seed42.pt",
+      "checkpoint_sha256": "f3c0fe8f7ccebb8fe354cb50acb247e0674232044706db0187feb92b1706b878",
+      "description": "Phase 18 E1 baseline scale model",
+      "isolated": {
+        "macro_f1": 0.561519146264909,
+        "overall_macro_f1": 0.6042813963070813,
+        "accuracy": 0.68125,
+        "confusion_matrix": [
+          [
+            15,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            16,
+            0
+          ],
+          [
+            14,
+            27,
+            103,
+            8,
+            264
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.5172413793103449,
+            "recall": 0.9375,
+            "f1": 0.6666666666666666,
+            "support": 16
+          },
+          "PHAI": {
+            "precision": 0.37209302325581395,
+            "recall": 1.0,
+            "f1": 0.5423728813559322,
+            "support": 16
+          },
+          "LEN": {
+            "precision": 0.13445378151260504,
+            "recall": 1.0,
+            "f1": 0.23703703703703705,
+            "support": 16
+          },
+          "XUONG": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8,
+            "support": 16
+          },
+          "REJECT": {
+            "precision": 0.9962264150943396,
+            "recall": 0.6346153846153846,
+            "f1": 0.775330396475771,
+            "support": 416
+          }
+        },
+        "oov_total": 416,
+        "oov_fa_count": 152,
+        "oov_fa_rate": 0.36538461538461536,
+        "phonetic_oov_fa_count": 78,
+        "phonetic_oov_total": 256,
+        "phonetic_oov_fa_rate": 0.3046875,
+        "general_oov_fa_count": 74,
+        "general_oov_total": 160,
+        "general_oov_fa_rate": 0.4625,
+        "snr_breakdown": {
+          "clean": {
+            "macro_f1": 0.6207773707773707,
+            "accuracy": 0.75,
+            "oov_fa_rate": 0.28846153846153844
+          },
+          "15.0": {
+            "macro_f1": 0.529040404040404,
+            "accuracy": 0.6416666666666667,
+            "oov_fa_rate": 0.41346153846153844
+          },
+          "10.0": {
+            "macro_f1": 0.5666666666666667,
+            "accuracy": 0.6833333333333333,
+            "oov_fa_rate": 0.3557692307692308
+          },
+          "5.0": {
+            "macro_f1": 0.551023751023751,
+            "accuracy": 0.65,
+            "oov_fa_rate": 0.40384615384615385
+          }
+        },
+        "voice_breakdown": {
+          "vi-VN-HoaiMyNeural": {
+            "macro_f1": 0.7003629764065336,
+            "accuracy": 0.675,
+            "oov_fa_rate": 0.3701923076923077
+          },
+          "vi-VN-NamMinhNeural": {
+            "macro_f1": 0.5071428571428571,
+            "accuracy": 0.6875,
+            "oov_fa_rate": 0.3605769230769231
+          }
+        },
+        "rate_breakdown": {
+          "normal": {
+            "macro_f1": 0.5302489177489178,
+            "accuracy": 0.6708333333333333,
+            "oov_fa_rate": 0.375
+          },
+          "fast": {
+            "macro_f1": 0.5969045552411764,
+            "accuracy": 0.6916666666666667,
+            "oov_fa_rate": 0.3557692307692308
+          }
+        }
+      },
+      "streaming": {
+        "total_sequences": 50,
+        "exact_sequence_matches": 21,
+        "exact_sequence_accuracy": 0.42,
+        "total_gt_commands": 81,
+        "total_detected_commands": 70,
+        "true_positive_commands": 51,
+        "command_recall": 0.6296296296296297,
+        "command_precision": 0.7285714285714285,
+        "command_f1": 0.6754966887417219,
+        "error_taxonomy": {
+          "misses": 30,
+          "substitutions": 3,
+          "false_insertions": 14,
+          "duplicates": 2,
+          "merges": 0,
+          "splits": 0,
+          "premature_cuts": 1
+        },
+        "silence_duration_min": 1.61,
+        "silence_false_alarms": 0,
+        "silence_fa_per_min": 0.0,
+        "oov_duration_min": 1.26,
+        "oov_false_alarms": 9,
+        "oov_fa_per_min": 7.17,
+        "mean_latency_ms": 289.9,
+        "p50_latency_ms": 280.0,
+        "p95_latency_ms": 420.0,
+        "type_breakdown": {
+          "pure_silence_noise": {
+            "total": 10,
+            "exact": 10,
+            "gt_cmds": 0,
+            "tp_cmds": 0
+          },
+          "pure_oov_conversation": {
+            "total": 10,
+            "exact": 4,
+            "gt_cmds": 0,
+            "tp_cmds": 0
+          },
+          "clean_multi_command": {
+            "total": 15,
+            "exact": 4,
+            "gt_cmds": 36,
+            "tp_cmds": 23
+          },
+          "noisy_multi_command": {
+            "total": 15,
+            "exact": 3,
+            "gt_cmds": 45,
+            "tp_cmds": 28
+          }
+        },
+        "snr_breakdown": {
+          "clean": {
+            "total": 35,
+            "exact": 18,
+            "gt_cmds": 36,
+            "tp_cmds": 23
+          },
+          "15.0": {
+            "total": 5,
+            "exact": 0,
+            "gt_cmds": 15,
+            "tp_cmds": 7
+          },
+          "10.0": {
+            "total": 5,
+            "exact": 2,
+            "gt_cmds": 16,
+            "tp_cmds": 11
+          },
+          "5.0": {
+            "total": 5,
+            "exact": 1,
+            "gt_cmds": 14,
+            "tp_cmds": 10
+          }
+        }
+      },
+      "timings": {
+        "isolated_eval_seconds": 0.79,
+        "streaming_eval_seconds": 0.58
+      }
+    },
+    "Baseline_v11_seed42": {
+      "checkpoint_path": "experiments/vieneu_kws_research_v13_4/bundle/checkpoint/variant_v11_hard_negative_weighted_seed42.pt",
+      "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+      "description": "Phase 13.4 v11 release model",
+      "isolated": {
+        "macro_f1": 0.31893374964191096,
+        "overall_macro_f1": 0.36530190504915694,
+        "accuracy": 0.44375,
+        "confusion_matrix": [
+          [
+            8,
+            6,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            13,
+            3
+          ],
+          [
+            23,
+            105,
+            102,
+            26,
+            160
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.25806451612903225,
+            "recall": 0.5,
+            "f1": 0.3404255319148936,
+            "support": 16
+          },
+          "PHAI": {
+            "precision": 0.12598425196850394,
+            "recall": 1.0,
+            "f1": 0.22377622377622378,
+            "support": 16
+          },
+          "LEN": {
+            "precision": 0.13559322033898305,
+            "recall": 1.0,
+            "f1": 0.23880597014925373,
+            "support": 16
+          },
+          "XUONG": {
+            "precision": 0.3333333333333333,
+            "recall": 0.8125,
+            "f1": 0.4727272727272727,
+            "support": 16
+          },
+          "REJECT": {
+            "precision": 0.9696969696969697,
+            "recall": 0.38461538461538464,
+            "f1": 0.5507745266781411,
+            "support": 416
+          }
+        },
+        "oov_total": 416,
+        "oov_fa_count": 256,
+        "oov_fa_rate": 0.6153846153846154,
+        "phonetic_oov_fa_count": 159,
+        "phonetic_oov_total": 256,
+        "phonetic_oov_fa_rate": 0.62109375,
+        "general_oov_fa_count": 97,
+        "general_oov_total": 160,
+        "general_oov_fa_rate": 0.60625,
+        "snr_breakdown": {
+          "clean": {
+            "macro_f1": 0.22515039110456347,
+            "accuracy": 0.11666666666666667,
+            "oov_fa_rate": 1.0
+          },
+          "15.0": {
+            "macro_f1": 0.4252525252525252,
+            "accuracy": 0.4666666666666667,
+            "oov_fa_rate": 0.5961538461538461
+          },
+          "10.0": {
+            "macro_f1": 0.3105478750640041,
+            "accuracy": 0.4583333333333333,
+            "oov_fa_rate": 0.5961538461538461
+          },
+          "5.0": {
+            "macro_f1": 0.48257575757575755,
+            "accuracy": 0.7333333333333333,
+            "oov_fa_rate": 0.2692307692307692
+          }
+        },
+        "voice_breakdown": {
+          "vi-VN-HoaiMyNeural": {
+            "macro_f1": 0.21374884366327473,
+            "accuracy": 0.4125,
+            "oov_fa_rate": 0.625
+          },
+          "vi-VN-NamMinhNeural": {
+            "macro_f1": 0.3781970139565076,
+            "accuracy": 0.475,
+            "oov_fa_rate": 0.6057692307692307
+          }
+        },
+        "rate_breakdown": {
+          "normal": {
+            "macro_f1": 0.30109065185717,
+            "accuracy": 0.425,
+            "oov_fa_rate": 0.6346153846153846
+          },
+          "fast": {
+            "macro_f1": 0.3391180239006326,
+            "accuracy": 0.4625,
+            "oov_fa_rate": 0.5961538461538461
+          }
+        }
+      },
+      "streaming": {
+        "total_sequences": 50,
+        "exact_sequence_matches": 10,
+        "exact_sequence_accuracy": 0.2,
+        "total_gt_commands": 81,
+        "total_detected_commands": 158,
+        "true_positive_commands": 48,
+        "command_recall": 0.5925925925925926,
+        "command_precision": 0.3037974683544304,
+        "command_f1": 0.401673640167364,
+        "error_taxonomy": {
+          "misses": 33,
+          "substitutions": 12,
+          "false_insertions": 96,
+          "duplicates": 2,
+          "merges": 0,
+          "splits": 0,
+          "premature_cuts": 9
+        },
+        "silence_duration_min": 1.61,
+        "silence_false_alarms": 0,
+        "silence_fa_per_min": 0.0,
+        "oov_duration_min": 1.26,
+        "oov_false_alarms": 44,
+        "oov_fa_per_min": 35.06,
+        "mean_latency_ms": 217.1,
+        "p50_latency_ms": 212.0,
+        "p95_latency_ms": 322.6,
+        "type_breakdown": {
+          "pure_silence_noise": {
+            "total": 10,
+            "exact": 10,
+            "gt_cmds": 0,
+            "tp_cmds": 0
+          },
+          "pure_oov_conversation": {
+            "total": 10,
+            "exact": 0,
+            "gt_cmds": 0,
+            "tp_cmds": 0
+          },
+          "clean_multi_command": {
+            "total": 15,
+            "exact": 0,
+            "gt_cmds": 36,
+            "tp_cmds": 23
+          },
+          "noisy_multi_command": {
+            "total": 15,
+            "exact": 0,
+            "gt_cmds": 45,
+            "tp_cmds": 25
+          }
+        },
+        "snr_breakdown": {
+          "clean": {
+            "total": 35,
+            "exact": 10,
+            "gt_cmds": 36,
+            "tp_cmds": 23
+          },
+          "15.0": {
+            "total": 5,
+            "exact": 0,
+            "gt_cmds": 15,
+            "tp_cmds": 8
+          },
+          "10.0": {
+            "total": 5,
+            "exact": 0,
+            "gt_cmds": 16,
+            "tp_cmds": 9
+          },
+          "5.0": {
+            "total": 5,
+            "exact": 0,
+            "gt_cmds": 14,
+            "tp_cmds": 8
+          }
+        }
+      },
+      "timings": {
+        "isolated_eval_seconds": 0.86,
+        "streaming_eval_seconds": 0.51
+      }
+    }
+  }
+}

@@ -1,0 +1,250 @@
+[
+  {
+    "fixture": "dev_01_digital_silence.wav",
+    "raw_peak": 0.0,
+    "p12_peak": 0.0,
+    "p13_peak": 0.0,
+    "training_ref_peak": 0.0,
+    "p13_vs_ref_waveform_max_diff": 0.0,
+    "p12_prediction": "REJECT",
+    "p12_confidence": 0.0972,
+    "p12_rejection_status": "REJECTED_LOW_CONFIDENCE",
+    "p12_probabilities": {
+      "TRAI": 0.0803,
+      "PHAI": 0.0972,
+      "LEN": 0.0481,
+      "XUONG": 0.0735,
+      "REJECT": 0.7009
+    },
+    "p13_prediction": "REJECT",
+    "p13_confidence": 0.0972,
+    "p13_rejection_status": "REJECTED_LOW_CONFIDENCE",
+    "p13_probabilities": {
+      "TRAI": 0.0803,
+      "PHAI": 0.0972,
+      "LEN": 0.0481,
+      "XUONG": 0.0735,
+      "REJECT": 0.7009
+    },
+    "training_ref_prediction": "REJECT",
+    "training_ref_confidence": 0.0972,
+    "p13_matches_training_ref": true
+  },
+  {
+    "fixture": "dev_02_quiet_ambient_room.wav",
+    "raw_peak": 0.00497,
+    "p12_peak": 0.89125,
+    "p13_peak": 0.00497,
+    "training_ref_peak": 0.00497,
+    "p13_vs_ref_waveform_max_diff": 0.0,
+    "p12_prediction": "TRAI",
+    "p12_confidence": 0.6553,
+    "p12_rejection_status": "ACCEPTED",
+    "p12_probabilities": {
+      "TRAI": 0.6553,
+      "PHAI": 0.2985,
+      "LEN": 0.0005,
+      "XUONG": 0.0016,
+      "REJECT": 0.0441
+    },
+    "p13_prediction": "REJECT",
+    "p13_confidence": 0.0067,
+    "p13_rejection_status": "REJECTED_LOW_CONFIDENCE",
+    "p13_probabilities": {
+      "TRAI": 0.0043,
+      "PHAI": 0.0067,
+      "LEN": 0.0028,
+      "XUONG": 0.0049,
+      "REJECT": 0.9814
+    },
+    "training_ref_prediction": "REJECT",
+    "training_ref_confidence": 0.0067,
+    "p13_matches_training_ref": true
+  },
+  {
+    "fixture": "dev_03_attenuated_trai_peak010.wav",
+    "raw_peak": 0.09998,
+    "p12_peak": 0.89125,
+    "p13_peak": 0.09998,
+    "training_ref_peak": 0.09998,
+    "p13_vs_ref_waveform_max_diff": 0.0,
+    "p12_prediction": "LEN",
+    "p12_confidence": 0.3596,
+    "p12_rejection_status": "ACCEPTED",
+    "p12_probabilities": {
+      "TRAI": 0.0713,
+      "PHAI": 0.1457,
+      "LEN": 0.3596,
+      "XUONG": 0.1735,
+      "REJECT": 0.2499
+    },
+    "p13_prediction": "REJECT",
+    "p13_confidence": 0.0859,
+    "p13_rejection_status": "REJECTED_LOW_CONFIDENCE",
+    "p13_probabilities": {
+      "TRAI": 0.0655,
+      "PHAI": 0.0859,
+      "LEN": 0.0409,
+      "XUONG": 0.0638,
+      "REJECT": 0.744
+    },
+    "training_ref_prediction": "REJECT",
+    "training_ref_confidence": 0.0859,
+    "p13_matches_training_ref": true
+  },
+  {
+    "fixture": "dev_04_attenuated_phai_peak005.wav",
+    "raw_peak": 0.04999,
+    "p12_peak": 0.89125,
+    "p13_peak": 0.04999,
+    "training_ref_peak": 0.04999,
+    "p13_vs_ref_waveform_max_diff": 0.0,
+    "p12_prediction": "PHAI",
+    "p12_confidence": 0.2114,
+    "p12_rejection_status": "ACCEPTED",
+    "p12_probabilities": {
+      "TRAI": 0.1343,
+      "PHAI": 0.2114,
+      "LEN": 0.2084,
+      "XUONG": 0.1649,
+      "REJECT": 0.281
+    },
+    "p13_prediction": "REJECT",
+    "p13_confidence": 0.0651,
+    "p13_rejection_status": "REJECTED_LOW_CONFIDENCE",
+    "p13_probabilities": {
+      "TRAI": 0.0454,
+      "PHAI": 0.0651,
+      "LEN": 0.0228,
+      "XUONG": 0.0309,
+      "REJECT": 0.8358
+    },
+    "training_ref_prediction": "REJECT",
+    "training_ref_confidence": 0.0651,
+    "p13_matches_training_ref": true
+  },
+  {
+    "fixture": "dev_05_normal_len_peak089.wav",
+    "raw_peak": 0.89124,
+    "p12_peak": 0.89125,
+    "p13_peak": 0.89124,
+    "training_ref_peak": 0.89124,
+    "p13_vs_ref_waveform_max_diff": 0.0,
+    "p12_prediction": "XUONG",
+    "p12_confidence": 0.2275,
+    "p12_rejection_status": "ACCEPTED",
+    "p12_probabilities": {
+      "TRAI": 0.0873,
+      "PHAI": 0.1289,
+      "LEN": 0.1955,
+      "XUONG": 0.2275,
+      "REJECT": 0.3607
+    },
+    "p13_prediction": "XUONG",
+    "p13_confidence": 0.2275,
+    "p13_rejection_status": "ACCEPTED",
+    "p13_probabilities": {
+      "TRAI": 0.0873,
+      "PHAI": 0.1289,
+      "LEN": 0.1955,
+      "XUONG": 0.2275,
+      "REJECT": 0.3607
+    },
+    "training_ref_prediction": "XUONG",
+    "training_ref_confidence": 0.2275,
+    "p13_matches_training_ref": true
+  },
+  {
+    "fixture": "dev_06_normal_xuong_peak089.wav",
+    "raw_peak": 0.89124,
+    "p12_peak": 0.89125,
+    "p13_peak": 0.89124,
+    "training_ref_peak": 0.89124,
+    "p13_vs_ref_waveform_max_diff": 0.0,
+    "p12_prediction": "XUONG",
+    "p12_confidence": 0.2853,
+    "p12_rejection_status": "ACCEPTED",
+    "p12_probabilities": {
+      "TRAI": 0.0739,
+      "PHAI": 0.0989,
+      "LEN": 0.172,
+      "XUONG": 0.2853,
+      "REJECT": 0.3699
+    },
+    "p13_prediction": "XUONG",
+    "p13_confidence": 0.2853,
+    "p13_rejection_status": "ACCEPTED",
+    "p13_probabilities": {
+      "TRAI": 0.0739,
+      "PHAI": 0.0989,
+      "LEN": 0.172,
+      "XUONG": 0.2853,
+      "REJECT": 0.3699
+    },
+    "training_ref_prediction": "XUONG",
+    "training_ref_confidence": 0.2853,
+    "p13_matches_training_ref": true
+  },
+  {
+    "fixture": "dev_07_high_amplitude_trai_peak180.wav",
+    "raw_peak": 1.8,
+    "p12_peak": 0.89125,
+    "p13_peak": 1.0,
+    "training_ref_peak": 1.0,
+    "p13_vs_ref_waveform_max_diff": 0.0,
+    "p12_prediction": "LEN",
+    "p12_confidence": 0.3593,
+    "p12_rejection_status": "ACCEPTED",
+    "p12_probabilities": {
+      "TRAI": 0.0712,
+      "PHAI": 0.1454,
+      "LEN": 0.3593,
+      "XUONG": 0.1734,
+      "REJECT": 0.2507
+    },
+    "p13_prediction": "LEN",
+    "p13_confidence": 0.3815,
+    "p13_rejection_status": "ACCEPTED",
+    "p13_probabilities": {
+      "TRAI": 0.0672,
+      "PHAI": 0.1419,
+      "LEN": 0.3815,
+      "XUONG": 0.1701,
+      "REJECT": 0.2392
+    },
+    "training_ref_prediction": "LEN",
+    "training_ref_confidence": 0.3815,
+    "p13_matches_training_ref": true
+  },
+  {
+    "fixture": "dev_08_high_amplitude_xuong_peak250.wav",
+    "raw_peak": 2.5,
+    "p12_peak": 0.89125,
+    "p13_peak": 1.0,
+    "training_ref_peak": 1.0,
+    "p13_vs_ref_waveform_max_diff": 0.0,
+    "p12_prediction": "XUONG",
+    "p12_confidence": 0.2852,
+    "p12_rejection_status": "ACCEPTED",
+    "p12_probabilities": {
+      "TRAI": 0.0739,
+      "PHAI": 0.0989,
+      "LEN": 0.172,
+      "XUONG": 0.2852,
+      "REJECT": 0.3699
+    },
+    "p13_prediction": "XUONG",
+    "p13_confidence": 0.2905,
+    "p13_rejection_status": "ACCEPTED",
+    "p13_probabilities": {
+      "TRAI": 0.0701,
+      "PHAI": 0.0968,
+      "LEN": 0.1892,
+      "XUONG": 0.2905,
+      "REJECT": 0.3534
+    },
+    "training_ref_prediction": "XUONG",
+    "training_ref_confidence": 0.2905,
+    "p13_matches_training_ref": true
+  }
+]

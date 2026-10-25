@@ -1,0 +1,250 @@
+{
+  "TRAI": {
+    "v5_2_parametric_sample": {
+      "recording_id": "v5_2_rc_test_trai_0001",
+      "speaker": "SPK_TEST_01_FEMALE",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.4758,
+        "full_clip_rms_dbfs": -18.13,
+        "speech_rms_dbfs": -18.12,
+        "active_duration_sec": 0.9982,
+        "spectral_centroid_hz": 104.5,
+        "hf_energy_ratio_above_3k": 0.0,
+        "f0_start_hz": 240.9,
+        "f0_mid_hz": 270.4,
+        "f0_end_hz": 303.5,
+        "f0_min_hz": 236.7,
+        "f0_max_hz": 303.5,
+        "f0_range_hz": 66.7,
+        "f0_slope_hz_per_sec": 391.3
+      }
+    },
+    "tts_neural_female_sample": {
+      "clip_id": "tts_pilot_trai_hoaimy_norm",
+      "voice": "vi-VN-HoaiMyNeural",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.5544,
+        "full_clip_rms_dbfs": -23.03,
+        "speech_rms_dbfs": -16.35,
+        "active_duration_sec": 0.2151,
+        "spectral_centroid_hz": 74.2,
+        "hf_energy_ratio_above_3k": 0.0,
+        "f0_start_hz": 296.6,
+        "f0_mid_hz": 250.8,
+        "f0_end_hz": 267.3,
+        "f0_min_hz": 250.8,
+        "f0_max_hz": 296.6,
+        "f0_range_hz": 45.7,
+        "f0_slope_hz_per_sec": -266.2
+      }
+    },
+    "tts_neural_male_sample": {
+      "clip_id": "tts_pilot_trai_namminh_norm",
+      "voice": "vi-VN-NamMinhNeural",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.5301,
+        "full_clip_rms_dbfs": -24.2,
+        "speech_rms_dbfs": -18.0,
+        "active_duration_sec": 0.2394,
+        "spectral_centroid_hz": 45.7,
+        "hf_energy_ratio_above_3k": 0.0,
+        "f0_start_hz": 131.3,
+        "f0_mid_hz": 127.6,
+        "f0_end_hz": 137.6,
+        "f0_min_hz": 124.7,
+        "f0_max_hz": 137.6,
+        "f0_range_hz": 12.9,
+        "f0_slope_hz_per_sec": 51.8
+      }
+    }
+  },
+  "PHAI": {
+    "v5_2_parametric_sample": {
+      "recording_id": "v5_2_rc_test_phai_0001",
+      "speaker": "SPK_TEST_01_FEMALE",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.4946,
+        "full_clip_rms_dbfs": -18.07,
+        "speech_rms_dbfs": -18.06,
+        "active_duration_sec": 0.9974,
+        "spectral_centroid_hz": 114.1,
+        "hf_energy_ratio_above_3k": 0.0003,
+        "f0_start_hz": 236.7,
+        "f0_mid_hz": 195.7,
+        "f0_end_hz": 246.5,
+        "f0_min_hz": 191.2,
+        "f0_max_hz": 246.5,
+        "f0_range_hz": 55.3,
+        "f0_slope_hz_per_sec": 54.3
+      }
+    },
+    "tts_neural_female_sample": {
+      "clip_id": "tts_pilot_phai_hoaimy_norm",
+      "voice": "vi-VN-HoaiMyNeural",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.6232,
+        "full_clip_rms_dbfs": -21.99,
+        "speech_rms_dbfs": -16.6,
+        "active_duration_sec": 0.2883,
+        "spectral_centroid_hz": 136.7,
+        "hf_energy_ratio_above_3k": 0.0,
+        "f0_start_hz": 389.1,
+        "f0_mid_hz": 164.5,
+        "f0_end_hz": 281.5,
+        "f0_min_hz": 164.5,
+        "f0_max_hz": 389.1,
+        "f0_range_hz": 224.5,
+        "f0_slope_hz_per_sec": -632.5
+      }
+    },
+    "tts_neural_male_sample": {
+      "clip_id": "tts_pilot_phai_namminh_norm",
+      "voice": "vi-VN-NamMinhNeural",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.6328,
+        "full_clip_rms_dbfs": -23.78,
+        "speech_rms_dbfs": -19.14,
+        "active_duration_sec": 0.3435,
+        "spectral_centroid_hz": 105.1,
+        "hf_energy_ratio_above_3k": 0.0,
+        "f0_start_hz": 0.0,
+        "f0_mid_hz": 0.0,
+        "f0_end_hz": 0.0,
+        "f0_min_hz": 0.0,
+        "f0_max_hz": 0.0,
+        "f0_range_hz": 0.0,
+        "f0_slope_hz_per_sec": 0.0
+      }
+    }
+  },
+  "LEN": {
+    "v5_2_parametric_sample": {
+      "recording_id": "v5_2_rc_test_len_0001",
+      "speaker": "SPK_TEST_02_MALE",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.4146,
+        "full_clip_rms_dbfs": -19.52,
+        "speech_rms_dbfs": -19.52,
+        "active_duration_sec": 0.9998,
+        "spectral_centroid_hz": 48.2,
+        "hf_energy_ratio_above_3k": 0.0,
+        "f0_start_hz": 117.7,
+        "f0_mid_hz": 114.3,
+        "f0_end_hz": 75.9,
+        "f0_min_hz": 75.9,
+        "f0_max_hz": 117.7,
+        "f0_range_hz": 41.8,
+        "f0_slope_hz_per_sec": -199.1
+      }
+    },
+    "tts_neural_female_sample": {
+      "clip_id": "tts_pilot_len_hoaimy_norm",
+      "voice": "vi-VN-HoaiMyNeural",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.5979,
+        "full_clip_rms_dbfs": -20.23,
+        "speech_rms_dbfs": -14.58,
+        "active_duration_sec": 0.272,
+        "spectral_centroid_hz": 68.2,
+        "hf_energy_ratio_above_3k": 0.0,
+        "f0_start_hz": 253.7,
+        "f0_mid_hz": 249.4,
+        "f0_end_hz": 217.1,
+        "f0_min_hz": 209.7,
+        "f0_max_hz": 256.7,
+        "f0_range_hz": 47.0,
+        "f0_slope_hz_per_sec": -261.7
+      }
+    },
+    "tts_neural_male_sample": {
+      "clip_id": "tts_pilot_len_namminh_norm",
+      "voice": "vi-VN-NamMinhNeural",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.5377,
+        "full_clip_rms_dbfs": -22.92,
+        "speech_rms_dbfs": -17.5,
+        "active_duration_sec": 0.2869,
+        "spectral_centroid_hz": 66.8,
+        "hf_energy_ratio_above_3k": 0.0002,
+        "f0_start_hz": 134.4,
+        "f0_mid_hz": 137.6,
+        "f0_end_hz": 131.3,
+        "f0_min_hz": 107.3,
+        "f0_max_hz": 144.9,
+        "f0_range_hz": 37.6,
+        "f0_slope_hz_per_sec": -21.9
+      }
+    }
+  },
+  "XUONG": {
+    "v5_2_parametric_sample": {
+      "recording_id": "v5_2_rc_test_xuong_0001",
+      "speaker": "SPK_TEST_02_MALE",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.5507,
+        "full_clip_rms_dbfs": -16.94,
+        "speech_rms_dbfs": -16.94,
+        "active_duration_sec": 0.9996,
+        "spectral_centroid_hz": 65.2,
+        "hf_energy_ratio_above_3k": 0.0,
+        "f0_start_hz": 112.4,
+        "f0_mid_hz": 129.1,
+        "f0_end_hz": 179.4,
+        "f0_min_hz": 112.4,
+        "f0_max_hz": 180.5,
+        "f0_range_hz": 68.1,
+        "f0_slope_hz_per_sec": 279.3
+      }
+    },
+    "tts_neural_female_sample": {
+      "clip_id": "tts_pilot_xuong_hoaimy_norm",
+      "voice": "vi-VN-HoaiMyNeural",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.6071,
+        "full_clip_rms_dbfs": -19.73,
+        "speech_rms_dbfs": -13.21,
+        "active_duration_sec": 0.2225,
+        "spectral_centroid_hz": 62.3,
+        "hf_energy_ratio_above_3k": 0.0,
+        "f0_start_hz": 275.1,
+        "f0_mid_hz": 253.7,
+        "f0_end_hz": 340.7,
+        "f0_min_hz": 250.8,
+        "f0_max_hz": 352.7,
+        "f0_range_hz": 101.8,
+        "f0_slope_hz_per_sec": 546.3
+      }
+    },
+    "tts_neural_male_sample": {
+      "clip_id": "tts_pilot_xuong_namminh_norm",
+      "voice": "vi-VN-NamMinhNeural",
+      "features": {
+        "duration_sec": 1.0,
+        "peak_amplitude": 0.3973,
+        "full_clip_rms_dbfs": -22.51,
+        "speech_rms_dbfs": -17.49,
+        "active_duration_sec": 0.3151,
+        "spectral_centroid_hz": 49.9,
+        "hf_energy_ratio_above_3k": 0.0,
+        "f0_start_hz": 145.7,
+        "f0_mid_hz": 197.9,
+        "f0_end_hz": 234.0,
+        "f0_min_hz": 143.2,
+        "f0_max_hz": 234.0,
+        "f0_range_hz": 90.8,
+        "f0_slope_hz_per_sec": 882.9
+      }
+    }
+  }
+}

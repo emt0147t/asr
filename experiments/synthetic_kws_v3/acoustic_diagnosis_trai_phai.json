@@ -1,0 +1,117 @@
+{
+  "TRAI": {
+    "class_name": "TRAI",
+    "sample_count": 214,
+    "duration": {
+      "mean": 0.4959962032710281,
+      "std": 0.08631262310443237,
+      "min": 0.347375,
+      "max": 0.6421875
+    },
+    "rms_energy": {
+      "mean": 0.2215823531150818,
+      "std": 0.052859995514154434
+    },
+    "peak_amp": {
+      "mean": 0.8912374973297119,
+      "std": 7.791276402713265e-06
+    },
+    "attack_time_ms": {
+      "mean": 146.2535046728972,
+      "std": 112.94794543721589
+    },
+    "onset_energy_50ms": {
+      "mean": 0.15494701266288757,
+      "std": 0.040622513741254807
+    },
+    "onset_hf_ratio": {
+      "mean": 0.4706126454109329,
+      "std": 0.1209260301231442
+    },
+    "f0_relative_contour": {
+      "norm_means": [
+        1.0,
+        1.2458950665603836,
+        1.2213246944729705,
+        1.336287109584842,
+        1.3758010741888198
+      ],
+      "norm_stds": [
+        0.0,
+        0.49776801197798676,
+        0.46299072308281014,
+        0.5661150369338823,
+        0.554495114815773
+      ],
+      "points": [
+        "15% (onset)",
+        "35% (early)",
+        "50% (mid)",
+        "70% (late)",
+        "85% (coda)"
+      ]
+    },
+    "f0_mean_ratio_final_to_initial": 1.375801062434633
+  },
+  "PHAI": {
+    "class_name": "PHAI",
+    "sample_count": 214,
+    "duration": {
+      "mean": 0.500427570093458,
+      "std": 0.0859175880285693,
+      "min": 0.348625,
+      "max": 0.6450625
+    },
+    "rms_energy": {
+      "mean": 0.19521945714950562,
+      "std": 0.05188018083572388
+    },
+    "peak_amp": {
+      "mean": 0.8912356495857239,
+      "std": 2.936455075541744e-06
+    },
+    "attack_time_ms": {
+      "mean": 149.9991238317757,
+      "std": 93.03441708751089
+    },
+    "onset_energy_50ms": {
+      "mean": 0.14902104437351227,
+      "std": 0.01793869584798813
+    },
+    "onset_hf_ratio": {
+      "mean": 0.44509020697442553,
+      "std": 0.12202022578832525
+    },
+    "f0_relative_contour": {
+      "norm_means": [
+        1.0,
+        0.8932465998920787,
+        0.8924327838850981,
+        1.0010369892742768,
+        1.0976591256575658
+      ],
+      "norm_stds": [
+        0.0,
+        0.11858858054866044,
+        0.11460283454928405,
+        0.009249618129402549,
+        0.03903812841203132
+      ],
+      "points": [
+        "15% (onset)",
+        "35% (early)",
+        "50% (mid)",
+        "70% (late)",
+        "85% (coda)"
+      ]
+    },
+    "f0_mean_ratio_final_to_initial": 1.0976591171985945
+  },
+  "analytical_conclusions": {
+    "duration_and_energy": "Direct measurement: Duration, RMS energy, attack time, and onset spectral centroid are statistically INDISTINGUISHABLE between TRAI and PHAI. Generator parameters confirm identical envelopes and noise seeds.",
+    "formant_trajectories": "Code inspection and spectrogram analysis: Both TRAI and PHAI use identical F1=800Hz, F2=1350Hz, F3=2600Hz with identical glide towards /j/.",
+    "consonant_onset": "Phonetic limitation: Natural Vietnamese contrasts /t\u0255/ (voiceless alveolo-palatal affricate stop) with /f/ (voiceless labiodental fricative). The generator synthesizes both with the exact same 50ms decaying Gaussian noise burst (Northern/Central). Zero spectral frication or stop closure exists.",
+    "pitch_f0_contour": "Direct measurement: Pitch contour is the ONLY acoustic discriminator in the synthetic generator. TRAI rises monotonically (+35%). PHAI dips at mid-utterance (-20%) before rising (+15%).",
+    "generalization_defect_root_cause": "Because the model has zero consonant spectral cues, it must rely entirely on F0 trajectory. When training on 14 fixed speakers without pitch augmentation, TC-ResNet-14 memorized the specific mel bands where harmonics moved. In unseen speakers with base F0 between 140Hz and 195Hz, the dipping harmonic curve falls into novel mel channels. TC-ResNet's global temporal average/max pooling collapses time order, so it fails to recognize the dip."
+  }
+}

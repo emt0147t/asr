@@ -1,0 +1,20 @@
+{
+  "seed42": {
+    "theta1": 0.55,
+    "theta2": 0.7,
+    "is_strictly_feasible": false,
+    "rationale": "NO_FEASIBLE_VALIDATION_OPERATING_POINT: FA/hr <= 1.0 unmet on unconstrained speech. Selected Pareto compromise (theta1=0.55, theta2=0.70) for test evaluation."
+  },
+  "seed43": {
+    "theta1": 0.45,
+    "theta2": 0.6,
+    "is_strictly_feasible": false,
+    "rationale": "NO_FEASIBLE_VALIDATION_OPERATING_POINT: FA/hr <= 1.0 unmet on unconstrained speech. Selected Pareto compromise (theta1=0.45, theta2=0.60) for test evaluation."
+  },
+  "seed44": {
+    "theta1": 0.55,
+    "theta2": 0.7,
+    "is_strictly_feasible": false,
+    "rationale": "NO_FEASIBLE_VALIDATION_OPERATING_POINT: FA/hr <= 1.0 unmet on unconstrained speech. Selected Pareto compromise (theta1=0.55, theta2=0.70) for test evaluation."
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "checkpoint": "best_checkpoint_seed44.pt",
+  "seed": 44,
+  "best_epoch": 26,
+  "val_macro_f1": 0.906598835683803,
+  "test_accuracy": 0.9125,
+  "macro_precision": 0.9331643965790307,
+  "macro_recall": 0.9125,
+  "macro_f1": 0.9029060672186849,
+  "per_class": {
+    "TRAI": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 40
+    },
+    "PHAI": {
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1": 0.9523809523809523,
+      "support": 40
+    },
+    "LEN": {
+      "precision": 0.975609756097561,
+      "recall": 1.0,
+      "f1": 0.9876543209876543,
+      "support": 40
+    },
+    "XUONG": {
+      "precision": 0.7142857142857143,
+      "recall": 1.0,
+      "f1": 0.8333333333333334,
+      "support": 40
+    },
+    "UNKNOWN": {
+      "precision": 1.0,
+      "recall": 0.475,
+      "f1": 0.6440677966101694,
+      "support": 40
+    },
+    "SILENCE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 40
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "TRAI",
+      "PHAI",
+      "LEN",
+      "XUONG",
+      "UNKNOWN",
+      "SILENCE"
+    ],
+    "matrix": [
+      [
+        40,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        40,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        1,
+        16,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        40
+      ]
+    ]
+  },
+  "silence_out_of_condition_diagnostics": {
+    "brownian_noise_simulation": {
+      "total": 15,
+      "correct": 15,
+      "accuracy": 1.0
+    },
+    "comb_room_resonance": {
+      "total": 15,
+      "correct": 15,
+      "accuracy": 1.0
+    },
+    "shaped_highpass_dither": {
+      "total": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    }
+  },
+  "error_categories": {
+    "target_misclassified_as_unknown": 0,
+    "unknown_misclassified_as_target": 21,
+    "silence_misclassified_as_target": 0,
+    "target_misclassified_as_silence": 0
+  },
+  "model_parameters": 138534,
+  "checkpoint_size_kb": 1651.720703125,
+  "latency_ms": {
+    "cpu_single_mean": 1.1665488903721173,
+    "cpu_single_std": 0.09256155317993515,
+    "gpu_batched_mean": 2.0554866666013063
+  },
+  "total_test_samples": 240,
+  "incorrect_count": 21,
+  "incorrect_samples": [
+    {
+      "sample_id": "vnkws_unknown_0212",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.736894428730011,
+      "prob_TRAI": 0.003959190100431442,
+      "prob_PHAI": 3.256467607570812e-05,
+      "prob_LEN": 0.011662380769848824,
+      "prob_XUONG": 0.736894428730011,
+      "prob_UNKNOWN": 0.24733823537826538,
+      "prob_SILENCE": 0.00011313166032778099,
+      "correct": false,
+      "voice_id": "Kim Thanh",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0213",
+      "true_label": "UNKNOWN",
+      "predicted_label": "PHAI",
+      "confidence": 0.9464422464370728,
+      "prob_TRAI": 0.0027713088784366846,
+      "prob_PHAI": 0.9464422464370728,
+      "prob_LEN": 0.007358003873378038,
+      "prob_XUONG": 0.002104463754221797,
+      "prob_UNKNOWN": 0.040252622216939926,
+      "prob_SILENCE": 0.0010712762596085668,
+      "correct": false,
+      "voice_id": "Kim Thanh",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0216",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.7754868268966675,
+      "prob_TRAI": 0.009504884481430054,
+      "prob_PHAI": 0.0010716042015701532,
+      "prob_LEN": 0.00023899457301013172,
+      "prob_XUONG": 0.7754868268966675,
+      "prob_UNKNOWN": 0.2133658528327942,
+      "prob_SILENCE": 0.0003317870432510972,
+      "correct": false,
+      "voice_id": "Kim Thanh",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0217",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.9826802611351013,
+      "prob_TRAI": 7.025390368653461e-05,
+      "prob_PHAI": 6.702363180011162e-07,
+      "prob_LEN": 1.755070115905255e-05,
+      "prob_XUONG": 0.9826802611351013,
+      "prob_UNKNOWN": 0.01720461994409561,
+      "prob_SILENCE": 2.667122498678509e-05,
+      "correct": false,
+      "voice_id": "Kim Thanh",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0220",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.9176865816116333,
+      "prob_TRAI": 4.4183139834785834e-05,
+      "prob_PHAI": 5.236904326011427e-05,
+      "prob_LEN": 0.00015072457608766854,
+      "prob_XUONG": 0.9176865816116333,
+      "prob_UNKNOWN": 0.08140067011117935,
+      "prob_SILENCE": 0.0006655037868767977,
+      "correct": false,
+      "voice_id": "Kim Thanh",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0222",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.5325626134872437,
+      "prob_TRAI": 0.1731915920972824,
+      "prob_PHAI": 7.446810195688158e-05,
+      "prob_LEN": 0.00012744673585984856,
+      "prob_XUONG": 0.5325626134872437,
+      "prob_UNKNOWN": 0.29396283626556396,
+      "prob_SILENCE": 8.106672612484545e-05,
+      "correct": false,
+      "voice_id": "Quốc Tuấn",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0223",
+      "true_label": "UNKNOWN",
+      "predicted_label": "PHAI",
+      "confidence": 0.7217112183570862,
+      "prob_TRAI": 0.009302843362092972,
+      "prob_PHAI": 0.7217112183570862,
+      "prob_LEN": 0.20877504348754883,
+      "prob_XUONG": 0.00024342842516489327,
+      "prob_UNKNOWN": 0.056552112102508545,
+      "prob_SILENCE": 0.003415405983105302,
+      "correct": false,
+      "voice_id": "Quốc Tuấn",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0225",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.5583664178848267,
+      "prob_TRAI": 0.0003434352111071348,
+      "prob_PHAI": 5.2376428357092664e-05,
+      "prob_LEN": 3.193377551724552e-06,
+      "prob_XUONG": 0.5583664178848267,
+      "prob_UNKNOWN": 0.4409167766571045,
+      "prob_SILENCE": 0.0003178189799655229,
+      "correct": false,
+      "voice_id": "Quốc Tuấn",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0226",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.9200773239135742,
+      "prob_TRAI": 0.0002412344329059124,
+      "prob_PHAI": 0.0011519560357555747,
+      "prob_LEN": 2.0408746422617696e-05,
+      "prob_XUONG": 0.9200773239135742,
+      "prob_UNKNOWN": 0.07262296974658966,
+      "prob_SILENCE": 0.005886124446988106,
+      "correct": false,
+      "voice_id": "Quốc Tuấn",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0227",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.9769670963287354,
+      "prob_TRAI": 0.0008065668516792357,
+      "prob_PHAI": 1.3424081771518104e-05,
+      "prob_LEN": 2.1011508579249494e-05,
+      "prob_XUONG": 0.9769670963287354,
+      "prob_UNKNOWN": 0.021834511309862137,
+      "prob_SILENCE": 0.00035740277962759137,
+      "correct": false,
+      "voice_id": "Quốc Tuấn",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0230",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.9739020466804504,
+      "prob_TRAI": 1.5685732250858564e-06,
+      "prob_PHAI": 9.751611287356354e-07,
+      "prob_LEN": 3.547730375430547e-05,
+      "prob_XUONG": 0.9739020466804504,
+      "prob_UNKNOWN": 0.02589154615998268,
+      "prob_SILENCE": 0.00016842591867316514,
+      "correct": false,
+      "voice_id": "Quốc Tuấn",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0232",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.9523932337760925,
+      "prob_TRAI": 0.00038680920260958374,
+      "prob_PHAI": 6.0138872868265025e-06,
+      "prob_LEN": 0.007712103892117739,
+      "prob_XUONG": 0.9523932337760925,
+      "prob_UNKNOWN": 0.039457712322473526,
+      "prob_SILENCE": 4.418366006575525e-05,
+      "correct": false,
+      "voice_id": "Quỳnh Anh",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0234",
+      "true_label": "UNKNOWN",
+      "predicted_label": "LEN",
+      "confidence": 0.5582948923110962,
+      "prob_TRAI": 6.027585914125666e-05,
+      "prob_PHAI": 4.342614829511149e-06,
+      "prob_LEN": 0.5582948923110962,
+      "prob_XUONG": 0.004364317283034325,
+      "prob_UNKNOWN": 0.43727222084999084,
+      "prob_SILENCE": 4.0017798710323405e-06,
+      "correct": false,
+      "voice_id": "Quỳnh Anh",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0235",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.8278460502624512,
+      "prob_TRAI": 0.003130607772618532,
+      "prob_PHAI": 1.2396910733514233e-06,
+      "prob_LEN": 6.858323558844859e-06,
+      "prob_XUONG": 0.8278460502624512,
+      "prob_UNKNOWN": 0.1690124124288559,
+      "prob_SILENCE": 2.818217581079807e-06,
+      "correct": false,
+      "voice_id": "Quỳnh Anh",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0237",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.9869246482849121,
+      "prob_TRAI": 1.05402541521471e-05,
+      "prob_PHAI": 5.2449692589107144e-08,
+      "prob_LEN": 3.9222022678586654e-06,
+      "prob_XUONG": 0.9869246482849121,
+      "prob_UNKNOWN": 0.013055314309895039,
+      "prob_SILENCE": 5.514921667781891e-06,
+      "correct": false,
+      "voice_id": "Quỳnh Anh",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0240",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.5630781650543213,
+      "prob_TRAI": 5.0302651288802736e-06,
+      "prob_PHAI": 3.3867427191580646e-06,
+      "prob_LEN": 7.673117215745151e-05,
+      "prob_XUONG": 0.5630781650543213,
+      "prob_UNKNOWN": 0.43667465448379517,
+      "prob_SILENCE": 0.00016204752319026738,
+      "correct": false,
+      "voice_id": "Quỳnh Anh",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0242",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.6396166086196899,
+      "prob_TRAI": 0.009251021780073643,
+      "prob_PHAI": 1.7208767530974e-06,
+      "prob_LEN": 9.78204479906708e-06,
+      "prob_XUONG": 0.6396166086196899,
+      "prob_UNKNOWN": 0.3511081337928772,
+      "prob_SILENCE": 1.2668713679886423e-05,
+      "correct": false,
+      "voice_id": "Đức Trí",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0243",
+      "true_label": "UNKNOWN",
+      "predicted_label": "PHAI",
+      "confidence": 0.9797460436820984,
+      "prob_TRAI": 0.0001659364061197266,
+      "prob_PHAI": 0.9797460436820984,
+      "prob_LEN": 0.0021459662821143866,
+      "prob_XUONG": 4.074874595971778e-05,
+      "prob_UNKNOWN": 0.01411908958107233,
+      "prob_SILENCE": 0.003782192012295127,
+      "correct": false,
+      "voice_id": "Đức Trí",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0245",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.9695874452590942,
+      "prob_TRAI": 0.0006666597328148782,
+      "prob_PHAI": 8.046521543292329e-05,
+      "prob_LEN": 3.3095354865508853e-06,
+      "prob_XUONG": 0.9695874452590942,
+      "prob_UNKNOWN": 0.029402941465377808,
+      "prob_SILENCE": 0.0002591149532236159,
+      "correct": false,
+      "voice_id": "Đức Trí",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0247",
+      "true_label": "UNKNOWN",
+      "predicted_label": "XUONG",
+      "confidence": 0.9646052122116089,
+      "prob_TRAI": 3.805905726039782e-05,
+      "prob_PHAI": 2.2852064773815073e-07,
+      "prob_LEN": 2.2094625364843523e-06,
+      "prob_XUONG": 0.9646052122116089,
+      "prob_UNKNOWN": 0.0353303924202919,
+      "prob_SILENCE": 2.3951639377628453e-05,
+      "correct": false,
+      "voice_id": "Đức Trí",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    },
+    {
+      "sample_id": "vnkws_unknown_0248",
+      "true_label": "UNKNOWN",
+      "predicted_label": "PHAI",
+      "confidence": 0.9866997003555298,
+      "prob_TRAI": 0.000366693566320464,
+      "prob_PHAI": 0.9866997003555298,
+      "prob_LEN": 0.00022151676239445806,
+      "prob_XUONG": 3.4973079891642556e-05,
+      "prob_UNKNOWN": 0.01141577959060669,
+      "prob_SILENCE": 0.0012613569851964712,
+      "correct": false,
+      "voice_id": "Đức Trí",
+      "model_condition": "pnnbao-ump/VieNeu-TTS-v3-Turbo"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "engine": "VieNeu-TTS v3 Turbo",
+  "version": "3.8.3",
+  "backend": "Local CPU ONNX Runtime",
+  "total_samples": 1000,
+  "class_counts": {
+    "LEN": 250,
+    "PHAI": 250,
+    "TRAI": 250,
+    "XUONG": 250
+  },
+  "split_counts": {
+    "train": 680,
+    "val": 160,
+    "test": 160
+  },
+  "train_voices_count": 17,
+  "val_voices_count": 4,
+  "test_voices_count": 4,
+  "voice_leakage_detected": false,
+  "exact_duplicate_raw_hashes": 0,
+  "exact_duplicate_kws_hashes": 0,
+  "missing_files": 0,
+  "hash_mismatches": 0,
+  "nan_inf_count": 0,
+  "clipping_count": 0,
+  "truncation_count": 0,
+  "acoustic_summary": {
+    "active_duration_sec": {
+      "mean": 0.60992,
+      "std": 0.10728421833384211
+    },
+    "speech_rms_dbfs": {
+      "mean": -21.88369,
+      "std": 2.2473205676168306
+    },
+    "spectral_centroid_hz": {
+      "mean": 85.73190000000001,
+      "std": 43.517772333828155
+    },
+    "peak_amplitude": {
+      "mean": 0.5085925,
+      "max": 0.95
+    }
+  },
+  "verdict": "PASS",
+  "subjective_intelligibility_status": "PENDING_HUMAN_LISTENER_VERIFICATION",
+  "official_project_status": "NOT_VALIDATED_ON_NATURAL_SPEECH"
+}

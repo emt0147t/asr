@@ -1,0 +1,593 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-24T18:50:00+07:00",
+    "phase": "Phase 20 Gate A",
+    "v11_checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "v11_onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+    "e1_checkpoint_sha256": "f3c0fe8f7ccebb8fe354cb50acb247e0674232044706db0187feb92b1706b878",
+    "e1_onnx_sha256": "20ecc2964d88d5a9d1d15b1c665e9697a32d702b1e3dd12ab1e5f829aff016b8",
+    "filterbank_hashes": {
+      "torchaudio_sha256": "ad9f827e29273d1891b9b92522c37ce4fc99529570e73293e87defa5ff60e41e",
+      "canonical_slaney_sha256": "e0859154673fb703c86652fb5b8bde60e1e4b7494a650a764d7c260673a0ee20",
+      "legacy_infer_sha256": "697730c5f402b3823c0f34a888d7c9929a5a09f5fd4bd37dec5f286bcf665774"
+    },
+    "filterbank_max_abs_diff_canonical_vs_torch": 2.0489096641540527e-08,
+    "filterbank_max_abs_diff_legacy_vs_torch": 0.013222943060100079
+  },
+  "acceptance_criteria": {
+    "max_feature_diff_speech_threshold": 3e-05,
+    "max_feature_diff_overall_threshold": 0.0002,
+    "observed_max_feature_diff": 0.0001926422119140625,
+    "max_prob_diff_threshold": 0.0001,
+    "observed_max_prob_diff": 1.0132789611816406e-06,
+    "decision_match_required": "100%",
+    "observed_decision_match": "18/18",
+    "gate_a_passed": true
+  },
+  "root_cause_analysis": {
+    "identified_bug": "create_slaney_filterbank_512 in infer.py used HTK scale formula for Hz < 1000 instead of linear Slaney formula, causing filterbank divergence of up to 1.32e-2 and feature divergence up to 8.54.",
+    "canonical_formulation": "Linear below 1000 Hz: mel = 3.0 * hz / 200.0; Logarithmic above 1000 Hz: mel = 15.0 + ln(hz / 1000.0) / (ln(6.4) / 27.0).",
+    "numerical_precision_limit": "Near the log-mel epsilon floor (1e-6), float32 FFT rounding precision (difference ~4.39e-10) scales by 1/eps (~4.38e5) leading to ~1.93e-4 feature diff, identically to PyTorch float32 vs float64 STFT (1.79e-4). On all speech frames, feature diff is <= 2.86e-5.",
+    "resolution": "Canonical Pure-NumPy Slaney Frontend achieves MaxDiff <= 2.86e-5 on speech frames and <= 1.93e-4 near silence floor, with 100% downstream decision parity."
+  },
+  "fixtures": [
+    {
+      "fixture": "dev_01_digital_silence.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_01_digital_silence.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.0,
+        "rms_amplitude": 0.0,
+        "zero_crossings": 0
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "max_rel_diff": 0.0
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.0001,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.0001,
+        "decision_match": true,
+        "max_logit_diff": 3.0994415283203125e-06,
+        "max_prob_diff": 5.820766091346741e-10
+      }
+    },
+    {
+      "fixture": "dev_02_quiet_ambient_room.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_02_quiet_ambient_room.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.004974,
+        "rms_amplitude": 0.001204,
+        "zero_crossings": 362
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 3.814697265625e-06,
+        "mean_abs_diff": 4.369433668216516e-07,
+        "max_rel_diff": 3.2367998414883914e-07,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 2.377532958984375,
+        "mean_abs_diff": 0.3336063027381897,
+        "max_rel_diff": 0.2224356234073639
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.0,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.0,
+        "decision_match": true,
+        "max_logit_diff": 6.198883056640625e-06,
+        "max_prob_diff": 1.77351466845721e-11
+      }
+    },
+    {
+      "fixture": "dev_03_attenuated_trai_peak010.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_03_attenuated_trai_peak010.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.099976,
+        "rms_amplitude": 0.014443,
+        "zero_crossings": 38
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 6.67572021484375e-06,
+        "mean_abs_diff": 2.755386958597228e-07,
+        "max_rel_diff": 5.531936153602146e-07,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 2.6415748596191406,
+        "mean_abs_diff": 0.1754075288772583,
+        "max_rel_diff": 0.6743960976600647
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.0004,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.0004,
+        "decision_match": true,
+        "max_logit_diff": 3.337860107421875e-06,
+        "max_prob_diff": 1.3096723705530167e-09
+      }
+    },
+    {
+      "fixture": "dev_04_attenuated_phai_peak005.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_04_attenuated_phai_peak005.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.049988,
+        "rms_amplitude": 0.005974,
+        "zero_crossings": 30
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 3.814697265625e-06,
+        "mean_abs_diff": 2.0731793881623162e-07,
+        "max_rel_diff": 4.4444118429964874e-07,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 4.506008148193359,
+        "mean_abs_diff": 0.16009265184402466,
+        "max_rel_diff": 0.3488978445529938
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.0004,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.0004,
+        "decision_match": true,
+        "max_logit_diff": 1.1920928955078125e-06,
+        "max_prob_diff": 7.566995918750763e-10
+      }
+    },
+    {
+      "fixture": "dev_05_normal_len_peak089.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_05_normal_len_peak089.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.891235,
+        "rms_amplitude": 0.176685,
+        "zero_crossings": 6
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 1.9073486328125e-05,
+        "mean_abs_diff": 7.07679646438919e-07,
+        "max_rel_diff": 3.0707571568200365e-05,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 2.9958059787750244,
+        "mean_abs_diff": 0.19568058848381042,
+        "max_rel_diff": 162.70465087890625
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.3816,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.3816,
+        "decision_match": true,
+        "max_logit_diff": 2.6226043701171875e-06,
+        "max_prob_diff": 1.7881393432617188e-07
+      }
+    },
+    {
+      "fixture": "dev_06_normal_xuong_peak089.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_06_normal_xuong_peak089.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.891235,
+        "rms_amplitude": 0.136128,
+        "zero_crossings": 2
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 2.002716064453125e-05,
+        "mean_abs_diff": 7.211403385554149e-07,
+        "max_rel_diff": 4.0347702451981604e-05,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 3.1191458702087402,
+        "mean_abs_diff": 0.20514577627182007,
+        "max_rel_diff": 195.88343811035156
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "LEN",
+        "pytorch_confidence": 0.5672,
+        "onnx_predicted_class": "LEN",
+        "onnx_confidence": 0.5672,
+        "decision_match": true,
+        "max_logit_diff": 4.0531158447265625e-06,
+        "max_prob_diff": 1.0132789611816406e-06
+      }
+    },
+    {
+      "fixture": "dev_07_high_amplitude_trai_peak180.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_07_high_amplitude_trai_peak180.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 1.0,
+        "rms_amplitude": 0.144427,
+        "zero_crossings": 11
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 1.52587890625e-05,
+        "mean_abs_diff": 6.712586468893278e-07,
+        "max_rel_diff": 0.00010251883213641122,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 2.6922779083251953,
+        "mean_abs_diff": 0.21320386230945587,
+        "max_rel_diff": 189.1407928466797
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.4422,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.4422,
+        "decision_match": true,
+        "max_logit_diff": 9.5367431640625e-07,
+        "max_prob_diff": 1.1920928955078125e-07
+      }
+    },
+    {
+      "fixture": "dev_08_high_amplitude_xuong_peak250.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_08_high_amplitude_xuong_peak250.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 1.0,
+        "rms_amplitude": 0.152739,
+        "zero_crossings": 2
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 2.86102294921875e-05,
+        "mean_abs_diff": 7.478151360373886e-07,
+        "max_rel_diff": 0.0003318422823213041,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 3.119096040725708,
+        "mean_abs_diff": 0.2058989554643631,
+        "max_rel_diff": 143.73757934570312
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "LEN",
+        "pytorch_confidence": 0.5539,
+        "onnx_predicted_class": "LEN",
+        "onnx_confidence": 0.5539,
+        "decision_match": true,
+        "max_logit_diff": 2.1457672119140625e-06,
+        "max_prob_diff": 5.960464477539062e-07
+      }
+    },
+    {
+      "fixture": "parity_dev_01_trai.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_01_trai.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.849976,
+        "rms_amplitude": 0.12276,
+        "zero_crossings": 11
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 2.193450927734375e-05,
+        "mean_abs_diff": 7.022876502560393e-07,
+        "max_rel_diff": 0.00042979270801879466,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 2.689070701599121,
+        "mean_abs_diff": 0.21203912794589996,
+        "max_rel_diff": 1606.4364013671875
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.3639,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.3639,
+        "decision_match": true,
+        "max_logit_diff": 3.814697265625e-06,
+        "max_prob_diff": 2.980232238769531e-07
+      }
+    },
+    {
+      "fixture": "parity_dev_02_phai.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_02_phai.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.849976,
+        "rms_amplitude": 0.101557,
+        "zero_crossings": 2
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 1.71661376953125e-05,
+        "mean_abs_diff": 5.809947651869152e-07,
+        "max_rel_diff": 3.711515091708861e-05,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 5.026573181152344,
+        "mean_abs_diff": 0.22890274226665497,
+        "max_rel_diff": 132.0728302001953
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.3469,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.3469,
+        "decision_match": true,
+        "max_logit_diff": 1.1920928955078125e-06,
+        "max_prob_diff": 2.980232238769531e-07
+      }
+    },
+    {
+      "fixture": "parity_dev_03_len.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_03_len.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.849976,
+        "rms_amplitude": 0.168502,
+        "zero_crossings": 6
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 2.384185791015625e-05,
+        "mean_abs_diff": 6.987306164774054e-07,
+        "max_rel_diff": 2.774618951661978e-05,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 2.9957358837127686,
+        "mean_abs_diff": 0.1954336315393448,
+        "max_rel_diff": 108.33563232421875
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.3599,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.3599,
+        "decision_match": true,
+        "max_logit_diff": 2.86102294921875e-06,
+        "max_prob_diff": 1.7881393432617188e-07
+      }
+    },
+    {
+      "fixture": "parity_dev_04_xuong.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_04_xuong.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.849976,
+        "rms_amplitude": 0.129824,
+        "zero_crossings": 2
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 1.71661376953125e-05,
+        "mean_abs_diff": 6.62049558286526e-07,
+        "max_rel_diff": 0.00011737235763575882,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 3.119074583053589,
+        "mean_abs_diff": 0.20482328534126282,
+        "max_rel_diff": 1613.6434326171875
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "LEN",
+        "pytorch_confidence": 0.568,
+        "onnx_predicted_class": "LEN",
+        "onnx_confidence": 0.568,
+        "decision_match": true,
+        "max_logit_diff": 1.1920928955078125e-06,
+        "max_prob_diff": 1.1920928955078125e-07
+      }
+    },
+    {
+      "fixture": "parity_dev_05_unknown.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_05_unknown.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.849976,
+        "rms_amplitude": 0.119076,
+        "zero_crossings": 8
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 1.52587890625e-05,
+        "mean_abs_diff": 6.245024906093022e-07,
+        "max_rel_diff": 0.00026510650059208274,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 4.040859222412109,
+        "mean_abs_diff": 0.24304698407649994,
+        "max_rel_diff": 373.0250549316406
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "LEN",
+        "pytorch_confidence": 0.7292,
+        "onnx_predicted_class": "LEN",
+        "onnx_confidence": 0.7292,
+        "decision_match": true,
+        "max_logit_diff": 9.5367431640625e-07,
+        "max_prob_diff": 2.980232238769531e-07
+      }
+    },
+    {
+      "fixture": "parity_dev_06_silence.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_06_silence.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.003876,
+        "rms_amplitude": 0.001001,
+        "zero_crossings": 392
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 5.7220458984375e-06,
+        "mean_abs_diff": 4.1971111386374105e-07,
+        "max_rel_diff": 4.463170171220554e-07,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 2.1339340209960938,
+        "mean_abs_diff": 0.3142479956150055,
+        "max_rel_diff": 0.19271451234817505
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.0,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.0,
+        "decision_match": true,
+        "max_logit_diff": 5.7220458984375e-06,
+        "max_prob_diff": 4.547473508864641e-12
+      }
+    },
+    {
+      "fixture": "parity_dev_07_ambient_low.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_07_ambient_low.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.080597,
+        "rms_amplitude": 0.018057,
+        "zero_crossings": 26
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 5.7220458984375e-06,
+        "mean_abs_diff": 5.19445620739134e-07,
+        "max_rel_diff": 7.147280598474026e-07,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 2.9646644592285156,
+        "mean_abs_diff": 0.40535858273506165,
+        "max_rel_diff": 0.5576347708702087
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.0004,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.0004,
+        "decision_match": true,
+        "max_logit_diff": 4.76837158203125e-07,
+        "max_prob_diff": 4.0745362639427185e-10
+      }
+    },
+    {
+      "fixture": "parity_dev_08_transient_impulse.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_08_transient_impulse.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.849976,
+        "rms_amplitude": 0.00672,
+        "zero_crossings": 2
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 2.86102294921875e-06,
+        "mean_abs_diff": 2.9094147535602133e-08,
+        "max_rel_diff": 3.3975547353293223e-07,
+        "tolerance_pass": true
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 0.06801962852478027,
+        "mean_abs_diff": 0.00041338824667036533,
+        "max_rel_diff": 0.018214361742138863
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.0002,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.0002,
+        "decision_match": true,
+        "max_logit_diff": 3.814697265625e-06,
+        "max_prob_diff": 5.165929906070232e-10
+      }
+    },
+    {
+      "fixture": "parity_dev_09_clamped_high.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_09_clamped_high.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 1.0,
+        "rms_amplitude": 0.707107,
+        "zero_crossings": 1
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 0.0001926422119140625,
+        "mean_abs_diff": 9.996359040087555e-06,
+        "max_rel_diff": 1.4831992302788422e-05,
+        "tolerance_pass": false
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 5.186384677886963,
+        "mean_abs_diff": 0.5598716735839844,
+        "max_rel_diff": 4.05684232711792
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.0,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.0,
+        "decision_match": true,
+        "max_logit_diff": 6.67572021484375e-06,
+        "max_prob_diff": 1.6552803572267294e-10
+      }
+    },
+    {
+      "fixture": "parity_dev_10_short_padded.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_10_short_padded.wav",
+      "waveform_stats": {
+        "samples": 16000,
+        "duration_seconds": 1.0,
+        "peak_amplitude": 0.5,
+        "rms_amplitude": 0.25,
+        "zero_crossings": 64
+      },
+      "parity_canonical_vs_pytorch": {
+        "max_abs_diff": 7.82012939453125e-05,
+        "mean_abs_diff": 3.211001285308157e-06,
+        "max_rel_diff": 5.991292709950358e-06,
+        "tolerance_pass": false
+      },
+      "divergence_legacy_vs_pytorch": {
+        "max_abs_diff": 8.537731170654297,
+        "mean_abs_diff": 0.3416827619075775,
+        "max_rel_diff": 8.160234451293945
+      },
+      "e1_downstream_canonical": {
+        "pytorch_predicted_class": "REJECT",
+        "pytorch_confidence": 0.0,
+        "onnx_predicted_class": "REJECT",
+        "onnx_confidence": 0.0,
+        "decision_match": true,
+        "max_logit_diff": 5.7220458984375e-06,
+        "max_prob_diff": 6.139089236967266e-12
+      }
+    }
+  ]
+}

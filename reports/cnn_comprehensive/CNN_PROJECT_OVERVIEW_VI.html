@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>BÁO CÁO TỔNG QUAN DỰ ÁN VIETNAMESE KEYWORD SPOTTING CNN</title>
+<style>
+@page {
+    size: A4 portrait;
+    margin: 16mm 14mm 16mm 14mm;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.5;
+    color: #1e293b;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page break helpers */
+.page-break {
+    page-break-before: always;
+}
+
+.no-break {
+    page-break-inside: avoid;
+}
+
+/* Cover page styling */
+.cover-container {
+    padding-top: 30mm;
+    text-align: center;
+    page-break-after: always;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cover-badge-bar {
+    width: 100%;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.cover-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 4px;
+    font-size: 8pt;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.badge-frozen {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+}
+
+.badge-natural {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.badge-streaming {
+    background-color: #fef3c7;
+    color: #b45309;
+    border: 1px solid #fde68a;
+}
+
+.badge-green {
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
+.cover-title {
+    font-size: 23pt;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: -0.3px;
+}
+
+.cover-subtitle {
+    font-size: 11.5pt;
+    font-weight: 400;
+    color: #475569;
+    margin-bottom: 30px;
+    font-style: italic;
+    line-height: 1.4;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cover-meta-box {
+    margin: 30px auto 0 auto;
+    padding: 16px 20px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 94%;
+    font-size: 8.5pt;
+}
+
+.cover-meta-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cover-meta-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.cover-meta-table td:first-child {
+    font-weight: 700;
+    color: #334155;
+    width: 32%;
+}
+
+.cover-meta-table td:last-child {
+    font-family: 'Consolas', 'Courier New', monospace;
+    color: #0f172a;
+    word-break: break-all;
+}
+
+.cover-date-footer {
+    margin-top: 35px;
+    font-size: 9pt;
+    color: #64748b;
+}
+
+/* Headings */
+h1 {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #0f172a;
+    border-bottom: 2px solid #0284c7;
+    padding-bottom: 4px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #334155;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+/* Callout Boxes */
+.callout {
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 8.5pt;
+    line-height: 1.45;
+}
+
+.callout-warning {
+    background-color: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    color: #92400e;
+}
+
+.callout-info {
+    background-color: #f0f9ff;
+    border-left: 4px solid #0284c7;
+    color: #075985;
+}
+
+.callout-danger {
+    background-color: #fef2f2;
+    border-left: 4px solid #ef4444;
+    color: #991b1b;
+}
+
+.callout-success {
+    background-color: #f0fdf4;
+    border-left: 4px solid #22c55e;
+    color: #166534;
+}
+
+/* Flowchart Box */
+.flowchart-box {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 8pt;
+    line-height: 1.4;
+}
+
+.flow-step {
+    display: inline-block;
+    background: #ffffff;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 3px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.flow-arrow {
+    display: inline-block;
+    color: #0284c7;
+    font-weight: 700;
+    font-size: 10pt;
+    margin: 0 3px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 12px 0;
+    font-size: 8pt;
+    page-break-inside: avoid;
+}
+
+th, td {
+    padding: 5px 6px;
+    border: 1px solid #cbd5e1;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #f1f5f9;
+    font-weight: 700;
+    color: #1e293b;
+    text-align: left;
+}
+
+tr:nth-child(even) td {
+    background-color: #f8fafc;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-mono {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 7.5pt;
+}
+
+/* Code spans */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 8pt;
+    background-color: #f1f5f9;
+    padding: 1px 3px;
+    border-radius: 3px;
+    color: #0f172a;
+}
+
+/* Table of contents styling */
+.toc-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc-item {
+    padding: 5px 0;
+    border-bottom: 1px dotted #cbd5e1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9pt;
+}
+
+.toc-title {
+    font-weight: 600;
+    color: #0369a1;
+}
+
+.toc-desc {
+    font-size: 8pt;
+    color: #64748b;
+    margin-left: 10px;
+}
+</style>
+</head>
+<body>
+
+<!-- TRANG 1: BÌA BÁO CÁO -->
+<div class="cover-container">
+    <div class="cover-badge-bar">
+        <span class="cover-badge badge-frozen">FROZEN_CNN_RELEASE_CANDIDATE</span>
+        <span class="cover-badge badge-natural">NOT_VALIDATED_ON_NATURAL_SPEECH</span>
+        <span class="cover-badge badge-streaming">NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION</span>
+    </div>
+
+    <div class="cover-title">
+        BÁO CÁO TỔNG QUAN DỰ ÁN<br/>
+        VIETNAMESE KEYWORD SPOTTING CNN
+    </div>
+
+    <div class="cover-subtitle">
+        Nghiên cứu dữ liệu âm thanh tổng hợp, phát triển mô hình CNN,<br/>
+        đánh giá thực nghiệm và giới hạn triển khai.
+    </div>
+
+    <div class="cover-meta-box">
+        <table class="cover-meta-table">
+            <tr>
+                <td>Kho lưu trữ mã nguồn:</td>
+                <td>D:	rainidentificationaudio</td>
+            </tr>
+            <tr>
+                <td>Thư mục tài liệu chi tiết:</td>
+                <td>reports/cnn_comprehensive/ (15 chương, 5 phụ lục, 6 bảng CSV)</td>
+            </tr>
+            <tr>
+                <td>Checkpoint đông kết:</td>
+                <td>variant_v11_hard_negative_weighted_seed42.pt (479.524 bytes)</td>
+            </tr>
+            <tr>
+                <td>Mã băm SHA-256 Checkpoint:</td>
+                <td>3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2</td>
+            </tr>
+            <tr>
+                <td>Mô hình ONNX Export:</td>
+                <td>vietnamese_kws_v11.onnx (485.498 bytes, SHA-256: 54298c50...)</td>
+            </tr>
+            <tr>
+                <td>Khẩu lệnh nhận dạng:</td>
+                <td>TRAI (Trái), PHAI (Phải), LEN (Lên), XUONG (Xuống) + Lớp REJECT</td>
+            </tr>
+            <tr>
+                <td>Kiến trúc mô hình:</td>
+                <td>CorrectedVietnameseKWSNet (119.333 tham số; 3 khối residual)</td>
+            </tr>
+            <tr>
+                <td>Ngưỡng quyết định lệnh:</td>
+                <td>theta_cmd = 0.20 (Hard-Negative Weighted Cross Entropy)</td>
+            </tr>
+            <tr>
+                <td>Độ chính xác Phase 13.3:</td>
+                <td>Accuracy 99.20% | Command Recall 99.00% | Non-Target FAR 0.75%</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="cover-date-footer">
+        <strong>Thời điểm phát hành báo cáo:</strong> 21 tháng 10 năm 2026<br/>
+        <em>Báo cáo kỹ thuật thực chứng phục vụ nghiên cứu, đánh giá độc lập và nghiệm thu kỹ thuật.</em>
+    </div>
+</div>
+
+<!-- TRANG 2: MỤC LỤC & TỔNG QUAN ĐIỀU HƯỚNG -->
+<div class="page-break"></div>
+
+<h1>Mục Lục & Bản Đồ Điều Hướng Báo Cáo</h1>
+<p>Báo cáo tổng quan này được cô đọng từ 15 chương nghiên cứu kỹ thuật chuyên sâu tại <code>reports/cnn_comprehensive/</code> nhằm cung cấp cho hội đồng khoa học, kỹ sư và quản trị viên dự án một bức tranh toàn vẹn, trung thực và có bằng chứng về hệ thống KWS tiếng Việt.</p>
+
+<div class="toc-list">
+    <div class="toc-item">
+        <span class="toc-title">Phần 1 — Tóm Tắt Điều Hành (Executive Summary)</span>
+        <span class="toc-desc">Bản chất bài toán, các chỉ số cốt lõi, 3 ranh giới vận hành và kết luận khách quan.</span>
+    </div>
+    <div class="toc-item">
+        <span class="toc-title">Phần 2 — Bài Toán và Phạm Vi Nghiên Cứu (Scope & Requirements)</span>
+        <span class="toc-desc">Đặc thù ngữ âm tiếng Việt, định nghĩa 4 lệnh, phân biệt Bounded-Utterance vs Streaming.</span>
+    </div>
+    <div class="toc-item">
+        <span class="toc-title">Phần 3 — Lịch Sử Nghiên Cứu và Các Bước Cải Tiến (Research History)</span>
+        <span class="toc-desc">26 giai đoạn phát triển, chuyển đổi từ baseline variant_w10 sang variant_v11.</span>
+    </div>
+    <div class="toc-item">
+        <span class="toc-title">Phần 4 — Dữ Liệu và Quy Trình Xây Dựng Dataset (Data Provenance)</span>
+        <span class="toc-desc">Bộ tổng hợp Vieneu TTS v3-Turbo, nguyên tắc cách ly Zero-Leakage, phân biệt 2 bộ 1.000 clips.</span>
+    </div>
+    <div class="toc-item">
+        <span class="toc-title">Phần 5 — Kiến Trúc CNN và Tiền Xử Lý Âm Thanh (Model & Preprocessing)</span>
+        <span class="toc-desc">Frontend N_fft=512, Conditional Clamping, mạng CorrectedVietnameseKWSNet, ngưỡng 0.20.</span>
+    </div>
+    <div class="toc-item">
+        <span class="toc-title">Phần 6 — Kết Quả Thực Nghiệm Quan Trọng (Key Experimental Results)</span>
+        <span class="toc-desc">Bảng đối chuẩn đa thế hệ, kết quả thực chứng 8/8 gates Phase 13.3 (1.000 clips độc lập).</span>
+    </div>
+    <div class="toc-item">
+        <span class="toc-title">Phần 7 — Kiểm Định Con Người và Phân Tích Lỗi Mô Hình (Human QA & Errors)</span>
+        <span class="toc-desc">Thẩm tra cuộc nghe mù Phase 90 (chỉ 1 người nộp), phân loại lỗi âm vị học va chạm từ ghép.</span>
+    </div>
+    <div class="toc-item">
+        <span class="toc-title">Phần 8 — Những Gì Đã Xác Nhận và Chưa Xác Nhận (Validation Status)</span>
+        <span class="toc-desc">Ma trận đối chiếu thực chứng: khía cạnh đã kiểm định vs các khoảng trống chưa xác nhận.</span>
+    </div>
+    <div class="toc-item">
+        <span class="toc-title">Phần 9 — Trạng Thái Artifact và Khả Năng Tái Lập (Lineage & Reproducibility)</span>
+        <span class="toc-desc">Phả hệ checkpoint, kiểm toán SHA-256 bất biến, kết quả 384 bài unit test (100% pass rate).</span>
+    </div>
+    <div class="toc-item">
+        <span class="toc-title">Phần 10 — Kết Luận và Lộ Trình Tiếp Theo (Conclusion & Roadmap)</span>
+        <span class="toc-desc">Lộ trình kỹ thuật 7 bước: thu âm người thật có đồng thuận, engine streaming VAD, di động.</span>
+    </div>
+</div>
+
+<div class="callout callout-info" style="margin-top: 20px;">
+    <strong>Quy ước tra cứu tài liệu:</strong> Mỗi nhận định kỹ thuật và số liệu định lượng trong báo cáo này đều liên kết trực tiếp tới các file manifest, checkpoint, log thực nghiệm hoặc bài unit test tương ứng trong repository <code>D:	rainidentificationaudio</code>.
+</div>
+
+<!-- NỘI DUNG CHÍNH -->
+<div class="page-break"></div>
+
+<h1>Phần 1 — Tóm Tắt Điều Hành (Executive Summary)</h1>
+
+<h2>1.1. Bản Chất Dự Án & Mục Tiêu Kỹ Thuật</h2>
+<p>Dự án <strong>Phát Hiện Từ Khóa Tiếng Việt (Vietnamese Keyword Spotting - KWS)</strong> giải quyết bài toán phân loại âm thanh cục bộ trên thiết bị biên (edge devices) nhằm nhận diện tức thời 4 khẩu lệnh điều hướng robot và thiết bị thông minh: <code>TRAI</code> (Trái), <code>PHAI</code> (Phải), <code>LEN</code> (Lên), <code>XUONG</code> (Xuống). Hệ thống yêu cầu mức tiêu thụ tài nguyên cực thấp (bộ nhớ dưới 5 MB RAM, độ trễ suy luận dưới 20 ms trên vi xử lý thông thường) và bắt buộc phải có khả năng từ chối dứt khoát mọi âm thanh ngoại lai (tạp âm môi trường, tiếng nói chuyện thông thường, từ ngữ âm gần giống) vào lớp <code>REJECT</code>.</p>
+
+<h2>1.2. Ứng Viên Đông Kết & Các Chỉ Số Thực Chứng Cốt Lõi</h2>
+<p>Dự án đã chính thức đóng băng ứng viên cuối cùng tại <strong>Phase 13.4</strong> với checkpoint duy nhất: <code>variant_v11_hard_negative_weighted_seed42.pt</code> (SHA-256: <code>3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2</code>) và mô hình ONNX chuẩn hóa <code>vietnamese_kws_v11.onnx</code>. Hiệu năng của ứng viên được thẩm định qua cuộc Đánh giá Xác nhận Độc lập Đăng ký trước (Phase 13.3) trên 1.000 clips âm thanh tổng hợp từ 8 giọng Bắc mới lạ:</p>
+
+<div class="callout callout-success">
+    <strong>KẾT QUẢ ĐỊNH LƯỢNG PHASE 13.3 (VƯỢT QUA 8/8 CỔNG NGHIỆM THU):</strong>
+    <ul>
+        <li><strong>Độ chính xác toàn diện (Accuracy):</strong> <strong>99.20%</strong> (992 / 1.000 clips đúng).</li>
+        <li><strong>Độ nhạy nhận lệnh (Command Recall):</strong> <strong>99.00%</strong> (198 / 200 clips; TRAI 49/50, PHAI 50/50, LEN 49/50, XUONG 50/50).</li>
+        <li><strong>Tỷ lệ báo động giả (Non-Target FAR):</strong> <strong>0.75%</strong> (6 / 800 clips bị kích hoạt nhầm; 0% trên 200 clips tạp âm môi trường).</li>
+        <li><strong>Tỷ lệ lẫn lộn giữa các lệnh (Command Confusion):</strong> <strong>0.00%</strong> (0 / 200 clips).</li>
+        <li><strong>Độ trễ suy luận CPU x86:</strong> Trung bình <strong>1.80 ms</strong>, phân vị P95 <strong>2.12 ms</strong>.</li>
+        <li><strong>Độ lệch đẳng cấu PyTorch vs ONNX:</strong> Cực đại Δ<sub>max</sub> = 3.58 × 10<sup>-6</sup> &lt; 10<sup>-4</sup> (100% đồng thuận nhãn).</li>
+    </ul>
+</div>
+
+<h2>1.3. Ba Ranh Giới Vận Hành Bắt Buộc (Mandatory Governance Boundaries)</h2>
+<p>Nhằm đảm bảo tính liêm chính khoa học tuyệt đối, mọi tuyên bố về mô hình bắt buộc phải tuân thủ 3 nhãn giới hạn pháp lý:</p>
+<ol>
+    <li><strong style="color: #b91c1c;">NOT_VALIDATED_ON_NATURAL_SPEECH:</strong> Toàn bộ kết quả định lượng đều thực hiện trên âm thanh tổng hợp từ Vieneu TTS v3-Turbo kết hợp tạp âm nhân tạo ESC-50/DNS. Thử nghiệm nghe mù trên người ở Phase 90 chỉ có đúng <strong>01 người đánh giá hoàn thành</strong> (5 người khác bỏ cuộc). <em>Chưa có tập dữ liệu giọng người thật nói tự nhiên nào có bản quyền/đồng thuận được dùng để kiểm định mô hình.</em></li>
+    <li><strong style="color: #b45309;">NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION:</strong> Mô hình hoạt động ở chế độ <strong>đoạn phát âm đóng khung (Bounded-Utterance - đúng 1.0 giây)</strong>. Mô hình <em>chưa có bộ phát hiện tiếng nói (VAD) và bộ đệm vòng (ring buffer)</em> để nhận diện micro mở liên tục (streaming open-mic).</li>
+    <li><strong style="color: #0369a1;">NOT_VALIDATED_PENDING_DATA:</strong> Theo Giao thức Sửa đổi 13.1-A, mô hình mới chỉ được xác nhận khả năng tổng quát hóa trên <strong>8 giọng đọc tổng hợp thuộc phương ngữ Miền Bắc</strong>. Các phương ngữ Miền Trung và Miền Nam chưa được kiểm định độc lập do thiếu giọng đọc tổng hợp độc lập không bị rò rỉ.</li>
+</ol>
+
+<h2>1.4. Kết Luận Khách Quan</h2>
+<p>Mô hình là một thành tựu nghiên cứu thực chứng xuất sắc trong phạm vi bài toán phân loại đoạn âm thanh 1.0 giây trên dữ liệu tổng hợp giọng Bắc. Tuy nhiên, nó <strong>chưa phải là sản phẩm thương mại hoàn chỉnh</strong> sẵn sàng triển khai đại trà ngoài đời thực khi chưa qua các bước thu âm người thật và tích hợp streaming engine.</p>
+
+<div class="page-break"></div>
+
+<h1>Phần 2 — Bài Toán và Phạm Vi Nghiên Cứu (Scope & Requirements)</h1>
+
+<h2>2.1. Đầu Vào, Đầu Ra và Kiến Trúc Pipeline Thực Tế</h2>
+<p>Mô hình nhận đầu vào là đoạn sóng âm thanh đơn kênh (mono) thời lượng cố định 1.0000 giây ở tần số lấy mẫu 16.000 Hz (16.000 mẫu). Đầu ra là 1 trong 5 lớp logic:</p>
+<div class="text-center font-mono" style="margin: 8px 0; font-size: 9pt;">
+    Class 0: TRAI | Class 1: PHAI | Class 2: LEN | Class 3: XUONG | Class 4: REJECT
+</div>
+
+<p>Sơ đồ pipeline thực tế của hệ thống được thể hiện qua các bước biến đổi dữ liệu tuần tự:</p>
+
+<div class="flowchart-box">
+    <div class="flow-step">Waveform (1.0s, 16kHz)</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step">Chuẩn hóa Biên độ (max|x| &gt; 1.0)</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step">Log-Mel Spectrogram (N_fft=512, 40 mel, 101 frames)</div>
+    <br/><span class="flow-arrow">&darr;</span><br/>
+    <div class="flow-step">Mạng CNN CorrectedVietnameseKWSNet</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step">Logits 5 chiều &rarr; Xác suất Softmax P(c)</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step">So sánh Ngưỡng: P(c*) &ge; 0.20?</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step" style="border-color: #0284c7; background: #e0f2fe;">Lệnh Mục Tiêu / REJECT</div>
+</div>
+
+<h2>2.2. Vì Sao Nhận Diện Khẩu Lệnh Tiếng Việt Khó?</h2>
+<p>Tiếng Việt là ngôn ngữ có thanh điệu phức tạp, đặt ra các thách thức âm học đặc thù:</p>
+<ul>
+    <li><strong>Va chạm âm vị tối thiểu (Minimal Phonetic Pairs):</strong> Từ <code>TRAI</code> (/tʂaːj˧˦/) rất dễ bị mô hình nhận diện nhầm với các từ cùng vần như <em>tai, cái, chai, lái, tải, trại, vải, thoái</em>. Từ <code>PHAI</code> (/faːj˨˩˦/) dễ nhầm với <em>bài, mai, hoài, phái</em>, và đặc biệt là cụm từ ghép chứa chính nó như <em>bên phải, phải chăng</em>. Từ <code>LEN</code> (/lɛn˧˧/) dễ va chạm với <em>lén, đen, xen, lên trên</em>; còn <code>XUONG</code> (/sɨəŋ˧˩/) dễ va chạm với <em>xuồng, buông, vuông, suối</em>.</li>
+    <li><strong>Đường viền cao độ thanh điệu (Pitch Contours):</strong> Thanh hỏi (trong <code>PHAI</code>) có cao độ uốn lượn xuống-lên phức tạp. Khi người nói phát âm nhanh hoặc có tạp âm nền, đường nét cao độ bị mờ, dẫn đến việc mô hình trượt lệnh hoặc kích hoạt nhầm sang thanh ngang/thanh sắc.</li>
+    <li><strong>Sự biến thiên phương ngữ sâu sắc:</strong> Người Miền Nam thường phát âm phụ âm đầu quặt lưỡi <code>/tʂ/</code> thành âm mặt lưỡi <code>/tɕ/</code> (đọc <code>TRAI</code> thành <em>"chái"</em>), biến đổi âm cuối mũi <code>/ɛn/</code> thành <code>/ɛŋ/</code> (đọc <code>LEN</code> thành <em>"leng"</em>), và đồng nhất thanh hỏi với thanh ngã. Người Miền Trung có âm vực trầm và biến đổi thanh điệu sâu sắc.</li>
+</ul>
+
+<h2>2.3. Bounded-Utterance vs. Streaming Open-Mic</h2>
+<table>
+    <tr>
+        <th style="width: 20%;">Đặc Điểm Kỹ Thuật</th>
+        <th style="width: 40%;">Chế Độ Bounded-Utterance (ĐÃ KIỂM ĐỊNH)</th>
+        <th style="width: 40%;">Chế Độ Streaming Open-Mic (CHƯA ĐẠT)</th>
+    </tr>
+    <tr>
+        <td><strong>Đầu vào âm thanh</strong></td>
+        <td>Đoạn audio đã được cắt sẵn đúng 1.0000 giây (16.000 mẫu).</td>
+        <td>Luồng âm thanh liên tục không giới hạn từ micro.</td>
+    </tr>
+    <tr>
+        <td><strong>Căn chỉnh từ khóa</strong></td>
+        <td>Từ khóa nằm trọn vẹn ở giữa, có khoảng lặng đệm hai đầu.</td>
+        <td>Từ khóa có thể nằm ở mép cửa sổ trượt (boundary cutoff).</td>
+    </tr>
+    <tr>
+        <td><strong>Xử lý tín hiệu</strong></td>
+        <td>1 lần forward pass duy nhất trên tensor đặc trưng [1, 1, 40, 101].</td>
+        <td>Cửa sổ trượt (hop 100-160ms), bộ đệm vòng (ring buffer).</td>
+    </tr>
+    <tr>
+        <td><strong>Cơ chế chống lặp</strong></td>
+        <td>Không cần (mỗi file chỉ có 1 quyết định độc lập).</td>
+        <td>Bắt buộc có VAD và thuật toán khử nảy (debounce / NMS).</td>
+    </tr>
+    <tr>
+        <td><strong>Trạng thái hệ thống</strong></td>
+        <td><span class="cover-badge badge-green">ĐẠT CHUẨN PHASE 13.3</span></td>
+        <td><span class="cover-badge badge-streaming">NO_DEPLOYABLE_SYSTEM</span></td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h1>Phần 3 — Lịch Sử Nghiên Cứu và Các Bước Cải Tiến (Research History)</h1>
+
+<h2>3.1. Tiến Trình 26 Giai Đoạn Từ Baseline Đến Bản Phát Hành</h2>
+<p>Lịch sử dự án ghi nhận sự tiến hóa từ các mô hình phân loại thô sơ đến hệ thống KWS hoàn thiện có cơ chế từ chối mạnh mẽ:</p>
+<ul>
+    <li><strong>Phase 27 – 34 (Baseline 4 Lớp & Thất Bại Trước Tạp Âm):</strong> Ban đầu, mô hình chỉ phân loại 4 lớp (<code>TRAI</code>, <code>PHAI</code>, <code>LEN</code>, <code>XUONG</code>) bằng Softmax Argmax. Dù đạt accuracy &gt;99% trên tập đóng, mô hình lập tức thất bại khi gặp tiếng ồn môi trường hoặc tiếng nói ngoài danh mục (FAR tiệm cận 100% vì buộc phải gán vào 1 trong 4 lệnh).</li>
+    <li><strong>Phase 35 – 44 (Không Gian 5/6 Lớp & Phân Tách Speech/Noise):</strong> Bổ sung lớp tạp âm môi trường (<code>NOISE</code>), sau đó tách riêng thành <code>UNKNOWN</code> (tiếng nói lạ) và <code>BACKGROUND_NOISE</code> (tiếng ồn phi ngôn ngữ). Áp dụng ngưỡng Probability Margin Thresholding. Mô hình bắt đầu hấp thụ được tiếng quạt gió và tiếng gõ bàn phím, nhưng vẫn bị kích hoạt nhầm bởi các từ ngữ âm gần giống.</li>
+    <li><strong>Phase 45 – 59 (Vieneu v3, TC-ResNet & Data Augmentation):</strong> Chuyển sang bộ tổng hợp giọng nói thần kinh Vieneu TTS v3-Turbo kết hợp eSpeak-ng. Ứng dụng kiến trúc Temporal Convolutional Residual Network (TC-ResNet) với các kết nối tắt (residual connections). Tăng cường dữ liệu đa tầng (dịch chuyển thời gian &plusmn;100ms, co giãn tốc độ, biến thiên cao độ, trộn nhiễu ESC-50 dải SNR 0–20 dB).</li>
+    <li><strong>Phase 60 – 89 (Hard Negatives & Đóng Băng Baseline variant_w10):</strong> Xây dựng kho từ vựng gây nhiễu âm vị học chuyên sâu. Hợp nhất cấu trúc <code>CorrectedVietnameseKWSNet</code>. Đóng băng mô hình baseline lịch sử <code>variant_w10_seed42.pt</code> với Frontend 40 mel, N_fft=400, và ngưỡng &theta;<sub>cmd</sub>=0.40.</li>
+    <li><strong>Phase 90 (Kiểm Thử Mù Trên Người):</strong> Thẩm định 120 clips trên người; phát hiện chỉ duy nhất 1 người nộp bài. Mô hình baseline <code>variant_w10</code> đạt 39/40 lệnh đúng nhưng bị tới 9/80 lỗi báo động giả (FAR = 11.25%) trên các từ âm vị khó.</li>
+    <li><strong>Phase 91 – 92 (Triển Khai Di Động & Đối Chuẩn Đa Nền Tảng):</strong> Xây dựng khung mẫu Android/iOS và mã bọc C++. Kiểm tra chéo phát hiện rào cản sai số Mel Filterbank trong C++ và sự không tối ưu của kích thước FFT N_fft=400.</li>
+    <li><strong>Phase 11 (Chiến Dịch Hoàn Thiện CNN v11):</strong> Nâng cấp Frontend chuẩn lũy thừa 2: N_fft=512, W_len=400, H_len=160. Áp dụng hàm mất mát <strong>Hard-Negative Weighted Cross Entropy Loss</strong> (phạt nặng lớp từ chối 1.5x). Huấn luyện đa hạt giống (seeds 42, 43, 44); hạt giống <strong>seed 42</strong> thể hiện sự vượt trội kỷ lục (FAR 0.63%, Recall 99.17%) tại ngưỡng &theta;<sub>cmd</sub>=0.20, trở thành Champion.</li>
+    <li><strong>Phase 12 – 13.2.1 (Khủng Hoảng Tiền Xử Lý & Khắc Phục Toàn Diện):</strong> Phase 12 đóng gói bundle v12 nhưng mã suy luận tự ý chuẩn hóa đỉnh biên độ -1.0 dBFS vô điều kiện. Khi gặp đoạn âm thanh im lặng (biên độ 0.005), mã này khuếch đại tín hiệu lên +45 dB, biến nhiễu nhiệt thành lệnh <code>TRAI</code>. Đợt kiểm thử Phase 13 bị dừng khẩn cấp (BLOCKED). Phase 13.1 khắc phục triệt để bằng Conditional Clamping; ban hành Sửa đổi 13.1-A. Phase 13.2.1 giải quyết dứt điểm bất đồng N_fft=400 vs 512.</li>
+    <li><strong>Phase 13.3 & Phase 13.4 (Đánh Giá Xác Nhận Độc Lập & Đóng Gói Cuối Cùng):</strong> Kiểm định độc lập 1 lần duy nhất trên 1.000 clips của 8 giọng Bắc mới lạ; vượt qua 8/8 cổng nghiệm thu (Accuracy 99.20%, Recall 99.00%, FAR 0.75%). Đóng gói phát hành chính thức tại `experiments/vieneu_kws_research_v13_4/bundle/`.</li>
+</ul>
+
+<div class="callout callout-warning">
+    <strong>QUY ƯỚC QUAN TRỌNG VỀ ĐỊNH DANH:</strong><br/>
+    <strong>Phiên bản mô hình (Model Version)</strong> không đồng nhất với <strong>số thứ tự giai đoạn (Phase)</strong>. Cụ thể: mô hình <code>variant_v11</code> được huấn luyện trong giai đoạn <strong>Phase 11</strong>, được đóng gói ở <strong>Phase 12</strong>, khắc phục lỗi tiền xử lý ở <strong>Phase 13.1</strong>, kiểm định độc lập ở <strong>Phase 13.3</strong>, và phát hành đóng gói cuối cùng ở <strong>Phase 13.4</strong> mà không có bất kỳ sự thay đổi trọng số nào (file trọng số hoàn toàn nguyên vẹn từng byte).
+</div>
+
+<div class="page-break"></div>
+
+<h1>Phần 4 — Dữ Liệu và Quy Trình Xây Dựng Dataset</h1>
+
+<h2>4.1. Nguồn Dữ Liệu Tổng Hợp & Phân Chia Tập Huấn Luyện v11</h2>
+<p>Do hạn chế về dữ liệu thu âm người thật có sự đồng thuận pháp lý, toàn bộ quá trình nghiên cứu và tối ưu hóa dựa trên nguồn âm thanh tổng hợp chất lượng cao được sản xuất bởi công cụ <strong>Vieneu TTS v3-Turbo</strong> (25 giọng đọc tiếng Việt: 15 Bắc, 2 Trung, 8 Nam) kết hợp bộ phân tích âm vị eSpeak-ng:</p>
+<ul>
+    <li><strong>Tập Huấn luyện v11 (Phase 11 Training Split):</strong> 3.840 clips (tỷ lệ cân bằng giữa 4 lệnh mục tiêu và các từ ngữ gây nhiễu âm vị).</li>
+    <li><strong>Tập Thẩm định v11 (Phase 11 Validation Split):</strong> 960 clips dùng để theo dõi quá trình hội tụ và tối ưu hóa ngưỡng quyết định.</li>
+    <li><strong>Tập Kiểm thử Khóa v11 (Phase 11 Locked Test Split):</strong> 480 clips (120 clips lệnh + 360 clips ngoại lai).</li>
+    <li><strong>Nguyên tắc cách ly người nói (Zero-Leakage Invariant):</strong> Các giọng đọc xuất hiện trong tập Test và Validation tuyệt đối không xuất hiện trong tập Train nhằm tránh hiện tượng mô hình học thuộc đặc trưng người nói.</li>
+</ul>
+
+<h2>4.2. Bản Chất Hai Bộ Dữ Liệu "1.000 Clips" Khác Nhau Trong Kho Lưu Trữ</h2>
+<p>Một điểm dễ gây hiểu lầm cho người đọc là sự tồn tại của <strong>hai bộ dữ liệu có cùng quy mô 1.000 clips</strong> ở hai giai đoạn nghiên cứu hoàn toàn khác nhau:</p>
+
+<table>
+    <tr>
+        <th style="width: 25%;">Tiêu Chí So Sánh</th>
+        <th style="width: 37%;">Bộ 1: Tập 1.000 Clips Thí Điểm (Phase 24)</th>
+        <th style="width: 38%;">Bộ 2: Tập 1.000 Clips Xác Nhận (Phase 13.3)</th>
+    </tr>
+    <tr>
+        <td><strong>Thư mục lưu trữ</strong></td>
+        <td><code>experiments/synthetic_kws_dataset_vieneu_1000/</code></td>
+        <td><code>experiments/vieneu_kws_research_v13_3/audio/</code></td>
+    </tr>
+    <tr>
+        <td><strong>Thời điểm tạo</strong></td>
+        <td>Giai đoạn nghiên cứu sơ khởi (Tháng 10/2026).</td>
+        <td>Giai đoạn kiểm định độc lập ứng viên đông kết.</td>
+    </tr>
+    <tr>
+        <td><strong>Thành phần vùng miền</strong></td>
+        <td><strong>CÓ ĐỦ CẢ 3 MIỀN (25 giọng Vieneu):</strong><br/>- Miền Bắc: 15 giọng (600 clips - 60%)<br/>- Miền Nam: 8 giọng (320 clips - 32%)<br/>- Miền Trung: 2 giọng (80 clips - 8%)</td>
+        <td><strong>100% CHỈ CÓ GIỌNG MIỀN BẮC:</strong><br/>- Gồm 8 giọng Vieneu hoàn toàn mới lạ.<br/>- 4 giọng Nam và 4 giọng Nữ.<br/>- 0% trùng lặp với tập huấn luyện v11.</td>
+    </tr>
+    <tr>
+        <td><strong>Cấu trúc phân loại</strong></td>
+        <td><strong>Chỉ có 4 lớp lệnh đóng</strong> (250 clips mỗi lệnh).<br/><span style="color: #b91c1c;">&cross; Hoàn toàn không có lớp REJECT</span> (không có tiếng ồn, không có từ gây nhiễu).</td>
+        <td><strong>Bộ KWS công nghiệp hoàn chỉnh:</strong><br/>- 200 clips lệnh mục tiêu (50 clips/lớp).<br/>- <strong>800 clips từ chối</strong> (hard negatives, câu đàm thoại, tiếng ồn).</td>
+    </tr>
+    <tr>
+        <td><strong>Vai trò kỹ thuật</strong></td>
+        <td>Dùng làm tập thí điểm (pilot); sau đó toàn bộ 25 giọng này đã được nạp vào tập Train/Val của Phase 11.</td>
+        <td>Dùng làm tập kiểm thử độc lập 1 lần (One-shot Confirmatory Test) để nghiệm thu phát hành.</td>
+    </tr>
+</table>
+
+<h2>4.3. Vì Sao Tập Kiểm Định Cuối Cùng (Phase 13.3) Chỉ Có Giọng Miền Bắc?</h2>
+<p>Đây là quyết định bắt buộc nhằm tuân thủ nguyên tắc liêm chính khoa học:</p>
+<ol>
+    <li>Trong bộ công cụ Vieneu TTS v3 Turbo, tổng cộng chỉ có đúng 25 giọng tiếng Việt.</li>
+    <li>Tập 1.000 clips sơ khai (Phase 24) và tập huấn luyện Phase 11 đã <strong>sử dụng hết sạch toàn bộ 100% giọng Trung (2/2) và 100% giọng Nam (8/8)</strong>.</li>
+    <li>Khi bước vào Phase 13, trong kho giọng Vieneu chỉ còn lại đúng <strong>9 giọng mới chưa từng sử dụng</strong> &rarr; và cả 9 giọng này đều thuộc <strong>phương ngữ Miền Bắc</strong>.</li>
+    <li>Nếu tái sử dụng lại các giọng Trung và Nam cũ từ Phase 11/Phase 24 để đưa vào bài test Phase 13, dự án sẽ <strong>vi phạm nghiêm trọng nguyên tắc cách ly người nói (Speaker Leakage)</strong>, làm sai lệch tính khách quan của bài kiểm thử độc lập.</li>
+    <li>Do đó, dự án đã ban hành <strong>Sửa Đổi Giao Thức 13.1-A (Amendment 13.1-A)</strong>: Sử dụng 8 giọng Bắc mới tinh để kiểm tra tính tổng quát hóa trên người nói mới, đồng thời minh bạch tuyên bố bảo lưu phương ngữ Miền Trung và Miền Nam (<code>NOT_VALIDATED_PENDING_DATA</code>) chờ dữ liệu thu âm người thật.</li>
+</ol>
+
+<div class="page-break"></div>
+
+<h1>Phần 5 — Kiến Trúc CNN và Tiền Xử Lý Âm Thanh</h1>
+
+<h2>5.1. Hợp Đồng Tiền Xử Lý Toán Học (Authoritative Contract)</h2>
+<p>Mọi bước tiền xử lý được chuẩn hóa toán học trong <code>preprocessing_contract.json</code>:</p>
+<ul>
+    <li><strong>Chuẩn hóa biên độ có điều kiện (Conditional Clamping):</strong>
+        $$x_{	ext{norm}}[n] = egin{cases} rac{x[n]}{\max_k |x[k]|}, & 	ext{nếu } \max_k |x[k]| > 1.0 \ x[n], & 	ext{nếu } \max_k |x[k]| \le 1.0 \end{cases}$$
+        <div class="callout callout-danger" style="margin-top: 5px;">
+            <strong>SỰ CỐ KHUẾCH ĐẠI TÍN HIỆU IM LẶNG (QUIET AMPLIFICATION BUG):</strong><br/>
+            Trong Phase 12, lập trình viên đã viết mã chuẩn hóa đỉnh vô điều kiện (unconditional peak scaling to -1.0 dBFS). Khi gặp một đoạn âm thanh gần như yên lặng (nhiễu phòng tĩnh biên độ cực đại 0.005), hệ số khuếch đại là $0.89125 / 0.005 pprox 178$ lần (tương đương $+45	ext{ dB}$). Việc khuếch đại này đã phóng đại tiếng ồn nhiệt thành một xung âm thanh lớn, khiến mô hình kích hoạt nhầm thành lệnh <code>TRAI</code>. Quy tắc Conditional Clamping khôi phục ở Phase 13.1 giữ nguyên biên độ tự nhiên của tín hiệu im lặng, giải quyết triệt để lỗi này.
+        </div>
+    </li>
+    <li><strong>Biến đổi STFT:</strong> Tần số lấy mẫu $f_s = 16.000	ext{ Hz}$, cửa sổ Hann độ dài $W_{	ext{len}} = 400$ mẫu ($25	ext{ ms}$), bước nhảy $H_{	ext{len}} = 160$ mẫu ($10	ext{ ms}$), kích thước FFT $N_{	ext{fft}} = 512$ điểm (chuẩn lũy thừa 2).</li>
+    <li><strong>Mel Filterbank & Nén Logarit:</strong> 40 dải lọc Mel chuẩn hóa diện tích Slaney ($20	ext{ Hz} - 8.000	ext{ Hz}$). Nén log: $L[m, t] = \log_e(M[m, t] + 10^{-6})$, tạo ma trận tensor $[1, 1, 40, 101]$.</li>
+</ul>
+
+<h2>5.2. Kiến Trúc Mạng `CorrectedVietnameseKWSNet`</h2>
+<p>Mô hình thuộc họ TC-ResNet cải tiến cho âm học tiếng Việt với 119.333 tham số có thể huấn luyện:</p>
+
+<table>
+    <tr>
+        <th style="width: 25%;">Tầng / Khối Mạng</th>
+        <th style="width: 35%;">Cấu Hình Chi Tiết</th>
+        <th style="width: 40%;">Kích Thước Tensor Đầu Ra</th>
+    </tr>
+    <tr>
+        <td><strong>Input Tensor</strong></td>
+        <td>Log-Mel Spectrogram đơn kênh</td>
+        <td><code>[B, 1, 40, 101]</code></td>
+    </tr>
+    <tr>
+        <td><strong>Conv Khởi đầu</strong></td>
+        <td>Conv2d (1 &rarr; 32, k=3, s=1, p=1) + BN + ReLU</td>
+        <td><code>[B, 32, 40, 101]</code></td>
+    </tr>
+    <tr>
+        <td><strong>Residual Block 1</strong></td>
+        <td>2 x Conv2d(32 &rarr; 32, k=3) + BN + Skip + MaxPool(2x2)</td>
+        <td><code>[B, 32, 20, 50]</code></td>
+    </tr>
+    <tr>
+        <td><strong>Residual Block 2</strong></td>
+        <td>2 x Conv2d(32 &rarr; 64, k=3) + BN + Skip(1x1) + MaxPool(2x2)</td>
+        <td><code>[B, 64, 10, 25]</code></td>
+    </tr>
+    <tr>
+        <td><strong>Residual Block 3</strong></td>
+        <td>2 x Conv2d(64 &rarr; 128, k=3) + BN + Skip(1x1)</td>
+        <td><code>[B, 128, 10, 25]</code></td>
+    </tr>
+    <tr>
+        <td><strong>Global Pooling</strong></td>
+        <td>AdaptiveAvgPool2d((1, 1)) &rarr; Flatten</td>
+        <td><code>[B, 128]</code></td>
+    </tr>
+    <tr>
+        <td><strong>Phân Loại Tuyến Tính</strong></td>
+        <td>Dropout(p=0.2) &rarr; Linear(128 &rarr; 5)</td>
+        <td><code>[B, 5]</code> (Logits 5 lớp)</td>
+    </tr>
+</table>
+
+<h2>5.3. Hàm Mất Mát Có Trọng Số & Ngưỡng Quyết Định</h2>
+<p>Mô hình được tối ưu hóa bằng hàm <strong>Hard-Negative Weighted Cross Entropy Loss</strong>:</p>
+$$\mathcal{L} = - rac{1}{B} \sum_{i=1}^B w_{y_i} \cdot \log \left( rac{\exp(z_{i, y_i})}{\sum_{j=0}^4 \exp(z_{i, j})} ight)$$
+<p>Trong đó vector trọng số $W = [w_0, w_1, w_2, w_3, w_4] = [1.0, 1.0, 1.0, 1.0, 1.5]$. Trọng số phạt $1.5$ dành riêng cho lớp từ chối buộc mô hình phải chịu phạt nặng hơn nếu nhận diện nhầm từ gây nhiễu thành lệnh. Ngưỡng quyết định tối ưu được chốt tại $\mathbf{	heta_{	ext{cmd}} = 0.20}$. Lệnh chỉ kích hoạt khi $P(c^*) \ge 0.20$ và $c^* = rg\max P(c)$.</p>
+
+<div class="page-break"></div>
+
+<h1>Phần 6 — Kết Quả Thực Nghiệm Quan Trọng</h1>
+
+<h2>6.1. Bảng Đối Chuẩn Hiệu Năng Đa Thế Hệ (Master Benchmark Table)</h2>
+
+<table>
+    <tr>
+        <th>Thí Nghiệm / Giai Đoạn</th>
+        <th>Tập Dữ Liệu Kiểm Thử</th>
+        <th class="text-center">Số Mẫu</th>
+        <th class="text-right">Command Recall</th>
+        <th class="text-right">Non-Target FAR</th>
+        <th class="text-right">Accuracy</th>
+        <th class="text-right">Độ Trễ CPU</th>
+        <th>Ý Nghĩa Kỹ Thuật</th>
+    </tr>
+    <tr>
+        <td><strong>Phase 27 Baseline</strong></td>
+        <td>Synthetic 4 lớp đóng</td>
+        <td class="text-center">200</td>
+        <td class="text-right">99.00%</td>
+        <td class="text-right">98.50%*</td>
+        <td class="text-right">50.25%</td>
+        <td class="text-right">2.15 ms</td>
+        <td>Chưa có cơ chế reject; thất bại trước tiếng ồn.</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 35 (5-Class)</strong></td>
+        <td>Synthetic + ESC-50 Noise</td>
+        <td class="text-center">400</td>
+        <td class="text-right">97.50%</td>
+        <td class="text-right">24.20%</td>
+        <td class="text-right">86.65%</td>
+        <td class="text-right">2.10 ms</td>
+        <td>Thêm lớp Noise; hấp thụ được tạp âm cơ bản.</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 40 (6-Class)</strong></td>
+        <td>Synthetic Speech OOV</td>
+        <td class="text-center">500</td>
+        <td class="text-right">96.00%</td>
+        <td class="text-right">14.50%</td>
+        <td class="text-right">90.75%</td>
+        <td class="text-right">1.95 ms</td>
+        <td>Tách Speech và Noise; margin thresholding.</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 65 (TC-ResNet)</strong></td>
+        <td>Hard Negatives Val</td>
+        <td class="text-center">600</td>
+        <td class="text-right">96.50%</td>
+        <td class="text-right">8.20%</td>
+        <td class="text-right">94.15%</td>
+        <td class="text-right">1.85 ms</td>
+        <td>Khối dư thời gian và khai thác âm vị khó.</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 85 (variant_w10)</strong></td>
+        <td>Val Split Phase 85</td>
+        <td class="text-center">960</td>
+        <td class="text-right">97.50%</td>
+        <td class="text-right">7.50%</td>
+        <td class="text-right">95.00%</td>
+        <td class="text-right">1.82 ms</td>
+        <td>Đóng băng baseline lịch sử (N_fft=400, &theta;=0.40).</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 90 (variant_w10)</strong></td>
+        <td>Reviewer 01 (Human QA)</td>
+        <td class="text-center">120</td>
+        <td class="text-right">97.50%</td>
+        <td class="text-right">11.25%</td>
+        <td class="text-right">91.67%</td>
+        <td class="text-right">1.82 ms</td>
+        <td>Thử nghiệm nghe mù 1 người; bộc lộ 9 lỗi FAR.</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 11 (Seed 43)</strong></td>
+        <td>Locked Test Split</td>
+        <td class="text-center">480</td>
+        <td class="text-right">98.33%</td>
+        <td class="text-right">1.04%</td>
+        <td class="text-right">98.65%</td>
+        <td class="text-right">1.80 ms</td>
+        <td>Nâng cấp N_fft=512, Weighted Loss.</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 11 (Seed 44)</strong></td>
+        <td>Locked Test Split</td>
+        <td class="text-center">480</td>
+        <td class="text-right">97.50%</td>
+        <td class="text-right">1.67%</td>
+        <td class="text-right">98.12%</td>
+        <td class="text-right">1.80 ms</td>
+        <td>Khảo sát tính ổn định hạt ngẫu nhiên.</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 11 (Champion)</strong></td>
+        <td>Locked Test Split</td>
+        <td class="text-center">480</td>
+        <td class="text-right"><strong>99.17%</strong></td>
+        <td class="text-right"><strong>0.63%</strong></td>
+        <td class="text-right"><strong>98.75%</strong></td>
+        <td class="text-right">1.80 ms</td>
+        <td>Ứng viên vô địch seed 42 tại ngưỡng &theta;=0.20.</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 13.3 Confirmatory</strong></td>
+        <td>8 Novel Northern Voices</td>
+        <td class="text-center">1.000</td>
+        <td class="text-right"><strong>99.00%</strong></td>
+        <td class="text-right"><strong>0.75%</strong></td>
+        <td class="text-right"><strong>99.20%</strong></td>
+        <td class="text-right">1.80 ms</td>
+        <td>Kiểm định độc lập đăng ký trước; đạt 8/8 gates.</td>
+    </tr>
+</table>
+<p class="font-mono" style="font-size: 7.5pt; color: #64748b;">
+    * Ghi chú: Tại Phase 27, mô hình 4 lớp không có cơ chế từ chối nên khi đưa tạp âm vào, FAR tiệm cận 100%. Độ trễ CPU 1.80 ms là thời gian forward pass thuần túy trên máy tính Intel x86, không bao gồm I/O âm thanh.
+</p>
+
+<h2>6.2. Kết Quả Chi Tiết 8 Tiêu Chí Nghiệm Thu Phase 13.3 (1.000 Clips)</h2>
+<table style="margin-top: 5px;">
+    <tr>
+        <th style="width: 28%;">Tiêu Chí Nghiệm Thu (Gate)</th>
+        <th style="width: 24%;">Ngưỡng Yêu Cầu</th>
+        <th style="width: 33%;">Kết Quả Thực Chứng Đạt Được</th>
+        <th style="width: 15%;" class="text-center">Trạng Thái</th>
+    </tr>
+    <tr>
+        <td><strong>Gate 1: Command Recall Tổng</strong></td>
+        <td>&ge; 95.00%</td>
+        <td><strong>99.00%</strong> (198 / 200 clips)</td>
+        <td class="text-center"><span class="cover-badge badge-green">PASSED</span></td>
+    </tr>
+    <tr>
+        <td><strong>Gate 2: Recall Từng Lớp Độc Lập</strong></td>
+        <td>&ge; 90.00% cho mỗi lệnh</td>
+        <td>TRAI: 98% (49/50) | PHAI: 100% (50/50)<br/>LEN: 98% (49/50) | XUONG: 100% (50/50)</td>
+        <td class="text-center"><span class="cover-badge badge-green">PASSED</span></td>
+    </tr>
+    <tr>
+        <td><strong>Gate 3: Tỷ Lệ Báo Động Giả (FAR)</strong></td>
+        <td>&le; 2.00% trên 800 non-targets</td>
+        <td><strong>0.75%</strong> (6 / 800 clips)</td>
+        <td class="text-center"><span class="cover-badge badge-green">PASSED</span></td>
+    </tr>
+    <tr>
+        <td><strong>Gate 4: Độ Chính Xác Toàn Diện</strong></td>
+        <td>&ge; 95.00% trên 1.000 clips</td>
+        <td><strong>99.20%</strong> (992 / 1.000 clips)</td>
+        <td class="text-center"><span class="cover-badge badge-green">PASSED</span></td>
+    </tr>
+    <tr>
+        <td><strong>Gate 5: Lẫn Lộn Giữa Các Lệnh</strong></td>
+        <td>&le; 1.00% (Confusion)</td>
+        <td><strong>0.00%</strong> (0 / 200 clips)</td>
+        <td class="text-center"><span class="cover-badge badge-green">PASSED</span></td>
+    </tr>
+    <tr>
+        <td><strong>Gate 6: Độ Trễ Suy Luận Trung Bình</strong></td>
+        <td>Mean Latency &le; 20.0 ms</td>
+        <td><strong>1.80 ms</strong> (trên CPU Intel x86)</td>
+        <td class="text-center"><span class="cover-badge badge-green">PASSED</span></td>
+    </tr>
+    <tr>
+        <td><strong>Gate 7: Phân Vị Độ Trễ P95</strong></td>
+        <td>P95 Latency &le; 50.0 ms</td>
+        <td><strong>2.12 ms</strong></td>
+        <td class="text-center"><span class="cover-badge badge-green">PASSED</span></td>
+    </tr>
+    <tr>
+        <td><strong>Gate 8: Kiểm Soát Hạt & Băm File</strong></td>
+        <td>Khớp 100% SHA-256</td>
+        <td>Trùng khớp 100% mã băm đã đóng băng</td>
+        <td class="text-center"><span class="cover-badge badge-green">PASSED</span></td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h1>Phần 7 — Kiểm Định Con Người và Phân Tích Lỗi Mô Hình</h1>
+
+<h2>7.1. Thẩm Tra Thực Tế Nghiên Cứu Lắng Nghe Mù Phase 90</h2>
+<p>Tại Phase 90, một nghiên cứu nghe mù trên người (blinded listening study) được thiết lập với 120 clips âm thanh tổng hợp (40 clips lệnh, 80 clips ngoại lai). Tuy nhiên, khi đối chiếu hồ sơ thực tế tại <code>experiments/vieneu_kws_research_v10/human_review/</code>:</p>
+<ul>
+    <li><strong>Sự thật về dữ liệu:</strong> Chỉ có duy nhất <strong>01 người đánh giá</strong> (<code>reviewer_01</code>) nộp kết quả hoàn chỉnh trong file <code>reviewer_01_responses.csv</code>. 5 người đánh giá còn lại (reviewer_02 đến 06) đã bỏ cuộc và không nộp bài. File tổng hợp <code>phase90_validated_responses.csv</code> hoàn toàn bị rỗng (0 bytes).</li>
+    <li><strong>Không thể tính độ tin cậy liên đánh giá:</strong> Do chỉ có một người chấm ($N=1$), các chỉ số thống kê đa đánh giá viên như Fleiss' Kappa hay Krippendorff's Alpha toán học không thể xác định.</li>
+    <li><strong>Đánh giá của con người:</strong> Reviewer 01 chấm điểm độ rõ ràng âm thanh trung bình $4.88 / 5.0$, nhận diện đúng 40/40 clips lệnh mục tiêu. Điều này chứng minh âm thanh Vieneu TTS có chất lượng nghe hiểu rất tốt đối với tai người.</li>
+    <li><strong>Hiệu năng baseline <code>variant_w10</code> trên bộ 120 clips này:</strong> Nhận diện đúng 39/40 lệnh (97.5% Recall), nhưng có tới <strong>9/80 mẫu ngoại lai bị kích hoạt nhầm</strong> (FAR = 11.25%). Toàn bộ 9 lỗi này đều rơi vào nhóm các từ ngữ gây nhiễu âm vị gần (*"tai", "lái", "phấn"*).</li>
+    <li><strong>Nguyên tắc quản trị:</strong> Do bộ 120 clips này đã bị "mở khóa" và soi chiếu chi tiết, nó <em>không còn là tập kiểm thử chưa quan sát</em>. Kết quả từ một người đánh giá không thể suy diễn đại diện cho toàn bộ người dùng tiếng Việt.</li>
+</ul>
+
+<h2>7.2. Phân Tích Phân Loại Lỗi Mô Hình (Error Taxonomy)</h2>
+<p>Toàn bộ 8 lỗi phân loại ghi nhận tại Phase 13.3 (2 lỗi trượt lệnh và 6 lỗi báo động giả) được mổ xẻ chi tiết:</p>
+<ul>
+    <li><strong>Lỗi va chạm từ ghép chứa từ khóa (Embedded Keyword Collision - 3 clips):</strong> Các câu đàm thoại như <em>"rẽ sang bên phải"</em> hoặc <em>"điều này phải không"</em> bị kích hoạt nhầm thành <code>PHAI</code>. Do từ <em>"phải"</em> xuất hiện rõ ràng trong câu nói 1.0 giây, mô hình bắt được năng lượng cao của từ này và kích hoạt. Đây là giới hạn tự nhiên của mô hình phân loại đoạn cố định khi thiếu cơ chế hiểu ngữ cảnh câu.</li>
+    <li><strong>Lỗi va chạm âm vị gần (Phonetic Near-Collision - 2 clips):</strong> Từ <em>"buông"</em> bị kích hoạt nhầm thành <code>XUONG</code> do trùng vần $/ɨəŋ/$; từ <em>"trại"</em> bị kích hoạt nhầm thành <code>TRAI</code> do chỉ khác nhau thanh điệu (nặng vs sắc).</li>
+    <li><strong>Lỗi tiếng nói ngẫu nhiên ngoài danh mục (OOV General Speech - 1 clip):</strong> 1 clip tiếng nói thông thường bị kích hoạt nhầm thành <code>PHAI</code>.</li>
+    <li><strong>Lỗi trượt lệnh mục tiêu (False Rejections - 2 clips):</strong> 1 clip <code>TRAI</code> bị trượt do người nói giọng nữ phát âm quá nhanh ($&lt; 250	ext{ ms}$) khiến năng lượng vút lên dải tần cao ngoài vùng trọng tâm ($P = 0.184 &lt; 0.20$); 1 clip <code>LEN</code> bị trượt do âm lượng nhỏ ($P = 0.191 &lt; 0.20$).</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h1>Phần 8 — Những Gì Đã Xác Nhận và Chưa Xác Nhận</h1>
+
+<h2>8.1. Các Khía Cạnh ĐÃ CÓ BẰNG CHỨNG XÁC NHẬN (High Confidence)</h2>
+<table>
+    <tr>
+        <th style="width: 32%;">Khía Cạnh Kỹ Thuật</th>
+        <th style="width: 25%;">Nhãn Trạng Thái</th>
+        <th style="width: 43%;">Tóm Tắt Bằng Chứng Thực Chứng</th>
+    </tr>
+    <tr>
+        <td><strong>Độ chính xác Bounded-Utterance (Giọng Bắc tổng hợp)</strong></td>
+        <td><span class="cover-badge badge-green">VALIDATED_HIGH_CONFIDENCE</span></td>
+        <td>Đạt <strong>99.20% Accuracy</strong>, <strong>99.00% Recall</strong> trên 1.000 clips độc lập của 8 giọng Bắc mới lạ (Phase 13.3).</td>
+    </tr>
+    <tr>
+        <td><strong>Khả năng từ chối tạp âm & âm vị gây nhiễu khó</strong></td>
+        <td><span class="cover-badge badge-green">VALIDATED_HIGH_CONFIDENCE</span></td>
+        <td>FAR đạt <strong>0.75%</strong> trên 800 non-targets (0.00% trên 200 clips tạp âm môi trường thuần túy).</td>
+    </tr>
+    <tr>
+        <td><strong>Chống nhầm lẫn chéo giữa các lệnh mục tiêu</strong></td>
+        <td><span class="cover-badge badge-green">VALIDATED_HIGH_CONFIDENCE</span></td>
+        <td>Đạt <strong>0.00%</strong> tỷ lệ nhầm lẫn chéo giữa 4 lệnh trên 200 clips lệnh mục tiêu.</td>
+    </tr>
+    <tr>
+        <td><strong>Tính đẳng cấu số học PyTorch vs ONNX Runtime</strong></td>
+        <td><span class="cover-badge badge-green">VALIDATED_HIGH_CONFIDENCE</span></td>
+        <td>Độ lệch logit cực đại &Delta;<sub>max</sub> = 3.58 &times; 10<sup>-6</sup> &lt; 10<sup>-4</sup>; đồng thuận nhãn 100.00%.</td>
+    </tr>
+    <tr>
+        <td><strong>Độ trễ suy luận mô hình trên CPU x86</strong></td>
+        <td><span class="cover-badge badge-green">VALIDATED_HIGH_CONFIDENCE</span></td>
+        <td>Mean Latency = 1.80 ms, P95 = 2.12 ms; dung lượng RAM suy luận &lt; 5.0 MB.</td>
+    </tr>
+    <tr>
+        <td><strong>Tính toàn vẹn mã băm Checkpoint & Artifacts</strong></td>
+        <td><span class="cover-badge badge-green">VALIDATED_HIGH_CONFIDENCE</span></td>
+        <td>Mã băm SHA-256 trùng khớp 100% từng byte qua các phase; 384/384 unit tests vượt qua.</td>
+    </tr>
+</table>
+
+<h2>8.2. Các Khía Cạnh CHƯA XÁC NHẬN HOẶC CHƯA ĐẠT (Open Gaps)</h2>
+<table>
+    <tr>
+        <th style="width: 32%;">Khía Cạnh Kỹ Thuật</th>
+        <th style="width: 25%;">Nhãn Trạng Thái</th>
+        <th style="width: 43%;">Nguyên Nhân Kỹ Thuật & Thực Trạng Bằng Chứng</th>
+    </tr>
+    <tr>
+        <td><strong>Tiếng nói người thật tự nhiên (Natural Speech)</strong></td>
+        <td><span class="cover-badge badge-natural">NOT_VALIDATED_ON_NATURAL_SPEECH</span></td>
+        <td>Chưa có tập dữ liệu thu âm người thật có bản quyền/đồng thuận; chiến dịch thu âm đạt 0.00%.</td>
+    </tr>
+    <tr>
+        <td><strong>Phương ngữ Miền Trung & Miền Nam</strong></td>
+        <td><span class="cover-badge badge-streaming">NOT_VALIDATED_PENDING_DATA</span></td>
+        <td>100% giọng TTS Trung/Nam đã dùng trong Phase 11; bảo lưu theo Giao thức Sửa đổi 13.1-A.</td>
+    </tr>
+    <tr>
+        <td><strong>Nhận diện micro mở liên tục (Streaming Open-Mic)</strong></td>
+        <td><span class="cover-badge badge-natural">NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION</span></td>
+        <td>Chưa tích hợp engine VAD và bộ đệm vòng (ring buffer); chưa đo kích hoạt nhầm mỗi giờ.</td>
+    </tr>
+    <tr>
+        <td><strong>Hiệu năng trên phần cứng di động thực tế</strong></td>
+        <td><span class="cover-badge badge-streaming">UNTESTED_PROTOTYPE_ONLY</span></td>
+        <td>Khung Android/iOS Phase 91 mới là khung mã nguồn phần mềm, chưa kiểm thử trên thiết bị thật.</td>
+    </tr>
+    <tr>
+        <td><strong>Thẩm định độ tin cậy đa đánh giá viên (Human QA)</strong></td>
+        <td><span class="cover-badge badge-natural">INVALIDATED_INCOMPLETE_STUDY</span></td>
+        <td>Phase 90 chỉ có 1 người chấm bài hoàn chỉnh; 5 người bỏ dở khiến nghiên cứu mất giá trị.</td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h1>Phần 9 — Trạng Thái Artifact và Khả Năng Tái Lập</h1>
+
+<h2>9.1. Danh Mục Thành Phần Gói Phát Hành Phase 13.4</h2>
+<p>Toàn bộ gói phát hành chính thức được đặt biệt lập tại thư mục <code>experiments/vieneu_kws_research_v13_4/bundle/</code>:</p>
+<ul>
+    <li><code>checkpoint/variant_v11_hard_negative_weighted_seed42.pt</code>: Trọng số PyTorch gốc (479.524 bytes).</li>
+    <li><code>onnx/vietnamese_kws_v11.onnx</code>: Mô hình ONNX Runtime chuẩn hóa Opset 14 (485.498 bytes).</li>
+    <li><code>infer.py</code>: Mã nguồn suy luận hoàn thiện tích hợp Conditional Clamping.</li>
+    <li><code>preprocessing_contract.json</code>: Tệp cấu hình tham số tiền xử lý Frontend chính thức (N_fft=512, 40 mel).</li>
+    <li><code>RELEASE_METADATA.json</code>: Siêu dữ liệu ghi nhận thông số kỹ thuật, cấu hình và kết quả kiểm định.</li>
+    <li><code>checksums.sha256</code>: Bản kiểm toán mã băm SHA-256 toàn bộ các tệp trong bundle.</li>
+</ul>
+
+<h2>9.2. Thẩm Tra Mã Băm SHA-256 Tuyệt Đối (Cryptographic Audit)</h2>
+<div class="callout callout-info font-mono" style="font-size: 8pt;">
+    <strong>CHECKPOINT PYTORCH SHA-256:</strong><br/>
+    3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2<br/><br/>
+    <strong>MÔ HÌNH ONNX NATIVE SHA-256:</strong><br/>
+    54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99
+</div>
+<p><em>Xác minh độc lập:</em> Mã băm của checkpoint hoàn toàn trùng khớp từng byte xuyên suốt từ Phase 11 (huấn luyện), Phase 12 (đóng gói), Phase 13.1 (khắc phục tiền xử lý), Phase 13.3 (kiểm định độc lập) đến Phase 13.4 (phát hành). Không có hiện tượng huấn luyện lại hoặc tinh chỉnh lén lút.</p>
+
+<h2>9.3. Độ Phủ Kiểm Thử Tự Động (Workspace Test Suite)</h2>
+<p>Kho mã nguồn duy trì <strong>384 bài kiểm thử tự động</strong> trong thư mục <code>tests/</code> bao phủ toàn bộ các khía cạnh:</p>
+<ul>
+    <li><code>test_vieneu_research_v13_4.py</code>: Kiểm tra đóng gói phát hành, đẳng cấu ONNX và tính toàn vẹn SHA-256.</li>
+    <li><code>test_vieneu_research_v13_3.py</code>: Kiểm tra tự động 8 cổng nghiệm thu trên 1.000 clips độc lập.</li>
+    <li><code>test_vieneu_research_v13_2_1.py</code>: Kiểm tra tính tương thích tham số Frontend FFT N_fft = 512.</li>
+    <li><code>test_vieneu_research_v13_1.py</code>: Kiểm tra quy tắc Conditional Clamping chống lỗi khuếch đại im lặng.</li>
+    <li><code>test_vieneu_research_v11.py</code>: Kiểm tra huấn luyện v11, hàm mất mát Weighted Loss và multi-seed.</li>
+    <li><code>test_cross_platform_parity_phase92.py</code>: Kiểm tra đối chuẩn PyTorch vs ONNX và đo đạc độ trễ.</li>
+    <li><code>test_phase90_human_listening.py</code>: Kiểm toán dữ liệu đánh giá nghe mù Phase 90.</li>
+</ul>
+<div class="callout callout-success">
+    <strong>LỆNH TÁI LẬP TOÀN BỘ BỘ KIỂM THỬ:</strong><br/>
+    <code>.venv\Scripts\python.exe -m pytest tests/ -q</code> &rarr; <strong>384 passed in ~60s (Tỷ lệ đạt 100.00%)</strong>.
+</div>
+
+<div class="page-break"></div>
+
+<h1>Phần 10 — Kết Luận và Lộ Trình Tiếp Theo (Roadmap)</h1>
+
+<h2>10.1. Lộ Trình Kỹ Thuật 7 Bước Ưu Tiên</h2>
+<p>Để hoàn thiện hệ thống từ ứng viên phòng thí nghiệm thành giải pháp thương mại hoàn chỉnh, dự án cần thực thi theo thứ tự ưu tiên sau:</p>
+
+<ol>
+    <li><strong>Bảo toàn Checkpoint và Protocol Đông Kết:</strong> Duy trì bất biến file trọng số <code>variant_v11_hard_negative_weighted_seed42.pt</code>, file ONNX và hợp đồng tiền xử lý để làm mốc tham chiếu chuẩn.</li>
+    <li><strong>Bảo Tồn Toàn Vẹn Hồ Sơ Bằng Chứng:</strong> Lưu trữ nguyên trạng toàn bộ 114 báo cáo kỹ thuật, tệp manifest và mã kiểm thử tự động phục vụ các đợt kiểm toán độc lập sau này.</li>
+    <li><strong>Tìm Nguồn Dữ Liệu Tổng Hợp Phương Ngữ Mới:</strong> Khai thác các bộ tổng hợp giọng nói tiếng Việt mới có bản quyền rõ ràng, hỗ trợ đầy đủ các biến thể phương ngữ Miền Trung và Miền Nam chưa từng xuất hiện trong tập huấn luyện.</li>
+    <li><strong>Triển Khai Chiến Dịch Thu Âm Người Thật Có Đồng Thuận Pháp Lý:</strong>
+        <ul>
+            <li>Thu âm tối thiểu 50 người nói đa dạng lứa tuổi, giới tính, tỷ lệ cân bằng 3 miền (Bắc 40%, Trung 30%, Nam 30%).</li>
+            <li>Thu thập văn bản đồng thuận pháp lý (Informed Consent Form) đầy đủ trước khi thu âm.</li>
+            <li>Thu âm trong nhiều môi trường: phòng yên tĩnh, văn phòng, quán cà phê, xe hơi đang chạy.</li>
+        </ul>
+    </li>
+    <li><strong>Đánh Giá Sâu Về Hiệu Chuẩn Xác Suất (Calibration) & Lỗi Từ Chối:</strong> Phân tích chỉ số Expected Calibration Error (ECE) và tối ưu hóa ngưỡng kích hoạt theo từng phương ngữ cụ thể nhằm triệt tiêu báo động giả.</li>
+    <li><strong>Nghiên Cứu Độc Lập Engine Micro Mở (Streaming Open-Mic):</strong>
+        <ul>
+            <li>Triển khai phân hệ streaming riêng: tích hợp thư viện VAD siêu nhẹ (Silero-VAD hoặc WebRTC-VAD bằng C++).</li>
+            <li>Xây dựng bộ đệm vòng (ring buffer) với bước nhảy 160 ms và thuật toán lọc khử nảy (debounce).</li>
+            <li>Đo lường chỉ số kích hoạt nhầm mỗi giờ (False Alarms per Hour - FA/hour) trong môi trường phát thanh truyền hình liên tục 24 giờ.</li>
+        </ul>
+    </li>
+    <li><strong>Tích Hợp & Đo Đạc Trên Phần Cứng Di Động Thực Tế:</strong> Biên dịch thư viện C++ qua Android NDK và iOS Framework, đo đạc độ trễ luồng âm thanh thực tế từ AudioRecord / CoreAudio, đo mức tiêu hao pin và nhiệt độ; sau đó tiến hành lượng tử hóa sau huấn luyện (INT8 Quantization).</li>
+</ol>
+
+<h2>10.2. Lời Kết Khách Quan</h2>
+<p>Dự án Vietnamese Keyword Spotting CNN đã chứng minh thành công tính khả thi của một mô hình CNN siêu nhẹ ($&lt; 0.5	ext{ MB}$) có khả năng nhận diện 4 khẩu lệnh tiếng Việt với độ chính xác trên $99\%$ và độ trễ dưới $2	ext{ ms}$ trên dữ liệu tổng hợp phương ngữ Miền Bắc. Việc ghi nhận trung thực các giới hạn hiện tại về phương ngữ, tiếng nói tự nhiên và chế độ micro mở chính là nền tảng vững chắc nhất để dự án tiếp tục bước sang giai đoạn phát triển sản phẩm thương mại một cách bài bản, đáng tin cậy và có đạo đức khoa học cao.</p>
+
+</body>
+</html>

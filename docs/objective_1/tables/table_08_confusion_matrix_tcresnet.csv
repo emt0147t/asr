@@ -1,0 +1,7 @@
+true_class,pred_TRAI,pred_PHAI,pred_LEN,pred_XUONG,pred_UNKNOWN,pred_SILENCE,support,class_recall_pct
+TRAI (0),27,9,0,0,0,0,36,75.0
+PHAI (1),0,36,0,0,0,0,36,100.0
+LEN (2),0,0,36,0,0,0,36,100.0
+XUONG (3),0,0,2,34,0,0,36,94.4
+UNKNOWN (4),0,0,0,0,293,7,300,97.7
+SILENCE (5),0,0,0,0,0,90,90,100.0

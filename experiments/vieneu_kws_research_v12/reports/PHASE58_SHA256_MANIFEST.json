@@ -1,0 +1,27 @@
+{
+  "PHASE58_CONFIRMATORY_MANIFEST.csv": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE58_CONFIRMATORY_MANIFEST.csv",
+    "sha256": "9cca06f2c31d0b677d394798b95e35f565e1d88f49ea1de7a928303b6bbff803",
+    "total_clips": 420
+  },
+  "PHASE58_TONE_PROBE_MANIFEST.csv": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE58_TONE_PROBE_MANIFEST.csv",
+    "sha256": "1bd694843f9edba63b0c00437472be228afa152328cb48a6dd78536a5da9bc82",
+    "total_clips": 60
+  },
+  "PHASE58_STREAMING_MANIFEST.csv": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE58_STREAMING_MANIFEST.csv",
+    "sha256": "035ad2795aefe375a7cd79c2ca49daf12d0f8afcbc4d0b6ff7a43f83065f0a9b",
+    "total_sequences": 50
+  },
+  "PHASE58_EVENT_LEDGER.csv": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE58_EVENT_LEDGER.csv",
+    "sha256": "e8ca1cf80c8c58bc543546ee505d699a5bb17dc83b5bb4d46f50937f070eb48f",
+    "total_events": 58
+  },
+  "PHASE58_EVENT_LEDGER.json": {
+    "path": "experiments\\vieneu_kws_research_v12\\manifests\\PHASE58_EVENT_LEDGER.json",
+    "sha256": "2721205be4424dcd8361ac170b1446ffb0e9052cefb7a4b008bf443235a652b0",
+    "total_sequences_with_events": 30
+  }
+}

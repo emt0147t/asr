@@ -1,0 +1,5 @@
+category,genuine_human_speech,real_environmental_noise,synthetic_parametric_reference,test_harness_automated_fixtures,quarantined_samples,primary_deficiency
+"Target Commands (TRAI, PHAI, LEN, XUONG)",0,0,1000,58,58,100% of command data relies on parametric reference audio; 0 genuine human speech collected
+Non-Command Vietnamese Speech (UNKNOWN),579,0,120,0,141,Sufficient for negative rejection; 141 FLEURS clips quarantined for RMS < -50 dBFS
+Microphone Ambient Noise (SILENCE),0,400,0,0,0,Adequate coverage from real microphone handling recordings (husein_mic_noise)
+OVERALL TOTALS,579,400,1120,58,199,Total genuine human speech for target commands remains exactly ZERO

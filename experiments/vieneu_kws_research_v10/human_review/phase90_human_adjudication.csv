@@ -1,0 +1,121 @@
+﻿review_clip_id,transcription,ground_truth_canonical,ground_truth_bounded,confusion_family,voice_id,human_perceived_text,human_canonical_label,human_bounded_label,human_intelligibility,human_naturalness,human_pronunciation_correct,human_confidence,comments,cnn_prediction,cnn_rejection_status,cnn_confidence,human_is_correct,cnn_is_correct,human_cnn_concordance
+review_clip_001,xưởng in,UNKNOWN,REJECT,minimal_pair_tone,Thùy Dung,UNINTELLIGIBLE,UNKNOWN,REJECT,3.0,4.0,Y,3.0,,XUONG,ACCEPTED,0.7842,True,False,False
+review_clip_002,Xuống,XUONG,XUONG,target_command,Ngọc Trân,XUỐNG,XUONG,XUONG,5.0,5.0,Y,4.0,,XUONG,ACCEPTED,0.5578,True,True,True
+review_clip_003,xưởng gốm,UNKNOWN,REJECT,phonetic_phrase_context,Ngọc Trân,UNINTELLIGIBLE,UNKNOWN,REJECT,1.0,3.0,Y,3.0,,REJECT,REJECTED,0.7908,True,True,True
+review_clip_004,hẹn hò,UNKNOWN,REJECT,minimal_pair_consonant,Ngọc Trân,HẸN HÒ,UNKNOWN,REJECT,5.0,4.0,Y,4.0,,REJECT,REJECTED,0.9767,True,True,True
+review_clip_005,Trái,TRAI,TRAI,target_command,Ngọc Trân,TRÁI,TRAI,TRAI,3.0,4.0,Y,4.0,,TRAI,ACCEPTED,0.7301,True,True,True
+review_clip_006,Phải,PHAI,PHAI,target_command,Mai Anh,PHẢI,PHAI,PHAI,4.0,4.0,Y,4.0,,PHAI,ACCEPTED,0.8469,True,True,True
+review_clip_007,lên sàn,UNKNOWN,REJECT,phonetic_phrase_context,Mai Anh,LÊN SÀN,UNKNOWN,REJECT,3.0,3.0,Y,3.0,,REJECT,REJECTED,0.892,True,True,True
+review_clip_008,[SILENCE],SILENCE,REJECT,office_ambient,office_ambient,SILENCE,SILENCE,REJECT,1.0,,,,,REJECT,REJECTED,0.9936,True,True,True
+review_clip_009,Xuống,XUONG,XUONG,target_command,Mai Anh,XUỐNG,XUONG,XUONG,4.0,4.0,Y,4.0,,XUONG,ACCEPTED,0.9697,True,True,True
+review_clip_010,cai trị,UNKNOWN,REJECT,minimal_pair_consonant,Mai Anh,CAI TRỊ,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.7361,True,True,True
+review_clip_011,hưng thịnh,UNKNOWN,REJECT,minimal_pair_consonant,Phạm Tuyên,HƯNG THỊNH,UNKNOWN,REJECT,4.0,5.0,Y,4.0,,REJECT,REJECTED,0.6152,True,True,True
+review_clip_012,[SILENCE],SILENCE,REJECT,office_ambient,office_ambient,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.9927,True,True,True
+review_clip_013,Xuống,XUONG,XUONG,target_command,Mai Anh,XUỐNG,XUONG,XUONG,5.0,5.0,Y,5.0,,XUONG,ACCEPTED,0.8795,True,True,True
+review_clip_014,Trái,TRAI,TRAI,target_command,Phạm Tuyên,TRÁI,TRAI,TRAI,4.0,4.0,Y,5.0,,TRAI,ACCEPTED,0.868,True,True,True
+review_clip_015,xuống sân,UNKNOWN,REJECT,phonetic_phrase_context,Thùy Dung,XUỐNG SÂN,UNKNOWN,REJECT,5.0,5.0,Y,4.0,,REJECT,REJECTED,0.6108,True,True,True
+review_clip_016,hương trầm,UNKNOWN,REJECT,minimal_pair_consonant,Thùy Dung,HƯƠNG TRẦM,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.9249,True,True,True
+review_clip_017,phạt thẻ,UNKNOWN,REJECT,phonetic_phrase_context,Ngọc Trân,PHẠT THẺ,UNKNOWN,REJECT,3.0,3.0,Y,3.0,,REJECT,REJECTED,0.9576,True,True,True
+review_clip_018,Lên,LEN,LEN,target_command,Phạm Tuyên,LÊN,LEN,LEN,4.0,4.0,Y,3.0,,LEN,ACCEPTED,0.9595,True,True,True
+review_clip_019,Phải,PHAI,PHAI,target_command,Thùy Dung,PHẢI,PHAI,PHAI,4.0,4.0,Y,4.0,,PHAI,ACCEPTED,0.6962,True,True,True
+review_clip_020,Xuống,XUONG,XUONG,target_command,Mai Anh,XUỐNG,XUONG,XUONG,4.0,5.0,Y,4.0,,XUONG,ACCEPTED,0.9599,True,True,True
+review_clip_021,phạt thẻ,UNKNOWN,REJECT,phonetic_phrase_context,Ngọc Trân,PHẠT THẺ,UNKNOWN,REJECT,3.0,3.0,Y,2.0,,REJECT,REJECTED,0.8371,True,True,True
+review_clip_022,khoái chí,UNKNOWN,REJECT,minimal_pair_consonant,Mai Anh,KHOÁI CHÍ,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.648,True,True,True
+review_clip_023,thái độ,UNKNOWN,REJECT,minimal_pair_consonant,Thùy Dung,THÁI ĐỘ,UNKNOWN,REJECT,3.0,3.0,Y,3.0,,XUONG,ACCEPTED,0.4342,True,False,False
+review_clip_024,phái đẹp,UNKNOWN,REJECT,minimal_pair_tone,Phạm Tuyên,PHÁI ĐẸP,UNKNOWN,REJECT,4.0,5.0,Y,4.0,,REJECT,REJECTED,0.8021,True,True,True
+review_clip_025,Phải,PHAI,PHAI,target_command,Mai Anh,PHẢI,PHAI,PHAI,4.0,4.0,Y,4.0,,PHAI,ACCEPTED,0.837,True,True,True
+review_clip_026,trại cá,UNKNOWN,REJECT,minimal_pair_tone,Mai Anh,TRẢI CÁ,UNKNOWN,REJECT,,,,,,REJECT,REJECTED,0.6786,True,True,True
+review_clip_027,Trái,TRAI,TRAI,target_command,Ngọc Trân,TRÁI,TRAI,TRAI,4.0,4.0,Y,4.0,,TRAI,ACCEPTED,0.836,True,True,True
+review_clip_028,Lên,LEN,LEN,target_command,Thùy Dung,LÊN,LEN,LEN,5.0,5.0,Y,5.0,,LEN,ACCEPTED,0.9336,True,True,True
+review_clip_029,thái độ,UNKNOWN,REJECT,minimal_pair_consonant,Thùy Dung,THÁI ĐỘ,UNKNOWN,REJECT,4.0,3.0,Y,4.0,,REJECT,REJECTED,0.8049,True,True,True
+review_clip_030,xuống biển,UNKNOWN,REJECT,phonetic_phrase_context,Phạm Tuyên,XUỐNG BIỂN,UNKNOWN,REJECT,4.0,5.0,Y,5.0,,XUONG,ACCEPTED,0.6795,True,False,False
+review_clip_031,lên phim,UNKNOWN,REJECT,phonetic_phrase_context,Ngọc Trân,LÊN PHÍM,UNKNOWN,REJECT,3.0,4.0,Y,4.0,,REJECT,REJECTED,0.8749,True,True,True
+review_clip_032,xuống sân,UNKNOWN,REJECT,phonetic_phrase_context,Thùy Dung,XUỐNG SÂN,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.6882,True,True,True
+review_clip_033,Trái,TRAI,TRAI,target_command,Ngọc Trân,TRÁI,TRAI,TRAI,3.0,3.0,Y,4.0,,PHAI,ACCEPTED,0.5378,True,False,False
+review_clip_034,[SILENCE],SILENCE,REJECT,near_silence,near_silence,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.988,True,True,True
+review_clip_035,Trái,TRAI,TRAI,target_command,Ngọc Trân,TRÁI,TRAI,TRAI,4.0,4.0,Y,3.0,,TRAI,ACCEPTED,0.7211,True,True,True
+review_clip_036,ngoại ô,UNKNOWN,REJECT,minimal_pair_consonant,Ngọc Trân,NGOẠI Ô,UNKNOWN,REJECT,4.0,4.0,Y,5.0,,REJECT,REJECTED,0.9587,True,True,True
+review_clip_037,Phải,PHAI,PHAI,target_command,Thùy Dung,PHẢI,PHAI,PHAI,4.0,4.0,Y,4.0,,PHAI,ACCEPTED,0.6556,True,True,True
+review_clip_038,Lên,LEN,LEN,target_command,Phạm Tuyên,LÊN,LEN,LEN,4.0,4.0,Y,4.0,,LEN,ACCEPTED,0.9119,True,True,True
+review_clip_039,xuống biển,UNKNOWN,REJECT,phonetic_phrase_context,Phạm Tuyên,XUỐNG BIỂN,UNKNOWN,REJECT,4.0,4.0,Y,5.0,,XUONG,ACCEPTED,0.4486,True,False,False
+review_clip_040,Phải,PHAI,PHAI,target_command,Phạm Tuyên,PHẢI,PHAI,PHAI,4.0,4.0,Y,5.0,,PHAI,ACCEPTED,0.8655,True,True,True
+review_clip_041,Phải,PHAI,PHAI,target_command,Thùy Dung,PHẢI,PHAI,PHAI,4.0,4.0,Y,4.0,,PHAI,ACCEPTED,0.7518,True,True,True
+review_clip_042,hương trầm,UNKNOWN,REJECT,minimal_pair_consonant,Thùy Dung,HƯƠNG TRẦM,UNKNOWN,REJECT,3.0,4.0,Y,3.0,,REJECT,REJECTED,0.7164,True,True,True
+review_clip_043,Lên,LEN,LEN,target_command,Thùy Dung,LÊN,LEN,LEN,4.0,4.0,Y,4.0,,LEN,ACCEPTED,0.9365,True,True,True
+review_clip_044,Trái,TRAI,TRAI,target_command,Phạm Tuyên,TRÁI,TRAI,TRAI,5.0,4.0,Y,4.0,,TRAI,ACCEPTED,0.7779,True,True,True
+review_clip_045,Xuống,XUONG,XUONG,target_command,Thùy Dung,RƠI XUỐNG,UNKNOWN,REJECT,3.0,4.0,Y,3.0,,XUONG,ACCEPTED,0.5446,False,True,False
+review_clip_046,Phải,PHAI,PHAI,target_command,Mai Anh,PHẢI,PHAI,PHAI,4.0,4.0,Y,4.0,,PHAI,ACCEPTED,0.8862,True,True,True
+review_clip_047,phát minh,UNKNOWN,REJECT,phonetic_phrase_context,Mai Anh,PHÁT MINH,UNKNOWN,REJECT,5.0,5.0,Y,4.0,,REJECT,REJECTED,0.9148,True,True,True
+review_clip_048,Trái,TRAI,TRAI,target_command,Mai Anh,TRÁI,TRAI,TRAI,4.0,4.0,Y,5.0,,TRAI,ACCEPTED,0.6966,True,True,True
+review_clip_049,thái độ,UNKNOWN,REJECT,minimal_pair_consonant,Thùy Dung,THÁI ĐỘ,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.8674,True,True,True
+review_clip_050,xuống hố,UNKNOWN,REJECT,minimal_pair_tone,Phạm Tuyên,XUỐNG HỒ,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,XUONG,ACCEPTED,0.7708,True,False,False
+review_clip_051,Xuống,XUONG,XUONG,target_command,Mai Anh,XUỐNG,XUONG,XUONG,4.0,4.0,Y,4.0,,XUONG,ACCEPTED,0.9572,True,True,True
+review_clip_052,Trái,TRAI,TRAI,target_command,Phạm Tuyên,TRÁI,TRAI,TRAI,5.0,5.0,Y,4.0,,TRAI,ACCEPTED,0.8175,True,True,True
+review_clip_053,xưởng gốm,UNKNOWN,REJECT,phonetic_phrase_context,Ngọc Trân,XÔI CỐM,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.9395,True,True,True
+review_clip_054,Trái,TRAI,TRAI,target_command,Mai Anh,TRÁI,TRAI,TRAI,4.0,5.0,Y,4.0,,TRAI,ACCEPTED,0.8374,True,True,True
+review_clip_055,phát tài,UNKNOWN,REJECT,phonetic_phrase_context,Thùy Dung,UNINTELLIGIBLE,UNKNOWN,REJECT,,,,,,REJECT,REJECTED,0.8567,True,True,True
+review_clip_056,ngoại ô,UNKNOWN,REJECT,minimal_pair_consonant,Ngọc Trân,NGOẠI Ô,UNKNOWN,REJECT,4.0,5.0,Y,5.0,,REJECT,REJECTED,0.9336,True,True,True
+review_clip_057,lên bờ,UNKNOWN,REJECT,minimal_pair_tone,Mai Anh,LÊN BỜ,UNKNOWN,REJECT,5.0,5.0,Y,5.0,,REJECT,REJECTED,0.6748,True,True,True
+review_clip_058,tráng men,UNKNOWN,REJECT,minimal_pair_tone,Ngọc Trân,CẢM ƠN,UNKNOWN,REJECT,3.0,3.0,Y,2.0,,REJECT,REJECTED,0.9016,True,True,True
+review_clip_059,lên sàn,UNKNOWN,REJECT,phonetic_phrase_context,Mai Anh,LÊN SÀN,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.9107,True,True,True
+review_clip_060,phạt tiền,UNKNOWN,REJECT,phonetic_phrase_context,Phạm Tuyên,PHÁT TIỀN,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.9878,True,True,True
+review_clip_061,loại bỏ,UNKNOWN,REJECT,minimal_pair_consonant,Thùy Dung,LOẠI BỎ,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.9117,True,True,True
+review_clip_062,Xuống,XUONG,XUONG,target_command,Phạm Tuyên,XUỐNG,XUONG,XUONG,4.0,4.0,Y,4.0,,XUONG,ACCEPTED,0.9121,True,True,True
+review_clip_063,hoại tử,UNKNOWN,REJECT,minimal_pair_consonant,Phạm Tuyên,HOẠI TỪ,UNKNOWN,REJECT,4.0,5.0,Y,5.0,,REJECT,REJECTED,0.9856,True,True,True
+review_clip_064,lén bước,UNKNOWN,REJECT,minimal_pair_tone,Ngọc Trân,UNINTELLIGIBLE,UNKNOWN,REJECT,,,,,,REJECT,REJECTED,0.75,True,True,True
+review_clip_065,phạt tiền,UNKNOWN,REJECT,phonetic_phrase_context,Phạm Tuyên,PHÁT TRIỂN,UNKNOWN,REJECT,3.0,3.0,Y,3.0,,REJECT,REJECTED,0.9426,True,True,True
+review_clip_066,khen thưởng,UNKNOWN,REJECT,minimal_pair_consonant,Mai Anh,KHEN THƯỞNG,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.9619,True,True,True
+review_clip_067,khoái chí,UNKNOWN,REJECT,minimal_pair_consonant,Mai Anh,KHOÁI CHÍ,UNKNOWN,REJECT,4.0,5.0,Y,5.0,,REJECT,REJECTED,0.4608,True,True,True
+review_clip_068,Phải,PHAI,PHAI,target_command,Phạm Tuyên,PHẢI,PHAI,PHAI,4.0,4.0,Y,4.0,,PHAI,ACCEPTED,0.9002,True,True,True
+review_clip_069,Lên,LEN,LEN,target_command,Ngọc Trân,LÊN,LEN,LEN,4.0,4.0,Y,4.0,,LEN,ACCEPTED,0.8992,True,True,True
+review_clip_070,lên sàn,UNKNOWN,REJECT,phonetic_phrase_context,Mai Anh,LÊN SÀN,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.9174,True,True,True
+review_clip_071,[SILENCE],SILENCE,REJECT,office_ambient,office_ambient,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.9935,True,True,True
+review_clip_072,phát minh,UNKNOWN,REJECT,phonetic_phrase_context,Mai Anh,PHÁT MINH,UNKNOWN,REJECT,5.0,5.0,Y,5.0,,REJECT,REJECTED,0.9761,True,True,True
+review_clip_073,Xuống,XUONG,XUONG,target_command,Ngọc Trân,XUỐNG,XUONG,XUONG,5.0,5.0,Y,5.0,,XUONG,ACCEPTED,0.8216,True,True,True
+review_clip_074,[SILENCE],SILENCE,REJECT,office_ambient,office_ambient,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.992,True,True,True
+review_clip_075,phái đẹp,UNKNOWN,REJECT,minimal_pair_tone,Phạm Tuyên,PHÁI ĐẸP,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.6555,True,True,True
+review_clip_076,[SILENCE],SILENCE,REJECT,office_ambient,office_ambient,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.9925,True,True,True
+review_clip_077,[SILENCE],SILENCE,REJECT,office_ambient,office_ambient,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.9924,True,True,True
+review_clip_078,[SILENCE],SILENCE,REJECT,near_silence,near_silence,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.988,True,True,True
+review_clip_079,Lên,LEN,LEN,target_command,Mai Anh,LÊN,LEN,LEN,5.0,4.0,Y,3.0,,LEN,ACCEPTED,0.8142,True,True,True
+review_clip_080,[SILENCE],SILENCE,REJECT,near_silence,near_silence,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.9852,True,True,True
+review_clip_081,[SILENCE],SILENCE,REJECT,hvac_hum,hvac_hum,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.973,True,True,True
+review_clip_082,xuống biển,UNKNOWN,REJECT,phonetic_phrase_context,Phạm Tuyên,XUỐNG BIỂN,UNKNOWN,REJECT,4.0,5.0,Y,4.0,,REJECT,REJECTED,0.7883,True,True,True
+review_clip_083,cải cách,UNKNOWN,REJECT,minimal_pair_consonant,Ngọc Trân,CÀI CẶP,UNKNOWN,REJECT,3.0,3.0,Y,2.0,,REJECT,REJECTED,0.5165,True,True,True
+review_clip_084,xuống sân,UNKNOWN,REJECT,phonetic_phrase_context,Thùy Dung,XUỐNG SÂN,UNKNOWN,REJECT,4.0,4.0,Y,2.0,,REJECT,REJECTED,0.9855,True,True,True
+review_clip_085,lên bờ,UNKNOWN,REJECT,minimal_pair_tone,Mai Anh,LÊN BỜ,UNKNOWN,REJECT,4.0,3.0,Y,5.0,,REJECT,REJECTED,0.5859,True,True,True
+review_clip_086,xưởng cưa,UNKNOWN,REJECT,phonetic_phrase_context,Mai Anh,XƯỞNG CƯA,UNKNOWN,REJECT,4.0,4.0,Y,3.0,,REJECT,REJECTED,0.7371,True,True,True
+review_clip_087,Xuống,XUONG,XUONG,target_command,Thùy Dung,XUỐNG,XUONG,XUONG,3.0,3.0,Y,3.0,,XUONG,ACCEPTED,0.9347,True,True,True
+review_clip_088,[SILENCE],SILENCE,REJECT,airflow_pink,airflow_pink,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.9942,True,True,True
+review_clip_089,Phải,PHAI,PHAI,target_command,Ngọc Trân,PHẢI,PHAI,PHAI,5.0,5.0,Y,5.0,,PHAI,ACCEPTED,0.635,True,True,True
+review_clip_090,xưởng cưa,UNKNOWN,REJECT,phonetic_phrase_context,Mai Anh,XƯỞNG CƯA,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.4157,True,True,True
+review_clip_091,xưởng gốm,UNKNOWN,REJECT,phonetic_phrase_context,Ngọc Trân,XÔI CỐM,UNKNOWN,REJECT,3.0,4.0,Y,2.0,,REJECT,REJECTED,0.9472,True,True,True
+review_clip_092,[SILENCE],SILENCE,REJECT,office_ambient,office_ambient,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.9925,True,True,True
+review_clip_093,xưởng cưa,UNKNOWN,REJECT,phonetic_phrase_context,Mai Anh,XƯỞNG CƯA,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.8042,True,True,True
+review_clip_094,lên phim,UNKNOWN,REJECT,phonetic_phrase_context,Ngọc Trân,LÊN PHÍM,UNKNOWN,REJECT,4.0,5.0,Y,4.0,,REJECT,REJECTED,0.8877,True,True,True
+review_clip_095,khen thưởng,UNKNOWN,REJECT,minimal_pair_consonant,Mai Anh,KHEN THƯỞNG,UNKNOWN,REJECT,4.0,5.0,Y,4.0,,REJECT,REJECTED,0.9287,True,True,True
+review_clip_096,xưởng in,UNKNOWN,REJECT,minimal_pair_tone,Thùy Dung,UNINTELLIGIBLE,UNKNOWN,REJECT,,,,,,XUONG,ACCEPTED,0.8633,True,False,False
+review_clip_097,phát tài,UNKNOWN,REJECT,phonetic_phrase_context,Thùy Dung,UNINTELLIGIBLE,UNKNOWN,REJECT,,,,,,REJECT,REJECTED,0.7688,True,True,True
+review_clip_098,phạt tiền,UNKNOWN,REJECT,phonetic_phrase_context,Phạm Tuyên,PHÁT TRIỂN,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.9669,True,True,True
+review_clip_099,phát tài,UNKNOWN,REJECT,phonetic_phrase_context,Thùy Dung,UNINTELLIGIBLE,UNKNOWN,REJECT,,,,,,TRAI,ACCEPTED,0.464,True,False,False
+review_clip_100,hương trầm,UNKNOWN,REJECT,minimal_pair_consonant,Thùy Dung,HƯƠNG TRẦM,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.953,True,True,True
+review_clip_101,Lên,LEN,LEN,target_command,Mai Anh,LÊN,LEN,LEN,4.0,4.0,Y,4.0,,LEN,ACCEPTED,0.9464,True,True,True
+review_clip_102,Trái,TRAI,TRAI,target_command,Phạm Tuyên,TRÁI,TRAI,TRAI,3.0,3.0,Y,2.0,,TRAI,ACCEPTED,0.8612,True,True,True
+review_clip_103,cải cách,UNKNOWN,REJECT,minimal_pair_consonant,Ngọc Trân,CẢI CÁCH,UNKNOWN,REJECT,4.0,4.0,Y,5.0,,REJECT,REJECTED,0.8724,True,True,True
+review_clip_104,mái nhà,UNKNOWN,REJECT,minimal_pair_consonant,Phạm Tuyên,MÁI NHÀ,UNKNOWN,REJECT,4.0,4.0,Y,4.0,,REJECT,REJECTED,0.9808,True,True,True
+review_clip_105,lên phim,UNKNOWN,REJECT,phonetic_phrase_context,Ngọc Trân,LÊN PHÍM,UNKNOWN,REJECT,4.0,4.0,Y,5.0,,REJECT,REJECTED,0.732,True,True,True
+review_clip_106,[SILENCE],SILENCE,REJECT,near_silence,near_silence,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.9894,True,True,True
+review_clip_107,xuống hố,UNKNOWN,REJECT,minimal_pair_tone,Phạm Tuyên,XUỐNG HỐ,UNKNOWN,REJECT,5.0,4.0,Y,4.0,,XUONG,ACCEPTED,0.9624,True,False,False
+review_clip_108,Lên,LEN,LEN,target_command,Phạm Tuyên,LÊN,LEN,LEN,4.0,5.0,Y,5.0,,LEN,ACCEPTED,0.9191,True,True,True
+review_clip_109,[SILENCE],SILENCE,REJECT,office_ambient,office_ambient,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.9934,True,True,True
+review_clip_110,phát minh,UNKNOWN,REJECT,phonetic_phrase_context,Mai Anh,PHÁT MINH,UNKNOWN,REJECT,5.0,5.0,Y,5.0,,REJECT,REJECTED,0.8535,True,True,True
+review_clip_111,cai trị,UNKNOWN,REJECT,minimal_pair_consonant,Mai Anh,CAI TRỊ,UNKNOWN,REJECT,5.0,5.0,Y,4.0,,REJECT,REJECTED,0.5112,True,True,True
+review_clip_112,Xuống,XUONG,XUONG,target_command,Thùy Dung,XUỐNG,XUONG,XUONG,4.0,4.0,Y,5.0,,XUONG,ACCEPTED,0.894,True,True,True
+review_clip_113,xưởng in,UNKNOWN,REJECT,minimal_pair_tone,Thùy Dung,UNINTELLIGIBLE,UNKNOWN,REJECT,,,,,,XUONG,ACCEPTED,0.5852,True,False,False
+review_clip_114,Lên,LEN,LEN,target_command,Phạm Tuyên,LÊN,LEN,LEN,4.0,5.0,Y,5.0,,LEN,ACCEPTED,0.9503,True,True,True
+review_clip_115,phai màu,UNKNOWN,REJECT,minimal_pair_tone,Thùy Dung,UNINTELLIGIBLE,UNKNOWN,REJECT,,,,,,REJECT,REJECTED,0.8998,True,True,True
+review_clip_116,[SILENCE],SILENCE,REJECT,near_silence,near_silence,SILENCE,SILENCE,REJECT,,,,,,REJECT,REJECTED,0.9872,True,True,True
+review_clip_117,phạt thẻ,UNKNOWN,REJECT,phonetic_phrase_context,Ngọc Trân,UNINTELLIGIBLE,UNKNOWN,REJECT,,,,,,REJECT,REJECTED,0.5598,True,True,True
+review_clip_118,Phải,PHAI,PHAI,target_command,Ngọc Trân,PHÁT,UNKNOWN,REJECT,4.0,4.0,Y,2.0,,PHAI,ACCEPTED,0.8519,False,True,False
+review_clip_119,tráng men,UNKNOWN,REJECT,minimal_pair_tone,Ngọc Trân,TRÁNG MIỆNG,UNKNOWN,REJECT,3.0,3.0,Y,4.0,,REJECT,REJECTED,0.9219,True,True,True
+review_clip_120,Lên,LEN,LEN,target_command,Thùy Dung,LÊN,LEN,LEN,5.0,5.0,Y,5.0,,LEN,ACCEPTED,0.921,True,True,True

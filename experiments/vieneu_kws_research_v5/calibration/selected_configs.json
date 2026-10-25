@@ -1,0 +1,49 @@
+{
+  "variant_a_cascade_v1": {
+    "seed42": {
+      "theta_s1": 0.3,
+      "theta_s2": 0.55
+    },
+    "seed43": {
+      "theta_s1": 0.3,
+      "theta_s2": 0.2
+    },
+    "seed44": {
+      "theta_s1": 0.3,
+      "theta_s2": 0.2
+    }
+  },
+  "variant_b_stage1_cnn": {
+    "seed42": {
+      "theta_cmd": 0.85
+    },
+    "seed43": {
+      "theta_cmd": 0.8
+    },
+    "seed44": {
+      "theta_cmd": 0.75
+    }
+  },
+  "variant_c_standard": {
+    "seed42": {
+      "theta_reject": 0.5
+    },
+    "seed43": {
+      "theta_reject": 0.3
+    },
+    "seed44": {
+      "theta_reject": 0.4
+    }
+  },
+  "variant_d_ablation": {
+    "seed42": {
+      "theta_reject": 0.3
+    },
+    "seed43": {
+      "theta_reject": 0.4
+    },
+    "seed44": {
+      "theta_reject": 0.4
+    }
+  }
+}

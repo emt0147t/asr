@@ -1,0 +1,182 @@
+{
+  "report_type": "similarity_distribution_audit",
+  "sample_and_pair_counts": {
+    "total_samples": 120,
+    "samples_per_class": 20,
+    "within_class_pairs_per_class": 190,
+    "total_within_class_pairs": 1140,
+    "total_between_class_pairs": 6000
+  },
+  "raw_similarity": {
+    "by_class": {
+      "TRAI": {
+        "count": 190,
+        "mean": 0.908262,
+        "std": 0.04149,
+        "min": 0.781876,
+        "p25": 0.885205,
+        "p50": 0.915519,
+        "p75": 0.940158,
+        "max": 0.975845
+      },
+      "PHAI": {
+        "count": 190,
+        "mean": 0.929157,
+        "std": 0.0297,
+        "min": 0.842576,
+        "p25": 0.910136,
+        "p50": 0.93096,
+        "p75": 0.950969,
+        "max": 0.991512
+      },
+      "LEN": {
+        "count": 190,
+        "mean": 0.92977,
+        "std": 0.035086,
+        "min": 0.821557,
+        "p25": 0.912256,
+        "p50": 0.927596,
+        "p75": 0.954564,
+        "max": 0.99287
+      },
+      "XUONG": {
+        "count": 190,
+        "mean": 0.918161,
+        "std": 0.033983,
+        "min": 0.829206,
+        "p25": 0.890674,
+        "p50": 0.919151,
+        "p75": 0.946464,
+        "max": 0.992001
+      },
+      "UNKNOWN": {
+        "count": 190,
+        "mean": 0.913073,
+        "std": 0.037806,
+        "min": 0.771932,
+        "p25": 0.896339,
+        "p50": 0.920594,
+        "p75": 0.939577,
+        "max": 0.985155
+      },
+      "SILENCE": {
+        "count": 190,
+        "mean": 0.984399,
+        "std": 0.011804,
+        "min": 0.949363,
+        "p25": 0.980221,
+        "p50": 0.984426,
+        "p75": 0.994013,
+        "max": 0.999996
+      }
+    },
+    "overall_within_class": {
+      "count": 1140,
+      "mean": 0.93047,
+      "std": 0.041614,
+      "min": 0.771932,
+      "p25": 0.905289,
+      "p50": 0.931438,
+      "p75": 0.961975,
+      "max": 0.999996
+    },
+    "overall_between_class": {
+      "count": 6000,
+      "mean": 0.912634,
+      "std": 0.032784,
+      "min": 0.769569,
+      "p25": 0.892989,
+      "p50": 0.917189,
+      "p75": 0.935668,
+      "max": 0.991
+    }
+  },
+  "mean_centered_similarity": {
+    "by_class": {
+      "TRAI": {
+        "count": 190,
+        "mean": 0.553073,
+        "std": 0.228659,
+        "min": -0.147152,
+        "p25": 0.449443,
+        "p50": 0.613798,
+        "p75": 0.717313,
+        "max": 0.908847
+      },
+      "PHAI": {
+        "count": 190,
+        "mean": 0.544457,
+        "std": 0.190863,
+        "min": 0.110475,
+        "p25": 0.417562,
+        "p50": 0.563199,
+        "p75": 0.688071,
+        "max": 0.938012
+      },
+      "LEN": {
+        "count": 190,
+        "mean": 0.68253,
+        "std": 0.166649,
+        "min": 0.069547,
+        "p25": 0.601165,
+        "p50": 0.679512,
+        "p75": 0.786986,
+        "max": 0.974776
+      },
+      "XUONG": {
+        "count": 190,
+        "mean": 0.590445,
+        "std": 0.167769,
+        "min": 0.147724,
+        "p25": 0.463886,
+        "p50": 0.591147,
+        "p75": 0.718431,
+        "max": 0.946283
+      },
+      "UNKNOWN": {
+        "count": 190,
+        "mean": 0.572934,
+        "std": 0.157885,
+        "min": 0.004456,
+        "p25": 0.484881,
+        "p50": 0.590035,
+        "p75": 0.694406,
+        "max": 0.946507
+      },
+      "SILENCE": {
+        "count": 190,
+        "mean": 0.225543,
+        "std": 0.371834,
+        "min": -0.112708,
+        "p25": 0.0,
+        "p50": 0.0,
+        "p75": 0.491057,
+        "max": 0.999497
+      }
+    },
+    "overall_within_class": {
+      "count": 1140,
+      "mean": 0.528164,
+      "std": 0.267318,
+      "min": -0.147152,
+      "p25": 0.422078,
+      "p50": 0.584841,
+      "p75": 0.713309,
+      "max": 0.999497
+    },
+    "overall_between_class": {
+      "count": 6000,
+      "mean": 0.458287,
+      "std": 0.25841,
+      "min": -0.245557,
+      "p25": 0.316629,
+      "p50": 0.505476,
+      "p75": 0.658065,
+      "max": 0.963972
+    }
+  },
+  "interpretation": {
+    "raw_vs_mean_centered": "Raw Log-Mel similarity is dominated by the global negative filterbank floor, producing an artificial baseline of ~0.91 even across different classes. Mean-centering unmasks true spectro-temporal patterns, reducing mean intra-class similarity to 0.528 and revealing genuine intra-class dispersion.",
+    "scientific_honesty": "Neither raw nor mean-centered similarity indicates human-like performance. They establish that V5 avoids the template-matching collapse of V4 (raw intra-class > 0.97) while maintaining distinct acoustic clusters."
+  }
+}

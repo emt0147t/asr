@@ -1,0 +1,88 @@
+{
+  "model_name": "VietnameseTCResNet-14",
+  "description": "Six-class keyword spotting model for Vietnamese navigation commands.",
+  "governance": "HUMAN DATA COLLECTION REMAINS STRICTLY BLOCKED. Trained on synthetic audio.",
+  "source_checkpoint": {
+    "path": "experiments\\synthetic_kws_v4\\checkpoints\\arm_b_onset_no_resample.pt",
+    "sha256": "6A0FD55CD6F16F5B683951127076EEC72506C31EE670F896AAEACE5981CF1D96",
+    "architecture": "VietnameseTCResNet (TC-ResNet-14)",
+    "num_classes": 6,
+    "dropout_p": 0.0,
+    "training_regime": "V4 Arm B (onset-aware acoustic features, native left-aligned, no resample)"
+  },
+  "onnx_export": {
+    "filename": "arm_b_tcresnet14.onnx",
+    "path": "experiments\\synthetic_kws_demo\\export\\arm_b_tcresnet14.onnx",
+    "sha256": "8A5AC4C105DF52F1749AE11B6BB2124B3A672486601EFF308ACC7E257FF97625",
+    "file_size_bytes": 1095036,
+    "opset_version": 17,
+    "producer_name": "PyTorch ONNX Exporter",
+    "torch_version": "2.6.0+cu124",
+    "onnx_version": "1.23.2",
+    "onnxruntime_version": "1.31.0",
+    "inputs": [
+      {
+        "name": "log_mel",
+        "shape": [
+          "batch_size",
+          1,
+          40,
+          101
+        ],
+        "dtype": "float32",
+        "description": "Normalized Log-Mel spectrogram computed from 16kHz mono audio (1.0s)."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "logits",
+        "shape": [
+          "batch_size",
+          6
+        ],
+        "dtype": "float32",
+        "description": "Uncalibrated linear projection logits for the 6 classes."
+      },
+      {
+        "name": "probabilities",
+        "shape": [
+          "batch_size",
+          6
+        ],
+        "dtype": "float32",
+        "description": "Softmax class probabilities normalized across the 6 classes."
+      }
+    ],
+    "classes": {
+      "0": "TRAI",
+      "1": "PHAI",
+      "2": "LEN",
+      "3": "XUONG",
+      "4": "UNKNOWN",
+      "5": "SILENCE"
+    }
+  },
+  "mobile_preprocessing_contract": {
+    "required_sample_rate": 16000,
+    "required_channels": 1,
+    "required_samples": 16000,
+    "duration_sec": 1.0,
+    "n_fft": 512,
+    "win_length": 400,
+    "hop_length": 160,
+    "n_mels": 40,
+    "f_min": 20.0,
+    "f_max": 8000.0,
+    "window_type": "Hamming (or Hann as verified)",
+    "mel_scale": "Slaney",
+    "mel_norm": "Slaney (area normalized)",
+    "log_transform": "ln(mel + 1e-6)",
+    "expected_tensor_shape": [
+      1,
+      1,
+      40,
+      101
+    ],
+    "note": "Mobile runtimes must independently replicate Log-Mel extraction before feeding this model."
+  }
+}

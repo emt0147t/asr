@@ -1,0 +1,467 @@
+{
+  "audit_metadata": {
+    "phase": "PHASE 37 Complete Historical Provenance Audit",
+    "repository": "D:\\trainidentificationaudio",
+    "total_manifests_audited": 187,
+    "manifests_with_tracks_34_39": 6
+  },
+  "noise_track_audit_34_39": {
+    "34": {
+      "track_filename": "Wind-Mic Distortion-Violent 2.mp3",
+      "status": "UNSEEN_IN_TRAINING_AND_VALIDATION__HISTORICALLY_USED_IN_EVAL",
+      "train_exposure_count": 0,
+      "validation_exposure_count": 0,
+      "historical_eval_exposure_count": 162,
+      "manifests_with_occurrences": [
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\dataset_v12_manifest.csv",
+          "count": 150
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\streaming_eval_corpus_manifest.csv",
+          "count": 7
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\synthetic_eval_test_manifest.csv",
+          "count": 5
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\test_manifest.csv",
+          "count": 150
+        }
+      ]
+    },
+    "35": {
+      "track_filename": "Wind-Mic Distortion-Violent 3.mp3",
+      "status": "UNSEEN_IN_TRAINING_AND_VALIDATION__HISTORICALLY_USED_IN_EVAL",
+      "train_exposure_count": 0,
+      "validation_exposure_count": 0,
+      "historical_eval_exposure_count": 177,
+      "manifests_with_occurrences": [
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\dataset_v12_manifest.csv",
+          "count": 150
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\streaming_eval_corpus_manifest.csv",
+          "count": 5
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\synthetic_eval_test_manifest.csv",
+          "count": 6
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\test_manifest.csv",
+          "count": 150
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\vad_test_corpus_manifest.csv",
+          "count": 16
+        }
+      ]
+    },
+    "36": {
+      "track_filename": "Wind-Mic Distortion-Violent 4.mp3",
+      "status": "UNSEEN_IN_TRAINING_AND_VALIDATION__HISTORICALLY_USED_IN_EVAL",
+      "train_exposure_count": 0,
+      "validation_exposure_count": 0,
+      "historical_eval_exposure_count": 278,
+      "manifests_with_occurrences": [
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\dataset_v12_manifest.csv",
+          "count": 148
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\edge_tts_eval_v2_isolated_test_manifest.csv",
+          "count": 120
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\streaming_eval_corpus_manifest.csv",
+          "count": 4
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\synthetic_eval_test_manifest.csv",
+          "count": 6
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\test_manifest.csv",
+          "count": 148
+        }
+      ]
+    },
+    "37": {
+      "track_filename": "Wind-Mic Distortion-Violent 6.mp3",
+      "status": "UNSEEN_IN_TRAINING_AND_VALIDATION__HISTORICALLY_USED_IN_EVAL",
+      "train_exposure_count": 0,
+      "validation_exposure_count": 0,
+      "historical_eval_exposure_count": 175,
+      "manifests_with_occurrences": [
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\dataset_v12_manifest.csv",
+          "count": 148
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\streaming_eval_corpus_manifest.csv",
+          "count": 5
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\synthetic_eval_test_manifest.csv",
+          "count": 6
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\test_manifest.csv",
+          "count": 148
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\vad_test_corpus_manifest.csv",
+          "count": 16
+        }
+      ]
+    },
+    "38": {
+      "track_filename": "Wind-Mic Distortion-Violent 8.mp3",
+      "status": "UNSEEN_IN_TRAINING_AND_VALIDATION__HISTORICALLY_USED_IN_EVAL",
+      "train_exposure_count": 0,
+      "validation_exposure_count": 0,
+      "historical_eval_exposure_count": 274,
+      "manifests_with_occurrences": [
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\dataset_v12_manifest.csv",
+          "count": 144
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\edge_tts_eval_v2_isolated_test_manifest.csv",
+          "count": 120
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\streaming_eval_corpus_manifest.csv",
+          "count": 5
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\synthetic_eval_test_manifest.csv",
+          "count": 5
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\test_manifest.csv",
+          "count": 144
+        }
+      ]
+    },
+    "39": {
+      "track_filename": "Wind-Mic Distortion-Violent 9.mp3",
+      "status": "UNSEEN_IN_TRAINING_AND_VALIDATION__HISTORICALLY_USED_IN_EVAL",
+      "train_exposure_count": 0,
+      "validation_exposure_count": 0,
+      "historical_eval_exposure_count": 287,
+      "manifests_with_occurrences": [
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\dataset_v12_manifest.csv",
+          "count": 143
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\edge_tts_eval_v2_isolated_test_manifest.csv",
+          "count": 120
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\streaming_eval_corpus_manifest.csv",
+          "count": 4
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\synthetic_eval_test_manifest.csv",
+          "count": 4
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\test_manifest.csv",
+          "count": 143
+        },
+        {
+          "path": "experiments\\vieneu_kws_research_v12\\manifests\\vad_test_corpus_manifest.csv",
+          "count": 16
+        }
+      ]
+    }
+  },
+  "historical_evaluation_noise_finding": "Tracks 36-39 (Wind-Mic Distortion-Violent 4, 6, 8, 9) were strictly held out from training manifests (0% exposure in D0, D1, D2, and validation_v1). However, tracks 36-39 appeared prominently in earlier test manifests: test_manifest.csv (v12 test: 499 rows / 1280 = 38.98%) and synthetic_eval_test_manifest.csv (Phase 21 test: 21 rows / 40 = 52.50%). Therefore, the Phase 28 edge_tts_eval_v2 evaluation reuses historical evaluation noise tracks; these noise sources are NOT novel relative to prior evaluation activity.",
+  "isolated_480_clips_arithmetic": {
+    "manifest_path": "experiments\\vieneu_kws_research_v12\\manifests\\edge_tts_eval_v2_isolated_test_manifest.csv",
+    "total_rows": 480,
+    "expected_formula": "(4 commands + 16 hard_negatives + 10 general_oovs) x 2 voices x 2 rates x 4 SNRs = 30 x 16 = 480",
+    "verified_formula_match": true,
+    "subgroups": {
+      "test_oov_phonetic": 256,
+      "test_oov_general": 160,
+      "command": 64
+    },
+    "voices": {
+      "vi-VN-HoaiMyNeural": 240,
+      "vi-VN-NamMinhNeural": 240
+    },
+    "rates": {
+      "normal": 240,
+      "fast": 240
+    },
+    "target_snr_tiers": {
+      "clean": 120,
+      "15.0": 120,
+      "10.0": 120,
+      "5.0": 120
+    },
+    "noise_sources": {
+      "none": 120,
+      "mic_noise_track_38": 120,
+      "mic_noise_track_39": 120,
+      "mic_noise_track_36": 120
+    },
+    "text_breakdown_by_subgroup": {
+      "command": {
+        "num_unique_texts": 4,
+        "texts": [
+          "lên",
+          "phải",
+          "trái",
+          "xuống"
+        ],
+        "clips_per_text": 16,
+        "total_clips": 64
+      },
+      "test_oov_general": {
+        "num_unique_texts": 10,
+        "texts": [
+          "biển",
+          "bóng",
+          "cây",
+          "hoa",
+          "núi",
+          "quạt",
+          "quần",
+          "sông",
+          "áo",
+          "đèn"
+        ],
+        "clips_per_text": 16,
+        "total_clips": 160
+      },
+      "test_oov_phonetic": {
+        "num_unique_texts": 16,
+        "texts": [
+          "luôn",
+          "làm",
+          "lòng",
+          "lớp",
+          "phim",
+          "phát",
+          "phút",
+          "phương",
+          "trưa",
+          "trước",
+          "trường",
+          "trẻ",
+          "xa",
+          "xanh",
+          "xem",
+          "xuyên"
+        ],
+        "clips_per_text": 16,
+        "total_clips": 256
+      }
+    }
+  },
+  "manifest_matches_detail": [
+    {
+      "path": "experiments\\vieneu_kws_research_v12\\manifests\\dataset_v12_manifest.csv",
+      "filename": "dataset_v12_manifest.csv",
+      "total_rows": 8000,
+      "columns": [
+        "sample_id",
+        "label",
+        "reject_subgroup",
+        "audio_path",
+        "source_type",
+        "source_utterance_id",
+        "voice_or_speaker_id",
+        "text",
+        "oov_lexeme",
+        "noise_asset_id",
+        "target_snr_db",
+        "observed_snr_db",
+        "sample_rate_hz",
+        "channels",
+        "num_samples",
+        "duration_seconds",
+        "transformations",
+        "split",
+        "source_license_or_permission",
+        "sha256",
+        "generation_config_id"
+      ],
+      "track_counts": {
+        "34": 150,
+        "35": 150,
+        "36": 148,
+        "37": 148,
+        "38": 144,
+        "39": 143
+      },
+      "total_matches": 883
+    },
+    {
+      "path": "experiments\\vieneu_kws_research_v12\\manifests\\edge_tts_eval_v2_isolated_test_manifest.csv",
+      "filename": "edge_tts_eval_v2_isolated_test_manifest.csv",
+      "total_rows": 480,
+      "columns": [
+        "clip_id",
+        "label",
+        "text",
+        "subgroup",
+        "phonetic_target",
+        "voice",
+        "gender",
+        "rate",
+        "target_snr_db",
+        "noise_source",
+        "audio_path",
+        "duration_seconds",
+        "num_samples",
+        "sha256"
+      ],
+      "track_counts": {
+        "34": 0,
+        "35": 0,
+        "36": 120,
+        "37": 0,
+        "38": 120,
+        "39": 120
+      },
+      "total_matches": 360
+    },
+    {
+      "path": "experiments\\vieneu_kws_research_v12\\manifests\\streaming_eval_corpus_manifest.csv",
+      "filename": "streaming_eval_corpus_manifest.csv",
+      "total_rows": 40,
+      "columns": [
+        "sequence_id",
+        "condition",
+        "sequence_type",
+        "noise_asset_id",
+        "duration_seconds",
+        "num_total_events",
+        "num_target_events",
+        "events_json",
+        "audio_path",
+        "sha256"
+      ],
+      "track_counts": {
+        "34": 7,
+        "35": 5,
+        "36": 4,
+        "37": 5,
+        "38": 5,
+        "39": 4
+      },
+      "total_matches": 30
+    },
+    {
+      "path": "experiments\\vieneu_kws_research_v12\\manifests\\synthetic_eval_test_manifest.csv",
+      "filename": "synthetic_eval_test_manifest.csv",
+      "total_rows": 40,
+      "columns": [
+        "sequence_id",
+        "corpus_split",
+        "nominal_gap_ms",
+        "condition",
+        "target_snr_db",
+        "observed_snr_db",
+        "noise_asset_id",
+        "tokens",
+        "sequence_type",
+        "num_components",
+        "num_target_events",
+        "duration_seconds",
+        "audio_path",
+        "sha256",
+        "events_json",
+        "components_json"
+      ],
+      "track_counts": {
+        "34": 5,
+        "35": 6,
+        "36": 6,
+        "37": 6,
+        "38": 5,
+        "39": 4
+      },
+      "total_matches": 32
+    },
+    {
+      "path": "experiments\\vieneu_kws_research_v12\\manifests\\test_manifest.csv",
+      "filename": "test_manifest.csv",
+      "total_rows": 1280,
+      "columns": [
+        "sample_id",
+        "label",
+        "reject_subgroup",
+        "audio_path",
+        "source_type",
+        "source_utterance_id",
+        "voice_or_speaker_id",
+        "text",
+        "oov_lexeme",
+        "noise_asset_id",
+        "target_snr_db",
+        "observed_snr_db",
+        "sample_rate_hz",
+        "channels",
+        "num_samples",
+        "duration_seconds",
+        "transformations",
+        "split",
+        "source_license_or_permission",
+        "sha256",
+        "generation_config_id"
+      ],
+      "track_counts": {
+        "34": 150,
+        "35": 150,
+        "36": 148,
+        "37": 148,
+        "38": 144,
+        "39": 143
+      },
+      "total_matches": 883
+    },
+    {
+      "path": "experiments\\vieneu_kws_research_v12\\manifests\\vad_test_corpus_manifest.csv",
+      "filename": "vad_test_corpus_manifest.csv",
+      "total_rows": 60,
+      "columns": [
+        "sequence_id",
+        "corpus_split",
+        "nominal_gap_ms",
+        "effective_acoustic_gap_ms",
+        "condition",
+        "target_snr_db",
+        "observed_snr_db",
+        "noise_asset_id",
+        "sequence_type",
+        "num_components",
+        "num_target_events",
+        "tokens",
+        "duration_seconds",
+        "audio_path",
+        "sha256",
+        "generation_seed",
+        "events_json",
+        "components_json"
+      ],
+      "track_counts": {
+        "34": 0,
+        "35": 16,
+        "36": 0,
+        "37": 16,
+        "38": 0,
+        "39": 16
+      },
+      "total_matches": 48
+    }
+  ]
+}

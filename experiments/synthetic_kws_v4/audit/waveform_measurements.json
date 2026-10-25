@@ -1,0 +1,50 @@
+{
+  "v4_onset_aware": {
+    "closure_window_0_to_25ms": {
+      "rms_mean": 0.00038188864273251965,
+      "rms_std": 8.845696016231976e-05,
+      "max_abs_mean": 0.0012420654296875,
+      "max_abs_max": 0.001739501953125,
+      "fraction_under_005_mean": 1.0,
+      "first_sample_ge_005_mean": 400.1,
+      "first_sample_ge_005_min": 400,
+      "first_sample_ge_005_max": 401,
+      "first_time_ms_ge_005_mean": 25.00625
+    },
+    "burst_window_25_to_40ms": {
+      "rms_mean": 0.050282206013798715,
+      "rms_std": 0.007842282880102431,
+      "max_abs_mean": 0.2086578369140625,
+      "max_abs_max": 0.345977783203125
+    },
+    "active_speech_hf_ratio_gt_3500hz": {
+      "mean": 0.001794369717402339,
+      "std": 0.001151418483322157
+    },
+    "bug_investigation_samples_400_to_800": {
+      "rms_mean": 0.055500160343945025,
+      "explanation": "In the previous audit script, active speech onset was detected by finding |a| > 0.01. Because samples 0-400 have max amplitude 0.001740, this check skipped the entire 25ms closure gap. The script then took the first 400 samples AFTER sample 400 (i.e. samples 400 to 800, the burst and vowel onset), which has mean RMS of 0.05551. It erroneously labeled this burst window as the closure window in the summary table."
+    }
+  },
+  "v3_baseline": {
+    "clip_leading_padding": {
+      "first_sample_ge_005_mean": 3952.5,
+      "first_time_ms_ge_005_mean": 247.03125,
+      "padding_nature": "Centered zero-padding from audio_normalizer.py (~247ms)"
+    },
+    "active_speech_first_25ms": {
+      "rms_mean": 0.12203404828906059,
+      "rms_std": 0.02337992090498036,
+      "max_abs_mean": 0.472308349609375,
+      "fraction_under_005_mean": 0.058875
+    },
+    "active_speech_25_to_40ms": {
+      "rms_mean": 0.18504635170102118,
+      "rms_std": 0.058260871271824846
+    },
+    "active_speech_hf_ratio_gt_3500hz": {
+      "mean": 0.4498746034625487,
+      "std": 0.09066148093709156
+    }
+  }
+}

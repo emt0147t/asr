@@ -1,0 +1,28 @@
+{
+  "pytorch": {
+    "backend": "pytorch",
+    "iterations": 100,
+    "warmup_runs": 10,
+    "fixtures_used": 8,
+    "mean_ms": 1.39,
+    "median_p50_ms": 1.42,
+    "p95_ms": 1.51,
+    "min_ms": 1.17,
+    "max_ms": 1.64,
+    "std_ms": 0.1,
+    "meets_50ms_sla": true
+  },
+  "onnx": {
+    "backend": "onnx",
+    "iterations": 100,
+    "warmup_runs": 10,
+    "fixtures_used": 8,
+    "mean_ms": 2.27,
+    "median_p50_ms": 2.39,
+    "p95_ms": 2.48,
+    "min_ms": 1.74,
+    "max_ms": 2.8,
+    "std_ms": 0.26,
+    "meets_50ms_sla": true
+  }
+}

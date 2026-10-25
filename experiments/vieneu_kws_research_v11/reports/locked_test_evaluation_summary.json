@@ -1,0 +1,1277 @@
+{
+  "frozen_baseline_variant_w10_seed42": {
+    "theta_cmd": 0.4,
+    "sample_counts": {
+      "total_test_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480
+    },
+    "metrics": {
+      "mean_command_recall": 1.0,
+      "mean_command_recall_ci95": [
+        0.9766,
+        1.0
+      ],
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "per_keyword_recall_ci95": {
+        "TRAI": [
+          0.9124,
+          1.0
+        ],
+        "PHAI": [
+          0.9124,
+          1.0
+        ],
+        "LEN": [
+          0.9124,
+          1.0
+        ],
+        "XUONG": [
+          0.9124,
+          1.0
+        ]
+      },
+      "non_target_far": 0.0021,
+      "non_target_far_ci95": [
+        0.0004,
+        0.0117
+      ],
+      "non_target_false_accepts_count": 1,
+      "accuracy": 0.9984,
+      "far_breakdown_by_family": {
+        "target_prefix_compound": {
+          "false_accepts": 0,
+          "total": 112,
+          "far": 0.0
+        },
+        "target_suffix_compound": {
+          "false_accepts": 0,
+          "total": 96,
+          "far": 0.0
+        },
+        "minimal_pair_tone": {
+          "false_accepts": 1,
+          "total": 96,
+          "far": 0.0104
+        },
+        "minimal_pair_consonant": {
+          "false_accepts": 0,
+          "total": 64,
+          "far": 0.0
+        },
+        "minimal_pair_coda": {
+          "false_accepts": 0,
+          "total": 32,
+          "far": 0.0
+        },
+        "near_silence": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "hvac_hum": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "office_ambient": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "airflow_pink": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "TRAI": {
+        "TRAI": 40
+      },
+      "PHAI": {
+        "PHAI": 40
+      },
+      "LEN": {
+        "LEN": 40
+      },
+      "XUONG": {
+        "XUONG": 40
+      },
+      "REJECT": {
+        "REJECT": 479,
+        "XUONG": 1,
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0
+      }
+    },
+    "latency_ms": {
+      "mean": 1.63,
+      "std": 0.4,
+      "p95": 1.93
+    },
+    "acceptance_criteria": {
+      "mean_command_recall_ge_95": true,
+      "all_keywords_ge_95": true,
+      "non_target_far_le_05": true,
+      "verdict": "PASSED_BOUNDED_UTTERANCE_TARGETS"
+    },
+    "checkpoint_path": "experiments/vieneu_kws_research_v9/artifacts/checkpoints/variant_w10_seed42.pt",
+    "checkpoint_sha256": "7374af469a4bc4df5e124aae27720a8c11e688413f045eec3ee4ffd79c836bed"
+  },
+  "variant_v11_baseline_seed42": {
+    "theta_cmd": 0.4,
+    "sample_counts": {
+      "total_test_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480
+    },
+    "metrics": {
+      "mean_command_recall": 0.9437,
+      "mean_command_recall_ci95": [
+        0.8966,
+        0.9701
+      ],
+      "per_keyword_recall": {
+        "TRAI": 0.95,
+        "PHAI": 0.825,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "per_keyword_recall_ci95": {
+        "TRAI": [
+          0.835,
+          0.9862
+        ],
+        "PHAI": [
+          0.6805,
+          0.9125
+        ],
+        "LEN": [
+          0.9124,
+          1.0
+        ],
+        "XUONG": [
+          0.9124,
+          1.0
+        ]
+      },
+      "non_target_far": 0.0,
+      "non_target_far_ci95": [
+        0.0,
+        0.0079
+      ],
+      "non_target_false_accepts_count": 0,
+      "accuracy": 0.9859,
+      "far_breakdown_by_family": {
+        "target_prefix_compound": {
+          "false_accepts": 0,
+          "total": 112,
+          "far": 0.0
+        },
+        "target_suffix_compound": {
+          "false_accepts": 0,
+          "total": 96,
+          "far": 0.0
+        },
+        "minimal_pair_tone": {
+          "false_accepts": 0,
+          "total": 96,
+          "far": 0.0
+        },
+        "minimal_pair_consonant": {
+          "false_accepts": 0,
+          "total": 64,
+          "far": 0.0
+        },
+        "minimal_pair_coda": {
+          "false_accepts": 0,
+          "total": 32,
+          "far": 0.0
+        },
+        "near_silence": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "hvac_hum": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "office_ambient": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "airflow_pink": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "TRAI": {
+        "TRAI": 38,
+        "PHAI": 2
+      },
+      "PHAI": {
+        "PHAI": 33,
+        "TRAI": 7
+      },
+      "LEN": {
+        "LEN": 40
+      },
+      "XUONG": {
+        "XUONG": 40
+      },
+      "REJECT": {
+        "REJECT": 480,
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    },
+    "latency_ms": {
+      "mean": 1.99,
+      "std": 0.46,
+      "p95": 2.5
+    },
+    "acceptance_criteria": {
+      "mean_command_recall_ge_95": false,
+      "all_keywords_ge_95": false,
+      "non_target_far_le_05": true,
+      "verdict": "FAILED_BOUNDED_UTTERANCE_TARGETS"
+    },
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_baseline_seed42.pt",
+    "checkpoint_sha256": "06869ca5f59c110ce8aa5f1ef677b4574360698b7d43497b50e8481f9550af35"
+  },
+  "variant_v11_baseline_seed43": {
+    "theta_cmd": 0.2,
+    "sample_counts": {
+      "total_test_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480
+    },
+    "metrics": {
+      "mean_command_recall": 0.9938,
+      "mean_command_recall_ci95": [
+        0.9655,
+        0.9989
+      ],
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 0.975,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "per_keyword_recall_ci95": {
+        "TRAI": [
+          0.9124,
+          1.0
+        ],
+        "PHAI": [
+          0.8712,
+          0.9956
+        ],
+        "LEN": [
+          0.9124,
+          1.0
+        ],
+        "XUONG": [
+          0.9124,
+          1.0
+        ]
+      },
+      "non_target_far": 0.0292,
+      "non_target_far_ci95": [
+        0.0175,
+        0.0484
+      ],
+      "non_target_false_accepts_count": 14,
+      "accuracy": 0.9766,
+      "far_breakdown_by_family": {
+        "target_prefix_compound": {
+          "false_accepts": 6,
+          "total": 112,
+          "far": 0.0536
+        },
+        "target_suffix_compound": {
+          "false_accepts": 3,
+          "total": 96,
+          "far": 0.0312
+        },
+        "minimal_pair_tone": {
+          "false_accepts": 4,
+          "total": 96,
+          "far": 0.0417
+        },
+        "minimal_pair_consonant": {
+          "false_accepts": 1,
+          "total": 64,
+          "far": 0.0156
+        },
+        "minimal_pair_coda": {
+          "false_accepts": 0,
+          "total": 32,
+          "far": 0.0
+        },
+        "near_silence": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "hvac_hum": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "office_ambient": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "airflow_pink": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "TRAI": {
+        "TRAI": 40
+      },
+      "PHAI": {
+        "PHAI": 39,
+        "TRAI": 1
+      },
+      "LEN": {
+        "LEN": 40
+      },
+      "XUONG": {
+        "XUONG": 40
+      },
+      "REJECT": {
+        "REJECT": 466,
+        "LEN": 3,
+        "XUONG": 11,
+        "TRAI": 0,
+        "PHAI": 0
+      }
+    },
+    "latency_ms": {
+      "mean": 2.17,
+      "std": 0.36,
+      "p95": 2.79
+    },
+    "acceptance_criteria": {
+      "mean_command_recall_ge_95": true,
+      "all_keywords_ge_95": true,
+      "non_target_far_le_05": true,
+      "verdict": "PASSED_BOUNDED_UTTERANCE_TARGETS"
+    },
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_baseline_seed43.pt",
+    "checkpoint_sha256": "5d4eaf9650822adcc0a0940c1c99f691ca9faa4936a1aa8ba90c4f89c4945a47"
+  },
+  "variant_v11_baseline_seed44": {
+    "theta_cmd": 0.2,
+    "sample_counts": {
+      "total_test_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480
+    },
+    "metrics": {
+      "mean_command_recall": 0.9875,
+      "mean_command_recall_ci95": [
+        0.9556,
+        0.9966
+      ],
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 0.95,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "per_keyword_recall_ci95": {
+        "TRAI": [
+          0.9124,
+          1.0
+        ],
+        "PHAI": [
+          0.835,
+          0.9862
+        ],
+        "LEN": [
+          0.9124,
+          1.0
+        ],
+        "XUONG": [
+          0.9124,
+          1.0
+        ]
+      },
+      "non_target_far": 0.0104,
+      "non_target_far_ci95": [
+        0.0045,
+        0.0242
+      ],
+      "non_target_false_accepts_count": 5,
+      "accuracy": 0.9891,
+      "far_breakdown_by_family": {
+        "target_prefix_compound": {
+          "false_accepts": 2,
+          "total": 112,
+          "far": 0.0179
+        },
+        "target_suffix_compound": {
+          "false_accepts": 0,
+          "total": 96,
+          "far": 0.0
+        },
+        "minimal_pair_tone": {
+          "false_accepts": 2,
+          "total": 96,
+          "far": 0.0208
+        },
+        "minimal_pair_consonant": {
+          "false_accepts": 1,
+          "total": 64,
+          "far": 0.0156
+        },
+        "minimal_pair_coda": {
+          "false_accepts": 0,
+          "total": 32,
+          "far": 0.0
+        },
+        "near_silence": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "hvac_hum": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "office_ambient": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "airflow_pink": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "TRAI": {
+        "TRAI": 40
+      },
+      "PHAI": {
+        "PHAI": 38,
+        "TRAI": 2
+      },
+      "LEN": {
+        "LEN": 40
+      },
+      "XUONG": {
+        "XUONG": 40
+      },
+      "REJECT": {
+        "REJECT": 475,
+        "LEN": 1,
+        "XUONG": 4,
+        "TRAI": 0,
+        "PHAI": 0
+      }
+    },
+    "latency_ms": {
+      "mean": 2.02,
+      "std": 0.26,
+      "p95": 2.43
+    },
+    "acceptance_criteria": {
+      "mean_command_recall_ge_95": true,
+      "all_keywords_ge_95": true,
+      "non_target_far_le_05": true,
+      "verdict": "PASSED_BOUNDED_UTTERANCE_TARGETS"
+    },
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_baseline_seed44.pt",
+    "checkpoint_sha256": "deca3a6301736dcf2655d51fcdb1e332882354bbad95e0e3fa309602e5271c68"
+  },
+  "variant_v11_hard_negative_weighted_seed42": {
+    "theta_cmd": 0.2,
+    "sample_counts": {
+      "total_test_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480
+    },
+    "metrics": {
+      "mean_command_recall": 1.0,
+      "mean_command_recall_ci95": [
+        0.9766,
+        1.0
+      ],
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "per_keyword_recall_ci95": {
+        "TRAI": [
+          0.9124,
+          1.0
+        ],
+        "PHAI": [
+          0.9124,
+          1.0
+        ],
+        "LEN": [
+          0.9124,
+          1.0
+        ],
+        "XUONG": [
+          0.9124,
+          1.0
+        ]
+      },
+      "non_target_far": 0.0063,
+      "non_target_far_ci95": [
+        0.0021,
+        0.0182
+      ],
+      "non_target_false_accepts_count": 3,
+      "accuracy": 0.9953,
+      "far_breakdown_by_family": {
+        "target_prefix_compound": {
+          "false_accepts": 1,
+          "total": 112,
+          "far": 0.0089
+        },
+        "target_suffix_compound": {
+          "false_accepts": 0,
+          "total": 96,
+          "far": 0.0
+        },
+        "minimal_pair_tone": {
+          "false_accepts": 2,
+          "total": 96,
+          "far": 0.0208
+        },
+        "minimal_pair_consonant": {
+          "false_accepts": 0,
+          "total": 64,
+          "far": 0.0
+        },
+        "minimal_pair_coda": {
+          "false_accepts": 0,
+          "total": 32,
+          "far": 0.0
+        },
+        "near_silence": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "hvac_hum": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "office_ambient": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "airflow_pink": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "TRAI": {
+        "TRAI": 40
+      },
+      "PHAI": {
+        "PHAI": 40
+      },
+      "LEN": {
+        "LEN": 40
+      },
+      "XUONG": {
+        "XUONG": 40
+      },
+      "REJECT": {
+        "REJECT": 477,
+        "XUONG": 3,
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0
+      }
+    },
+    "latency_ms": {
+      "mean": 1.89,
+      "std": 0.47,
+      "p95": 2.41
+    },
+    "acceptance_criteria": {
+      "mean_command_recall_ge_95": true,
+      "all_keywords_ge_95": true,
+      "non_target_far_le_05": true,
+      "verdict": "PASSED_BOUNDED_UTTERANCE_TARGETS"
+    },
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_hard_negative_weighted_seed42.pt",
+    "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2"
+  },
+  "variant_v11_hard_negative_weighted_seed43": {
+    "theta_cmd": 0.2,
+    "sample_counts": {
+      "total_test_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480
+    },
+    "metrics": {
+      "mean_command_recall": 1.0,
+      "mean_command_recall_ci95": [
+        0.9766,
+        1.0
+      ],
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "per_keyword_recall_ci95": {
+        "TRAI": [
+          0.9124,
+          1.0
+        ],
+        "PHAI": [
+          0.9124,
+          1.0
+        ],
+        "LEN": [
+          0.9124,
+          1.0
+        ],
+        "XUONG": [
+          0.9124,
+          1.0
+        ]
+      },
+      "non_target_far": 0.0104,
+      "non_target_far_ci95": [
+        0.0045,
+        0.0242
+      ],
+      "non_target_false_accepts_count": 5,
+      "accuracy": 0.9922,
+      "far_breakdown_by_family": {
+        "target_prefix_compound": {
+          "false_accepts": 3,
+          "total": 112,
+          "far": 0.0268
+        },
+        "target_suffix_compound": {
+          "false_accepts": 0,
+          "total": 96,
+          "far": 0.0
+        },
+        "minimal_pair_tone": {
+          "false_accepts": 2,
+          "total": 96,
+          "far": 0.0208
+        },
+        "minimal_pair_consonant": {
+          "false_accepts": 0,
+          "total": 64,
+          "far": 0.0
+        },
+        "minimal_pair_coda": {
+          "false_accepts": 0,
+          "total": 32,
+          "far": 0.0
+        },
+        "near_silence": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "hvac_hum": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "office_ambient": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "airflow_pink": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "TRAI": {
+        "TRAI": 40
+      },
+      "PHAI": {
+        "PHAI": 40
+      },
+      "LEN": {
+        "LEN": 40
+      },
+      "XUONG": {
+        "XUONG": 40
+      },
+      "REJECT": {
+        "REJECT": 475,
+        "LEN": 1,
+        "XUONG": 4,
+        "TRAI": 0,
+        "PHAI": 0
+      }
+    },
+    "latency_ms": {
+      "mean": 1.92,
+      "std": 0.53,
+      "p95": 2.45
+    },
+    "acceptance_criteria": {
+      "mean_command_recall_ge_95": true,
+      "all_keywords_ge_95": true,
+      "non_target_far_le_05": true,
+      "verdict": "PASSED_BOUNDED_UTTERANCE_TARGETS"
+    },
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_hard_negative_weighted_seed43.pt",
+    "checkpoint_sha256": "37bf49f54803031dbb963141c096687bc6748b45e4c563cdae5be8daeb2a8147"
+  },
+  "variant_v11_hard_negative_weighted_seed44": {
+    "theta_cmd": 0.2,
+    "sample_counts": {
+      "total_test_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480
+    },
+    "metrics": {
+      "mean_command_recall": 1.0,
+      "mean_command_recall_ci95": [
+        0.9766,
+        1.0
+      ],
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "per_keyword_recall_ci95": {
+        "TRAI": [
+          0.9124,
+          1.0
+        ],
+        "PHAI": [
+          0.9124,
+          1.0
+        ],
+        "LEN": [
+          0.9124,
+          1.0
+        ],
+        "XUONG": [
+          0.9124,
+          1.0
+        ]
+      },
+      "non_target_far": 0.0167,
+      "non_target_far_ci95": [
+        0.0085,
+        0.0325
+      ],
+      "non_target_false_accepts_count": 8,
+      "accuracy": 0.9875,
+      "far_breakdown_by_family": {
+        "target_prefix_compound": {
+          "false_accepts": 4,
+          "total": 112,
+          "far": 0.0357
+        },
+        "target_suffix_compound": {
+          "false_accepts": 1,
+          "total": 96,
+          "far": 0.0104
+        },
+        "minimal_pair_tone": {
+          "false_accepts": 3,
+          "total": 96,
+          "far": 0.0312
+        },
+        "minimal_pair_consonant": {
+          "false_accepts": 0,
+          "total": 64,
+          "far": 0.0
+        },
+        "minimal_pair_coda": {
+          "false_accepts": 0,
+          "total": 32,
+          "far": 0.0
+        },
+        "near_silence": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "hvac_hum": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "office_ambient": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "airflow_pink": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "TRAI": {
+        "TRAI": 40
+      },
+      "PHAI": {
+        "PHAI": 40
+      },
+      "LEN": {
+        "LEN": 40
+      },
+      "XUONG": {
+        "XUONG": 40
+      },
+      "REJECT": {
+        "REJECT": 472,
+        "LEN": 1,
+        "XUONG": 7,
+        "TRAI": 0,
+        "PHAI": 0
+      }
+    },
+    "latency_ms": {
+      "mean": 1.88,
+      "std": 0.26,
+      "p95": 2.36
+    },
+    "acceptance_criteria": {
+      "mean_command_recall_ge_95": true,
+      "all_keywords_ge_95": true,
+      "non_target_far_le_05": true,
+      "verdict": "PASSED_BOUNDED_UTTERANCE_TARGETS"
+    },
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_hard_negative_weighted_seed44.pt",
+    "checkpoint_sha256": "abf1c94f24f2800f3d3954a84480bc6e5b0a5c8c4b6bb72214296fe4a0c4dc60"
+  },
+  "variant_v11_prefix_aware_seed42": {
+    "theta_cmd": 0.2,
+    "sample_counts": {
+      "total_test_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480
+    },
+    "metrics": {
+      "mean_command_recall": 0.9875,
+      "mean_command_recall_ci95": [
+        0.9556,
+        0.9966
+      ],
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 0.95,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "per_keyword_recall_ci95": {
+        "TRAI": [
+          0.9124,
+          1.0
+        ],
+        "PHAI": [
+          0.835,
+          0.9862
+        ],
+        "LEN": [
+          0.9124,
+          1.0
+        ],
+        "XUONG": [
+          0.9124,
+          1.0
+        ]
+      },
+      "non_target_far": 0.0083,
+      "non_target_far_ci95": [
+        0.0032,
+        0.0212
+      ],
+      "non_target_false_accepts_count": 4,
+      "accuracy": 0.9906,
+      "far_breakdown_by_family": {
+        "target_prefix_compound": {
+          "false_accepts": 2,
+          "total": 112,
+          "far": 0.0179
+        },
+        "target_suffix_compound": {
+          "false_accepts": 0,
+          "total": 96,
+          "far": 0.0
+        },
+        "minimal_pair_tone": {
+          "false_accepts": 2,
+          "total": 96,
+          "far": 0.0208
+        },
+        "minimal_pair_consonant": {
+          "false_accepts": 0,
+          "total": 64,
+          "far": 0.0
+        },
+        "minimal_pair_coda": {
+          "false_accepts": 0,
+          "total": 32,
+          "far": 0.0
+        },
+        "near_silence": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "hvac_hum": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "office_ambient": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "airflow_pink": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "TRAI": {
+        "TRAI": 40
+      },
+      "PHAI": {
+        "PHAI": 38,
+        "TRAI": 2
+      },
+      "LEN": {
+        "LEN": 40
+      },
+      "XUONG": {
+        "XUONG": 40
+      },
+      "REJECT": {
+        "REJECT": 476,
+        "LEN": 1,
+        "XUONG": 2,
+        "TRAI": 1,
+        "PHAI": 0
+      }
+    },
+    "latency_ms": {
+      "mean": 1.84,
+      "std": 0.24,
+      "p95": 2.25
+    },
+    "acceptance_criteria": {
+      "mean_command_recall_ge_95": true,
+      "all_keywords_ge_95": true,
+      "non_target_far_le_05": true,
+      "verdict": "PASSED_BOUNDED_UTTERANCE_TARGETS"
+    },
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_prefix_aware_seed42.pt",
+    "checkpoint_sha256": "ca780536bc380e8ddd6467844426239db6aea83017e505801dca085c10bd35dc"
+  },
+  "variant_v11_prefix_aware_seed43": {
+    "theta_cmd": 0.2,
+    "sample_counts": {
+      "total_test_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480
+    },
+    "metrics": {
+      "mean_command_recall": 1.0,
+      "mean_command_recall_ci95": [
+        0.9766,
+        1.0
+      ],
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "per_keyword_recall_ci95": {
+        "TRAI": [
+          0.9124,
+          1.0
+        ],
+        "PHAI": [
+          0.9124,
+          1.0
+        ],
+        "LEN": [
+          0.9124,
+          1.0
+        ],
+        "XUONG": [
+          0.9124,
+          1.0
+        ]
+      },
+      "non_target_far": 0.0146,
+      "non_target_far_ci95": [
+        0.0071,
+        0.0298
+      ],
+      "non_target_false_accepts_count": 7,
+      "accuracy": 0.9891,
+      "far_breakdown_by_family": {
+        "target_prefix_compound": {
+          "false_accepts": 4,
+          "total": 112,
+          "far": 0.0357
+        },
+        "target_suffix_compound": {
+          "false_accepts": 0,
+          "total": 96,
+          "far": 0.0
+        },
+        "minimal_pair_tone": {
+          "false_accepts": 3,
+          "total": 96,
+          "far": 0.0312
+        },
+        "minimal_pair_consonant": {
+          "false_accepts": 0,
+          "total": 64,
+          "far": 0.0
+        },
+        "minimal_pair_coda": {
+          "false_accepts": 0,
+          "total": 32,
+          "far": 0.0
+        },
+        "near_silence": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "hvac_hum": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "office_ambient": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "airflow_pink": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "TRAI": {
+        "TRAI": 40
+      },
+      "PHAI": {
+        "PHAI": 40
+      },
+      "LEN": {
+        "LEN": 40
+      },
+      "XUONG": {
+        "XUONG": 40
+      },
+      "REJECT": {
+        "REJECT": 473,
+        "LEN": 1,
+        "XUONG": 6,
+        "TRAI": 0,
+        "PHAI": 0
+      }
+    },
+    "latency_ms": {
+      "mean": 1.87,
+      "std": 0.33,
+      "p95": 2.33
+    },
+    "acceptance_criteria": {
+      "mean_command_recall_ge_95": true,
+      "all_keywords_ge_95": true,
+      "non_target_far_le_05": true,
+      "verdict": "PASSED_BOUNDED_UTTERANCE_TARGETS"
+    },
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_prefix_aware_seed43.pt",
+    "checkpoint_sha256": "a7e0d4b3c294be122ecfbd055bd7c0abee7c830b2abe15353648e11f7b404e79"
+  },
+  "variant_v11_prefix_aware_seed44": {
+    "theta_cmd": 0.35,
+    "sample_counts": {
+      "total_test_clips": 640,
+      "command_clips": 160,
+      "non_target_clips": 480
+    },
+    "metrics": {
+      "mean_command_recall": 1.0,
+      "mean_command_recall_ci95": [
+        0.9766,
+        1.0
+      ],
+      "per_keyword_recall": {
+        "TRAI": 1.0,
+        "PHAI": 1.0,
+        "LEN": 1.0,
+        "XUONG": 1.0
+      },
+      "per_keyword_recall_ci95": {
+        "TRAI": [
+          0.9124,
+          1.0
+        ],
+        "PHAI": [
+          0.9124,
+          1.0
+        ],
+        "LEN": [
+          0.9124,
+          1.0
+        ],
+        "XUONG": [
+          0.9124,
+          1.0
+        ]
+      },
+      "non_target_far": 0.025,
+      "non_target_far_ci95": [
+        0.0144,
+        0.0432
+      ],
+      "non_target_false_accepts_count": 12,
+      "accuracy": 0.9812,
+      "far_breakdown_by_family": {
+        "target_prefix_compound": {
+          "false_accepts": 6,
+          "total": 112,
+          "far": 0.0536
+        },
+        "target_suffix_compound": {
+          "false_accepts": 2,
+          "total": 96,
+          "far": 0.0208
+        },
+        "minimal_pair_tone": {
+          "false_accepts": 3,
+          "total": 96,
+          "far": 0.0312
+        },
+        "minimal_pair_consonant": {
+          "false_accepts": 1,
+          "total": 64,
+          "far": 0.0156
+        },
+        "minimal_pair_coda": {
+          "false_accepts": 0,
+          "total": 32,
+          "far": 0.0
+        },
+        "near_silence": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "hvac_hum": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "office_ambient": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        },
+        "airflow_pink": {
+          "false_accepts": 0,
+          "total": 20,
+          "far": 0.0
+        }
+      }
+    },
+    "confusion_matrix": {
+      "TRAI": {
+        "TRAI": 40
+      },
+      "PHAI": {
+        "PHAI": 40
+      },
+      "LEN": {
+        "LEN": 40
+      },
+      "XUONG": {
+        "XUONG": 40
+      },
+      "REJECT": {
+        "REJECT": 468,
+        "LEN": 1,
+        "XUONG": 11,
+        "TRAI": 0,
+        "PHAI": 0
+      }
+    },
+    "latency_ms": {
+      "mean": 1.78,
+      "std": 0.38,
+      "p95": 2.33
+    },
+    "acceptance_criteria": {
+      "mean_command_recall_ge_95": true,
+      "all_keywords_ge_95": true,
+      "non_target_far_le_05": true,
+      "verdict": "PASSED_BOUNDED_UTTERANCE_TARGETS"
+    },
+    "checkpoint_path": "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_prefix_aware_seed44.pt",
+    "checkpoint_sha256": "1a684cc83e477d36f40aae06033044184972426434424ff92776f4fa386d178d"
+  }
+}

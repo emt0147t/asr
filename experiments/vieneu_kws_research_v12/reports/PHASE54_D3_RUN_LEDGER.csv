@@ -1,0 +1,4 @@
+condition,seed,best_epoch,val_macro_f1,min_cmd_recall,oov_fa_rate,oov_rejection_precision,trai_recall,phai_recall,len_recall,xuong_recall,composite_selection_score,gate_f1_pass,gate_min_recall_pass,gate_oov_far_pass,gate_oov_prec_pass,all_criteria_passed,checkpoint_sha256
+D3_A,42,32,0.9296246841620408,0.95625,0.121875,0.9876977152899824,0.95625,0.98125,0.99375,0.9875,0.8889536042299515,True,True,False,True,False,56a3627204986e0f584d0e95fd84762382bb073eb7b9f18945c26a13a5027e7e
+D3_B,42,13,0.9143310023430914,0.91875,0.15,0.9679715302491103,0.91875,0.96875,0.9875,1.0,0.8400416084027151,False,True,False,True,False,b2e0ac163ca2fbd543f590ff0efce8351de91c4732470b653dab0fdf13ca44af
+D3_C,42,28,0.9322478912946036,0.95,0.1140625,0.9775862068965517,0.95,0.975,0.975,1.0,0.8856354967298734,True,True,False,True,False,da5b414328c33644b07c0667c3f9926637baa5f1672119f86393182c53c38ba6

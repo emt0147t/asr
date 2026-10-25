@@ -1,0 +1,232 @@
+{
+  "report_type": "acoustic_diversity_report",
+  "dataset_name": "synthetic_kws_v5_candidate",
+  "version": "v5.0-pilot",
+  "quality_gates": {
+    "gate_1_acoustic_variance": {
+      "description": "Within-class Log-Mel cosine similarity std >= 0.03 or mean-centered <= 0.85",
+      "raw_within_class_mean": 0.9305,
+      "raw_within_class_std": 0.0416,
+      "mean_centered_within_class_mean": 0.5282,
+      "mean_centered_within_class_std": 0.2672,
+      "status": "PASS"
+    },
+    "gate_2_onset_shift_robustness": {
+      "description": "Utterance onset time spans [0.02s, 0.35s] with broad coverage",
+      "onset_min_sec": 0.0285,
+      "onset_max_sec": 0.3184,
+      "onset_mean_sec": 0.1568,
+      "onset_std_sec": 0.0785,
+      "status": "PASS"
+    },
+    "gate_3_zero_closure_verification": {
+      "description": "For TRAI, first 25ms of utterance body has max abs >= 0.02 in >= 95% of clips",
+      "trai_first_25ms_peak_min": 0.0905,
+      "trai_first_25ms_peak_max": 0.85,
+      "trai_first_25ms_peak_mean": 0.5067,
+      "trai_clips_meeting_threshold": "20/20",
+      "ratio": 1.0,
+      "status": "PASS"
+    },
+    "gate_4_silence_regimes_coverage": {
+      "description": "5 explicit silence regimes present (exact_zeros, dither, room_tone, hum, transient)",
+      "regimes_found": [
+        "exact_zeros",
+        "low_level_dither",
+        "non_speech_transient",
+        "room_tone",
+        "synthetic_hum"
+      ],
+      "status": "PASS"
+    },
+    "gate_5_unknown_vocabulary_diversity": {
+      "description": "20 distinct Vietnamese syllables covering initial-sharing, rhyme-sharing, and open vocabulary",
+      "distinct_words_count": 20,
+      "words": [
+        "bi\u1ec3n",
+        "b\u1ea1n",
+        "ch\u00e0o",
+        "cu\u1ed1ng",
+        "hoa",
+        "h\u1ecdc",
+        "m\u00e1i",
+        "m\u00e2y",
+        "ng\u00e0y",
+        "nh\u00e0",
+        "n\u00fai",
+        "pha",
+        "r\u1eebng",
+        "s\u00f4ng",
+        "s\u1ed1",
+        "tai",
+        "tr\u1eddi",
+        "xe",
+        "\u0111i",
+        "\u0111\u00e8n"
+      ],
+      "status": "PASS"
+    }
+  },
+  "per_class_spectral_diagnostics": {
+    "TRAI": {
+      "spectral_centroid_hz_mean": 1409.0,
+      "spectral_centroid_hz_std": 216.6,
+      "hf_energy_ratio_mean": 0.008,
+      "hf_energy_ratio_std": 0.0051,
+      "full_clip_rms_mean": 0.1654,
+      "first_25ms_rms_mean": 0.0118
+    },
+    "PHAI": {
+      "spectral_centroid_hz_mean": 2911.4,
+      "spectral_centroid_hz_std": 160.6,
+      "hf_energy_ratio_mean": 0.2463,
+      "hf_energy_ratio_std": 0.0696,
+      "full_clip_rms_mean": 0.0749,
+      "first_25ms_rms_mean": 0.0054
+    },
+    "LEN": {
+      "spectral_centroid_hz_mean": 1069.5,
+      "spectral_centroid_hz_std": 314.5,
+      "hf_energy_ratio_mean": 0.0006,
+      "hf_energy_ratio_std": 0.0007,
+      "full_clip_rms_mean": 0.2055,
+      "first_25ms_rms_mean": 0.0128
+    },
+    "XUONG": {
+      "spectral_centroid_hz_mean": 2784.9,
+      "spectral_centroid_hz_std": 333.8,
+      "hf_energy_ratio_mean": 0.0757,
+      "hf_energy_ratio_std": 0.0494,
+      "full_clip_rms_mean": 0.1467,
+      "first_25ms_rms_mean": 0.01
+    },
+    "UNKNOWN": {
+      "spectral_centroid_hz_mean": 1955.3,
+      "spectral_centroid_hz_std": 925.0,
+      "hf_energy_ratio_mean": 0.0622,
+      "hf_energy_ratio_std": 0.0862,
+      "full_clip_rms_mean": 0.1444,
+      "first_25ms_rms_mean": 0.0095
+    },
+    "SILENCE": {
+      "spectral_centroid_hz_mean": 1528.6,
+      "spectral_centroid_hz_std": 1625.8,
+      "hf_energy_ratio_mean": 0.1965,
+      "hf_energy_ratio_std": 0.258,
+      "full_clip_rms_mean": 0.0034,
+      "first_25ms_rms_mean": 0.0032
+    }
+  },
+  "cosine_similarity_distributions": {
+    "raw": {
+      "within_class": {
+        "TRAI": {
+          "mean": 0.9083,
+          "std": 0.0414,
+          "min": 0.7819,
+          "max": 0.9758
+        },
+        "PHAI": {
+          "mean": 0.9292,
+          "std": 0.0296,
+          "min": 0.8426,
+          "max": 0.9915
+        },
+        "LEN": {
+          "mean": 0.9298,
+          "std": 0.035,
+          "min": 0.8216,
+          "max": 0.9929
+        },
+        "XUONG": {
+          "mean": 0.9182,
+          "std": 0.0339,
+          "min": 0.8292,
+          "max": 0.992
+        },
+        "UNKNOWN": {
+          "mean": 0.9131,
+          "std": 0.0377,
+          "min": 0.7719,
+          "max": 0.9852
+        },
+        "SILENCE": {
+          "mean": 0.9844,
+          "std": 0.0118,
+          "min": 0.9494,
+          "max": 1.0
+        }
+      },
+      "overall_within_class": {
+        "mean": 0.9305,
+        "std": 0.0416,
+        "min": 0.7719,
+        "max": 1.0
+      },
+      "between_class": {
+        "mean": 0.9126,
+        "std": 0.0328,
+        "min": 0.7696,
+        "max": 0.991
+      }
+    },
+    "mean_centered": {
+      "within_class": {
+        "TRAI": {
+          "mean": 0.5531,
+          "std": 0.2281,
+          "min": -0.1472,
+          "max": 0.9088
+        },
+        "PHAI": {
+          "mean": 0.5445,
+          "std": 0.1904,
+          "min": 0.1105,
+          "max": 0.938
+        },
+        "LEN": {
+          "mean": 0.6825,
+          "std": 0.1662,
+          "min": 0.0695,
+          "max": 0.9748
+        },
+        "XUONG": {
+          "mean": 0.5904,
+          "std": 0.1673,
+          "min": 0.1477,
+          "max": 0.9463
+        },
+        "UNKNOWN": {
+          "mean": 0.5729,
+          "std": 0.1575,
+          "min": 0.0045,
+          "max": 0.9465
+        },
+        "SILENCE": {
+          "mean": 0.2255,
+          "std": 0.3709,
+          "min": -0.1127,
+          "max": 0.9995
+        }
+      },
+      "overall_within_class": {
+        "mean": 0.5282,
+        "std": 0.2672,
+        "min": -0.1472,
+        "max": 0.9995
+      },
+      "between_class": {
+        "mean": 0.4583,
+        "std": 0.2584,
+        "min": -0.2456,
+        "max": 0.964
+      }
+    }
+  },
+  "v4_comparison": {
+    "v4_flaw_shortcut_onset_silence": "V4 used output[:400] *= 0.05 creating an artificial 25ms silence gap. V5 models continuous VOT, acoustic murmur leakage (mean peak 0.076), and dynamic F2 onset locus.",
+    "v4_flaw_intra_class_template_matching": "V4 raw cosine similarity averaged 0.966-0.986 due to static formants. V5 introduces VTL scaling, dynamic formants, variable F0, and continuous background.",
+    "v4_flaw_dead_code_dialect": "V4 claimed 'Northern' vs 'Southern' with 0.000000 acoustic difference. V5 truthfully tags provenance as synthetic_parametric_candidate.",
+    "v4_flaw_silence_failure": "V4 silence was misclassified as TRAI (30.2%). V5 introduces 5 explicit ambient regimes."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "dataset_name": "Vietnamese Synthetic KWS — Local VieNeu-TTS v3 Turbo 1,000 Utterances",
+  "engine": "VieNeu-TTS v3 Turbo",
+  "engine_version": "3.8.3",
+  "backend": "Local CPU (ONNX Runtime)",
+  "upstream_repo": "https://github.com/pnnbao97/VieNeu-TTS",
+  "model_checkpoint": "pnnbao-ump/VieNeu-TTS-v3-Turbo",
+  "codec": "OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano-ONNX",
+  "license": "Apache-2.0",
+  "per_request_cost_usd": 0.0,
+  "offline_capable": true,
+  "classes": {
+    "TRAI": {
+      "text": "Trái",
+      "ipa": "/ʈaːj˧˥/",
+      "tone": "sắc (high-rising)",
+      "count": 250
+    },
+    "PHAI": {
+      "text": "Phải",
+      "ipa": "/faːj˧˩˨/",
+      "tone": "hỏi (mid-falling rising / dipping)",
+      "count": 250
+    },
+    "LEN": {
+      "text": "Lên",
+      "ipa": "/len˧˧/",
+      "tone": "ngang (mid-level)",
+      "count": 250
+    },
+    "XUONG": {
+      "text": "Xuống",
+      "ipa": "/suəŋ˧˥/",
+      "tone": "sắc (high-rising)",
+      "count": 250
+    }
+  },
+  "total_utterances": 1000,
+  "target_sample_rates": {
+    "raw": 48000,
+    "kws": 16000
+  },
+  "kws_window_sec": 1.0,
+  "kws_target_samples": 16000,
+  "kws_onset_sec": 0.150,
+  "split_ratio": {
+    "train": 0.68,
+    "val": 0.16,
+    "test": 0.16
+  },
+  "split_counts": {
+    "train": 680,
+    "val": 160,
+    "test": 160
+  },
+  "voice_roster_count": 25,
+  "samples_per_voice_per_class": 10,
+  "samples_per_voice_total": 40
+}

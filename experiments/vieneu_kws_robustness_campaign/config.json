@@ -1,0 +1,50 @@
+{
+  "campaign_name": "vieneu_kws_robustness_campaign",
+  "version": "1.0.0",
+  "workspace": "D:\\trainidentificationaudio",
+  "checkpoints": {
+    "seed42": "experiments/vieneu_cnn_6class/checkpoints/best_checkpoint_seed42.pt",
+    "seed43": "experiments/vieneu_cnn_6class/checkpoints/best_checkpoint_seed43.pt",
+    "seed44": "experiments/vieneu_cnn_6class/checkpoints/best_checkpoint_seed44.pt"
+  },
+  "dataset": {
+    "dir": "experiments/synthetic_kws_dataset_vieneu_6class",
+    "master_manifest": "experiments/synthetic_kws_dataset_vieneu_6class/manifest.csv",
+    "train_manifest": "experiments/synthetic_kws_dataset_vieneu_6class/splits/train_manifest.csv",
+    "val_manifest": "experiments/synthetic_kws_dataset_vieneu_6class/splits/val_manifest.csv",
+    "test_manifest": "experiments/synthetic_kws_dataset_vieneu_6class/splits/test_manifest.csv"
+  },
+  "phase30_noise": {
+    "noise_types": ["white", "pink", "hvac", "babble"],
+    "snr_levels_db": [20, 15, 10, 5, 0],
+    "val_seed": 777001,
+    "test_seed": 888001,
+    "active_region_estimator": "manifest_annotated_bounds",
+    "achieved_snr_tolerance_db": 0.05
+  },
+  "phase31_calibration": {
+    "candidate_thresholds": [0.50, 0.60, 0.70, 0.75, 0.80, 0.85, 0.90, 0.92, 0.95, 0.97, 0.98, 0.99],
+    "target_command_indices": [0, 1, 2, 3],
+    "unknown_index": 4,
+    "silence_index": 5,
+    "optimization_target": "maximize_val_macro_f1",
+    "constraint_min_target_recall": 0.95,
+    "constraint_max_false_activation_unknown": 0.05,
+    "constraint_max_false_activation_silence": 0.05
+  },
+  "phase32_streaming": {
+    "window_duration_sec": 1.0,
+    "window_samples": 16000,
+    "hop_duration_sec": 0.10,
+    "hop_samples": 1600,
+    "consecutive_positive_windows": 2,
+    "debounce_duration_sec": 0.60,
+    "match_window_left_sec": 0.20,
+    "match_window_right_sec": 0.50
+  },
+  "governance": {
+    "subjective_intelligibility_status": "PENDING_HUMAN_LISTENER_VERIFICATION",
+    "domain_validation_status": "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "silence_out_of_condition_evaluation": true
+  }
+}

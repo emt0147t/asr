@@ -1,0 +1,52 @@
+{
+  "phase": "19",
+  "description": "Factorial Generalization, Counterfactuals, and Research Synthesis",
+  "checkpoint_evaluated": "experiments\\synthetic_kws_phase13_3_16\\model_evaluation\\checkpoints\\v5_2_tcresnet14_seed_42.pt",
+  "factorial_sweeps": {
+    "fundamental_frequency_f0_hz": {
+      "100": 1.0,
+      "140": 1.0,
+      "180": 1.0,
+      "220": 1.0,
+      "260": 1.0
+    },
+    "vocal_tract_length_vtl_scale": {
+      "0.85": 1.0,
+      "0.92": 1.0,
+      "1.0": 1.0,
+      "1.08": 1.0,
+      "1.15": 1.0
+    },
+    "speech_target_level_dbfs": {
+      "-20.0": 1.0,
+      "-17.0": 1.0,
+      "-14.0": 1.0,
+      "-11.0": 1.0
+    },
+    "background_noise_level_dbfs": {
+      "-42.0": 1.0,
+      "-36.0": 1.0,
+      "-30.0": 1.0,
+      "-24.0": 1.0
+    }
+  },
+  "paired_counterfactual_trai_vs_phai": {
+    "trai_accuracy": 1.0,
+    "phai_accuracy": 1.0,
+    "combined_accuracy": 1.0,
+    "trai_confused_as_phai": 0,
+    "phai_confused_as_trai": 0,
+    "finding": "Under strictly matched non-phonetic controls, both TRAI and PHAI achieved 100% accuracy with zero cross-confusion."
+  },
+  "out_of_range_stress_tests": {
+    "extreme_vtl": 0.9,
+    "extreme_f0": 0.9,
+    "extreme_noise_snr_2db": 0.675
+  },
+  "research_synthesis": {
+    "engineering_correctness": "VERIFIED_PASS (Full 3,000-clip reproduction bit-exact, zero leakage, robust codebase)",
+    "synthetic_generalization": "VERIFIED_PASS_WITH_LIMITATIONS (High accuracy within in-range synthetic sweeps, graceful degradation under extreme out-of-range acoustic stress)",
+    "natural_speech_validity": "NOT_VALIDATED_ON_NATURAL_SPEECH (Parametric glottal-formant synthesis does not capture human vocal biomechanics or real-world reverberation)"
+  },
+  "gate_verdict": "PHASE19_PASS_WITH_LIMITATIONS"
+}

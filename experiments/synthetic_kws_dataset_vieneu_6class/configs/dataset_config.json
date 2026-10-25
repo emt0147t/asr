@@ -1,0 +1,117 @@
+{
+  "dataset_name": "synthetic_kws_dataset_vieneu_6class",
+  "version": "1.0.0",
+  "total_samples": 1500,
+  "classes": [
+    "TRAI",
+    "PHAI",
+    "LEN",
+    "XUONG",
+    "UNKNOWN",
+    "SILENCE"
+  ],
+  "class_counts": {
+    "TRAI": 250,
+    "PHAI": 250,
+    "LEN": 250,
+    "XUONG": 250,
+    "UNKNOWN": 250,
+    "SILENCE": 250
+  },
+  "splits": {
+    "train": {
+      "total": 1020,
+      "per_class": 170,
+      "voices": [
+        "Adam",
+        "Adam bựa",
+        "Hải Đăng",
+        "Minh Triết",
+        "Minh Đức",
+        "Mỹ Duyên",
+        "Ngọc Huyền",
+        "Ngọc Linh",
+        "Quang Sơn",
+        "Thanh Bình",
+        "Thiền Tâm Đức",
+        "Thiện Minh",
+        "Thái Sơn",
+        "Thục Đoan",
+        "Trúc Ly",
+        "Xuân Vĩnh",
+        "Đoan Trang"
+      ]
+    },
+    "val": {
+      "total": 240,
+      "per_class": 40,
+      "voices": [
+        "Mai Anh",
+        "Ngọc Trân",
+        "Phạm Tuyên",
+        "Thùy Dung"
+      ]
+    },
+    "test": {
+      "total": 240,
+      "per_class": 40,
+      "voices": [
+        "Kim Thanh",
+        "Quốc Tuấn",
+        "Quỳnh Anh",
+        "Đức Trí"
+      ]
+    }
+  },
+  "unknown_text_inventories": {
+    "train": [
+      "Dừng",
+      "Bật",
+      "Tắt",
+      "Mở",
+      "Đóng",
+      "Chạy",
+      "Vào",
+      "Ra",
+      "Trời",
+      "Phát"
+    ],
+    "val": [
+      "Đi",
+      "Đứng",
+      "Nghe",
+      "Nói",
+      "Hỏi",
+      "Tìm",
+      "Chọn",
+      "Xoay",
+      "Lùi",
+      "Quay"
+    ],
+    "test": [
+      "Chào",
+      "Cứu",
+      "Hủy",
+      "Lưu",
+      "Xóa",
+      "Phóng",
+      "Thu",
+      "Khóa",
+      "Được",
+      "Không"
+    ]
+  },
+  "audio_specifications": {
+    "sample_rate_hz": 16000,
+    "duration_sec": 1.0,
+    "target_samples": 16000,
+    "channels": 1,
+    "format": "WAV",
+    "subtype": "PCM_16"
+  },
+  "governance": {
+    "subjective_intelligibility_status": "PENDING_HUMAN_LISTENER_VERIFICATION",
+    "domain_validation_status": "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "noise_robustness_evaluation": "SEPARATE_EVALUATION_PROTOCOL_REQUIRED"
+  }
+}

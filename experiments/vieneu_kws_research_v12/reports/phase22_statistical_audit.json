@@ -1,0 +1,793 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-24T21:45:00+07:00",
+    "phase": "Phase 22 Post-Evaluation Statistical and Claim Audit",
+    "evaluation_run_source": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\reports\\phase21_synthetic_evaluation_results.json",
+    "dev_manifest": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\manifests\\synthetic_eval_dev_manifest.csv",
+    "test_manifest": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\manifests\\synthetic_eval_test_manifest.csv",
+    "components_manifest": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\manifests\\synthetic_eval_components_manifest.csv",
+    "e1_onnx_sha256": "20ecc2964d88d5a9d1d15b1c665e9697a32d702b1e3dd12ab1e5f829aff016b8",
+    "vad_config_sha256": "af5c3891fe73f831bb2972f2ce4722b3cbb6b669ad306bd408b8e941ee7de9b3",
+    "threshold_theta_cmd": 0.2
+  },
+  "dev_corpus_audit": {
+    "sequences": 20,
+    "exact_matches": 8,
+    "exact_sequence_accuracy": 0.4,
+    "exact_sequence_accuracy_wilson_ci95": [
+      0.2188,
+      0.6134
+    ],
+    "confusion_matrix_5x5": [
+      [
+        8,
+        0,
+        0,
+        0,
+        8
+      ],
+      [
+        0,
+        8,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        14,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "class_metrics": {
+      "TRAI": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 8,
+        "support": 16,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667
+      },
+      "PHAI": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 4,
+        "support": 12,
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8
+      },
+      "LEN": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0,
+        "support": 18,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "XUONG": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 4,
+        "support": 18,
+        "precision": 1.0,
+        "recall": 0.7778,
+        "f1": 0.875
+      }
+    },
+    "true_macro_f1": 0.8354,
+    "weighted_macro_f1": 0.844,
+    "global_aggregate": {
+      "tp": 48,
+      "fp": 0,
+      "fn": 16,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571
+    },
+    "oov_accounting": {
+      "split": "dev",
+      "total_sequences": 20,
+      "total_audio_seconds": 60.74,
+      "total_target_seconds": 36.16,
+      "total_oov_seconds": 3.08,
+      "total_silence_seconds": 21.5,
+      "total_negative_seconds": 24.58,
+      "component_pool": {
+        "total_oov_clips_available": 40,
+        "unique_lexemes_count": 20,
+        "by_type": {
+          "dev_general_oov": 40
+        },
+        "by_voice": {
+          "Anh Khôi": 20,
+          "Minh Quân": 20
+        }
+      },
+      "sequence_insertions": {
+        "total_target_events_inserted": 64,
+        "total_oov_events_inserted": 8,
+        "inserted_by_type": {
+          "dev_general_oov": 8
+        },
+        "inserted_by_voice": {
+          "Anh Khôi": 8
+        },
+        "unique_lexemes_inserted_count": 8,
+        "inserted_events_detail": [
+          {
+            "sequence_id": "synthetic_dev_seq_0007",
+            "seq_index": 6,
+            "condition": "snr20",
+            "nominal_gap_ms": 100,
+            "text": "bật",
+            "voice": "Anh Khôi",
+            "oov_type": "dev_general_oov",
+            "start_sec": 0.7359,
+            "end_sec": 0.9419,
+            "duration_sec": 0.206
+          },
+          {
+            "sequence_id": "synthetic_dev_seq_0008",
+            "seq_index": 7,
+            "condition": "snr15",
+            "nominal_gap_ms": 150,
+            "text": "tắt",
+            "voice": "Anh Khôi",
+            "oov_type": "dev_general_oov",
+            "start_sec": 0.2,
+            "end_sec": 0.5542,
+            "duration_sec": 0.3542
+          },
+          {
+            "sequence_id": "synthetic_dev_seq_0009",
+            "seq_index": 8,
+            "condition": "snr10",
+            "nominal_gap_ms": 200,
+            "text": "dừng",
+            "voice": "Anh Khôi",
+            "oov_type": "dev_general_oov",
+            "start_sec": 0.9824,
+            "end_sec": 1.4073,
+            "duration_sec": 0.4249
+          },
+          {
+            "sequence_id": "synthetic_dev_seq_0009",
+            "seq_index": 8,
+            "condition": "snr10",
+            "nominal_gap_ms": 200,
+            "text": "chạy",
+            "voice": "Anh Khôi",
+            "oov_type": "dev_general_oov",
+            "start_sec": 2.5229,
+            "end_sec": 2.9968,
+            "duration_sec": 0.4739
+          },
+          {
+            "sequence_id": "synthetic_dev_seq_0017",
+            "seq_index": 16,
+            "condition": "snr20",
+            "nominal_gap_ms": 300,
+            "text": "mở",
+            "voice": "Anh Khôi",
+            "oov_type": "dev_general_oov",
+            "start_sec": 0.9359,
+            "end_sec": 1.3289,
+            "duration_sec": 0.393
+          },
+          {
+            "sequence_id": "synthetic_dev_seq_0018",
+            "seq_index": 17,
+            "condition": "snr15",
+            "nominal_gap_ms": 400,
+            "text": "đóng",
+            "voice": "Anh Khôi",
+            "oov_type": "dev_general_oov",
+            "start_sec": 0.2,
+            "end_sec": 0.6238,
+            "duration_sec": 0.4238
+          },
+          {
+            "sequence_id": "synthetic_dev_seq_0019",
+            "seq_index": 18,
+            "condition": "snr10",
+            "nominal_gap_ms": 100,
+            "text": "quay",
+            "voice": "Anh Khôi",
+            "oov_type": "dev_general_oov",
+            "start_sec": 1.0745,
+            "end_sec": 1.4707,
+            "duration_sec": 0.3962
+          },
+          {
+            "sequence_id": "synthetic_dev_seq_0019",
+            "seq_index": 18,
+            "condition": "snr10",
+            "nominal_gap_ms": 100,
+            "text": "lùi",
+            "voice": "Anh Khôi",
+            "oov_type": "dev_general_oov",
+            "start_sec": 2.1777,
+            "end_sec": 2.5897,
+            "duration_sec": 0.412
+          }
+        ]
+      }
+    },
+    "latency": {
+      "median_latency_ms": 451.3,
+      "p95_latency_ms": 682.46
+    },
+    "clustered_bootstrap_1000": {
+      "exact_sequence_accuracy": {
+        "mean": 0.4006,
+        "std": 0.11,
+        "median": 0.4,
+        "ci_95_lower": 0.2,
+        "ci_95_upper": 0.6012
+      },
+      "command_precision": {
+        "mean": 0.9791,
+        "std": 0.0213,
+        "median": 0.9804,
+        "ci_95_lower": 0.9286,
+        "ci_95_upper": 1.0
+      },
+      "command_recall": {
+        "mean": 0.7482,
+        "std": 0.0535,
+        "median": 0.75,
+        "ci_95_lower": 0.6406,
+        "ci_95_upper": 0.8508
+      },
+      "aggregate_f1": {
+        "mean": 0.8472,
+        "std": 0.0373,
+        "median": 0.8493,
+        "ci_95_lower": 0.7692,
+        "ci_95_upper": 0.9167
+      },
+      "true_macro_f1": {
+        "mean": 0.8198,
+        "std": 0.0423,
+        "median": 0.8217,
+        "ci_95_lower": 0.7263,
+        "ci_95_upper": 0.8977
+      },
+      "total_false_activations": {
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0,
+        "ci_95_lower": 0.0,
+        "ci_95_upper": 0.0
+      }
+    }
+  },
+  "test_corpus_audit": {
+    "sequences": 40,
+    "exact_matches": 22,
+    "exact_sequence_accuracy": 0.55,
+    "exact_sequence_accuracy_wilson_ci95": [
+      0.3983,
+      0.6929
+    ],
+    "confusion_matrix_5x5": [
+      [
+        21,
+        1,
+        0,
+        0,
+        10
+      ],
+      [
+        1,
+        20,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        35,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        35,
+        1
+      ],
+      [
+        1,
+        3,
+        3,
+        1,
+        0
+      ]
+    ],
+    "class_metrics": {
+      "TRAI": {
+        "tp": 21,
+        "fp": 2,
+        "fn": 11,
+        "support": 32,
+        "precision": 0.913,
+        "recall": 0.6562,
+        "f1": 0.7636
+      },
+      "PHAI": {
+        "tp": 20,
+        "fp": 4,
+        "fn": 4,
+        "support": 24,
+        "precision": 0.8333,
+        "recall": 0.8333,
+        "f1": 0.8333
+      },
+      "LEN": {
+        "tp": 35,
+        "fp": 3,
+        "fn": 1,
+        "support": 36,
+        "precision": 0.9211,
+        "recall": 0.9722,
+        "f1": 0.9459
+      },
+      "XUONG": {
+        "tp": 35,
+        "fp": 1,
+        "fn": 1,
+        "support": 36,
+        "precision": 0.9722,
+        "recall": 0.9722,
+        "f1": 0.9722
+      }
+    },
+    "true_macro_f1": 0.8788,
+    "weighted_macro_f1": 0.8866,
+    "global_aggregate": {
+      "tp": 111,
+      "fp": 10,
+      "fn": 17,
+      "precision": 0.9174,
+      "recall": 0.8672,
+      "f1": 0.8916
+    },
+    "oov_accounting": {
+      "split": "test",
+      "total_sequences": 40,
+      "total_audio_seconds": 114.75,
+      "total_target_seconds": 64.9,
+      "total_oov_seconds": 6.15,
+      "total_silence_seconds": 43.7,
+      "total_negative_seconds": 49.85,
+      "component_pool": {
+        "total_oov_clips_available": 96,
+        "unique_lexemes_count": 24,
+        "by_type": {
+          "phonetic_confuser": 52,
+          "test_unseen_general": 44
+        },
+        "by_voice": {
+          "Ái Hân": 24,
+          "Hữu Quân": 24,
+          "Xuân Tiên": 24,
+          "Mạnh Dũng": 24
+        }
+      },
+      "sequence_insertions": {
+        "total_target_events_inserted": 128,
+        "total_oov_events_inserted": 16,
+        "inserted_by_type": {
+          "phonetic_confuser": 13,
+          "test_unseen_general": 3
+        },
+        "inserted_by_voice": {
+          "Ái Hân": 16
+        },
+        "unique_lexemes_inserted_count": 16,
+        "inserted_events_detail": [
+          {
+            "sequence_id": "synthetic_test_seq_0007",
+            "seq_index": 6,
+            "condition": "snr20",
+            "nominal_gap_ms": 100,
+            "text": "lăn",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 1.0725,
+            "end_sec": 1.4662,
+            "duration_sec": 0.3937
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0008",
+            "seq_index": 7,
+            "condition": "snr15",
+            "nominal_gap_ms": 150,
+            "text": "len",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 0.2,
+            "end_sec": 0.6554,
+            "duration_sec": 0.4554
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0009",
+            "seq_index": 8,
+            "condition": "snr10",
+            "nominal_gap_ms": 200,
+            "text": "lân",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 0.8498,
+            "end_sec": 1.2483,
+            "duration_sec": 0.3984
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0009",
+            "seq_index": 8,
+            "condition": "snr10",
+            "nominal_gap_ms": 200,
+            "text": "lền",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 2.1144,
+            "end_sec": 2.4579,
+            "duration_sec": 0.3434
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0017",
+            "seq_index": 16,
+            "condition": "snr20",
+            "nominal_gap_ms": 300,
+            "text": "phái",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 1.2725,
+            "end_sec": 1.5847,
+            "duration_sec": 0.3122
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0018",
+            "seq_index": 17,
+            "condition": "snr15",
+            "nominal_gap_ms": 400,
+            "text": "phay",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 0.2,
+            "end_sec": 0.4402,
+            "duration_sec": 0.2402
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0019",
+            "seq_index": 18,
+            "condition": "snr10",
+            "nominal_gap_ms": 100,
+            "text": "phai",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 0.6934,
+            "end_sec": 0.9315,
+            "duration_sec": 0.2381
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0019",
+            "seq_index": 18,
+            "condition": "snr10",
+            "nominal_gap_ms": 100,
+            "text": "trại",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 1.6204,
+            "end_sec": 2.0506,
+            "duration_sec": 0.4303
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0027",
+            "seq_index": 26,
+            "condition": "snr20",
+            "nominal_gap_ms": 200,
+            "text": "trát",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 1.1725,
+            "end_sec": 1.5553,
+            "duration_sec": 0.3827
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0028",
+            "seq_index": 27,
+            "condition": "snr15",
+            "nominal_gap_ms": 250,
+            "text": "trai",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 0.2,
+            "end_sec": 0.6321,
+            "duration_sec": 0.4321
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0029",
+            "seq_index": 28,
+            "condition": "snr10",
+            "nominal_gap_ms": 300,
+            "text": "xuồng",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 1.0005,
+            "end_sec": 1.3831,
+            "duration_sec": 0.3826
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0029",
+            "seq_index": 28,
+            "condition": "snr10",
+            "nominal_gap_ms": 300,
+            "text": "xưởng",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 2.4338,
+            "end_sec": 2.9237,
+            "duration_sec": 0.4899
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0037",
+            "seq_index": 36,
+            "condition": "snr20",
+            "nominal_gap_ms": 100,
+            "text": "xướng",
+            "voice": "Ái Hân",
+            "oov_type": "phonetic_confuser",
+            "start_sec": 1.0725,
+            "end_sec": 1.6024,
+            "duration_sec": 0.5299
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0038",
+            "seq_index": 37,
+            "condition": "snr15",
+            "nominal_gap_ms": 150,
+            "text": "ghế",
+            "voice": "Ái Hân",
+            "oov_type": "test_unseen_general",
+            "start_sec": 0.2,
+            "end_sec": 0.6274,
+            "duration_sec": 0.4274
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0039",
+            "seq_index": 38,
+            "condition": "snr10",
+            "nominal_gap_ms": 200,
+            "text": "bàn",
+            "voice": "Ái Hân",
+            "oov_type": "test_unseen_general",
+            "start_sec": 1.1624,
+            "end_sec": 1.4847,
+            "duration_sec": 0.3223
+          },
+          {
+            "sequence_id": "synthetic_test_seq_0039",
+            "seq_index": 38,
+            "condition": "snr10",
+            "nominal_gap_ms": 200,
+            "text": "nhà",
+            "voice": "Ái Hân",
+            "oov_type": "test_unseen_general",
+            "start_sec": 2.5634,
+            "end_sec": 2.9307,
+            "duration_sec": 0.3673
+          }
+        ]
+      }
+    },
+    "oov_rejection_rates": {
+      "phonetic_confusers": 0.3846,
+      "general_oov": 1.0,
+      "overall_oov": 0.5
+    },
+    "false_activation_rates_per_minute": {
+      "per_negative_minute": 9.63,
+      "per_oov_minute": 78.05,
+      "per_silence_minute": 0.0
+    },
+    "false_activation_traces": [
+      {
+        "sequence_id": "synthetic_test_seq_0008",
+        "condition": "snr15",
+        "nominal_gap_ms": 150,
+        "trigger_type": "OOV_FALSE_ACTIVATION",
+        "falsely_emitted_command": "LEN",
+        "confidence": 0.9954,
+        "pred_start_sec": 0.07,
+        "pred_end_sec": 0.62,
+        "oov_word": "len",
+        "oov_type": "phonetic_confuser",
+        "oov_voice": "Ái Hân",
+        "oov_start_sec": 0.2,
+        "oov_end_sec": 0.6554
+      },
+      {
+        "sequence_id": "synthetic_test_seq_0009",
+        "condition": "snr10",
+        "nominal_gap_ms": 200,
+        "trigger_type": "OOV_FALSE_ACTIVATION",
+        "falsely_emitted_command": "LEN",
+        "confidence": 0.6937,
+        "pred_start_sec": 0.73,
+        "pred_end_sec": 1.16,
+        "oov_word": "lân",
+        "oov_type": "phonetic_confuser",
+        "oov_voice": "Ái Hân",
+        "oov_start_sec": 0.8498,
+        "oov_end_sec": 1.2483
+      },
+      {
+        "sequence_id": "synthetic_test_seq_0009",
+        "condition": "snr10",
+        "nominal_gap_ms": 200,
+        "trigger_type": "OOV_FALSE_ACTIVATION",
+        "falsely_emitted_command": "LEN",
+        "confidence": 0.9944,
+        "pred_start_sec": 1.97,
+        "pred_end_sec": 2.44,
+        "oov_word": "lền",
+        "oov_type": "phonetic_confuser",
+        "oov_voice": "Ái Hân",
+        "oov_start_sec": 2.1144,
+        "oov_end_sec": 2.4579
+      },
+      {
+        "sequence_id": "synthetic_test_seq_0017",
+        "condition": "snr20",
+        "nominal_gap_ms": 300,
+        "trigger_type": "OOV_FALSE_ACTIVATION",
+        "falsely_emitted_command": "PHAI",
+        "confidence": 0.9988,
+        "pred_start_sec": 1.13,
+        "pred_end_sec": 1.58,
+        "oov_word": "phái",
+        "oov_type": "phonetic_confuser",
+        "oov_voice": "Ái Hân",
+        "oov_start_sec": 1.2725,
+        "oov_end_sec": 1.5847
+      },
+      {
+        "sequence_id": "synthetic_test_seq_0018",
+        "condition": "snr15",
+        "nominal_gap_ms": 400,
+        "trigger_type": "OOV_FALSE_ACTIVATION",
+        "falsely_emitted_command": "PHAI",
+        "confidence": 0.9608,
+        "pred_start_sec": 0.07,
+        "pred_end_sec": 0.5,
+        "oov_word": "phay",
+        "oov_type": "phonetic_confuser",
+        "oov_voice": "Ái Hân",
+        "oov_start_sec": 0.2,
+        "oov_end_sec": 0.4402
+      },
+      {
+        "sequence_id": "synthetic_test_seq_0019",
+        "condition": "snr10",
+        "nominal_gap_ms": 100,
+        "trigger_type": "OOV_FALSE_ACTIVATION",
+        "falsely_emitted_command": "PHAI",
+        "confidence": 0.9722,
+        "pred_start_sec": 0.55,
+        "pred_end_sec": 0.88,
+        "oov_word": "phai",
+        "oov_type": "phonetic_confuser",
+        "oov_voice": "Ái Hân",
+        "oov_start_sec": 0.6934,
+        "oov_end_sec": 0.9315
+      },
+      {
+        "sequence_id": "synthetic_test_seq_0019",
+        "condition": "snr10",
+        "nominal_gap_ms": 100,
+        "trigger_type": "OOV_FALSE_ACTIVATION",
+        "falsely_emitted_command": "TRAI",
+        "confidence": 0.8444,
+        "pred_start_sec": 1.49,
+        "pred_end_sec": 2.02,
+        "oov_word": "trại",
+        "oov_type": "phonetic_confuser",
+        "oov_voice": "Ái Hân",
+        "oov_start_sec": 1.6204,
+        "oov_end_sec": 2.0506
+      },
+      {
+        "sequence_id": "synthetic_test_seq_0029",
+        "condition": "snr10",
+        "nominal_gap_ms": 300,
+        "trigger_type": "OOV_FALSE_ACTIVATION",
+        "falsely_emitted_command": "XUONG",
+        "confidence": 0.9827,
+        "pred_start_sec": 0.83,
+        "pred_end_sec": 1.62,
+        "oov_word": "xuồng",
+        "oov_type": "phonetic_confuser",
+        "oov_voice": "Ái Hân",
+        "oov_start_sec": 1.0005,
+        "oov_end_sec": 1.3831
+      }
+    ],
+    "latency": {
+      "median_latency_ms": 320.0,
+      "p95_latency_ms": 825.0
+    },
+    "clustered_bootstrap_1000": {
+      "exact_sequence_accuracy": {
+        "mean": 0.5538,
+        "std": 0.078,
+        "median": 0.55,
+        "ci_95_lower": 0.4,
+        "ci_95_upper": 0.7
+      },
+      "command_precision": {
+        "mean": 0.9336,
+        "std": 0.026,
+        "median": 0.9344,
+        "ci_95_lower": 0.8809,
+        "ci_95_upper": 0.981
+      },
+      "command_recall": {
+        "mean": 0.8836,
+        "std": 0.031,
+        "median": 0.8862,
+        "ci_95_lower": 0.8148,
+        "ci_95_upper": 0.9398
+      },
+      "aggregate_f1": {
+        "mean": 0.9075,
+        "std": 0.02,
+        "median": 0.9091,
+        "ci_95_lower": 0.8667,
+        "ci_95_upper": 0.9445
+      },
+      "true_macro_f1": {
+        "mean": 0.8974,
+        "std": 0.0229,
+        "median": 0.8989,
+        "ci_95_lower": 0.8512,
+        "ci_95_upper": 0.9389
+      },
+      "total_false_activations": {
+        "mean": 8.04,
+        "std": 3.1963,
+        "median": 8.0,
+        "ci_95_lower": 2.0,
+        "ci_95_upper": 15.0
+      }
+    }
+  },
+  "governance_labels": [
+    "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+    "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+    "NOT_VALIDATED_PENDING_DATA"
+  ]
+}

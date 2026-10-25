@@ -1,0 +1,1 @@
+capture_id,timestamp_utc,source_synthetic_clip_id,speaker_model,mic_model,distance_m,spl_dba,room_t60_sec,raw_loopback_path,sha256,candidate_pred_class,candidate_confidence

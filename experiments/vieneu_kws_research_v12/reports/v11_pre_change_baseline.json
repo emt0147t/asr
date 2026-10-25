@@ -1,0 +1,243 @@
+{
+  "description": "Pre-change legacy v11 baseline on test fixtures",
+  "v11_onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+  "v11_checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+  "theta_cmd": 0.2,
+  "num_fixtures": 18,
+  "results": [
+    {
+      "fixture": "dev_01_digital_silence.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_01_digital_silence.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.7009,
+      "probabilities": {
+        "TRAI": 0.0803,
+        "PHAI": 0.0972,
+        "LEN": 0.0481,
+        "XUONG": 0.0735,
+        "REJECT": 0.7009
+      }
+    },
+    {
+      "fixture": "dev_02_quiet_ambient_room.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_02_quiet_ambient_room.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.9814,
+      "probabilities": {
+        "TRAI": 0.0043,
+        "PHAI": 0.0067,
+        "LEN": 0.0027,
+        "XUONG": 0.0048,
+        "REJECT": 0.9814
+      }
+    },
+    {
+      "fixture": "dev_03_attenuated_trai_peak010.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_03_attenuated_trai_peak010.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.7415,
+      "probabilities": {
+        "TRAI": 0.0726,
+        "PHAI": 0.0898,
+        "LEN": 0.034,
+        "XUONG": 0.062,
+        "REJECT": 0.7415
+      }
+    },
+    {
+      "fixture": "dev_04_attenuated_phai_peak005.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_04_attenuated_phai_peak005.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.8495,
+      "probabilities": {
+        "TRAI": 0.0403,
+        "PHAI": 0.0556,
+        "LEN": 0.0221,
+        "XUONG": 0.0326,
+        "REJECT": 0.8495
+      }
+    },
+    {
+      "fixture": "dev_05_normal_len_peak089.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_05_normal_len_peak089.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.3539,
+      "probabilities": {
+        "TRAI": 0.0893,
+        "PHAI": 0.1294,
+        "LEN": 0.1949,
+        "XUONG": 0.2325,
+        "REJECT": 0.3539
+      }
+    },
+    {
+      "fixture": "dev_06_normal_xuong_peak089.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_06_normal_xuong_peak089.wav",
+      "predicted_class": "XUONG",
+      "confidence": 0.3393,
+      "probabilities": {
+        "TRAI": 0.0661,
+        "PHAI": 0.0848,
+        "LEN": 0.1836,
+        "XUONG": 0.3393,
+        "REJECT": 0.3262
+      }
+    },
+    {
+      "fixture": "dev_07_high_amplitude_trai_peak180.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_07_high_amplitude_trai_peak180.wav",
+      "predicted_class": "LEN",
+      "confidence": 0.3186,
+      "probabilities": {
+        "TRAI": 0.0757,
+        "PHAI": 0.1509,
+        "LEN": 0.3186,
+        "XUONG": 0.1687,
+        "REJECT": 0.2861
+      }
+    },
+    {
+      "fixture": "dev_08_high_amplitude_xuong_peak250.wav",
+      "path": "experiments/vieneu_kws_research_v13_1/fixtures/dev_08_high_amplitude_xuong_peak250.wav",
+      "predicted_class": "XUONG",
+      "confidence": 0.3443,
+      "probabilities": {
+        "TRAI": 0.0616,
+        "PHAI": 0.0819,
+        "LEN": 0.2027,
+        "XUONG": 0.3443,
+        "REJECT": 0.3095
+      }
+    },
+    {
+      "fixture": "parity_dev_01_trai.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_01_trai.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.3072,
+      "probabilities": {
+        "TRAI": 0.0838,
+        "PHAI": 0.1555,
+        "LEN": 0.2783,
+        "XUONG": 0.1752,
+        "REJECT": 0.3072
+      }
+    },
+    {
+      "fixture": "parity_dev_02_phai.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_02_phai.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.2579,
+      "probabilities": {
+        "TRAI": 0.1172,
+        "PHAI": 0.1988,
+        "LEN": 0.2555,
+        "XUONG": 0.1707,
+        "REJECT": 0.2579
+      }
+    },
+    {
+      "fixture": "parity_dev_03_len.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_03_len.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.3612,
+      "probabilities": {
+        "TRAI": 0.0912,
+        "PHAI": 0.1303,
+        "LEN": 0.1868,
+        "XUONG": 0.2305,
+        "REJECT": 0.3612
+      }
+    },
+    {
+      "fixture": "parity_dev_04_xuong.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_04_xuong.wav",
+      "predicted_class": "XUONG",
+      "confidence": 0.3366,
+      "probabilities": {
+        "TRAI": 0.068,
+        "PHAI": 0.0859,
+        "LEN": 0.176,
+        "XUONG": 0.3366,
+        "REJECT": 0.3334
+      }
+    },
+    {
+      "fixture": "parity_dev_05_unknown.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_05_unknown.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.3084,
+      "probabilities": {
+        "TRAI": 0.0849,
+        "PHAI": 0.1485,
+        "LEN": 0.2666,
+        "XUONG": 0.1916,
+        "REJECT": 0.3084
+      }
+    },
+    {
+      "fixture": "parity_dev_06_silence.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_06_silence.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.984,
+      "probabilities": {
+        "TRAI": 0.0037,
+        "PHAI": 0.0059,
+        "LEN": 0.0023,
+        "XUONG": 0.0041,
+        "REJECT": 0.984
+      }
+    },
+    {
+      "fixture": "parity_dev_07_ambient_low.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_07_ambient_low.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.6153,
+      "probabilities": {
+        "TRAI": 0.0574,
+        "PHAI": 0.0416,
+        "LEN": 0.0466,
+        "XUONG": 0.2392,
+        "REJECT": 0.6153
+      }
+    },
+    {
+      "fixture": "parity_dev_08_transient_impulse.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_08_transient_impulse.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.639,
+      "probabilities": {
+        "TRAI": 0.1222,
+        "PHAI": 0.1018,
+        "LEN": 0.028,
+        "XUONG": 0.1091,
+        "REJECT": 0.639
+      }
+    },
+    {
+      "fixture": "parity_dev_09_clamped_high.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_09_clamped_high.wav",
+      "predicted_class": "XUONG",
+      "confidence": 0.9624,
+      "probabilities": {
+        "TRAI": 0.0015,
+        "PHAI": 0.0003,
+        "LEN": 0.0045,
+        "XUONG": 0.9624,
+        "REJECT": 0.0313
+      }
+    },
+    {
+      "fixture": "parity_dev_10_short_padded.wav",
+      "path": "experiments/vieneu_kws_research_v12/fixtures/parity_dev_10_short_padded.wav",
+      "predicted_class": "REJECT",
+      "confidence": 0.7117,
+      "probabilities": {
+        "TRAI": 0.0659,
+        "PHAI": 0.0699,
+        "LEN": 0.0181,
+        "XUONG": 0.1344,
+        "REJECT": 0.7117
+      }
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "blind_clip_id": "BLIND_EVAL_01",
+    "true_engine": "Edge-TTS-Cloud",
+    "true_keyword": "XUONG",
+    "intended_text": "Xuống",
+    "voice_id": "vi-VN-NamMinhNeural",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot/audio/kws_16k_1s/tts_pilot_xuong_namminh_slow_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_02",
+    "true_engine": "VieNeu-TTS-v3-Turbo",
+    "true_keyword": "LEN",
+    "intended_text": "Lên",
+    "voice_id": "Phạm Tuyên",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot_vieneu_local/audio/kws_16k_1s/vieneu_pilot_len_phamtuyen_m_north_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_03",
+    "true_engine": "V5.2-Parametric-Buzzer",
+    "true_keyword": "PHAI",
+    "intended_text": "PHAI",
+    "voice_id": "V5.2-Buzz",
+    "audio_file_path": "experiments/synthetic_kws_phase13_3_16/dataset_release_candidate/audio/v5_2_rc_test_phai_0002.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_04",
+    "true_engine": "V5.2-Parametric-Buzzer",
+    "true_keyword": "XUONG",
+    "intended_text": "XUONG",
+    "voice_id": "V5.2-Buzz",
+    "audio_file_path": "experiments/synthetic_kws_phase13_3_16/dataset_release_candidate/audio/v5_2_rc_test_xuong_0006.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_05",
+    "true_engine": "Edge-TTS-Cloud",
+    "true_keyword": "LEN",
+    "intended_text": "Lên",
+    "voice_id": "vi-VN-NamMinhNeural",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot/audio/kws_16k_1s/tts_pilot_len_namminh_slow_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_06",
+    "true_engine": "Edge-TTS-Cloud",
+    "true_keyword": "PHAI",
+    "intended_text": "Phải",
+    "voice_id": "vi-VN-HoaiMyNeural",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot/audio/kws_16k_1s/tts_pilot_phai_hoaimy_slow_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_07",
+    "true_engine": "V5.2-Parametric-Buzzer",
+    "true_keyword": "TRAI",
+    "intended_text": "TRAI",
+    "voice_id": "V5.2-Buzz",
+    "audio_file_path": "experiments/synthetic_kws_phase13_3_16/dataset_release_candidate/audio/v5_2_rc_test_trai_0006.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_08",
+    "true_engine": "Edge-TTS-Cloud",
+    "true_keyword": "PHAI",
+    "intended_text": "Phải",
+    "voice_id": "vi-VN-NamMinhNeural",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot/audio/kws_16k_1s/tts_pilot_phai_namminh_slow_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_09",
+    "true_engine": "Edge-TTS-Cloud",
+    "true_keyword": "XUONG",
+    "intended_text": "Xuống",
+    "voice_id": "vi-VN-HoaiMyNeural",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot/audio/kws_16k_1s/tts_pilot_xuong_hoaimy_slow_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_10",
+    "true_engine": "V5.2-Parametric-Buzzer",
+    "true_keyword": "TRAI",
+    "intended_text": "TRAI",
+    "voice_id": "V5.2-Buzz",
+    "audio_file_path": "experiments/synthetic_kws_phase13_3_16/dataset_release_candidate/audio/v5_2_rc_test_trai_0002.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_11",
+    "true_engine": "VieNeu-TTS-v3-Turbo",
+    "true_keyword": "TRAI",
+    "intended_text": "Trái",
+    "voice_id": "Phạm Tuyên",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot_vieneu_local/audio/kws_16k_1s/vieneu_pilot_trai_phamtuyen_m_north_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_12",
+    "true_engine": "Edge-TTS-Cloud",
+    "true_keyword": "LEN",
+    "intended_text": "Lên",
+    "voice_id": "vi-VN-HoaiMyNeural",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot/audio/kws_16k_1s/tts_pilot_len_hoaimy_slow_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_13",
+    "true_engine": "V5.2-Parametric-Buzzer",
+    "true_keyword": "LEN",
+    "intended_text": "LEN",
+    "voice_id": "V5.2-Buzz",
+    "audio_file_path": "experiments/synthetic_kws_phase13_3_16/dataset_release_candidate/audio/v5_2_rc_test_len_0006.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_14",
+    "true_engine": "VieNeu-TTS-v3-Turbo",
+    "true_keyword": "XUONG",
+    "intended_text": "Xuống",
+    "voice_id": "Trúc Ly",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot_vieneu_local/audio/kws_16k_1s/vieneu_pilot_xuong_trucly_f_north_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_15",
+    "true_engine": "Edge-TTS-Cloud",
+    "true_keyword": "TRAI",
+    "intended_text": "Trái",
+    "voice_id": "vi-VN-NamMinhNeural",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot/audio/kws_16k_1s/tts_pilot_trai_namminh_slow_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_16",
+    "true_engine": "VieNeu-TTS-v3-Turbo",
+    "true_keyword": "PHAI",
+    "intended_text": "Phải",
+    "voice_id": "Trúc Ly",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot_vieneu_local/audio/kws_16k_1s/vieneu_pilot_phai_trucly_f_north_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_17",
+    "true_engine": "V5.2-Parametric-Buzzer",
+    "true_keyword": "XUONG",
+    "intended_text": "XUONG",
+    "voice_id": "V5.2-Buzz",
+    "audio_file_path": "experiments/synthetic_kws_phase13_3_16/dataset_release_candidate/audio/v5_2_rc_test_xuong_0002.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_18",
+    "true_engine": "VieNeu-TTS-v3-Turbo",
+    "true_keyword": "LEN",
+    "intended_text": "Lên",
+    "voice_id": "Trúc Ly",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot_vieneu_local/audio/kws_16k_1s/vieneu_pilot_len_trucly_f_north_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_19",
+    "true_engine": "V5.2-Parametric-Buzzer",
+    "true_keyword": "PHAI",
+    "intended_text": "PHAI",
+    "voice_id": "V5.2-Buzz",
+    "audio_file_path": "experiments/synthetic_kws_phase13_3_16/dataset_release_candidate/audio/v5_2_rc_test_phai_0006.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_20",
+    "true_engine": "VieNeu-TTS-v3-Turbo",
+    "true_keyword": "XUONG",
+    "intended_text": "Xuống",
+    "voice_id": "Phạm Tuyên",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot_vieneu_local/audio/kws_16k_1s/vieneu_pilot_xuong_phamtuyen_m_north_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_21",
+    "true_engine": "Edge-TTS-Cloud",
+    "true_keyword": "TRAI",
+    "intended_text": "Trái",
+    "voice_id": "vi-VN-HoaiMyNeural",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot/audio/kws_16k_1s/tts_pilot_trai_hoaimy_slow_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_22",
+    "true_engine": "VieNeu-TTS-v3-Turbo",
+    "true_keyword": "TRAI",
+    "intended_text": "Trái",
+    "voice_id": "Trúc Ly",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot_vieneu_local/audio/kws_16k_1s/vieneu_pilot_trai_trucly_f_north_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_23",
+    "true_engine": "VieNeu-TTS-v3-Turbo",
+    "true_keyword": "PHAI",
+    "intended_text": "Phải",
+    "voice_id": "Phạm Tuyên",
+    "audio_file_path": "experiments/synthetic_kws_tts_pilot_vieneu_local/audio/kws_16k_1s/vieneu_pilot_phai_phamtuyen_m_north_kws_16k.wav"
+  },
+  {
+    "blind_clip_id": "BLIND_EVAL_24",
+    "true_engine": "V5.2-Parametric-Buzzer",
+    "true_keyword": "LEN",
+    "intended_text": "LEN",
+    "voice_id": "V5.2-Buzz",
+    "audio_file_path": "experiments/synthetic_kws_phase13_3_16/dataset_release_candidate/audio/v5_2_rc_test_len_0002.wav"
+  }
+]

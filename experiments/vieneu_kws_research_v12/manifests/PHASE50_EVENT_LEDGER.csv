@@ -1,0 +1,231 @@
+sequence_id,event_index,label,text,subgroup,start_time,end_time,duration
+p50_stream_seq_011,0,REJECT,núi,test_oov_general,0.906,1.51,0.603
+p50_stream_seq_011,1,REJECT,trước,test_oov_phonetic,2.459,2.944,0.485
+p50_stream_seq_011,2,REJECT,núi,test_oov_general,3.401,4.005,0.603
+p50_stream_seq_011,3,REJECT,làm,test_oov_phonetic,4.706,5.281,0.575
+p50_stream_seq_011,4,REJECT,quạt,test_oov_general,6.262,6.721,0.46
+p50_stream_seq_012,0,REJECT,quạt,test_oov_general,1.034,1.493,0.46
+p50_stream_seq_012,1,REJECT,bóng,test_oov_general,2.195,2.829,0.633
+p50_stream_seq_012,2,REJECT,đèn,test_oov_general,3.674,4.24,0.566
+p50_stream_seq_012,3,REJECT,phim,test_oov_phonetic,5.183,5.875,0.692
+p50_stream_seq_012,4,REJECT,luôn,test_oov_phonetic,6.713,7.42,0.707
+p50_stream_seq_012,5,REJECT,trẻ,test_oov_phonetic,8.413,9.022,0.608
+p50_stream_seq_012,6,REJECT,làm,test_oov_phonetic,10.023,10.598,0.575
+p50_stream_seq_013,0,REJECT,núi,test_oov_general,0.742,1.466,0.724
+p50_stream_seq_013,1,REJECT,phút,test_oov_phonetic,2.525,3.027,0.503
+p50_stream_seq_013,2,REJECT,núi,test_oov_general,3.907,4.511,0.603
+p50_stream_seq_013,3,REJECT,xem,test_oov_phonetic,4.926,5.657,0.731
+p50_stream_seq_013,4,REJECT,áo,test_oov_general,6.586,7.255,0.669
+p50_stream_seq_013,5,REJECT,xa,test_oov_phonetic,7.661,8.308,0.647
+p50_stream_seq_014,0,REJECT,xuyên,test_oov_phonetic,0.637,1.239,0.601
+p50_stream_seq_014,1,REJECT,hoa,test_oov_general,2.32,3.088,0.769
+p50_stream_seq_014,2,REJECT,bóng,test_oov_general,3.51,4.144,0.633
+p50_stream_seq_014,3,REJECT,lòng,test_oov_phonetic,4.595,5.257,0.662
+p50_stream_seq_014,4,REJECT,áo,test_oov_general,6.003,6.672,0.669
+p50_stream_seq_014,5,REJECT,trường,test_oov_phonetic,7.591,8.33,0.738
+p50_stream_seq_014,6,REJECT,đèn,test_oov_general,9.172,9.836,0.664
+p50_stream_seq_015,0,REJECT,bóng,test_oov_general,0.544,1.085,0.541
+p50_stream_seq_015,1,REJECT,hoa,test_oov_general,1.683,2.32,0.637
+p50_stream_seq_015,2,REJECT,sông,test_oov_general,2.838,3.573,0.735
+p50_stream_seq_015,3,REJECT,phát,test_oov_phonetic,4.005,4.598,0.593
+p50_stream_seq_015,4,REJECT,quần,test_oov_general,5.519,6.129,0.61
+p50_stream_seq_015,5,REJECT,làm,test_oov_phonetic,7.04,7.718,0.677
+p50_stream_seq_015,6,REJECT,luôn,test_oov_phonetic,8.474,9.181,0.707
+p50_stream_seq_016,0,REJECT,phát,test_oov_phonetic,0.947,1.462,0.516
+p50_stream_seq_016,1,REJECT,núi,test_oov_general,2.471,3.195,0.724
+p50_stream_seq_016,2,REJECT,xanh,test_oov_phonetic,4.267,4.985,0.717
+p50_stream_seq_016,3,REJECT,quần,test_oov_general,5.61,6.22,0.61
+p50_stream_seq_016,4,REJECT,lòng,test_oov_phonetic,6.739,7.308,0.569
+p50_stream_seq_017,0,REJECT,xuyên,test_oov_phonetic,0.905,1.606,0.701
+p50_stream_seq_017,1,REJECT,cây,test_oov_general,2.646,3.166,0.52
+p50_stream_seq_017,2,REJECT,biển,test_oov_general,4.178,4.737,0.559
+p50_stream_seq_017,3,REJECT,phương,test_oov_phonetic,5.171,5.807,0.636
+p50_stream_seq_018,0,REJECT,xuyên,test_oov_phonetic,1.097,1.798,0.701
+p50_stream_seq_018,1,REJECT,xanh,test_oov_phonetic,2.316,2.933,0.617
+p50_stream_seq_018,2,REJECT,trường,test_oov_phonetic,3.953,4.691,0.738
+p50_stream_seq_018,3,REJECT,trường,test_oov_phonetic,5.291,6.029,0.738
+p50_stream_seq_018,4,REJECT,xuyên,test_oov_phonetic,6.565,7.266,0.701
+p50_stream_seq_019,0,REJECT,xanh,test_oov_phonetic,0.667,1.285,0.617
+p50_stream_seq_019,1,REJECT,lòng,test_oov_phonetic,1.808,2.471,0.662
+p50_stream_seq_019,2,REJECT,xa,test_oov_phonetic,3.109,3.756,0.647
+p50_stream_seq_019,3,REJECT,cây,test_oov_general,4.355,4.997,0.642
+p50_stream_seq_020,0,REJECT,phim,test_oov_phonetic,1.139,1.721,0.582
+p50_stream_seq_020,1,REJECT,trưa,test_oov_phonetic,2.373,2.98,0.607
+p50_stream_seq_020,2,REJECT,phút,test_oov_phonetic,3.855,4.452,0.597
+p50_stream_seq_020,3,REJECT,áo,test_oov_general,4.91,5.579,0.669
+p50_stream_seq_020,4,REJECT,làm,test_oov_phonetic,6.449,7.024,0.575
+p50_stream_seq_021,0,LEN,lên,isolated_command,1.057,1.615,0.558
+p50_stream_seq_021,1,LEN,lên,isolated_command,2.769,3.422,0.654
+p50_stream_seq_021,2,PHAI,sang phải,carrier_context_command,4.193,5.119,0.926
+p50_stream_seq_021,3,PHAI,phải,isolated_command,6.282,7.053,0.771
+p50_stream_seq_021,4,REJECT,bóng,test_oov_general,7.621,8.254,0.633
+p50_stream_seq_021,5,REJECT,sông,test_oov_general,9.422,10.049,0.627
+p50_stream_seq_021,6,PHAI,rẽ phải,carrier_context_command,10.618,11.446,0.828
+p50_stream_seq_022,0,XUONG,xuống,isolated_command,0.647,1.293,0.645
+p50_stream_seq_022,1,TRAI,trái,isolated_command,2.25,2.894,0.644
+p50_stream_seq_022,2,LEN,tiến lên,carrier_context_command,3.489,4.352,0.863
+p50_stream_seq_022,3,LEN,đi lên,carrier_context_command,5.115,5.855,0.74
+p50_stream_seq_022,4,REJECT,hoa,test_oov_general,6.282,6.919,0.637
+p50_stream_seq_022,5,TRAI,trái,isolated_command,7.693,8.337,0.644
+p50_stream_seq_023,0,TRAI,trái,isolated_command,0.968,1.611,0.644
+p50_stream_seq_023,1,PHAI,phải,isolated_command,2.314,2.968,0.654
+p50_stream_seq_023,2,XUONG,xuống,isolated_command,3.549,4.313,0.764
+p50_stream_seq_023,3,PHAI,rẽ phải,carrier_context_command,4.961,5.789,0.828
+p50_stream_seq_023,4,REJECT,bóng,test_oov_general,6.414,7.047,0.633
+p50_stream_seq_023,5,REJECT,quần,test_oov_general,7.974,8.584,0.61
+p50_stream_seq_024,0,TRAI,trái,isolated_command,1.079,1.723,0.644
+p50_stream_seq_024,1,TRAI,trái,isolated_command,2.311,3.091,0.78
+p50_stream_seq_024,2,REJECT,áo,test_oov_general,3.511,4.084,0.573
+p50_stream_seq_024,3,PHAI,sang phải,carrier_context_command,4.812,5.738,0.926
+p50_stream_seq_024,4,LEN,đi lên,carrier_context_command,6.182,6.922,0.74
+p50_stream_seq_024,5,REJECT,cây,test_oov_general,7.895,8.415,0.52
+p50_stream_seq_025,0,TRAI,trái,isolated_command,0.737,1.381,0.644
+p50_stream_seq_025,1,REJECT,luôn,test_oov_phonetic,2.521,3.122,0.601
+p50_stream_seq_025,2,XUONG,xuống,isolated_command,3.948,4.712,0.764
+p50_stream_seq_025,3,PHAI,sang phải,carrier_context_command,5.674,6.6,0.926
+p50_stream_seq_025,4,XUONG,lùi xuống,carrier_context_command,7.301,8.233,0.933
+p50_stream_seq_025,5,REJECT,xuyên,test_oov_phonetic,8.944,9.545,0.601
+p50_stream_seq_026,0,REJECT,lòng,test_oov_phonetic,0.898,1.56,0.662
+p50_stream_seq_026,1,PHAI,sang phải,carrier_context_command,2.251,3.176,0.926
+p50_stream_seq_026,2,XUONG,xuống,isolated_command,4.156,4.802,0.645
+p50_stream_seq_026,3,REJECT,luôn,test_oov_phonetic,5.757,6.357,0.601
+p50_stream_seq_026,4,XUONG,xuống,isolated_command,7.032,7.796,0.764
+p50_stream_seq_026,5,XUONG,xuống,isolated_command,8.754,9.4,0.645
+p50_stream_seq_026,6,XUONG,đi xuống,carrier_context_command,10.102,10.946,0.844
+p50_stream_seq_027,0,TRAI,sang trái,carrier_context_command,0.899,1.904,1.004
+p50_stream_seq_027,1,XUONG,xuống,isolated_command,2.909,3.555,0.645
+p50_stream_seq_027,2,TRAI,trái,isolated_command,4.059,4.703,0.644
+p50_stream_seq_027,3,REJECT,phim,test_oov_phonetic,5.817,6.4,0.582
+p50_stream_seq_027,4,XUONG,xuống,isolated_command,7.267,7.912,0.645
+p50_stream_seq_028,0,PHAI,rẽ phải,carrier_context_command,0.745,1.573,0.828
+p50_stream_seq_028,1,REJECT,lòng,test_oov_phonetic,2.72,3.288,0.569
+p50_stream_seq_028,2,XUONG,đi xuống,carrier_context_command,3.952,4.796,0.844
+p50_stream_seq_028,3,XUONG,xuống,isolated_command,5.661,6.425,0.764
+p50_stream_seq_028,4,LEN,lên,isolated_command,6.902,7.555,0.654
+p50_stream_seq_028,5,TRAI,trái,isolated_command,8.571,9.35,0.78
+p50_stream_seq_029,0,TRAI,trái,isolated_command,0.678,1.458,0.78
+p50_stream_seq_029,1,LEN,tiến lên,carrier_context_command,2.489,3.352,0.863
+p50_stream_seq_029,2,REJECT,áo,test_oov_general,3.787,4.36,0.573
+p50_stream_seq_029,3,TRAI,trái,isolated_command,4.914,5.694,0.78
+p50_stream_seq_029,4,LEN,tiến lên,carrier_context_command,6.503,7.366,0.863
+p50_stream_seq_029,5,LEN,lên,isolated_command,7.999,8.653,0.654
+p50_stream_seq_030,0,REJECT,xanh,test_oov_phonetic,1.195,1.913,0.717
+p50_stream_seq_030,1,REJECT,xem,test_oov_phonetic,2.365,3.096,0.731
+p50_stream_seq_030,2,LEN,tiến lên,carrier_context_command,3.973,4.836,0.863
+p50_stream_seq_030,3,TRAI,trái,isolated_command,5.962,6.742,0.78
+p50_stream_seq_030,4,XUONG,xuống,isolated_command,7.69,8.335,0.645
+p50_stream_seq_030,5,PHAI,rẽ phải,carrier_context_command,8.771,9.599,0.828
+p50_stream_seq_030,6,XUONG,xuống,isolated_command,10.013,10.776,0.764
+p50_stream_seq_031,0,REJECT,trước,test_oov_phonetic,0.978,1.463,0.485
+p50_stream_seq_031,1,XUONG,xuống,isolated_command,2.334,3.098,0.764
+p50_stream_seq_031,2,PHAI,rẽ phải,carrier_context_command,4.152,4.98,0.828
+p50_stream_seq_031,3,REJECT,trẻ,test_oov_phonetic,5.583,6.191,0.608
+p50_stream_seq_031,4,XUONG,xuống,isolated_command,6.845,7.608,0.764
+p50_stream_seq_031,5,TRAI,rẽ trái,carrier_context_command,8.698,9.6,0.903
+p50_stream_seq_031,6,LEN,lên,isolated_command,10.303,10.957,0.654
+p50_stream_seq_032,0,LEN,lên,isolated_command,0.988,1.642,0.654
+p50_stream_seq_032,1,PHAI,phải,isolated_command,2.216,2.987,0.771
+p50_stream_seq_032,2,REJECT,xa,test_oov_phonetic,3.967,4.715,0.748
+p50_stream_seq_032,3,TRAI,rẽ trái,carrier_context_command,5.518,6.421,0.903
+p50_stream_seq_032,4,TRAI,rẽ trái,carrier_context_command,7.123,8.026,0.903
+p50_stream_seq_033,0,REJECT,phim,test_oov_phonetic,0.841,1.532,0.692
+p50_stream_seq_033,1,TRAI,trái,isolated_command,2.694,3.338,0.644
+p50_stream_seq_033,2,TRAI,trái,isolated_command,4.04,4.684,0.644
+p50_stream_seq_033,3,TRAI,rẽ trái,carrier_context_command,5.57,6.473,0.903
+p50_stream_seq_033,4,PHAI,phải,isolated_command,7.011,7.783,0.771
+p50_stream_seq_034,0,TRAI,trái,isolated_command,0.947,1.727,0.78
+p50_stream_seq_034,1,REJECT,quần,test_oov_general,2.244,2.854,0.61
+p50_stream_seq_034,2,PHAI,rẽ phải,carrier_context_command,3.577,4.405,0.828
+p50_stream_seq_034,3,XUONG,xuống,isolated_command,5.32,6.084,0.764
+p50_stream_seq_034,4,TRAI,rẽ trái,carrier_context_command,6.804,7.707,0.903
+p50_stream_seq_035,0,REJECT,phim,test_oov_phonetic,0.751,1.333,0.582
+p50_stream_seq_035,1,LEN,đi lên,carrier_context_command,2.342,3.081,0.74
+p50_stream_seq_035,2,TRAI,trái,isolated_command,3.72,4.5,0.78
+p50_stream_seq_035,3,REJECT,bóng,test_oov_general,5.629,6.262,0.633
+p50_stream_seq_035,4,TRAI,trái,isolated_command,7.246,8.026,0.78
+p50_stream_seq_035,5,TRAI,sang trái,carrier_context_command,9.092,10.096,1.004
+p50_stream_seq_036,0,REJECT,lòng,test_oov_phonetic,1.052,1.715,0.662
+p50_stream_seq_036,1,LEN,lên,isolated_command,2.229,2.883,0.654
+p50_stream_seq_036,2,REJECT,xanh,test_oov_phonetic,3.952,4.669,0.717
+p50_stream_seq_036,3,PHAI,sang phải,carrier_context_command,5.432,6.357,0.926
+p50_stream_seq_036,4,XUONG,xuống,isolated_command,7.197,7.96,0.764
+p50_stream_seq_036,5,TRAI,sang trái,carrier_context_command,8.668,9.673,1.004
+p50_stream_seq_037,0,PHAI,phải,isolated_command,0.801,1.455,0.654
+p50_stream_seq_037,1,TRAI,trái,isolated_command,2.211,2.855,0.644
+p50_stream_seq_037,2,REJECT,đèn,test_oov_general,3.463,4.128,0.664
+p50_stream_seq_037,3,REJECT,áo,test_oov_general,4.587,5.16,0.573
+p50_stream_seq_037,4,PHAI,rẽ phải,carrier_context_command,5.811,6.639,0.828
+p50_stream_seq_038,0,PHAI,phải,isolated_command,1.127,1.898,0.771
+p50_stream_seq_038,1,TRAI,trái,isolated_command,3.031,3.81,0.78
+p50_stream_seq_038,2,REJECT,sông,test_oov_general,4.937,5.564,0.627
+p50_stream_seq_038,3,LEN,đi lên,carrier_context_command,6.53,7.269,0.74
+p50_stream_seq_038,4,REJECT,phim,test_oov_phonetic,7.783,8.365,0.582
+p50_stream_seq_038,5,XUONG,lùi xuống,carrier_context_command,8.892,9.825,0.933
+p50_stream_seq_039,0,REJECT,xanh,test_oov_phonetic,0.724,1.442,0.717
+p50_stream_seq_039,1,REJECT,phim,test_oov_phonetic,1.99,2.572,0.582
+p50_stream_seq_039,2,LEN,lên,isolated_command,3.119,3.773,0.654
+p50_stream_seq_039,3,XUONG,xuống,isolated_command,4.331,5.095,0.764
+p50_stream_seq_039,4,LEN,tiến lên,carrier_context_command,5.724,6.587,0.863
+p50_stream_seq_040,0,REJECT,trước,test_oov_phonetic,1.197,1.782,0.585
+p50_stream_seq_040,1,XUONG,lùi xuống,carrier_context_command,2.834,3.767,0.933
+p50_stream_seq_040,2,TRAI,trái,isolated_command,4.939,5.583,0.644
+p50_stream_seq_040,3,REJECT,hoa,test_oov_general,6.677,7.446,0.769
+p50_stream_seq_040,4,LEN,lên,isolated_command,8.64,9.198,0.558
+p50_stream_seq_041,0,XUONG,xuống,isolated_command,0.728,1.374,0.645
+p50_stream_seq_041,1,PHAI,phải,isolated_command,2.425,3.196,0.771
+p50_stream_seq_041,2,PHAI,phải,isolated_command,3.6,4.254,0.654
+p50_stream_seq_041,3,XUONG,đi xuống,carrier_context_command,5.27,6.114,0.844
+p50_stream_seq_041,4,REJECT,cây,test_oov_general,7.093,7.735,0.642
+p50_stream_seq_041,5,REJECT,đèn,test_oov_general,8.773,9.339,0.566
+p50_stream_seq_041,6,TRAI,sang trái,carrier_context_command,10.055,11.06,1.004
+p50_stream_seq_042,0,REJECT,đèn,test_oov_general,0.986,1.553,0.566
+p50_stream_seq_042,1,TRAI,trái,isolated_command,2.107,2.887,0.78
+p50_stream_seq_042,2,PHAI,phải,isolated_command,3.878,4.649,0.771
+p50_stream_seq_042,3,PHAI,rẽ phải,carrier_context_command,5.595,6.422,0.828
+p50_stream_seq_042,4,LEN,lên,isolated_command,7.214,7.868,0.654
+p50_stream_seq_043,0,REJECT,trưa,test_oov_phonetic,0.925,1.674,0.749
+p50_stream_seq_043,1,TRAI,trái,isolated_command,2.08,2.86,0.78
+p50_stream_seq_043,2,LEN,lên,isolated_command,3.322,3.976,0.654
+p50_stream_seq_043,3,TRAI,rẽ trái,carrier_context_command,4.561,5.464,0.903
+p50_stream_seq_043,4,REJECT,phương,test_oov_phonetic,6.179,6.816,0.636
+p50_stream_seq_043,5,TRAI,sang trái,carrier_context_command,7.818,8.822,1.004
+p50_stream_seq_044,0,TRAI,trái,isolated_command,0.552,1.332,0.78
+p50_stream_seq_044,1,PHAI,sang phải,carrier_context_command,1.835,2.761,0.926
+p50_stream_seq_044,2,XUONG,xuống,isolated_command,3.369,4.132,0.764
+p50_stream_seq_044,3,PHAI,phải,isolated_command,5.276,6.047,0.771
+p50_stream_seq_044,4,REJECT,sông,test_oov_general,7.125,7.86,0.735
+p50_stream_seq_044,5,LEN,tiến lên,carrier_context_command,8.646,9.509,0.863
+p50_stream_seq_045,0,REJECT,áo,test_oov_general,1.024,1.598,0.573
+p50_stream_seq_045,1,PHAI,sang phải,carrier_context_command,2.405,3.331,0.926
+p50_stream_seq_045,2,PHAI,phải,isolated_command,4.003,4.657,0.654
+p50_stream_seq_045,3,PHAI,rẽ phải,carrier_context_command,5.717,6.544,0.828
+p50_stream_seq_045,4,TRAI,trái,isolated_command,7.56,8.204,0.644
+p50_stream_seq_045,5,REJECT,hoa,test_oov_general,8.721,9.359,0.637
+p50_stream_seq_046,0,LEN,đi lên,carrier_context_command,1.043,1.783,0.74
+p50_stream_seq_046,1,LEN,lên,isolated_command,2.34,2.994,0.654
+p50_stream_seq_046,2,REJECT,quạt,test_oov_general,4.138,4.598,0.46
+p50_stream_seq_046,3,TRAI,trái,isolated_command,5.252,5.896,0.644
+p50_stream_seq_047,0,REJECT,sông,test_oov_general,0.648,1.275,0.627
+p50_stream_seq_047,1,PHAI,phải,isolated_command,2.426,3.198,0.771
+p50_stream_seq_047,2,REJECT,phát,test_oov_phonetic,3.74,4.256,0.516
+p50_stream_seq_047,3,PHAI,phải,isolated_command,4.933,5.586,0.654
+p50_stream_seq_047,4,LEN,tiến lên,carrier_context_command,6.067,6.931,0.863
+p50_stream_seq_047,5,PHAI,phải,isolated_command,7.437,8.209,0.771
+p50_stream_seq_047,6,LEN,tiến lên,carrier_context_command,9.059,9.922,0.863
+p50_stream_seq_048,0,XUONG,xuống,isolated_command,0.999,1.644,0.645
+p50_stream_seq_048,1,TRAI,rẽ trái,carrier_context_command,2.134,3.037,0.903
+p50_stream_seq_048,2,PHAI,rẽ phải,carrier_context_command,4.012,4.84,0.828
+p50_stream_seq_048,3,XUONG,xuống,isolated_command,5.658,6.421,0.764
+p50_stream_seq_048,4,REJECT,lớp,test_oov_phonetic,7.395,7.842,0.447
+p50_stream_seq_048,5,PHAI,phải,isolated_command,8.757,9.411,0.654
+p50_stream_seq_049,0,TRAI,trái,isolated_command,0.773,1.553,0.78
+p50_stream_seq_049,1,TRAI,trái,isolated_command,2.721,3.501,0.78
+p50_stream_seq_049,2,REJECT,xa,test_oov_phonetic,4.42,5.168,0.748
+p50_stream_seq_049,3,REJECT,lớp,test_oov_phonetic,5.779,6.226,0.447
+p50_stream_seq_049,4,LEN,tiến lên,carrier_context_command,6.94,7.803,0.863
+p50_stream_seq_049,5,PHAI,phải,isolated_command,8.395,9.049,0.654
+p50_stream_seq_050,0,LEN,lên,isolated_command,0.747,1.401,0.654
+p50_stream_seq_050,1,XUONG,xuống,isolated_command,2.23,2.994,0.764
+p50_stream_seq_050,2,XUONG,xuống,isolated_command,3.935,4.581,0.645
+p50_stream_seq_050,3,XUONG,đi xuống,carrier_context_command,5.636,6.48,0.844
+p50_stream_seq_050,4,REJECT,lòng,test_oov_phonetic,6.999,7.661,0.662

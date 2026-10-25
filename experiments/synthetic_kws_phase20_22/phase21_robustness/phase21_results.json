@@ -1,0 +1,124 @@
+{
+  "phase": "21",
+  "description": "Extended Synthetic Speaker Generalization and Streaming Reliability",
+  "gate_verdict": "PHASE21_PASS_WITH_LIMITATIONS",
+  "target_absent_streaming": {
+    "total_audio_evaluated_sec": 10800.0,
+    "total_hours_evaluated": 3.0,
+    "number_of_streams": 6,
+    "total_false_triggers": 0,
+    "false_triggers_per_hour": 0.0,
+    "poisson_rule_of_three_95_pct_upper_bound_fp_hr": 1.0,
+    "per_stream_results": [
+      {
+        "stream_id": "ta_stream_01",
+        "duration_sec": 1800.0,
+        "windows_evaluated": 17991,
+        "false_triggers_count": 0,
+        "false_triggers_per_hour": 0.0,
+        "seed": 800000
+      },
+      {
+        "stream_id": "ta_stream_02",
+        "duration_sec": 1800.0,
+        "windows_evaluated": 17991,
+        "false_triggers_count": 0,
+        "false_triggers_per_hour": 0.0,
+        "seed": 815000
+      },
+      {
+        "stream_id": "ta_stream_03",
+        "duration_sec": 1800.0,
+        "windows_evaluated": 17991,
+        "false_triggers_count": 0,
+        "false_triggers_per_hour": 0.0,
+        "seed": 830000
+      },
+      {
+        "stream_id": "ta_stream_04",
+        "duration_sec": 1800.0,
+        "windows_evaluated": 17991,
+        "false_triggers_count": 0,
+        "false_triggers_per_hour": 0.0,
+        "seed": 845000
+      },
+      {
+        "stream_id": "ta_stream_05",
+        "duration_sec": 1800.0,
+        "windows_evaluated": 17991,
+        "false_triggers_count": 0,
+        "false_triggers_per_hour": 0.0,
+        "seed": 860000
+      },
+      {
+        "stream_id": "ta_stream_06",
+        "duration_sec": 1800.0,
+        "windows_evaluated": 17991,
+        "false_triggers_count": 0,
+        "false_triggers_per_hour": 0.0,
+        "seed": 875000
+      }
+    ],
+    "csv_artifact": "experiments\\synthetic_kws_phase20_22\\phase21_robustness\\stream_level_target_absent.csv"
+  },
+  "target_present_streaming": {
+    "total_target_events": 200,
+    "true_positives": 200,
+    "false_positives": 0,
+    "missed_targets": 0,
+    "event_recall_pct": 100.0,
+    "event_precision_pct": 100.0,
+    "latency_stats": {
+      "mean_sec": 0.506,
+      "median_sec": 0.503,
+      "p90_sec": 0.6,
+      "p95_sec": 0.636,
+      "std_sec": 0.073
+    },
+    "per_keyword_recall": {
+      "LEN": {
+        "total_targets": 48,
+        "detected_targets": 48,
+        "recall_pct": 100.0
+      },
+      "PHAI": {
+        "total_targets": 48,
+        "detected_targets": 48,
+        "recall_pct": 100.0
+      },
+      "TRAI": {
+        "total_targets": 56,
+        "detected_targets": 56,
+        "recall_pct": 100.0
+      },
+      "XUONG": {
+        "total_targets": 48,
+        "detected_targets": 48,
+        "recall_pct": 100.0
+      }
+    },
+    "stream_level_csv": "experiments\\synthetic_kws_phase20_22\\phase21_robustness\\stream_level_target_present.csv",
+    "event_level_csv": "experiments\\synthetic_kws_phase20_22\\phase21_robustness\\event_level_target_present.csv"
+  },
+  "factorial_counterfactual_study": {
+    "total_pairs_evaluated": 50,
+    "correctly_distinguished_pairs": 50,
+    "pair_accuracy_pct": 100.0,
+    "csv_artifact": "experiments\\synthetic_kws_phase20_22\\phase21_robustness\\counterfactual_trai_phai_results.csv"
+  },
+  "frozen_detector_configuration": {
+    "tau_on": 0.8,
+    "tau_off": 0.35,
+    "smoothing_frames": 3,
+    "min_consecutive_frames": 2,
+    "cooldown_sec": 0.6,
+    "window_size_samples": 16000,
+    "hop_size_samples": 1600
+  },
+  "limitations": [
+    "Evaluated entirely on synthetic parametric vocal tract synthesizer; does NOT establish natural human speech accuracy or real-world ambient performance.",
+    "Zero false alarms across 3.0 hours establishes a Poisson 95% upper bound of <= 1.00 FP/hr on this synthetic domain, but acoustic variability in human conversational environments will be substantially higher.",
+    "Counterfactual pairs share identical noise seeds; real acoustic environments will exhibit dynamic acoustic reverberation and non-stationary babble.",
+    "Official governance status remains: NOT_VALIDATED_ON_NATURAL_SPEECH."
+  ]
+}

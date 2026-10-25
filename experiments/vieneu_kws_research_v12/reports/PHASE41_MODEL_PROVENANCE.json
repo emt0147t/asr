@@ -1,0 +1,47 @@
+{
+  "model_metadata": {
+    "model_id": "facebook/mms-tts-vie",
+    "model_architecture": "VitsModel (Variational Inference Text-to-Speech)",
+    "model_commit": "b58928d033932a49aa8e3d6cf11625b25fe928d2",
+    "huggingface_url": "https://huggingface.co/facebook/mms-tts-vie",
+    "native_sampling_rate": 16000,
+    "vocab_size": 96,
+    "files": {
+      "model.safetensors": {
+        "size_bytes": 145271288,
+        "sha256": "55ded90c3e57dc2814fa2cdfe3f9e7a5c28e1223b06c0a260a4495b080762ffd"
+      },
+      "config.json": {
+        "size_bytes": 1641,
+        "sha256": "70dcc60b59337b43d58c865735846a2bc5a604d2698d7dfca713904da997ca8d"
+      },
+      "vocab.json": {
+        "size_bytes": 1152,
+        "sha256": "15972d5661d06687659208574acea6b7415f70456c3b291246971c003e755bb7"
+      },
+      "tokenizer_config.json": {
+        "size_bytes": 289,
+        "sha256": "d2272a1d3a7b5330d28dd9daa6fdd549c8bedc723764a072c5c67cc66de08f52"
+      },
+      "special_tokens_map.json": {
+        "size_bytes": 49,
+        "sha256": "90b6165eb6c3fe8041fb7a46fb1b7c50220b2d2cbe232d2c1dca2b3f6900f721"
+      }
+    }
+  },
+  "license_and_terms": {
+    "license": "CC-BY-NC 4.0 (Non-Commercial, Attribution Required)",
+    "attribution": "Meta AI Research (Pratap et al., 2023, 'Scaling Speech Technology to 1,000+ languages')",
+    "training_corpus": "Religious text audio recordings (Faith Comes By Hearing New Testament Vietnamese reading)",
+    "corpus_independence": "Completely disjoint from VieNeu-TTS (studio Vietnamese) and Edge-TTS (Azure studio neural voices)"
+  },
+  "quality_gate": {
+    "gate_passed": true,
+    "total_tested": 26,
+    "total_unk_tokens": 0,
+    "clipping_failures": 0,
+    "silence_failures": 0,
+    "abnormal_duration_failures": 0,
+    "deterministic_reproducibility": true
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "streams_and_audio_metadata": {
+    "val_commands": {
+      "wav_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v3\\data\\continuous_streams\\val_stream_continuous_commands.wav",
+      "samplerate": 16000,
+      "channels": 1,
+      "frames": 8239214,
+      "duration_sec": 514.950875,
+      "duration_hours": 0.14304190972222222,
+      "num_gt_events": 160,
+      "sha256": "e58a7b4d270f7918a6d468e31c5739d7c876d077071d5f0c4fa47361bceebde2",
+      "meta_reported_dur_sec": 514.951,
+      "meta_reported_dur_hr": 0.143,
+      "meta_sha256_match": true
+    },
+    "val_nontarget": {
+      "wav_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v3\\data\\continuous_streams\\val_stream_continuous_nontarget.wav",
+      "samplerate": 16000,
+      "channels": 1,
+      "frames": 7655331,
+      "duration_sec": 478.4581875,
+      "duration_hours": 0.13290505208333334,
+      "num_gt_events": 120,
+      "sha256": "771be7e5a40baa28305aa3c201c12ced266b3255813c807b666b1bc309ab42d1",
+      "meta_reported_dur_sec": 478.458,
+      "meta_reported_dur_hr": 0.1329,
+      "meta_sha256_match": true
+    },
+    "test_commands": {
+      "wav_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v3\\data\\continuous_streams\\test_stream_continuous_commands.wav",
+      "samplerate": 16000,
+      "channels": 1,
+      "frames": 8306389,
+      "duration_sec": 519.1493125,
+      "duration_hours": 0.1442081423611111,
+      "num_gt_events": 160,
+      "sha256": "7ee89c957b1d99d1ca30c22a80e6021cb46517c1712339fb7dee0a999e71b430",
+      "meta_reported_dur_sec": 519.149,
+      "meta_reported_dur_hr": 0.1442,
+      "meta_sha256_match": true
+    },
+    "test_nontarget_3h": {
+      "wav_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v3\\data\\continuous_streams\\test_stream_continuous_nontarget_3h.wav",
+      "samplerate": 16000,
+      "channels": 1,
+      "frames": 172800000,
+      "duration_sec": 10800.0,
+      "duration_hours": 3.0,
+      "num_gt_events": 960,
+      "sha256": "1d325a33a03ba3ce97ea3884a2b064583d7c972465cffa298ac2b75762b85abe",
+      "meta_reported_dur_sec": 10800.0,
+      "meta_reported_dur_hr": 3.0,
+      "meta_sha256_match": true
+    }
+  },
+  "repetition_and_diversity": {
+    "total_speech_events": 960,
+    "unique_synthetic_utterances": 480,
+    "unique_non_target_texts": 120,
+    "unique_test_voices": 4,
+    "repetition_stats": {
+      "min_repetitions_per_utterance": 2,
+      "max_repetitions_per_utterance": 2,
+      "mean_repetitions_per_utterance": 2.0,
+      "num_passes": 2
+    },
+    "confusion_family_distribution": {
+      "neutral_speech": 224,
+      "minimal_pair_consonant": 192,
+      "minimal_pair_vowel_coda": 192,
+      "phonetic_phrase_context": 192,
+      "minimal_pair_tone": 160
+    },
+    "voice_distribution": {
+      "Kim Thanh": 240,
+      "Qu\u1ed1c Tu\u1ea5n": 240,
+      "Qu\u1ef3nh Anh": 240,
+      "\u0110\u1ee9c Tr\u00ed": 240
+    }
+  },
+  "non_overlapping_false_alarm_analysis": {
+    "1_historical_cascade": {
+      "seed42": {
+        "total_false_positives": 207,
+        "in_active_speech": 142,
+        "in_boundary_margin": 63,
+        "in_inter_utterance_gap": 2,
+        "active_speech_pct": 68.6,
+        "boundary_margin_pct": 30.43,
+        "gap_pct": 0.97
+      },
+      "seed43": {
+        "total_false_positives": 245,
+        "in_active_speech": 177,
+        "in_boundary_margin": 66,
+        "in_inter_utterance_gap": 2,
+        "active_speech_pct": 72.24,
+        "boundary_margin_pct": 26.94,
+        "gap_pct": 0.82
+      },
+      "seed44": {
+        "total_false_positives": 244,
+        "in_active_speech": 176,
+        "in_boundary_margin": 68,
+        "in_inter_utterance_gap": 0,
+        "active_speech_pct": 72.13,
+        "boundary_margin_pct": 27.87,
+        "gap_pct": 0.0
+      }
+    },
+    "2_recall_preserving_stage1": {
+      "seed42": {
+        "total_false_positives": 710,
+        "in_active_speech": 230,
+        "in_boundary_margin": 474,
+        "in_inter_utterance_gap": 6,
+        "active_speech_pct": 32.39,
+        "boundary_margin_pct": 66.76,
+        "gap_pct": 0.85
+      },
+      "seed43": {
+        "total_false_positives": 570,
+        "in_active_speech": 136,
+        "in_boundary_margin": 427,
+        "in_inter_utterance_gap": 7,
+        "active_speech_pct": 23.86,
+        "boundary_margin_pct": 74.91,
+        "gap_pct": 1.23
+      },
+      "seed44": {
+        "total_false_positives": 543,
+        "in_active_speech": 129,
+        "in_boundary_margin": 406,
+        "in_inter_utterance_gap": 8,
+        "active_speech_pct": 23.76,
+        "boundary_margin_pct": 74.77,
+        "gap_pct": 1.47
+      }
+    },
+    "3_recall_preserving_cascade": {
+      "seed42": {
+        "total_false_positives": 13,
+        "in_active_speech": 2,
+        "in_boundary_margin": 11,
+        "in_inter_utterance_gap": 0,
+        "active_speech_pct": 15.38,
+        "boundary_margin_pct": 84.62,
+        "gap_pct": 0.0
+      },
+      "seed43": {
+        "total_false_positives": 28,
+        "in_active_speech": 11,
+        "in_boundary_margin": 17,
+        "in_inter_utterance_gap": 0,
+        "active_speech_pct": 39.29,
+        "boundary_margin_pct": 60.71,
+        "gap_pct": 0.0
+      },
+      "seed44": {
+        "total_false_positives": 52,
+        "in_active_speech": 6,
+        "in_boundary_margin": 46,
+        "in_inter_utterance_gap": 0,
+        "active_speech_pct": 11.54,
+        "boundary_margin_pct": 88.46,
+        "gap_pct": 0.0
+      }
+    }
+  },
+  "metric_reproduction": {
+    "mismatches": [],
+    "is_perfect_reproduction": true,
+    "recomputed_summary": {
+      "1_historical_cascade": {
+        "seed42": {
+          "cmd_recall": 0.9875,
+          "nt_fp": 207,
+          "wall_fa_hr": 69.0,
+          "stream_duration_hr": 3.0,
+          "per_keyword_recall": {
+            "TRAI": {
+              "hits": 39,
+              "total": 40,
+              "recall": 0.975
+            },
+            "PHAI": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            },
+            "LEN": {
+              "hits": 39,
+              "total": 40,
+              "recall": 0.975
+            },
+            "XUONG": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            }
+          }
+        },
+        "seed43": {
+          "cmd_recall": 0.9625,
+          "nt_fp": 245,
+          "wall_fa_hr": 81.67,
+          "stream_duration_hr": 3.0,
+          "per_keyword_recall": {
+            "TRAI": {
+              "hits": 39,
+              "total": 40,
+              "recall": 0.975
+            },
+            "PHAI": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            },
+            "LEN": {
+              "hits": 38,
+              "total": 40,
+              "recall": 0.95
+            },
+            "XUONG": {
+              "hits": 37,
+              "total": 40,
+              "recall": 0.925
+            }
+          }
+        },
+        "seed44": {
+          "cmd_recall": 0.9688,
+          "nt_fp": 244,
+          "wall_fa_hr": 81.33,
+          "stream_duration_hr": 3.0,
+          "per_keyword_recall": {
+            "TRAI": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            },
+            "PHAI": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            },
+            "LEN": {
+              "hits": 37,
+              "total": 40,
+              "recall": 0.925
+            },
+            "XUONG": {
+              "hits": 38,
+              "total": 40,
+              "recall": 0.95
+            }
+          }
+        }
+      },
+      "2_recall_preserving_stage1": {
+        "seed42": {
+          "cmd_recall": 0.9688,
+          "nt_fp": 710,
+          "wall_fa_hr": 236.67,
+          "stream_duration_hr": 3.0,
+          "per_keyword_recall": {
+            "TRAI": {
+              "hits": 35,
+              "total": 40,
+              "recall": 0.875
+            },
+            "PHAI": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            },
+            "LEN": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            },
+            "XUONG": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            }
+          }
+        },
+        "seed43": {
+          "cmd_recall": 0.9938,
+          "nt_fp": 570,
+          "wall_fa_hr": 190.0,
+          "stream_duration_hr": 3.0,
+          "per_keyword_recall": {
+            "TRAI": {
+              "hits": 39,
+              "total": 40,
+              "recall": 0.975
+            },
+            "PHAI": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            },
+            "LEN": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            },
+            "XUONG": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            }
+          }
+        },
+        "seed44": {
+          "cmd_recall": 0.9812,
+          "nt_fp": 543,
+          "wall_fa_hr": 181.0,
+          "stream_duration_hr": 3.0,
+          "per_keyword_recall": {
+            "TRAI": {
+              "hits": 38,
+              "total": 40,
+              "recall": 0.95
+            },
+            "PHAI": {
+              "hits": 39,
+              "total": 40,
+              "recall": 0.975
+            },
+            "LEN": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            },
+            "XUONG": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            }
+          }
+        }
+      },
+      "3_recall_preserving_cascade": {
+        "seed42": {
+          "cmd_recall": 0.6062,
+          "nt_fp": 13,
+          "wall_fa_hr": 4.33,
+          "stream_duration_hr": 3.0,
+          "per_keyword_recall": {
+            "TRAI": {
+              "hits": 24,
+              "total": 40,
+              "recall": 0.6
+            },
+            "PHAI": {
+              "hits": 14,
+              "total": 40,
+              "recall": 0.35
+            },
+            "LEN": {
+              "hits": 37,
+              "total": 40,
+              "recall": 0.925
+            },
+            "XUONG": {
+              "hits": 22,
+              "total": 40,
+              "recall": 0.55
+            }
+          }
+        },
+        "seed43": {
+          "cmd_recall": 0.7,
+          "nt_fp": 28,
+          "wall_fa_hr": 9.33,
+          "stream_duration_hr": 3.0,
+          "per_keyword_recall": {
+            "TRAI": {
+              "hits": 11,
+              "total": 40,
+              "recall": 0.275
+            },
+            "PHAI": {
+              "hits": 23,
+              "total": 40,
+              "recall": 0.575
+            },
+            "LEN": {
+              "hits": 39,
+              "total": 40,
+              "recall": 0.975
+            },
+            "XUONG": {
+              "hits": 39,
+              "total": 40,
+              "recall": 0.975
+            }
+          }
+        },
+        "seed44": {
+          "cmd_recall": 0.9187,
+          "nt_fp": 52,
+          "wall_fa_hr": 17.33,
+          "stream_duration_hr": 3.0,
+          "per_keyword_recall": {
+            "TRAI": {
+              "hits": 35,
+              "total": 40,
+              "recall": 0.875
+            },
+            "PHAI": {
+              "hits": 34,
+              "total": 40,
+              "recall": 0.85
+            },
+            "LEN": {
+              "hits": 38,
+              "total": 40,
+              "recall": 0.95
+            },
+            "XUONG": {
+              "hits": 40,
+              "total": 40,
+              "recall": 1.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

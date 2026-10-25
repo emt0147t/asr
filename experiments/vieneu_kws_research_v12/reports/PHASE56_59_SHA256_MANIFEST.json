@@ -1,0 +1,20 @@
+{
+  "experiments/vieneu_kws_research_v12/reports/PHASE56_PARETO_TABLE.csv": "b3237ea16ce9e232c2782d922f45b96d5636d2ec262b2cc370ffef90808cf929",
+  "experiments/vieneu_kws_research_v12/reports/PHASE56_METRIC_REPRODUCTION.json": "f1d7c097cb82bcf03a176c7ceb349eea017e7da741e8865cdb62af8d03051eec",
+  "experiments/vieneu_kws_research_v12/reports/PHASE56_DEVELOPMENT_CANDIDATE_AUDIT.md": "044da4ff37abd55b537cc74513adfe52628efb448a8457136ba032b56691ecf1",
+  "experiments/vieneu_kws_research_v12/reports/phase55_validation_comparison.json": "f1d7c097cb82bcf03a176c7ceb349eea017e7da741e8865cdb62af8d03051eec",
+  "experiments/vieneu_kws_research_v12/manifests/PHASE57_PILOT_MANIFEST.csv": "3bd055bb7149b33a293efe804c790a5db3bd941c3729511d5a957a97823e37e7",
+  "experiments/vieneu_kws_research_v12/reports/PHASE57_SOURCE_PROVENANCE.json": "2f6f683587d7827b80d8bf094107b881c489b721e1d40e534ed97644ff327739",
+  "experiments/vieneu_kws_research_v12/reports/PHASE57_TTS_SOURCE_READINESS.md": "a927de5081176df4a4c4546a969aaafac2abae30256b6cf12c3238525bc1d543",
+  "experiments/vieneu_kws_research_v12/manifests/PHASE58_CONFIRMATORY_MANIFEST.csv": "9cca06f2c31d0b677d394798b95e35f565e1d88f49ea1de7a928303b6bbff803",
+  "experiments/vieneu_kws_research_v12/manifests/PHASE58_TONE_PROBE_MANIFEST.csv": "1bd694843f9edba63b0c00437472be228afa152328cb48a6dd78536a5da9bc82",
+  "experiments/vieneu_kws_research_v12/manifests/PHASE58_STREAMING_MANIFEST.csv": "035ad2795aefe375a7cd79c2ca49daf12d0f8afcbc4d0b6ff7a43f83065f0a9b",
+  "experiments/vieneu_kws_research_v12/manifests/PHASE58_EVENT_LEDGER.csv": "e8ca1cf80c8c58bc543546ee505d699a5bb17dc83b5bb4d46f50937f070eb48f",
+  "experiments/vieneu_kws_research_v12/manifests/PHASE58_EVENT_LEDGER.json": "2721205be4424dcd8361ac170b1446ffb0e9052cefb7a4b008bf443235a652b0",
+  "experiments/vieneu_kws_research_v12/reports/PHASE58_SHA256_MANIFEST.json": "900c73097de63e90c13429a8a696342617e7c39f2dbd77d7f38dcfbd80496867",
+  "experiments/vieneu_kws_research_v12/reports/PHASE58_CORPUS_INDEPENDENCE_AUDIT.md": "e64af74001195e550d7acbc576e152326a0d096f969b34b01429505234bd173d",
+  "experiments/vieneu_kws_research_v12/reports/PHASE58_SAMPLE_SIZE_AND_CLUSTER_DESIGN.md": "c9227545a11f35bcf44be10b5656da5eadebe3fb0487d298aca668f15b4b0380",
+  "experiments/vieneu_kws_research_v12/reports/PHASE59_CONFIRMATORY_METRICS.csv": "253d62b6c04fc252fd34a67dce9f611717842381fc012c993196ca1b79d38568",
+  "experiments/vieneu_kws_research_v12/reports/PHASE59_FINAL_EVALUATION_RESULTS.json": "4e6fac004b6ae61c37a5a6fb63145cf96579b06982f4b8e2acaf4adfb13c3a8f",
+  "experiments/vieneu_kws_research_v12/reports/PHASE56_59_FINAL_REPORT.md": "36460836c853332c359ec5d920e065592512cdd8270ca9b2c851d7a8309b6c81"
+}

@@ -1,0 +1,2861 @@
+{
+  "seed42": {
+    "selected_threshold": 0.6,
+    "is_strictly_feasible": false,
+    "rationale": "STRICT REQUIREMENTS NOT FULLY MET (FA/hr <= 1.0 unachievable with single-stage CNN). Selected Pareto compromise threshold theta=0.60 for diagnostic reporting.",
+    "candidates": [
+      {
+        "threshold": 0.5,
+        "static": {
+          "threshold": 0.5,
+          "accuracy": 0.840625,
+          "macro_f1": 0.8359965598517946,
+          "macro_recall": 0.8729166666666667,
+          "macro_precision": 0.8251212699049914,
+          "target_recall": 0.9375,
+          "unknown_recall": 0.4875,
+          "unknown_false_activation_rate": 0.5125,
+          "unknown_false_activation_count": 41,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.025,
+          "per_class_recall": {
+            "TRAI": 0.825,
+            "PHAI": 0.95,
+            "LEN": 0.975,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.4875,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.825,
+            "PHAI": 0.8735632183908046,
+            "LEN": 0.8478260869565216,
+            "XUONG": 0.8602150537634409,
+            "UNKNOWN": 0.6093749999999999,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              33,
+              0,
+              0,
+              0,
+              7,
+              0
+            ],
+            [
+              1,
+              38,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              39,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              6,
+              9,
+              13,
+              13,
+              39,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 387.61,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.6,
+        "static": {
+          "threshold": 0.6,
+          "accuracy": 0.8625,
+          "macro_f1": 0.8596453272745799,
+          "macro_recall": 0.8812500000000001,
+          "macro_precision": 0.8483045569958728,
+          "target_recall": 0.91875,
+          "unknown_recall": 0.6125,
+          "unknown_false_activation_rate": 0.3875,
+          "unknown_false_activation_count": 31,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.065625,
+          "per_class_recall": {
+            "TRAI": 0.8,
+            "PHAI": 0.9,
+            "LEN": 0.975,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.6125,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.810126582278481,
+            "PHAI": 0.8674698795180723,
+            "LEN": 0.8863636363636362,
+            "XUONG": 0.898876404494382,
+            "UNKNOWN": 0.6950354609929078,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              32,
+              0,
+              0,
+              0,
+              8,
+              0
+            ],
+            [
+              1,
+              36,
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              39,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              6,
+              7,
+              9,
+              9,
+              49,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 299.7,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.7,
+        "static": {
+          "threshold": 0.7,
+          "accuracy": 0.8625,
+          "macro_f1": 0.8590912347516341,
+          "macro_recall": 0.8666666666666667,
+          "macro_precision": 0.8564931927975407,
+          "target_recall": 0.875,
+          "unknown_recall": 0.7,
+          "unknown_false_activation_rate": 0.3,
+          "unknown_false_activation_count": 24,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.109375,
+          "per_class_recall": {
+            "TRAI": 0.7,
+            "PHAI": 0.875,
+            "LEN": 0.925,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.7,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.7671232876712328,
+            "PHAI": 0.8536585365853658,
+            "LEN": 0.8809523809523809,
+            "XUONG": 0.9302325581395349,
+            "UNKNOWN": 0.7225806451612902,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              28,
+              0,
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              1,
+              35,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              37,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              4,
+              7,
+              7,
+              6,
+              56,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 243.75,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.75,
+        "static": {
+          "threshold": 0.75,
+          "accuracy": 0.86875,
+          "macro_f1": 0.865449354361907,
+          "macro_recall": 0.86875,
+          "macro_precision": 0.8671304623750696,
+          "target_recall": 0.86875,
+          "unknown_recall": 0.7375,
+          "unknown_false_activation_rate": 0.2625,
+          "unknown_false_activation_count": 21,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.121875,
+          "per_class_recall": {
+            "TRAI": 0.7,
+            "PHAI": 0.875,
+            "LEN": 0.9,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.7375,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.7777777777777777,
+            "PHAI": 0.8536585365853658,
+            "LEN": 0.888888888888889,
+            "XUONG": 0.9302325581395349,
+            "UNKNOWN": 0.7421383647798743,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              28,
+              0,
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              1,
+              35,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              36,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              3,
+              7,
+              5,
+              6,
+              59,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 211.78,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.8,
+        "static": {
+          "threshold": 0.8,
+          "accuracy": 0.859375,
+          "macro_f1": 0.8558438064284982,
+          "macro_recall": 0.8520833333333333,
+          "macro_precision": 0.864676013222525,
+          "target_recall": 0.8375,
+          "unknown_recall": 0.7625,
+          "unknown_false_activation_rate": 0.2375,
+          "unknown_false_activation_count": 19,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.14375,
+          "per_class_recall": {
+            "TRAI": 0.7,
+            "PHAI": 0.85,
+            "LEN": 0.8,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.7625,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.7777777777777777,
+            "PHAI": 0.85,
+            "LEN": 0.8311688311688312,
+            "XUONG": 0.9411764705882353,
+            "UNKNOWN": 0.7349397590361445,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              28,
+              0,
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              1,
+              34,
+              0,
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              32,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              3,
+              6,
+              5,
+              5,
+              61,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 155.84,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.85,
+        "static": {
+          "threshold": 0.85,
+          "accuracy": 0.853125,
+          "macro_f1": 0.8483683335395323,
+          "macro_recall": 0.8354166666666667,
+          "macro_precision": 0.8749271844090076,
+          "target_recall": 0.8,
+          "unknown_recall": 0.8125,
+          "unknown_false_activation_rate": 0.1875,
+          "unknown_false_activation_count": 15,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.178125,
+          "per_class_recall": {
+            "TRAI": 0.625,
+            "PHAI": 0.825,
+            "LEN": 0.75,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.8125,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.7352941176470589,
+            "PHAI": 0.8461538461538461,
+            "LEN": 0.821917808219178,
+            "XUONG": 0.9523809523809523,
+            "UNKNOWN": 0.7344632768361582,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              25,
+              0,
+              0,
+              0,
+              15,
+              0
+            ],
+            [
+              0,
+              33,
+              0,
+              0,
+              7,
+              0
+            ],
+            [
+              0,
+              0,
+              30,
+              0,
+              10,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              3,
+              5,
+              3,
+              4,
+              65,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 131.87,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.9,
+        "static": {
+          "threshold": 0.9,
+          "accuracy": 0.85,
+          "macro_f1": 0.8429240800925683,
+          "macro_recall": 0.81875,
+          "macro_precision": 0.8980802849681098,
+          "target_recall": 0.75625,
+          "unknown_recall": 0.8875,
+          "unknown_false_activation_rate": 0.1125,
+          "unknown_false_activation_count": 9,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.21875,
+          "per_class_recall": {
+            "TRAI": 0.6,
+            "PHAI": 0.775,
+            "LEN": 0.675,
+            "XUONG": 0.975,
+            "UNKNOWN": 0.8875,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.7384615384615384,
+            "PHAI": 0.8378378378378379,
+            "LEN": 0.7941176470588236,
+            "XUONG": 0.9397590361445783,
+            "UNKNOWN": 0.7473684210526316,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              24,
+              0,
+              0,
+              0,
+              16,
+              0
+            ],
+            [
+              0,
+              31,
+              0,
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              27,
+              0,
+              13,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              39,
+              1,
+              0
+            ],
+            [
+              1,
+              3,
+              1,
+              4,
+              71,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 91.91,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.92,
+        "static": {
+          "threshold": 0.92,
+          "accuracy": 0.81875,
+          "macro_f1": 0.8076956825719201,
+          "macro_recall": 0.775,
+          "macro_precision": 0.8886142789261107,
+          "target_recall": 0.6875,
+          "unknown_recall": 0.9,
+          "unknown_false_activation_rate": 0.1,
+          "unknown_false_activation_count": 8,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.25625,
+          "per_class_recall": {
+            "TRAI": 0.55,
+            "PHAI": 0.675,
+            "LEN": 0.6,
+            "XUONG": 0.925,
+            "UNKNOWN": 0.9,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.6984126984126985,
+            "PHAI": 0.7714285714285714,
+            "LEN": 0.7384615384615384,
+            "XUONG": 0.925,
+            "UNKNOWN": 0.7128712871287128,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              22,
+              0,
+              0,
+              0,
+              18,
+              0
+            ],
+            [
+              0,
+              27,
+              0,
+              0,
+              13,
+              0
+            ],
+            [
+              0,
+              0,
+              24,
+              0,
+              16,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              37,
+              3,
+              0
+            ],
+            [
+              1,
+              3,
+              1,
+              3,
+              72,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 79.92,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.95,
+        "static": {
+          "threshold": 0.95,
+          "accuracy": 0.775,
+          "macro_f1": 0.7485697067740412,
+          "macro_recall": 0.7104166666666667,
+          "macro_precision": 0.8959432269291424,
+          "target_recall": 0.58125,
+          "unknown_recall": 0.9375,
+          "unknown_false_activation_rate": 0.0625,
+          "unknown_false_activation_count": 5,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.31875,
+          "per_class_recall": {
+            "TRAI": 0.425,
+            "PHAI": 0.65,
+            "LEN": 0.4,
+            "XUONG": 0.85,
+            "UNKNOWN": 0.9375,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.5964912280701754,
+            "PHAI": 0.7647058823529412,
+            "LEN": 0.5714285714285715,
+            "XUONG": 0.8831168831168831,
+            "UNKNOWN": 0.6756756756756757,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              17,
+              0,
+              0,
+              0,
+              23,
+              0
+            ],
+            [
+              0,
+              26,
+              0,
+              0,
+              14,
+              0
+            ],
+            [
+              0,
+              0,
+              16,
+              0,
+              24,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              34,
+              6,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              3,
+              75,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 43.96,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.97,
+        "static": {
+          "threshold": 0.97,
+          "accuracy": 0.678125,
+          "macro_f1": 0.6040908517834929,
+          "macro_recall": 0.5770833333333333,
+          "macro_precision": 0.8832189938122141,
+          "target_recall": 0.375,
+          "unknown_recall": 0.9625,
+          "unknown_false_activation_rate": 0.0375,
+          "unknown_false_activation_count": 3,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.428125,
+          "per_class_recall": {
+            "TRAI": 0.2,
+            "PHAI": 0.45,
+            "LEN": 0.175,
+            "XUONG": 0.675,
+            "UNKNOWN": 0.9625,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.33333333333333337,
+            "PHAI": 0.6,
+            "LEN": 0.2978723404255319,
+            "XUONG": 0.7941176470588236,
+            "UNKNOWN": 0.5992217898832685,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              32,
+              0
+            ],
+            [
+              0,
+              18,
+              0,
+              0,
+              22,
+              0
+            ],
+            [
+              0,
+              0,
+              7,
+              0,
+              33,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              27,
+              13,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              1,
+              77,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 31.97,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.98,
+        "static": {
+          "threshold": 0.98,
+          "accuracy": 0.603125,
+          "macro_f1": 0.4783551694177315,
+          "macro_recall": 0.47291666666666665,
+          "macro_precision": 0.8847404627892433,
+          "target_recall": 0.2125,
+          "unknown_recall": 0.9875,
+          "unknown_false_activation_rate": 0.0125,
+          "unknown_false_activation_count": 1,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.515625,
+          "per_class_recall": {
+            "TRAI": 0.125,
+            "PHAI": 0.3,
+            "LEN": 0.05,
+            "XUONG": 0.375,
+            "UNKNOWN": 0.9875,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.2222222222222222,
+            "PHAI": 0.4528301886792453,
+            "LEN": 0.09523809523809523,
+            "XUONG": 0.5454545454545454,
+            "UNKNOWN": 0.5543859649122806,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0,
+              0,
+              35,
+              0
+            ],
+            [
+              0,
+              12,
+              0,
+              0,
+              28,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              38,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              15,
+              25,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              79,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 11.99,
+        "strictly_feasible": false
+      }
+    ]
+  },
+  "seed43": {
+    "selected_threshold": 0.5,
+    "is_strictly_feasible": false,
+    "rationale": "STRICT REQUIREMENTS NOT FULLY MET (FA/hr <= 1.0 unachievable with single-stage CNN). Selected Pareto compromise threshold theta=0.50 for diagnostic reporting.",
+    "candidates": [
+      {
+        "threshold": 0.5,
+        "static": {
+          "threshold": 0.5,
+          "accuracy": 0.85,
+          "macro_f1": 0.8469970554164951,
+          "macro_recall": 0.8666666666666667,
+          "macro_precision": 0.8381197128662566,
+          "target_recall": 0.9,
+          "unknown_recall": 0.6,
+          "unknown_false_activation_rate": 0.4,
+          "unknown_false_activation_count": 32,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.021875,
+          "per_class_recall": {
+            "TRAI": 0.875,
+            "PHAI": 0.925,
+            "LEN": 0.8,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.6,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.8536585365853658,
+            "PHAI": 0.8222222222222222,
+            "LEN": 0.8311688311688312,
+            "XUONG": 0.898876404494382,
+            "UNKNOWN": 0.676056338028169,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              35,
+              1,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              37,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              32,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              6,
+              12,
+              5,
+              9,
+              48,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 1162.82,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.6,
+        "static": {
+          "threshold": 0.6,
+          "accuracy": 0.85625,
+          "macro_f1": 0.8538744810953078,
+          "macro_recall": 0.8645833333333334,
+          "macro_precision": 0.850121496256079,
+          "target_recall": 0.88125,
+          "unknown_recall": 0.6625,
+          "unknown_false_activation_rate": 0.3375,
+          "unknown_false_activation_count": 27,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.05,
+          "per_class_recall": {
+            "TRAI": 0.85,
+            "PHAI": 0.925,
+            "LEN": 0.75,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.6625,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.85,
+            "PHAI": 0.840909090909091,
+            "LEN": 0.8108108108108107,
+            "XUONG": 0.9195402298850576,
+            "UNKNOWN": 0.7019867549668874,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              34,
+              0,
+              0,
+              0,
+              6,
+              0
+            ],
+            [
+              1,
+              37,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              30,
+              0,
+              10,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              5,
+              11,
+              4,
+              7,
+              53,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 1006.98,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.7,
+        "static": {
+          "threshold": 0.7,
+          "accuracy": 0.834375,
+          "macro_f1": 0.8311730713073957,
+          "macro_recall": 0.8208333333333333,
+          "macro_precision": 0.8545018317454175,
+          "target_recall": 0.79375,
+          "unknown_recall": 0.75,
+          "unknown_false_activation_rate": 0.25,
+          "unknown_false_activation_count": 20,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.11875,
+          "per_class_recall": {
+            "TRAI": 0.725,
+            "PHAI": 0.775,
+            "LEN": 0.675,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.75,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.8055555555555555,
+            "PHAI": 0.775,
+            "LEN": 0.7826086956521738,
+            "XUONG": 0.9302325581395349,
+            "UNKNOWN": 0.6936416184971099,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              29,
+              0,
+              0,
+              0,
+              11,
+              0
+            ],
+            [
+              0,
+              31,
+              0,
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              27,
+              0,
+              13,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              3,
+              9,
+              2,
+              6,
+              60,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 591.4,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.75,
+        "static": {
+          "threshold": 0.75,
+          "accuracy": 0.83125,
+          "macro_f1": 0.8255958876658389,
+          "macro_recall": 0.8083333333333332,
+          "macro_precision": 0.8665602333547772,
+          "target_recall": 0.7625,
+          "unknown_recall": 0.8,
+          "unknown_false_activation_rate": 0.2,
+          "unknown_false_activation_count": 16,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.146875,
+          "per_class_recall": {
+            "TRAI": 0.65,
+            "PHAI": 0.75,
+            "LEN": 0.65,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.8,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.7647058823529412,
+            "PHAI": 0.7792207792207791,
+            "LEN": 0.7761194029850746,
+            "XUONG": 0.9302325581395349,
+            "UNKNOWN": 0.7032967032967032,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              26,
+              0,
+              0,
+              0,
+              14,
+              0
+            ],
+            [
+              0,
+              30,
+              0,
+              0,
+              10,
+              0
+            ],
+            [
+              0,
+              0,
+              26,
+              0,
+              14,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              2,
+              7,
+              1,
+              6,
+              64,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 283.71,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.8,
+        "static": {
+          "threshold": 0.8,
+          "accuracy": 0.81875,
+          "macro_f1": 0.8090346862020829,
+          "macro_recall": 0.7833333333333333,
+          "macro_precision": 0.8751847008826413,
+          "target_recall": 0.7125,
+          "unknown_recall": 0.85,
+          "unknown_false_activation_rate": 0.15,
+          "unknown_false_activation_count": 12,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.184375,
+          "per_class_recall": {
+            "TRAI": 0.6,
+            "PHAI": 0.75,
+            "LEN": 0.55,
+            "XUONG": 0.95,
+            "UNKNOWN": 0.85,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.7384615384615384,
+            "PHAI": 0.7894736842105262,
+            "LEN": 0.6984126984126985,
+            "XUONG": 0.9268292682926829,
+            "UNKNOWN": 0.7010309278350515,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              24,
+              0,
+              0,
+              0,
+              16,
+              0
+            ],
+            [
+              0,
+              30,
+              0,
+              0,
+              10,
+              0
+            ],
+            [
+              0,
+              0,
+              22,
+              0,
+              18,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              38,
+              2,
+              0
+            ],
+            [
+              1,
+              6,
+              1,
+              4,
+              68,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 175.82,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.85,
+        "static": {
+          "threshold": 0.85,
+          "accuracy": 0.78125,
+          "macro_f1": 0.7602642763557345,
+          "macro_recall": 0.7291666666666666,
+          "macro_precision": 0.8678364935717876,
+          "target_recall": 0.625,
+          "unknown_recall": 0.875,
+          "unknown_false_activation_rate": 0.125,
+          "unknown_false_activation_count": 10,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.234375,
+          "per_class_recall": {
+            "TRAI": 0.5,
+            "PHAI": 0.7,
+            "LEN": 0.4,
+            "XUONG": 0.9,
+            "UNKNOWN": 0.875,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.6557377049180327,
+            "PHAI": 0.7777777777777777,
+            "LEN": 0.5614035087719298,
+            "XUONG": 0.9,
+            "UNKNOWN": 0.6666666666666667,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              20,
+              0,
+              0,
+              0,
+              20,
+              0
+            ],
+            [
+              0,
+              28,
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              16,
+              0,
+              24,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              36,
+              4,
+              0
+            ],
+            [
+              1,
+              4,
+              1,
+              4,
+              70,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 139.86,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.9,
+        "static": {
+          "threshold": 0.9,
+          "accuracy": 0.696875,
+          "macro_f1": 0.634968734968735,
+          "macro_recall": 0.6083333333333334,
+          "macro_precision": 0.8744269619269619,
+          "target_recall": 0.43125,
+          "unknown_recall": 0.925,
+          "unknown_false_activation_rate": 0.075,
+          "unknown_false_activation_count": 6,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.34375,
+          "per_class_recall": {
+            "TRAI": 0.2,
+            "PHAI": 0.6,
+            "LEN": 0.225,
+            "XUONG": 0.7,
+            "UNKNOWN": 0.925,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.33333333333333337,
+            "PHAI": 0.7272727272727274,
+            "LEN": 0.36734693877551017,
+            "XUONG": 0.7777777777777777,
+            "UNKNOWN": 0.6040816326530613,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0,
+              32,
+              0
+            ],
+            [
+              0,
+              24,
+              0,
+              0,
+              16,
+              0
+            ],
+            [
+              0,
+              0,
+              9,
+              0,
+              31,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              28,
+              12,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              4,
+              74,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 87.91,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.92,
+        "static": {
+          "threshold": 0.92,
+          "accuracy": 0.675,
+          "macro_f1": 0.5938533208277658,
+          "macro_recall": 0.5750000000000001,
+          "macro_precision": 0.8793160238062786,
+          "target_recall": 0.375,
+          "unknown_recall": 0.95,
+          "unknown_false_activation_rate": 0.05,
+          "unknown_false_activation_count": 4,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.378125,
+          "per_class_recall": {
+            "TRAI": 0.125,
+            "PHAI": 0.525,
+            "LEN": 0.175,
+            "XUONG": 0.675,
+            "UNKNOWN": 0.95,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.2222222222222222,
+            "PHAI": 0.6666666666666667,
+            "LEN": 0.2978723404255319,
+            "XUONG": 0.7826086956521738,
+            "UNKNOWN": 0.59375,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0,
+              0,
+              35,
+              0
+            ],
+            [
+              0,
+              21,
+              0,
+              0,
+              19,
+              0
+            ],
+            [
+              0,
+              0,
+              7,
+              0,
+              33,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              27,
+              13,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              2,
+              76,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 67.93,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.95,
+        "static": {
+          "threshold": 0.95,
+          "accuracy": 0.6125,
+          "macro_f1": 0.48086705517128703,
+          "macro_recall": 0.4875,
+          "macro_precision": 0.7108333333333334,
+          "target_recall": 0.2375,
+          "unknown_recall": 0.975,
+          "unknown_false_activation_rate": 0.025,
+          "unknown_false_activation_count": 2,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.453125,
+          "per_class_recall": {
+            "TRAI": 0.0,
+            "PHAI": 0.35,
+            "LEN": 0.075,
+            "XUONG": 0.525,
+            "UNKNOWN": 0.975,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.0,
+            "PHAI": 0.4999999999999999,
+            "LEN": 0.13953488372093023,
+            "XUONG": 0.6885245901639345,
+            "UNKNOWN": 0.5571428571428572,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              40,
+              0
+            ],
+            [
+              0,
+              14,
+              0,
+              0,
+              26,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0,
+              37,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              21,
+              19,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              78,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 23.98,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.97,
+        "static": {
+          "threshold": 0.97,
+          "accuracy": 0.53125,
+          "macro_f1": 0.32755232816687735,
+          "macro_recall": 0.375,
+          "macro_precision": 0.7246376811594203,
+          "target_recall": 0.0625,
+          "unknown_recall": 1.0,
+          "unknown_false_activation_rate": 0.0,
+          "unknown_false_activation_count": 0,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.546875,
+          "per_class_recall": {
+            "TRAI": 0.0,
+            "PHAI": 0.15,
+            "LEN": 0.025,
+            "XUONG": 0.075,
+            "UNKNOWN": 1.0,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.0,
+            "PHAI": 0.2608695652173913,
+            "LEN": 0.04878048780487806,
+            "XUONG": 0.13953488372093023,
+            "UNKNOWN": 0.5161290322580645,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              40,
+              0
+            ],
+            [
+              0,
+              6,
+              0,
+              0,
+              34,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              39,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3,
+              37,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              80,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 4.0,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.98,
+        "static": {
+          "threshold": 0.98,
+          "accuracy": 0.5125,
+          "macro_f1": 0.2824407475749765,
+          "macro_recall": 0.35000000000000003,
+          "macro_precision": 0.556497175141243,
+          "target_recall": 0.025,
+          "unknown_recall": 1.0,
+          "unknown_false_activation_rate": 0.0,
+          "unknown_false_activation_count": 0,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.565625,
+          "per_class_recall": {
+            "TRAI": 0.0,
+            "PHAI": 0.075,
+            "LEN": 0.0,
+            "XUONG": 0.025,
+            "UNKNOWN": 1.0,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.0,
+            "PHAI": 0.13953488372093023,
+            "LEN": 0.0,
+            "XUONG": 0.04878048780487806,
+            "UNKNOWN": 0.5063291139240507,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              40,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0,
+              37,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              40,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              39,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              80,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 0.0,
+        "strictly_feasible": false
+      }
+    ]
+  },
+  "seed44": {
+    "selected_threshold": 0.7,
+    "is_strictly_feasible": false,
+    "rationale": "STRICT REQUIREMENTS NOT FULLY MET (FA/hr <= 1.0 unachievable with single-stage CNN). Selected Pareto compromise threshold theta=0.70 for diagnostic reporting.",
+    "candidates": [
+      {
+        "threshold": 0.5,
+        "static": {
+          "threshold": 0.5,
+          "accuracy": 0.8625,
+          "macro_f1": 0.8585163875050296,
+          "macro_recall": 0.8958333333333334,
+          "macro_precision": 0.8476147054566506,
+          "target_recall": 0.9625,
+          "unknown_recall": 0.525,
+          "unknown_false_activation_rate": 0.475,
+          "unknown_false_activation_count": 38,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.0125,
+          "per_class_recall": {
+            "TRAI": 0.95,
+            "PHAI": 0.925,
+            "LEN": 0.975,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.525,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.8735632183908046,
+            "PHAI": 0.8505747126436781,
+            "LEN": 0.8666666666666667,
+            "XUONG": 0.898876404494382,
+            "UNKNOWN": 0.6614173228346456,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              38,
+              0,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              1,
+              37,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              39,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              8,
+              10,
+              11,
+              9,
+              42,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 335.66,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.6,
+        "static": {
+          "threshold": 0.6,
+          "accuracy": 0.86875,
+          "macro_f1": 0.8661414584520549,
+          "macro_recall": 0.8916666666666666,
+          "macro_precision": 0.8531436990283575,
+          "target_recall": 0.9375,
+          "unknown_recall": 0.6,
+          "unknown_false_activation_rate": 0.4,
+          "unknown_false_activation_count": 32,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.04375,
+          "per_class_recall": {
+            "TRAI": 0.9,
+            "PHAI": 0.875,
+            "LEN": 0.975,
+            "XUONG": 1.0,
+            "UNKNOWN": 0.6,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.8571428571428572,
+            "PHAI": 0.8333333333333334,
+            "LEN": 0.896551724137931,
+            "XUONG": 0.9090909090909091,
+            "UNKNOWN": 0.7007299270072991,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              36,
+              0,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              35,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              39,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              40,
+              0,
+              0
+            ],
+            [
+              7,
+              9,
+              8,
+              8,
+              48,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 279.72,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.7,
+        "static": {
+          "threshold": 0.7,
+          "accuracy": 0.88125,
+          "macro_f1": 0.8801744204823557,
+          "macro_recall": 0.8916666666666666,
+          "macro_precision": 0.8726128562513003,
+          "target_recall": 0.9125,
+          "unknown_recall": 0.7,
+          "unknown_false_activation_rate": 0.3,
+          "unknown_false_activation_count": 24,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.08125,
+          "per_class_recall": {
+            "TRAI": 0.875,
+            "PHAI": 0.875,
+            "LEN": 0.925,
+            "XUONG": 0.975,
+            "UNKNOWN": 0.7,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.8974358974358975,
+            "PHAI": 0.8333333333333334,
+            "LEN": 0.8809523809523809,
+            "XUONG": 0.9176470588235294,
+            "UNKNOWN": 0.7516778523489933,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              35,
+              0,
+              0,
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              35,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              37,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              39,
+              1,
+              0
+            ],
+            [
+              2,
+              9,
+              7,
+              6,
+              56,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 203.79,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.75,
+        "static": {
+          "threshold": 0.75,
+          "accuracy": 0.878125,
+          "macro_f1": 0.8769561975940432,
+          "macro_recall": 0.8833333333333333,
+          "macro_precision": 0.8740783973342113,
+          "target_recall": 0.89375,
+          "unknown_recall": 0.725,
+          "unknown_false_activation_rate": 0.275,
+          "unknown_false_activation_count": 22,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.096875,
+          "per_class_recall": {
+            "TRAI": 0.825,
+            "PHAI": 0.875,
+            "LEN": 0.9,
+            "XUONG": 0.975,
+            "UNKNOWN": 0.725,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.88,
+            "PHAI": 0.8433734939759036,
+            "LEN": 0.8674698795180723,
+            "XUONG": 0.9176470588235294,
+            "UNKNOWN": 0.7532467532467533,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              33,
+              0,
+              0,
+              0,
+              7,
+              0
+            ],
+            [
+              1,
+              35,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              36,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              39,
+              1,
+              0
+            ],
+            [
+              1,
+              8,
+              7,
+              6,
+              58,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 187.81,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.8,
+        "static": {
+          "threshold": 0.8,
+          "accuracy": 0.875,
+          "macro_f1": 0.8729509361435613,
+          "macro_recall": 0.8666666666666667,
+          "macro_precision": 0.8833883310176414,
+          "target_recall": 0.85,
+          "unknown_recall": 0.8,
+          "unknown_false_activation_rate": 0.2,
+          "unknown_false_activation_count": 16,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.1375,
+          "per_class_recall": {
+            "TRAI": 0.75,
+            "PHAI": 0.825,
+            "LEN": 0.875,
+            "XUONG": 0.95,
+            "UNKNOWN": 0.8,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.8333333333333334,
+            "PHAI": 0.825,
+            "LEN": 0.8860759493670887,
+            "XUONG": 0.9268292682926829,
+            "UNKNOWN": 0.7664670658682634,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              30,
+              0,
+              0,
+              0,
+              10,
+              0
+            ],
+            [
+              1,
+              33,
+              0,
+              0,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              35,
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              38,
+              2,
+              0
+            ],
+            [
+              1,
+              7,
+              4,
+              4,
+              64,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 167.83,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.85,
+        "static": {
+          "threshold": 0.85,
+          "accuracy": 0.865625,
+          "macro_f1": 0.8641546350186494,
+          "macro_recall": 0.8500000000000001,
+          "macro_precision": 0.8860057954347572,
+          "target_recall": 0.81875,
+          "unknown_recall": 0.825,
+          "unknown_false_activation_rate": 0.175,
+          "unknown_false_activation_count": 14,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.1625,
+          "per_class_recall": {
+            "TRAI": 0.75,
+            "PHAI": 0.775,
+            "LEN": 0.8,
+            "XUONG": 0.95,
+            "UNKNOWN": 0.825,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.8450704225352113,
+            "PHAI": 0.8051948051948051,
+            "LEN": 0.8421052631578948,
+            "XUONG": 0.9382716049382716,
+            "UNKNOWN": 0.7542857142857142,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              30,
+              0,
+              0,
+              0,
+              10,
+              0
+            ],
+            [
+              0,
+              31,
+              0,
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              32,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              38,
+              2,
+              0
+            ],
+            [
+              1,
+              6,
+              4,
+              3,
+              66,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 127.87,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.9,
+        "static": {
+          "threshold": 0.9,
+          "accuracy": 0.84375,
+          "macro_f1": 0.8378520518086613,
+          "macro_recall": 0.80625,
+          "macro_precision": 0.9030960062198475,
+          "target_recall": 0.73125,
+          "unknown_recall": 0.9125,
+          "unknown_false_activation_rate": 0.0875,
+          "unknown_false_activation_count": 7,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.228125,
+          "per_class_recall": {
+            "TRAI": 0.65,
+            "PHAI": 0.7,
+            "LEN": 0.675,
+            "XUONG": 0.9,
+            "UNKNOWN": 0.9125,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.7761194029850746,
+            "PHAI": 0.7887323943661972,
+            "LEN": 0.8059701492537313,
+            "XUONG": 0.9113924050632911,
+            "UNKNOWN": 0.7448979591836735,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              26,
+              0,
+              0,
+              0,
+              14,
+              0
+            ],
+            [
+              0,
+              28,
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              27,
+              0,
+              13,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              36,
+              4,
+              0
+            ],
+            [
+              1,
+              3,
+              0,
+              3,
+              73,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 99.9,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.92,
+        "static": {
+          "threshold": 0.92,
+          "accuracy": 0.828125,
+          "macro_f1": 0.8202621590681293,
+          "macro_recall": 0.7854166666666668,
+          "macro_precision": 0.8973930694504858,
+          "target_recall": 0.7,
+          "unknown_recall": 0.9125,
+          "unknown_false_activation_rate": 0.0875,
+          "unknown_false_activation_count": 7,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.24375,
+          "per_class_recall": {
+            "TRAI": 0.6,
+            "PHAI": 0.675,
+            "LEN": 0.65,
+            "XUONG": 0.875,
+            "UNKNOWN": 0.9125,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.7384615384615384,
+            "PHAI": 0.7714285714285714,
+            "LEN": 0.787878787878788,
+            "XUONG": 0.8974358974358975,
+            "UNKNOWN": 0.7263681592039801,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              24,
+              0,
+              0,
+              0,
+              16,
+              0
+            ],
+            [
+              0,
+              27,
+              0,
+              0,
+              13,
+              0
+            ],
+            [
+              0,
+              0,
+              26,
+              0,
+              14,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              35,
+              5,
+              0
+            ],
+            [
+              1,
+              3,
+              0,
+              3,
+              73,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 87.91,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.95,
+        "static": {
+          "threshold": 0.95,
+          "accuracy": 0.746875,
+          "macro_f1": 0.720563985907435,
+          "macro_recall": 0.6749999999999999,
+          "macro_precision": 0.8741915133318349,
+          "target_recall": 0.53125,
+          "unknown_recall": 0.925,
+          "unknown_false_activation_rate": 0.075,
+          "unknown_false_activation_count": 6,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.33125,
+          "per_class_recall": {
+            "TRAI": 0.45,
+            "PHAI": 0.475,
+            "LEN": 0.45,
+            "XUONG": 0.75,
+            "UNKNOWN": 0.925,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.6101694915254237,
+            "PHAI": 0.6129032258064516,
+            "LEN": 0.6206896551724138,
+            "XUONG": 0.8333333333333334,
+            "UNKNOWN": 0.646288209606987,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              18,
+              0,
+              0,
+              0,
+              22,
+              0
+            ],
+            [
+              0,
+              19,
+              0,
+              0,
+              21,
+              0
+            ],
+            [
+              0,
+              0,
+              18,
+              0,
+              22,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              30,
+              10,
+              0
+            ],
+            [
+              1,
+              3,
+              0,
+              2,
+              74,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 55.94,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.97,
+        "static": {
+          "threshold": 0.97,
+          "accuracy": 0.6625,
+          "macro_f1": 0.5781622043770381,
+          "macro_recall": 0.5541666666666667,
+          "macro_precision": 0.8841442374051071,
+          "target_recall": 0.3375,
+          "unknown_recall": 0.975,
+          "unknown_false_activation_rate": 0.025,
+          "unknown_false_activation_count": 2,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.440625,
+          "per_class_recall": {
+            "TRAI": 0.25,
+            "PHAI": 0.275,
+            "LEN": 0.15,
+            "XUONG": 0.675,
+            "UNKNOWN": 0.975,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.4,
+            "PHAI": 0.4230769230769231,
+            "LEN": 0.2608695652173913,
+            "XUONG": 0.7941176470588236,
+            "UNKNOWN": 0.5909090909090909,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              10,
+              0,
+              0,
+              0,
+              30,
+              0
+            ],
+            [
+              0,
+              11,
+              0,
+              0,
+              29,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              0,
+              34,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              27,
+              13,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              78,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 27.97,
+        "strictly_feasible": false
+      },
+      {
+        "threshold": 0.98,
+        "static": {
+          "threshold": 0.98,
+          "accuracy": 0.6,
+          "macro_f1": 0.46708463949843254,
+          "macro_recall": 0.4666666666666666,
+          "macro_precision": 0.8974358974358975,
+          "target_recall": 0.2,
+          "unknown_recall": 1.0,
+          "unknown_false_activation_rate": 0.0,
+          "unknown_false_activation_count": 0,
+          "silence_recall": 1.0,
+          "silence_false_activation_rate": 0.0,
+          "silence_false_activation_count": 0,
+          "rejection_rate": 0.515625,
+          "per_class_recall": {
+            "TRAI": 0.125,
+            "PHAI": 0.125,
+            "LEN": 0.1,
+            "XUONG": 0.45,
+            "UNKNOWN": 1.0,
+            "SILENCE": 1.0
+          },
+          "per_class_f1": {
+            "TRAI": 0.2222222222222222,
+            "PHAI": 0.2222222222222222,
+            "LEN": 0.18181818181818182,
+            "XUONG": 0.6206896551724138,
+            "UNKNOWN": 0.5555555555555556,
+            "SILENCE": 1.0
+          },
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0,
+              0,
+              35,
+              0
+            ],
+            [
+              0,
+              5,
+              0,
+              0,
+              35,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0,
+              36,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              18,
+              22,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              80,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              80
+            ]
+          ]
+        },
+        "streaming_fa_per_hour": 7.99,
+        "strictly_feasible": false
+      }
+    ]
+  }
+}

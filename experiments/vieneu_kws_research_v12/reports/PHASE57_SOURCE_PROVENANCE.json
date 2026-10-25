@@ -1,0 +1,31 @@
+{
+  "engine_name": "Piper TTS (piper-tts 1.2.0)",
+  "model_id": "vi_VN-vais1000-medium",
+  "model_architecture": "VITS (Variational Inference with adversarial learning for Text-to-Speech) ONNX export",
+  "model_file_sha256": "ec7c89e2c85f4d1edc24b6120c18aaf1bda614f06b511567eb9c7c0de15e2dab",
+  "config_file_sha256": "fafb9da1354ed4b77c31af228ed41fb41cd825c14cffa105454b25e6ae751ee0",
+  "source_dataset": "VAIS-1000 Vietnamese Speech Synthesis Corpus",
+  "dataset_url": "https://ieee-dataport.org/documents/vais-1000-vietnamese-speech-synthesis-corpus",
+  "dataset_license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+  "engine_license": "MIT License",
+  "native_sample_rate": 22050,
+  "standardized_sample_rate": 16000,
+  "determinism_guarantee": "100% bit-for-bit deterministic (noise_scale=0.0, max_delta = 0.000000)",
+  "independence_verification": {
+    "independent_of_vieneu": true,
+    "independent_of_edge_tts": true,
+    "independent_of_mms_tts": true,
+    "independent_of_gtts": true,
+    "prior_training_exposure": false,
+    "prior_evaluation_exposure": false
+  },
+  "acoustic_audit": {
+    "total_pilot_clips": 72,
+    "clipped_clips": 0,
+    "silent_clips": 0,
+    "min_duration_s": 0.1278,
+    "max_duration_s": 0.2671,
+    "mean_duration_s": 0.19642916666666665
+  },
+  "readiness_gate": "PASS_FIFTH_TTS_SOURCE_READY"
+}

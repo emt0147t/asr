@@ -1,0 +1,38 @@
+{
+  "report_type": "v5_2_release_candidate_reproducibility_report",
+  "dataset_name": "synthetic_kws_v5_2_release_candidate",
+  "version": "v5.2-release-candidate",
+  "total_clips": 3000,
+  "files_on_disk": 3000,
+  "disk_sha256_matches": 3000,
+  "audit_sample_reproduced": 120,
+  "audit_sample_matches": 120,
+  "pass_rate_pct": 100.0,
+  "row_independent_reproduction_status": "PASS",
+  "manifest_schema": {
+    "total_columns": 30,
+    "unrounded_parameters_included": [
+      "vtl_scale",
+      "f0_base",
+      "open_quotient",
+      "spectral_tilt_db",
+      "jitter_pct",
+      "duration_sec",
+      "onset_offset_sec",
+      "target_speech_rms_dbfs",
+      "gain_factor",
+      "noise_seed",
+      "background_rms_dbfs"
+    ],
+    "master_seed_independence": "CONFIRMED: Any row can be reconstructed strictly from manifest fields without master seed."
+  },
+  "split_isolation": {
+    "train_val_speaker_overlap": 0,
+    "train_test_speaker_overlap": 0,
+    "val_test_speaker_overlap": 0,
+    "train_val_seed_overlap": 0,
+    "train_test_seed_overlap": 0,
+    "val_test_seed_overlap": 0,
+    "status": "PASS"
+  }
+}

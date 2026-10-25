@@ -27,6 +27,7 @@ if str(Path.cwd()) not in sys.path:
 import time
 import json
 import argparse
+from typing import Optional
 import numpy as np
 import pandas as pd
 import soundfile as sf
@@ -36,15 +37,56 @@ from src.models.kws_architectures import VietnameseKWSNet, VietnameseTCResNet
 from src.models.streaming_detector import StreamingKWSDetector, CLASS_NAMES
 
 
-def build_continuous_eval_streams(test_manifest_path: str = "data/manifests/test_manifest_v2.csv", sr: int = 16000):
+def build_continuous_eval_streams(
+    test_manifest_path: str = "data/manifests/test_manifest_v2.csv",
+    train_manifest_path: Optional[str] = "data/manifests/train_manifest_v2.csv",
+    val_manifest_path: Optional[str] = "data/manifests/val_manifest_v2.csv",
+    sr: int = 16000,
+    validation_profile: Optional[str] = None
+):
     """
     Constructs long-form continuous evaluation audio streams using verified test WAV files:
       1. continuous_neg_speech: Concatenated FLEURS test sentences (unseen speakers)
       2. continuous_noise: Concatenated real microphone noise tracks (unseen environments)
       3. continuous_mixed: Stream containing negatives, silence, and embedded target commands with known timestamps.
     """
-    print("Constructing long-form continuous evaluation streams from test set...", flush=True)
-    df_test = pd.read_csv(test_manifest_path)
+    if validation_profile is None or str(validation_profile).strip() == "":
+        raise ValueError("Streaming evaluation halted: validation_profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+    active_profile = str(validation_profile).strip().lower()
+    if active_profile not in ("benchmark", "human_campaign"):
+        raise ValueError(f"Streaming evaluation halted: Unknown validation_profile '{active_profile}'. Permitted: ['benchmark', 'human_campaign']")
+
+    print(f"Constructing long-form continuous evaluation streams from test set (Profile: {active_profile})...", flush=True)
+
+    if not test_manifest_path:
+        raise ValueError("Streaming evaluation halted: Test manifest path is required.")
+    if not train_manifest_path:
+        raise ValueError("Streaming evaluation halted: Train manifest path is required for held-out test isolation.")
+    if not val_manifest_path:
+        raise ValueError("Streaming evaluation halted: Validation manifest path is required for held-out test isolation.")
+
+    test_p = Path(test_manifest_path)
+    tr_p = Path(train_manifest_path)
+    va_p = Path(val_manifest_path)
+
+    if not test_p.exists():
+        raise FileNotFoundError(f"Streaming evaluation halted: Missing test manifest: {test_p}")
+    if not tr_p.exists():
+        raise FileNotFoundError(f"Streaming evaluation halted: Missing train manifest required for held-out test isolation: {tr_p}")
+    if not va_p.exists():
+        raise FileNotFoundError(f"Streaming evaluation halted: Missing val manifest required for held-out test isolation: {va_p}")
+
+    try:
+        df_test = pd.read_csv(test_p)
+        df_tr = pd.read_csv(tr_p)
+        df_va = pd.read_csv(va_p)
+    except Exception as e:
+        raise ValueError(f"Streaming evaluation halted: Could not read split manifests for isolation check: {e}") from e
+
+    from src.acquisition.campaign_validator import validate_split_manifests_preflight
+    is_valid, split_errs, _ = validate_split_manifests_preflight(df_tr, df_va, df_test, validation_profile=active_profile)
+    if not is_valid:
+        raise ValueError(f"Streaming evaluation halted: Test partition violates disjointness boundary: {split_errs}")
 
     # 1. Negative speech from test set UNKNOWN class (unseen speakers)
     df_unknown = df_test[df_test["class_label"] == "UNKNOWN"]
@@ -228,9 +270,26 @@ def evaluate_model_streaming(model, model_name: str, streams: dict, thresholds: 
     return results
 
 
-def main():
+def main(
+    test_manifest_path: str = "data/manifests/test_manifest_v2.csv",
+    train_manifest_path: str = "data/manifests/train_manifest_v2.csv",
+    val_manifest_path: str = "data/manifests/val_manifest_v2.csv",
+    validation_profile: Optional[str] = None
+):
+    if validation_profile is None or str(validation_profile).strip() == "":
+        raise ValueError("Streaming evaluation halted: validation_profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+    active_profile = str(validation_profile).strip().lower()
+    if active_profile not in ("benchmark", "human_campaign"):
+        raise ValueError(f"Streaming evaluation halted: Unknown validation_profile '{active_profile}'. Permitted: ['benchmark', 'human_campaign']")
+
     report_out = "reports/phase3_streaming_evaluation.md"
-    streams = build_continuous_eval_streams(sr=16000)
+    streams = build_continuous_eval_streams(
+        test_manifest_path=test_manifest_path,
+        train_manifest_path=train_manifest_path,
+        val_manifest_path=val_manifest_path,
+        sr=16000,
+        validation_profile=active_profile
+    )
 
     neg_speech = streams["continuous_neg_speech"]
     noise = streams["continuous_noise"]
@@ -350,4 +409,19 @@ Prior evaluations tested only isolated, pre-segmented 1.0-second files. In contr
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Evaluate Streaming KWS Detector")
+    parser.add_argument("--test-manifest", type=str, default="data/manifests/test_manifest_v2.csv")
+    parser.add_argument("--train-manifest", type=str, default="data/manifests/train_manifest_v2.csv")
+    parser.add_argument("--val-manifest", type=str, default="data/manifests/val_manifest_v2.csv")
+    parser.add_argument("--validation-profile", "--profile", dest="validation_profile", type=str, default=None, choices=["benchmark", "human_campaign"], help="Validation profile: benchmark or human_campaign (required)")
+    args = parser.parse_args()
+    if not args.validation_profile:
+        print("[ERROR] --validation-profile or --profile must be explicitly specified ('benchmark' or 'human_campaign'). Implicit fallback is strictly prohibited.")
+        sys.exit(1)
+    main(
+        test_manifest_path=args.test_manifest,
+        train_manifest_path=args.train_manifest,
+        val_manifest_path=args.val_manifest,
+        validation_profile=args.validation_profile
+    )

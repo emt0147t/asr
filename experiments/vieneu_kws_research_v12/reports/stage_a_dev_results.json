@@ -1,0 +1,5005 @@
+{
+  "BaselineFixedSilenceVAD": {
+    "algorithm": "BaselineFixedSilenceVAD",
+    "config": {
+      "algorithm": "BaselineFixedSilenceVAD",
+      "sample_rate": 16000,
+      "silence_interval_ms": 300,
+      "preroll_ms": 150,
+      "energy_threshold_db": -48.0,
+      "min_speech_duration_ms": 120,
+      "max_segment_duration_ms": 1200
+    },
+    "corpus_split": "dev",
+    "manifest_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\manifests\\vad_dev_corpus_manifest.csv",
+    "total_sequences": 60,
+    "total_ref_events": 216,
+    "total_pred_segments": 138,
+    "total_matched": 23,
+    "total_missed": 193,
+    "total_merges": 104,
+    "total_merged_events": 223,
+    "total_splits": 50,
+    "total_premature_cuts": 1,
+    "total_spurious": 115,
+    "precision": 0.1667,
+    "recall": 0.1065,
+    "f1_score": 0.1299,
+    "merge_rate": 1.0324,
+    "split_rate": 0.2315,
+    "miss_rate": 0.8935,
+    "premature_cut_rate": 0.0435,
+    "segment_count_bias": -78,
+    "median_onset_mae_ms": 150.0,
+    "p95_onset_mae_ms": 482.84,
+    "median_offset_mae_ms": 7.5,
+    "p95_offset_mae_ms": 263.06,
+    "gap_breakdown": {
+      "100": {
+        "ref": 36,
+        "pred": 20,
+        "matched": 1,
+        "merges": 20,
+        "cuts": 0
+      },
+      "150": {
+        "ref": 36,
+        "pred": 22,
+        "matched": 3,
+        "merges": 19,
+        "cuts": 1
+      },
+      "200": {
+        "ref": 36,
+        "pred": 20,
+        "matched": 0,
+        "merges": 20,
+        "cuts": 0
+      },
+      "250": {
+        "ref": 36,
+        "pred": 22,
+        "matched": 1,
+        "merges": 18,
+        "cuts": 0
+      },
+      "300": {
+        "ref": 36,
+        "pred": 26,
+        "matched": 8,
+        "merges": 17,
+        "cuts": 0
+      },
+      "400": {
+        "ref": 36,
+        "pred": 28,
+        "matched": 10,
+        "merges": 10,
+        "cuts": 0
+      }
+    },
+    "condition_breakdown": {
+      "clean": {
+        "ref": 48,
+        "pred": 33,
+        "matched": 19,
+        "merges": 15,
+        "cuts": 1
+      },
+      "snr20": {
+        "ref": 42,
+        "pred": 27,
+        "matched": 0,
+        "merges": 23,
+        "cuts": 0
+      },
+      "snr15": {
+        "ref": 42,
+        "pred": 26,
+        "matched": 2,
+        "merges": 21,
+        "cuts": 0
+      },
+      "snr10": {
+        "ref": 42,
+        "pred": 25,
+        "matched": 1,
+        "merges": 22,
+        "cuts": 0
+      },
+      "snr05": {
+        "ref": 42,
+        "pred": 27,
+        "matched": 1,
+        "merges": 23,
+        "cuts": 0
+      }
+    },
+    "per_sequence_results": [
+      {
+        "sequence_id": "vad_dev_seq_0001",
+        "nominal_gap_ms": 100,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 2.08,
+            "duration_sec": 0.67
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0002",
+        "nominal_gap_ms": 100,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 1.98,
+            "duration_sec": 0.57
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0003",
+        "nominal_gap_ms": 100,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0004",
+        "nominal_gap_ms": 100,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0005",
+        "nominal_gap_ms": 100,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0006",
+        "nominal_gap_ms": 100,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.1153,
+            "duration_sec": 1.2052
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0007",
+        "nominal_gap_ms": 100,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0008",
+        "nominal_gap_ms": 100,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0009",
+        "nominal_gap_ms": 100,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0010",
+        "nominal_gap_ms": 100,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0011",
+        "nominal_gap_ms": 150,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 2.62,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0012",
+        "nominal_gap_ms": 150,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 1,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.98,
+            "duration_sec": 0.63
+          },
+          {
+            "start_sec": 1.19,
+            "end_sec": 2.4,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 2.29,
+            "end_sec": 2.74,
+            "duration_sec": 0.45
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0013",
+        "nominal_gap_ms": 150,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.95,
+            "end_sec": 2.16,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0014",
+        "nominal_gap_ms": 150,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.03,
+            "end_sec": 1.24,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.09,
+            "end_sec": 2.3,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0015",
+        "nominal_gap_ms": 150,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 3,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.97,
+            "end_sec": 3.18,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0016",
+        "nominal_gap_ms": 150,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0017",
+        "nominal_gap_ms": 150,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0018",
+        "nominal_gap_ms": 150,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0019",
+        "nominal_gap_ms": 150,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0020",
+        "nominal_gap_ms": 150,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0021",
+        "nominal_gap_ms": 200,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 2.62,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0022",
+        "nominal_gap_ms": 200,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.51,
+            "end_sec": 2.72,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0023",
+        "nominal_gap_ms": 200,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0024",
+        "nominal_gap_ms": 200,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 2.14,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0025",
+        "nominal_gap_ms": 200,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0026",
+        "nominal_gap_ms": 200,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0027",
+        "nominal_gap_ms": 200,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 2.14,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0028",
+        "nominal_gap_ms": 200,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0029",
+        "nominal_gap_ms": 200,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0030",
+        "nominal_gap_ms": 200,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0031",
+        "nominal_gap_ms": 250,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.59,
+            "end_sec": 2.8,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0032",
+        "nominal_gap_ms": 250,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 2.62,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0033",
+        "nominal_gap_ms": 250,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.97,
+            "end_sec": 2.18,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 2.15,
+            "end_sec": 3.36,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0034",
+        "nominal_gap_ms": 250,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 2.14,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0035",
+        "nominal_gap_ms": 250,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0036",
+        "nominal_gap_ms": 250,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0037",
+        "nominal_gap_ms": 250,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0038",
+        "nominal_gap_ms": 250,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0039",
+        "nominal_gap_ms": 250,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0040",
+        "nominal_gap_ms": 250,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.97,
+            "end_sec": 3.18,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0041",
+        "nominal_gap_ms": 300,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.78,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 1.46,
+            "duration_sec": 0.53
+          },
+          {
+            "start_sec": 1.61,
+            "end_sec": 2.02,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 2.17,
+            "end_sec": 2.64,
+            "duration_sec": 0.47
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0042",
+        "nominal_gap_ms": 300,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.78,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 1.56,
+            "duration_sec": 0.63
+          },
+          {
+            "start_sec": 1.71,
+            "end_sec": 2.16,
+            "duration_sec": 0.45
+          },
+          {
+            "start_sec": 2.31,
+            "end_sec": 2.9,
+            "duration_sec": 0.59
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0043",
+        "nominal_gap_ms": 300,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 3,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 2.14,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.99,
+            "end_sec": 3.2,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0044",
+        "nominal_gap_ms": 300,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.09,
+            "end_sec": 1.3,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.15,
+            "end_sec": 2.36,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0045",
+        "nominal_gap_ms": 300,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0046",
+        "nominal_gap_ms": 300,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0047",
+        "nominal_gap_ms": 300,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0048",
+        "nominal_gap_ms": 300,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0049",
+        "nominal_gap_ms": 300,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0050",
+        "nominal_gap_ms": 300,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 3,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.97,
+            "end_sec": 3.18,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0051",
+        "nominal_gap_ms": 400,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.96,
+            "duration_sec": 0.61
+          },
+          {
+            "start_sec": 1.23,
+            "end_sec": 1.66,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 1.91,
+            "end_sec": 2.52,
+            "duration_sec": 0.61
+          },
+          {
+            "start_sec": 2.79,
+            "end_sec": 3.28,
+            "duration_sec": 0.49
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0052",
+        "nominal_gap_ms": 400,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.8,
+            "duration_sec": 0.45
+          },
+          {
+            "start_sec": 1.05,
+            "end_sec": 1.6,
+            "duration_sec": 0.55
+          },
+          {
+            "start_sec": 1.85,
+            "end_sec": 2.28,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 2.51,
+            "end_sec": 3.0,
+            "duration_sec": 0.49
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0053",
+        "nominal_gap_ms": 400,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 2.14,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.99,
+            "end_sec": 3.2,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0054",
+        "nominal_gap_ms": 400,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 2.14,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0055",
+        "nominal_gap_ms": 400,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 0.33,
+            "duration_sec": 0.33
+          },
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 2.62,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0056",
+        "nominal_gap_ms": 400,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 1,
+        "n_missed": 2,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0057",
+        "nominal_gap_ms": 400,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0058",
+        "nominal_gap_ms": 400,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.97,
+            "end_sec": 3.18,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0059",
+        "nominal_gap_ms": 400,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0060",
+        "nominal_gap_ms": 400,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.97,
+            "end_sec": 3.18,
+            "duration_sec": 1.21
+          }
+        ]
+      }
+    ]
+  },
+  "DualThresholdAdaptiveVAD": {
+    "algorithm": "DualThresholdAdaptiveVAD",
+    "config": {
+      "algorithm": "DualThresholdAdaptiveVAD",
+      "sample_rate": 16000,
+      "onset_snr_offset_db": 10.0,
+      "offset_snr_offset_db": 4.0,
+      "min_onset_db": -45.0,
+      "max_onset_db": -32.0,
+      "min_offset_db": -52.0,
+      "max_offset_db": -40.0,
+      "hangover_clean_ms": 160,
+      "hangover_noisy_ms": 220,
+      "preroll_ms": 150,
+      "min_speech_duration_ms": 100,
+      "max_segment_duration_ms": 1200
+    },
+    "corpus_split": "dev",
+    "manifest_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\manifests\\vad_dev_corpus_manifest.csv",
+    "total_sequences": 60,
+    "total_ref_events": 216,
+    "total_pred_segments": 138,
+    "total_matched": 34,
+    "total_missed": 182,
+    "total_merges": 96,
+    "total_merged_events": 206,
+    "total_splits": 44,
+    "total_premature_cuts": 1,
+    "total_spurious": 104,
+    "precision": 0.2464,
+    "recall": 0.1574,
+    "f1_score": 0.1921,
+    "merge_rate": 0.9537,
+    "split_rate": 0.2037,
+    "miss_rate": 0.8426,
+    "premature_cut_rate": 0.0294,
+    "segment_count_bias": -78,
+    "median_onset_mae_ms": 146.5,
+    "p95_onset_mae_ms": 388.46,
+    "median_offset_mae_ms": 7.1,
+    "p95_offset_mae_ms": 228.74,
+    "gap_breakdown": {
+      "100": {
+        "ref": 36,
+        "pred": 19,
+        "matched": 1,
+        "merges": 19,
+        "cuts": 0
+      },
+      "150": {
+        "ref": 36,
+        "pred": 21,
+        "matched": 3,
+        "merges": 18,
+        "cuts": 1
+      },
+      "200": {
+        "ref": 36,
+        "pred": 20,
+        "matched": 2,
+        "merges": 18,
+        "cuts": 0
+      },
+      "250": {
+        "ref": 36,
+        "pred": 26,
+        "matched": 9,
+        "merges": 15,
+        "cuts": 0
+      },
+      "300": {
+        "ref": 36,
+        "pred": 25,
+        "matched": 8,
+        "merges": 16,
+        "cuts": 0
+      },
+      "400": {
+        "ref": 36,
+        "pred": 27,
+        "matched": 11,
+        "merges": 10,
+        "cuts": 0
+      }
+    },
+    "condition_breakdown": {
+      "clean": {
+        "ref": 48,
+        "pred": 38,
+        "matched": 29,
+        "merges": 10,
+        "cuts": 1
+      },
+      "snr20": {
+        "ref": 42,
+        "pred": 22,
+        "matched": 1,
+        "merges": 20,
+        "cuts": 0
+      },
+      "snr15": {
+        "ref": 42,
+        "pred": 26,
+        "matched": 2,
+        "merges": 21,
+        "cuts": 0
+      },
+      "snr10": {
+        "ref": 42,
+        "pred": 25,
+        "matched": 1,
+        "merges": 22,
+        "cuts": 0
+      },
+      "snr05": {
+        "ref": 42,
+        "pred": 27,
+        "matched": 1,
+        "merges": 23,
+        "cuts": 0
+      }
+    },
+    "per_sequence_results": [
+      {
+        "sequence_id": "vad_dev_seq_0001",
+        "nominal_gap_ms": 100,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 2.08,
+            "duration_sec": 0.67
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0002",
+        "nominal_gap_ms": 100,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 1.98,
+            "duration_sec": 0.57
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0003",
+        "nominal_gap_ms": 100,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.05,
+            "end_sec": 2.26,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0004",
+        "nominal_gap_ms": 100,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 1,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0005",
+        "nominal_gap_ms": 100,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0006",
+        "nominal_gap_ms": 100,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.1153,
+            "duration_sec": 1.2052
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0007",
+        "nominal_gap_ms": 100,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0008",
+        "nominal_gap_ms": 100,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0009",
+        "nominal_gap_ms": 100,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0010",
+        "nominal_gap_ms": 100,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0011",
+        "nominal_gap_ms": 150,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 2.62,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0012",
+        "nominal_gap_ms": 150,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 1,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.98,
+            "duration_sec": 0.63
+          },
+          {
+            "start_sec": 1.19,
+            "end_sec": 2.4,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 2.29,
+            "end_sec": 2.74,
+            "duration_sec": 0.45
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0013",
+        "nominal_gap_ms": 150,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.95,
+            "end_sec": 2.16,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0014",
+        "nominal_gap_ms": 150,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 1,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.23,
+            "end_sec": 1.44,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0015",
+        "nominal_gap_ms": 150,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 3,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.97,
+            "end_sec": 3.18,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0016",
+        "nominal_gap_ms": 150,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0017",
+        "nominal_gap_ms": 150,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0018",
+        "nominal_gap_ms": 150,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0019",
+        "nominal_gap_ms": 150,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0020",
+        "nominal_gap_ms": 150,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0021",
+        "nominal_gap_ms": 200,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.36,
+            "duration_sec": 1.01
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 2.62,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0022",
+        "nominal_gap_ms": 200,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.82,
+            "duration_sec": 0.47
+          },
+          {
+            "start_sec": 0.87,
+            "end_sec": 2.08,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 2.07,
+            "end_sec": 2.46,
+            "duration_sec": 0.39
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0023",
+        "nominal_gap_ms": 200,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.41,
+            "end_sec": 1.62,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.55,
+            "end_sec": 2.76,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0024",
+        "nominal_gap_ms": 200,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 1,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0025",
+        "nominal_gap_ms": 200,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0026",
+        "nominal_gap_ms": 200,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0027",
+        "nominal_gap_ms": 200,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.97,
+            "end_sec": 2.18,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0028",
+        "nominal_gap_ms": 200,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0029",
+        "nominal_gap_ms": 200,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0030",
+        "nominal_gap_ms": 200,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0031",
+        "nominal_gap_ms": 250,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.9,
+            "duration_sec": 0.55
+          },
+          {
+            "start_sec": 1.01,
+            "end_sec": 1.5,
+            "duration_sec": 0.49
+          },
+          {
+            "start_sec": 1.61,
+            "end_sec": 2.18,
+            "duration_sec": 0.57
+          },
+          {
+            "start_sec": 2.29,
+            "end_sec": 2.88,
+            "duration_sec": 0.59
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0032",
+        "nominal_gap_ms": 250,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.84,
+            "duration_sec": 0.49
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 1.6,
+            "duration_sec": 0.67
+          },
+          {
+            "start_sec": 1.71,
+            "end_sec": 2.22,
+            "duration_sec": 0.51
+          },
+          {
+            "start_sec": 2.33,
+            "end_sec": 2.72,
+            "duration_sec": 0.39
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0033",
+        "nominal_gap_ms": 250,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.99,
+            "end_sec": 2.2,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 2.15,
+            "end_sec": 3.36,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0034",
+        "nominal_gap_ms": 250,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 2.62,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0035",
+        "nominal_gap_ms": 250,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 2.14,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0036",
+        "nominal_gap_ms": 250,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.97,
+            "end_sec": 2.18,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0037",
+        "nominal_gap_ms": 250,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0038",
+        "nominal_gap_ms": 250,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0039",
+        "nominal_gap_ms": 250,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0040",
+        "nominal_gap_ms": 250,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.97,
+            "end_sec": 3.18,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0041",
+        "nominal_gap_ms": 300,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.78,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 0.95,
+            "end_sec": 1.46,
+            "duration_sec": 0.51
+          },
+          {
+            "start_sec": 1.61,
+            "end_sec": 2.02,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 2.17,
+            "end_sec": 2.64,
+            "duration_sec": 0.47
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0042",
+        "nominal_gap_ms": 300,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.78,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 1.56,
+            "duration_sec": 0.63
+          },
+          {
+            "start_sec": 1.71,
+            "end_sec": 2.16,
+            "duration_sec": 0.45
+          },
+          {
+            "start_sec": 2.35,
+            "end_sec": 2.9,
+            "duration_sec": 0.55
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0043",
+        "nominal_gap_ms": 300,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 1.6,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.83,
+            "end_sec": 3.04,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0044",
+        "nominal_gap_ms": 300,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.11,
+            "end_sec": 1.32,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.17,
+            "end_sec": 2.38,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0045",
+        "nominal_gap_ms": 300,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 2.14,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0046",
+        "nominal_gap_ms": 300,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0047",
+        "nominal_gap_ms": 300,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0048",
+        "nominal_gap_ms": 300,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0049",
+        "nominal_gap_ms": 300,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0050",
+        "nominal_gap_ms": 300,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 3,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.97,
+            "end_sec": 2.92,
+            "duration_sec": 0.95
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0051",
+        "nominal_gap_ms": 400,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.98,
+            "duration_sec": 0.63
+          },
+          {
+            "start_sec": 1.23,
+            "end_sec": 1.66,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 1.91,
+            "end_sec": 2.54,
+            "duration_sec": 0.63
+          },
+          {
+            "start_sec": 2.79,
+            "end_sec": 3.28,
+            "duration_sec": 0.49
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0052",
+        "nominal_gap_ms": 400,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.8,
+            "duration_sec": 0.45
+          },
+          {
+            "start_sec": 1.05,
+            "end_sec": 1.6,
+            "duration_sec": 0.55
+          },
+          {
+            "start_sec": 1.85,
+            "end_sec": 2.28,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 2.53,
+            "end_sec": 3.0,
+            "duration_sec": 0.47
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0053",
+        "nominal_gap_ms": 400,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.83,
+            "end_sec": 3.04,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 2.89,
+            "end_sec": 3.26,
+            "duration_sec": 0.37
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0054",
+        "nominal_gap_ms": 400,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 1,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0055",
+        "nominal_gap_ms": 400,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 0.37,
+            "duration_sec": 0.37
+          },
+          {
+            "start_sec": 0.35,
+            "end_sec": 1.56,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 2.62,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0056",
+        "nominal_gap_ms": 400,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 1,
+        "n_missed": 2,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.99,
+            "end_sec": 2.2,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0057",
+        "nominal_gap_ms": 400,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0058",
+        "nominal_gap_ms": 400,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.97,
+            "end_sec": 3.18,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0059",
+        "nominal_gap_ms": 400,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0060",
+        "nominal_gap_ms": 400,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 4,
+        "n_merges": 2,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 1.21,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.97,
+            "end_sec": 3.18,
+            "duration_sec": 1.21
+          }
+        ]
+      }
+    ]
+  },
+  "SpeechBandRatioVAD": {
+    "algorithm": "SpeechBandRatioVAD",
+    "config": {
+      "algorithm": "SpeechBandRatioVAD",
+      "sample_rate": 16000,
+      "speech_band_hz": [
+        300.0,
+        3400.0
+      ],
+      "min_speech_band_ratio": 0.32,
+      "energy_threshold_db": -46.0,
+      "hangover_ms": 160,
+      "preroll_ms": 150,
+      "min_speech_duration_ms": 100,
+      "max_segment_duration_ms": 1200
+    },
+    "corpus_split": "dev",
+    "manifest_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\manifests\\vad_dev_corpus_manifest.csv",
+    "total_sequences": 60,
+    "total_ref_events": 216,
+    "total_pred_segments": 183,
+    "total_matched": 124,
+    "total_missed": 92,
+    "total_merges": 10,
+    "total_merged_events": 22,
+    "total_splits": 2,
+    "total_premature_cuts": 31,
+    "total_spurious": 59,
+    "precision": 0.6776,
+    "recall": 0.5741,
+    "f1_score": 0.6216,
+    "merge_rate": 0.1019,
+    "split_rate": 0.0093,
+    "miss_rate": 0.4259,
+    "premature_cut_rate": 0.25,
+    "segment_count_bias": -33,
+    "median_onset_mae_ms": 89.05,
+    "p95_onset_mae_ms": 149.25,
+    "median_offset_mae_ms": 17.8,
+    "p95_offset_mae_ms": 200.16,
+    "gap_breakdown": {
+      "100": {
+        "ref": 36,
+        "pred": 27,
+        "matched": 19,
+        "merges": 5,
+        "cuts": 4
+      },
+      "150": {
+        "ref": 36,
+        "pred": 31,
+        "matched": 15,
+        "merges": 2,
+        "cuts": 5
+      },
+      "200": {
+        "ref": 36,
+        "pred": 30,
+        "matched": 20,
+        "merges": 1,
+        "cuts": 9
+      },
+      "250": {
+        "ref": 36,
+        "pred": 31,
+        "matched": 22,
+        "merges": 0,
+        "cuts": 7
+      },
+      "300": {
+        "ref": 36,
+        "pred": 34,
+        "matched": 25,
+        "merges": 1,
+        "cuts": 2
+      },
+      "400": {
+        "ref": 36,
+        "pred": 30,
+        "matched": 23,
+        "merges": 1,
+        "cuts": 4
+      }
+    },
+    "condition_breakdown": {
+      "clean": {
+        "ref": 48,
+        "pred": 41,
+        "matched": 30,
+        "merges": 3,
+        "cuts": 5
+      },
+      "snr20": {
+        "ref": 42,
+        "pred": 37,
+        "matched": 31,
+        "merges": 1,
+        "cuts": 9
+      },
+      "snr15": {
+        "ref": 42,
+        "pred": 36,
+        "matched": 23,
+        "merges": 1,
+        "cuts": 5
+      },
+      "snr10": {
+        "ref": 42,
+        "pred": 33,
+        "matched": 21,
+        "merges": 2,
+        "cuts": 4
+      },
+      "snr05": {
+        "ref": 42,
+        "pred": 36,
+        "matched": 19,
+        "merges": 3,
+        "cuts": 8
+      }
+    },
+    "per_sequence_results": [
+      {
+        "sequence_id": "vad_dev_seq_0001",
+        "nominal_gap_ms": 100,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 1.1,
+            "duration_sec": 0.71
+          },
+          {
+            "start_sec": 1.67,
+            "end_sec": 2.08,
+            "duration_sec": 0.41
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0002",
+        "nominal_gap_ms": 100,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.41,
+            "end_sec": 0.82,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 0.85,
+            "end_sec": 2.06,
+            "duration_sec": 1.21
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0003",
+        "nominal_gap_ms": 100,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.37,
+            "end_sec": 0.7,
+            "duration_sec": 0.33
+          },
+          {
+            "start_sec": 0.73,
+            "end_sec": 1.14,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 1.23,
+            "end_sec": 1.98,
+            "duration_sec": 0.75
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0004",
+        "nominal_gap_ms": 100,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 3,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.41,
+            "end_sec": 0.8,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 0.83,
+            "end_sec": 1.24,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 1.8,
+            "duration_sec": 0.39
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0005",
+        "nominal_gap_ms": 100,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.43,
+            "end_sec": 0.68,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 0.87,
+            "end_sec": 1.7,
+            "duration_sec": 0.83
+          },
+          {
+            "start_sec": 1.81,
+            "end_sec": 2.44,
+            "duration_sec": 0.63
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0006",
+        "nominal_gap_ms": 100,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 0.82,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 1.17,
+            "end_sec": 1.6,
+            "duration_sec": 0.43
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0007",
+        "nominal_gap_ms": 100,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.41,
+            "end_sec": 0.76,
+            "duration_sec": 0.35
+          },
+          {
+            "start_sec": 0.81,
+            "end_sec": 1.08,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 1.31,
+            "end_sec": 1.68,
+            "duration_sec": 0.37
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0008",
+        "nominal_gap_ms": 100,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.45,
+            "end_sec": 0.86,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 0.91,
+            "end_sec": 2.12,
+            "duration_sec": 1.21
+          },
+          {
+            "start_sec": 1.99,
+            "end_sec": 2.54,
+            "duration_sec": 0.55
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0009",
+        "nominal_gap_ms": 100,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.49,
+            "end_sec": 0.78,
+            "duration_sec": 0.29
+          },
+          {
+            "start_sec": 0.99,
+            "end_sec": 1.36,
+            "duration_sec": 0.37
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0010",
+        "nominal_gap_ms": 100,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 2,
+        "pred_segments": [
+          {
+            "start_sec": 0.37,
+            "end_sec": 0.62,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 0.71,
+            "end_sec": 0.98,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 1.21,
+            "end_sec": 1.48,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 1.61,
+            "end_sec": 2.02,
+            "duration_sec": 0.41
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0011",
+        "nominal_gap_ms": 150,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 1.24,
+            "duration_sec": 0.85
+          },
+          {
+            "start_sec": 1.29,
+            "end_sec": 1.6,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 1.83,
+            "end_sec": 2.44,
+            "duration_sec": 0.61
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0012",
+        "nominal_gap_ms": 150,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 1.19,
+            "end_sec": 1.6,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 1.87,
+            "end_sec": 2.28,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 2.29,
+            "end_sec": 2.68,
+            "duration_sec": 0.39
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0013",
+        "nominal_gap_ms": 150,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.37,
+            "end_sec": 0.62,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 0.79,
+            "end_sec": 1.16,
+            "duration_sec": 0.37
+          },
+          {
+            "start_sec": 1.27,
+            "end_sec": 1.82,
+            "duration_sec": 0.55
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0014",
+        "nominal_gap_ms": 150,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.43,
+            "end_sec": 0.84,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 0.87,
+            "end_sec": 1.34,
+            "duration_sec": 0.47
+          },
+          {
+            "start_sec": 1.43,
+            "end_sec": 1.68,
+            "duration_sec": 0.25
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0015",
+        "nominal_gap_ms": 150,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.41,
+            "end_sec": 0.74,
+            "duration_sec": 0.33
+          },
+          {
+            "start_sec": 0.95,
+            "end_sec": 1.26,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 1.91,
+            "end_sec": 2.3,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 2.47,
+            "end_sec": 2.78,
+            "duration_sec": 0.31
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0016",
+        "nominal_gap_ms": 150,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.41,
+            "end_sec": 1.04,
+            "duration_sec": 0.63
+          },
+          {
+            "start_sec": 1.07,
+            "end_sec": 1.38,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 1.53,
+            "end_sec": 1.88,
+            "duration_sec": 0.35
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0017",
+        "nominal_gap_ms": 150,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 1,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.87,
+            "end_sec": 1.12,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 1.43,
+            "end_sec": 1.8,
+            "duration_sec": 0.37
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0018",
+        "nominal_gap_ms": 150,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 2,
+        "pred_segments": [
+          {
+            "start_sec": 0.41,
+            "end_sec": 0.72,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 0.87,
+            "end_sec": 1.14,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 1.7,
+            "duration_sec": 0.29
+          },
+          {
+            "start_sec": 1.93,
+            "end_sec": 2.24,
+            "duration_sec": 0.31
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0019",
+        "nominal_gap_ms": 150,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.29,
+            "end_sec": 0.84,
+            "duration_sec": 0.55
+          },
+          {
+            "start_sec": 0.89,
+            "end_sec": 1.36,
+            "duration_sec": 0.47
+          },
+          {
+            "start_sec": 1.47,
+            "end_sec": 1.86,
+            "duration_sec": 0.39
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0020",
+        "nominal_gap_ms": 150,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.66,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 1.23,
+            "end_sec": 1.56,
+            "duration_sec": 0.33
+          },
+          {
+            "start_sec": 1.77,
+            "end_sec": 2.06,
+            "duration_sec": 0.29
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0021",
+        "nominal_gap_ms": 200,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 2,
+        "pred_segments": [
+          {
+            "start_sec": 0.41,
+            "end_sec": 0.8,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 0.87,
+            "end_sec": 1.26,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 1.51,
+            "end_sec": 1.78,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 2.15,
+            "end_sec": 2.46,
+            "duration_sec": 0.31
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0022",
+        "nominal_gap_ms": 200,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 0.7,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 0.97,
+            "end_sec": 1.42,
+            "duration_sec": 0.45
+          },
+          {
+            "start_sec": 1.57,
+            "end_sec": 2.0,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 2.07,
+            "end_sec": 2.44,
+            "duration_sec": 0.37
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0023",
+        "nominal_gap_ms": 200,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.41,
+            "end_sec": 0.8,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 0.87,
+            "end_sec": 1.18,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 1.57,
+            "end_sec": 1.9,
+            "duration_sec": 0.33
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0024",
+        "nominal_gap_ms": 200,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 3,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.41,
+            "end_sec": 0.88,
+            "duration_sec": 0.47
+          },
+          {
+            "start_sec": 0.97,
+            "end_sec": 1.42,
+            "duration_sec": 0.45
+          },
+          {
+            "start_sec": 1.65,
+            "end_sec": 1.94,
+            "duration_sec": 0.29
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0025",
+        "nominal_gap_ms": 200,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 2,
+        "pred_segments": [
+          {
+            "start_sec": 0.99,
+            "end_sec": 1.24,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 1.55,
+            "end_sec": 1.9,
+            "duration_sec": 0.35
+          },
+          {
+            "start_sec": 2.23,
+            "end_sec": 2.54,
+            "duration_sec": 0.31
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0026",
+        "nominal_gap_ms": 200,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.72,
+            "duration_sec": 0.37
+          },
+          {
+            "start_sec": 1.05,
+            "end_sec": 1.36,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 1.51,
+            "end_sec": 1.9,
+            "duration_sec": 0.39
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0027",
+        "nominal_gap_ms": 200,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 0,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 0.73,
+            "duration_sec": 0.73
+          },
+          {
+            "start_sec": 0.97,
+            "end_sec": 1.88,
+            "duration_sec": 0.91
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0028",
+        "nominal_gap_ms": 200,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 2,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 2,
+        "pred_segments": [
+          {
+            "start_sec": 1.43,
+            "end_sec": 1.78,
+            "duration_sec": 0.35
+          },
+          {
+            "start_sec": 2.05,
+            "end_sec": 2.34,
+            "duration_sec": 0.29
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0029",
+        "nominal_gap_ms": 200,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.49,
+            "end_sec": 0.76,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 0.99,
+            "end_sec": 1.26,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 1.69,
+            "end_sec": 1.94,
+            "duration_sec": 0.25
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0030",
+        "nominal_gap_ms": 200,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 0.74,
+            "duration_sec": 0.35
+          },
+          {
+            "start_sec": 0.75,
+            "end_sec": 1.24,
+            "duration_sec": 0.49
+          },
+          {
+            "start_sec": 1.49,
+            "end_sec": 1.78,
+            "duration_sec": 0.29
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0031",
+        "nominal_gap_ms": 250,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.9,
+            "duration_sec": 0.55
+          },
+          {
+            "start_sec": 0.99,
+            "end_sec": 1.5,
+            "duration_sec": 0.51
+          },
+          {
+            "start_sec": 2.45,
+            "end_sec": 2.76,
+            "duration_sec": 0.31
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0032",
+        "nominal_gap_ms": 250,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.43,
+            "end_sec": 0.84,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 1.01,
+            "end_sec": 1.4,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 1.73,
+            "end_sec": 2.14,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 2.33,
+            "end_sec": 2.64,
+            "duration_sec": 0.31
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0033",
+        "nominal_gap_ms": 250,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.37,
+            "end_sec": 0.76,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 0.89,
+            "end_sec": 1.26,
+            "duration_sec": 0.37
+          },
+          {
+            "start_sec": 1.63,
+            "end_sec": 2.0,
+            "duration_sec": 0.37
+          },
+          {
+            "start_sec": 2.37,
+            "end_sec": 2.66,
+            "duration_sec": 0.29
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0034",
+        "nominal_gap_ms": 250,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 2,
+        "pred_segments": [
+          {
+            "start_sec": 0.37,
+            "end_sec": 0.84,
+            "duration_sec": 0.47
+          },
+          {
+            "start_sec": 1.03,
+            "end_sec": 1.58,
+            "duration_sec": 0.55
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0035",
+        "nominal_gap_ms": 250,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.19,
+            "end_sec": 0.66,
+            "duration_sec": 0.47
+          },
+          {
+            "start_sec": 0.89,
+            "end_sec": 1.14,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 1.98,
+            "duration_sec": 0.57
+          },
+          {
+            "start_sec": 2.13,
+            "end_sec": 2.52,
+            "duration_sec": 0.39
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0036",
+        "nominal_gap_ms": 250,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.37,
+            "end_sec": 0.84,
+            "duration_sec": 0.47
+          },
+          {
+            "start_sec": 1.67,
+            "end_sec": 2.06,
+            "duration_sec": 0.39
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0037",
+        "nominal_gap_ms": 250,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 1,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.85,
+            "end_sec": 1.16,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 1.41,
+            "end_sec": 1.78,
+            "duration_sec": 0.37
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0038",
+        "nominal_gap_ms": 250,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 0.68,
+            "duration_sec": 0.29
+          },
+          {
+            "start_sec": 0.89,
+            "end_sec": 1.16,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 1.17,
+            "end_sec": 1.7,
+            "duration_sec": 0.53
+          },
+          {
+            "start_sec": 1.85,
+            "end_sec": 2.2,
+            "duration_sec": 0.35
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0039",
+        "nominal_gap_ms": 250,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.45,
+            "end_sec": 0.84,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 0.97,
+            "end_sec": 1.4,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 1.55,
+            "end_sec": 1.82,
+            "duration_sec": 0.27
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0040",
+        "nominal_gap_ms": 250,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.98,
+            "duration_sec": 0.63
+          },
+          {
+            "start_sec": 1.89,
+            "end_sec": 2.22,
+            "duration_sec": 0.33
+          },
+          {
+            "start_sec": 2.37,
+            "end_sec": 2.66,
+            "duration_sec": 0.29
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0041",
+        "nominal_gap_ms": 300,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.37,
+            "end_sec": 0.78,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 0.95,
+            "end_sec": 1.46,
+            "duration_sec": 0.51
+          },
+          {
+            "start_sec": 1.63,
+            "end_sec": 1.94,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 2.27,
+            "end_sec": 2.64,
+            "duration_sec": 0.37
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0042",
+        "nominal_gap_ms": 300,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 0.66,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 1.56,
+            "duration_sec": 0.63
+          },
+          {
+            "start_sec": 1.73,
+            "end_sec": 2.16,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 2.33,
+            "end_sec": 2.86,
+            "duration_sec": 0.53
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0043",
+        "nominal_gap_ms": 300,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 0.8,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 0.97,
+            "end_sec": 1.44,
+            "duration_sec": 0.47
+          },
+          {
+            "start_sec": 1.81,
+            "end_sec": 2.32,
+            "duration_sec": 0.51
+          },
+          {
+            "start_sec": 2.53,
+            "end_sec": 2.8,
+            "duration_sec": 0.27
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0044",
+        "nominal_gap_ms": 300,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.37,
+            "end_sec": 0.76,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 1.32,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 1.49,
+            "end_sec": 1.74,
+            "duration_sec": 0.25
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0045",
+        "nominal_gap_ms": 300,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 0.64,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 0.93,
+            "end_sec": 1.2,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 1.57,
+            "end_sec": 1.96,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 2.23,
+            "end_sec": 2.64,
+            "duration_sec": 0.41
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0046",
+        "nominal_gap_ms": 300,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.37,
+            "end_sec": 0.78,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 1.17,
+            "end_sec": 1.44,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 1.65,
+            "end_sec": 1.98,
+            "duration_sec": 0.33
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0047",
+        "nominal_gap_ms": 300,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.43,
+            "end_sec": 0.7,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 0.87,
+            "end_sec": 1.18,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 1.57,
+            "end_sec": 1.96,
+            "duration_sec": 0.39
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0048",
+        "nominal_gap_ms": 300,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 1.05,
+            "end_sec": 1.36,
+            "duration_sec": 0.31
+          },
+          {
+            "start_sec": 1.67,
+            "end_sec": 2.06,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 2.33,
+            "end_sec": 2.6,
+            "duration_sec": 0.27
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0049",
+        "nominal_gap_ms": 300,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 1,
+        "n_missed": 2,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.45,
+            "end_sec": 0.86,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 1.01,
+            "end_sec": 1.9,
+            "duration_sec": 0.89
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0050",
+        "nominal_gap_ms": 300,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 0.84,
+            "duration_sec": 0.45
+          },
+          {
+            "start_sec": 1.03,
+            "end_sec": 1.3,
+            "duration_sec": 0.27
+          },
+          {
+            "start_sec": 1.71,
+            "end_sec": 2.1,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 2.33,
+            "end_sec": 2.64,
+            "duration_sec": 0.31
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0051",
+        "nominal_gap_ms": 400,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 0.96,
+            "duration_sec": 0.57
+          },
+          {
+            "start_sec": 1.23,
+            "end_sec": 1.64,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 1.99,
+            "end_sec": 2.24,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 2.89,
+            "end_sec": 3.28,
+            "duration_sec": 0.39
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0052",
+        "nominal_gap_ms": 400,
+        "condition": "clean",
+        "n_ref": 4,
+        "n_pred": 4,
+        "n_matched": 4,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.45,
+            "end_sec": 0.7,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 1.15,
+            "end_sec": 1.6,
+            "duration_sec": 0.45
+          },
+          {
+            "start_sec": 1.89,
+            "end_sec": 2.28,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 2.53,
+            "end_sec": 3.0,
+            "duration_sec": 0.47
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0053",
+        "nominal_gap_ms": 400,
+        "condition": "snr20",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 3,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 2,
+        "pred_segments": [
+          {
+            "start_sec": 0.35,
+            "end_sec": 0.82,
+            "duration_sec": 0.47
+          },
+          {
+            "start_sec": 1.93,
+            "end_sec": 2.32,
+            "duration_sec": 0.39
+          },
+          {
+            "start_sec": 2.87,
+            "end_sec": 3.14,
+            "duration_sec": 0.27
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0054",
+        "nominal_gap_ms": 400,
+        "condition": "snr20",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 3,
+        "n_missed": 0,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.39,
+            "end_sec": 0.84,
+            "duration_sec": 0.45
+          },
+          {
+            "start_sec": 1.15,
+            "end_sec": 1.58,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 1.87,
+            "end_sec": 2.3,
+            "duration_sec": 0.43
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0055",
+        "nominal_gap_ms": 400,
+        "condition": "snr15",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 2,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 1.11,
+            "end_sec": 1.36,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 1.89,
+            "end_sec": 2.3,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 2.67,
+            "end_sec": 3.04,
+            "duration_sec": 0.37
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0056",
+        "nominal_gap_ms": 400,
+        "condition": "snr15",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 1,
+        "pred_segments": [
+          {
+            "start_sec": 0.55,
+            "end_sec": 0.96,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 2.03,
+            "end_sec": 2.48,
+            "duration_sec": 0.45
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0057",
+        "nominal_gap_ms": 400,
+        "condition": "snr10",
+        "n_ref": 3,
+        "n_pred": 2,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 1.13,
+            "end_sec": 1.56,
+            "duration_sec": 0.43
+          },
+          {
+            "start_sec": 1.95,
+            "end_sec": 2.4,
+            "duration_sec": 0.45
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0058",
+        "nominal_gap_ms": 400,
+        "condition": "snr10",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.43,
+            "end_sec": 0.68,
+            "duration_sec": 0.25
+          },
+          {
+            "start_sec": 1.15,
+            "end_sec": 1.56,
+            "duration_sec": 0.41
+          },
+          {
+            "start_sec": 2.19,
+            "end_sec": 2.56,
+            "duration_sec": 0.37
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0059",
+        "nominal_gap_ms": 400,
+        "condition": "snr05",
+        "n_ref": 3,
+        "n_pred": 3,
+        "n_matched": 2,
+        "n_missed": 1,
+        "n_merges": 0,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.49,
+            "end_sec": 0.86,
+            "duration_sec": 0.37
+          },
+          {
+            "start_sec": 1.29,
+            "end_sec": 1.88,
+            "duration_sec": 0.59
+          },
+          {
+            "start_sec": 2.17,
+            "end_sec": 2.48,
+            "duration_sec": 0.31
+          }
+        ]
+      },
+      {
+        "sequence_id": "vad_dev_seq_0060",
+        "nominal_gap_ms": 400,
+        "condition": "snr05",
+        "n_ref": 4,
+        "n_pred": 3,
+        "n_matched": 1,
+        "n_missed": 3,
+        "n_merges": 1,
+        "n_premature_cuts": 0,
+        "pred_segments": [
+          {
+            "start_sec": 0.37,
+            "end_sec": 0.84,
+            "duration_sec": 0.47
+          },
+          {
+            "start_sec": 1.09,
+            "end_sec": 1.38,
+            "duration_sec": 0.29
+          },
+          {
+            "start_sec": 1.91,
+            "end_sec": 3.12,
+            "duration_sec": 1.21
+          }
+        ]
+      }
+    ]
+  }
+}

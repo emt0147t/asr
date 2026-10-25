@@ -1,0 +1,225 @@
+{
+  "verdict": "CONFIRMATORY_CRITERIA_PASSED",
+  "all_criteria_passed": true,
+  "eval_timestamp": "2026-10-19T14:02:24Z",
+  "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+  "manifest_csv_sha256": "b22e8f7f955fcccf2436ba1b11c61c7f02f528e9aa834f1f5e85a61d1e0f99c3",
+  "operating_threshold": 0.2,
+  "total_clips": 1000,
+  "overall_accuracy": 0.992,
+  "overall_accuracy_count": "992/1000",
+  "overall_accuracy_ci_95": [
+    0.9843,
+    0.9959
+  ],
+  "aggregate_command_recall": 0.99,
+  "aggregate_command_recall_count": "198/200",
+  "aggregate_command_recall_ci_95": [
+    0.9643,
+    0.9973
+  ],
+  "command_metrics": {
+    "TRAI": {
+      "total_clips": 50,
+      "true_positives": 49,
+      "false_negatives": 1,
+      "false_positives": 0,
+      "recall": 0.98,
+      "recall_ci_95": [
+        0.895,
+        0.9965
+      ],
+      "precision": 1.0,
+      "precision_ci_95": [
+        0.9273,
+        1.0
+      ],
+      "passed_target_95": true
+    },
+    "PHAI": {
+      "total_clips": 50,
+      "true_positives": 50,
+      "false_negatives": 0,
+      "false_positives": 3,
+      "recall": 1.0,
+      "recall_ci_95": [
+        0.9287,
+        1.0
+      ],
+      "precision": 0.9434,
+      "precision_ci_95": [
+        0.8463,
+        0.9806
+      ],
+      "passed_target_95": true
+    },
+    "LEN": {
+      "total_clips": 50,
+      "true_positives": 49,
+      "false_negatives": 1,
+      "false_positives": 1,
+      "recall": 0.98,
+      "recall_ci_95": [
+        0.895,
+        0.9965
+      ],
+      "precision": 0.98,
+      "precision_ci_95": [
+        0.895,
+        0.9965
+      ],
+      "passed_target_95": true
+    },
+    "XUONG": {
+      "total_clips": 50,
+      "true_positives": 50,
+      "false_negatives": 0,
+      "false_positives": 4,
+      "recall": 1.0,
+      "recall_ci_95": [
+        0.9287,
+        1.0
+      ],
+      "precision": 0.9259,
+      "precision_ci_95": [
+        0.8245,
+        0.9708
+      ],
+      "passed_target_95": true
+    }
+  },
+  "non_target_far": 0.0075,
+  "non_target_false_alarms": "6/800",
+  "non_target_far_ci_95": [
+    0.0034,
+    0.0163
+  ],
+  "category_far_breakdown": {
+    "phonetic_minimal_pairs": {
+      "total_clips": 200,
+      "false_accepts": 0,
+      "true_rejects": 200,
+      "far": 0.0,
+      "far_ci_95": [
+        0.0,
+        0.0188
+      ]
+    },
+    "syntactic_carrier_collisions": {
+      "total_clips": 200,
+      "false_accepts": 3,
+      "true_rejects": 197,
+      "far": 0.015,
+      "far_ci_95": [
+        0.0051,
+        0.0432
+      ]
+    },
+    "general_conversational_non_targets": {
+      "total_clips": 300,
+      "false_accepts": 3,
+      "true_rejects": 297,
+      "far": 0.01,
+      "far_ci_95": [
+        0.0034,
+        0.029
+      ]
+    },
+    "acoustic_background_and_silence": {
+      "total_clips": 100,
+      "false_accepts": 0,
+      "true_rejects": 100,
+      "far": 0.0,
+      "far_ci_95": [
+        0.0,
+        0.037
+      ]
+    }
+  },
+  "confusion_matrix": {
+    "TRAI": {
+      "TRAI": 49,
+      "PHAI": 1,
+      "LEN": 0,
+      "XUONG": 0,
+      "REJECT": 0
+    },
+    "PHAI": {
+      "TRAI": 0,
+      "PHAI": 50,
+      "LEN": 0,
+      "XUONG": 0,
+      "REJECT": 0
+    },
+    "LEN": {
+      "TRAI": 0,
+      "PHAI": 1,
+      "LEN": 49,
+      "XUONG": 0,
+      "REJECT": 0
+    },
+    "XUONG": {
+      "TRAI": 0,
+      "PHAI": 0,
+      "LEN": 0,
+      "XUONG": 50,
+      "REJECT": 0
+    },
+    "REJECT": {
+      "TRAI": 0,
+      "PHAI": 1,
+      "LEN": 1,
+      "XUONG": 4,
+      "REJECT": 794
+    }
+  },
+  "cpu_latency_ms": {
+    "mean": 1.8,
+    "median": 1.67,
+    "p95": 2.12,
+    "max": 58.85
+  },
+  "acceptance_criteria_evaluation": {
+    "trai_recall_ge_95": {
+      "actual": 0.98,
+      "target": 0.95,
+      "passed": true
+    },
+    "phai_recall_ge_95": {
+      "actual": 1.0,
+      "target": 0.95,
+      "passed": true
+    },
+    "len_recall_ge_95": {
+      "actual": 0.98,
+      "target": 0.95,
+      "passed": true
+    },
+    "xuong_recall_ge_95": {
+      "actual": 1.0,
+      "target": 0.95,
+      "passed": true
+    },
+    "macro_cmd_recall_ge_95": {
+      "actual": 0.99,
+      "target": 0.95,
+      "passed": true
+    },
+    "non_target_far_le_05": {
+      "actual": 0.0075,
+      "target": 0.05,
+      "passed": true
+    },
+    "overall_accuracy_ge_95": {
+      "actual": 0.992,
+      "target": 0.95,
+      "passed": true
+    },
+    "latency_mean_p95_le_50ms": {
+      "mean_actual": 1.8,
+      "p95_actual": 2.12,
+      "target": 50.0,
+      "passed": true
+    }
+  }
+}

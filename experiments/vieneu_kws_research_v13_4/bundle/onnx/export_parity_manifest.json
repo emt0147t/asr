@@ -1,0 +1,80 @@
+{
+  "status": "ONNX_PARITY_VERIFIED",
+  "checkpoint_source": "variant_v11_hard_negative_weighted_seed42.pt",
+  "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+  "onnx_model_file": "vietnamese_kws_v11.onnx",
+  "onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+  "onnx_opset": 17,
+  "tolerance": 0.0001,
+  "max_logits_diff_observed": 3.5762786865234375e-06,
+  "max_probs_diff_observed": 8.940696716308594e-07,
+  "dev_fixtures_evaluated": 8,
+  "all_fixtures_passed": true,
+  "fixtures": [
+    {
+      "fixture": "dev_01_digital_silence.wav",
+      "max_abs_diff_logits": 3.5762786865234375e-06,
+      "max_abs_diff_probs": 8.940696716308594e-07,
+      "prediction_pytorch": "REJECT",
+      "prediction_onnx": "REJECT",
+      "parity_passed": true
+    },
+    {
+      "fixture": "dev_02_quiet_ambient_room.wav",
+      "max_abs_diff_logits": 7.152557373046875e-07,
+      "max_abs_diff_probs": 4.6566128730773926e-09,
+      "prediction_pytorch": "REJECT",
+      "prediction_onnx": "REJECT",
+      "parity_passed": true
+    },
+    {
+      "fixture": "dev_03_attenuated_trai_peak010.wav",
+      "max_abs_diff_logits": 1.6689300537109375e-06,
+      "max_abs_diff_probs": 2.980232238769531e-07,
+      "prediction_pytorch": "REJECT",
+      "prediction_onnx": "REJECT",
+      "parity_passed": true
+    },
+    {
+      "fixture": "dev_04_attenuated_phai_peak005.wav",
+      "max_abs_diff_logits": 1.6689300537109375e-06,
+      "max_abs_diff_probs": 2.384185791015625e-07,
+      "prediction_pytorch": "REJECT",
+      "prediction_onnx": "REJECT",
+      "parity_passed": true
+    },
+    {
+      "fixture": "dev_05_normal_len_peak089.wav",
+      "max_abs_diff_logits": 1.8775463104248047e-06,
+      "max_abs_diff_probs": 4.76837158203125e-07,
+      "prediction_pytorch": "XUONG",
+      "prediction_onnx": "XUONG",
+      "parity_passed": true
+    },
+    {
+      "fixture": "dev_06_normal_xuong_peak089.wav",
+      "max_abs_diff_logits": 1.4901161193847656e-06,
+      "max_abs_diff_probs": 3.5762786865234375e-07,
+      "prediction_pytorch": "XUONG",
+      "prediction_onnx": "XUONG",
+      "parity_passed": true
+    },
+    {
+      "fixture": "dev_07_high_amplitude_trai_peak180.wav",
+      "max_abs_diff_logits": 1.5944242477416992e-06,
+      "max_abs_diff_probs": 3.427267074584961e-07,
+      "prediction_pytorch": "LEN",
+      "prediction_onnx": "LEN",
+      "parity_passed": true
+    },
+    {
+      "fixture": "dev_08_high_amplitude_xuong_peak250.wav",
+      "max_abs_diff_logits": 1.9073486328125e-06,
+      "max_abs_diff_probs": 5.066394805908203e-07,
+      "prediction_pytorch": "XUONG",
+      "prediction_onnx": "XUONG",
+      "parity_passed": true
+    }
+  ],
+  "export_timestamp": "2026-10-19T14:14:50Z"
+}

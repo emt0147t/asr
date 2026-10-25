@@ -1,0 +1,178 @@
+{
+  "variant_a_cascade_v1": {
+    "seed42": {
+      "macro_recall": 0.7937,
+      "false_rejection_rate": 0.2063,
+      "false_acceptance_rate": 0.045,
+      "rejection_rate": 0.955,
+      "per_keyword_recall": {
+        "TRAI": 0.9,
+        "PHAI": 0.775,
+        "LEN": 0.75,
+        "XUONG": 0.75
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed43": {
+      "macro_recall": 0.7063,
+      "false_rejection_rate": 0.2937,
+      "false_acceptance_rate": 0.05,
+      "rejection_rate": 0.95,
+      "per_keyword_recall": {
+        "TRAI": 0.825,
+        "PHAI": 0.625,
+        "LEN": 0.725,
+        "XUONG": 0.65
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed44": {
+      "macro_recall": 0.875,
+      "false_rejection_rate": 0.125,
+      "false_acceptance_rate": 0.05,
+      "rejection_rate": 0.95,
+      "per_keyword_recall": {
+        "TRAI": 0.95,
+        "PHAI": 0.85,
+        "LEN": 0.85,
+        "XUONG": 0.85
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    }
+  },
+  "variant_b_standard_bounded_cnn": {
+    "seed42": {
+      "macro_recall": 0.1187,
+      "false_rejection_rate": 0.8812,
+      "false_acceptance_rate": 0.0,
+      "rejection_rate": 1.0,
+      "per_keyword_recall": {
+        "TRAI": 0.0,
+        "PHAI": 0.0,
+        "LEN": 0.0,
+        "XUONG": 0.475
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed43": {
+      "macro_recall": 0.0312,
+      "false_rejection_rate": 0.9688,
+      "false_acceptance_rate": 0.0,
+      "rejection_rate": 1.0,
+      "per_keyword_recall": {
+        "TRAI": 0.0,
+        "PHAI": 0.125,
+        "LEN": 0.0,
+        "XUONG": 0.0
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed44": {
+      "macro_recall": 0.7063,
+      "false_rejection_rate": 0.2937,
+      "false_acceptance_rate": 0.05,
+      "rejection_rate": 0.95,
+      "per_keyword_recall": {
+        "TRAI": 0.225,
+        "PHAI": 0.85,
+        "LEN": 0.925,
+        "XUONG": 0.825
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    }
+  },
+  "variant_c_hard_negative_ablation": {
+    "seed42": {
+      "macro_recall": 0.4313,
+      "false_rejection_rate": 0.5687,
+      "false_acceptance_rate": 0.025,
+      "rejection_rate": 0.975,
+      "per_keyword_recall": {
+        "TRAI": 0.5,
+        "PHAI": 0.4,
+        "LEN": 0.05,
+        "XUONG": 0.775
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed43": {
+      "macro_recall": 0.8187,
+      "false_rejection_rate": 0.1813,
+      "false_acceptance_rate": 0.05,
+      "rejection_rate": 0.95,
+      "per_keyword_recall": {
+        "TRAI": 0.525,
+        "PHAI": 0.85,
+        "LEN": 1.0,
+        "XUONG": 0.9
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed44": {
+      "macro_recall": 0.3937,
+      "false_rejection_rate": 0.6062,
+      "false_acceptance_rate": 0.035,
+      "rejection_rate": 0.965,
+      "per_keyword_recall": {
+        "TRAI": 0.0,
+        "PHAI": 0.025,
+        "LEN": 0.625,
+        "XUONG": 0.925
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    }
+  },
+  "variant_d_stage1_cnn": {
+    "seed42": {
+      "macro_recall": 0.7188,
+      "false_rejection_rate": 0.2812,
+      "false_acceptance_rate": 0.075,
+      "rejection_rate": 0.925,
+      "per_keyword_recall": {
+        "TRAI": 0.7,
+        "PHAI": 0.5,
+        "LEN": 0.775,
+        "XUONG": 0.9
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed43": {
+      "macro_recall": 0.5563,
+      "false_rejection_rate": 0.4437,
+      "false_acceptance_rate": 0.08,
+      "rejection_rate": 0.92,
+      "per_keyword_recall": {
+        "TRAI": 0.525,
+        "PHAI": 0.4,
+        "LEN": 0.575,
+        "XUONG": 0.725
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    },
+    "seed44": {
+      "macro_recall": 0.7063,
+      "false_rejection_rate": 0.2937,
+      "false_acceptance_rate": 0.115,
+      "rejection_rate": 0.885,
+      "per_keyword_recall": {
+        "TRAI": 0.8,
+        "PHAI": 0.425,
+        "LEN": 0.775,
+        "XUONG": 0.825
+      },
+      "all_keywords_ge_95": false,
+      "meets_strict_criteria": false
+    }
+  }
+}

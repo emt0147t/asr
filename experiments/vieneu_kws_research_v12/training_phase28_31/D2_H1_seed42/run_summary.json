@@ -1,0 +1,55 @@
+{
+  "condition": "D2_H1",
+  "seed": 42,
+  "factor_d": "D2",
+  "factor_h": "H1",
+  "best_epoch": 26,
+  "best_val_macro_f1": 0.93884,
+  "best_metrics": {
+    "val_loss": 0.1806874490197515,
+    "val_accuracy": 0.9390625,
+    "val_macro_f1": 0.9388403357430594,
+    "overall_macro_f1": 0.939098158562085,
+    "per_class": {
+      "TRAI": {
+        "precision": 0.9503105590062112,
+        "recall": 0.95625,
+        "f1": 0.9532710280373832,
+        "support": 160
+      },
+      "PHAI": {
+        "precision": 0.8235294117647058,
+        "recall": 0.9625,
+        "f1": 0.8876080691642652,
+        "support": 160
+      },
+      "LEN": {
+        "precision": 0.927710843373494,
+        "recall": 0.9625,
+        "f1": 0.9447852760736196,
+        "support": 160
+      },
+      "XUONG": {
+        "precision": 0.9411764705882353,
+        "recall": 1.0,
+        "f1": 0.9696969696969697,
+        "support": 160
+      },
+      "REJECT": {
+        "precision": 0.9748322147651006,
+        "recall": 0.9078125,
+        "f1": 0.9401294498381877,
+        "support": 640
+      }
+    }
+  },
+  "total_epochs": 34,
+  "duration_seconds": 283.45,
+  "checkpoint_path": "experiments/vieneu_kws_research_v12/training_phase28_31/D2_H1_seed42/best_model.pt",
+  "checkpoint_sha256": "c6102b4876ddeaa453547c211c5cfc322511c957e18fd488a705a164b18601c8",
+  "train_manifest_sha256": "e7498be782afbdde8e2a29b4092ad1359f2ce689da79317fd9e4505afe010b0b",
+  "val_manifest_sha256": "5af8cf9daa96526cba1a742d1e18982cd4c1ed291dc17d139a8d82bf1cb06682",
+  "model_architecture": "CorrectedVietnameseKWSNet",
+  "total_parameters": 138469,
+  "inference_theta_cmd": 0.2
+}

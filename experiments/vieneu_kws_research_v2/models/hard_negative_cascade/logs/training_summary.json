@@ -1,0 +1,14 @@
+{
+  "seed42": {
+    "stage1_checkpoint": "experiments/vieneu_kws_research_v2/models/hard_negative_cascade/checkpoints/stage1_retrained_seed42.pt",
+    "stage2_checkpoint": "experiments/vieneu_kws_research_v2/models/hard_negative_cascade/checkpoints/stage2_retrained_seed42.pt"
+  },
+  "seed43": {
+    "stage1_checkpoint": "experiments/vieneu_kws_research_v2/models/hard_negative_cascade/checkpoints/stage1_retrained_seed43.pt",
+    "stage2_checkpoint": "experiments/vieneu_kws_research_v2/models/hard_negative_cascade/checkpoints/stage2_retrained_seed43.pt"
+  },
+  "seed44": {
+    "stage1_checkpoint": "experiments/vieneu_kws_research_v2/models/hard_negative_cascade/checkpoints/stage1_retrained_seed44.pt",
+    "stage2_checkpoint": "experiments/vieneu_kws_research_v2/models/hard_negative_cascade/checkpoints/stage2_retrained_seed44.pt"
+  }
+}

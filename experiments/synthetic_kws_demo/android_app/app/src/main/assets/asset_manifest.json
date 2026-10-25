@@ -1,0 +1,101 @@
+{
+  "manifest_version": "1.0.0",
+  "package_name": "com.example.synthetic_kws",
+  "governance": "HUMAN DATA COLLECTION REMAINS STRICTLY BLOCKED. Offline synthetic fixtures only.",
+  "model_asset": {
+    "filename": "arm_b_tcresnet14.onnx",
+    "relative_path": "models/arm_b_tcresnet14.onnx",
+    "sha256": "8A5AC4C105DF52F1749AE11B6BB2124B3A672486601EFF308ACC7E257FF97625",
+    "format": "ONNX Opset 17",
+    "input_node": "log_mel",
+    "input_shape": [
+      1,
+      1,
+      40,
+      101
+    ],
+    "output_nodes": [
+      "logits",
+      "probabilities"
+    ]
+  },
+  "audio_fixtures": [
+    {
+      "filename": "case_01_trai_demo.wav",
+      "relative_path": "audio/case_01_trai_demo.wav",
+      "file_size_bytes": 32044,
+      "sha256": "3DBEDBEB636F448E14606CB4D829955C9B3230A3F29F82CA69C044EAD7593F24",
+      "is_malformed_test": false
+    },
+    {
+      "filename": "case_02_phai_demo.wav",
+      "relative_path": "audio/case_02_phai_demo.wav",
+      "file_size_bytes": 32044,
+      "sha256": "05908190E6F1ABA0AA199F1F5A055928771B5383161DEC7E5057135AC0481FF8",
+      "is_malformed_test": false
+    },
+    {
+      "filename": "case_03_len_demo.wav",
+      "relative_path": "audio/case_03_len_demo.wav",
+      "file_size_bytes": 32044,
+      "sha256": "6EF28010BDF3BA9813F50D7FFB1C4653CD1EB687217072D772BA883537FCA0A1",
+      "is_malformed_test": false
+    },
+    {
+      "filename": "case_04_xuong_demo.wav",
+      "relative_path": "audio/case_04_xuong_demo.wav",
+      "file_size_bytes": 32044,
+      "sha256": "AB0E2171C882705CEE702F2D7F0FCFAAEE77562444E10438ED462B499A9B6FC2",
+      "is_malformed_test": false
+    },
+    {
+      "filename": "case_05_unknown_demo.wav",
+      "relative_path": "audio/case_05_unknown_demo.wav",
+      "file_size_bytes": 32044,
+      "sha256": "A79224CE02A2858A0B2DB79F55A2AA8995D6AE8EBEAFEB93C4DD1B2B1AF41432",
+      "is_malformed_test": false
+    },
+    {
+      "filename": "case_06_silence_demo.wav",
+      "relative_path": "audio/case_06_silence_demo.wav",
+      "file_size_bytes": 32044,
+      "sha256": "FAC98B0B565064B39472EC0B10A6E05EAC279C40A58391C20D40536AE29EAE3B",
+      "is_malformed_test": false
+    },
+    {
+      "filename": "case_09_silence_pure_zeros.wav",
+      "relative_path": "audio/case_09_silence_pure_zeros.wav",
+      "file_size_bytes": 32044,
+      "sha256": "643F8A8DC8BD9C19225AFFFAD2BECFEC5426180B3749CB208ABDF1A6C8354EFC",
+      "is_malformed_test": false
+    },
+    {
+      "filename": "case_10_low_amplitude_ambient.wav",
+      "relative_path": "audio/case_10_low_amplitude_ambient.wav",
+      "file_size_bytes": 32044,
+      "sha256": "76FAADDF699098E0EE2380664DA33EAB5C94F9EA88B7A1F9D71D747EF203B105",
+      "is_malformed_test": false
+    },
+    {
+      "filename": "case_11_transient_impulse.wav",
+      "relative_path": "audio/case_11_transient_impulse.wav",
+      "file_size_bytes": 32044,
+      "sha256": "D048C6B8A3286CF0B54F32790A893F462AD1788A0B6781B627F95F852696214E",
+      "is_malformed_test": false
+    },
+    {
+      "filename": "case_12_holdout_trai_native.wav",
+      "relative_path": "audio/case_12_holdout_trai_native.wav",
+      "file_size_bytes": 32044,
+      "sha256": "BAFD3436C66CA3D617F27DA3C71E2DAEDB4BB629A9C6F8DDA5F17AE5D1460BF4",
+      "is_malformed_test": false
+    },
+    {
+      "filename": "invalid_stereo.wav",
+      "relative_path": "audio/invalid_stereo.wav",
+      "file_size_bytes": 64044,
+      "sha256": "87E3EBEDC794DEF802B0EB43738D2ED5F9CD25E6B616AA977FEE3DF96ABAFF1C",
+      "is_malformed_test": true
+    }
+  ]
+}

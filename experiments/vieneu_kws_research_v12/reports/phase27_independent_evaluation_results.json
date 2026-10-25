@@ -1,0 +1,365 @@
+{
+  "Phase26_Candidate_D0_H1_seed44": {
+    "checkpoint_path": "experiments/vieneu_kws_research_v12/candidates/phase26_candidate_d0_h1_seed44/candidate_checkpoint.pt",
+    "isolated_metrics": {
+      "macro_f1": 0.6034632034632035,
+      "accuracy": 0.7098214285714286,
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          7,
+          1
+        ],
+        [
+          2,
+          8,
+          50,
+          0,
+          132
+        ]
+      ],
+      "per_class": {
+        "TRAI": {
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285714,
+          "support": 8
+        },
+        "PHAI": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 8
+        },
+        "LEN": {
+          "precision": 0.13793103448275862,
+          "recall": 1.0,
+          "f1": 0.24242424242424243,
+          "support": 8
+        },
+        "XUONG": {
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333,
+          "support": 8
+        },
+        "REJECT": {
+          "precision": 0.9635036496350365,
+          "recall": 0.6875,
+          "f1": 0.8024316109422492,
+          "support": 192
+        }
+      },
+      "oov_total": 192,
+      "oov_fa_count": 60,
+      "oov_fa_rate": 0.3125,
+      "phonetic_oov_fa_count": 39,
+      "phonetic_oov_total": 112,
+      "phonetic_oov_fa_rate": 0.3482142857142857,
+      "general_oov_fa_count": 21,
+      "general_oov_total": 80,
+      "general_oov_fa_rate": 0.2625,
+      "snr_breakdown": {
+        "clean": {
+          "macro_f1": 0.6833333333333333,
+          "accuracy": 0.7678571428571429,
+          "oov_fa_rate": 0.25
+        }
+      },
+      "voice_breakdown": {
+        "vi-VN-HoaiMyNeural": {
+          "macro_f1": 0.4920634920634921,
+          "accuracy": 0.6964285714285714,
+          "oov_fa_rate": 0.3020833333333333
+        },
+        "vi-VN-NamMinhNeural": {
+          "macro_f1": 0.65,
+          "accuracy": 0.7232142857142857,
+          "oov_fa_rate": 0.3229166666666667
+        }
+      }
+    },
+    "streaming_metrics": {
+      "exact_sequence_accuracy": 0.0,
+      "exact_sequence_matches": 0,
+      "total_sequences": 100,
+      "event_precision": 0.33800186741363214,
+      "event_recall": 0.900497512437811,
+      "event_f1": 0.49151391717583165,
+      "total_gt_commands": 402,
+      "total_detected_commands": 1071,
+      "true_positive_commands": 362,
+      "oov_false_activations": 149,
+      "silence_noise_false_activations": 560,
+      "fa_per_minute_oov": 92.65775397189802,
+      "fa_per_minute_silence": 53.28109354687265,
+      "latency_p50_s": 0.3458000000000001,
+      "latency_p95_s": 0.6747449999999998
+    }
+  },
+  "Baseline_E1_seed42": {
+    "checkpoint_path": "experiments/vieneu_kws_research_v12/checkpoints/exp_v12_e1_baseline_scale_seed42.pt",
+    "isolated_metrics": {
+      "macro_f1": 0.517156862745098,
+      "accuracy": 0.6294642857142857,
+      "confusion_matrix": [
+        [
+          7,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          13,
+          12,
+          52,
+          5,
+          110
+        ]
+      ],
+      "per_class": {
+        "TRAI": {
+          "precision": 0.35,
+          "recall": 0.875,
+          "f1": 0.5,
+          "support": 8
+        },
+        "PHAI": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "f1": 0.5714285714285714,
+          "support": 8
+        },
+        "LEN": {
+          "precision": 0.13333333333333333,
+          "recall": 1.0,
+          "f1": 0.23529411764705882,
+          "support": 8
+        },
+        "XUONG": {
+          "precision": 0.6153846153846154,
+          "recall": 1.0,
+          "f1": 0.7619047619047619,
+          "support": 8
+        },
+        "REJECT": {
+          "precision": 0.990990990990991,
+          "recall": 0.5729166666666666,
+          "f1": 0.7260726072607261,
+          "support": 192
+        }
+      },
+      "oov_total": 192,
+      "oov_fa_count": 82,
+      "oov_fa_rate": 0.4270833333333333,
+      "phonetic_oov_fa_count": 55,
+      "phonetic_oov_total": 112,
+      "phonetic_oov_fa_rate": 0.49107142857142855,
+      "general_oov_fa_count": 27,
+      "general_oov_total": 80,
+      "general_oov_fa_rate": 0.3375,
+      "snr_breakdown": {
+        "clean": {
+          "macro_f1": 0.5809523809523809,
+          "accuracy": 0.7142857142857143,
+          "oov_fa_rate": 0.3333333333333333
+        }
+      },
+      "voice_breakdown": {
+        "vi-VN-HoaiMyNeural": {
+          "macro_f1": 0.5581002331002332,
+          "accuracy": 0.625,
+          "oov_fa_rate": 0.4270833333333333
+        },
+        "vi-VN-NamMinhNeural": {
+          "macro_f1": 0.5050766283524903,
+          "accuracy": 0.6339285714285714,
+          "oov_fa_rate": 0.4270833333333333
+        }
+      }
+    },
+    "streaming_metrics": {
+      "exact_sequence_accuracy": 0.0,
+      "exact_sequence_matches": 0,
+      "total_sequences": 100,
+      "event_precision": 0.3369656328583403,
+      "event_recall": 1.0,
+      "event_f1": 0.5040752351097179,
+      "total_gt_commands": 402,
+      "total_detected_commands": 1193,
+      "true_positive_commands": 402,
+      "oov_false_activations": 185,
+      "silence_noise_false_activations": 606,
+      "fa_per_minute_oov": 115.04486231410156,
+      "fa_per_minute_silence": 57.65775480250861,
+      "latency_p50_s": 0.38445000000000007,
+      "latency_p95_s": 0.6140199999999997
+    }
+  },
+  "Baseline_v11_seed42": {
+    "checkpoint_path": "experiments/vieneu_kws_research_v13_4/bundle/checkpoint/variant_v11_hard_negative_weighted_seed42.pt",
+    "isolated_metrics": {
+      "macro_f1": 0.32681376898585524,
+      "accuracy": 0.3169642857142857,
+      "confusion_matrix": [
+        [
+          3,
+          4,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          7,
+          1
+        ],
+        [
+          9,
+          48,
+          82,
+          8,
+          45
+        ]
+      ],
+      "per_class": {
+        "TRAI": {
+          "precision": 0.25,
+          "recall": 0.375,
+          "f1": 0.3,
+          "support": 8
+        },
+        "PHAI": {
+          "precision": 0.13333333333333333,
+          "recall": 1.0,
+          "f1": 0.23529411764705882,
+          "support": 8
+        },
+        "LEN": {
+          "precision": 0.08888888888888889,
+          "recall": 1.0,
+          "f1": 0.16326530612244897,
+          "support": 8
+        },
+        "XUONG": {
+          "precision": 0.4666666666666667,
+          "recall": 0.875,
+          "f1": 0.6086956521739131,
+          "support": 8
+        },
+        "REJECT": {
+          "precision": 0.9574468085106383,
+          "recall": 0.234375,
+          "f1": 0.37656903765690375,
+          "support": 192
+        }
+      },
+      "oov_total": 192,
+      "oov_fa_count": 147,
+      "oov_fa_rate": 0.765625,
+      "phonetic_oov_fa_count": 81,
+      "phonetic_oov_total": 112,
+      "phonetic_oov_fa_rate": 0.7232142857142857,
+      "general_oov_fa_count": 66,
+      "general_oov_total": 80,
+      "general_oov_fa_rate": 0.825,
+      "snr_breakdown": {
+        "clean": {
+          "macro_f1": 0.25969169719169716,
+          "accuracy": 0.125,
+          "oov_fa_rate": 1.0
+        }
+      },
+      "voice_breakdown": {
+        "vi-VN-HoaiMyNeural": {
+          "macro_f1": 0.2875,
+          "accuracy": 0.29464285714285715,
+          "oov_fa_rate": 0.7708333333333334
+        },
+        "vi-VN-NamMinhNeural": {
+          "macro_f1": 0.34573934837092735,
+          "accuracy": 0.3392857142857143,
+          "oov_fa_rate": 0.7604166666666666
+        }
+      }
+    },
+    "streaming_metrics": {
+      "exact_sequence_accuracy": 0.0,
+      "exact_sequence_matches": 0,
+      "total_sequences": 100,
+      "event_precision": 0.20683343502135448,
+      "event_recall": 0.8432835820895522,
+      "event_f1": 0.33219010289073986,
+      "total_gt_commands": 402,
+      "total_detected_commands": 1639,
+      "true_positive_commands": 339,
+      "oov_false_activations": 389,
+      "silence_noise_false_activations": 911,
+      "fa_per_minute_oov": 241.90514291992167,
+      "fa_per_minute_silence": 86.67692182357318,
+      "latency_p50_s": 0.2873999999999999,
+      "latency_p95_s": 0.6294299999999997
+    }
+  }
+}

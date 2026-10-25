@@ -1,0 +1,409 @@
+[airflow_pink]
+[hvac_hum]
+[near_silence]
+[office_ambient]
+[silence]
+bay lên
+biết
+buôn bán
+buông
+bài
+bài ca
+bài học
+bái
+bái lạy
+bái phục
+bán
+báo thức
+bây giờ là mấy giờ
+bãi cát
+bèn hỏi
+bên phải
+bên trái
+bước lên
+bước xuống
+bải
+bải buôi
+bải hoải
+bản đồ
+bảo mật
+bật
+bật đèn phòng ngủ
+bắt buộc phải
+bắt đầu
+bỏ qua
+chen
+chia sẻ
+chuông
+chài lưới
+chào
+chái
+chén trà
+chạy
+chải chuốt
+chảy xuống
+chọn
+chọn lọc
+chớm nở
+chụp một bức ảnh
+con trai
+cuộc gọi
+cuộn len
+cài đặt
+cân
+công nghệ
+cảm ơn
+cảm ơn nhiều
+cứu
+cửa sổ
+dài
+dài ngoằng
+dòng xuồng
+dưỡng
+dẫn đường về nhà
+dịu dàng
+dừng
+ghi chú
+ghi chú lại việc này
+giải phóng
+giảm âm thanh đi
+gái
+gái quê
+gái đảm
+gãi
+gãi ngứa
+gãi đầu
+gặp
+gọi điện cho mẹ
+gửi tin nhắn
+gửi đi
+hiểu
+hoàn thành
+hát
+hôm nay
+hướng
+hướng phải
+hướng trái
+hưởng
+hạ xuống
+hải
+hải sản
+hải đảo
+hẹn
+hẹn giờ mười lăm phút
+hẹn gặp lại
+hệ thống
+hỏi
+hủy
+hủy bỏ
+hủy bỏ lịch trình
+khen
+khóa
+khóa cửa chính
+không
+không phải
+khải
+khởi động lại hệ thống
+kiểm tra email
+kết nối
+kết thúc
+lao
+leng
+leo lên
+lo
+lu
+luôn
+luồng
+làm
+làm lại
+làm quen
+làm ơn giúp tôi
+làng
+lá
+lái
+lái tàu
+lái xe
+lèn
+lèn đá
+lén
+lén lút
+lên
+lên kế hoạch
+lên lớp
+lên đường
+lòng
+lùi
+lúc
+lưng
+lưu
+lưu tài liệu
+lưỡng
+lưỡng lự
+lược
+lạc
+lại
+lấy
+lẹn
+lẻn
+lẻn vào
+lẽn
+lệnh
+lịch hẹn
+lịch làm việc
+lớp
+lớp học
+lời
+lửa
+lực
+lực lượng
+men
+men bia
+men say
+mua
+mài
+mài dao
+mài dũa
+mái
+máy giặt
+máy tính
+mãi mãi
+mải
+mở
+mở nhạc acoustic
+mở ứng dụng
+nem
+nem chua
+nem rán
+nghe
+nghẽn mạng
+ngải
+ngải cứu
+ngải đắng
+ngồi xuống
+ngủ
+nhiệt độ
+nhà bếp
+nhà xưởng
+nhìn xuống
+nhường
+nhảy lên
+nhận tin
+nhập
+nhắc nhở
+nhẹ nhàng
+nhớ
+nén
+nói
+nổi lên
+pha
+phai
+phai mờ
+phay
+phi
+phim
+phài
+phàn
+phái
+phái đoàn
+pháo
+pháp
+phát
+phát triển
+phân phái
+phãi
+phép
+phím
+phòng
+phòng khách
+phóng
+phôi pha
+phôi phai
+phú
+phút
+phại
+phạt
+phải
+phải biết
+phải chăng
+phải lòng
+phấn
+phần
+phần mềm
+phố
+phở
+phục
+quay
+quay lại
+quen
+quen thuộc
+quê hương
+quên
+quạt gió
+ra
+ren
+rơi xuống
+rẽ phải
+rẽ trái
+rộn ràng
+sen
+sen hồng
+sen trắng
+sài gòn
+sái
+sâu lắng
+sương
+sườn
+sợi len
+tay phải
+tay trái
+thong thả
+thu
+thái
+thông báo
+thông minh
+thải
+thảm hại
+thời gian phai
+thời tiết
+thời tiết hôm nay
+thời tiết thế nào
+thức
+ti vi
+tin nhắn
+tin tức buổi sáng
+tiến lên
+tiếp tục
+tra
+trai
+trang
+trang chủ
+trong trẻo
+trà
+trài
+trách
+trách móc
+trái
+trái cây
+trái mùa
+trái ngược
+trái phiếu
+trái tim
+tráng
+tráo
+trát
+trát tường
+trâu
+trãi
+trãi nghiệm
+tròn
+tròn trĩnh
+trông
+trĩ
+trưa
+trước
+trường
+trượt xuống
+trại
+trại giam
+trại nuôi
+trạm
+trải
+trải dài
+trải nghiệm
+trầm ấm
+trắng
+trẻ
+trời
+trở lại
+trợ giúp
+trợ lý
+trụ
+tài khoản
+tìm
+tìm kiếm
+tăng độ sáng lên chút
+tươi vui
+tường
+tạm biệt
+tạm biệt nhé
+tải
+tải trọng
+tải về
+tắt
+tắt máy lạnh
+tủ lạnh
+từ chối
+uống
+viết
+vuông
+vào
+vương
+vương giả
+vải
+vải thiều
+vải vóc
+vội vã
+xa
+xanh
+xe
+xem
+xem lại
+xem xét
+xen
+xen kẽ
+xin chào
+xin chào bạn
+xinh
+xoay
+xong
+xoài
+xuyên
+xuất
+xuất bản
+xuống
+xuống dốc
+xuồng
+xuồng ba lá
+xuổng
+xuỗng
+xác nhận
+xích
+xóa
+xôi
+xúc
+xương
+xương khớp
+xướng
+xướng ca
+xưởng
+xưởng mộc
+xốp
+xứ
+ánh sáng
+áo len
+âm lượng
+êm đềm
+ăn
+đan xen
+đen
+đi
+đi lên
+đi xuống
+đi xuống phố
+điều hòa
+điện thoại
+đo
+đàn
+đèn trần
+đóng
+đăng nhập
+đơm hoa
+đường dài
+được
+đếm
+đọc
+đồng hồ
+đồng ý
+đứng
+đứng lên
+ấm áp

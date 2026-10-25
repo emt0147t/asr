@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "phase": "Phase 60 Forensic FA Denominator and Uncertainty Audit",
+    "audit_timestamp_utc": "2026-10-25T15:30:00Z",
+    "eval_manifest": "experiments/vieneu_kws_research_v12/manifests/PHASE58_STREAMING_MANIFEST.csv",
+    "event_ledger": "experiments/vieneu_kws_research_v12/manifests/PHASE58_EVENT_LEDGER.csv",
+    "raw_p59_results": "experiments/vieneu_kws_research_v12/reports/PHASE59_FINAL_EVALUATION_RESULTS.json"
+  },
+  "duration_audit": {
+    "pure_silence_noise": {
+      "num_sequences": 10,
+      "duration_seconds": 51.627,
+      "duration_minutes": 0.86045,
+      "previous_reported_duration_min": 0.86,
+      "duration_delta_min": 0.00045000000000006146
+    },
+    "pure_oov_conversation": {
+      "num_sequences": 10,
+      "duration_seconds": 32.493,
+      "duration_minutes": 0.5415500000000001,
+      "previous_reported_duration_min": 0.542,
+      "duration_delta_min": -0.00044999999999995044
+    },
+    "contextual_commands": {
+      "num_sequences": 30,
+      "duration_seconds": 134.081,
+      "duration_minutes": 2.2346833333333334
+    },
+    "total_streaming_audio": {
+      "num_sequences": 50,
+      "actual_duration_seconds": 218.201,
+      "actual_duration_minutes": 3.636683333333333,
+      "previous_text_reported_seconds": 200.7,
+      "discrepancy_seconds": 17.501000000000005,
+      "discrepancy_explanation": "Previous text reported an approximate figure (200.7s) whereas actual audio sum in manifest is 218.201s"
+    }
+  },
+  "model_evaluations": {
+    "Baseline_v11_seed42": {
+      "silence_cohort": {
+        "observed_fa_count": 0,
+        "exact_duration_min": 0.86045,
+        "point_rate_fa_per_min": 0.0,
+        "previous_reported_point_rate": 0.0,
+        "previous_reported_ucb95": 2.28,
+        "exact_poisson_ucb95": 3.481587859322435,
+        "rule_of_three_upper_rate": 3.4865477366494275,
+        "old_method_formula": "(k + 1.96 * sqrt(max(1, k))) / T",
+        "exact_method_formula": "0.5 * chi2.ppf(0.95, 2*(k+1)) / T"
+      },
+      "conversational_oov_cohort": {
+        "observed_fa_count": 15,
+        "exact_duration_min": 0.5415500000000001,
+        "point_rate_fa_per_min": 27.698273474286765,
+        "previous_reported_point_rate": 27.7,
+        "previous_reported_ucb95": 41.72,
+        "exact_poisson_ucb95": 42.65004110449493,
+        "old_method_formula": "(k + 1.96 * sqrt(max(1, k))) / T",
+        "exact_method_formula": "0.5 * chi2.ppf(0.95, 2*(k+1)) / T"
+      }
+    },
+    "Baseline_E1_seed42": {
+      "silence_cohort": {
+        "observed_fa_count": 0,
+        "exact_duration_min": 0.86045,
+        "point_rate_fa_per_min": 0.0,
+        "previous_reported_point_rate": 0.0,
+        "previous_reported_ucb95": 2.28,
+        "exact_poisson_ucb95": 3.481587859322435,
+        "rule_of_three_upper_rate": 3.4865477366494275,
+        "old_method_formula": "(k + 1.96 * sqrt(max(1, k))) / T",
+        "exact_method_formula": "0.5 * chi2.ppf(0.95, 2*(k+1)) / T"
+      },
+      "conversational_oov_cohort": {
+        "observed_fa_count": 4,
+        "exact_duration_min": 0.5415500000000001,
+        "point_rate_fa_per_min": 7.386206259809804,
+        "previous_reported_point_rate": 7.39,
+        "previous_reported_ucb95": 14.62,
+        "exact_poisson_ucb95": 16.902444883459648,
+        "old_method_formula": "(k + 1.96 * sqrt(max(1, k))) / T",
+        "exact_method_formula": "0.5 * chi2.ppf(0.95, 2*(k+1)) / T"
+      }
+    },
+    "Phase28_D2_H1_Candidate": {
+      "silence_cohort": {
+        "observed_fa_count": 0,
+        "exact_duration_min": 0.86045,
+        "point_rate_fa_per_min": 0.0,
+        "previous_reported_point_rate": 0.0,
+        "previous_reported_ucb95": 2.28,
+        "exact_poisson_ucb95": 3.481587859322435,
+        "rule_of_three_upper_rate": 3.4865477366494275,
+        "old_method_formula": "(k + 1.96 * sqrt(max(1, k))) / T",
+        "exact_method_formula": "0.5 * chi2.ppf(0.95, 2*(k+1)) / T"
+      },
+      "conversational_oov_cohort": {
+        "observed_fa_count": 1,
+        "exact_duration_min": 0.5415500000000001,
+        "point_rate_fa_per_min": 1.846551564952451,
+        "previous_reported_point_rate": 1.85,
+        "previous_reported_ucb95": 5.47,
+        "exact_poisson_ucb95": 8.759790450356526,
+        "old_method_formula": "(k + 1.96 * sqrt(max(1, k))) / T",
+        "exact_method_formula": "0.5 * chi2.ppf(0.95, 2*(k+1)) / T"
+      }
+    },
+    "Phase26_Candidate_D0_H1_seed44": {
+      "silence_cohort": {
+        "observed_fa_count": 0,
+        "exact_duration_min": 0.86045,
+        "point_rate_fa_per_min": 0.0,
+        "previous_reported_point_rate": 0.0,
+        "previous_reported_ucb95": 2.28,
+        "exact_poisson_ucb95": 3.481587859322435,
+        "rule_of_three_upper_rate": 3.4865477366494275,
+        "old_method_formula": "(k + 1.96 * sqrt(max(1, k))) / T",
+        "exact_method_formula": "0.5 * chi2.ppf(0.95, 2*(k+1)) / T"
+      },
+      "conversational_oov_cohort": {
+        "observed_fa_count": 1,
+        "exact_duration_min": 0.5415500000000001,
+        "point_rate_fa_per_min": 1.846551564952451,
+        "previous_reported_point_rate": 1.85,
+        "previous_reported_ucb95": 5.47,
+        "exact_poisson_ucb95": 8.759790450356526,
+        "old_method_formula": "(k + 1.96 * sqrt(max(1, k))) / T",
+        "exact_method_formula": "0.5 * chi2.ppf(0.95, 2*(k+1)) / T"
+      }
+    },
+    "Candidate_D3_C_seed42": {
+      "silence_cohort": {
+        "observed_fa_count": 0,
+        "exact_duration_min": 0.86045,
+        "point_rate_fa_per_min": 0.0,
+        "previous_reported_point_rate": 0.0,
+        "previous_reported_ucb95": 2.28,
+        "exact_poisson_ucb95": 3.481587859322435,
+        "rule_of_three_upper_rate": 3.4865477366494275,
+        "old_method_formula": "(k + 1.96 * sqrt(max(1, k))) / T",
+        "exact_method_formula": "0.5 * chi2.ppf(0.95, 2*(k+1)) / T"
+      },
+      "conversational_oov_cohort": {
+        "observed_fa_count": 1,
+        "exact_duration_min": 0.5415500000000001,
+        "point_rate_fa_per_min": 1.846551564952451,
+        "previous_reported_point_rate": 1.85,
+        "previous_reported_ucb95": 5.47,
+        "exact_poisson_ucb95": 8.759790450356526,
+        "old_method_formula": "(k + 1.96 * sqrt(max(1, k))) / T",
+        "exact_method_formula": "0.5 * chi2.ppf(0.95, 2*(k+1)) / T"
+      }
+    }
+  }
+}

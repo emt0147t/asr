@@ -1,0 +1,6 @@
+model_name,trackA_accuracy,trackA_macro_f1,trackA_5class_f1,target_accuracy,trai_recall,phai_recall,len_recall,xuong_recall,oov_far,phonetic_oov_far,general_oov_far,tone_probe_far,stream_exact_match_pct,stream_command_f1,silence_fa_per_min,oov_fa_per_min
+Baseline_v11_seed42,43.33,41.72,42.89,55.62,42.5,75.0,60.0,45.0,64.23,62.5,67.0,63.33,26.0,9.95,0.0,27.7
+Baseline_E1_seed42,63.33,46.96,52.09,56.88,0.0,97.5,100.0,30.0,32.69,30.0,37.0,25.0,44.0,30.08,0.0,7.39
+Phase28_D2_H1_Candidate,74.52,53.76,59.65,42.5,22.5,55.0,47.5,45.0,5.77,5.62,6.0,6.67,46.0,19.23,0.0,1.85
+Phase26_Candidate_D0_H1_seed44,70.95,39.02,47.13,40.0,0.0,77.5,82.5,0.0,10.0,10.0,10.0,3.33,44.0,28.57,0.0,1.85
+Candidate_D3_C_seed42,69.29,41.23,48.79,40.62,2.5,15.0,90.0,55.0,13.08,13.12,13.0,5.0,50.0,31.4,0.0,1.85

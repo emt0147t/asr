@@ -1,0 +1,222 @@
+{
+  "overall_summary": {
+    "vieneu_local_v3_turbo": {
+      "engine": "VieNeu-TTS v3 Turbo",
+      "execution_mode": "Local CPU (ONNX Runtime)",
+      "per_request_cost_usd": 0.0,
+      "offline_capable": true,
+      "native_sample_rate_hz": 48000,
+      "metrics": {
+        "count": 32,
+        "duration_sec": {
+          "mean": 0.426790625,
+          "std": 0.07200557039103787,
+          "min": 0.2786,
+          "max": 0.59
+        },
+        "rms_dbfs": {
+          "mean": -20.424999999999997,
+          "std": 2.4277083313148395,
+          "min": -26.17,
+          "max": -17.18
+        },
+        "spectral_centroid_hz": {
+          "mean": 82.69375,
+          "std": 35.571916591603554,
+          "min": 33.2,
+          "max": 193.6
+        },
+        "peak_amplitude": {
+          "mean": 0.5026656250000001,
+          "std": 0.11958380138812902,
+          "min": 0.2955,
+          "max": 0.8604
+        }
+      }
+    },
+    "edge_tts_cloud": {
+      "engine": "Microsoft Azure Neural Speech (edge-tts 7.3.1)",
+      "execution_mode": "Cloud HTTP API",
+      "per_request_cost_usd": 0.0,
+      "offline_capable": false,
+      "native_sample_rate_hz": 24000,
+      "metrics": {
+        "count": 32,
+        "duration_sec": {
+          "mean": 0.382290625,
+          "std": 0.08027070473283794,
+          "min": 0.2127,
+          "max": 0.5109
+        },
+        "rms_dbfs": {
+          "mean": -18.020937500000002,
+          "std": 1.7832922785697387,
+          "min": -20.74,
+          "max": -14.99
+        },
+        "spectral_centroid_hz": {
+          "mean": 76.640625,
+          "std": 29.70535804145386,
+          "min": 41.4,
+          "max": 153.2
+        },
+        "peak_amplitude": {
+          "mean": 0.565021875,
+          "std": 0.07318132907650166,
+          "min": 0.3973,
+          "max": 0.6522
+        }
+      }
+    },
+    "v5_2_parametric_buzzer": {
+      "engine": "V5.2 Parametric 3-Resonator Tone Buzzer",
+      "execution_mode": "Local CPU (NumPy/SciPy synthetic)",
+      "per_request_cost_usd": 0.0,
+      "offline_capable": true,
+      "native_sample_rate_hz": 16000,
+      "metrics": {
+        "count": 32,
+        "duration_sec": {
+          "mean": 0.998984375,
+          "std": 0.0006680722749195039,
+          "min": 0.997375,
+          "max": 0.999875
+        },
+        "rms_dbfs": {
+          "mean": -18.264451116323,
+          "std": 0.9691124084013611,
+          "min": -19.711649828609556,
+          "max": -16.470095591642806
+        },
+        "spectral_centroid_hz": {
+          "mean": 85.62794046365099,
+          "std": 33.01265623908919,
+          "min": 48.15132533312738,
+          "max": 154.23261498312863
+        },
+        "peak_amplitude": {
+          "mean": 0.46880531311035156,
+          "std": 0.07143945185042602,
+          "min": 0.334564208984375,
+          "max": 0.59539794921875
+        }
+      }
+    }
+  },
+  "by_class_metrics": {
+    "TRAI": {
+      "vieneu_local_v3_turbo": {
+        "active_dur_mean": 0.4242,
+        "rms_dbfs_mean": -20.572499999999998,
+        "centroid_hz_mean": 104.71249999999999,
+        "peak_mean": 0.5576625
+      },
+      "edge_tts_cloud": {
+        "active_dur_mean": 0.27315,
+        "rms_dbfs_mean": -17.935,
+        "centroid_hz_mean": 60.550000000000004,
+        "peak_mean": 0.5426500000000001
+      },
+      "v5_2_parametric_buzzer": {
+        "active_dur_mean": 0.99884375,
+        "rms_dbfs_mean": -18.481330422523506,
+        "centroid_hz_mean": 91.99779485014699,
+        "peak_mean": 0.4871406555175781
+      }
+    },
+    "PHAI": {
+      "vieneu_local_v3_turbo": {
+        "active_dur_mean": 0.403975,
+        "rms_dbfs_mean": -22.61125,
+        "centroid_hz_mean": 74.91250000000001,
+        "peak_mean": 0.4969625
+      },
+      "edge_tts_cloud": {
+        "active_dur_mean": 0.4487,
+        "rms_dbfs_mean": -19.435,
+        "centroid_hz_mean": 120.225,
+        "peak_mean": 0.637
+      },
+      "v5_2_parametric_buzzer": {
+        "active_dur_mean": 0.999046875,
+        "rms_dbfs_mean": -18.304067490227897,
+        "centroid_hz_mean": 87.96685885254956,
+        "peak_mean": 0.5112686157226562
+      }
+    },
+    "LEN": {
+      "vieneu_local_v3_turbo": {
+        "active_dur_mean": 0.4006875,
+        "rms_dbfs_mean": -18.38125,
+        "centroid_hz_mean": 73.05000000000001,
+        "peak_mean": 0.513675
+      },
+      "edge_tts_cloud": {
+        "active_dur_mean": 0.4078625,
+        "rms_dbfs_mean": -17.5975,
+        "centroid_hz_mean": 68.67500000000001,
+        "peak_mean": 0.5743375
+      },
+      "v5_2_parametric_buzzer": {
+        "active_dur_mean": 0.9989921875000001,
+        "rms_dbfs_mean": -18.052804211186334,
+        "centroid_hz_mean": 86.85725438737316,
+        "peak_mean": 0.3942413330078125
+      }
+    },
+    "XUONG": {
+      "vieneu_local_v3_turbo": {
+        "active_dur_mean": 0.4783,
+        "rms_dbfs_mean": -20.135,
+        "centroid_hz_mean": 78.10000000000001,
+        "peak_mean": 0.4423625
+      },
+      "edge_tts_cloud": {
+        "active_dur_mean": 0.39944999999999997,
+        "rms_dbfs_mean": -17.11625,
+        "centroid_hz_mean": 57.1125,
+        "peak_mean": 0.5061
+      },
+      "v5_2_parametric_buzzer": {
+        "active_dur_mean": 0.9990546874999999,
+        "rms_dbfs_mean": -18.219602341354264,
+        "centroid_hz_mean": 75.68985376453426,
+        "peak_mean": 0.4825706481933594
+      }
+    }
+  },
+  "phonetic_fidelity_audit": {
+    "TRAI": {
+      "target_ipa": "/ʈaːj˧˥/",
+      "intended_text": "Trái",
+      "tone": "sắc (high-rising)",
+      "v5_2_acoustic_buzzer": "Fails: Constant 210 Hz tone buzz without rising F0; lacks retroflex [ʈ] burst; no palatal off-glide [j].",
+      "edge_tts_cloud": "Passes: Clear retroflex/affricate burst, natural high-rising pitch contour (+62 Hz glide), clear /j/ coda.",
+      "vieneu_local_v3_turbo": "Passes: Natural voiceless initial release, full open [aː] vowel, clear high-rising sắc contour, clean palatal off-glide, distinct regional timbre (North: [ʈ]/[tɕ] vs South: retroflex [ʈ])."
+    },
+    "PHAI": {
+      "target_ipa": "/faːj˧˩˨/",
+      "intended_text": "Phải",
+      "tone": "hỏi (mid-falling rising / dipping)",
+      "v5_2_acoustic_buzzer": "Fails: Flat monotonic F0 (~190 Hz); completely omits dipping hỏi contour; lacks unvoiced fricative [f] noise burst.",
+      "edge_tts_cloud": "Passes: Distinct [f] noise burst (50ms), classic hỏi dipping contour (falling from 220Hz to 160Hz then rising), clear off-glide.",
+      "vieneu_local_v3_turbo": "Passes: Crisp labiodental fricative [f], authentic dipping contour with subtle creak/vocal fold constriction characteristic of native hỏi tone, natural vowel duration."
+    },
+    "LEN": {
+      "target_ipa": "/len˧˧/",
+      "intended_text": "Lên",
+      "tone": "ngang (mid-level)",
+      "v5_2_acoustic_buzzer": "Fails: Lacks initial lateral [l]; lacks alveolar nasal coda [n]; outputs continuous synthetic sawtooth buzz.",
+      "edge_tts_cloud": "Passes: Resonant initial lateral formant transition [l], steady ngang pitch (~185 Hz), clear nasal murmur coda [n].",
+      "vieneu_local_v3_turbo": "Passes: Strong voiced lateral [l] formant transition into close-mid front [e], stable mid-level pitch, prominent alveolar nasal murmur [n] with clean offset."
+    },
+    "XUONG": {
+      "target_ipa": "/suəŋ˧˥/",
+      "intended_text": "Xuống",
+      "tone": "sắc (high-rising)",
+      "v5_2_acoustic_buzzer": "Fails: Constant flat tone; missing high-frequency sibilant energy above 4 kHz for [s]; missing velar nasal coda [ŋ].",
+      "edge_tts_cloud": "Passes: Prominent sibilant [s] frication energy up to 8 kHz, centering diphthong transition [uə], clear velar nasal coda [ŋ], high-rising sắc pitch.",
+      "vieneu_local_v3_turbo": "Passes: Full 48 kHz band sibilant [s] frication, natural diphthong formant trajectory [u] -> [ə], authentic velar nasal murmur [ŋ], sharp rising pitch glide."
+    }
+  }
+}

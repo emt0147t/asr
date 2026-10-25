@@ -1,0 +1,797 @@
+{
+  "formal_validation_verdict": "NO_FEASIBLE_VALIDATION_OPERATING_POINT",
+  "predeclared_criteria": {
+    "per_keyword_recall_threshold": 0.95,
+    "false_acceptance_rate_ceiling": 0.05,
+    "latency_ceiling_ms": 50.0
+  },
+  "summary_by_variant": {
+    "variant_a_cascade_v1": {
+      "seed42": {
+        "calibrated_params": {
+          "theta_s1": 0.3,
+          "theta_s2": 0.55
+        },
+        "clean_metrics": {
+          "macro_recall": 0.875,
+          "false_rejection_rate": 0.125,
+          "false_acceptance_rate": 0.04,
+          "rejection_rate": 0.96,
+          "per_keyword_recall": {
+            "TRAI": 0.9,
+            "PHAI": 0.9,
+            "LEN": 0.825,
+            "XUONG": 0.875
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.8812,
+            "false_rejection_rate": 0.1188,
+            "false_acceptance_rate": 0.05,
+            "rejection_rate": 0.95,
+            "per_keyword_recall": {
+              "TRAI": 0.85,
+              "PHAI": 0.925,
+              "LEN": 0.85,
+              "XUONG": 0.9
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.8562,
+            "false_rejection_rate": 0.1438,
+            "false_acceptance_rate": 0.045,
+            "rejection_rate": 0.955,
+            "per_keyword_recall": {
+              "TRAI": 0.825,
+              "PHAI": 0.9,
+              "LEN": 0.775,
+              "XUONG": 0.925
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.8938,
+            "false_rejection_rate": 0.1062,
+            "false_acceptance_rate": 0.055,
+            "rejection_rate": 0.945,
+            "per_keyword_recall": {
+              "TRAI": 0.9,
+              "PHAI": 0.975,
+              "LEN": 0.8,
+              "XUONG": 0.9
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "seed43": {
+        "calibrated_params": {
+          "theta_s1": 0.3,
+          "theta_s2": 0.2
+        },
+        "clean_metrics": {
+          "macro_recall": 0.8688,
+          "false_rejection_rate": 0.1312,
+          "false_acceptance_rate": 0.035,
+          "rejection_rate": 0.965,
+          "per_keyword_recall": {
+            "TRAI": 0.975,
+            "PHAI": 0.825,
+            "LEN": 0.825,
+            "XUONG": 0.85
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.9,
+            "false_rejection_rate": 0.1,
+            "false_acceptance_rate": 0.035,
+            "rejection_rate": 0.965,
+            "per_keyword_recall": {
+              "TRAI": 0.875,
+              "PHAI": 0.925,
+              "LEN": 0.85,
+              "XUONG": 0.95
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.9125,
+            "false_rejection_rate": 0.0875,
+            "false_acceptance_rate": 0.045,
+            "rejection_rate": 0.955,
+            "per_keyword_recall": {
+              "TRAI": 0.85,
+              "PHAI": 0.9,
+              "LEN": 0.925,
+              "XUONG": 0.975
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.8875,
+            "false_rejection_rate": 0.1125,
+            "false_acceptance_rate": 0.04,
+            "rejection_rate": 0.96,
+            "per_keyword_recall": {
+              "TRAI": 0.95,
+              "PHAI": 0.825,
+              "LEN": 0.85,
+              "XUONG": 0.925
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "seed44": {
+        "calibrated_params": {
+          "theta_s1": 0.3,
+          "theta_s2": 0.2
+        },
+        "clean_metrics": {
+          "macro_recall": 0.9375,
+          "false_rejection_rate": 0.0625,
+          "false_acceptance_rate": 0.03,
+          "rejection_rate": 0.97,
+          "per_keyword_recall": {
+            "TRAI": 0.975,
+            "PHAI": 0.95,
+            "LEN": 0.9,
+            "XUONG": 0.925
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.925,
+            "false_rejection_rate": 0.075,
+            "false_acceptance_rate": 0.045,
+            "rejection_rate": 0.955,
+            "per_keyword_recall": {
+              "TRAI": 0.95,
+              "PHAI": 0.925,
+              "LEN": 0.825,
+              "XUONG": 1.0
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.9313,
+            "false_rejection_rate": 0.0687,
+            "false_acceptance_rate": 0.05,
+            "rejection_rate": 0.95,
+            "per_keyword_recall": {
+              "TRAI": 0.95,
+              "PHAI": 0.95,
+              "LEN": 0.825,
+              "XUONG": 1.0
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.9375,
+            "false_rejection_rate": 0.0625,
+            "false_acceptance_rate": 0.035,
+            "rejection_rate": 0.965,
+            "per_keyword_recall": {
+              "TRAI": 0.95,
+              "PHAI": 0.975,
+              "LEN": 0.875,
+              "XUONG": 0.95
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "mean_summary": {
+        "mean_macro_recall": 0.8938,
+        "mean_false_acceptance_rate": 0.035,
+        "mean_selection_score": 0.8063
+      }
+    },
+    "variant_b_stage1_cnn": {
+      "seed42": {
+        "calibrated_params": {
+          "theta_cmd": 0.85
+        },
+        "clean_metrics": {
+          "macro_recall": 0.8562,
+          "false_rejection_rate": 0.1438,
+          "false_acceptance_rate": 0.09,
+          "rejection_rate": 0.91,
+          "per_keyword_recall": {
+            "TRAI": 0.825,
+            "PHAI": 0.775,
+            "LEN": 0.875,
+            "XUONG": 0.95
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.7438,
+            "false_rejection_rate": 0.2562,
+            "false_acceptance_rate": 0.115,
+            "rejection_rate": 0.885,
+            "per_keyword_recall": {
+              "TRAI": 0.8,
+              "PHAI": 0.725,
+              "LEN": 0.5,
+              "XUONG": 0.95
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.6,
+            "false_rejection_rate": 0.4,
+            "false_acceptance_rate": 0.1,
+            "rejection_rate": 0.9,
+            "per_keyword_recall": {
+              "TRAI": 0.725,
+              "PHAI": 0.625,
+              "LEN": 0.15,
+              "XUONG": 0.9
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.875,
+            "false_rejection_rate": 0.125,
+            "false_acceptance_rate": 0.095,
+            "rejection_rate": 0.905,
+            "per_keyword_recall": {
+              "TRAI": 0.825,
+              "PHAI": 0.875,
+              "LEN": 0.85,
+              "XUONG": 0.95
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "seed43": {
+        "calibrated_params": {
+          "theta_cmd": 0.8
+        },
+        "clean_metrics": {
+          "macro_recall": 0.7562,
+          "false_rejection_rate": 0.2438,
+          "false_acceptance_rate": 0.115,
+          "rejection_rate": 0.885,
+          "per_keyword_recall": {
+            "TRAI": 0.775,
+            "PHAI": 0.6,
+            "LEN": 0.775,
+            "XUONG": 0.875
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.6438,
+            "false_rejection_rate": 0.3562,
+            "false_acceptance_rate": 0.065,
+            "rejection_rate": 0.935,
+            "per_keyword_recall": {
+              "TRAI": 0.275,
+              "PHAI": 0.725,
+              "LEN": 0.65,
+              "XUONG": 0.925
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.5312,
+            "false_rejection_rate": 0.4688,
+            "false_acceptance_rate": 0.04,
+            "rejection_rate": 0.96,
+            "per_keyword_recall": {
+              "TRAI": 0.025,
+              "PHAI": 0.75,
+              "LEN": 0.625,
+              "XUONG": 0.725
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.75,
+            "false_rejection_rate": 0.25,
+            "false_acceptance_rate": 0.1,
+            "rejection_rate": 0.9,
+            "per_keyword_recall": {
+              "TRAI": 0.725,
+              "PHAI": 0.75,
+              "LEN": 0.65,
+              "XUONG": 0.875
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "seed44": {
+        "calibrated_params": {
+          "theta_cmd": 0.75
+        },
+        "clean_metrics": {
+          "macro_recall": 0.95,
+          "false_rejection_rate": 0.05,
+          "false_acceptance_rate": 0.13,
+          "rejection_rate": 0.87,
+          "per_keyword_recall": {
+            "TRAI": 0.95,
+            "PHAI": 0.925,
+            "LEN": 0.95,
+            "XUONG": 0.975
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.9,
+            "false_rejection_rate": 0.1,
+            "false_acceptance_rate": 0.15,
+            "rejection_rate": 0.85,
+            "per_keyword_recall": {
+              "TRAI": 0.8,
+              "PHAI": 0.9,
+              "LEN": 1.0,
+              "XUONG": 0.9
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.85,
+            "false_rejection_rate": 0.15,
+            "false_acceptance_rate": 0.165,
+            "rejection_rate": 0.835,
+            "per_keyword_recall": {
+              "TRAI": 0.825,
+              "PHAI": 0.825,
+              "LEN": 0.95,
+              "XUONG": 0.8
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.9313,
+            "false_rejection_rate": 0.0687,
+            "false_acceptance_rate": 0.125,
+            "rejection_rate": 0.875,
+            "per_keyword_recall": {
+              "TRAI": 0.9,
+              "PHAI": 0.925,
+              "LEN": 0.925,
+              "XUONG": 0.975
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "mean_summary": {
+        "mean_macro_recall": 0.8541,
+        "mean_false_acceptance_rate": 0.1117,
+        "mean_selection_score": 0.575
+      }
+    },
+    "variant_c_standard": {
+      "seed42": {
+        "calibrated_params": {
+          "theta_reject": 0.5
+        },
+        "clean_metrics": {
+          "macro_recall": 0.85,
+          "false_rejection_rate": 0.15,
+          "false_acceptance_rate": 0.105,
+          "rejection_rate": 0.895,
+          "per_keyword_recall": {
+            "TRAI": 0.75,
+            "PHAI": 0.8,
+            "LEN": 0.85,
+            "XUONG": 1.0
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.8125,
+            "false_rejection_rate": 0.1875,
+            "false_acceptance_rate": 0.12,
+            "rejection_rate": 0.88,
+            "per_keyword_recall": {
+              "TRAI": 0.475,
+              "PHAI": 0.925,
+              "LEN": 0.875,
+              "XUONG": 0.975
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.7625,
+            "false_rejection_rate": 0.2375,
+            "false_acceptance_rate": 0.085,
+            "rejection_rate": 0.915,
+            "per_keyword_recall": {
+              "TRAI": 0.375,
+              "PHAI": 0.9,
+              "LEN": 0.8,
+              "XUONG": 0.975
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.7312,
+            "false_rejection_rate": 0.2688,
+            "false_acceptance_rate": 0.125,
+            "rejection_rate": 0.875,
+            "per_keyword_recall": {
+              "TRAI": 0.575,
+              "PHAI": 0.825,
+              "LEN": 0.55,
+              "XUONG": 0.975
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "seed43": {
+        "calibrated_params": {
+          "theta_reject": 0.3
+        },
+        "clean_metrics": {
+          "macro_recall": 0.3,
+          "false_rejection_rate": 0.7,
+          "false_acceptance_rate": 0.005,
+          "rejection_rate": 0.995,
+          "per_keyword_recall": {
+            "TRAI": 0.0,
+            "PHAI": 0.075,
+            "LEN": 0.125,
+            "XUONG": 1.0
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.1313,
+            "false_rejection_rate": 0.8688,
+            "false_acceptance_rate": 0.02,
+            "rejection_rate": 0.98,
+            "per_keyword_recall": {
+              "TRAI": 0.0,
+              "PHAI": 0.2,
+              "LEN": 0.0,
+              "XUONG": 0.325
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.0312,
+            "false_rejection_rate": 0.9688,
+            "false_acceptance_rate": 0.0,
+            "rejection_rate": 1.0,
+            "per_keyword_recall": {
+              "TRAI": 0.0,
+              "PHAI": 0.125,
+              "LEN": 0.0,
+              "XUONG": 0.0
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.3125,
+            "false_rejection_rate": 0.6875,
+            "false_acceptance_rate": 0.005,
+            "rejection_rate": 0.995,
+            "per_keyword_recall": {
+              "TRAI": 0.0,
+              "PHAI": 0.075,
+              "LEN": 0.175,
+              "XUONG": 1.0
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "seed44": {
+        "calibrated_params": {
+          "theta_reject": 0.4
+        },
+        "clean_metrics": {
+          "macro_recall": 0.725,
+          "false_rejection_rate": 0.275,
+          "false_acceptance_rate": 0.06,
+          "rejection_rate": 0.94,
+          "per_keyword_recall": {
+            "TRAI": 0.125,
+            "PHAI": 0.8,
+            "LEN": 0.975,
+            "XUONG": 1.0
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.6875,
+            "false_rejection_rate": 0.3125,
+            "false_acceptance_rate": 0.04,
+            "rejection_rate": 0.96,
+            "per_keyword_recall": {
+              "TRAI": 0.075,
+              "PHAI": 0.8,
+              "LEN": 0.9,
+              "XUONG": 0.975
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.6375,
+            "false_rejection_rate": 0.3625,
+            "false_acceptance_rate": 0.035,
+            "rejection_rate": 0.965,
+            "per_keyword_recall": {
+              "TRAI": 0.1,
+              "PHAI": 0.725,
+              "LEN": 0.725,
+              "XUONG": 1.0
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.6562,
+            "false_rejection_rate": 0.3438,
+            "false_acceptance_rate": 0.055,
+            "rejection_rate": 0.945,
+            "per_keyword_recall": {
+              "TRAI": 0.025,
+              "PHAI": 0.725,
+              "LEN": 0.875,
+              "XUONG": 1.0
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "mean_summary": {
+        "mean_macro_recall": 0.625,
+        "mean_false_acceptance_rate": 0.0567,
+        "mean_selection_score": 0.4833
+      }
+    },
+    "variant_d_ablation": {
+      "seed42": {
+        "calibrated_params": {
+          "theta_reject": 0.3
+        },
+        "clean_metrics": {
+          "macro_recall": 0.6562,
+          "false_rejection_rate": 0.3438,
+          "false_acceptance_rate": 0.095,
+          "rejection_rate": 0.905,
+          "per_keyword_recall": {
+            "TRAI": 0.65,
+            "PHAI": 0.375,
+            "LEN": 0.875,
+            "XUONG": 0.725
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.2062,
+            "false_rejection_rate": 0.7937,
+            "false_acceptance_rate": 0.01,
+            "rejection_rate": 0.99,
+            "per_keyword_recall": {
+              "TRAI": 0.0,
+              "PHAI": 0.1,
+              "LEN": 0.35,
+              "XUONG": 0.375
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.1812,
+            "false_rejection_rate": 0.8187,
+            "false_acceptance_rate": 0.03,
+            "rejection_rate": 0.97,
+            "per_keyword_recall": {
+              "TRAI": 0.175,
+              "PHAI": 0.275,
+              "LEN": 0.25,
+              "XUONG": 0.025
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.5875,
+            "false_rejection_rate": 0.4125,
+            "false_acceptance_rate": 0.075,
+            "rejection_rate": 0.925,
+            "per_keyword_recall": {
+              "TRAI": 0.525,
+              "PHAI": 0.4,
+              "LEN": 0.775,
+              "XUONG": 0.65
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "seed43": {
+        "calibrated_params": {
+          "theta_reject": 0.4
+        },
+        "clean_metrics": {
+          "macro_recall": 0.6062,
+          "false_rejection_rate": 0.3938,
+          "false_acceptance_rate": 0.07,
+          "rejection_rate": 0.93,
+          "per_keyword_recall": {
+            "TRAI": 0.0,
+            "PHAI": 0.525,
+            "LEN": 0.9,
+            "XUONG": 1.0
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.6,
+            "false_rejection_rate": 0.4,
+            "false_acceptance_rate": 0.055,
+            "rejection_rate": 0.945,
+            "per_keyword_recall": {
+              "TRAI": 0.0,
+              "PHAI": 0.525,
+              "LEN": 0.9,
+              "XUONG": 0.975
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.5625,
+            "false_rejection_rate": 0.4375,
+            "false_acceptance_rate": 0.03,
+            "rejection_rate": 0.97,
+            "per_keyword_recall": {
+              "TRAI": 0.0,
+              "PHAI": 0.45,
+              "LEN": 0.825,
+              "XUONG": 0.975
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.55,
+            "false_rejection_rate": 0.45,
+            "false_acceptance_rate": 0.075,
+            "rejection_rate": 0.925,
+            "per_keyword_recall": {
+              "TRAI": 0.0,
+              "PHAI": 0.45,
+              "LEN": 0.75,
+              "XUONG": 1.0
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "seed44": {
+        "calibrated_params": {
+          "theta_reject": 0.4
+        },
+        "clean_metrics": {
+          "macro_recall": 0.7688,
+          "false_rejection_rate": 0.2312,
+          "false_acceptance_rate": 0.145,
+          "rejection_rate": 0.855,
+          "per_keyword_recall": {
+            "TRAI": 0.225,
+            "PHAI": 0.875,
+            "LEN": 0.975,
+            "XUONG": 1.0
+          },
+          "all_keywords_ge_95": false,
+          "meets_strict_criteria": false
+        },
+        "robustness": {
+          "snr_20db": {
+            "macro_recall": 0.7438,
+            "false_rejection_rate": 0.2562,
+            "false_acceptance_rate": 0.11,
+            "rejection_rate": 0.89,
+            "per_keyword_recall": {
+              "TRAI": 0.225,
+              "PHAI": 0.85,
+              "LEN": 0.975,
+              "XUONG": 0.925
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "snr_15db": {
+            "macro_recall": 0.6625,
+            "false_rejection_rate": 0.3375,
+            "false_acceptance_rate": 0.05,
+            "rejection_rate": 0.95,
+            "per_keyword_recall": {
+              "TRAI": 0.225,
+              "PHAI": 0.75,
+              "LEN": 0.75,
+              "XUONG": 0.925
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          },
+          "gain_neg3db": {
+            "macro_recall": 0.7312,
+            "false_rejection_rate": 0.2688,
+            "false_acceptance_rate": 0.125,
+            "rejection_rate": 0.875,
+            "per_keyword_recall": {
+              "TRAI": 0.1,
+              "PHAI": 0.875,
+              "LEN": 0.975,
+              "XUONG": 0.975
+            },
+            "all_keywords_ge_95": false,
+            "meets_strict_criteria": false
+          }
+        }
+      },
+      "mean_summary": {
+        "mean_macro_recall": 0.6771,
+        "mean_false_acceptance_rate": 0.1033,
+        "mean_selection_score": 0.4187
+      }
+    }
+  }
+}

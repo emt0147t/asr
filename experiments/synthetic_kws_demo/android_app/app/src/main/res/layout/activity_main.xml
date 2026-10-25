@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vietnamese KWS Demo (Phase 9)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212529"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Governance Warning Banner -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GOVERNANCE: HUMAN DATA COLLECTION REMAINS STRICTLY BLOCKED. Offline Synthetic Audio Fixture Testing Only."
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#856404"
+            android:background="#FFF3CD"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Fixture Selector -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Synthetic Audio Fixture:"
+            android:textStyle="bold"
+            android:textColor="#495057"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinnerFixtures"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#E9ECEF"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Run Inference Button -->
+        <Button
+            android:id="@+id/btnRunInference"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Run Pipeline (WAV -> C++ -> ONNX)"
+            android:backgroundTint="#0D6EFD"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Validation Card -->
+        <TextView
+            android:id="@+id/txtValidationInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Validation: Awaiting execution"
+            android:textSize="13sp"
+            android:background="#E9ECEF"
+            android:padding="8dp"
+            android:textColor="#495057"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Inference Output Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/txtResultLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Predicted: —"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0D6EFD" />
+
+            <TextView
+                android:id="@+id/txtConfidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confidence: —"
+                android:textSize="14sp"
+                android:textColor="#6C757D"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action: NO_ACTION"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#198754"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtTiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#6C757D"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtProbabilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:textSize="12sp"
+                android:textColor="#212529"
+                android:text="" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

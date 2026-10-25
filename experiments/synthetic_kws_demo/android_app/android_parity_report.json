@@ -1,0 +1,352 @@
+{
+  "report_version": "1.0.0",
+  "phase": "Phase 9 \u2014 Android Offline KWS Integration and ONNX Runtime Validation",
+  "timestamp": "2026-10-16",
+  "governance": "HUMAN DATA COLLECTION REMAINS STRICTLY BLOCKED. Offline synthetic fixtures only.",
+  "overall_verdict": "BLOCKED",
+  "gates": {
+    "Gate_A_Host_Regression": {
+      "name": "Host-side / static validation",
+      "description": "Host-level C++/Python feature parity and ONNX inference across 12 golden vectors",
+      "status": "PASS",
+      "global_max_feature_diff": 3.62396240234375e-05,
+      "global_max_prob_diff": 1.7881393432617188e-07,
+      "tolerance_threshold": 0.0001
+    },
+    "Gate_B_Android_Native_Build": {
+      "name": "Android NDK compilation",
+      "description": "Android NDK compilation of C++ Log-Mel frontend for target ABIs",
+      "status": "BLOCKED",
+      "reason": "Host lacks Android NDK toolchain (ANDROID_NDK_HOME not set)",
+      "cmake_config_tested": true,
+      "prerequisites_missing": [
+        "Android NDK",
+        "NDK C++ toolchain"
+      ]
+    },
+    "Gate_C_Android_Application_Build": {
+      "name": "APK build",
+      "description": "Gradle build producing APK with native library, ONNX model, and assets",
+      "status": "BLOCKED",
+      "reason": "Host lacks Java Development Kit (javac/JAVA_HOME), Gradle, and Android SDK",
+      "prerequisites_missing": [
+        "JDK (javac / JAVA_HOME)",
+        "Android SDK (ANDROID_HOME)",
+        "Gradle"
+      ]
+    },
+    "Gate_D_Android_Inference": {
+      "name": "Android runtime inference",
+      "description": "Inference execution through JNI and ONNX Runtime on emulator or device",
+      "status": "BLOCKED",
+      "reason": "Requires built APK and available Android emulator or attached device via adb"
+    },
+    "Gate_E_Device_Measurements": {
+      "name": "Physical-device performance",
+      "description": "Cold-start, latency, memory, and thermal benchmarks on physical hardware",
+      "status": "NOT_TESTED",
+      "reason": "Requires physical Android hardware. No synthetic estimates fabricated."
+    }
+  },
+  "toolchain_inspection": {
+    "tools": {
+      "java": null,
+      "javac": null,
+      "gradle": null,
+      "cmake": "C:\\Strawberry\\c\\bin\\cmake.EXE",
+      "adb": null
+    },
+    "environment_variables": {
+      "JAVA_HOME": null,
+      "ANDROID_HOME": null,
+      "ANDROID_SDK_ROOT": null,
+      "ANDROID_NDK_HOME": null
+    },
+    "local_sdk_exists": false,
+    "local_sdk_path": null
+  },
+  "packaged_assets": {
+    "onnx_model_sha256": "8A5AC4C105DF52F1749AE11B6BB2124B3A672486601EFF308ACC7E257FF97625",
+    "onnx_matches_source_checkpoint": true,
+    "manifest_file": "experiments\\synthetic_kws_demo\\android_app\\app\\src\\main\\assets\\asset_manifest.json",
+    "permissions_requested": []
+  },
+  "cases": [
+    {
+      "case_id": "case_01_trai_demo",
+      "category": "canonical_demo",
+      "wav_sha256": "3DBEDBEB636F448E14606CB4D829955C9B3230A3F29F82CA69C044EAD7593F24",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 3.62396240234375e-05,
+      "feature_mean_abs_diff": 8.299589921989536e-07,
+      "onnx_max_prob_diff": 1.7881393432617188e-07,
+      "reference_predicted_label": "TRAI",
+      "pipeline_predicted_label": "TRAI",
+      "confidence": 0.8840107917785645,
+      "adapted_action": "MOVE_LEFT",
+      "is_edge_case": false,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_02_phai_demo",
+      "category": "canonical_demo",
+      "wav_sha256": "05908190E6F1ABA0AA199F1F5A055928771B5383161DEC7E5057135AC0481FF8",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 2.09808349609375e-05,
+      "feature_mean_abs_diff": 5.927397523919353e-07,
+      "onnx_max_prob_diff": 5.960464477539063e-08,
+      "reference_predicted_label": "PHAI",
+      "pipeline_predicted_label": "PHAI",
+      "confidence": 0.9929510354995728,
+      "adapted_action": "MOVE_RIGHT",
+      "is_edge_case": false,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_03_len_demo",
+      "category": "canonical_demo",
+      "wav_sha256": "6EF28010BDF3BA9813F50D7FFB1C4653CD1EB687217072D772BA883537FCA0A1",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 2.6702880859375e-05,
+      "feature_mean_abs_diff": 8.248425729107112e-07,
+      "onnx_max_prob_diff": 3.876630216836929e-08,
+      "reference_predicted_label": "LEN",
+      "pipeline_predicted_label": "LEN",
+      "confidence": 0.9685707092285156,
+      "adapted_action": "JUMP",
+      "is_edge_case": false,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_04_xuong_demo",
+      "category": "canonical_demo",
+      "wav_sha256": "AB0E2171C882705CEE702F2D7F0FCFAAEE77562444E10438ED462B499A9B6FC2",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 2.6702880859375e-05,
+      "feature_mean_abs_diff": 8.035715381993214e-07,
+      "onnx_max_prob_diff": 4.330649971961975e-08,
+      "reference_predicted_label": "XUONG",
+      "pipeline_predicted_label": "XUONG",
+      "confidence": 0.9844310879707336,
+      "adapted_action": "CROUCH",
+      "is_edge_case": false,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_05_unknown_demo",
+      "category": "canonical_demo",
+      "wav_sha256": "A79224CE02A2858A0B2DB79F55A2AA8995D6AE8EBEAFEB93C4DD1B2B1AF41432",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 2.6702880859375e-05,
+      "feature_mean_abs_diff": 7.156681931519415e-07,
+      "onnx_max_prob_diff": 4.7497451305389404e-08,
+      "reference_predicted_label": "UNKNOWN",
+      "pipeline_predicted_label": "UNKNOWN",
+      "confidence": 0.9887465834617615,
+      "adapted_action": "NO_ACTION",
+      "is_edge_case": false,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_06_silence_demo",
+      "category": "canonical_demo",
+      "wav_sha256": "FAC98B0B565064B39472EC0B10A6E05EAC279C40A58391C20D40536AE29EAE3B",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 9.5367431640625e-07,
+      "feature_mean_abs_diff": 1.0504580671977237e-07,
+      "onnx_max_prob_diff": 4.98257577419281e-08,
+      "reference_predicted_label": "SILENCE",
+      "pipeline_predicted_label": "SILENCE",
+      "confidence": 0.9635804891586304,
+      "adapted_action": "NO_ACTION",
+      "is_edge_case": false,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_07_trai_leading_pad",
+      "category": "timing_variant",
+      "wav_sha256": "9D629EAA431CFB829471DAB36F1A65EF7DFB0141D07B60CEA6E88D64EEC834AE",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 3.62396240234375e-05,
+      "feature_mean_abs_diff": 8.286901902465615e-07,
+      "onnx_max_prob_diff": 1.1920928955078125e-07,
+      "reference_predicted_label": "TRAI",
+      "pipeline_predicted_label": "TRAI",
+      "confidence": 0.816843569278717,
+      "adapted_action": "MOVE_LEFT",
+      "is_edge_case": false,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_08_phai_centered",
+      "category": "timing_variant",
+      "wav_sha256": "8803390DC207E82A37B20FAA6CC4D97307CFB4D923E816DCD1875103F683A395",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 2.09808349609375e-05,
+      "feature_mean_abs_diff": 5.926726771576796e-07,
+      "onnx_max_prob_diff": 3.5390257835388184e-08,
+      "reference_predicted_label": "PHAI",
+      "pipeline_predicted_label": "PHAI",
+      "confidence": 0.950570285320282,
+      "adapted_action": "MOVE_RIGHT",
+      "is_edge_case": false,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_09_silence_pure_zeros",
+      "category": "numerical_edge_case",
+      "wav_sha256": "643F8A8DC8BD9C19225AFFFAD2BECFEC5426180B3749CB208ABDF1A6C8354EFC",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 0.0,
+      "feature_mean_abs_diff": 0.0,
+      "onnx_max_prob_diff": 5.960464477539063e-08,
+      "reference_predicted_label": "TRAI",
+      "pipeline_predicted_label": "TRAI",
+      "confidence": 0.3023433983325958,
+      "adapted_action": "NO_ACTION",
+      "is_edge_case": true,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_10_low_amplitude_ambient",
+      "category": "numerical_edge_case",
+      "wav_sha256": "76FAADDF699098E0EE2380664DA33EAB5C94F9EA88B7A1F9D71D747EF203B105",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 9.5367431640625e-07,
+      "feature_mean_abs_diff": 2.9743308260776757e-08,
+      "onnx_max_prob_diff": 2.9802322387695312e-08,
+      "reference_predicted_label": "TRAI",
+      "pipeline_predicted_label": "TRAI",
+      "confidence": 0.30243319272994995,
+      "adapted_action": "NO_ACTION",
+      "is_edge_case": true,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_11_transient_impulse",
+      "category": "numerical_edge_case",
+      "wav_sha256": "D048C6B8A3286CF0B54F32790A893F462AD1788A0B6781B627F95F852696214E",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 4.76837158203125e-07,
+      "feature_mean_abs_diff": 3.4228408996028747e-09,
+      "onnx_max_prob_diff": 8.940696716308594e-08,
+      "reference_predicted_label": "TRAI",
+      "pipeline_predicted_label": "TRAI",
+      "confidence": 0.313692569732666,
+      "adapted_action": "NO_ACTION",
+      "is_edge_case": true,
+      "edge_case_safe": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "case_12_holdout_trai_native",
+      "category": "holdout_anchor",
+      "wav_sha256": "BAFD3436C66CA3D617F27DA3C71E2DAEDB4BB629A9C6F8DDA5F17AE5D1460BF4",
+      "feature_shape": [
+        1,
+        1,
+        40,
+        101
+      ],
+      "feature_dtype": "float32",
+      "has_nan_or_inf": false,
+      "feature_max_abs_diff": 2.193450927734375e-05,
+      "feature_mean_abs_diff": 4.7090804855542956e-07,
+      "onnx_max_prob_diff": 1.1920928955078125e-07,
+      "reference_predicted_label": "TRAI",
+      "pipeline_predicted_label": "TRAI",
+      "confidence": 0.8611471056938171,
+      "adapted_action": "MOVE_LEFT",
+      "is_edge_case": false,
+      "edge_case_safe": true,
+      "status": "PASS"
+    }
+  ]
+}

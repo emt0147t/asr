@@ -1,0 +1,89 @@
+{
+  "registry_name": "Vietnamese KWS Dataset v12 Source Provenance Registry",
+  "version": "12.0.0",
+  "created_at": "2026-10-22T11:15:00+07:00",
+  "governance": {
+    "labels": [
+      "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+      "NOT_VALIDATED_ON_NATURAL_SPEECH",
+      "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+      "NOT_VALIDATED_PENDING_DATA"
+    ],
+    "human_speech_collection_without_consent": false,
+    "immutable_checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "immutable_onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99"
+  },
+  "sources": {
+    "src_vieneu_kws_1000": {
+      "name": "Vietnamese Synthetic KWS 1000 Utterances",
+      "type": "tts_synthetic",
+      "engine": "VieNeu-TTS v3 Turbo",
+      "model_checkpoint": "pnnbao-ump/VieNeu-TTS-v3-Turbo",
+      "license": "Apache-2.0",
+      "upstream_url": "https://github.com/pnnbao97/VieNeu-TTS",
+      "local_path": "experiments/synthetic_kws_dataset_vieneu_1000/audio/kws_16k",
+      "manifest_path": "experiments/synthetic_kws_dataset_vieneu_1000/manifest.csv",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "num_clips": 1000,
+      "classes": ["TRAI", "PHAI", "LEN", "XUONG"],
+      "voice_disjoint_allocation": true
+    },
+    "src_vieneu_6class_v2": {
+      "name": "Vietnamese Synthetic KWS 6-Class Dataset v2",
+      "type": "tts_synthetic",
+      "engine": "VieNeu-TTS v3 Turbo",
+      "model_checkpoint": "pnnbao-ump/VieNeu-TTS-v3-Turbo",
+      "license": "Apache-2.0",
+      "upstream_url": "https://github.com/pnnbao97/VieNeu-TTS",
+      "local_path": "experiments/synthetic_kws_dataset_vieneu_6class_v2/audio/kws_16k",
+      "manifest_path": "experiments/synthetic_kws_dataset_vieneu_6class_v2/manifest.csv",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "num_clips": 2000,
+      "classes": ["TRAI", "PHAI", "LEN", "XUONG", "UNKNOWN", "SILENCE"],
+      "voice_disjoint_allocation": true
+    },
+    "src_google_fleurs_vi": {
+      "name": "Google FLEURS Vietnamese Conversational Speech",
+      "type": "natural_speech_corpus",
+      "license": "CC-BY-4.0",
+      "upstream_url": "https://huggingface.co/datasets/google/fleurs",
+      "local_path": "data/raw/fleurs_vi",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "num_clips": 1218,
+      "role": "conversation_reject_subgroup"
+    },
+    "src_husein_mic_noise": {
+      "name": "Microphone Handling and Environmental Noise Collection",
+      "type": "environmental_noise_corpus",
+      "license": "CC-BY-4.0",
+      "upstream_url": "https://github.com/huseinzol05/malay-dataset",
+      "local_path": "data/raw/noise/extracted/noise/mic-noise",
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "num_tracks": 40,
+      "total_duration_minutes": 49.22,
+      "role": "noise_augmentation_and_environmental_reject_subgroup"
+    },
+    "src_synthetic_ambient_generator": {
+      "name": "Algorithmic Acoustic Ambient Noise Generator",
+      "type": "synthetic_ambient",
+      "license": "Apache-2.0 / Internal-Research",
+      "families": ["near_silence", "hvac_hum", "office_ambient", "airflow_pink"],
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "role": "silence_non_speech_reject_subgroup"
+    },
+    "src_oov_confusers_vieneu": {
+      "name": "Vietnamese Hard-Negative OOV Confusers (including cửa, mở, bàn, ghế, nhà)",
+      "type": "tts_synthetic",
+      "engine": "VieNeu-TTS v3 Turbo",
+      "license": "Apache-2.0",
+      "sample_rate_hz": 16000,
+      "channels": 1,
+      "role": "oov_word_reject_subgroup"
+    }
+  }
+}

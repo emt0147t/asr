@@ -1,0 +1,54 @@
+{
+  "experiment_id": "exp_v12_e1_baseline_scale",
+  "description": "Controlled Experiment E1: Baseline-scale retraining on Dataset v12",
+  "timestamp": "2026-10-23",
+  "model_architecture": {
+    "name": "CorrectedVietnameseKWSNet",
+    "trainable_parameters": 138469,
+    "non_trainable_buffers": 580,
+    "total_state_dict_elements": 139049,
+    "conv_channels": [
+      32,
+      64,
+      64,
+      128
+    ],
+    "linear_layers": [
+      [
+        128,
+        64
+      ],
+      [
+        64,
+        5
+      ]
+    ],
+    "dropout": 0.3
+  },
+  "hyperparameters": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "scheduler": "CosineAnnealingLR",
+    "batch_size": 64,
+    "max_epochs": 40,
+    "class_weights": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.25
+    ],
+    "seed": 42
+  },
+  "governance_hashes": {
+    "train_manifest_sha256": "e0bbc0a95a6d18f9724a7784f53a0082ce0fd3aae8a8e15a67ed39b6743ec7f7",
+    "val_manifest_sha256": "5af8cf9daa96526cba1a742d1e18982cd4c1ed291dc17d139a8d82bf1cb06682",
+    "e1_checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\checkpoints\\exp_v12_e1_baseline_scale_seed42.pt",
+    "e1_checkpoint_sha256": "f3c0fe8f7ccebb8fe354cb50acb247e0674232044706db0187feb92b1706b878"
+  },
+  "best_validation_result": {
+    "epoch": 35,
+    "val_macro_f1": 0.9313
+  }
+}

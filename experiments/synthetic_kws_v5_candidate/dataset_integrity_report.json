@@ -1,0 +1,74 @@
+{
+  "report_type": "dataset_integrity_report",
+  "dataset_name": "synthetic_kws_v5_candidate",
+  "version": "v5.0-pilot",
+  "total_clips": 120,
+  "classes_count": {
+    "TRAI": 20,
+    "PHAI": 20,
+    "LEN": 20,
+    "XUONG": 20,
+    "UNKNOWN": 20,
+    "SILENCE": 20
+  },
+  "all_files_exist": true,
+  "all_sha256_match": true,
+  "all_sample_rate_16k": true,
+  "all_duration_16000_samples": true,
+  "all_values_finite": true,
+  "no_clipping_detected": true,
+  "determinism_verification": {
+    "all_classes_bit_exact": true,
+    "samples_tested": [
+      {
+        "class_label": "TRAI",
+        "recording_id": "v5_pilot_trai_001",
+        "seed": 50000,
+        "expected_sha256": "BFFC4DE382359AADF0F50B31E18FD3840AA21AAA48409FB587F591FB6317F140",
+        "regenerated_sha256": "BFFC4DE382359AADF0F50B31E18FD3840AA21AAA48409FB587F591FB6317F140",
+        "bit_exact_match": true
+      },
+      {
+        "class_label": "PHAI",
+        "recording_id": "v5_pilot_phai_001",
+        "seed": 50100,
+        "expected_sha256": "14A02AD7D27E472DC200D1A1E72033F33A7AE144B695FB1728C354E13ECBFE92",
+        "regenerated_sha256": "14A02AD7D27E472DC200D1A1E72033F33A7AE144B695FB1728C354E13ECBFE92",
+        "bit_exact_match": true
+      },
+      {
+        "class_label": "LEN",
+        "recording_id": "v5_pilot_len_001",
+        "seed": 50200,
+        "expected_sha256": "590B235C6CAD3594BC87D402861C757BB9E5F60433EA47EEE4D1C79F616033B4",
+        "regenerated_sha256": "590B235C6CAD3594BC87D402861C757BB9E5F60433EA47EEE4D1C79F616033B4",
+        "bit_exact_match": true
+      },
+      {
+        "class_label": "XUONG",
+        "recording_id": "v5_pilot_xuong_001",
+        "seed": 50300,
+        "expected_sha256": "1A7F312BA782DB05857245DC159685959377BE9B878E930A9632449461315A72",
+        "regenerated_sha256": "1A7F312BA782DB05857245DC159685959377BE9B878E930A9632449461315A72",
+        "bit_exact_match": true
+      },
+      {
+        "class_label": "UNKNOWN",
+        "recording_id": "v5_pilot_unknown_001",
+        "seed": 50400,
+        "expected_sha256": "24EF8DDCB51661D143239FA76D2C120181B83F686531D63CCB363F4725FCCD98",
+        "regenerated_sha256": "24EF8DDCB51661D143239FA76D2C120181B83F686531D63CCB363F4725FCCD98",
+        "bit_exact_match": true
+      },
+      {
+        "class_label": "SILENCE",
+        "recording_id": "v5_pilot_silence_001",
+        "seed": 50500,
+        "expected_sha256": "643F8A8DC8BD9C19225AFFFAD2BECFEC5426180B3749CB208ABDF1A6C8354EFC",
+        "regenerated_sha256": "643F8A8DC8BD9C19225AFFFAD2BECFEC5426180B3749CB208ABDF1A6C8354EFC",
+        "bit_exact_match": true
+      }
+    ]
+  },
+  "overall_integrity_status": "PASS"
+}

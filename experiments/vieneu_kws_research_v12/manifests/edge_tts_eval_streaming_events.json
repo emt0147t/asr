@@ -1,0 +1,5834 @@
+[
+  {
+    "sequence_id": "edge_stream_seq_001_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4394,
+    "end_time": 0.8831,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_001_clean",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.0831,
+    "end_time": 2.5107,
+    "duration": 0.4276
+  },
+  {
+    "sequence_id": "edge_stream_seq_001_clean",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.1107,
+    "end_time": 3.5008,
+    "duration": 0.3901
+  },
+  {
+    "sequence_id": "edge_stream_seq_001_clean",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.3008,
+    "end_time": 4.7157,
+    "duration": 0.4149
+  },
+  {
+    "sequence_id": "edge_stream_seq_001_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.9158,
+    "end_time": 6.3301,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_001_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.1301,
+    "end_time": 7.5649,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_001_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.5649,
+    "end_time": 8.916,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_001_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 10.416,
+    "end_time": 10.8303,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_002_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5804,
+    "end_time": 0.9526,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_002_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.7526,
+    "end_time": 2.1248,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_002_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.7247,
+    "end_time": 3.1684,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_002_clean",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.9684,
+    "end_time": 4.3138,
+    "duration": 0.3454
+  },
+  {
+    "sequence_id": "edge_stream_seq_002_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.5138,
+    "end_time": 5.9068,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_002_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.9068,
+    "end_time": 7.3211,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_002_clean",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.5211,
+    "end_time": 8.8966,
+    "duration": 0.3755
+  },
+  {
+    "sequence_id": "edge_stream_seq_003_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.449,
+    "end_time": 0.8001,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_003_clean",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.6001,
+    "end_time": 2.0443,
+    "duration": 0.4442
+  },
+  {
+    "sequence_id": "edge_stream_seq_003_clean",
+    "label": "REJECT",
+    "text": "sách",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.0443,
+    "end_time": 3.4121,
+    "duration": 0.3678
+  },
+  {
+    "sequence_id": "edge_stream_seq_003_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.6121,
+    "end_time": 5.124,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_003_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.624,
+    "end_time": 6.9751,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_003_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.9751,
+    "end_time": 8.4089,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_003_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.9089,
+    "end_time": 10.3438,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_004_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4502,
+    "end_time": 0.8013,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_004_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.0013,
+    "end_time": 2.5132,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_004_clean",
+    "label": "REJECT",
+    "text": "bút",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.0132,
+    "end_time": 4.2754,
+    "duration": 0.2622
+  },
+  {
+    "sequence_id": "edge_stream_seq_004_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.4754,
+    "end_time": 5.8684,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_004_clean",
+    "label": "REJECT",
+    "text": "nước",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.6684,
+    "end_time": 6.9502,
+    "duration": 0.2818
+  },
+  {
+    "sequence_id": "edge_stream_seq_005_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4582,
+    "end_time": 0.8512,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_005_clean",
+    "label": "REJECT",
+    "text": "xong",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.6512,
+    "end_time": 2.1779,
+    "duration": 0.5268
+  },
+  {
+    "sequence_id": "edge_stream_seq_005_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.9779,
+    "end_time": 3.4118,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_005_clean",
+    "label": "REJECT",
+    "text": "nước",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.9117,
+    "end_time": 5.2356,
+    "duration": 0.3238
+  },
+  {
+    "sequence_id": "edge_stream_seq_005_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.4356,
+    "end_time": 6.7867,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_005_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.1867,
+    "end_time": 7.5378,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_005_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 9.0378,
+    "end_time": 9.5497,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_006_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4397,
+    "end_time": 0.8119,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_006_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.4119,
+    "end_time": 1.8262,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_006_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.6263,
+    "end_time": 3.0406,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_006_clean",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.2406,
+    "end_time": 4.6555,
+    "duration": 0.4149
+  },
+  {
+    "sequence_id": "edge_stream_seq_006_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.6555,
+    "end_time": 6.0066,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_006_clean",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.8066,
+    "end_time": 7.1842,
+    "duration": 0.3776
+  },
+  {
+    "sequence_id": "edge_stream_seq_007_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5661,
+    "end_time": 1.0009,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_007_clean",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.5009,
+    "end_time": 2.9066,
+    "duration": 0.4057
+  },
+  {
+    "sequence_id": "edge_stream_seq_007_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.3066,
+    "end_time": 3.6578,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_007_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.8578,
+    "end_time": 5.3696,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_007_clean",
+    "label": "REJECT",
+    "text": "trả",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.9696,
+    "end_time": 6.4159,
+    "duration": 0.4463
+  },
+  {
+    "sequence_id": "edge_stream_seq_007_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.4159,
+    "end_time": 7.9277,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_007_clean",
+    "label": "REJECT",
+    "text": "trên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 9.4277,
+    "end_time": 9.8488,
+    "duration": 0.4211
+  },
+  {
+    "sequence_id": "edge_stream_seq_008_clean",
+    "label": "REJECT",
+    "text": "phần",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4195,
+    "end_time": 0.7796,
+    "duration": 0.3601
+  },
+  {
+    "sequence_id": "edge_stream_seq_008_clean",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.9796,
+    "end_time": 2.4071,
+    "duration": 0.4276
+  },
+  {
+    "sequence_id": "edge_stream_seq_008_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.4071,
+    "end_time": 3.7793,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_008_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.1793,
+    "end_time": 4.5515,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_008_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.1515,
+    "end_time": 5.5853,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_008_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.0853,
+    "end_time": 7.5191,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_009_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5585,
+    "end_time": 0.9923,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_009_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.3923,
+    "end_time": 1.8261,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_009_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.2261,
+    "end_time": 2.6698,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_009_clean",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.0698,
+    "end_time": 3.5033,
+    "duration": 0.4335
+  },
+  {
+    "sequence_id": "edge_stream_seq_009_clean",
+    "label": "REJECT",
+    "text": "tiền",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.7033,
+    "end_time": 5.0563,
+    "duration": 0.3529
+  },
+  {
+    "sequence_id": "edge_stream_seq_010_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4969,
+    "end_time": 0.8481,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_010_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.8481,
+    "end_time": 2.3599,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_010_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.3599,
+    "end_time": 3.7938,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_010_clean",
+    "label": "REJECT",
+    "text": "phần",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.5938,
+    "end_time": 4.9538,
+    "duration": 0.3601
+  },
+  {
+    "sequence_id": "edge_stream_seq_010_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.3538,
+    "end_time": 5.8657,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_010_clean",
+    "label": "REJECT",
+    "text": "xương",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.8657,
+    "end_time": 7.2467,
+    "duration": 0.3811
+  },
+  {
+    "sequence_id": "edge_stream_seq_010_clean",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.7468,
+    "end_time": 9.1243,
+    "duration": 0.3776
+  },
+  {
+    "sequence_id": "edge_stream_seq_011_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5523,
+    "end_time": 0.9244,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_011_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.5244,
+    "end_time": 1.8756,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_011_clean",
+    "label": "REJECT",
+    "text": "sách",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.6756,
+    "end_time": 2.9512,
+    "duration": 0.2756
+  },
+  {
+    "sequence_id": "edge_stream_seq_011_clean",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.1512,
+    "end_time": 4.5636,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_011_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.3636,
+    "end_time": 5.8073,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_011_clean",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.8073,
+    "end_time": 7.1604,
+    "duration": 0.3531
+  },
+  {
+    "sequence_id": "edge_stream_seq_012_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4979,
+    "end_time": 0.9317,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_012_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.1317,
+    "end_time": 2.5248,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_012_clean",
+    "label": "REJECT",
+    "text": "xương",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.9247,
+    "end_time": 3.3058,
+    "duration": 0.3811
+  },
+  {
+    "sequence_id": "edge_stream_seq_012_clean",
+    "label": "REJECT",
+    "text": "sách",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.5058,
+    "end_time": 4.7814,
+    "duration": 0.2756
+  },
+  {
+    "sequence_id": "edge_stream_seq_012_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.1814,
+    "end_time": 5.6251,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_013_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3237,
+    "end_time": 0.7585,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_013_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.3585,
+    "end_time": 1.8022,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_013_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.2022,
+    "end_time": 2.636,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_013_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.636,
+    "end_time": 4.0708,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_013_clean",
+    "label": "REJECT",
+    "text": "bàn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.6708,
+    "end_time": 5.1097,
+    "duration": 0.4389
+  },
+  {
+    "sequence_id": "edge_stream_seq_013_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.3097,
+    "end_time": 6.7534,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_013_clean",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.7534,
+    "end_time": 8.1809,
+    "duration": 0.4276
+  },
+  {
+    "sequence_id": "edge_stream_seq_014_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5939,
+    "end_time": 0.9451,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_014_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.9451,
+    "end_time": 2.3789,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_014_clean",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.7789,
+    "end_time": 3.2497,
+    "duration": 0.4708
+  },
+  {
+    "sequence_id": "edge_stream_seq_014_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.2497,
+    "end_time": 4.664,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_014_clean",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.664,
+    "end_time": 6.0893,
+    "duration": 0.4253
+  },
+  {
+    "sequence_id": "edge_stream_seq_014_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.4893,
+    "end_time": 7.0012,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_015_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5239,
+    "end_time": 0.9587,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_015_clean",
+    "label": "REJECT",
+    "text": "bút",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.7587,
+    "end_time": 2.103,
+    "duration": 0.3443
+  },
+  {
+    "sequence_id": "edge_stream_seq_015_clean",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.603,
+    "end_time": 3.9931,
+    "duration": 0.3901
+  },
+  {
+    "sequence_id": "edge_stream_seq_015_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.3931,
+    "end_time": 4.905,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_015_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.905,
+    "end_time": 6.3388,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_015_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.9388,
+    "end_time": 7.4507,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_015_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.2507,
+    "end_time": 8.6229,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_015_clean",
+    "label": "REJECT",
+    "text": "sách",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.4229,
+    "end_time": 9.6985,
+    "duration": 0.2756
+  },
+  {
+    "sequence_id": "edge_stream_seq_016_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5184,
+    "end_time": 1.0303,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_016_clean",
+    "label": "REJECT",
+    "text": "sách",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.8303,
+    "end_time": 2.1981,
+    "duration": 0.3678
+  },
+  {
+    "sequence_id": "edge_stream_seq_016_clean",
+    "label": "REJECT",
+    "text": "lớn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.1981,
+    "end_time": 3.5829,
+    "duration": 0.3847
+  },
+  {
+    "sequence_id": "edge_stream_seq_016_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.3829,
+    "end_time": 4.8167,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_016_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.0167,
+    "end_time": 6.4505,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_016_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.8505,
+    "end_time": 7.2016,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_016_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.6016,
+    "end_time": 8.0354,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_017_clean",
+    "label": "REJECT",
+    "text": "xong",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4377,
+    "end_time": 0.7989,
+    "duration": 0.3612
+  },
+  {
+    "sequence_id": "edge_stream_seq_017_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.3989,
+    "end_time": 1.7501,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_017_clean",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.7501,
+    "end_time": 3.1031,
+    "duration": 0.3531
+  },
+  {
+    "sequence_id": "edge_stream_seq_017_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.7031,
+    "end_time": 4.0961,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_017_clean",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.5961,
+    "end_time": 5.9737,
+    "duration": 0.3776
+  },
+  {
+    "sequence_id": "edge_stream_seq_017_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.3737,
+    "end_time": 6.8085,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_017_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.3085,
+    "end_time": 8.6596,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_017_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.8596,
+    "end_time": 10.2526,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_018_clean",
+    "label": "REJECT",
+    "text": "trời",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3679,
+    "end_time": 0.7381,
+    "duration": 0.3701
+  },
+  {
+    "sequence_id": "edge_stream_seq_018_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.3381,
+    "end_time": 1.7103,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_018_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.2102,
+    "end_time": 3.5824,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_018_clean",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.1824,
+    "end_time": 4.5355,
+    "duration": 0.3531
+  },
+  {
+    "sequence_id": "edge_stream_seq_018_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.9355,
+    "end_time": 5.3703,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_018_clean",
+    "label": "REJECT",
+    "text": "trên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.7703,
+    "end_time": 6.123,
+    "duration": 0.3527
+  },
+  {
+    "sequence_id": "edge_stream_seq_018_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.923,
+    "end_time": 7.2952,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_019_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5139,
+    "end_time": 0.9487,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_019_clean",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.7488,
+    "end_time": 2.1612,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_019_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.7612,
+    "end_time": 3.2049,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_019_clean",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.4049,
+    "end_time": 4.8324,
+    "duration": 0.4276
+  },
+  {
+    "sequence_id": "edge_stream_seq_019_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.8324,
+    "end_time": 6.2254,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_019_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.0254,
+    "end_time": 7.3976,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_019_clean",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.7976,
+    "end_time": 8.1877,
+    "duration": 0.3901
+  },
+  {
+    "sequence_id": "edge_stream_seq_019_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.9878,
+    "end_time": 9.4996,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_020_clean",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4238,
+    "end_time": 0.8491,
+    "duration": 0.4253
+  },
+  {
+    "sequence_id": "edge_stream_seq_020_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.0491,
+    "end_time": 2.4928,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_020_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.6928,
+    "end_time": 4.1364,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_020_clean",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.5364,
+    "end_time": 4.9489,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_020_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.7489,
+    "end_time": 6.2607,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_020_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.8608,
+    "end_time": 7.2119,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_020_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.0119,
+    "end_time": 8.4467,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_021_clean",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4384,
+    "end_time": 0.8286,
+    "duration": 0.3901
+  },
+  {
+    "sequence_id": "edge_stream_seq_021_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.0286,
+    "end_time": 2.5404,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_021_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.0404,
+    "end_time": 4.4334,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_021_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.0334,
+    "end_time": 5.3846,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_021_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.9846,
+    "end_time": 6.4184,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_021_clean",
+    "label": "REJECT",
+    "text": "phần",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.0184,
+    "end_time": 7.3784,
+    "duration": 0.3601
+  },
+  {
+    "sequence_id": "edge_stream_seq_022_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3194,
+    "end_time": 0.6705,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_022_clean",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.1705,
+    "end_time": 2.5717,
+    "duration": 0.4012
+  },
+  {
+    "sequence_id": "edge_stream_seq_022_clean",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.7717,
+    "end_time": 4.2055,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_022_clean",
+    "label": "REJECT",
+    "text": "tiền",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.4055,
+    "end_time": 5.7584,
+    "duration": 0.3529
+  },
+  {
+    "sequence_id": "edge_stream_seq_022_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.5584,
+    "end_time": 7.0703,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_022_clean",
+    "label": "REJECT",
+    "text": "nước",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.5703,
+    "end_time": 8.8521,
+    "duration": 0.2818
+  },
+  {
+    "sequence_id": "edge_stream_seq_023_clean",
+    "label": "REJECT",
+    "text": "sách",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5603,
+    "end_time": 0.8359,
+    "duration": 0.2756
+  },
+  {
+    "sequence_id": "edge_stream_seq_023_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.2359,
+    "end_time": 1.6707,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_023_clean",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.6707,
+    "end_time": 3.1826,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_023_clean",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.9826,
+    "end_time": 4.3951,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_023_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.7951,
+    "end_time": 5.1881,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_024_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.399,
+    "end_time": 0.7501,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_024_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.2501,
+    "end_time": 2.6012,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_024_clean",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.6012,
+    "end_time": 4.0347,
+    "duration": 0.4335
+  },
+  {
+    "sequence_id": "edge_stream_seq_024_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.6348,
+    "end_time": 4.9859,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_024_clean",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.5859,
+    "end_time": 5.9422,
+    "duration": 0.3563
+  },
+  {
+    "sequence_id": "edge_stream_seq_025_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.591,
+    "end_time": 0.9421,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_025_clean",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.9421,
+    "end_time": 2.3564,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_025_clean",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.1564,
+    "end_time": 3.5494,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_025_clean",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.9494,
+    "end_time": 4.3829,
+    "duration": 0.4335
+  },
+  {
+    "sequence_id": "edge_stream_seq_025_clean",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.9829,
+    "end_time": 5.3954,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_026_snr20",
+    "label": "REJECT",
+    "text": "xong",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4009,
+    "end_time": 0.9276,
+    "duration": 0.5268
+  },
+  {
+    "sequence_id": "edge_stream_seq_026_snr20",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.3276,
+    "end_time": 1.7611,
+    "duration": 0.4335
+  },
+  {
+    "sequence_id": "edge_stream_seq_026_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.3611,
+    "end_time": 2.7541,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_026_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.7541,
+    "end_time": 4.1263,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_026_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.5263,
+    "end_time": 4.9611,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_026_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.7611,
+    "end_time": 6.2048,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_026_snr20",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.0048,
+    "end_time": 7.4301,
+    "duration": 0.4253
+  },
+  {
+    "sequence_id": "edge_stream_seq_027_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.422,
+    "end_time": 0.8558,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_027_snr20",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.6558,
+    "end_time": 2.0334,
+    "duration": 0.3776
+  },
+  {
+    "sequence_id": "edge_stream_seq_027_snr20",
+    "label": "REJECT",
+    "text": "trên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.2334,
+    "end_time": 3.6544,
+    "duration": 0.4211
+  },
+  {
+    "sequence_id": "edge_stream_seq_027_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.8544,
+    "end_time": 5.2882,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_027_snr20",
+    "label": "REJECT",
+    "text": "xuân",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.6883,
+    "end_time": 6.0688,
+    "duration": 0.3806
+  },
+  {
+    "sequence_id": "edge_stream_seq_027_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.5688,
+    "end_time": 7.9831,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_027_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.7831,
+    "end_time": 9.2179,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_027_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.6179,
+    "end_time": 10.0527,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_028_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4221,
+    "end_time": 0.7732,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_028_snr20",
+    "label": "REJECT",
+    "text": "trên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.9732,
+    "end_time": 2.3942,
+    "duration": 0.4211
+  },
+  {
+    "sequence_id": "edge_stream_seq_028_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.3942,
+    "end_time": 3.8291,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_028_snr20",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.4291,
+    "end_time": 4.8046,
+    "duration": 0.3755
+  },
+  {
+    "sequence_id": "edge_stream_seq_028_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.6046,
+    "end_time": 5.9768,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_028_snr20",
+    "label": "REJECT",
+    "text": "trên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.1768,
+    "end_time": 7.5294,
+    "duration": 0.3527
+  },
+  {
+    "sequence_id": "edge_stream_seq_028_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.5294,
+    "end_time": 9.0413,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_028_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 9.8413,
+    "end_time": 10.285,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_029_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.519,
+    "end_time": 0.8701,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_029_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.2701,
+    "end_time": 1.782,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_029_snr20",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.982,
+    "end_time": 3.3944,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_029_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.8944,
+    "end_time": 5.3087,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_029_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.5088,
+    "end_time": 7.0206,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_029_snr20",
+    "label": "REJECT",
+    "text": "tiền",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.8206,
+    "end_time": 8.2171,
+    "duration": 0.3965
+  },
+  {
+    "sequence_id": "edge_stream_seq_029_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.8171,
+    "end_time": 9.2519,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_030_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.549,
+    "end_time": 0.9927,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_030_snr20",
+    "label": "REJECT",
+    "text": "lớn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.1927,
+    "end_time": 2.6461,
+    "duration": 0.4534
+  },
+  {
+    "sequence_id": "edge_stream_seq_030_snr20",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.8461,
+    "end_time": 4.1991,
+    "duration": 0.3531
+  },
+  {
+    "sequence_id": "edge_stream_seq_030_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.1991,
+    "end_time": 5.711,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_030_snr20",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.111,
+    "end_time": 6.4673,
+    "duration": 0.3563
+  },
+  {
+    "sequence_id": "edge_stream_seq_030_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.4673,
+    "end_time": 7.8603,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_030_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 9.3603,
+    "end_time": 9.7941,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_031_snr20",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3887,
+    "end_time": 0.7418,
+    "duration": 0.3531
+  },
+  {
+    "sequence_id": "edge_stream_seq_031_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.5417,
+    "end_time": 1.9347,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_031_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.7348,
+    "end_time": 3.1277,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_031_snr20",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.3277,
+    "end_time": 4.7334,
+    "duration": 0.4057
+  },
+  {
+    "sequence_id": "edge_stream_seq_031_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.9334,
+    "end_time": 6.3264,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_031_snr20",
+    "label": "REJECT",
+    "text": "sách",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.3264,
+    "end_time": 7.6021,
+    "duration": 0.2756
+  },
+  {
+    "sequence_id": "edge_stream_seq_032_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3301,
+    "end_time": 0.842,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_032_snr20",
+    "label": "REJECT",
+    "text": "trời",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.442,
+    "end_time": 1.8121,
+    "duration": 0.3701
+  },
+  {
+    "sequence_id": "edge_stream_seq_032_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.0121,
+    "end_time": 3.3632,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_032_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.8632,
+    "end_time": 5.2971,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_032_snr20",
+    "label": "REJECT",
+    "text": "tiền",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.0971,
+    "end_time": 6.45,
+    "duration": 0.3529
+  },
+  {
+    "sequence_id": "edge_stream_seq_033_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3449,
+    "end_time": 0.7171,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_033_snr20",
+    "label": "REJECT",
+    "text": "xong",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.7171,
+    "end_time": 2.2439,
+    "duration": 0.5268
+  },
+  {
+    "sequence_id": "edge_stream_seq_033_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.2439,
+    "end_time": 3.6777,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_033_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.6777,
+    "end_time": 5.0707,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_033_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.4707,
+    "end_time": 5.9055,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_033_snr20",
+    "label": "REJECT",
+    "text": "tiền",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.9055,
+    "end_time": 7.302,
+    "duration": 0.3965
+  },
+  {
+    "sequence_id": "edge_stream_seq_034_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3077,
+    "end_time": 0.6588,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_034_snr20",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.1588,
+    "end_time": 2.5645,
+    "duration": 0.4057
+  },
+  {
+    "sequence_id": "edge_stream_seq_034_snr20",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.1645,
+    "end_time": 3.6031,
+    "duration": 0.4386
+  },
+  {
+    "sequence_id": "edge_stream_seq_034_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.6031,
+    "end_time": 5.1149,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_034_snr20",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.7149,
+    "end_time": 6.1494,
+    "duration": 0.4344
+  },
+  {
+    "sequence_id": "edge_stream_seq_034_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.9494,
+    "end_time": 7.3216,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_034_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.8216,
+    "end_time": 9.2146,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_035_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4203,
+    "end_time": 0.8346,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_035_snr20",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.6346,
+    "end_time": 1.9877,
+    "duration": 0.3531
+  },
+  {
+    "sequence_id": "edge_stream_seq_035_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.7877,
+    "end_time": 3.202,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_035_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.202,
+    "end_time": 4.595,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_035_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.995,
+    "end_time": 5.3461,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_035_snr20",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.3461,
+    "end_time": 6.7737,
+    "duration": 0.4276
+  },
+  {
+    "sequence_id": "edge_stream_seq_035_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.9737,
+    "end_time": 8.3248,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_036_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5921,
+    "end_time": 0.9433,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_036_snr20",
+    "label": "REJECT",
+    "text": "máy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.3433,
+    "end_time": 1.7317,
+    "duration": 0.3884
+  },
+  {
+    "sequence_id": "edge_stream_seq_036_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.1317,
+    "end_time": 2.5247,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_036_snr20",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.9247,
+    "end_time": 3.3689,
+    "duration": 0.4442
+  },
+  {
+    "sequence_id": "edge_stream_seq_036_snr20",
+    "label": "REJECT",
+    "text": "lớn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.8689,
+    "end_time": 5.3223,
+    "duration": 0.4534
+  },
+  {
+    "sequence_id": "edge_stream_seq_036_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.9223,
+    "end_time": 6.2734,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_037_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3211,
+    "end_time": 0.7141,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_037_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.3141,
+    "end_time": 1.6863,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_037_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.1863,
+    "end_time": 3.6201,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_037_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.0201,
+    "end_time": 4.4549,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_037_snr20",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.4549,
+    "end_time": 5.8991,
+    "duration": 0.4442
+  },
+  {
+    "sequence_id": "edge_stream_seq_037_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.4991,
+    "end_time": 6.9428,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_037_snr20",
+    "label": "REJECT",
+    "text": "trên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.9428,
+    "end_time": 8.2955,
+    "duration": 0.3527
+  },
+  {
+    "sequence_id": "edge_stream_seq_038_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4734,
+    "end_time": 0.9171,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_038_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.7171,
+    "end_time": 2.1314,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_038_snr20",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.5314,
+    "end_time": 3.0023,
+    "duration": 0.4708
+  },
+  {
+    "sequence_id": "edge_stream_seq_038_snr20",
+    "label": "REJECT",
+    "text": "phần",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.5023,
+    "end_time": 4.8821,
+    "duration": 0.3799
+  },
+  {
+    "sequence_id": "edge_stream_seq_038_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.4821,
+    "end_time": 5.9159,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_038_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.3159,
+    "end_time": 6.7089,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_038_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.2089,
+    "end_time": 8.5601,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_039_snr20",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5131,
+    "end_time": 0.9032,
+    "duration": 0.3901
+  },
+  {
+    "sequence_id": "edge_stream_seq_039_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.7032,
+    "end_time": 2.1175,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_039_snr20",
+    "label": "REJECT",
+    "text": "bút",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.5175,
+    "end_time": 2.7797,
+    "duration": 0.2622
+  },
+  {
+    "sequence_id": "edge_stream_seq_039_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.5797,
+    "end_time": 3.9308,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_039_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.3308,
+    "end_time": 4.8427,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_040_snr20",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5153,
+    "end_time": 0.9861,
+    "duration": 0.4708
+  },
+  {
+    "sequence_id": "edge_stream_seq_040_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.7861,
+    "end_time": 2.2004,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_040_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.7004,
+    "end_time": 4.1147,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_040_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.6147,
+    "end_time": 6.0291,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_040_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.2291,
+    "end_time": 7.5802,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_040_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.5802,
+    "end_time": 9.0239,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_040_snr20",
+    "label": "REJECT",
+    "text": "trời",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.6239,
+    "end_time": 9.9919,
+    "duration": 0.3681
+  },
+  {
+    "sequence_id": "edge_stream_seq_041_snr20",
+    "label": "REJECT",
+    "text": "trả",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5029,
+    "end_time": 0.9467,
+    "duration": 0.4439
+  },
+  {
+    "sequence_id": "edge_stream_seq_041_snr20",
+    "label": "REJECT",
+    "text": "bàn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.3467,
+    "end_time": 1.7505,
+    "duration": 0.4038
+  },
+  {
+    "sequence_id": "edge_stream_seq_041_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.2505,
+    "end_time": 3.6853,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_041_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.2853,
+    "end_time": 4.6364,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_041_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.1364,
+    "end_time": 6.5507,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_041_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.7508,
+    "end_time": 8.2626,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_041_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 9.4626,
+    "end_time": 9.8964,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_042_snr20",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5869,
+    "end_time": 0.9882,
+    "duration": 0.4012
+  },
+  {
+    "sequence_id": "edge_stream_seq_042_snr20",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.7882,
+    "end_time": 2.1445,
+    "duration": 0.3563
+  },
+  {
+    "sequence_id": "edge_stream_seq_042_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.6445,
+    "end_time": 4.1564,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_042_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.5564,
+    "end_time": 4.9286,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_042_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.5286,
+    "end_time": 5.9008,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_042_snr20",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.4008,
+    "end_time": 7.8157,
+    "duration": 0.4149
+  },
+  {
+    "sequence_id": "edge_stream_seq_043_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3875,
+    "end_time": 0.7597,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_043_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.3597,
+    "end_time": 1.7108,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_043_snr20",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.2108,
+    "end_time": 3.6121,
+    "duration": 0.4013
+  },
+  {
+    "sequence_id": "edge_stream_seq_043_snr20",
+    "label": "REJECT",
+    "text": "xương",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.0121,
+    "end_time": 4.5454,
+    "duration": 0.5334
+  },
+  {
+    "sequence_id": "edge_stream_seq_043_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.7454,
+    "end_time": 6.0966,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_043_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.0966,
+    "end_time": 7.5109,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_044_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4614,
+    "end_time": 0.8336,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_044_snr20",
+    "label": "REJECT",
+    "text": "xuân",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.4336,
+    "end_time": 1.8141,
+    "duration": 0.3806
+  },
+  {
+    "sequence_id": "edge_stream_seq_044_snr20",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.8141,
+    "end_time": 3.1672,
+    "duration": 0.3531
+  },
+  {
+    "sequence_id": "edge_stream_seq_044_snr20",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.6672,
+    "end_time": 5.0589,
+    "duration": 0.3917
+  },
+  {
+    "sequence_id": "edge_stream_seq_044_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.6589,
+    "end_time": 6.0927,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_044_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.2927,
+    "end_time": 7.707,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_044_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.207,
+    "end_time": 9.6418,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_044_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 10.0418,
+    "end_time": 10.4348,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_045_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5929,
+    "end_time": 1.0366,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_045_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.2366,
+    "end_time": 2.6704,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_045_snr20",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.1704,
+    "end_time": 4.5621,
+    "duration": 0.3917
+  },
+  {
+    "sequence_id": "edge_stream_seq_045_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.0621,
+    "end_time": 6.4342,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_045_snr20",
+    "label": "REJECT",
+    "text": "xương",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.6342,
+    "end_time": 8.1676,
+    "duration": 0.5334
+  },
+  {
+    "sequence_id": "edge_stream_seq_045_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.6676,
+    "end_time": 10.0398,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_046_snr20",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5981,
+    "end_time": 0.9435,
+    "duration": 0.3454
+  },
+  {
+    "sequence_id": "edge_stream_seq_046_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.3435,
+    "end_time": 1.7157,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_046_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.5157,
+    "end_time": 2.93,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_046_snr20",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.53,
+    "end_time": 4.0008,
+    "duration": 0.4708
+  },
+  {
+    "sequence_id": "edge_stream_seq_046_snr20",
+    "label": "REJECT",
+    "text": "bút",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.8008,
+    "end_time": 5.1451,
+    "duration": 0.3443
+  },
+  {
+    "sequence_id": "edge_stream_seq_046_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.3451,
+    "end_time": 6.7594,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_047_snr20",
+    "label": "REJECT",
+    "text": "tiền",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5096,
+    "end_time": 0.9061,
+    "duration": 0.3965
+  },
+  {
+    "sequence_id": "edge_stream_seq_047_snr20",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.4061,
+    "end_time": 2.8314,
+    "duration": 0.4253
+  },
+  {
+    "sequence_id": "edge_stream_seq_047_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.6314,
+    "end_time": 4.0652,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_047_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.6653,
+    "end_time": 5.1089,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_047_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.7089,
+    "end_time": 6.1019,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_047_snr20",
+    "label": "REJECT",
+    "text": "tiền",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.3019,
+    "end_time": 7.6549,
+    "duration": 0.3529
+  },
+  {
+    "sequence_id": "edge_stream_seq_047_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.0549,
+    "end_time": 8.4692,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_048_snr20",
+    "label": "REJECT",
+    "text": "xương",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5542,
+    "end_time": 0.9353,
+    "duration": 0.3811
+  },
+  {
+    "sequence_id": "edge_stream_seq_048_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.1353,
+    "end_time": 2.5074,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_048_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.3074,
+    "end_time": 3.7511,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_048_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.1511,
+    "end_time": 4.5023,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_048_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.9023,
+    "end_time": 5.3459,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_048_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.7459,
+    "end_time": 6.1807,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_048_snr20",
+    "label": "REJECT",
+    "text": "xương",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.1807,
+    "end_time": 7.7141,
+    "duration": 0.5334
+  },
+  {
+    "sequence_id": "edge_stream_seq_048_snr20",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.3141,
+    "end_time": 8.7476,
+    "duration": 0.4335
+  },
+  {
+    "sequence_id": "edge_stream_seq_049_snr20",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4971,
+    "end_time": 0.8439,
+    "duration": 0.3468
+  },
+  {
+    "sequence_id": "edge_stream_seq_049_snr20",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.8439,
+    "end_time": 2.2563,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_049_snr20",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.2563,
+    "end_time": 3.6493,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_049_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.2493,
+    "end_time": 4.7612,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_049_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.3612,
+    "end_time": 5.795,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_050_snr20",
+    "label": "REJECT",
+    "text": "trả",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5901,
+    "end_time": 1.0364,
+    "duration": 0.4463
+  },
+  {
+    "sequence_id": "edge_stream_seq_050_snr20",
+    "label": "REJECT",
+    "text": "bàn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.8364,
+    "end_time": 2.2753,
+    "duration": 0.4389
+  },
+  {
+    "sequence_id": "edge_stream_seq_050_snr20",
+    "label": "REJECT",
+    "text": "phần",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.7753,
+    "end_time": 4.1551,
+    "duration": 0.3799
+  },
+  {
+    "sequence_id": "edge_stream_seq_050_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.5551,
+    "end_time": 4.9062,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_050_snr20",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.4062,
+    "end_time": 6.7574,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_050_snr20",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.1574,
+    "end_time": 7.5296,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_050_snr20",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.1296,
+    "end_time": 8.5644,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_051_snr15",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5347,
+    "end_time": 0.9496,
+    "duration": 0.4149
+  },
+  {
+    "sequence_id": "edge_stream_seq_051_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.4496,
+    "end_time": 2.9615,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_051_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.5615,
+    "end_time": 3.9953,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_051_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.9953,
+    "end_time": 5.3675,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_051_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.9675,
+    "end_time": 6.3605,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_051_snr15",
+    "label": "REJECT",
+    "text": "lớn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.7605,
+    "end_time": 7.1452,
+    "duration": 0.3847
+  },
+  {
+    "sequence_id": "edge_stream_seq_052_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5042,
+    "end_time": 0.9185,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_052_snr15",
+    "label": "REJECT",
+    "text": "bàn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.7185,
+    "end_time": 2.1574,
+    "duration": 0.4389
+  },
+  {
+    "sequence_id": "edge_stream_seq_052_snr15",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.3574,
+    "end_time": 3.7027,
+    "duration": 0.3454
+  },
+  {
+    "sequence_id": "edge_stream_seq_052_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.1028,
+    "end_time": 4.5366,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_052_snr15",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.1366,
+    "end_time": 5.5619,
+    "duration": 0.4253
+  },
+  {
+    "sequence_id": "edge_stream_seq_052_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.0619,
+    "end_time": 7.5738,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_053_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4153,
+    "end_time": 0.8589,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_053_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.3589,
+    "end_time": 2.7101,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_053_snr15",
+    "label": "REJECT",
+    "text": "bút",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.1101,
+    "end_time": 3.4544,
+    "duration": 0.3443
+  },
+  {
+    "sequence_id": "edge_stream_seq_053_snr15",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.2544,
+    "end_time": 4.5998,
+    "duration": 0.3454
+  },
+  {
+    "sequence_id": "edge_stream_seq_053_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.1997,
+    "end_time": 5.5719,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_053_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.9719,
+    "end_time": 6.4838,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_053_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.9838,
+    "end_time": 8.3768,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_054_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5427,
+    "end_time": 0.9357,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_054_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.7357,
+    "end_time": 2.1705,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_054_snr15",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.3705,
+    "end_time": 3.7829,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_054_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.5829,
+    "end_time": 4.9551,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_054_snr15",
+    "label": "REJECT",
+    "text": "bàn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.5551,
+    "end_time": 5.9589,
+    "duration": 0.4037
+  },
+  {
+    "sequence_id": "edge_stream_seq_054_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.1589,
+    "end_time": 7.5732,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_054_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.7732,
+    "end_time": 9.2169,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_055_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3802,
+    "end_time": 0.8239,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_055_snr15",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.4239,
+    "end_time": 1.7802,
+    "duration": 0.3563
+  },
+  {
+    "sequence_id": "edge_stream_seq_055_snr15",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.5802,
+    "end_time": 2.927,
+    "duration": 0.3468
+  },
+  {
+    "sequence_id": "edge_stream_seq_055_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.327,
+    "end_time": 3.8389,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_055_snr15",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.3389,
+    "end_time": 5.7538,
+    "duration": 0.4149
+  },
+  {
+    "sequence_id": "edge_stream_seq_055_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.7538,
+    "end_time": 7.1468,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_056_snr15",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3368,
+    "end_time": 0.7712,
+    "duration": 0.4344
+  },
+  {
+    "sequence_id": "edge_stream_seq_056_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.2713,
+    "end_time": 2.6856,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_056_snr15",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.8856,
+    "end_time": 4.2773,
+    "duration": 0.3917
+  },
+  {
+    "sequence_id": "edge_stream_seq_056_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.2773,
+    "end_time": 5.7891,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_056_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.7891,
+    "end_time": 7.2229,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_056_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.2229,
+    "end_time": 8.6666,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_056_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.2666,
+    "end_time": 9.7014,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_057_snr15",
+    "label": "REJECT",
+    "text": "nước",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3648,
+    "end_time": 0.6886,
+    "duration": 0.3238
+  },
+  {
+    "sequence_id": "edge_stream_seq_057_snr15",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.0886,
+    "end_time": 1.4661,
+    "duration": 0.3776
+  },
+  {
+    "sequence_id": "edge_stream_seq_057_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.9661,
+    "end_time": 3.3173,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_057_snr15",
+    "label": "REJECT",
+    "text": "trên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.7172,
+    "end_time": 4.0699,
+    "duration": 0.3527
+  },
+  {
+    "sequence_id": "edge_stream_seq_057_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.4699,
+    "end_time": 4.8421,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_057_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.4421,
+    "end_time": 5.954,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_057_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.754,
+    "end_time": 7.1878,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_057_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.1878,
+    "end_time": 8.6216,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_058_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4283,
+    "end_time": 0.8719,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_058_snr15",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.0719,
+    "end_time": 2.5161,
+    "duration": 0.4442
+  },
+  {
+    "sequence_id": "edge_stream_seq_058_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.1161,
+    "end_time": 3.5091,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_058_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.3091,
+    "end_time": 4.7021,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_058_snr15",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.7021,
+    "end_time": 6.0489,
+    "duration": 0.3468
+  },
+  {
+    "sequence_id": "edge_stream_seq_058_snr15",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.8489,
+    "end_time": 7.202,
+    "duration": 0.3531
+  },
+  {
+    "sequence_id": "edge_stream_seq_059_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3815,
+    "end_time": 0.7958,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_059_snr15",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.1958,
+    "end_time": 1.6344,
+    "duration": 0.4386
+  },
+  {
+    "sequence_id": "edge_stream_seq_059_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.8344,
+    "end_time": 3.2781,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_059_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.8781,
+    "end_time": 4.2924,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_059_snr15",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.8924,
+    "end_time": 5.2936,
+    "duration": 0.4012
+  },
+  {
+    "sequence_id": "edge_stream_seq_060_snr15",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5954,
+    "end_time": 0.9407,
+    "duration": 0.3454
+  },
+  {
+    "sequence_id": "edge_stream_seq_060_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.3408,
+    "end_time": 1.7337,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_060_snr15",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.7338,
+    "end_time": 3.1239,
+    "duration": 0.3901
+  },
+  {
+    "sequence_id": "edge_stream_seq_060_snr15",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.7239,
+    "end_time": 4.0707,
+    "duration": 0.3468
+  },
+  {
+    "sequence_id": "edge_stream_seq_060_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.0707,
+    "end_time": 5.5045,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_060_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.0045,
+    "end_time": 7.5164,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_060_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.9164,
+    "end_time": 8.3512,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_061_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3694,
+    "end_time": 0.8042,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_061_snr15",
+    "label": "REJECT",
+    "text": "tiền",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.8042,
+    "end_time": 2.1571,
+    "duration": 0.3529
+  },
+  {
+    "sequence_id": "edge_stream_seq_061_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.3571,
+    "end_time": 3.869,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_061_snr15",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.269,
+    "end_time": 4.7132,
+    "duration": 0.4442
+  },
+  {
+    "sequence_id": "edge_stream_seq_061_snr15",
+    "label": "REJECT",
+    "text": "trời",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.7132,
+    "end_time": 6.0812,
+    "duration": 0.3681
+  },
+  {
+    "sequence_id": "edge_stream_seq_061_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.6813,
+    "end_time": 7.1249,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_061_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.3249,
+    "end_time": 8.6971,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_062_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4434,
+    "end_time": 0.8772,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_062_snr15",
+    "label": "REJECT",
+    "text": "nước",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.2772,
+    "end_time": 1.5591,
+    "duration": 0.2818
+  },
+  {
+    "sequence_id": "edge_stream_seq_062_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.7591,
+    "end_time": 3.1313,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_062_snr15",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.6312,
+    "end_time": 5.0698,
+    "duration": 0.4386
+  },
+  {
+    "sequence_id": "edge_stream_seq_062_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.6698,
+    "end_time": 6.1046,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_063_snr15",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5684,
+    "end_time": 0.9153,
+    "duration": 0.3468
+  },
+  {
+    "sequence_id": "edge_stream_seq_063_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.7152,
+    "end_time": 2.1491,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_063_snr15",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.1491,
+    "end_time": 3.5503,
+    "duration": 0.4013
+  },
+  {
+    "sequence_id": "edge_stream_seq_063_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.1503,
+    "end_time": 4.5646,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_063_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.3646,
+    "end_time": 5.7994,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_063_snr15",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.3994,
+    "end_time": 6.8007,
+    "duration": 0.4013
+  },
+  {
+    "sequence_id": "edge_stream_seq_063_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.3007,
+    "end_time": 8.8126,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_063_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 9.4126,
+    "end_time": 9.8562,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_064_snr15",
+    "label": "REJECT",
+    "text": "lớn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3307,
+    "end_time": 0.7841,
+    "duration": 0.4534
+  },
+  {
+    "sequence_id": "edge_stream_seq_064_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.5841,
+    "end_time": 1.9352,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_064_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.5353,
+    "end_time": 2.9701,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_064_snr15",
+    "label": "REJECT",
+    "text": "máy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.9701,
+    "end_time": 4.3922,
+    "duration": 0.4221
+  },
+  {
+    "sequence_id": "edge_stream_seq_064_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.3922,
+    "end_time": 5.7852,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_065_snr15",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3721,
+    "end_time": 0.8429,
+    "duration": 0.4708
+  },
+  {
+    "sequence_id": "edge_stream_seq_065_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.3429,
+    "end_time": 2.7359,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_065_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.7359,
+    "end_time": 4.1289,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_065_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.1289,
+    "end_time": 5.6408,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_065_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.6408,
+    "end_time": 7.0338,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_065_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.6338,
+    "end_time": 8.0481,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_065_snr15",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.4481,
+    "end_time": 8.8494,
+    "duration": 0.4013
+  },
+  {
+    "sequence_id": "edge_stream_seq_066_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3123,
+    "end_time": 0.756,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_066_snr15",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.156,
+    "end_time": 1.5813,
+    "duration": 0.4253
+  },
+  {
+    "sequence_id": "edge_stream_seq_066_snr15",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.3813,
+    "end_time": 2.7825,
+    "duration": 0.4012
+  },
+  {
+    "sequence_id": "edge_stream_seq_066_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.1825,
+    "end_time": 3.5968,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_066_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.5968,
+    "end_time": 5.0405,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_066_snr15",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.5405,
+    "end_time": 6.9181,
+    "duration": 0.3776
+  },
+  {
+    "sequence_id": "edge_stream_seq_066_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.4181,
+    "end_time": 8.9299,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_067_snr15",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5305,
+    "end_time": 0.9429,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_067_snr15",
+    "label": "REJECT",
+    "text": "bút",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.5429,
+    "end_time": 1.8051,
+    "duration": 0.2622
+  },
+  {
+    "sequence_id": "edge_stream_seq_067_snr15",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.0051,
+    "end_time": 3.3505,
+    "duration": 0.3454
+  },
+  {
+    "sequence_id": "edge_stream_seq_067_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.1505,
+    "end_time": 4.5853,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_067_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.7853,
+    "end_time": 6.2201,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_067_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.4201,
+    "end_time": 7.8131,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_068_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4728,
+    "end_time": 0.9066,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_068_snr15",
+    "label": "REJECT",
+    "text": "sách",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.7066,
+    "end_time": 2.0744,
+    "duration": 0.3678
+  },
+  {
+    "sequence_id": "edge_stream_seq_068_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.0744,
+    "end_time": 3.5181,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_068_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.0181,
+    "end_time": 5.4618,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_068_snr15",
+    "label": "REJECT",
+    "text": "lớn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.0618,
+    "end_time": 6.5152,
+    "duration": 0.4534
+  },
+  {
+    "sequence_id": "edge_stream_seq_068_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.1152,
+    "end_time": 7.549,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_069_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4637,
+    "end_time": 0.8359,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_069_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.0359,
+    "end_time": 2.4502,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_069_snr15",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.4502,
+    "end_time": 3.8846,
+    "duration": 0.4344
+  },
+  {
+    "sequence_id": "edge_stream_seq_069_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.2846,
+    "end_time": 4.7184,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_069_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.9184,
+    "end_time": 6.3621,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_069_snr15",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.7621,
+    "end_time": 7.1678,
+    "duration": 0.4057
+  },
+  {
+    "sequence_id": "edge_stream_seq_070_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3986,
+    "end_time": 0.7708,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_070_snr15",
+    "label": "REJECT",
+    "text": "máy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.9708,
+    "end_time": 2.3592,
+    "duration": 0.3884
+  },
+  {
+    "sequence_id": "edge_stream_seq_070_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.7593,
+    "end_time": 3.1104,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_070_snr15",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.6104,
+    "end_time": 4.9634,
+    "duration": 0.3531
+  },
+  {
+    "sequence_id": "edge_stream_seq_070_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.4634,
+    "end_time": 6.8972,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_070_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.2973,
+    "end_time": 7.6484,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_071_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3,
+    "end_time": 0.6511,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_071_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.2511,
+    "end_time": 1.6022,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_071_snr15",
+    "label": "REJECT",
+    "text": "bàn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.0023,
+    "end_time": 2.4411,
+    "duration": 0.4389
+  },
+  {
+    "sequence_id": "edge_stream_seq_071_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.0411,
+    "end_time": 3.3923,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_071_snr15",
+    "label": "REJECT",
+    "text": "xong",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.7923,
+    "end_time": 4.1535,
+    "duration": 0.3613
+  },
+  {
+    "sequence_id": "edge_stream_seq_071_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.3535,
+    "end_time": 5.7678,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_071_snr15",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.9678,
+    "end_time": 7.3931,
+    "duration": 0.4253
+  },
+  {
+    "sequence_id": "edge_stream_seq_071_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.9931,
+    "end_time": 8.505,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_072_snr15",
+    "label": "REJECT",
+    "text": "máy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4736,
+    "end_time": 0.862,
+    "duration": 0.3884
+  },
+  {
+    "sequence_id": "edge_stream_seq_072_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.862,
+    "end_time": 2.2342,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_072_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.2342,
+    "end_time": 3.7461,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_072_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.1461,
+    "end_time": 4.5604,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_072_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.1604,
+    "end_time": 5.5534,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_072_snr15",
+    "label": "REJECT",
+    "text": "máy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.3534,
+    "end_time": 6.7418,
+    "duration": 0.3884
+  },
+  {
+    "sequence_id": "edge_stream_seq_072_snr15",
+    "label": "REJECT",
+    "text": "phần",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.7418,
+    "end_time": 8.1019,
+    "duration": 0.3601
+  },
+  {
+    "sequence_id": "edge_stream_seq_073_snr15",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3518,
+    "end_time": 0.6986,
+    "duration": 0.3468
+  },
+  {
+    "sequence_id": "edge_stream_seq_073_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.0986,
+    "end_time": 1.5423,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_073_snr15",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.7423,
+    "end_time": 3.1768,
+    "duration": 0.4344
+  },
+  {
+    "sequence_id": "edge_stream_seq_073_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.7767,
+    "end_time": 4.2116,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_073_snr15",
+    "label": "REJECT",
+    "text": "bàn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.0116,
+    "end_time": 5.4504,
+    "duration": 0.4389
+  },
+  {
+    "sequence_id": "edge_stream_seq_073_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.0504,
+    "end_time": 6.4843,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_074_snr15",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5907,
+    "end_time": 0.9419,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_074_snr15",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.5419,
+    "end_time": 1.8949,
+    "duration": 0.3531
+  },
+  {
+    "sequence_id": "edge_stream_seq_074_snr15",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.6949,
+    "end_time": 3.1391,
+    "duration": 0.4442
+  },
+  {
+    "sequence_id": "edge_stream_seq_074_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.6391,
+    "end_time": 5.151,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_074_snr15",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.551,
+    "end_time": 5.9848,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_074_snr15",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.3848,
+    "end_time": 6.7778,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_075_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3125,
+    "end_time": 0.8244,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_075_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.4244,
+    "end_time": 1.9363,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_075_snr15",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.9362,
+    "end_time": 3.4481,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_075_snr15",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.9481,
+    "end_time": 5.3398,
+    "duration": 0.3917
+  },
+  {
+    "sequence_id": "edge_stream_seq_075_snr15",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.8398,
+    "end_time": 7.284,
+    "duration": 0.4442
+  },
+  {
+    "sequence_id": "edge_stream_seq_075_snr15",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.684,
+    "end_time": 8.0308,
+    "duration": 0.3468
+  },
+  {
+    "sequence_id": "edge_stream_seq_076_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4881,
+    "end_time": 0.8602,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_076_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.3603,
+    "end_time": 2.7951,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_076_snr10",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.2951,
+    "end_time": 4.6706,
+    "duration": 0.3755
+  },
+  {
+    "sequence_id": "edge_stream_seq_076_snr10",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.6706,
+    "end_time": 6.0762,
+    "duration": 0.4057
+  },
+  {
+    "sequence_id": "edge_stream_seq_076_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.6762,
+    "end_time": 7.1881,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_077_snr10",
+    "label": "REJECT",
+    "text": "trời",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4943,
+    "end_time": 0.8644,
+    "duration": 0.3701
+  },
+  {
+    "sequence_id": "edge_stream_seq_077_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.8644,
+    "end_time": 2.2982,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_077_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.6982,
+    "end_time": 3.1331,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_077_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.7331,
+    "end_time": 4.1679,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_077_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.9679,
+    "end_time": 5.3609,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_077_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.7609,
+    "end_time": 6.1331,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_077_snr10",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.1331,
+    "end_time": 7.5455,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_078_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4331,
+    "end_time": 0.8669,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_078_snr10",
+    "label": "REJECT",
+    "text": "máy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.4669,
+    "end_time": 1.8554,
+    "duration": 0.3884
+  },
+  {
+    "sequence_id": "edge_stream_seq_078_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.4554,
+    "end_time": 2.8892,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_078_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.2892,
+    "end_time": 3.6403,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_078_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.6403,
+    "end_time": 5.0741,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_078_snr10",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.5741,
+    "end_time": 6.9994,
+    "duration": 0.4253
+  },
+  {
+    "sequence_id": "edge_stream_seq_079_snr10",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3944,
+    "end_time": 0.8001,
+    "duration": 0.4057
+  },
+  {
+    "sequence_id": "edge_stream_seq_079_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.4001,
+    "end_time": 1.8349,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_079_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.0349,
+    "end_time": 3.4688,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_079_snr10",
+    "label": "REJECT",
+    "text": "trên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.0687,
+    "end_time": 4.4214,
+    "duration": 0.3527
+  },
+  {
+    "sequence_id": "edge_stream_seq_079_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.4214,
+    "end_time": 5.7726,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_079_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.2726,
+    "end_time": 7.6656,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_079_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.1656,
+    "end_time": 9.5586,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_080_snr10",
+    "label": "REJECT",
+    "text": "xuân",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.534,
+    "end_time": 1.0266,
+    "duration": 0.4926
+  },
+  {
+    "sequence_id": "edge_stream_seq_080_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.8266,
+    "end_time": 2.2614,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_080_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.4614,
+    "end_time": 3.8336,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_080_snr10",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.6336,
+    "end_time": 5.0091,
+    "duration": 0.3755
+  },
+  {
+    "sequence_id": "edge_stream_seq_080_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.2091,
+    "end_time": 6.6429,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_081_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4817,
+    "end_time": 0.8539,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_081_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.6539,
+    "end_time": 2.005,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_081_snr10",
+    "label": "REJECT",
+    "text": "nước",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.005,
+    "end_time": 3.2868,
+    "duration": 0.2818
+  },
+  {
+    "sequence_id": "edge_stream_seq_081_snr10",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.2868,
+    "end_time": 4.6769,
+    "duration": 0.3901
+  },
+  {
+    "sequence_id": "edge_stream_seq_081_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.2769,
+    "end_time": 5.7107,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_082_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5694,
+    "end_time": 1.0813,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_082_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.4813,
+    "end_time": 1.925,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_082_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.425,
+    "end_time": 3.7761,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_082_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.1761,
+    "end_time": 4.688,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_082_snr10",
+    "label": "REJECT",
+    "text": "nước",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.688,
+    "end_time": 5.9698,
+    "duration": 0.2818
+  },
+  {
+    "sequence_id": "edge_stream_seq_082_snr10",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.1698,
+    "end_time": 7.5847,
+    "duration": 0.4149
+  },
+  {
+    "sequence_id": "edge_stream_seq_082_snr10",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.5847,
+    "end_time": 8.9301,
+    "duration": 0.3454
+  },
+  {
+    "sequence_id": "edge_stream_seq_083_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3841,
+    "end_time": 0.8959,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_083_snr10",
+    "label": "REJECT",
+    "text": "máy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.6959,
+    "end_time": 2.0844,
+    "duration": 0.3884
+  },
+  {
+    "sequence_id": "edge_stream_seq_083_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.0844,
+    "end_time": 3.4566,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_083_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.4566,
+    "end_time": 4.9684,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_083_snr10",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.1684,
+    "end_time": 6.6019,
+    "duration": 0.4335
+  },
+  {
+    "sequence_id": "edge_stream_seq_083_snr10",
+    "label": "REJECT",
+    "text": "lớn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.4019,
+    "end_time": 7.7867,
+    "duration": 0.3848
+  },
+  {
+    "sequence_id": "edge_stream_seq_084_snr10",
+    "label": "REJECT",
+    "text": "xuân",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3969,
+    "end_time": 0.7775,
+    "duration": 0.3806
+  },
+  {
+    "sequence_id": "edge_stream_seq_084_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.3775,
+    "end_time": 1.8894,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_084_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.4894,
+    "end_time": 2.8405,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_084_snr10",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.0405,
+    "end_time": 4.3873,
+    "duration": 0.3468
+  },
+  {
+    "sequence_id": "edge_stream_seq_084_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.9873,
+    "end_time": 5.3384,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_085_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5579,
+    "end_time": 0.9927,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_085_snr10",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.7927,
+    "end_time": 2.2369,
+    "duration": 0.4442
+  },
+  {
+    "sequence_id": "edge_stream_seq_085_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.4369,
+    "end_time": 3.9487,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_085_snr10",
+    "label": "REJECT",
+    "text": "sách",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.9488,
+    "end_time": 5.3166,
+    "duration": 0.3678
+  },
+  {
+    "sequence_id": "edge_stream_seq_085_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.9166,
+    "end_time": 6.3309,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_085_snr10",
+    "label": "REJECT",
+    "text": "nước",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.1309,
+    "end_time": 7.4547,
+    "duration": 0.3238
+  },
+  {
+    "sequence_id": "edge_stream_seq_085_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.9547,
+    "end_time": 9.369,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_086_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.417,
+    "end_time": 0.9289,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_086_snr10",
+    "label": "REJECT",
+    "text": "trả",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.9289,
+    "end_time": 2.3751,
+    "duration": 0.4463
+  },
+  {
+    "sequence_id": "edge_stream_seq_086_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.5751,
+    "end_time": 4.0188,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_086_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.0188,
+    "end_time": 5.391,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_086_snr10",
+    "label": "REJECT",
+    "text": "xương",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.791,
+    "end_time": 6.3244,
+    "duration": 0.5334
+  },
+  {
+    "sequence_id": "edge_stream_seq_086_snr10",
+    "label": "REJECT",
+    "text": "pháo",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.8244,
+    "end_time": 8.2629,
+    "duration": 0.4386
+  },
+  {
+    "sequence_id": "edge_stream_seq_086_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 9.7629,
+    "end_time": 10.1773,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_087_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4137,
+    "end_time": 0.8574,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_087_snr10",
+    "label": "REJECT",
+    "text": "nhà",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.8574,
+    "end_time": 2.2909,
+    "duration": 0.4335
+  },
+  {
+    "sequence_id": "edge_stream_seq_087_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.4909,
+    "end_time": 3.9346,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_087_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.7346,
+    "end_time": 5.1783,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_087_snr10",
+    "label": "REJECT",
+    "text": "xương",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.7782,
+    "end_time": 6.1593,
+    "duration": 0.3811
+  },
+  {
+    "sequence_id": "edge_stream_seq_088_snr10",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4236,
+    "end_time": 0.8678,
+    "duration": 0.4442
+  },
+  {
+    "sequence_id": "edge_stream_seq_088_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.4678,
+    "end_time": 1.8821,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_088_snr10",
+    "label": "REJECT",
+    "text": "bàn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.3821,
+    "end_time": 3.7858,
+    "duration": 0.4038
+  },
+  {
+    "sequence_id": "edge_stream_seq_088_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.7858,
+    "end_time": 5.2295,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_088_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.2295,
+    "end_time": 6.6643,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_089_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.542,
+    "end_time": 0.935,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_089_snr10",
+    "label": "REJECT",
+    "text": "phố",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.335,
+    "end_time": 1.7694,
+    "duration": 0.4344
+  },
+  {
+    "sequence_id": "edge_stream_seq_089_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.5694,
+    "end_time": 2.9624,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_089_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.7624,
+    "end_time": 4.1973,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_089_snr10",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.9973,
+    "end_time": 5.3727,
+    "duration": 0.3755
+  },
+  {
+    "sequence_id": "edge_stream_seq_089_snr10",
+    "label": "REJECT",
+    "text": "cửa",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.5728,
+    "end_time": 6.9877,
+    "duration": 0.4149
+  },
+  {
+    "sequence_id": "edge_stream_seq_090_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3889,
+    "end_time": 0.8326,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_090_snr10",
+    "label": "REJECT",
+    "text": "lớn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.0326,
+    "end_time": 2.4859,
+    "duration": 0.4534
+  },
+  {
+    "sequence_id": "edge_stream_seq_090_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.6859,
+    "end_time": 4.0371,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_090_snr10",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.2371,
+    "end_time": 5.6272,
+    "duration": 0.3901
+  },
+  {
+    "sequence_id": "edge_stream_seq_090_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.6272,
+    "end_time": 6.9994,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_090_snr10",
+    "label": "REJECT",
+    "text": "bút",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.4994,
+    "end_time": 8.7616,
+    "duration": 0.2622
+  },
+  {
+    "sequence_id": "edge_stream_seq_090_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.9616,
+    "end_time": 10.3964,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_091_snr10",
+    "label": "REJECT",
+    "text": "tròn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3565,
+    "end_time": 0.7577,
+    "duration": 0.4012
+  },
+  {
+    "sequence_id": "edge_stream_seq_091_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.5577,
+    "end_time": 1.9507,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_091_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.9507,
+    "end_time": 3.3855,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_091_snr10",
+    "label": "REJECT",
+    "text": "trên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.5855,
+    "end_time": 4.9382,
+    "duration": 0.3527
+  },
+  {
+    "sequence_id": "edge_stream_seq_091_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.5382,
+    "end_time": 5.8893,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_091_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.2893,
+    "end_time": 6.8012,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_091_snr10",
+    "label": "REJECT",
+    "text": "bàn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.3012,
+    "end_time": 8.7401,
+    "duration": 0.4389
+  },
+  {
+    "sequence_id": "edge_stream_seq_092_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3156,
+    "end_time": 0.6667,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_092_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.4667,
+    "end_time": 1.9005,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_092_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.1005,
+    "end_time": 3.4935,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_092_snr10",
+    "label": "REJECT",
+    "text": "máy",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.4935,
+    "end_time": 4.8819,
+    "duration": 0.3884
+  },
+  {
+    "sequence_id": "edge_stream_seq_092_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.8819,
+    "end_time": 6.3938,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_092_snr10",
+    "label": "REJECT",
+    "text": "trời",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.1938,
+    "end_time": 7.5619,
+    "duration": 0.3681
+  },
+  {
+    "sequence_id": "edge_stream_seq_093_snr10",
+    "label": "REJECT",
+    "text": "lưng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.4333,
+    "end_time": 0.8774,
+    "duration": 0.4442
+  },
+  {
+    "sequence_id": "edge_stream_seq_093_snr10",
+    "label": "REJECT",
+    "text": "xe",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.2774,
+    "end_time": 1.6831,
+    "duration": 0.4057
+  },
+  {
+    "sequence_id": "edge_stream_seq_093_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.2831,
+    "end_time": 2.6761,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_093_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.2761,
+    "end_time": 3.6904,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_093_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.4904,
+    "end_time": 4.9341,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_093_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.3341,
+    "end_time": 5.7778,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_093_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.3778,
+    "end_time": 6.8116,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_094_snr10",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.4339,
+    "end_time": 0.8115,
+    "duration": 0.3776
+  },
+  {
+    "sequence_id": "edge_stream_seq_094_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.3115,
+    "end_time": 2.6837,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_094_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.0837,
+    "end_time": 3.5175,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_094_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.3175,
+    "end_time": 4.6897,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_094_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.2897,
+    "end_time": 5.6827,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_094_snr10",
+    "label": "REJECT",
+    "text": "bút",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.6827,
+    "end_time": 6.9449,
+    "duration": 0.2622
+  },
+  {
+    "sequence_id": "edge_stream_seq_095_snr10",
+    "label": "REJECT",
+    "text": "nước",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.3099,
+    "end_time": 0.5917,
+    "duration": 0.2818
+  },
+  {
+    "sequence_id": "edge_stream_seq_095_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 1.1918,
+    "end_time": 1.5639,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_095_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.1639,
+    "end_time": 2.5151,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_095_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.0151,
+    "end_time": 4.3872,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_095_snr10",
+    "label": "REJECT",
+    "text": "trên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.1872,
+    "end_time": 5.5399,
+    "duration": 0.3527
+  },
+  {
+    "sequence_id": "edge_stream_seq_095_snr10",
+    "label": "REJECT",
+    "text": "bàn",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.3399,
+    "end_time": 6.7788,
+    "duration": 0.4389
+  },
+  {
+    "sequence_id": "edge_stream_seq_095_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.3788,
+    "end_time": 7.8126,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_095_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.6126,
+    "end_time": 9.1245,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_096_snr10",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5911,
+    "end_time": 1.0035,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_096_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.2035,
+    "end_time": 2.5757,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_096_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.1757,
+    "end_time": 3.6095,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_096_snr10",
+    "label": "REJECT",
+    "text": "xong",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.6095,
+    "end_time": 4.9707,
+    "duration": 0.3613
+  },
+  {
+    "sequence_id": "edge_stream_seq_096_snr10",
+    "label": "REJECT",
+    "text": "trời",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.9707,
+    "end_time": 6.3409,
+    "duration": 0.3701
+  },
+  {
+    "sequence_id": "edge_stream_seq_096_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.1409,
+    "end_time": 7.5757,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_096_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 8.7757,
+    "end_time": 9.19,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_096_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 10.39,
+    "end_time": 10.7411,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_097_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.3673,
+    "end_time": 0.8792,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_097_snr10",
+    "label": "REJECT",
+    "text": "phần",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.3792,
+    "end_time": 2.7393,
+    "duration": 0.3601
+  },
+  {
+    "sequence_id": "edge_stream_seq_097_snr10",
+    "label": "REJECT",
+    "text": "trả",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.3392,
+    "end_time": 3.7831,
+    "duration": 0.4439
+  },
+  {
+    "sequence_id": "edge_stream_seq_097_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.1831,
+    "end_time": 4.6169,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_097_snr10",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 5.4169,
+    "end_time": 5.7732,
+    "duration": 0.3563
+  },
+  {
+    "sequence_id": "edge_stream_seq_097_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.3732,
+    "end_time": 6.7876,
+    "duration": 0.4143
+  },
+  {
+    "sequence_id": "edge_stream_seq_097_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.9876,
+    "end_time": 8.4994,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_097_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 9.9994,
+    "end_time": 10.4431,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_098_snr10",
+    "label": "REJECT",
+    "text": "ghế",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5221,
+    "end_time": 0.9474,
+    "duration": 0.4253
+  },
+  {
+    "sequence_id": "edge_stream_seq_098_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 2.4474,
+    "end_time": 2.9592,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_098_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 4.1593,
+    "end_time": 4.5314,
+    "duration": 0.3722
+  },
+  {
+    "sequence_id": "edge_stream_seq_098_snr10",
+    "label": "REJECT",
+    "text": "phần",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.7314,
+    "end_time": 6.1113,
+    "duration": 0.3799
+  },
+  {
+    "sequence_id": "edge_stream_seq_098_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 6.5113,
+    "end_time": 6.955,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_098_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 7.955,
+    "end_time": 8.348,
+    "duration": 0.393
+  },
+  {
+    "sequence_id": "edge_stream_seq_099_snr10",
+    "label": "REJECT",
+    "text": "tiền",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 0.5687,
+    "end_time": 0.9216,
+    "duration": 0.3529
+  },
+  {
+    "sequence_id": "edge_stream_seq_099_snr10",
+    "label": "TRAI",
+    "text": "trái",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 2.1216,
+    "end_time": 2.4728,
+    "duration": 0.3511
+  },
+  {
+    "sequence_id": "edge_stream_seq_099_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 3.0728,
+    "end_time": 3.5076,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_099_snr10",
+    "label": "REJECT",
+    "text": "trả",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.0076,
+    "end_time": 5.4538,
+    "duration": 0.4463
+  },
+  {
+    "sequence_id": "edge_stream_seq_099_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 6.0538,
+    "end_time": 6.4886,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_099_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.4886,
+    "end_time": 7.9224,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_099_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 8.9224,
+    "end_time": 9.3573,
+    "duration": 0.4348
+  },
+  {
+    "sequence_id": "edge_stream_seq_100_snr10",
+    "label": "LEN",
+    "text": "lên",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 0.5062,
+    "end_time": 0.9499,
+    "duration": 0.4437
+  },
+  {
+    "sequence_id": "edge_stream_seq_100_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 1.5499,
+    "end_time": 2.0618,
+    "duration": 0.5119
+  },
+  {
+    "sequence_id": "edge_stream_seq_100_snr10",
+    "label": "XUONG",
+    "text": "xuống",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 3.0618,
+    "end_time": 3.4956,
+    "duration": 0.4338
+  },
+  {
+    "sequence_id": "edge_stream_seq_100_snr10",
+    "label": "REJECT",
+    "text": "lấy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 4.0956,
+    "end_time": 4.5081,
+    "duration": 0.4124
+  },
+  {
+    "sequence_id": "edge_stream_seq_100_snr10",
+    "label": "REJECT",
+    "text": "máy",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 5.5081,
+    "end_time": 5.9302,
+    "duration": 0.4221
+  },
+  {
+    "sequence_id": "edge_stream_seq_100_snr10",
+    "label": "REJECT",
+    "text": "phòng",
+    "voice": "vi-VN-NamMinhNeural",
+    "start_time": 7.1302,
+    "end_time": 7.5578,
+    "duration": 0.4276
+  },
+  {
+    "sequence_id": "edge_stream_seq_100_snr10",
+    "label": "PHAI",
+    "text": "phải",
+    "voice": "vi-VN-HoaiMyNeural",
+    "start_time": 9.0578,
+    "end_time": 9.4926,
+    "duration": 0.4348
+  }
+]

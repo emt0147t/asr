@@ -1,0 +1,537 @@
+{
+  "arm_a_checkpoint_path": "experiments/synthetic_kws_v4/checkpoints/arm_a_control.pt",
+  "arm_a_sha256": "3170BD75BC83C3A860F68E0975E1EBB51821EE3BAD0C2C2D58E005E7DE171E23",
+  "v3_champion_checkpoint_path": "experiments/synthetic_kws_v3/checkpoints/best_tcresnet14_v3.pt",
+  "v3_champion_sha256": "6930BEDA2EFD03EBFE86A502A6019A765C0F097531C3A11F6DF6F94410B53941",
+  "whole_file_bitwise_equal": false,
+  "file_hash_difference_explanation": "Whole-file hashes differ because top-level metadata dictionaries differ: arm_a_control.pt contains {'arm_name', 'epoch', 'model_state_dict', 'num_classes', 'best_metrics'}, whereas best_tcresnet14_v3.pt contains {'epoch', 'model_name', 'model_class', 'num_classes', 'model_state_dict', 'val_macro_f1', 'val_acc', 'best_val_metrics', 'class_names'}.",
+  "total_state_dict_tensors": 74,
+  "all_keys_match": true,
+  "number_of_identical_tensors": 74,
+  "number_of_differing_tensors": 0,
+  "max_absolute_tensor_difference": 0.0,
+  "canonical_predictions_identical": true,
+  "predictions_compared_count": 1692,
+  "experimental_design_intent": "Arm A was explicitly designed in the V4 controlled ablation as the V3 Control arm. It trained the identical TC-ResNet-14 architecture on the identical V3 training manifest (train_manifest_6class.csv) using identical augmentations (rate resampling + SpecAugment) and identical random seed 42. Because the training pipeline is deterministic, Arm A converged to the identical optimal state dictionary as V3 Champion at epoch 9. Their identical diagnostic metrics across all evaluation conditions are therefore expected and confirm 100% deterministic reproducibility.",
+  "per_tensor_equality": {
+    "stem.0.weight": {
+      "shape": [
+        32,
+        40,
+        3
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "stem.1.weight": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "stem.1.bias": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "stem.1.running_mean": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "stem.1.running_var": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "stem.1.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.conv1.weight": {
+      "shape": [
+        32,
+        32,
+        9
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.bn1.weight": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.bn1.bias": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.bn1.running_mean": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.bn1.running_var": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.bn1.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.conv2.weight": {
+      "shape": [
+        32,
+        32,
+        9
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.bn2.weight": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.bn2.bias": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.bn2.running_mean": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.bn2.running_var": {
+      "shape": [
+        32
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer1.bn2.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.conv1.weight": {
+      "shape": [
+        48,
+        32,
+        9
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.bn1.weight": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.bn1.bias": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.bn1.running_mean": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.bn1.running_var": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.bn1.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.conv2.weight": {
+      "shape": [
+        48,
+        48,
+        9
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.bn2.weight": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.bn2.bias": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.bn2.running_mean": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.bn2.running_var": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.bn2.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.shortcut.0.weight": {
+      "shape": [
+        48,
+        32,
+        1
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.shortcut.1.weight": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.shortcut.1.bias": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.shortcut.1.running_mean": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.shortcut.1.running_var": {
+      "shape": [
+        48
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer2.shortcut.1.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.conv1.weight": {
+      "shape": [
+        64,
+        48,
+        9
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.bn1.weight": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.bn1.bias": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.bn1.running_mean": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.bn1.running_var": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.bn1.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.conv2.weight": {
+      "shape": [
+        64,
+        64,
+        9
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.bn2.weight": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.bn2.bias": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.bn2.running_mean": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.bn2.running_var": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.bn2.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.shortcut.0.weight": {
+      "shape": [
+        64,
+        48,
+        1
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.shortcut.1.weight": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.shortcut.1.bias": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.shortcut.1.running_mean": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.shortcut.1.running_var": {
+      "shape": [
+        64
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer3.shortcut.1.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.conv1.weight": {
+      "shape": [
+        96,
+        64,
+        9
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.bn1.weight": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.bn1.bias": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.bn1.running_mean": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.bn1.running_var": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.bn1.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.conv2.weight": {
+      "shape": [
+        96,
+        96,
+        9
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.bn2.weight": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.bn2.bias": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.bn2.running_mean": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.bn2.running_var": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.bn2.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.shortcut.0.weight": {
+      "shape": [
+        96,
+        64,
+        1
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.shortcut.1.weight": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.shortcut.1.bias": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.shortcut.1.running_mean": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.shortcut.1.running_var": {
+      "shape": [
+        96
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "layer4.shortcut.1.num_batches_tracked": {
+      "shape": [],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "fc.weight": {
+      "shape": [
+        6,
+        192
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    },
+    "fc.bias": {
+      "shape": [
+        6
+      ],
+      "bitwise_equal": true,
+      "max_abs_difference": 0.0
+    }
+  }
+}

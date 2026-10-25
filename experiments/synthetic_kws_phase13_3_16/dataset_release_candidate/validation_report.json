@@ -1,0 +1,67 @@
+{
+  "report_type": "v5_2_release_candidate_validation_report",
+  "dataset_name": "synthetic_kws_v5_2_release_candidate",
+  "total_clips": 3000,
+  "class_distribution": {
+    "TRAI": 500,
+    "PHAI": 500,
+    "LEN": 500,
+    "XUONG": 500,
+    "UNKNOWN": 500,
+    "SILENCE": 500
+  },
+  "split_distribution": {
+    "train": 2100,
+    "val": 450,
+    "test": 450
+  },
+  "subclass_distribution": {
+    "target_keyword": 2000,
+    "ambient_room_tone": 316,
+    "open_vocabulary_general": 246,
+    "confuser_initial_sharing": 130,
+    "confuser_rhyme_sharing": 124,
+    "ambient_low_freq_hum": 114,
+    "ambient_digital_zero": 70
+  },
+  "split_isolation": {
+    "speaker_leakage": false,
+    "seed_leakage": false,
+    "train_speakers": [
+      "SPK_TR_05_CHILD_NEUTRAL",
+      "SPK_TR_04_MALE_MID",
+      "SPK_TR_08_MALE_TIGHT",
+      "SPK_TR_07_FEMALE_BREATHY",
+      "SPK_TR_06_ADULT_DEEP",
+      "SPK_TR_02_FEMALE_MID",
+      "SPK_TR_01_FEMALE_HIGH",
+      "SPK_TR_03_MALE_LOW"
+    ],
+    "val_speakers": [
+      "SPK_VAL_02_MALE",
+      "SPK_VAL_01_FEMALE"
+    ],
+    "test_speakers": [
+      "SPK_TEST_01_FEMALE",
+      "SPK_TEST_02_MALE"
+    ]
+  },
+  "audio_validation": {
+    "files_evaluated": 3000,
+    "coverage": "100.0% (exhaustive: all 3000 clips)",
+    "sample_rate": 16000,
+    "channels": 1,
+    "duration_sec": 1.0,
+    "samples_per_clip": 16000,
+    "sha256_match_count": 3000,
+    "nan_inf_count": 0,
+    "clipping_count": 0
+  },
+  "reproducibility": {
+    "audit_sample_size": 120,
+    "matches": 120,
+    "pass_rate_pct": 100.0,
+    "status": "PASS"
+  },
+  "verdict": "DATASET_PASS"
+}
