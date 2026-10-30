@@ -1,0 +1,58 @@
+{
+  "workstream": "Phase 6.1A \u2014 Dataset Independence & Holdout Manifest Audit",
+  "baseline_commit": "d5af658a9afe523b306e5ca6c0159789f1c67fad",
+  "frozen_hashes_verified": {
+    "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99"
+  },
+  "governance_labels": [
+    "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+    "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+    "NOT_VALIDATED_PENDING_DATA"
+  ],
+  "confirmatory_audio_pool": {
+    "total_target_clips": 200,
+    "clips_per_class": {
+      "TRAI": 50,
+      "PHAI": 50,
+      "LEN": 50,
+      "XUONG": 50
+    },
+    "total_speakers": 8,
+    "speakers_female": [
+      "spk_north_01",
+      "spk_north_02",
+      "spk_north_03"
+    ],
+    "speakers_male": [
+      "spk_north_04",
+      "spk_north_05",
+      "spk_north_06",
+      "spk_north_07",
+      "spk_north_08"
+    ]
+  },
+  "phase6_manifest_audit": {
+    "total_trials": 200,
+    "primary_0ms_unique_len_clips": 50,
+    "primary_0ms_unique_phai_clips": 30,
+    "identical_combinations_between_0ms_and_50ms": 30,
+    "clip_reuse_count_within_primary_0ms": 10,
+    "tuning_data_overlap_declared": true,
+    "data_ceiling_limitation": "With only 50 available clips of LEN, evaluating 30 trials of LEN->LEN->PHAI requires 60 LEN instances, making full clip-disjointness mathematically impossible without additional recordings."
+  },
+  "holdout_manifest_summary": {
+    "manifest_file": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\reports\\phase6_1a_holdout_manifest.csv",
+    "total_holdout_trials": 55,
+    "reserved_holdout_speakers": [
+      "spk_north_03",
+      "spk_north_06",
+      "spk_north_08"
+    ],
+    "primary_demo_holdout_trials": 30,
+    "secondary_pattern_holdout_trials": 20,
+    "elongated_control_holdout_trials": 5,
+    "trials_in_direct_diagnosis": 0
+  }
+}

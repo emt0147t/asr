@@ -1,0 +1,37 @@
+{
+  "phase": "Phase 6.2 \u2014 Integration and Final Acceptance Gate",
+  "baseline_commit": "d5af658a9afe523b306e5ca6c0159789f1c67fad",
+  "frozen_hashes_verified": {
+    "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99"
+  },
+  "governance_labels": [
+    "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+    "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+    "NOT_VALIDATED_PENDING_DATA"
+  ],
+  "workstreams_status": {
+    "phase6_1a_dataset_holdout": "COMPLETED",
+    "phase6_1b_live_microphone": "COMPLETED",
+    "phase6_1c_speechband_far": "COMPLETED",
+    "phase6_1d_runtime_audit": "COMPLETED"
+  },
+  "holdout_acceptance_results": {
+    "primary_demo_0ms_exact_pct": 100.0,
+    "primary_demo_0ms_wer_pct": 0.0,
+    "primary_demo_50ms_exact_pct": 93.3,
+    "primary_demo_50ms_wer_pct": 2.2,
+    "repeated_pairs_exact_pct": 100.0,
+    "directional_triad_exact_pct": 100.0,
+    "elongated_oversplit_count": 0
+  },
+  "physical_live_microphone_results": {
+    "live_0ms_exact_pct": 0.0,
+    "live_50ms_exact_pct": 0.0,
+    "live_compute_latency_ms": 2.15,
+    "session_gating_chatter_suppression": "100% (0 FA)"
+  },
+  "operational_verdict": "ACCEPT_CONTROLLED_DEMO",
+  "verdict_scope": "Accepted exclusively for intentional, session-gated controlled game-mode demonstrations with direct audio stream / headset input. Ambient over-the-air loudspeaker microphone and open-mic conversation remain explicitly UNAPPROVED under mandatory governance labels."
+}

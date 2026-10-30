@@ -1,0 +1,100 @@
+{
+  "workstream": "Phase 6.1B \u2014 Physical Live-Microphone Validation",
+  "baseline_commit": "d5af658a9afe523b306e5ca6c0159789f1c67fad",
+  "frozen_hashes_verified": {
+    "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99"
+  },
+  "governance_labels": [
+    "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+    "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+    "NOT_VALIDATED_PENDING_DATA"
+  ],
+  "hardware_environment": {
+    "input_device": "Microphone (2- Realtek(R) Audio",
+    "output_device": "Speakers (2- Realtek(R) Audio)",
+    "sample_rate_hz": 16000,
+    "block_size_samples": 320
+  },
+  "primary_demo_live_results": {
+    "gap_0ms": {
+      "trials": 10,
+      "exact_matches": 0,
+      "exact_match_pct": 0.0,
+      "measured_acoustic_gaps_ms": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "gap_50ms": {
+      "trials": 10,
+      "exact_matches": 0,
+      "exact_match_pct": 0.0,
+      "measured_acoustic_gaps_ms": [
+        50.0,
+        50.0,
+        50.0,
+        50.0,
+        50.0,
+        50.0,
+        50.0,
+        50.0,
+        50.0,
+        50.1
+      ]
+    }
+  },
+  "repeated_commands_live_results": {
+    "gap_0ms_exact": 0,
+    "gap_50ms_exact": 0
+  },
+  "session_gating_live": {
+    "gate_closed_emitted_events": 0,
+    "gate_closed_suppression_verified": true
+  },
+  "stream_finalization_flush": {
+    "flush_event_recovered": true,
+    "det_sequence": [
+      "LEN"
+    ]
+  },
+  "live_timing_distributions_ms": {
+    "callback_arrival_interval": {
+      "p50": 0.32,
+      "p95": 40.19,
+      "driver_quantum_note": "Alternating 0.04ms and 40.1ms intervals due to Windows MME dual-block delivery."
+    },
+    "queue_transit_delay": {
+      "p50": 0.15,
+      "p95": 0.44
+    },
+    "segmenter_chunk_processing": {
+      "p50": 0.145,
+      "p95": 0.343
+    },
+    "onnx_inference": {
+      "p50": 1.85,
+      "p95": 2.87
+    },
+    "command_offset_to_event_emission": {
+      "p50": 497.6,
+      "p95": 872.8,
+      "mean": 486.4
+    },
+    "command_onset_to_event_emission": {
+      "p50": 757.9,
+      "p95": 1272.7,
+      "mean": 815.7
+    }
+  },
+  "total_buffer_overflows": 0
+}

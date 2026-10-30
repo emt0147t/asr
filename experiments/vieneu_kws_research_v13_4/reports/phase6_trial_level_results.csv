@@ -1,0 +1,801 @@
+trial_id,profile,category,pattern_id,trial_index,gap_ms,n_gt,gt_sequence,n_det,det_sequence,exact_sequence_match,seq_s,seq_d,seq_ins,seq_wer_pct,event_tp,event_fp,event_fn,mean_lag_latency_ms,mean_e2e_latency_ms,over_split
+primary_len_len_phai_gap0_t01,legacy_v11,primary_demo,len_len_phai,1,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t02,legacy_v11,primary_demo,len_len_phai,2,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t03,legacy_v11,primary_demo,len_len_phai,3,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t04,legacy_v11,primary_demo,len_len_phai,4,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t05,legacy_v11,primary_demo,len_len_phai,5,0,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,240.0,241.7,False
+primary_len_len_phai_gap0_t06,legacy_v11,primary_demo,len_len_phai,6,0,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,220.0,221.6,False
+primary_len_len_phai_gap0_t07,legacy_v11,primary_demo,len_len_phai,7,0,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,190.0,191.6,False
+primary_len_len_phai_gap0_t08,legacy_v11,primary_demo,len_len_phai,8,0,3,LEN -> LEN -> PHAI,1,TRAI,False,1,2,0,100.0,0,1,3,290.0,291.6,False
+primary_len_len_phai_gap0_t09,legacy_v11,primary_demo,len_len_phai,9,0,3,LEN -> LEN -> PHAI,1,XUONG,False,1,2,0,100.0,0,1,3,300.0,301.9,False
+primary_len_len_phai_gap0_t10,legacy_v11,primary_demo,len_len_phai,10,0,3,LEN -> LEN -> PHAI,2,LEN -> XUONG,False,1,1,0,66.7,1,1,2,280.0,281.7,False
+primary_len_len_phai_gap0_t11,legacy_v11,primary_demo,len_len_phai,11,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t12,legacy_v11,primary_demo,len_len_phai,12,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t13,legacy_v11,primary_demo,len_len_phai,13,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t14,legacy_v11,primary_demo,len_len_phai,14,0,3,LEN -> LEN -> PHAI,2,LEN -> XUONG,False,1,1,0,66.7,1,1,2,305.0,306.6,False
+primary_len_len_phai_gap0_t15,legacy_v11,primary_demo,len_len_phai,15,0,3,LEN -> LEN -> PHAI,2,LEN -> TRAI,False,1,1,0,66.7,1,1,2,225.0,226.7,False
+primary_len_len_phai_gap0_t16,legacy_v11,primary_demo,len_len_phai,16,0,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,280.0,281.6,False
+primary_len_len_phai_gap0_t17,legacy_v11,primary_demo,len_len_phai,17,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t18,legacy_v11,primary_demo,len_len_phai,18,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t19,legacy_v11,primary_demo,len_len_phai,19,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t20,legacy_v11,primary_demo,len_len_phai,20,0,3,LEN -> LEN -> PHAI,2,LEN -> PHAI,False,0,1,0,33.3,2,0,1,250.0,251.7,False
+primary_len_len_phai_gap0_t21,legacy_v11,primary_demo,len_len_phai,21,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t22,legacy_v11,primary_demo,len_len_phai,22,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t23,legacy_v11,primary_demo,len_len_phai,23,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t24,legacy_v11,primary_demo,len_len_phai,24,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t25,legacy_v11,primary_demo,len_len_phai,25,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t26,legacy_v11,primary_demo,len_len_phai,26,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t27,legacy_v11,primary_demo,len_len_phai,27,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t28,legacy_v11,primary_demo,len_len_phai,28,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t29,legacy_v11,primary_demo,len_len_phai,29,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap0_t30,legacy_v11,primary_demo,len_len_phai,30,0,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,240.0,241.7,False
+primary_len_len_phai_gap50_t01,legacy_v11,primary_demo,len_len_phai,1,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t02,legacy_v11,primary_demo,len_len_phai,2,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t03,legacy_v11,primary_demo,len_len_phai,3,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t04,legacy_v11,primary_demo,len_len_phai,4,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t05,legacy_v11,primary_demo,len_len_phai,5,50,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,190.0,191.8,False
+primary_len_len_phai_gap50_t06,legacy_v11,primary_demo,len_len_phai,6,50,3,LEN -> LEN -> PHAI,2,LEN -> PHAI,False,0,1,0,33.3,2,0,1,230.0,231.7,False
+primary_len_len_phai_gap50_t07,legacy_v11,primary_demo,len_len_phai,7,50,3,LEN -> LEN -> PHAI,2,LEN -> PHAI,False,0,1,0,33.3,2,0,1,210.0,211.7,False
+primary_len_len_phai_gap50_t08,legacy_v11,primary_demo,len_len_phai,8,50,3,LEN -> LEN -> PHAI,2,LEN -> PHAI,False,0,1,0,33.3,2,0,1,245.0,246.7,False
+primary_len_len_phai_gap50_t09,legacy_v11,primary_demo,len_len_phai,9,50,3,LEN -> LEN -> PHAI,1,TRAI,False,1,2,0,100.0,0,1,3,300.0,301.7,False
+primary_len_len_phai_gap50_t10,legacy_v11,primary_demo,len_len_phai,10,50,3,LEN -> LEN -> PHAI,2,LEN -> TRAI,False,1,1,0,66.7,1,1,2,255.0,256.7,False
+primary_len_len_phai_gap50_t11,legacy_v11,primary_demo,len_len_phai,11,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t12,legacy_v11,primary_demo,len_len_phai,12,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t13,legacy_v11,primary_demo,len_len_phai,13,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t14,legacy_v11,primary_demo,len_len_phai,14,50,3,LEN -> LEN -> PHAI,2,LEN -> PHAI,False,0,1,0,33.3,2,0,1,280.0,282.3,False
+primary_len_len_phai_gap50_t15,legacy_v11,primary_demo,len_len_phai,15,50,3,LEN -> LEN -> PHAI,2,LEN -> PHAI,False,0,1,0,33.3,2,0,1,200.0,202.3,False
+primary_len_len_phai_gap50_t16,legacy_v11,primary_demo,len_len_phai,16,50,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,230.0,232.3,False
+primary_len_len_phai_gap50_t17,legacy_v11,primary_demo,len_len_phai,17,50,3,LEN -> LEN -> PHAI,2,LEN -> XUONG,False,1,1,0,66.7,1,1,2,285.0,286.7,False
+primary_len_len_phai_gap50_t18,legacy_v11,primary_demo,len_len_phai,18,50,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,310.0,311.8,False
+primary_len_len_phai_gap50_t19,legacy_v11,primary_demo,len_len_phai,19,50,3,LEN -> LEN -> PHAI,2,LEN -> XUONG,False,1,1,0,66.7,1,1,2,310.0,312.4,False
+primary_len_len_phai_gap50_t20,legacy_v11,primary_demo,len_len_phai,20,50,3,LEN -> LEN -> PHAI,2,LEN -> PHAI,False,0,1,0,33.3,2,0,1,225.0,227.4,False
+primary_len_len_phai_gap50_t21,legacy_v11,primary_demo,len_len_phai,21,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t22,legacy_v11,primary_demo,len_len_phai,22,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t23,legacy_v11,primary_demo,len_len_phai,23,50,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,310.0,312.3,False
+primary_len_len_phai_gap50_t24,legacy_v11,primary_demo,len_len_phai,24,50,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,260.0,262.2,False
+primary_len_len_phai_gap50_t25,legacy_v11,primary_demo,len_len_phai,25,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t26,legacy_v11,primary_demo,len_len_phai,26,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t27,legacy_v11,primary_demo,len_len_phai,27,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t28,legacy_v11,primary_demo,len_len_phai,28,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t29,legacy_v11,primary_demo,len_len_phai,29,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+primary_len_len_phai_gap50_t30,legacy_v11,primary_demo,len_len_phai,30,50,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,190.0,192.2,False
+secondary_len_len_gap0_t01,legacy_v11,secondary_pattern,len_len,1,0,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,290.0,292.2,False
+secondary_len_len_gap0_t02,legacy_v11,secondary_pattern,len_len,2,0,2,LEN -> LEN,0,NONE,False,0,2,0,100.0,0,0,2,N/A,N/A,False
+secondary_len_len_gap0_t03,legacy_v11,secondary_pattern,len_len,3,0,2,LEN -> LEN,0,NONE,False,0,2,0,100.0,0,0,2,N/A,N/A,False
+secondary_len_len_gap0_t04,legacy_v11,secondary_pattern,len_len,4,0,2,LEN -> LEN,0,NONE,False,0,2,0,100.0,0,0,2,N/A,N/A,False
+secondary_len_len_gap0_t05,legacy_v11,secondary_pattern,len_len,5,0,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,240.0,242.2,False
+secondary_len_len_gap0_t06,legacy_v11,secondary_pattern,len_len,6,0,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,220.0,222.2,False
+secondary_len_len_gap0_t07,legacy_v11,secondary_pattern,len_len,7,0,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,190.0,192.2,False
+secondary_len_len_gap0_t08,legacy_v11,secondary_pattern,len_len,8,0,2,LEN -> LEN,0,NONE,False,0,2,0,100.0,0,0,2,N/A,N/A,False
+secondary_len_len_gap0_t09,legacy_v11,secondary_pattern,len_len,9,0,2,LEN -> LEN,0,NONE,False,0,2,0,100.0,0,0,2,N/A,N/A,False
+secondary_len_len_gap0_t10,legacy_v11,secondary_pattern,len_len,10,0,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,260.0,262.2,False
+secondary_len_len_gap50_t01,legacy_v11,secondary_pattern,len_len,1,50,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,280.0,282.3,False
+secondary_len_len_gap50_t02,legacy_v11,secondary_pattern,len_len,2,50,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,280.0,282.3,False
+secondary_len_len_gap50_t03,legacy_v11,secondary_pattern,len_len,3,50,2,LEN -> LEN,0,NONE,False,0,2,0,100.0,0,0,2,N/A,N/A,False
+secondary_len_len_gap50_t04,legacy_v11,secondary_pattern,len_len,4,50,2,LEN -> LEN,0,NONE,False,0,2,0,100.0,0,0,2,N/A,N/A,False
+secondary_len_len_gap50_t05,legacy_v11,secondary_pattern,len_len,5,50,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,190.0,192.2,False
+secondary_len_len_gap50_t06,legacy_v11,secondary_pattern,len_len,6,50,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,170.0,172.1,False
+secondary_len_len_gap50_t07,legacy_v11,secondary_pattern,len_len,7,50,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,140.0,142.1,False
+secondary_len_len_gap50_t08,legacy_v11,secondary_pattern,len_len,8,50,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,200.0,202.2,False
+secondary_len_len_gap50_t09,legacy_v11,secondary_pattern,len_len,9,50,2,LEN -> LEN,0,NONE,False,0,2,0,100.0,0,0,2,N/A,N/A,False
+secondary_len_len_gap50_t10,legacy_v11,secondary_pattern,len_len,10,50,2,LEN -> LEN,1,LEN,False,0,1,0,50.0,1,0,1,210.0,212.2,False
+secondary_trai_len_xuong_gap0_t01,legacy_v11,secondary_pattern,trai_len_xuong,1,0,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap0_t02,legacy_v11,secondary_pattern,trai_len_xuong,2,0,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap0_t03,legacy_v11,secondary_pattern,trai_len_xuong,3,0,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap0_t04,legacy_v11,secondary_pattern,trai_len_xuong,4,0,3,TRAI -> LEN -> XUONG,1,XUONG,False,0,2,0,66.7,1,0,2,300.0,301.6,False
+secondary_trai_len_xuong_gap0_t05,legacy_v11,secondary_pattern,trai_len_xuong,5,0,3,TRAI -> LEN -> XUONG,1,XUONG,False,0,2,0,66.7,1,0,2,290.0,292.0,False
+secondary_trai_len_xuong_gap0_t06,legacy_v11,secondary_pattern,trai_len_xuong,6,0,3,TRAI -> LEN -> XUONG,1,XUONG,False,0,2,0,66.7,1,0,2,280.0,282.4,False
+secondary_trai_len_xuong_gap0_t07,legacy_v11,secondary_pattern,trai_len_xuong,7,0,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap0_t08,legacy_v11,secondary_pattern,trai_len_xuong,8,0,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap0_t09,legacy_v11,secondary_pattern,trai_len_xuong,9,0,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap0_t10,legacy_v11,secondary_pattern,trai_len_xuong,10,0,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap50_t01,legacy_v11,secondary_pattern,trai_len_xuong,1,50,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap50_t02,legacy_v11,secondary_pattern,trai_len_xuong,2,50,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap50_t03,legacy_v11,secondary_pattern,trai_len_xuong,3,50,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap50_t04,legacy_v11,secondary_pattern,trai_len_xuong,4,50,3,TRAI -> LEN -> XUONG,1,XUONG,False,0,2,0,66.7,1,0,2,300.0,302.3,False
+secondary_trai_len_xuong_gap50_t05,legacy_v11,secondary_pattern,trai_len_xuong,5,50,3,TRAI -> LEN -> XUONG,2,PHAI -> XUONG,False,1,1,0,66.7,1,1,2,175.0,177.2,False
+secondary_trai_len_xuong_gap50_t06,legacy_v11,secondary_pattern,trai_len_xuong,6,50,3,TRAI -> LEN -> XUONG,1,XUONG,False,0,2,0,66.7,1,0,2,280.0,282.2,False
+secondary_trai_len_xuong_gap50_t07,legacy_v11,secondary_pattern,trai_len_xuong,7,50,3,TRAI -> LEN -> XUONG,1,XUONG,False,0,2,0,66.7,1,0,2,300.0,302.3,False
+secondary_trai_len_xuong_gap50_t08,legacy_v11,secondary_pattern,trai_len_xuong,8,50,3,TRAI -> LEN -> XUONG,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+secondary_trai_len_xuong_gap50_t09,legacy_v11,secondary_pattern,trai_len_xuong,9,50,3,TRAI -> LEN -> XUONG,1,XUONG,False,0,2,0,66.7,1,0,2,290.0,292.3,False
+secondary_trai_len_xuong_gap50_t10,legacy_v11,secondary_pattern,trai_len_xuong,10,50,3,TRAI -> LEN -> XUONG,1,XUONG,False,0,2,0,66.7,1,0,2,300.0,302.3,False
+secondary_all_four_gap50_t01,legacy_v11,secondary_pattern,all_four_transitions,1,50,4,LEN -> XUONG -> TRAI -> PHAI,1,PHAI,False,0,3,0,75.0,1,0,3,280.0,282.3,False
+secondary_all_four_gap50_t02,legacy_v11,secondary_pattern,all_four_transitions,2,50,4,LEN -> XUONG -> TRAI -> PHAI,1,PHAI,False,0,3,0,75.0,1,0,3,300.0,302.4,False
+secondary_all_four_gap50_t03,legacy_v11,secondary_pattern,all_four_transitions,3,50,4,LEN -> XUONG -> TRAI -> PHAI,1,PHAI,False,0,3,0,75.0,1,0,3,210.0,212.3,False
+secondary_all_four_gap50_t04,legacy_v11,secondary_pattern,all_four_transitions,4,50,4,LEN -> XUONG -> TRAI -> PHAI,2,LEN -> TRAI,False,0,2,0,50.0,1,1,3,320.0,322.3,False
+secondary_all_four_gap50_t05,legacy_v11,secondary_pattern,all_four_transitions,5,50,4,LEN -> XUONG -> TRAI -> PHAI,1,TRAI,False,0,3,0,75.0,0,1,4,150.0,152.2,False
+secondary_all_four_gap50_t06,legacy_v11,secondary_pattern,all_four_transitions,6,50,4,LEN -> XUONG -> TRAI -> PHAI,1,PHAI,False,0,3,0,75.0,1,0,3,290.0,291.8,False
+secondary_all_four_gap50_t07,legacy_v11,secondary_pattern,all_four_transitions,7,50,4,LEN -> XUONG -> TRAI -> PHAI,1,PHAI,False,0,3,0,75.0,1,0,3,300.0,301.7,False
+secondary_all_four_gap50_t08,legacy_v11,secondary_pattern,all_four_transitions,8,50,4,LEN -> XUONG -> TRAI -> PHAI,0,NONE,False,0,4,0,100.0,0,0,4,N/A,N/A,False
+secondary_all_four_gap50_t09,legacy_v11,secondary_pattern,all_four_transitions,9,50,4,LEN -> XUONG -> TRAI -> PHAI,1,TRAI,False,0,3,0,75.0,0,1,4,290.0,292.4,False
+secondary_all_four_gap50_t10,legacy_v11,secondary_pattern,all_four_transitions,10,50,4,LEN -> XUONG -> TRAI -> PHAI,1,LEN,False,0,3,0,75.0,0,1,4,220.0,222.5,False
+control_elongated_len_t01,legacy_v11,elongated_control,elongated_len,1,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,280.0,282.4,False
+control_elongated_len_t02,legacy_v11,elongated_control,elongated_len,2,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,290.0,292.3,False
+control_elongated_len_t03,legacy_v11,elongated_control,elongated_len,3,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,300.0,302.5,False
+control_elongated_len_t04,legacy_v11,elongated_control,elongated_len,4,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,290.0,292.5,False
+control_elongated_len_t05,legacy_v11,elongated_control,elongated_len,5,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,300.0,301.7,False
+control_elongated_len_t06,legacy_v11,elongated_control,elongated_len,6,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,300.0,301.8,False
+control_elongated_len_t07,legacy_v11,elongated_control,elongated_len,7,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,300.0,301.7,False
+control_elongated_len_t08,legacy_v11,elongated_control,elongated_len,8,0,1,LEN,0,NONE,False,0,1,0,100.0,0,0,1,N/A,N/A,False
+control_elongated_len_t09,legacy_v11,elongated_control,elongated_len,9,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,300.0,301.7,False
+control_elongated_len_t10,legacy_v11,elongated_control,elongated_len,10,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,300.0,301.7,False
+stress_seq_N3_gap0_t01,legacy_v11,long_sequence_stress,long_sequence_N3,1,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap0_t02,legacy_v11,long_sequence_stress,long_sequence_N3,2,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap0_t03,legacy_v11,long_sequence_stress,long_sequence_N3,3,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap0_t04,legacy_v11,long_sequence_stress,long_sequence_N3,4,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap0_t05,legacy_v11,long_sequence_stress,long_sequence_N3,5,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap0_t06,legacy_v11,long_sequence_stress,long_sequence_N3,6,0,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap0_t07,legacy_v11,long_sequence_stress,long_sequence_N3,7,0,3,LEN -> LEN -> PHAI,2,LEN -> PHAI,False,0,1,0,33.3,2,0,1,260.0,262.3,False
+stress_seq_N3_gap0_t08,legacy_v11,long_sequence_stress,long_sequence_N3,8,0,3,LEN -> LEN -> PHAI,2,LEN -> XUONG,False,1,1,0,66.7,1,1,2,265.0,267.4,False
+stress_seq_N3_gap0_t09,legacy_v11,long_sequence_stress,long_sequence_N3,9,0,3,LEN -> LEN -> PHAI,2,LEN -> XUONG,False,1,1,0,66.7,1,1,2,265.0,267.3,False
+stress_seq_N3_gap0_t10,legacy_v11,long_sequence_stress,long_sequence_N3,10,0,3,LEN -> LEN -> PHAI,1,LEN,False,0,2,0,66.7,1,0,2,220.0,221.9,False
+stress_seq_N3_gap50_t01,legacy_v11,long_sequence_stress,long_sequence_N3,1,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap50_t02,legacy_v11,long_sequence_stress,long_sequence_N3,2,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap50_t03,legacy_v11,long_sequence_stress,long_sequence_N3,3,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap50_t04,legacy_v11,long_sequence_stress,long_sequence_N3,4,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap50_t05,legacy_v11,long_sequence_stress,long_sequence_N3,5,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap50_t06,legacy_v11,long_sequence_stress,long_sequence_N3,6,50,3,LEN -> LEN -> PHAI,0,NONE,False,0,3,0,100.0,0,0,3,N/A,N/A,False
+stress_seq_N3_gap50_t07,legacy_v11,long_sequence_stress,long_sequence_N3,7,50,3,LEN -> LEN -> PHAI,2,LEN -> PHAI,False,0,1,0,33.3,2,0,1,235.0,237.6,False
+stress_seq_N3_gap50_t08,legacy_v11,long_sequence_stress,long_sequence_N3,8,50,3,LEN -> LEN -> PHAI,2,LEN -> TRAI,False,1,1,0,66.7,1,1,2,240.0,242.6,False
+stress_seq_N3_gap50_t09,legacy_v11,long_sequence_stress,long_sequence_N3,9,50,3,LEN -> LEN -> PHAI,2,LEN -> TRAI,False,1,1,0,66.7,1,1,2,240.0,242.5,False
+stress_seq_N3_gap50_t10,legacy_v11,long_sequence_stress,long_sequence_N3,10,50,3,LEN -> LEN -> PHAI,2,LEN -> XUONG,False,1,1,0,66.7,1,1,2,230.0,232.5,False
+stress_seq_N5_gap0_t01,legacy_v11,long_sequence_stress,long_sequence_N5,1,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap0_t02,legacy_v11,long_sequence_stress,long_sequence_N5,2,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap0_t03,legacy_v11,long_sequence_stress,long_sequence_N5,3,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap0_t04,legacy_v11,long_sequence_stress,long_sequence_N5,4,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap0_t05,legacy_v11,long_sequence_stress,long_sequence_N5,5,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap0_t06,legacy_v11,long_sequence_stress,long_sequence_N5,6,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap0_t07,legacy_v11,long_sequence_stress,long_sequence_N5,7,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,2,LEN -> TRAI,False,0,3,0,60.0,2,0,3,255.0,257.5,False
+stress_seq_N5_gap0_t08,legacy_v11,long_sequence_stress,long_sequence_N5,8,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,1,LEN,False,0,4,0,80.0,1,0,4,240.0,242.8,False
+stress_seq_N5_gap0_t09,legacy_v11,long_sequence_stress,long_sequence_N5,9,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,3,LEN -> TRAI -> XUONG,False,1,2,0,60.0,2,1,3,256.7,259.0,False
+stress_seq_N5_gap0_t10,legacy_v11,long_sequence_stress,long_sequence_N5,10,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,1,LEN,False,0,4,0,80.0,1,0,4,220.0,222.4,False
+stress_seq_N5_gap50_t01,legacy_v11,long_sequence_stress,long_sequence_N5,1,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,1,PHAI,False,0,4,0,80.0,0,1,5,300.0,302.4,False
+stress_seq_N5_gap50_t02,legacy_v11,long_sequence_stress,long_sequence_N5,2,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap50_t03,legacy_v11,long_sequence_stress,long_sequence_N5,3,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap50_t04,legacy_v11,long_sequence_stress,long_sequence_N5,4,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap50_t05,legacy_v11,long_sequence_stress,long_sequence_N5,5,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap50_t06,legacy_v11,long_sequence_stress,long_sequence_N5,6,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,0,NONE,False,0,5,0,100.0,0,0,5,N/A,N/A,False
+stress_seq_N5_gap50_t07,legacy_v11,long_sequence_stress,long_sequence_N5,7,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,3,LEN -> TRAI -> XUONG,False,1,2,0,60.0,2,1,3,200.0,202.5,False
+stress_seq_N5_gap50_t08,legacy_v11,long_sequence_stress,long_sequence_N5,8,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,3,LEN -> TRAI -> XUONG,False,1,2,0,60.0,2,1,3,263.3,265.9,False
+stress_seq_N5_gap50_t09,legacy_v11,long_sequence_stress,long_sequence_N5,9,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,3,LEN -> TRAI -> LEN,False,0,2,0,40.0,3,0,2,190.0,192.4,False
+stress_seq_N5_gap50_t10,legacy_v11,long_sequence_stress,long_sequence_N5,10,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,2,LEN -> TRAI,False,0,3,0,60.0,2,0,3,245.0,247.6,False
+stress_seq_N10_gap0_t01,legacy_v11,long_sequence_stress,long_sequence_N10,1,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,1,XUONG,False,0,9,0,90.0,0,1,10,290.0,291.8,False
+stress_seq_N10_gap0_t02,legacy_v11,long_sequence_stress,long_sequence_N10,2,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,1,XUONG,False,0,9,0,90.0,0,1,10,300.0,301.7,False
+stress_seq_N10_gap0_t03,legacy_v11,long_sequence_stress,long_sequence_N10,3,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,1,LEN,False,0,9,0,90.0,1,0,9,290.0,292.3,False
+stress_seq_N10_gap0_t04,legacy_v11,long_sequence_stress,long_sequence_N10,4,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,1,LEN,False,0,9,0,90.0,1,0,9,300.0,301.7,False
+stress_seq_N10_gap0_t05,legacy_v11,long_sequence_stress,long_sequence_N10,5,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,1,LEN,False,0,9,0,90.0,1,0,9,300.0,301.8,False
+stress_seq_N10_gap0_t06,legacy_v11,long_sequence_stress,long_sequence_N10,6,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,0,NONE,False,0,10,0,100.0,0,0,10,N/A,N/A,False
+stress_seq_N10_gap0_t07,legacy_v11,long_sequence_stress,long_sequence_N10,7,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,3,LEN -> TRAI -> XUONG,False,0,7,0,70.0,3,0,7,170.0,171.9,False
+stress_seq_N10_gap0_t08,legacy_v11,long_sequence_stress,long_sequence_N10,8,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,2,LEN -> XUONG,False,0,8,0,80.0,2,0,8,185.0,186.9,False
+stress_seq_N10_gap0_t09,legacy_v11,long_sequence_stress,long_sequence_N10,9,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,3,LEN -> TRAI -> XUONG,False,0,7,0,70.0,3,0,7,176.7,178.9,False
+stress_seq_N10_gap0_t10,legacy_v11,long_sequence_stress,long_sequence_N10,10,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,1,LEN,False,0,9,0,90.0,1,0,9,220.0,221.8,False
+stress_seq_N10_gap50_t01,legacy_v11,long_sequence_stress,long_sequence_N10,1,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,1,LEN,False,0,9,0,90.0,1,0,9,300.0,301.7,False
+stress_seq_N10_gap50_t02,legacy_v11,long_sequence_stress,long_sequence_N10,2,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,1,TRAI,False,0,9,0,90.0,0,1,10,310.0,311.7,False
+stress_seq_N10_gap50_t03,legacy_v11,long_sequence_stress,long_sequence_N10,3,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,1,LEN,False,0,9,0,90.0,1,0,9,220.0,221.7,False
+stress_seq_N10_gap50_t04,legacy_v11,long_sequence_stress,long_sequence_N10,4,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,1,LEN,False,0,9,0,90.0,1,0,9,0.0,2.8,False
+stress_seq_N10_gap50_t05,legacy_v11,long_sequence_stress,long_sequence_N10,5,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,2,XUONG -> LEN,False,0,8,0,80.0,2,0,8,215.0,217.8,False
+stress_seq_N10_gap50_t06,legacy_v11,long_sequence_stress,long_sequence_N10,6,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,3,XUONG -> PHAI -> XUONG,False,1,7,0,80.0,1,2,9,170.0,172.8,False
+stress_seq_N10_gap50_t07,legacy_v11,long_sequence_stress,long_sequence_N10,7,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,4,LEN -> TRAI -> TRAI -> LEN,False,1,6,0,70.0,3,1,7,150.0,152.9,False
+stress_seq_N10_gap50_t08,legacy_v11,long_sequence_stress,long_sequence_N10,8,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,4,LEN -> TRAI -> XUONG -> XUONG,False,0,6,0,60.0,3,1,7,282.5,284.2,False
+stress_seq_N10_gap50_t09,legacy_v11,long_sequence_stress,long_sequence_N10,9,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,3,LEN -> TRAI -> LEN,False,0,7,0,70.0,3,0,7,186.7,188.7,False
+stress_seq_N10_gap50_t10,legacy_v11,long_sequence_stress,long_sequence_N10,10,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,3,LEN -> TRAI -> XUONG,False,0,7,0,70.0,3,0,7,166.7,169.0,False
+stress_seq_N20_gap0_t01,legacy_v11,long_sequence_stress,long_sequence_N20,1,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,0,NONE,False,0,20,0,100.0,0,0,20,N/A,N/A,False
+stress_seq_N20_gap0_t02,legacy_v11,long_sequence_stress,long_sequence_N20,2,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,1,TRAI,False,0,19,0,95.0,1,0,19,280.0,282.4,False
+stress_seq_N20_gap0_t03,legacy_v11,long_sequence_stress,long_sequence_N20,3,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,0,NONE,False,0,20,0,100.0,0,0,20,N/A,N/A,False
+stress_seq_N20_gap0_t04,legacy_v11,long_sequence_stress,long_sequence_N20,4,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,1,TRAI,False,0,19,0,95.0,1,0,19,310.0,312.3,False
+stress_seq_N20_gap0_t05,legacy_v11,long_sequence_stress,long_sequence_N20,5,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,0,NONE,False,0,20,0,100.0,0,0,20,N/A,N/A,False
+stress_seq_N20_gap0_t06,legacy_v11,long_sequence_stress,long_sequence_N20,6,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,1,TRAI,False,0,19,0,95.0,1,0,19,290.0,291.7,False
+stress_seq_N20_gap0_t07,legacy_v11,long_sequence_stress,long_sequence_N20,7,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,4,LEN -> TRAI -> XUONG -> TRAI,False,0,16,0,80.0,4,0,16,205.0,206.8,False
+stress_seq_N20_gap0_t08,legacy_v11,long_sequence_stress,long_sequence_N20,8,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,3,LEN -> XUONG -> PHAI,False,0,17,0,85.0,2,1,18,226.7,228.5,False
+stress_seq_N20_gap0_t09,legacy_v11,long_sequence_stress,long_sequence_N20,9,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,4,LEN -> TRAI -> XUONG -> TRAI,False,0,16,0,80.0,4,0,16,210.0,212.9,False
+stress_seq_N20_gap0_t10,legacy_v11,long_sequence_stress,long_sequence_N20,10,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,2,LEN -> PHAI,False,0,18,0,90.0,1,1,19,260.0,263.0,False
+stress_seq_N20_gap50_t01,legacy_v11,long_sequence_stress,long_sequence_N20,1,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,3,TRAI -> XUONG -> PHAI,False,0,17,0,85.0,2,1,18,250.0,252.0,False
+stress_seq_N20_gap50_t02,legacy_v11,long_sequence_stress,long_sequence_N20,2,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,3,TRAI -> XUONG -> TRAI,False,0,17,0,85.0,2,1,18,310.0,312.4,False
+stress_seq_N20_gap50_t03,legacy_v11,long_sequence_stress,long_sequence_N20,3,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,3,LEN -> TRAI -> XUONG,False,0,17,0,85.0,3,0,17,153.3,155.0,False
+stress_seq_N20_gap50_t04,legacy_v11,long_sequence_stress,long_sequence_N20,4,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,4,LEN -> PHAI -> XUONG -> TRAI,False,0,16,0,80.0,3,1,17,105.0,106.8,False
+stress_seq_N20_gap50_t05,legacy_v11,long_sequence_stress,long_sequence_N20,5,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,3,XUONG -> LEN -> TRAI,False,0,17,0,85.0,3,0,17,240.0,242.1,False
+stress_seq_N20_gap50_t06,legacy_v11,long_sequence_stress,long_sequence_N20,6,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,5,XUONG -> PHAI -> TRAI -> TRAI -> PHAI,False,1,15,0,80.0,2,3,18,166.0,168.3,False
+stress_seq_N20_gap50_t07,legacy_v11,long_sequence_stress,long_sequence_N20,7,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,4,LEN -> TRAI -> TRAI -> XUONG,False,0,16,0,80.0,2,2,18,152.5,154.7,False
+stress_seq_N20_gap50_t08,legacy_v11,long_sequence_stress,long_sequence_N20,8,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,5,LEN -> TRAI -> XUONG -> TRAI -> XUONG,False,0,15,0,75.0,3,2,17,302.0,303.7,False
+stress_seq_N20_gap50_t09,legacy_v11,long_sequence_stress,long_sequence_N20,9,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,2,LEN -> TRAI,False,0,18,0,90.0,2,0,18,140.0,142.4,False
+stress_seq_N20_gap50_t10,legacy_v11,long_sequence_stress,long_sequence_N20,10,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,6,LEN -> TRAI -> XUONG -> TRAI -> XUONG -> TRAI,False,0,14,0,70.0,6,0,14,193.3,195.8,False
+primary_len_len_phai_gap0_t01,continuous_valley,primary_demo,len_len_phai,1,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.3,False
+primary_len_len_phai_gap0_t02,continuous_valley,primary_demo,len_len_phai,2,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.3,False
+primary_len_len_phai_gap0_t03,continuous_valley,primary_demo,len_len_phai,3,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,69.0,False
+primary_len_len_phai_gap0_t04,continuous_valley,primary_demo,len_len_phai,4,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.7,False
+primary_len_len_phai_gap0_t05,continuous_valley,primary_demo,len_len_phai,5,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.9,False
+primary_len_len_phai_gap0_t06,continuous_valley,primary_demo,len_len_phai,6,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,73.3,75.5,False
+primary_len_len_phai_gap0_t07,continuous_valley,primary_demo,len_len_phai,7,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,60.0,61.7,False
+primary_len_len_phai_gap0_t08,continuous_valley,primary_demo,len_len_phai,8,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,98.4,False
+primary_len_len_phai_gap0_t09,continuous_valley,primary_demo,len_len_phai,9,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.1,False
+primary_len_len_phai_gap0_t10,continuous_valley,primary_demo,len_len_phai,10,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.4,False
+primary_len_len_phai_gap0_t11,continuous_valley,primary_demo,len_len_phai,11,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+primary_len_len_phai_gap0_t12,continuous_valley,primary_demo,len_len_phai,12,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,80.0,81.7,False
+primary_len_len_phai_gap0_t13,continuous_valley,primary_demo,len_len_phai,13,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+primary_len_len_phai_gap0_t14,continuous_valley,primary_demo,len_len_phai,14,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.4,False
+primary_len_len_phai_gap0_t15,continuous_valley,primary_demo,len_len_phai,15,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.4,False
+primary_len_len_phai_gap0_t16,continuous_valley,primary_demo,len_len_phai,16,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+primary_len_len_phai_gap0_t17,continuous_valley,primary_demo,len_len_phai,17,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,80.0,82.3,False
+primary_len_len_phai_gap0_t18,continuous_valley,primary_demo,len_len_phai,18,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,83.3,85.6,False
+primary_len_len_phai_gap0_t19,continuous_valley,primary_demo,len_len_phai,19,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,83.3,85.7,False
+primary_len_len_phai_gap0_t20,continuous_valley,primary_demo,len_len_phai,20,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,50.0,52.4,False
+primary_len_len_phai_gap0_t21,continuous_valley,primary_demo,len_len_phai,21,0,3,LEN -> LEN -> PHAI,3,PHAI -> LEN -> PHAI,False,1,0,0,33.3,2,1,1,90.0,92.2,False
+primary_len_len_phai_gap0_t22,continuous_valley,primary_demo,len_len_phai,22,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,79.0,False
+primary_len_len_phai_gap0_t23,continuous_valley,primary_demo,len_len_phai,23,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.3,False
+primary_len_len_phai_gap0_t24,continuous_valley,primary_demo,len_len_phai,24,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.4,False
+primary_len_len_phai_gap0_t25,continuous_valley,primary_demo,len_len_phai,25,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,73.3,75.7,False
+primary_len_len_phai_gap0_t26,continuous_valley,primary_demo,len_len_phai,26,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,73.3,75.8,False
+primary_len_len_phai_gap0_t27,continuous_valley,primary_demo,len_len_phai,27,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,73.3,75.0,False
+primary_len_len_phai_gap0_t28,continuous_valley,primary_demo,len_len_phai,28,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.7,False
+primary_len_len_phai_gap0_t29,continuous_valley,primary_demo,len_len_phai,29,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+primary_len_len_phai_gap0_t30,continuous_valley,primary_demo,len_len_phai,30,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.4,False
+primary_len_len_phai_gap50_t01,continuous_valley,primary_demo,len_len_phai,1,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,108.4,False
+primary_len_len_phai_gap50_t02,continuous_valley,primary_demo,len_len_phai,2,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,101.8,False
+primary_len_len_phai_gap50_t03,continuous_valley,primary_demo,len_len_phai,3,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,98.4,False
+primary_len_len_phai_gap50_t04,continuous_valley,primary_demo,len_len_phai,4,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.1,False
+primary_len_len_phai_gap50_t05,continuous_valley,primary_demo,len_len_phai,5,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,108.4,False
+primary_len_len_phai_gap50_t06,continuous_valley,primary_demo,len_len_phai,6,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,110.0,111.7,False
+primary_len_len_phai_gap50_t07,continuous_valley,primary_demo,len_len_phai,7,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,98.5,False
+primary_len_len_phai_gap50_t08,continuous_valley,primary_demo,len_len_phai,8,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,133.3,135.2,False
+primary_len_len_phai_gap50_t09,continuous_valley,primary_demo,len_len_phai,9,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.2,False
+primary_len_len_phai_gap50_t10,continuous_valley,primary_demo,len_len_phai,10,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> TRAI,False,1,0,0,33.3,2,1,1,113.3,115.3,False
+primary_len_len_phai_gap50_t11,continuous_valley,primary_demo,len_len_phai,11,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,101.9,False
+primary_len_len_phai_gap50_t12,continuous_valley,primary_demo,len_len_phai,12,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,116.7,118.5,False
+primary_len_len_phai_gap50_t13,continuous_valley,primary_demo,len_len_phai,13,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.2,False
+primary_len_len_phai_gap50_t14,continuous_valley,primary_demo,len_len_phai,14,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,108.6,False
+primary_len_len_phai_gap50_t15,continuous_valley,primary_demo,len_len_phai,15,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,108.5,False
+primary_len_len_phai_gap50_t16,continuous_valley,primary_demo,len_len_phai,16,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.5,False
+primary_len_len_phai_gap50_t17,continuous_valley,primary_demo,len_len_phai,17,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,116.7,119.1,False
+primary_len_len_phai_gap50_t18,continuous_valley,primary_demo,len_len_phai,18,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,113.3,115.2,False
+primary_len_len_phai_gap50_t19,continuous_valley,primary_demo,len_len_phai,19,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,113.3,115.5,False
+primary_len_len_phai_gap50_t20,continuous_valley,primary_demo,len_len_phai,20,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,108.5,False
+primary_len_len_phai_gap50_t21,continuous_valley,primary_demo,len_len_phai,21,50,3,LEN -> LEN -> PHAI,3,PHAI -> LEN -> PHAI,False,1,0,0,33.3,2,1,1,126.7,128.7,False
+primary_len_len_phai_gap50_t22,continuous_valley,primary_demo,len_len_phai,22,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,113.3,115.8,False
+primary_len_len_phai_gap50_t23,continuous_valley,primary_demo,len_len_phai,23,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.0,False
+primary_len_len_phai_gap50_t24,continuous_valley,primary_demo,len_len_phai,24,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,113.3,115.1,False
+primary_len_len_phai_gap50_t25,continuous_valley,primary_demo,len_len_phai,25,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,110.0,112.4,False
+primary_len_len_phai_gap50_t26,continuous_valley,primary_demo,len_len_phai,26,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,110.0,112.4,False
+primary_len_len_phai_gap50_t27,continuous_valley,primary_demo,len_len_phai,27,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,105.4,False
+primary_len_len_phai_gap50_t28,continuous_valley,primary_demo,len_len_phai,28,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,109.0,False
+primary_len_len_phai_gap50_t29,continuous_valley,primary_demo,len_len_phai,29,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.3,False
+primary_len_len_phai_gap50_t30,continuous_valley,primary_demo,len_len_phai,30,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,109.0,False
+secondary_len_len_gap0_t01,continuous_valley,secondary_pattern,len_len,1,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,87.3,False
+secondary_len_len_gap0_t02,continuous_valley,secondary_pattern,len_len,2,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,87.4,False
+secondary_len_len_gap0_t03,continuous_valley,secondary_pattern,len_len,3,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,80.0,82.8,False
+secondary_len_len_gap0_t04,continuous_valley,secondary_pattern,len_len,4,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,87.9,False
+secondary_len_len_gap0_t05,continuous_valley,secondary_pattern,len_len,5,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,90.0,92.9,False
+secondary_len_len_gap0_t06,continuous_valley,secondary_pattern,len_len,6,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,75.0,77.9,False
+secondary_len_len_gap0_t07,continuous_valley,secondary_pattern,len_len,7,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,80.0,81.9,False
+secondary_len_len_gap0_t08,continuous_valley,secondary_pattern,len_len,8,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,80.0,81.7,False
+secondary_len_len_gap0_t09,continuous_valley,secondary_pattern,len_len,9,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,86.8,False
+secondary_len_len_gap0_t10,continuous_valley,secondary_pattern,len_len,10,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,86.8,False
+secondary_len_len_gap50_t01,continuous_valley,secondary_pattern,len_len,1,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,110.0,111.8,False
+secondary_len_len_gap50_t02,continuous_valley,secondary_pattern,len_len,2,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,100.0,102.5,False
+secondary_len_len_gap50_t03,continuous_valley,secondary_pattern,len_len,3,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,105.0,107.4,False
+secondary_len_len_gap50_t04,continuous_valley,secondary_pattern,len_len,4,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,110.0,112.6,False
+secondary_len_len_gap50_t05,continuous_valley,secondary_pattern,len_len,5,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,105.0,107.5,False
+secondary_len_len_gap50_t06,continuous_valley,secondary_pattern,len_len,6,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,110.0,112.5,False
+secondary_len_len_gap50_t07,continuous_valley,secondary_pattern,len_len,7,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,105.0,107.5,False
+secondary_len_len_gap50_t08,continuous_valley,secondary_pattern,len_len,8,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,115.0,117.4,False
+secondary_len_len_gap50_t09,continuous_valley,secondary_pattern,len_len,9,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,100.0,101.8,False
+secondary_len_len_gap50_t10,continuous_valley,secondary_pattern,len_len,10,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,110.0,111.9,False
+secondary_trai_len_xuong_gap0_t01,continuous_valley,secondary_pattern,trai_len_xuong,1,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,80.0,81.8,False
+secondary_trai_len_xuong_gap0_t02,continuous_valley,secondary_pattern,trai_len_xuong,2,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,73.3,75.1,False
+secondary_trai_len_xuong_gap0_t03,continuous_valley,secondary_pattern,trai_len_xuong,3,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+secondary_trai_len_xuong_gap0_t04,continuous_valley,secondary_pattern,trai_len_xuong,4,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,70.0,71.7,False
+secondary_trai_len_xuong_gap0_t05,continuous_valley,secondary_pattern,trai_len_xuong,5,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,63.3,65.7,False
+secondary_trai_len_xuong_gap0_t06,continuous_valley,secondary_pattern,trai_len_xuong,6,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,60.0,62.0,False
+secondary_trai_len_xuong_gap0_t07,continuous_valley,secondary_pattern,trai_len_xuong,7,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,70.0,71.7,False
+secondary_trai_len_xuong_gap0_t08,continuous_valley,secondary_pattern,trai_len_xuong,8,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,63.3,65.1,False
+secondary_trai_len_xuong_gap0_t09,continuous_valley,secondary_pattern,trai_len_xuong,9,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+secondary_trai_len_xuong_gap0_t10,continuous_valley,secondary_pattern,trai_len_xuong,10,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,80.0,82.9,False
+secondary_trai_len_xuong_gap50_t01,continuous_valley,secondary_pattern,trai_len_xuong,1,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,110.0,112.9,False
+secondary_trai_len_xuong_gap50_t02,continuous_valley,secondary_pattern,trai_len_xuong,2,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,103.3,106.2,False
+secondary_trai_len_xuong_gap50_t03,continuous_valley,secondary_pattern,trai_len_xuong,3,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,106.7,109.6,False
+secondary_trai_len_xuong_gap50_t04,continuous_valley,secondary_pattern,trai_len_xuong,4,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,100.0,102.9,False
+secondary_trai_len_xuong_gap50_t05,continuous_valley,secondary_pattern,trai_len_xuong,5,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,100.0,103.0,False
+secondary_trai_len_xuong_gap50_t06,continuous_valley,secondary_pattern,trai_len_xuong,6,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,96.7,99.2,False
+secondary_trai_len_xuong_gap50_t07,continuous_valley,secondary_pattern,trai_len_xuong,7,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,106.7,108.5,False
+secondary_trai_len_xuong_gap50_t08,continuous_valley,secondary_pattern,trai_len_xuong,8,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,100.0,101.9,False
+secondary_trai_len_xuong_gap50_t09,continuous_valley,secondary_pattern,trai_len_xuong,9,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,100.0,102.0,False
+secondary_trai_len_xuong_gap50_t10,continuous_valley,secondary_pattern,trai_len_xuong,10,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,110.0,111.8,False
+secondary_all_four_gap50_t01,continuous_valley,secondary_pattern,all_four_transitions,1,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,100.0,101.9,False
+secondary_all_four_gap50_t02,continuous_valley,secondary_pattern,all_four_transitions,2,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,115.0,117.1,False
+secondary_all_four_gap50_t03,continuous_valley,secondary_pattern,all_four_transitions,3,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,102.5,104.4,False
+secondary_all_four_gap50_t04,continuous_valley,secondary_pattern,all_four_transitions,4,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,80.0,81.8,False
+secondary_all_four_gap50_t05,continuous_valley,secondary_pattern,all_four_transitions,5,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,97.5,99.3,False
+secondary_all_four_gap50_t06,continuous_valley,secondary_pattern,all_four_transitions,6,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,112.5,114.5,False
+secondary_all_four_gap50_t07,continuous_valley,secondary_pattern,all_four_transitions,7,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,105.0,106.8,False
+secondary_all_four_gap50_t08,continuous_valley,secondary_pattern,all_four_transitions,8,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,107.5,109.3,False
+secondary_all_four_gap50_t09,continuous_valley,secondary_pattern,all_four_transitions,9,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,122.5,124.3,False
+secondary_all_four_gap50_t10,continuous_valley,secondary_pattern,all_four_transitions,10,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,102.5,104.5,False
+control_elongated_len_t01,continuous_valley,elongated_control,elongated_len,1,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,121.8,False
+control_elongated_len_t02,continuous_valley,elongated_control,elongated_len,2,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,130.0,132.0,False
+control_elongated_len_t03,continuous_valley,elongated_control,elongated_len,3,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,121.8,False
+control_elongated_len_t04,continuous_valley,elongated_control,elongated_len,4,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,130.0,132.3,False
+control_elongated_len_t05,continuous_valley,elongated_control,elongated_len,5,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,121.8,False
+control_elongated_len_t06,continuous_valley,elongated_control,elongated_len,6,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,122.3,False
+control_elongated_len_t07,continuous_valley,elongated_control,elongated_len,7,0,1,LEN,0,NONE,False,0,1,0,100.0,0,0,1,N/A,N/A,False
+control_elongated_len_t08,continuous_valley,elongated_control,elongated_len,8,0,1,LEN,0,NONE,False,0,1,0,100.0,0,0,1,N/A,N/A,False
+control_elongated_len_t09,continuous_valley,elongated_control,elongated_len,9,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,140.0,142.4,False
+control_elongated_len_t10,continuous_valley,elongated_control,elongated_len,10,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,140.0,141.9,False
+stress_seq_N3_gap0_t01,continuous_valley,long_sequence_stress,long_sequence_N3,1,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.7,False
+stress_seq_N3_gap0_t02,continuous_valley,long_sequence_stress,long_sequence_N3,2,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+stress_seq_N3_gap0_t03,continuous_valley,long_sequence_stress,long_sequence_N3,3,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,73.3,75.3,False
+stress_seq_N3_gap0_t04,continuous_valley,long_sequence_stress,long_sequence_N3,4,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+stress_seq_N3_gap0_t05,continuous_valley,long_sequence_stress,long_sequence_N3,5,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,73.3,75.2,False
+stress_seq_N3_gap0_t06,continuous_valley,long_sequence_stress,long_sequence_N3,6,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.4,False
+stress_seq_N3_gap0_t07,continuous_valley,long_sequence_stress,long_sequence_N3,7,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,83.3,85.2,False
+stress_seq_N3_gap0_t08,continuous_valley,long_sequence_stress,long_sequence_N3,8,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.2,False
+stress_seq_N3_gap0_t09,continuous_valley,long_sequence_stress,long_sequence_N3,9,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,83.3,85.3,False
+stress_seq_N3_gap0_t10,continuous_valley,long_sequence_stress,long_sequence_N3,10,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.5,False
+stress_seq_N3_gap50_t01,continuous_valley,long_sequence_stress,long_sequence_N3,1,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,98.5,False
+stress_seq_N3_gap50_t02,continuous_valley,long_sequence_stress,long_sequence_N3,2,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,101.9,False
+stress_seq_N3_gap50_t03,continuous_valley,long_sequence_stress,long_sequence_N3,3,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,110.0,111.8,False
+stress_seq_N3_gap50_t04,continuous_valley,long_sequence_stress,long_sequence_N3,4,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,101.7,False
+stress_seq_N3_gap50_t05,continuous_valley,long_sequence_stress,long_sequence_N3,5,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,105.1,False
+stress_seq_N3_gap50_t06,continuous_valley,long_sequence_stress,long_sequence_N3,6,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.2,False
+stress_seq_N3_gap50_t07,continuous_valley,long_sequence_stress,long_sequence_N3,7,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> TRAI,False,1,0,0,33.3,2,1,1,120.0,122.3,False
+stress_seq_N3_gap50_t08,continuous_valley,long_sequence_stress,long_sequence_N3,8,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.4,False
+stress_seq_N3_gap50_t09,continuous_valley,long_sequence_stress,long_sequence_N3,9,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,113.3,115.7,False
+stress_seq_N3_gap50_t10,continuous_valley,long_sequence_stress,long_sequence_N3,10,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,105.6,False
+stress_seq_N5_gap0_t01,continuous_valley,long_sequence_stress,long_sequence_N5,1,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,56.0,58.4,False
+stress_seq_N5_gap0_t02,continuous_valley,long_sequence_stress,long_sequence_N5,2,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,58.0,60.4,False
+stress_seq_N5_gap0_t03,continuous_valley,long_sequence_stress,long_sequence_N5,3,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,62.0,63.8,False
+stress_seq_N5_gap0_t04,continuous_valley,long_sequence_stress,long_sequence_N5,4,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,48.0,49.8,False
+stress_seq_N5_gap0_t05,continuous_valley,long_sequence_stress,long_sequence_N5,5,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,60.0,61.7,False
+stress_seq_N5_gap0_t06,continuous_valley,long_sequence_stress,long_sequence_N5,6,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,56.0,57.7,False
+stress_seq_N5_gap0_t07,continuous_valley,long_sequence_stress,long_sequence_N5,7,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,60.0,61.7,False
+stress_seq_N5_gap0_t08,continuous_valley,long_sequence_stress,long_sequence_N5,8,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,54.0,55.8,False
+stress_seq_N5_gap0_t09,continuous_valley,long_sequence_stress,long_sequence_N5,9,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,62.0,63.9,False
+stress_seq_N5_gap0_t10,continuous_valley,long_sequence_stress,long_sequence_N5,10,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,50.0,51.8,False
+stress_seq_N5_gap50_t01,continuous_valley,long_sequence_stress,long_sequence_N5,1,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,96.0,97.9,False
+stress_seq_N5_gap50_t02,continuous_valley,long_sequence_stress,long_sequence_N5,2,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,98.0,100.1,False
+stress_seq_N5_gap50_t03,continuous_valley,long_sequence_stress,long_sequence_N5,3,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,102.0,104.3,False
+stress_seq_N5_gap50_t04,continuous_valley,long_sequence_stress,long_sequence_N5,4,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,78.0,80.3,False
+stress_seq_N5_gap50_t05,continuous_valley,long_sequence_stress,long_sequence_N5,5,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,96.0,98.3,False
+stress_seq_N5_gap50_t06,continuous_valley,long_sequence_stress,long_sequence_N5,6,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,92.0,94.7,False
+stress_seq_N5_gap50_t07,continuous_valley,long_sequence_stress,long_sequence_N5,7,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> TRAI -> TRAI -> LEN,False,1,0,0,20.0,4,1,1,104.0,107.0,False
+stress_seq_N5_gap50_t08,continuous_valley,long_sequence_stress,long_sequence_N5,8,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,96.0,98.9,False
+stress_seq_N5_gap50_t09,continuous_valley,long_sequence_stress,long_sequence_N5,9,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,82.0,84.9,False
+stress_seq_N5_gap50_t10,continuous_valley,long_sequence_stress,long_sequence_N5,10,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,94.0,96.1,False
+stress_seq_N10_gap0_t01,continuous_valley,long_sequence_stress,long_sequence_N10,1,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,48.0,50.4,False
+stress_seq_N10_gap0_t02,continuous_valley,long_sequence_stress,long_sequence_N10,2,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,9,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> PHAI -> LEN -> LEN,False,0,1,0,10.0,9,0,1,48.9,51.2,False
+stress_seq_N10_gap0_t03,continuous_valley,long_sequence_stress,long_sequence_N10,3,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,49.0,51.3,False
+stress_seq_N10_gap0_t04,continuous_valley,long_sequence_stress,long_sequence_N10,4,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,44.0,45.9,False
+stress_seq_N10_gap0_t05,continuous_valley,long_sequence_stress,long_sequence_N10,5,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,45.0,46.9,False
+stress_seq_N10_gap0_t06,continuous_valley,long_sequence_stress,long_sequence_N10,6,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,41.0,42.9,False
+stress_seq_N10_gap0_t07,continuous_valley,long_sequence_stress,long_sequence_N10,7,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,49.0,51.3,False
+stress_seq_N10_gap0_t08,continuous_valley,long_sequence_stress,long_sequence_N10,8,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,44.0,46.7,False
+stress_seq_N10_gap0_t09,continuous_valley,long_sequence_stress,long_sequence_N10,9,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,52.0,54.4,False
+stress_seq_N10_gap0_t10,continuous_valley,long_sequence_stress,long_sequence_N10,10,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,43.0,45.4,False
+stress_seq_N10_gap50_t01,continuous_valley,long_sequence_stress,long_sequence_N10,1,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,8,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> LEN -> LEN,False,0,2,0,20.0,8,0,2,96.3,98.6,False
+stress_seq_N10_gap50_t02,continuous_valley,long_sequence_stress,long_sequence_N10,2,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> TRAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,97.0,99.6,False
+stress_seq_N10_gap50_t03,continuous_valley,long_sequence_stress,long_sequence_N10,3,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,94.0,96.9,False
+stress_seq_N10_gap50_t04,continuous_valley,long_sequence_stress,long_sequence_N10,4,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,86.0,88.9,False
+stress_seq_N10_gap50_t05,continuous_valley,long_sequence_stress,long_sequence_N10,5,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> XUONG -> LEN -> LEN,False,1,0,0,10.0,9,1,1,90.0,92.4,False
+stress_seq_N10_gap50_t06,continuous_valley,long_sequence_stress,long_sequence_N10,6,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,80.0,82.4,False
+stress_seq_N10_gap50_t07,continuous_valley,long_sequence_stress,long_sequence_N10,7,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,78.0,80.9,False
+stress_seq_N10_gap50_t08,continuous_valley,long_sequence_stress,long_sequence_N10,8,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,85.0,87.4,False
+stress_seq_N10_gap50_t09,continuous_valley,long_sequence_stress,long_sequence_N10,9,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,85.0,87.4,False
+stress_seq_N10_gap50_t10,continuous_valley,long_sequence_stress,long_sequence_N10,10,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,92.0,94.5,False
+stress_seq_N20_gap0_t01,continuous_valley,long_sequence_stress,long_sequence_N20,1,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,46.0,47.7,False
+stress_seq_N20_gap0_t02,continuous_valley,long_sequence_stress,long_sequence_N20,2,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,19,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,0,1,0,5.0,19,0,1,43.7,45.9,False
+stress_seq_N20_gap0_t03,continuous_valley,long_sequence_stress,long_sequence_N20,3,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,38.5,40.8,False
+stress_seq_N20_gap0_t04,continuous_valley,long_sequence_stress,long_sequence_N20,4,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,50.5,52.8,False
+stress_seq_N20_gap0_t05,continuous_valley,long_sequence_stress,long_sequence_N20,5,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,46.0,48.2,False
+stress_seq_N20_gap0_t06,continuous_valley,long_sequence_stress,long_sequence_N20,6,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> PHAI,False,1,0,0,5.0,19,1,1,44.5,47.0,False
+stress_seq_N20_gap0_t07,continuous_valley,long_sequence_stress,long_sequence_N20,7,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,40.0,42.5,False
+stress_seq_N20_gap0_t08,continuous_valley,long_sequence_stress,long_sequence_N20,8,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,42.5,44.9,False
+stress_seq_N20_gap0_t09,continuous_valley,long_sequence_stress,long_sequence_N20,9,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,19,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,0,1,0,5.0,19,0,1,45.8,48.2,False
+stress_seq_N20_gap0_t10,continuous_valley,long_sequence_stress,long_sequence_N20,10,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,43.5,45.4,False
+stress_seq_N20_gap50_t01,continuous_valley,long_sequence_stress,long_sequence_N20,1,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,18,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,0,2,0,10.0,18,0,2,88.9,90.9,False
+stress_seq_N20_gap50_t02,continuous_valley,long_sequence_stress,long_sequence_N20,2,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> TRAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,1,0,0,5.0,19,1,1,94.5,96.6,False
+stress_seq_N20_gap50_t03,continuous_valley,long_sequence_stress,long_sequence_N20,3,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,85.0,87.1,False
+stress_seq_N20_gap50_t04,continuous_valley,long_sequence_stress,long_sequence_N20,4,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,96.0,98.5,False
+stress_seq_N20_gap50_t05,continuous_valley,long_sequence_stress,long_sequence_N20,5,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> XUONG -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,1,0,0,5.0,19,1,1,92.0,94.5,False
+stress_seq_N20_gap50_t06,continuous_valley,long_sequence_stress,long_sequence_N20,6,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> TRAI -> PHAI,False,2,0,0,10.0,18,2,2,86.5,88.8,False
+stress_seq_N20_gap50_t07,continuous_valley,long_sequence_stress,long_sequence_N20,7,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,1,0,0,5.0,19,1,1,90.5,92.8,False
+stress_seq_N20_gap50_t08,continuous_valley,long_sequence_stress,long_sequence_N20,8,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,18,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> LEN -> LEN -> PHAI -> TRAI,False,0,2,0,10.0,18,0,2,81.7,83.9,False
+stress_seq_N20_gap50_t09,continuous_valley,long_sequence_stress,long_sequence_N20,9,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> TRAI -> LEN -> LEN -> PHAI -> TRAI,False,1,0,0,5.0,19,1,1,90.5,92.8,False
+stress_seq_N20_gap50_t10,continuous_valley,long_sequence_stress,long_sequence_N20,10,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,93.5,95.3,False
+primary_len_len_phai_gap0_t01,hybrid_speechband_valley,primary_demo,len_len_phai,1,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.3,False
+primary_len_len_phai_gap0_t02,hybrid_speechband_valley,primary_demo,len_len_phai,2,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.8,False
+primary_len_len_phai_gap0_t03,hybrid_speechband_valley,primary_demo,len_len_phai,3,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,69.0,False
+primary_len_len_phai_gap0_t04,hybrid_speechband_valley,primary_demo,len_len_phai,4,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.2,False
+primary_len_len_phai_gap0_t05,hybrid_speechband_valley,primary_demo,len_len_phai,5,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+primary_len_len_phai_gap0_t06,hybrid_speechband_valley,primary_demo,len_len_phai,6,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.4,False
+primary_len_len_phai_gap0_t07,hybrid_speechband_valley,primary_demo,len_len_phai,7,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,60.0,61.9,False
+primary_len_len_phai_gap0_t08,hybrid_speechband_valley,primary_demo,len_len_phai,8,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.5,False
+primary_len_len_phai_gap0_t09,hybrid_speechband_valley,primary_demo,len_len_phai,9,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,23.3,25.2,False
+primary_len_len_phai_gap0_t10,hybrid_speechband_valley,primary_demo,len_len_phai,10,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.4,False
+primary_len_len_phai_gap0_t11,hybrid_speechband_valley,primary_demo,len_len_phai,11,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+primary_len_len_phai_gap0_t12,hybrid_speechband_valley,primary_demo,len_len_phai,12,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.4,False
+primary_len_len_phai_gap0_t13,hybrid_speechband_valley,primary_demo,len_len_phai,13,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.2,False
+primary_len_len_phai_gap0_t14,hybrid_speechband_valley,primary_demo,len_len_phai,14,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.4,False
+primary_len_len_phai_gap0_t15,hybrid_speechband_valley,primary_demo,len_len_phai,15,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,56.7,59.0,False
+primary_len_len_phai_gap0_t16,hybrid_speechband_valley,primary_demo,len_len_phai,16,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.1,False
+primary_len_len_phai_gap0_t17,hybrid_speechband_valley,primary_demo,len_len_phai,17,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.6,False
+primary_len_len_phai_gap0_t18,hybrid_speechband_valley,primary_demo,len_len_phai,18,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.1,False
+primary_len_len_phai_gap0_t19,hybrid_speechband_valley,primary_demo,len_len_phai,19,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.4,False
+primary_len_len_phai_gap0_t20,hybrid_speechband_valley,primary_demo,len_len_phai,20,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,50.0,51.8,False
+primary_len_len_phai_gap0_t21,hybrid_speechband_valley,primary_demo,len_len_phai,21,0,3,LEN -> LEN -> PHAI,3,PHAI -> LEN -> PHAI,False,1,0,0,33.3,2,1,1,103.3,105.5,False
+primary_len_len_phai_gap0_t22,hybrid_speechband_valley,primary_demo,len_len_phai,22,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.4,False
+primary_len_len_phai_gap0_t23,hybrid_speechband_valley,primary_demo,len_len_phai,23,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.1,False
+primary_len_len_phai_gap0_t24,hybrid_speechband_valley,primary_demo,len_len_phai,24,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+primary_len_len_phai_gap0_t25,hybrid_speechband_valley,primary_demo,len_len_phai,25,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.5,False
+primary_len_len_phai_gap0_t26,hybrid_speechband_valley,primary_demo,len_len_phai,26,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.6,False
+primary_len_len_phai_gap0_t27,hybrid_speechband_valley,primary_demo,len_len_phai,27,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,73.3,75.2,False
+primary_len_len_phai_gap0_t28,hybrid_speechband_valley,primary_demo,len_len_phai,28,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,79.0,False
+primary_len_len_phai_gap0_t29,hybrid_speechband_valley,primary_demo,len_len_phai,29,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+primary_len_len_phai_gap0_t30,hybrid_speechband_valley,primary_demo,len_len_phai,30,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.8,False
+primary_len_len_phai_gap50_t01,hybrid_speechband_valley,primary_demo,len_len_phai,1,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,101.8,False
+primary_len_len_phai_gap50_t02,hybrid_speechband_valley,primary_demo,len_len_phai,2,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.2,False
+primary_len_len_phai_gap50_t03,hybrid_speechband_valley,primary_demo,len_len_phai,3,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,98.5,False
+primary_len_len_phai_gap50_t04,hybrid_speechband_valley,primary_demo,len_len_phai,4,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.3,False
+primary_len_len_phai_gap50_t05,hybrid_speechband_valley,primary_demo,len_len_phai,5,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.8,False
+primary_len_len_phai_gap50_t06,hybrid_speechband_valley,primary_demo,len_len_phai,6,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,106.2,False
+primary_len_len_phai_gap50_t07,hybrid_speechband_valley,primary_demo,len_len_phai,7,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,99.5,False
+primary_len_len_phai_gap50_t08,hybrid_speechband_valley,primary_demo,len_len_phai,8,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,113.3,115.8,False
+primary_len_len_phai_gap50_t09,hybrid_speechband_valley,primary_demo,len_len_phai,9,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,53.3,55.1,False
+primary_len_len_phai_gap50_t10,hybrid_speechband_valley,primary_demo,len_len_phai,10,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> TRAI,False,1,0,0,33.3,2,1,1,106.7,108.4,False
+primary_len_len_phai_gap50_t11,hybrid_speechband_valley,primary_demo,len_len_phai,11,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,86.7,88.5,False
+primary_len_len_phai_gap50_t12,hybrid_speechband_valley,primary_demo,len_len_phai,12,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,98.5,False
+primary_len_len_phai_gap50_t13,hybrid_speechband_valley,primary_demo,len_len_phai,13,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.2,False
+primary_len_len_phai_gap50_t14,hybrid_speechband_valley,primary_demo,len_len_phai,14,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.3,False
+primary_len_len_phai_gap50_t15,hybrid_speechband_valley,primary_demo,len_len_phai,15,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.5,False
+primary_len_len_phai_gap50_t16,hybrid_speechband_valley,primary_demo,len_len_phai,16,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.5,False
+primary_len_len_phai_gap50_t17,hybrid_speechband_valley,primary_demo,len_len_phai,17,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,99.1,False
+primary_len_len_phai_gap50_t18,hybrid_speechband_valley,primary_demo,len_len_phai,18,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.8,False
+primary_len_len_phai_gap50_t19,hybrid_speechband_valley,primary_demo,len_len_phai,19,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.4,False
+primary_len_len_phai_gap50_t20,hybrid_speechband_valley,primary_demo,len_len_phai,20,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.3,False
+primary_len_len_phai_gap50_t21,hybrid_speechband_valley,primary_demo,len_len_phai,21,50,3,LEN -> LEN -> PHAI,3,PHAI -> LEN -> PHAI,False,1,0,0,33.3,2,1,1,83.3,85.8,False
+primary_len_len_phai_gap50_t22,hybrid_speechband_valley,primary_demo,len_len_phai,22,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.2,False
+primary_len_len_phai_gap50_t23,hybrid_speechband_valley,primary_demo,len_len_phai,23,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> TRAI,False,1,0,0,33.3,2,1,1,73.3,75.2,False
+primary_len_len_phai_gap50_t24,hybrid_speechband_valley,primary_demo,len_len_phai,24,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,86.7,88.5,False
+primary_len_len_phai_gap50_t25,hybrid_speechband_valley,primary_demo,len_len_phai,25,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,90.0,92.3,False
+primary_len_len_phai_gap50_t26,hybrid_speechband_valley,primary_demo,len_len_phai,26,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,98.9,False
+primary_len_len_phai_gap50_t27,hybrid_speechband_valley,primary_demo,len_len_phai,27,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,98.4,False
+primary_len_len_phai_gap50_t28,hybrid_speechband_valley,primary_demo,len_len_phai,28,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,108.4,False
+primary_len_len_phai_gap50_t29,hybrid_speechband_valley,primary_demo,len_len_phai,29,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.2,False
+primary_len_len_phai_gap50_t30,hybrid_speechband_valley,primary_demo,len_len_phai,30,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,109.1,False
+secondary_len_len_gap0_t01,hybrid_speechband_valley,secondary_pattern,len_len,1,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,87.3,False
+secondary_len_len_gap0_t02,hybrid_speechband_valley,secondary_pattern,len_len,2,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,86.7,False
+secondary_len_len_gap0_t03,hybrid_speechband_valley,secondary_pattern,len_len,3,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,80.0,82.5,False
+secondary_len_len_gap0_t04,hybrid_speechband_valley,secondary_pattern,len_len,4,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,87.4,False
+secondary_len_len_gap0_t05,hybrid_speechband_valley,secondary_pattern,len_len,5,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,90.0,92.4,False
+secondary_len_len_gap0_t06,hybrid_speechband_valley,secondary_pattern,len_len,6,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,75.0,77.5,False
+secondary_len_len_gap0_t07,hybrid_speechband_valley,secondary_pattern,len_len,7,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,80.0,82.4,False
+secondary_len_len_gap0_t08,hybrid_speechband_valley,secondary_pattern,len_len,8,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,80.0,82.5,False
+secondary_len_len_gap0_t09,hybrid_speechband_valley,secondary_pattern,len_len,9,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,86.8,False
+secondary_len_len_gap0_t10,hybrid_speechband_valley,secondary_pattern,len_len,10,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,86.9,False
+secondary_len_len_gap50_t01,hybrid_speechband_valley,secondary_pattern,len_len,1,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,100.0,101.9,False
+secondary_len_len_gap50_t02,hybrid_speechband_valley,secondary_pattern,len_len,2,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,100.0,101.8,False
+secondary_len_len_gap50_t03,hybrid_speechband_valley,secondary_pattern,len_len,3,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,105.0,106.8,False
+secondary_len_len_gap50_t04,hybrid_speechband_valley,secondary_pattern,len_len,4,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,110.0,112.0,False
+secondary_len_len_gap50_t05,hybrid_speechband_valley,secondary_pattern,len_len,5,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,105.0,106.8,False
+secondary_len_len_gap50_t06,hybrid_speechband_valley,secondary_pattern,len_len,6,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,110.0,112.4,False
+secondary_len_len_gap50_t07,hybrid_speechband_valley,secondary_pattern,len_len,7,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,105.0,107.3,False
+secondary_len_len_gap50_t08,hybrid_speechband_valley,secondary_pattern,len_len,8,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,115.0,117.4,False
+secondary_len_len_gap50_t09,hybrid_speechband_valley,secondary_pattern,len_len,9,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,100.0,102.4,False
+secondary_len_len_gap50_t10,hybrid_speechband_valley,secondary_pattern,len_len,10,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,110.0,111.8,False
+secondary_trai_len_xuong_gap0_t01,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,1,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,83.3,85.8,False
+secondary_trai_len_xuong_gap0_t02,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,2,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,93.3,95.7,False
+secondary_trai_len_xuong_gap0_t03,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,3,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,70.0,72.4,False
+secondary_trai_len_xuong_gap0_t04,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,4,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,103.3,105.8,False
+secondary_trai_len_xuong_gap0_t05,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,5,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,63.3,65.8,False
+secondary_trai_len_xuong_gap0_t06,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,6,0,3,TRAI -> LEN -> XUONG,3,TRAI -> XUONG -> XUONG,False,1,0,0,33.3,2,1,1,93.3,95.7,False
+secondary_trai_len_xuong_gap0_t07,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,7,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,63.3,65.2,False
+secondary_trai_len_xuong_gap0_t08,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,8,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,63.3,65.3,False
+secondary_trai_len_xuong_gap0_t09,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,9,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,103.3,105.4,False
+secondary_trai_len_xuong_gap0_t10,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,10,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,106.7,108.6,False
+secondary_trai_len_xuong_gap50_t01,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,1,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,86.7,88.6,False
+secondary_trai_len_xuong_gap50_t02,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,2,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,110.0,111.9,False
+secondary_trai_len_xuong_gap50_t03,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,3,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,100.0,101.9,False
+secondary_trai_len_xuong_gap50_t04,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,4,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,120.0,121.8,False
+secondary_trai_len_xuong_gap50_t05,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,5,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,100.0,102.4,False
+secondary_trai_len_xuong_gap50_t06,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,6,50,3,TRAI -> LEN -> XUONG,3,TRAI -> XUONG -> XUONG,False,1,0,0,33.3,2,1,1,116.7,119.5,False
+secondary_trai_len_xuong_gap50_t07,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,7,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,100.0,102.8,False
+secondary_trai_len_xuong_gap50_t08,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,8,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,93.3,96.2,False
+secondary_trai_len_xuong_gap50_t09,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,9,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,113.3,115.8,False
+secondary_trai_len_xuong_gap50_t10,hybrid_speechband_valley,secondary_pattern,trai_len_xuong,10,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,123.3,125.7,False
+secondary_all_four_gap50_t01,hybrid_speechband_valley,secondary_pattern,all_four_transitions,1,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,80.0,82.3,False
+secondary_all_four_gap50_t02,hybrid_speechband_valley,secondary_pattern,all_four_transitions,2,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,120.0,121.8,False
+secondary_all_four_gap50_t03,hybrid_speechband_valley,secondary_pattern,all_four_transitions,3,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,107.5,109.6,False
+secondary_all_four_gap50_t04,hybrid_speechband_valley,secondary_pattern,all_four_transitions,4,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,85.0,87.4,False
+secondary_all_four_gap50_t05,hybrid_speechband_valley,secondary_pattern,all_four_transitions,5,50,4,LEN -> XUONG -> TRAI -> PHAI,3,XUONG -> TRAI -> PHAI,False,0,1,0,25.0,3,0,1,110.0,112.5,False
+secondary_all_four_gap50_t06,hybrid_speechband_valley,secondary_pattern,all_four_transitions,6,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,92.5,94.3,False
+secondary_all_four_gap50_t07,hybrid_speechband_valley,secondary_pattern,all_four_transitions,7,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,100.0,102.7,False
+secondary_all_four_gap50_t08,hybrid_speechband_valley,secondary_pattern,all_four_transitions,8,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,117.5,120.4,False
+secondary_all_four_gap50_t09,hybrid_speechband_valley,secondary_pattern,all_four_transitions,9,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,117.5,120.0,False
+secondary_all_four_gap50_t10,hybrid_speechband_valley,secondary_pattern,all_four_transitions,10,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> TRAI,False,1,0,0,25.0,3,1,1,117.5,120.0,False
+control_elongated_len_t01,hybrid_speechband_valley,elongated_control,elongated_len,1,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,122.5,False
+control_elongated_len_t02,hybrid_speechband_valley,elongated_control,elongated_len,2,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,130.0,131.8,False
+control_elongated_len_t03,hybrid_speechband_valley,elongated_control,elongated_len,3,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,122.5,False
+control_elongated_len_t04,hybrid_speechband_valley,elongated_control,elongated_len,4,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,130.0,132.5,False
+control_elongated_len_t05,hybrid_speechband_valley,elongated_control,elongated_len,5,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,122.5,False
+control_elongated_len_t06,hybrid_speechband_valley,elongated_control,elongated_len,6,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,122.5,False
+control_elongated_len_t07,hybrid_speechband_valley,elongated_control,elongated_len,7,0,1,LEN,0,NONE,False,0,1,0,100.0,0,0,1,N/A,N/A,False
+control_elongated_len_t08,hybrid_speechband_valley,elongated_control,elongated_len,8,0,1,LEN,0,NONE,False,0,1,0,100.0,0,0,1,N/A,N/A,False
+control_elongated_len_t09,hybrid_speechband_valley,elongated_control,elongated_len,9,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,140.0,141.8,False
+control_elongated_len_t10,hybrid_speechband_valley,elongated_control,elongated_len,10,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,140.0,142.2,False
+stress_seq_N3_gap0_t01,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,1,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,60.0,62.3,False
+stress_seq_N3_gap0_t02,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,2,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.2,False
+stress_seq_N3_gap0_t03,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,3,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.4,False
+stress_seq_N3_gap0_t04,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,4,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.4,False
+stress_seq_N3_gap0_t05,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,5,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,73.3,75.8,False
+stress_seq_N3_gap0_t06,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,6,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,23.3,25.8,False
+stress_seq_N3_gap0_t07,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,7,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,79.2,False
+stress_seq_N3_gap0_t08,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,8,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.1,False
+stress_seq_N3_gap0_t09,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,9,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+stress_seq_N3_gap0_t10,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,10,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.9,False
+stress_seq_N3_gap50_t01,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,1,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,99.2,False
+stress_seq_N3_gap50_t02,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,2,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.8,False
+stress_seq_N3_gap50_t03,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,3,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,105.8,False
+stress_seq_N3_gap50_t04,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,4,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.6,False
+stress_seq_N3_gap50_t05,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,5,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,105.0,False
+stress_seq_N3_gap50_t06,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,6,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,53.3,55.1,False
+stress_seq_N3_gap50_t07,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,7,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> TRAI,False,1,0,0,33.3,2,1,1,113.3,115.7,False
+stress_seq_N3_gap50_t08,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,8,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.7,False
+stress_seq_N3_gap50_t09,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,9,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.4,False
+stress_seq_N3_gap50_t10,hybrid_speechband_valley,long_sequence_stress,long_sequence_N3,10,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,105.7,False
+stress_seq_N5_gap0_t01,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,1,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,60.0,62.3,False
+stress_seq_N5_gap0_t02,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,2,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,66.0,67.8,False
+stress_seq_N5_gap0_t03,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,3,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,62.0,63.9,False
+stress_seq_N5_gap0_t04,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,4,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,60.0,61.9,False
+stress_seq_N5_gap0_t05,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,5,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,64.0,66.0,False
+stress_seq_N5_gap0_t06,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,6,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,48.0,50.5,False
+stress_seq_N5_gap0_t07,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,7,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,56.0,58.4,False
+stress_seq_N5_gap0_t08,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,8,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,54.0,56.4,False
+stress_seq_N5_gap0_t09,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,9,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,66.0,68.2,False
+stress_seq_N5_gap0_t10,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,10,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,66.0,68.3,False
+stress_seq_N5_gap50_t01,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,1,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,100.0,103.6,False
+stress_seq_N5_gap50_t02,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,2,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,98.0,100.0,False
+stress_seq_N5_gap50_t03,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,3,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,102.0,103.9,False
+stress_seq_N5_gap50_t04,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,4,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,86.0,88.5,False
+stress_seq_N5_gap50_t05,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,5,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,86.0,88.6,False
+stress_seq_N5_gap50_t06,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,6,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,76.0,78.5,False
+stress_seq_N5_gap50_t07,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,7,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> TRAI -> TRAI -> LEN,False,1,0,0,20.0,4,1,1,108.0,110.9,False
+stress_seq_N5_gap50_t08,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,8,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,92.0,95.1,False
+stress_seq_N5_gap50_t09,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,9,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> TRAI -> TRAI -> LEN,False,1,0,0,20.0,4,1,1,86.0,88.7,False
+stress_seq_N5_gap50_t10,hybrid_speechband_valley,long_sequence_stress,long_sequence_N5,10,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> XUONG -> TRAI -> LEN,False,1,0,0,20.0,4,1,1,102.0,103.9,False
+stress_seq_N10_gap0_t01,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,1,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,54.0,56.0,False
+stress_seq_N10_gap0_t02,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,2,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,9,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> PHAI -> LEN -> LEN,False,0,1,0,10.0,9,0,1,53.3,55.4,False
+stress_seq_N10_gap0_t03,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,3,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,49.0,51.0,False
+stress_seq_N10_gap0_t04,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,4,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,58.0,59.9,False
+stress_seq_N10_gap0_t05,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,5,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,67.0,68.9,False
+stress_seq_N10_gap0_t06,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,6,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,57.0,59.3,False
+stress_seq_N10_gap0_t07,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,7,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,59.0,60.9,False
+stress_seq_N10_gap0_t08,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,8,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,50.0,52.1,False
+stress_seq_N10_gap0_t09,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,9,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,60.0,62.0,False
+stress_seq_N10_gap0_t10,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,10,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,64.0,65.9,False
+stress_seq_N10_gap50_t01,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,1,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> XUONG -> XUONG -> XUONG -> PHAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,86.0,88.0,False
+stress_seq_N10_gap50_t02,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,2,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> TRAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,91.0,93.1,False
+stress_seq_N10_gap50_t03,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,3,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,90.0,92.3,False
+stress_seq_N10_gap50_t04,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,4,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,88.0,89.9,False
+stress_seq_N10_gap50_t05,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,5,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> XUONG -> LEN -> LEN,False,1,0,0,10.0,9,1,1,95.0,97.7,False
+stress_seq_N10_gap50_t06,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,6,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,80.0,82.5,False
+stress_seq_N10_gap50_t07,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,7,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,84.0,86.5,False
+stress_seq_N10_gap50_t08,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,8,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,83.0,85.5,False
+stress_seq_N10_gap50_t09,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,9,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,89.0,91.5,False
+stress_seq_N10_gap50_t10,hybrid_speechband_valley,long_sequence_stress,long_sequence_N10,10,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> XUONG -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,93.0,95.5,False
+stress_seq_N20_gap0_t01,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,1,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,55.0,57.5,False
+stress_seq_N20_gap0_t02,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,2,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,19,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,0,1,0,5.0,19,0,1,56.8,59.3,False
+stress_seq_N20_gap0_t03,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,3,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,44.5,46.8,False
+stress_seq_N20_gap0_t04,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,4,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,54.0,55.9,False
+stress_seq_N20_gap0_t05,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,5,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,56.5,58.8,False
+stress_seq_N20_gap0_t06,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,6,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> PHAI,False,1,0,0,5.0,19,1,1,51.5,54.0,False
+stress_seq_N20_gap0_t07,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,7,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,53.0,55.1,False
+stress_seq_N20_gap0_t08,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,8,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,50.5,52.4,False
+stress_seq_N20_gap0_t09,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,9,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,19,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,0,1,0,5.0,19,0,1,56.3,58.6,False
+stress_seq_N20_gap0_t10,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,10,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,57.0,59.4,False
+stress_seq_N20_gap50_t01,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,1,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> XUONG -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,2,0,0,10.0,18,2,2,86.5,89.0,False
+stress_seq_N20_gap50_t02,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,2,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> TRAI -> LEN -> LEN -> XUONG -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,2,0,0,10.0,18,2,2,92.0,94.3,False
+stress_seq_N20_gap50_t03,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,3,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,82.5,85.0,False
+stress_seq_N20_gap50_t04,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,4,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,91.5,94.0,False
+stress_seq_N20_gap50_t05,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,5,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> XUONG -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,1,0,0,5.0,19,1,1,86.0,88.5,False
+stress_seq_N20_gap50_t06,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,6,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> TRAI -> PHAI,False,2,0,0,10.0,18,2,2,81.0,83.4,False
+stress_seq_N20_gap50_t07,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,7,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,1,0,0,5.0,19,1,1,92.5,94.9,False
+stress_seq_N20_gap50_t08,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,8,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> XUONG -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> TRAI -> TRAI,False,2,0,0,10.0,18,2,2,78.0,80.4,False
+stress_seq_N20_gap50_t09,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,9,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> TRAI -> LEN -> LEN -> XUONG -> TRAI,False,3,0,0,15.0,17,3,3,91.5,94.0,False
+stress_seq_N20_gap50_t10,hybrid_speechband_valley,long_sequence_stress,long_sequence_N20,10,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> XUONG -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,1,0,0,5.0,19,1,1,92.0,93.9,False
+primary_len_len_phai_gap0_t01,game_mode_session,primary_demo,len_len_phai,1,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.8,False
+primary_len_len_phai_gap0_t02,game_mode_session,primary_demo,len_len_phai,2,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.1,False
+primary_len_len_phai_gap0_t03,game_mode_session,primary_demo,len_len_phai,3,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,69.8,False
+primary_len_len_phai_gap0_t04,game_mode_session,primary_demo,len_len_phai,4,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.3,False
+primary_len_len_phai_gap0_t05,game_mode_session,primary_demo,len_len_phai,5,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.9,False
+primary_len_len_phai_gap0_t06,game_mode_session,primary_demo,len_len_phai,6,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,69.1,False
+primary_len_len_phai_gap0_t07,game_mode_session,primary_demo,len_len_phai,7,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,60.0,61.9,False
+primary_len_len_phai_gap0_t08,game_mode_session,primary_demo,len_len_phai,8,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,79.0,False
+primary_len_len_phai_gap0_t09,game_mode_session,primary_demo,len_len_phai,9,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,23.3,25.2,False
+primary_len_len_phai_gap0_t10,game_mode_session,primary_demo,len_len_phai,10,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.5,False
+primary_len_len_phai_gap0_t11,game_mode_session,primary_demo,len_len_phai,11,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.2,False
+primary_len_len_phai_gap0_t12,game_mode_session,primary_demo,len_len_phai,12,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.8,False
+primary_len_len_phai_gap0_t13,game_mode_session,primary_demo,len_len_phai,13,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,71.9,False
+primary_len_len_phai_gap0_t14,game_mode_session,primary_demo,len_len_phai,14,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,78.8,False
+primary_len_len_phai_gap0_t15,game_mode_session,primary_demo,len_len_phai,15,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,56.7,58.5,False
+primary_len_len_phai_gap0_t16,game_mode_session,primary_demo,len_len_phai,16,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.8,False
+primary_len_len_phai_gap0_t17,game_mode_session,primary_demo,len_len_phai,17,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,69.2,False
+primary_len_len_phai_gap0_t18,game_mode_session,primary_demo,len_len_phai,18,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.9,False
+primary_len_len_phai_gap0_t19,game_mode_session,primary_demo,len_len_phai,19,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,79.2,False
+primary_len_len_phai_gap0_t20,game_mode_session,primary_demo,len_len_phai,20,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,50.0,52.6,False
+primary_len_len_phai_gap0_t21,game_mode_session,primary_demo,len_len_phai,21,0,3,LEN -> LEN -> PHAI,3,PHAI -> LEN -> PHAI,False,1,0,0,33.3,2,1,1,103.3,105.8,False
+primary_len_len_phai_gap0_t22,game_mode_session,primary_demo,len_len_phai,22,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,79.0,False
+primary_len_len_phai_gap0_t23,game_mode_session,primary_demo,len_len_phai,23,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,63.3,65.2,False
+primary_len_len_phai_gap0_t24,game_mode_session,primary_demo,len_len_phai,24,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.1,False
+primary_len_len_phai_gap0_t25,game_mode_session,primary_demo,len_len_phai,25,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,68.5,False
+primary_len_len_phai_gap0_t26,game_mode_session,primary_demo,len_len_phai,26,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,69.2,False
+primary_len_len_phai_gap0_t27,game_mode_session,primary_demo,len_len_phai,27,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,73.3,75.8,False
+primary_len_len_phai_gap0_t28,game_mode_session,primary_demo,len_len_phai,28,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,79.1,False
+primary_len_len_phai_gap0_t29,game_mode_session,primary_demo,len_len_phai,29,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.3,False
+primary_len_len_phai_gap0_t30,game_mode_session,primary_demo,len_len_phai,30,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,79.0,False
+primary_len_len_phai_gap50_t01,game_mode_session,primary_demo,len_len_phai,1,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.3,False
+primary_len_len_phai_gap50_t02,game_mode_session,primary_demo,len_len_phai,2,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.6,False
+primary_len_len_phai_gap50_t03,game_mode_session,primary_demo,len_len_phai,3,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,99.1,False
+primary_len_len_phai_gap50_t04,game_mode_session,primary_demo,len_len_phai,4,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.8,False
+primary_len_len_phai_gap50_t05,game_mode_session,primary_demo,len_len_phai,5,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.5,False
+primary_len_len_phai_gap50_t06,game_mode_session,primary_demo,len_len_phai,6,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,105.9,False
+primary_len_len_phai_gap50_t07,game_mode_session,primary_demo,len_len_phai,7,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,99.1,False
+primary_len_len_phai_gap50_t08,game_mode_session,primary_demo,len_len_phai,8,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,113.3,115.7,False
+primary_len_len_phai_gap50_t09,game_mode_session,primary_demo,len_len_phai,9,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,53.3,55.7,False
+primary_len_len_phai_gap50_t10,game_mode_session,primary_demo,len_len_phai,10,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> TRAI,False,1,0,0,33.3,2,1,1,106.7,109.1,False
+primary_len_len_phai_gap50_t11,game_mode_session,primary_demo,len_len_phai,11,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,86.7,89.1,False
+primary_len_len_phai_gap50_t12,game_mode_session,primary_demo,len_len_phai,12,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,99.1,False
+primary_len_len_phai_gap50_t13,game_mode_session,primary_demo,len_len_phai,13,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.8,False
+primary_len_len_phai_gap50_t14,game_mode_session,primary_demo,len_len_phai,14,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.5,False
+primary_len_len_phai_gap50_t15,game_mode_session,primary_demo,len_len_phai,15,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.5,False
+primary_len_len_phai_gap50_t16,game_mode_session,primary_demo,len_len_phai,16,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.4,False
+primary_len_len_phai_gap50_t17,game_mode_session,primary_demo,len_len_phai,17,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,99.1,False
+primary_len_len_phai_gap50_t18,game_mode_session,primary_demo,len_len_phai,18,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.6,False
+primary_len_len_phai_gap50_t19,game_mode_session,primary_demo,len_len_phai,19,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.4,False
+primary_len_len_phai_gap50_t20,game_mode_session,primary_demo,len_len_phai,20,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.1,False
+primary_len_len_phai_gap50_t21,game_mode_session,primary_demo,len_len_phai,21,50,3,LEN -> LEN -> PHAI,3,PHAI -> LEN -> PHAI,False,1,0,0,33.3,2,1,1,83.3,85.2,False
+primary_len_len_phai_gap50_t22,game_mode_session,primary_demo,len_len_phai,22,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,101.8,False
+primary_len_len_phai_gap50_t23,game_mode_session,primary_demo,len_len_phai,23,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> TRAI,False,1,0,0,33.3,2,1,1,73.3,75.2,False
+primary_len_len_phai_gap50_t24,game_mode_session,primary_demo,len_len_phai,24,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,86.7,88.7,False
+primary_len_len_phai_gap50_t25,game_mode_session,primary_demo,len_len_phai,25,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,90.0,91.9,False
+primary_len_len_phai_gap50_t26,game_mode_session,primary_demo,len_len_phai,26,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,98.6,False
+primary_len_len_phai_gap50_t27,game_mode_session,primary_demo,len_len_phai,27,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,98.9,False
+primary_len_len_phai_gap50_t28,game_mode_session,primary_demo,len_len_phai,28,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,108.6,False
+primary_len_len_phai_gap50_t29,game_mode_session,primary_demo,len_len_phai,29,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.2,False
+primary_len_len_phai_gap50_t30,game_mode_session,primary_demo,len_len_phai,30,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,106.7,108.6,False
+secondary_len_len_gap0_t01,game_mode_session,secondary_pattern,len_len,1,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,87.0,False
+secondary_len_len_gap0_t02,game_mode_session,secondary_pattern,len_len,2,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,86.9,False
+secondary_len_len_gap0_t03,game_mode_session,secondary_pattern,len_len,3,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,80.0,81.8,False
+secondary_len_len_gap0_t04,game_mode_session,secondary_pattern,len_len,4,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,87.9,False
+secondary_len_len_gap0_t05,game_mode_session,secondary_pattern,len_len,5,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,90.0,92.9,False
+secondary_len_len_gap0_t06,game_mode_session,secondary_pattern,len_len,6,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,75.0,78.0,False
+secondary_len_len_gap0_t07,game_mode_session,secondary_pattern,len_len,7,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,80.0,82.9,False
+secondary_len_len_gap0_t08,game_mode_session,secondary_pattern,len_len,8,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,80.0,82.9,False
+secondary_len_len_gap0_t09,game_mode_session,secondary_pattern,len_len,9,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,87.3,False
+secondary_len_len_gap0_t10,game_mode_session,secondary_pattern,len_len,10,0,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,85.0,87.4,False
+secondary_len_len_gap50_t01,game_mode_session,secondary_pattern,len_len,1,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,100.0,102.4,False
+secondary_len_len_gap50_t02,game_mode_session,secondary_pattern,len_len,2,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,100.0,102.5,False
+secondary_len_len_gap50_t03,game_mode_session,secondary_pattern,len_len,3,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,105.0,108.0,False
+secondary_len_len_gap50_t04,game_mode_session,secondary_pattern,len_len,4,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,110.0,112.9,False
+secondary_len_len_gap50_t05,game_mode_session,secondary_pattern,len_len,5,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,105.0,107.5,False
+secondary_len_len_gap50_t06,game_mode_session,secondary_pattern,len_len,6,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,110.0,112.5,False
+secondary_len_len_gap50_t07,game_mode_session,secondary_pattern,len_len,7,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,105.0,107.4,False
+secondary_len_len_gap50_t08,game_mode_session,secondary_pattern,len_len,8,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,115.0,117.5,False
+secondary_len_len_gap50_t09,game_mode_session,secondary_pattern,len_len,9,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,100.0,102.9,False
+secondary_len_len_gap50_t10,game_mode_session,secondary_pattern,len_len,10,50,2,LEN -> LEN,2,LEN -> LEN,True,0,0,0,0.0,2,0,0,110.0,112.9,False
+secondary_trai_len_xuong_gap0_t01,game_mode_session,secondary_pattern,trai_len_xuong,1,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,83.3,85.9,False
+secondary_trai_len_xuong_gap0_t02,game_mode_session,secondary_pattern,trai_len_xuong,2,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,93.3,95.8,False
+secondary_trai_len_xuong_gap0_t03,game_mode_session,secondary_pattern,trai_len_xuong,3,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,70.0,72.6,False
+secondary_trai_len_xuong_gap0_t04,game_mode_session,secondary_pattern,trai_len_xuong,4,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,103.3,105.9,False
+secondary_trai_len_xuong_gap0_t05,game_mode_session,secondary_pattern,trai_len_xuong,5,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,63.3,65.9,False
+secondary_trai_len_xuong_gap0_t06,game_mode_session,secondary_pattern,trai_len_xuong,6,0,3,TRAI -> LEN -> XUONG,3,TRAI -> XUONG -> XUONG,False,1,0,0,33.3,2,1,1,93.3,96.2,False
+secondary_trai_len_xuong_gap0_t07,game_mode_session,secondary_pattern,trai_len_xuong,7,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,63.3,66.3,False
+secondary_trai_len_xuong_gap0_t08,game_mode_session,secondary_pattern,trai_len_xuong,8,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,63.3,66.0,False
+secondary_trai_len_xuong_gap0_t09,game_mode_session,secondary_pattern,trai_len_xuong,9,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,103.3,105.1,False
+secondary_trai_len_xuong_gap0_t10,game_mode_session,secondary_pattern,trai_len_xuong,10,0,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,106.7,109.2,False
+secondary_trai_len_xuong_gap50_t01,game_mode_session,secondary_pattern,trai_len_xuong,1,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,86.7,89.6,False
+secondary_trai_len_xuong_gap50_t02,game_mode_session,secondary_pattern,trai_len_xuong,2,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,110.0,113.0,False
+secondary_trai_len_xuong_gap50_t03,game_mode_session,secondary_pattern,trai_len_xuong,3,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,100.0,103.0,False
+secondary_trai_len_xuong_gap50_t04,game_mode_session,secondary_pattern,trai_len_xuong,4,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,120.0,122.2,False
+secondary_trai_len_xuong_gap50_t05,game_mode_session,secondary_pattern,trai_len_xuong,5,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,100.0,102.0,False
+secondary_trai_len_xuong_gap50_t06,game_mode_session,secondary_pattern,trai_len_xuong,6,50,3,TRAI -> LEN -> XUONG,3,TRAI -> XUONG -> XUONG,False,1,0,0,33.3,2,1,1,116.7,118.7,False
+secondary_trai_len_xuong_gap50_t07,game_mode_session,secondary_pattern,trai_len_xuong,7,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,100.0,101.9,False
+secondary_trai_len_xuong_gap50_t08,game_mode_session,secondary_pattern,trai_len_xuong,8,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,93.3,95.6,False
+secondary_trai_len_xuong_gap50_t09,game_mode_session,secondary_pattern,trai_len_xuong,9,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,113.3,115.9,False
+secondary_trai_len_xuong_gap50_t10,game_mode_session,secondary_pattern,trai_len_xuong,10,50,3,TRAI -> LEN -> XUONG,3,TRAI -> LEN -> XUONG,True,0,0,0,0.0,3,0,0,123.3,125.1,False
+secondary_all_four_gap50_t01,game_mode_session,secondary_pattern,all_four_transitions,1,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,80.0,81.8,False
+secondary_all_four_gap50_t02,game_mode_session,secondary_pattern,all_four_transitions,2,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,120.0,121.9,False
+secondary_all_four_gap50_t03,game_mode_session,secondary_pattern,all_four_transitions,3,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,107.5,110.0,False
+secondary_all_four_gap50_t04,game_mode_session,secondary_pattern,all_four_transitions,4,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,85.0,87.2,False
+secondary_all_four_gap50_t05,game_mode_session,secondary_pattern,all_four_transitions,5,50,4,LEN -> XUONG -> TRAI -> PHAI,3,XUONG -> TRAI -> PHAI,False,0,1,0,25.0,3,0,1,110.0,112.1,False
+secondary_all_four_gap50_t06,game_mode_session,secondary_pattern,all_four_transitions,6,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,92.5,94.6,False
+secondary_all_four_gap50_t07,game_mode_session,secondary_pattern,all_four_transitions,7,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,100.0,102.4,False
+secondary_all_four_gap50_t08,game_mode_session,secondary_pattern,all_four_transitions,8,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,117.5,119.9,False
+secondary_all_four_gap50_t09,game_mode_session,secondary_pattern,all_four_transitions,9,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> PHAI,True,0,0,0,0.0,4,0,0,117.5,119.9,False
+secondary_all_four_gap50_t10,game_mode_session,secondary_pattern,all_four_transitions,10,50,4,LEN -> XUONG -> TRAI -> PHAI,4,LEN -> XUONG -> TRAI -> TRAI,False,1,0,0,25.0,3,1,1,117.5,119.9,False
+control_elongated_len_t01,game_mode_session,elongated_control,elongated_len,1,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,122.4,False
+control_elongated_len_t02,game_mode_session,elongated_control,elongated_len,2,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,130.0,132.3,False
+control_elongated_len_t03,game_mode_session,elongated_control,elongated_len,3,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,122.4,False
+control_elongated_len_t04,game_mode_session,elongated_control,elongated_len,4,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,130.0,132.4,False
+control_elongated_len_t05,game_mode_session,elongated_control,elongated_len,5,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,122.5,False
+control_elongated_len_t06,game_mode_session,elongated_control,elongated_len,6,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,120.0,122.5,False
+control_elongated_len_t07,game_mode_session,elongated_control,elongated_len,7,0,1,LEN,0,NONE,False,0,1,0,100.0,0,0,1,N/A,N/A,False
+control_elongated_len_t08,game_mode_session,elongated_control,elongated_len,8,0,1,LEN,0,NONE,False,0,1,0,100.0,0,0,1,N/A,N/A,False
+control_elongated_len_t09,game_mode_session,elongated_control,elongated_len,9,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,140.0,142.5,False
+control_elongated_len_t10,game_mode_session,elongated_control,elongated_len,10,0,1,LEN,1,LEN,True,0,0,0,0.0,1,0,0,140.0,142.4,False
+stress_seq_N3_gap0_t01,game_mode_session,long_sequence_stress,long_sequence_N3,1,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,60.0,62.4,False
+stress_seq_N3_gap0_t02,game_mode_session,long_sequence_stress,long_sequence_N3,2,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.4,False
+stress_seq_N3_gap0_t03,game_mode_session,long_sequence_stress,long_sequence_N3,3,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,69.1,False
+stress_seq_N3_gap0_t04,game_mode_session,long_sequence_stress,long_sequence_N3,4,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.5,False
+stress_seq_N3_gap0_t05,game_mode_session,long_sequence_stress,long_sequence_N3,5,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,73.3,75.8,False
+stress_seq_N3_gap0_t06,game_mode_session,long_sequence_stress,long_sequence_N3,6,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,23.3,25.8,False
+stress_seq_N3_gap0_t07,game_mode_session,long_sequence_stress,long_sequence_N3,7,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,76.7,79.1,False
+stress_seq_N3_gap0_t08,game_mode_session,long_sequence_stress,long_sequence_N3,8,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.4,False
+stress_seq_N3_gap0_t09,game_mode_session,long_sequence_stress,long_sequence_N3,9,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,70.0,72.5,False
+stress_seq_N3_gap0_t10,game_mode_session,long_sequence_stress,long_sequence_N3,10,0,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,66.7,69.2,False
+stress_seq_N3_gap50_t01,game_mode_session,long_sequence_stress,long_sequence_N3,1,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,96.7,99.1,False
+stress_seq_N3_gap50_t02,game_mode_session,long_sequence_stress,long_sequence_N3,2,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.6,False
+stress_seq_N3_gap50_t03,game_mode_session,long_sequence_stress,long_sequence_N3,3,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,105.7,False
+stress_seq_N3_gap50_t04,game_mode_session,long_sequence_stress,long_sequence_N3,4,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.5,False
+stress_seq_N3_gap50_t05,game_mode_session,long_sequence_stress,long_sequence_N3,5,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,105.9,False
+stress_seq_N3_gap50_t06,game_mode_session,long_sequence_stress,long_sequence_N3,6,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,53.3,55.9,False
+stress_seq_N3_gap50_t07,game_mode_session,long_sequence_stress,long_sequence_N3,7,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> TRAI,False,1,0,0,33.3,2,1,1,113.3,116.0,False
+stress_seq_N3_gap50_t08,game_mode_session,long_sequence_stress,long_sequence_N3,8,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,93.3,95.3,False
+stress_seq_N3_gap50_t09,game_mode_session,long_sequence_stress,long_sequence_N3,9,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,100.0,102.1,False
+stress_seq_N3_gap50_t10,game_mode_session,long_sequence_stress,long_sequence_N3,10,50,3,LEN -> LEN -> PHAI,3,LEN -> LEN -> PHAI,True,0,0,0,0.0,3,0,0,103.3,105.4,False
+stress_seq_N5_gap0_t01,game_mode_session,long_sequence_stress,long_sequence_N5,1,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,60.0,62.3,False
+stress_seq_N5_gap0_t02,game_mode_session,long_sequence_stress,long_sequence_N5,2,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,66.0,68.5,False
+stress_seq_N5_gap0_t03,game_mode_session,long_sequence_stress,long_sequence_N5,3,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,62.0,64.5,False
+stress_seq_N5_gap0_t04,game_mode_session,long_sequence_stress,long_sequence_N5,4,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,60.0,62.4,False
+stress_seq_N5_gap0_t05,game_mode_session,long_sequence_stress,long_sequence_N5,5,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,64.0,66.5,False
+stress_seq_N5_gap0_t06,game_mode_session,long_sequence_stress,long_sequence_N5,6,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,48.0,50.4,False
+stress_seq_N5_gap0_t07,game_mode_session,long_sequence_stress,long_sequence_N5,7,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,56.0,58.4,False
+stress_seq_N5_gap0_t08,game_mode_session,long_sequence_stress,long_sequence_N5,8,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,54.0,56.3,False
+stress_seq_N5_gap0_t09,game_mode_session,long_sequence_stress,long_sequence_N5,9,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,66.0,68.3,False
+stress_seq_N5_gap0_t10,game_mode_session,long_sequence_stress,long_sequence_N5,10,0,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,66.0,68.4,False
+stress_seq_N5_gap50_t01,game_mode_session,long_sequence_stress,long_sequence_N5,1,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,100.0,102.2,False
+stress_seq_N5_gap50_t02,game_mode_session,long_sequence_stress,long_sequence_N5,2,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,98.0,100.5,False
+stress_seq_N5_gap50_t03,game_mode_session,long_sequence_stress,long_sequence_N5,3,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,102.0,104.0,False
+stress_seq_N5_gap50_t04,game_mode_session,long_sequence_stress,long_sequence_N5,4,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,86.0,87.8,False
+stress_seq_N5_gap50_t05,game_mode_session,long_sequence_stress,long_sequence_N5,5,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,86.0,87.9,False
+stress_seq_N5_gap50_t06,game_mode_session,long_sequence_stress,long_sequence_N5,6,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,76.0,78.3,False
+stress_seq_N5_gap50_t07,game_mode_session,long_sequence_stress,long_sequence_N5,7,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> TRAI -> TRAI -> LEN,False,1,0,0,20.0,4,1,1,108.0,110.4,False
+stress_seq_N5_gap50_t08,game_mode_session,long_sequence_stress,long_sequence_N5,8,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> PHAI -> TRAI -> LEN,True,0,0,0,0.0,5,0,0,92.0,94.4,False
+stress_seq_N5_gap50_t09,game_mode_session,long_sequence_stress,long_sequence_N5,9,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> TRAI -> TRAI -> LEN,False,1,0,0,20.0,4,1,1,86.0,88.6,False
+stress_seq_N5_gap50_t10,game_mode_session,long_sequence_stress,long_sequence_N5,10,50,5,LEN -> LEN -> PHAI -> TRAI -> LEN,5,LEN -> LEN -> XUONG -> TRAI -> LEN,False,1,0,0,20.0,4,1,1,102.0,104.1,False
+stress_seq_N10_gap0_t01,game_mode_session,long_sequence_stress,long_sequence_N10,1,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,54.0,56.5,False
+stress_seq_N10_gap0_t02,game_mode_session,long_sequence_stress,long_sequence_N10,2,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,9,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> PHAI -> LEN -> LEN,False,0,1,0,10.0,9,0,1,53.3,55.8,False
+stress_seq_N10_gap0_t03,game_mode_session,long_sequence_stress,long_sequence_N10,3,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,49.0,51.1,False
+stress_seq_N10_gap0_t04,game_mode_session,long_sequence_stress,long_sequence_N10,4,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,58.0,59.9,False
+stress_seq_N10_gap0_t05,game_mode_session,long_sequence_stress,long_sequence_N10,5,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,67.0,69.2,False
+stress_seq_N10_gap0_t06,game_mode_session,long_sequence_stress,long_sequence_N10,6,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,57.0,59.4,False
+stress_seq_N10_gap0_t07,game_mode_session,long_sequence_stress,long_sequence_N10,7,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,59.0,61.6,False
+stress_seq_N10_gap0_t08,game_mode_session,long_sequence_stress,long_sequence_N10,8,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,50.0,52.4,False
+stress_seq_N10_gap0_t09,game_mode_session,long_sequence_stress,long_sequence_N10,9,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,60.0,62.3,False
+stress_seq_N10_gap0_t10,game_mode_session,long_sequence_stress,long_sequence_N10,10,0,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,64.0,66.5,False
+stress_seq_N10_gap50_t01,game_mode_session,long_sequence_stress,long_sequence_N10,1,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> XUONG -> XUONG -> XUONG -> PHAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,86.0,88.5,False
+stress_seq_N10_gap50_t02,game_mode_session,long_sequence_stress,long_sequence_N10,2,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> TRAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,91.0,93.4,False
+stress_seq_N10_gap50_t03,game_mode_session,long_sequence_stress,long_sequence_N10,3,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,90.0,92.9,False
+stress_seq_N10_gap50_t04,game_mode_session,long_sequence_stress,long_sequence_N10,4,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,88.0,90.0,False
+stress_seq_N10_gap50_t05,game_mode_session,long_sequence_stress,long_sequence_N10,5,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> XUONG -> LEN -> LEN,False,1,0,0,10.0,9,1,1,95.0,96.8,False
+stress_seq_N10_gap50_t06,game_mode_session,long_sequence_stress,long_sequence_N10,6,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,80.0,81.9,False
+stress_seq_N10_gap50_t07,game_mode_session,long_sequence_stress,long_sequence_N10,7,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,84.0,85.9,False
+stress_seq_N10_gap50_t08,game_mode_session,long_sequence_stress,long_sequence_N10,8,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,True,0,0,0,0.0,10,0,0,83.0,85.3,False
+stress_seq_N10_gap50_t09,game_mode_session,long_sequence_stress,long_sequence_N10,9,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,89.0,91.0,False
+stress_seq_N10_gap50_t10,game_mode_session,long_sequence_stress,long_sequence_N10,10,50,10,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,10,LEN -> LEN -> XUONG -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN,False,1,0,0,10.0,9,1,1,93.0,95.0,False
+stress_seq_N20_gap0_t01,game_mode_session,long_sequence_stress,long_sequence_N20,1,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,55.0,57.0,False
+stress_seq_N20_gap0_t02,game_mode_session,long_sequence_stress,long_sequence_N20,2,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,19,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,0,1,0,5.0,19,0,1,56.8,58.9,False
+stress_seq_N20_gap0_t03,game_mode_session,long_sequence_stress,long_sequence_N20,3,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,44.5,46.4,False
+stress_seq_N20_gap0_t04,game_mode_session,long_sequence_stress,long_sequence_N20,4,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,54.0,56.0,False
+stress_seq_N20_gap0_t05,game_mode_session,long_sequence_stress,long_sequence_N20,5,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,56.5,58.6,False
+stress_seq_N20_gap0_t06,game_mode_session,long_sequence_stress,long_sequence_N20,6,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> PHAI,False,1,0,0,5.0,19,1,1,51.5,53.4,False
+stress_seq_N20_gap0_t07,game_mode_session,long_sequence_stress,long_sequence_N20,7,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,53.0,54.9,False
+stress_seq_N20_gap0_t08,game_mode_session,long_sequence_stress,long_sequence_N20,8,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,50.5,52.7,False
+stress_seq_N20_gap0_t09,game_mode_session,long_sequence_stress,long_sequence_N20,9,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,19,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,0,1,0,5.0,19,0,1,56.3,58.7,False
+stress_seq_N20_gap0_t10,game_mode_session,long_sequence_stress,long_sequence_N20,10,0,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,57.0,59.5,False
+stress_seq_N20_gap50_t01,game_mode_session,long_sequence_stress,long_sequence_N20,1,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> XUONG -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,2,0,0,10.0,18,2,2,86.5,89.0,False
+stress_seq_N20_gap50_t02,game_mode_session,long_sequence_stress,long_sequence_N20,2,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> TRAI -> LEN -> LEN -> XUONG -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,2,0,0,10.0,18,2,2,92.0,94.3,False
+stress_seq_N20_gap50_t03,game_mode_session,long_sequence_stress,long_sequence_N20,3,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,82.5,85.2,False
+stress_seq_N20_gap50_t04,game_mode_session,long_sequence_stress,long_sequence_N20,4,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,True,0,0,0,0.0,20,0,0,91.5,94.2,False
+stress_seq_N20_gap50_t05,game_mode_session,long_sequence_stress,long_sequence_N20,5,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> XUONG -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,1,0,0,5.0,19,1,1,86.0,88.9,False
+stress_seq_N20_gap50_t06,game_mode_session,long_sequence_stress,long_sequence_N20,6,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> TRAI -> PHAI,False,2,0,0,10.0,18,2,2,81.0,83.6,False
+stress_seq_N20_gap50_t07,game_mode_session,long_sequence_stress,long_sequence_N20,7,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,1,0,0,5.0,19,1,1,92.5,94.9,False
+stress_seq_N20_gap50_t08,game_mode_session,long_sequence_stress,long_sequence_N20,8,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> XUONG -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> TRAI -> TRAI,False,2,0,0,10.0,18,2,2,78.0,81.0,False
+stress_seq_N20_gap50_t09,game_mode_session,long_sequence_stress,long_sequence_N20,9,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> TRAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> TRAI -> LEN -> LEN -> XUONG -> TRAI,False,3,0,0,15.0,17,3,3,91.5,94.2,False
+stress_seq_N20_gap50_t10,game_mode_session,long_sequence_stress,long_sequence_N20,10,50,20,LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,20,LEN -> LEN -> XUONG -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI -> LEN -> XUONG -> XUONG -> PHAI -> LEN -> LEN -> PHAI -> TRAI,False,1,0,0,5.0,19,1,1,92.0,94.5,False

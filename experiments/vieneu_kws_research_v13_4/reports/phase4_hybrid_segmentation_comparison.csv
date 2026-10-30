@@ -1,0 +1,4 @@
+profile,cmd_recall,cmd_precision,cmd_f1,exact_sequence_match,mean_infer_latency_ms,median_e2e_latency_ms,silence_far_min,noise_far_min,conv_far_min,foil_far_min,total_conv_audio_sec,total_foil_audio_sec
+legacy_v11,25.7,76.6,38.5,10.0,1.94,291.8,0.0,0.0,0.2,0.0,300.0,200.0
+continuous_valley,97.1,97.1,97.1,92.0,1.93,121.6,0.0,0.0,137.8,105.9,300.0,200.0
+hybrid_speechband_valley,92.9,97.0,94.9,80.0,1.92,52.0,0.0,0.0,111.0,104.7,300.0,200.0

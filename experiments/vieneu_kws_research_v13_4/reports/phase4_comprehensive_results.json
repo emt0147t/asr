@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "phase": "Phase 4 - Hybrid Continuous KWS with False Activation Control",
+    "timestamp": "2026-10-29 22:45:48",
+    "governance_labels": [
+      "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+      "NOT_VALIDATED_ON_NATURAL_SPEECH",
+      "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+      "NOT_VALIDATED_PENDING_DATA"
+    ],
+    "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+    "theta_cmd_default": 0.2
+  },
+  "experiment_a_hybrid_comparison": [
+    {
+      "profile": "legacy_v11",
+      "cmd_recall": 25.7,
+      "cmd_precision": 76.6,
+      "cmd_f1": 38.5,
+      "exact_sequence_match": 10.0,
+      "mean_infer_latency_ms": 1.94,
+      "median_e2e_latency_ms": 291.8,
+      "silence_far_min": 0.0,
+      "noise_far_min": 0.0,
+      "conv_far_min": 0.2,
+      "foil_far_min": 0.0,
+      "total_conv_audio_sec": 300.0,
+      "total_foil_audio_sec": 200.0
+    },
+    {
+      "profile": "continuous_valley",
+      "cmd_recall": 97.1,
+      "cmd_precision": 97.1,
+      "cmd_f1": 97.1,
+      "exact_sequence_match": 92.0,
+      "mean_infer_latency_ms": 1.93,
+      "median_e2e_latency_ms": 121.6,
+      "silence_far_min": 0.0,
+      "noise_far_min": 0.0,
+      "conv_far_min": 137.8,
+      "foil_far_min": 105.9,
+      "total_conv_audio_sec": 300.0,
+      "total_foil_audio_sec": 200.0
+    },
+    {
+      "profile": "hybrid_speechband_valley",
+      "cmd_recall": 92.9,
+      "cmd_precision": 97.0,
+      "cmd_f1": 94.9,
+      "exact_sequence_match": 80.0,
+      "mean_infer_latency_ms": 1.92,
+      "median_e2e_latency_ms": 52.0,
+      "silence_far_min": 0.0,
+      "noise_far_min": 0.0,
+      "conv_far_min": 111.0,
+      "foil_far_min": 104.7,
+      "total_conv_audio_sec": 300.0,
+      "total_foil_audio_sec": 200.0
+    }
+  ],
+  "experiment_b_threshold_sweep": [
+    {
+      "theta_cmd": 0.2,
+      "cmd_recall": 92.7,
+      "cmd_precision": 96.2,
+      "cmd_f1": 94.4,
+      "exact_sequence_match": 80.0,
+      "conv_false_activations": 555,
+      "conv_far_min": 111.0,
+      "foil_false_activations": 349,
+      "foil_far_min": 104.7,
+      "mean_infer_latency_ms": 2.09,
+      "median_e2e_latency_ms": 56.9
+    },
+    {
+      "theta_cmd": 0.3,
+      "cmd_recall": 92.7,
+      "cmd_precision": 96.2,
+      "cmd_f1": 94.4,
+      "exact_sequence_match": 80.0,
+      "conv_false_activations": 519,
+      "conv_far_min": 103.8,
+      "foil_false_activations": 331,
+      "foil_far_min": 99.3,
+      "mean_infer_latency_ms": 2.02,
+      "median_e2e_latency_ms": 57.3
+    },
+    {
+      "theta_cmd": 0.4,
+      "cmd_recall": 92.7,
+      "cmd_precision": 96.2,
+      "cmd_f1": 94.4,
+      "exact_sequence_match": 80.0,
+      "conv_false_activations": 411,
+      "conv_far_min": 82.2,
+      "foil_false_activations": 261,
+      "foil_far_min": 78.3,
+      "mean_infer_latency_ms": 2.16,
+      "median_e2e_latency_ms": 57.3
+    },
+    {
+      "theta_cmd": 0.5,
+      "cmd_recall": 91.8,
+      "cmd_precision": 97.1,
+      "cmd_f1": 94.4,
+      "exact_sequence_match": 77.5,
+      "conv_false_activations": 297,
+      "conv_far_min": 59.4,
+      "foil_false_activations": 182,
+      "foil_far_min": 54.6,
+      "mean_infer_latency_ms": 2.37,
+      "median_e2e_latency_ms": 62.3
+    },
+    {
+      "theta_cmd": 0.6,
+      "cmd_recall": 78.2,
+      "cmd_precision": 100.0,
+      "cmd_f1": 87.8,
+      "exact_sequence_match": 60.0,
+      "conv_false_activations": 201,
+      "conv_far_min": 40.2,
+      "foil_false_activations": 125,
+      "foil_far_min": 37.5,
+      "mean_infer_latency_ms": 2.17,
+      "median_e2e_latency_ms": 81.8
+    }
+  ],
+  "experiment_c_gamemode_session": [
+    {
+      "mode": "game_mode_idle (gate_closed)",
+      "scenario": "conversational_speech",
+      "length_n": 0,
+      "gap_ms": "N/A",
+      "exact_match_pct": "N/A",
+      "command_recall_pct": "N/A",
+      "false_activation_count": 0,
+      "audio_duration_sec": 300.0,
+      "far_per_min": 0.0
+    },
+    {
+      "mode": "always_open_mic",
+      "scenario": "conversational_speech",
+      "length_n": 0,
+      "gap_ms": "N/A",
+      "exact_match_pct": "N/A",
+      "command_recall_pct": "N/A",
+      "false_activation_count": 555,
+      "audio_duration_sec": 300.0,
+      "far_per_min": 111.0
+    },
+    {
+      "mode": "game_mode_active (gate_open)",
+      "scenario": "sequence_3_commands",
+      "length_n": 3,
+      "gap_ms": 0,
+      "exact_match_pct": 80.0,
+      "command_recall_pct": 93.3,
+      "false_activation_count": 0,
+      "audio_duration_sec": "N/A",
+      "far_per_min": 0.0
+    },
+    {
+      "mode": "game_mode_active (gate_open)",
+      "scenario": "sequence_3_commands",
+      "length_n": 3,
+      "gap_ms": 50,
+      "exact_match_pct": 80.0,
+      "command_recall_pct": 93.3,
+      "false_activation_count": 0,
+      "audio_duration_sec": "N/A",
+      "far_per_min": 0.0
+    },
+    {
+      "mode": "game_mode_active (gate_open)",
+      "scenario": "sequence_5_commands",
+      "length_n": 5,
+      "gap_ms": 0,
+      "exact_match_pct": 40.0,
+      "command_recall_pct": 82.0,
+      "false_activation_count": 0,
+      "audio_duration_sec": "N/A",
+      "far_per_min": 0.0
+    },
+    {
+      "mode": "game_mode_active (gate_open)",
+      "scenario": "sequence_5_commands",
+      "length_n": 5,
+      "gap_ms": 50,
+      "exact_match_pct": 60.0,
+      "command_recall_pct": 92.0,
+      "false_activation_count": 0,
+      "audio_duration_sec": "N/A",
+      "far_per_min": 0.0
+    },
+    {
+      "mode": "game_mode_active (gate_open)",
+      "scenario": "sequence_10_commands",
+      "length_n": 10,
+      "gap_ms": 0,
+      "exact_match_pct": 10.0,
+      "command_recall_pct": 87.0,
+      "false_activation_count": 0,
+      "audio_duration_sec": "N/A",
+      "far_per_min": 0.0
+    },
+    {
+      "mode": "game_mode_active (gate_open)",
+      "scenario": "sequence_10_commands",
+      "length_n": 10,
+      "gap_ms": 50,
+      "exact_match_pct": 30.0,
+      "command_recall_pct": 93.0,
+      "false_activation_count": 0,
+      "audio_duration_sec": "N/A",
+      "far_per_min": 0.0
+    },
+    {
+      "mode": "game_mode_active (gate_open)",
+      "scenario": "sequence_20_commands",
+      "length_n": 20,
+      "gap_ms": 0,
+      "exact_match_pct": 10.0,
+      "command_recall_pct": 85.5,
+      "false_activation_count": 0,
+      "audio_duration_sec": "N/A",
+      "far_per_min": 0.0
+    },
+    {
+      "mode": "game_mode_active (gate_open)",
+      "scenario": "sequence_20_commands",
+      "length_n": 20,
+      "gap_ms": 50,
+      "exact_match_pct": 10.0,
+      "command_recall_pct": 91.5,
+      "false_activation_count": 0,
+      "audio_duration_sec": "N/A",
+      "far_per_min": 0.0
+    }
+  ]
+}

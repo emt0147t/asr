@@ -1,0 +1,11 @@
+mode,scenario,length_n,gap_ms,exact_match_pct,command_recall_pct,false_activation_count,audio_duration_sec,far_per_min
+game_mode_idle (gate_closed),conversational_speech,0,N/A,N/A,N/A,0,300.0,0.0
+always_open_mic,conversational_speech,0,N/A,N/A,N/A,555,300.0,111.0
+game_mode_active (gate_open),sequence_3_commands,3,0,80.0,93.3,0,N/A,0.0
+game_mode_active (gate_open),sequence_3_commands,3,50,80.0,93.3,0,N/A,0.0
+game_mode_active (gate_open),sequence_5_commands,5,0,40.0,82.0,0,N/A,0.0
+game_mode_active (gate_open),sequence_5_commands,5,50,60.0,92.0,0,N/A,0.0
+game_mode_active (gate_open),sequence_10_commands,10,0,10.0,87.0,0,N/A,0.0
+game_mode_active (gate_open),sequence_10_commands,10,50,30.0,93.0,0,N/A,0.0
+game_mode_active (gate_open),sequence_20_commands,20,0,10.0,85.5,0,N/A,0.0
+game_mode_active (gate_open),sequence_20_commands,20,50,10.0,91.5,0,N/A,0.0

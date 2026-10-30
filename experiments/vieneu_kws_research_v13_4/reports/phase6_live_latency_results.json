@@ -1,0 +1,33 @@
+{
+  "duration_sec": 3.0,
+  "total_chunks_captured": 148,
+  "callback_intervals_ms": {
+    "sample_count": 147,
+    "expected_interval_ms": 20.0,
+    "min_ms": 0.03,
+    "p50_ms": 0.41,
+    "p95_ms": 40.14,
+    "max_ms": 40.21
+  },
+  "queue_transit_delays_ms": {
+    "sample_count": 148,
+    "p50_ms": 0.14,
+    "p95_ms": 0.4,
+    "max_ms": 2.3
+  },
+  "chunk_processing_times_ms": {
+    "sample_count": 148,
+    "p50_ms": 0.189,
+    "p95_ms": 0.295
+  },
+  "in_stream_infer_times_ms": {
+    "sample_count": 7,
+    "p50_ms": 1.93,
+    "p95_ms": 2.49
+  },
+  "driver_and_hardware_limitations": [
+    "1. Standard Windows MME audio driver delivers 2 blocks per buffer quantum, resulting in bursty callbacks (0.04 ms then 40.0 ms) rather than smooth 20 ms ticks.",
+    "2. Physical sound card ADC buffering and OS audio subsystem buffer add hardware latency before audio arrives at python callback.",
+    "3. Live ambient microphone test measures background room acoustics; offline replay test uses synthetic locked test streams with known ground truth."
+  ]
+}

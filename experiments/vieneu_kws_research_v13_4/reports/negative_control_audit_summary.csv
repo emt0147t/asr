@@ -1,0 +1,6 @@
+test_group,clips_count,audio_duration_sec,audio_duration_min,legacy_v11_false_activations,legacy_v11_far_per_min,continuous_valley_false_activations,continuous_valley_far_per_min
+digital_silence,10,300.0,5.0,0,0.0,0,0.0
+environmental_noise,100,100.0,1.67,0,0.0,0,0.0
+conversational_speech,300,300.0,5.0,1,0.2,689,137.8
+oov_phonetic_foils,200,200.0,3.33,0,0.0,353,105.9
+elongated_target_words,20,16.94,0.28,0,0.0,0,0.0

@@ -1,0 +1,6 @@
+config_id,config_name,event_precision,event_recall,event_f1,exact_sequence_match_pct,duplicate_rate_pct,latency_p50_ms,latency_p95_ms,tp,fp,fn,duplicates,total_trials,exact_matches,neg_false_activations
+baseline_segmented,Baseline Segmented (300ms silence),82.61,42.22,55.88,34.72,0.0,290.0,310.0,76,16,104,0,72,25,0
+baseline_streaming,"Baseline Streaming (160ms hop, 800ms cooldown)",95.06,42.78,59.0,25.0,0.0,0.0,572.0,77,4,103,0,72,18,0
+approach_a1_speechband,Approach A1: SpeechBandRatio (hangover=140ms),96.9,69.44,80.91,62.5,0.0,130.0,150.0,125,4,55,0,72,45,4
+approach_a2_acoustic_valley,Approach A2: Acoustic Valley Segmenter (dip=12dB),100.0,100.0,100.0,100.0,0.0,130.0,140.0,180,0,0,0,72,72,27
+approach_b_continuous_decoder,"Approach B: Continuous Event Decoder (40ms hop, NMS min_dist=250ms)",65.2,82.22,72.73,29.17,25.11,170.0,566.5,148,79,32,57,72,21,0

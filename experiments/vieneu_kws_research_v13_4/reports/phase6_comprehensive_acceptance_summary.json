@@ -1,0 +1,144 @@
+{
+  "governance_labels": [
+    "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+    "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+    "NOT_VALIDATED_PENDING_DATA"
+  ],
+  "primary_acceptance_target": {
+    "requirement": "LEN -> LEN -> PHAI: >= 90% exact-sequence match over 30 trials per gap condition (0ms and 50ms)",
+    "summary_by_profile": {
+      "legacy_v11": {
+        "gap_0ms": {
+          "n_trials": 30,
+          "n_exact": 0,
+          "exact_pct": 0.0,
+          "mean_wer": 88.9
+        },
+        "gap_50ms": {
+          "n_trials": 30,
+          "n_exact": 0,
+          "exact_pct": 0.0,
+          "mean_wer": 76.7
+        }
+      },
+      "continuous_valley": {
+        "gap_0ms": {
+          "n_trials": 30,
+          "n_exact": 29,
+          "exact_pct": 96.7,
+          "mean_wer": 1.1
+        },
+        "gap_50ms": {
+          "n_trials": 30,
+          "n_exact": 28,
+          "exact_pct": 93.3,
+          "mean_wer": 2.2
+        }
+      },
+      "hybrid_speechband_valley": {
+        "gap_0ms": {
+          "n_trials": 30,
+          "n_exact": 29,
+          "exact_pct": 96.7,
+          "mean_wer": 1.1
+        },
+        "gap_50ms": {
+          "n_trials": 30,
+          "n_exact": 27,
+          "exact_pct": 90.0,
+          "mean_wer": 3.3
+        }
+      },
+      "game_mode_session": {
+        "gap_0ms": {
+          "n_trials": 30,
+          "n_exact": 29,
+          "exact_pct": 96.7,
+          "mean_wer": 1.1
+        },
+        "gap_50ms": {
+          "n_trials": 30,
+          "n_exact": 27,
+          "exact_pct": 90.0,
+          "mean_wer": 3.3
+        }
+      }
+    }
+  },
+  "negative_control_summary": {
+    "legacy_v11": {
+      "conversation_fa": 1,
+      "conversation_sec": 300.0,
+      "foils_fa": 0,
+      "foils_sec": 200.0,
+      "noise_fa": 0,
+      "noise_sec": 100.0,
+      "silence_fa": 0,
+      "silence_sec": 300.0
+    },
+    "continuous_valley": {
+      "conversation_fa": 680,
+      "conversation_sec": 300.0,
+      "foils_fa": 355,
+      "foils_sec": 200.0,
+      "noise_fa": 0,
+      "noise_sec": 100.0,
+      "silence_fa": 0,
+      "silence_sec": 300.0
+    },
+    "hybrid_speechband_valley": {
+      "conversation_fa": 669,
+      "conversation_sec": 300.0,
+      "foils_fa": 361,
+      "foils_sec": 200.0,
+      "noise_fa": 0,
+      "noise_sec": 100.0,
+      "silence_fa": 0,
+      "silence_sec": 300.0
+    },
+    "game_mode_closed_gate": {
+      "conversation_fa": 0,
+      "conversation_sec": 300.0,
+      "foils_fa": 0,
+      "foils_sec": 200.0,
+      "noise_fa": 0,
+      "noise_sec": 100.0,
+      "silence_fa": 0,
+      "silence_sec": 300.0
+    }
+  },
+  "live_latency": {
+    "duration_sec": 3.0,
+    "total_chunks_captured": 148,
+    "callback_intervals_ms": {
+      "sample_count": 147,
+      "expected_interval_ms": 20.0,
+      "min_ms": 0.03,
+      "p50_ms": 0.41,
+      "p95_ms": 40.14,
+      "max_ms": 40.21
+    },
+    "queue_transit_delays_ms": {
+      "sample_count": 148,
+      "p50_ms": 0.14,
+      "p95_ms": 0.4,
+      "max_ms": 2.3
+    },
+    "chunk_processing_times_ms": {
+      "sample_count": 148,
+      "p50_ms": 0.189,
+      "p95_ms": 0.295
+    },
+    "in_stream_infer_times_ms": {
+      "sample_count": 7,
+      "p50_ms": 1.93,
+      "p95_ms": 2.49
+    },
+    "driver_and_hardware_limitations": [
+      "1. Standard Windows MME audio driver delivers 2 blocks per buffer quantum, resulting in bursty callbacks (0.04 ms then 40.0 ms) rather than smooth 20 ms ticks.",
+      "2. Physical sound card ADC buffering and OS audio subsystem buffer add hardware latency before audio arrives at python callback.",
+      "3. Live ambient microphone test measures background room acoustics; offline replay test uses synthetic locked test streams with known ground truth."
+    ]
+  }
+}

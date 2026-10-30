@@ -1,0 +1,201 @@
+trial_id,category,pattern_id,trial_index,gap_ms,n_commands,gt_sequence
+primary_len_len_phai_gap0_t01,primary_demo,len_len_phai,1,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t02,primary_demo,len_len_phai,2,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t03,primary_demo,len_len_phai,3,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t04,primary_demo,len_len_phai,4,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t05,primary_demo,len_len_phai,5,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t06,primary_demo,len_len_phai,6,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t07,primary_demo,len_len_phai,7,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t08,primary_demo,len_len_phai,8,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t09,primary_demo,len_len_phai,9,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t10,primary_demo,len_len_phai,10,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t11,primary_demo,len_len_phai,11,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t12,primary_demo,len_len_phai,12,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t13,primary_demo,len_len_phai,13,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t14,primary_demo,len_len_phai,14,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t15,primary_demo,len_len_phai,15,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t16,primary_demo,len_len_phai,16,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t17,primary_demo,len_len_phai,17,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t18,primary_demo,len_len_phai,18,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t19,primary_demo,len_len_phai,19,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t20,primary_demo,len_len_phai,20,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t21,primary_demo,len_len_phai,21,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t22,primary_demo,len_len_phai,22,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t23,primary_demo,len_len_phai,23,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t24,primary_demo,len_len_phai,24,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t25,primary_demo,len_len_phai,25,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t26,primary_demo,len_len_phai,26,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t27,primary_demo,len_len_phai,27,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t28,primary_demo,len_len_phai,28,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t29,primary_demo,len_len_phai,29,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap0_t30,primary_demo,len_len_phai,30,0,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t01,primary_demo,len_len_phai,1,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t02,primary_demo,len_len_phai,2,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t03,primary_demo,len_len_phai,3,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t04,primary_demo,len_len_phai,4,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t05,primary_demo,len_len_phai,5,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t06,primary_demo,len_len_phai,6,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t07,primary_demo,len_len_phai,7,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t08,primary_demo,len_len_phai,8,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t09,primary_demo,len_len_phai,9,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t10,primary_demo,len_len_phai,10,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t11,primary_demo,len_len_phai,11,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t12,primary_demo,len_len_phai,12,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t13,primary_demo,len_len_phai,13,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t14,primary_demo,len_len_phai,14,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t15,primary_demo,len_len_phai,15,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t16,primary_demo,len_len_phai,16,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t17,primary_demo,len_len_phai,17,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t18,primary_demo,len_len_phai,18,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t19,primary_demo,len_len_phai,19,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t20,primary_demo,len_len_phai,20,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t21,primary_demo,len_len_phai,21,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t22,primary_demo,len_len_phai,22,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t23,primary_demo,len_len_phai,23,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t24,primary_demo,len_len_phai,24,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t25,primary_demo,len_len_phai,25,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t26,primary_demo,len_len_phai,26,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t27,primary_demo,len_len_phai,27,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t28,primary_demo,len_len_phai,28,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t29,primary_demo,len_len_phai,29,50,3,LEN -> LEN -> PHAI
+primary_len_len_phai_gap50_t30,primary_demo,len_len_phai,30,50,3,LEN -> LEN -> PHAI
+secondary_len_len_gap0_t01,secondary_pattern,len_len,1,0,2,LEN -> LEN
+secondary_len_len_gap0_t02,secondary_pattern,len_len,2,0,2,LEN -> LEN
+secondary_len_len_gap0_t03,secondary_pattern,len_len,3,0,2,LEN -> LEN
+secondary_len_len_gap0_t04,secondary_pattern,len_len,4,0,2,LEN -> LEN
+secondary_len_len_gap0_t05,secondary_pattern,len_len,5,0,2,LEN -> LEN
+secondary_len_len_gap0_t06,secondary_pattern,len_len,6,0,2,LEN -> LEN
+secondary_len_len_gap0_t07,secondary_pattern,len_len,7,0,2,LEN -> LEN
+secondary_len_len_gap0_t08,secondary_pattern,len_len,8,0,2,LEN -> LEN
+secondary_len_len_gap0_t09,secondary_pattern,len_len,9,0,2,LEN -> LEN
+secondary_len_len_gap0_t10,secondary_pattern,len_len,10,0,2,LEN -> LEN
+secondary_len_len_gap50_t01,secondary_pattern,len_len,1,50,2,LEN -> LEN
+secondary_len_len_gap50_t02,secondary_pattern,len_len,2,50,2,LEN -> LEN
+secondary_len_len_gap50_t03,secondary_pattern,len_len,3,50,2,LEN -> LEN
+secondary_len_len_gap50_t04,secondary_pattern,len_len,4,50,2,LEN -> LEN
+secondary_len_len_gap50_t05,secondary_pattern,len_len,5,50,2,LEN -> LEN
+secondary_len_len_gap50_t06,secondary_pattern,len_len,6,50,2,LEN -> LEN
+secondary_len_len_gap50_t07,secondary_pattern,len_len,7,50,2,LEN -> LEN
+secondary_len_len_gap50_t08,secondary_pattern,len_len,8,50,2,LEN -> LEN
+secondary_len_len_gap50_t09,secondary_pattern,len_len,9,50,2,LEN -> LEN
+secondary_len_len_gap50_t10,secondary_pattern,len_len,10,50,2,LEN -> LEN
+secondary_trai_len_xuong_gap0_t01,secondary_pattern,trai_len_xuong,1,0,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap0_t02,secondary_pattern,trai_len_xuong,2,0,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap0_t03,secondary_pattern,trai_len_xuong,3,0,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap0_t04,secondary_pattern,trai_len_xuong,4,0,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap0_t05,secondary_pattern,trai_len_xuong,5,0,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap0_t06,secondary_pattern,trai_len_xuong,6,0,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap0_t07,secondary_pattern,trai_len_xuong,7,0,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap0_t08,secondary_pattern,trai_len_xuong,8,0,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap0_t09,secondary_pattern,trai_len_xuong,9,0,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap0_t10,secondary_pattern,trai_len_xuong,10,0,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap50_t01,secondary_pattern,trai_len_xuong,1,50,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap50_t02,secondary_pattern,trai_len_xuong,2,50,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap50_t03,secondary_pattern,trai_len_xuong,3,50,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap50_t04,secondary_pattern,trai_len_xuong,4,50,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap50_t05,secondary_pattern,trai_len_xuong,5,50,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap50_t06,secondary_pattern,trai_len_xuong,6,50,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap50_t07,secondary_pattern,trai_len_xuong,7,50,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap50_t08,secondary_pattern,trai_len_xuong,8,50,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap50_t09,secondary_pattern,trai_len_xuong,9,50,3,TRAI -> LEN -> XUONG
+secondary_trai_len_xuong_gap50_t10,secondary_pattern,trai_len_xuong,10,50,3,TRAI -> LEN -> XUONG
+secondary_all_four_gap50_t01,secondary_pattern,all_four_transitions,1,50,4,LEN -> XUONG -> TRAI -> PHAI
+secondary_all_four_gap50_t02,secondary_pattern,all_four_transitions,2,50,4,LEN -> XUONG -> TRAI -> PHAI
+secondary_all_four_gap50_t03,secondary_pattern,all_four_transitions,3,50,4,LEN -> XUONG -> TRAI -> PHAI
+secondary_all_four_gap50_t04,secondary_pattern,all_four_transitions,4,50,4,LEN -> XUONG -> TRAI -> PHAI
+secondary_all_four_gap50_t05,secondary_pattern,all_four_transitions,5,50,4,LEN -> XUONG -> TRAI -> PHAI
+secondary_all_four_gap50_t06,secondary_pattern,all_four_transitions,6,50,4,LEN -> XUONG -> TRAI -> PHAI
+secondary_all_four_gap50_t07,secondary_pattern,all_four_transitions,7,50,4,LEN -> XUONG -> TRAI -> PHAI
+secondary_all_four_gap50_t08,secondary_pattern,all_four_transitions,8,50,4,LEN -> XUONG -> TRAI -> PHAI
+secondary_all_four_gap50_t09,secondary_pattern,all_four_transitions,9,50,4,LEN -> XUONG -> TRAI -> PHAI
+secondary_all_four_gap50_t10,secondary_pattern,all_four_transitions,10,50,4,LEN -> XUONG -> TRAI -> PHAI
+control_elongated_len_t01,elongated_control,elongated_len,1,0,1,LEN
+control_elongated_len_t02,elongated_control,elongated_len,2,0,1,LEN
+control_elongated_len_t03,elongated_control,elongated_len,3,0,1,LEN
+control_elongated_len_t04,elongated_control,elongated_len,4,0,1,LEN
+control_elongated_len_t05,elongated_control,elongated_len,5,0,1,LEN
+control_elongated_len_t06,elongated_control,elongated_len,6,0,1,LEN
+control_elongated_len_t07,elongated_control,elongated_len,7,0,1,LEN
+control_elongated_len_t08,elongated_control,elongated_len,8,0,1,LEN
+control_elongated_len_t09,elongated_control,elongated_len,9,0,1,LEN
+control_elongated_len_t10,elongated_control,elongated_len,10,0,1,LEN
+stress_seq_N3_gap0_t01,long_sequence_stress,long_sequence_N3,1,0,3,LongSequence_N3
+stress_seq_N3_gap0_t02,long_sequence_stress,long_sequence_N3,2,0,3,LongSequence_N3
+stress_seq_N3_gap0_t03,long_sequence_stress,long_sequence_N3,3,0,3,LongSequence_N3
+stress_seq_N3_gap0_t04,long_sequence_stress,long_sequence_N3,4,0,3,LongSequence_N3
+stress_seq_N3_gap0_t05,long_sequence_stress,long_sequence_N3,5,0,3,LongSequence_N3
+stress_seq_N3_gap0_t06,long_sequence_stress,long_sequence_N3,6,0,3,LongSequence_N3
+stress_seq_N3_gap0_t07,long_sequence_stress,long_sequence_N3,7,0,3,LongSequence_N3
+stress_seq_N3_gap0_t08,long_sequence_stress,long_sequence_N3,8,0,3,LongSequence_N3
+stress_seq_N3_gap0_t09,long_sequence_stress,long_sequence_N3,9,0,3,LongSequence_N3
+stress_seq_N3_gap0_t10,long_sequence_stress,long_sequence_N3,10,0,3,LongSequence_N3
+stress_seq_N3_gap50_t01,long_sequence_stress,long_sequence_N3,1,50,3,LongSequence_N3
+stress_seq_N3_gap50_t02,long_sequence_stress,long_sequence_N3,2,50,3,LongSequence_N3
+stress_seq_N3_gap50_t03,long_sequence_stress,long_sequence_N3,3,50,3,LongSequence_N3
+stress_seq_N3_gap50_t04,long_sequence_stress,long_sequence_N3,4,50,3,LongSequence_N3
+stress_seq_N3_gap50_t05,long_sequence_stress,long_sequence_N3,5,50,3,LongSequence_N3
+stress_seq_N3_gap50_t06,long_sequence_stress,long_sequence_N3,6,50,3,LongSequence_N3
+stress_seq_N3_gap50_t07,long_sequence_stress,long_sequence_N3,7,50,3,LongSequence_N3
+stress_seq_N3_gap50_t08,long_sequence_stress,long_sequence_N3,8,50,3,LongSequence_N3
+stress_seq_N3_gap50_t09,long_sequence_stress,long_sequence_N3,9,50,3,LongSequence_N3
+stress_seq_N3_gap50_t10,long_sequence_stress,long_sequence_N3,10,50,3,LongSequence_N3
+stress_seq_N5_gap0_t01,long_sequence_stress,long_sequence_N5,1,0,5,LongSequence_N5
+stress_seq_N5_gap0_t02,long_sequence_stress,long_sequence_N5,2,0,5,LongSequence_N5
+stress_seq_N5_gap0_t03,long_sequence_stress,long_sequence_N5,3,0,5,LongSequence_N5
+stress_seq_N5_gap0_t04,long_sequence_stress,long_sequence_N5,4,0,5,LongSequence_N5
+stress_seq_N5_gap0_t05,long_sequence_stress,long_sequence_N5,5,0,5,LongSequence_N5
+stress_seq_N5_gap0_t06,long_sequence_stress,long_sequence_N5,6,0,5,LongSequence_N5
+stress_seq_N5_gap0_t07,long_sequence_stress,long_sequence_N5,7,0,5,LongSequence_N5
+stress_seq_N5_gap0_t08,long_sequence_stress,long_sequence_N5,8,0,5,LongSequence_N5
+stress_seq_N5_gap0_t09,long_sequence_stress,long_sequence_N5,9,0,5,LongSequence_N5
+stress_seq_N5_gap0_t10,long_sequence_stress,long_sequence_N5,10,0,5,LongSequence_N5
+stress_seq_N5_gap50_t01,long_sequence_stress,long_sequence_N5,1,50,5,LongSequence_N5
+stress_seq_N5_gap50_t02,long_sequence_stress,long_sequence_N5,2,50,5,LongSequence_N5
+stress_seq_N5_gap50_t03,long_sequence_stress,long_sequence_N5,3,50,5,LongSequence_N5
+stress_seq_N5_gap50_t04,long_sequence_stress,long_sequence_N5,4,50,5,LongSequence_N5
+stress_seq_N5_gap50_t05,long_sequence_stress,long_sequence_N5,5,50,5,LongSequence_N5
+stress_seq_N5_gap50_t06,long_sequence_stress,long_sequence_N5,6,50,5,LongSequence_N5
+stress_seq_N5_gap50_t07,long_sequence_stress,long_sequence_N5,7,50,5,LongSequence_N5
+stress_seq_N5_gap50_t08,long_sequence_stress,long_sequence_N5,8,50,5,LongSequence_N5
+stress_seq_N5_gap50_t09,long_sequence_stress,long_sequence_N5,9,50,5,LongSequence_N5
+stress_seq_N5_gap50_t10,long_sequence_stress,long_sequence_N5,10,50,5,LongSequence_N5
+stress_seq_N10_gap0_t01,long_sequence_stress,long_sequence_N10,1,0,10,LongSequence_N10
+stress_seq_N10_gap0_t02,long_sequence_stress,long_sequence_N10,2,0,10,LongSequence_N10
+stress_seq_N10_gap0_t03,long_sequence_stress,long_sequence_N10,3,0,10,LongSequence_N10
+stress_seq_N10_gap0_t04,long_sequence_stress,long_sequence_N10,4,0,10,LongSequence_N10
+stress_seq_N10_gap0_t05,long_sequence_stress,long_sequence_N10,5,0,10,LongSequence_N10
+stress_seq_N10_gap0_t06,long_sequence_stress,long_sequence_N10,6,0,10,LongSequence_N10
+stress_seq_N10_gap0_t07,long_sequence_stress,long_sequence_N10,7,0,10,LongSequence_N10
+stress_seq_N10_gap0_t08,long_sequence_stress,long_sequence_N10,8,0,10,LongSequence_N10
+stress_seq_N10_gap0_t09,long_sequence_stress,long_sequence_N10,9,0,10,LongSequence_N10
+stress_seq_N10_gap0_t10,long_sequence_stress,long_sequence_N10,10,0,10,LongSequence_N10
+stress_seq_N10_gap50_t01,long_sequence_stress,long_sequence_N10,1,50,10,LongSequence_N10
+stress_seq_N10_gap50_t02,long_sequence_stress,long_sequence_N10,2,50,10,LongSequence_N10
+stress_seq_N10_gap50_t03,long_sequence_stress,long_sequence_N10,3,50,10,LongSequence_N10
+stress_seq_N10_gap50_t04,long_sequence_stress,long_sequence_N10,4,50,10,LongSequence_N10
+stress_seq_N10_gap50_t05,long_sequence_stress,long_sequence_N10,5,50,10,LongSequence_N10
+stress_seq_N10_gap50_t06,long_sequence_stress,long_sequence_N10,6,50,10,LongSequence_N10
+stress_seq_N10_gap50_t07,long_sequence_stress,long_sequence_N10,7,50,10,LongSequence_N10
+stress_seq_N10_gap50_t08,long_sequence_stress,long_sequence_N10,8,50,10,LongSequence_N10
+stress_seq_N10_gap50_t09,long_sequence_stress,long_sequence_N10,9,50,10,LongSequence_N10
+stress_seq_N10_gap50_t10,long_sequence_stress,long_sequence_N10,10,50,10,LongSequence_N10
+stress_seq_N20_gap0_t01,long_sequence_stress,long_sequence_N20,1,0,20,LongSequence_N20
+stress_seq_N20_gap0_t02,long_sequence_stress,long_sequence_N20,2,0,20,LongSequence_N20
+stress_seq_N20_gap0_t03,long_sequence_stress,long_sequence_N20,3,0,20,LongSequence_N20
+stress_seq_N20_gap0_t04,long_sequence_stress,long_sequence_N20,4,0,20,LongSequence_N20
+stress_seq_N20_gap0_t05,long_sequence_stress,long_sequence_N20,5,0,20,LongSequence_N20
+stress_seq_N20_gap0_t06,long_sequence_stress,long_sequence_N20,6,0,20,LongSequence_N20
+stress_seq_N20_gap0_t07,long_sequence_stress,long_sequence_N20,7,0,20,LongSequence_N20
+stress_seq_N20_gap0_t08,long_sequence_stress,long_sequence_N20,8,0,20,LongSequence_N20
+stress_seq_N20_gap0_t09,long_sequence_stress,long_sequence_N20,9,0,20,LongSequence_N20
+stress_seq_N20_gap0_t10,long_sequence_stress,long_sequence_N20,10,0,20,LongSequence_N20
+stress_seq_N20_gap50_t01,long_sequence_stress,long_sequence_N20,1,50,20,LongSequence_N20
+stress_seq_N20_gap50_t02,long_sequence_stress,long_sequence_N20,2,50,20,LongSequence_N20
+stress_seq_N20_gap50_t03,long_sequence_stress,long_sequence_N20,3,50,20,LongSequence_N20
+stress_seq_N20_gap50_t04,long_sequence_stress,long_sequence_N20,4,50,20,LongSequence_N20
+stress_seq_N20_gap50_t05,long_sequence_stress,long_sequence_N20,5,50,20,LongSequence_N20
+stress_seq_N20_gap50_t06,long_sequence_stress,long_sequence_N20,6,50,20,LongSequence_N20
+stress_seq_N20_gap50_t07,long_sequence_stress,long_sequence_N20,7,50,20,LongSequence_N20
+stress_seq_N20_gap50_t08,long_sequence_stress,long_sequence_N20,8,50,20,LongSequence_N20
+stress_seq_N20_gap50_t09,long_sequence_stress,long_sequence_N20,9,50,20,LongSequence_N20
+stress_seq_N20_gap50_t10,long_sequence_stress,long_sequence_N20,10,50,20,LongSequence_N20

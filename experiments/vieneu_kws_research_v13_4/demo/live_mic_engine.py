@@ -70,6 +70,25 @@ try:
 except ImportError:
     HAS_SPEECHBAND_VAD = False
 
+# Import Phase 2 Continuous KWS Components
+try:
+    from acoustic_valley_segmenter import AcousticValleySegmenter
+    HAS_VALLEY_SEGMENTER = True
+except ImportError:
+    HAS_VALLEY_SEGMENTER = False
+
+try:
+    from continuous_event_decoder import ContinuousEventDecoder
+    HAS_CONTINUOUS_DECODER = True
+except ImportError:
+    HAS_CONTINUOUS_DECODER = False
+
+try:
+    from hybrid_segmenter import HybridSpeechBandValleySegmenter, GameModeSessionController
+    HAS_HYBRID_SEGMENTER = True
+except ImportError:
+    HAS_HYBRID_SEGMENTER = False
+
 
 @dataclass
 class DetectionEvent:
@@ -206,19 +225,21 @@ class UtteranceSegmenter:
         finalized_segment = None
 
         if self.state == "WAITING":
-            # Maintain circular pre-roll buffer
-            if n_samples >= self.preroll_samples:
-                self.preroll_buf[:] = chunk[-self.preroll_samples:]
-            else:
-                self.preroll_buf[:-n_samples] = self.preroll_buf[n_samples:]
-                self.preroll_buf[-n_samples:] = chunk
-
             # Speech onset detection
             if is_speech_chunk:
+                # Capture preroll strictly preceding this chunk (zero duplication)
+                preroll_audio = self.preroll_buf.copy()
                 self.state = "ACCUMULATING"
-                self.accumulated_chunks = [self.preroll_buf.copy(), chunk.copy()]
+                self.accumulated_chunks = [preroll_audio, chunk.copy()]
                 self.consecutive_silence_samples = 0
                 self.active_speech_samples = n_samples
+            else:
+                # Maintain circular pre-roll buffer during silence
+                if n_samples >= self.preroll_samples:
+                    self.preroll_buf[:] = chunk[-self.preroll_samples:]
+                else:
+                    self.preroll_buf[:-n_samples] = self.preroll_buf[n_samples:]
+                    self.preroll_buf[-n_samples:] = chunk
 
         elif self.state == "ACCUMULATING":
             self.accumulated_chunks.append(chunk.copy())
@@ -257,6 +278,25 @@ class UtteranceSegmenter:
                 self.active_speech_samples = 0
                 self.preroll_buf.fill(0.0)
 
+        return finalized_segment
+
+    def flush(self) -> Optional[Tuple[np.ndarray, float]]:
+        """Flushes any pending utterance at stream termination."""
+        finalized_segment = None
+        if self.state == "ACCUMULATING" and len(self.accumulated_chunks) > 0:
+            full_segment = np.concatenate(self.accumulated_chunks)
+            actual_duration_ms = (len(full_segment) / self.sample_rate) * 1000.0
+            if self.active_speech_samples >= self.min_speech_samples:
+                if len(full_segment) < 16000:
+                    audio_1s = np.pad(full_segment, (0, 16000 - len(full_segment)), mode="constant", constant_values=0.0)
+                else:
+                    audio_1s = full_segment[:16000]
+                finalized_segment = (audio_1s.astype(np.float32), actual_duration_ms)
+        self.state = "WAITING"
+        self.accumulated_chunks = []
+        self.consecutive_silence_samples = 0
+        self.active_speech_samples = 0
+        self.preroll_buf.fill(0.0)
         return finalized_segment
 
 
@@ -567,6 +607,58 @@ class LiveKWSPipeline:
                 params["speech_band_hz"] = tuple(params["speech_band_hz"])
             self.segmenter = SpeechBandRatioSegmenterAdapter(**params)
             self.vad_algorithm = "SpeechBandRatioVAD"
+        elif self.profile_name in ["continuous_valley", "acoustic_valley"]:
+            self.segmenter = AcousticValleySegmenter(
+                sample_rate=16000,
+                silence_interval_ms=140,
+                preroll_ms=120,
+                energy_threshold_db=energy_threshold_db,
+                min_speech_duration_ms=100,
+                min_command_dur_before_split_ms=160,
+                dip_threshold_db=12.0,
+                rebound_threshold_db=6.0,
+                max_segment_duration_ms=1200
+            )
+            self.vad_algorithm = "AcousticValleySegmenter"
+        elif self.profile_name in ["hybrid_valley", "hybrid_speechband_valley"]:
+            if not HAS_HYBRID_SEGMENTER:
+                raise ImportError("HybridSpeechBandValleySegmenter is not available.")
+            self.segmenter = HybridSpeechBandValleySegmenter(
+                sample_rate=16000,
+                speech_band_hz=(100.0, 3400.0),
+                min_speech_band_ratio=0.32,
+                energy_threshold_db=energy_threshold_db,
+                silence_interval_ms=140,
+                preroll_ms=120,
+                min_speech_duration_ms=100,
+                min_command_dur_before_split_ms=160,
+                dip_threshold_db=12.0,
+                rebound_threshold_db=6.0,
+                max_segment_duration_ms=1200
+            )
+            self.vad_algorithm = "HybridSpeechBandValleySegmenter"
+        elif self.profile_name == "game_mode":
+            if not HAS_HYBRID_SEGMENTER:
+                raise ImportError("HybridSpeechBandValleySegmenter is not available for game_mode.")
+            base_seg = HybridSpeechBandValleySegmenter(
+                sample_rate=16000,
+                speech_band_hz=(100.0, 3400.0),
+                min_speech_band_ratio=0.32,
+                energy_threshold_db=energy_threshold_db,
+                silence_interval_ms=140,
+                preroll_ms=120,
+                min_speech_duration_ms=100,
+                min_command_dur_before_split_ms=160,
+                dip_threshold_db=12.0,
+                rebound_threshold_db=6.0,
+                max_segment_duration_ms=1200
+            )
+            self.segmenter = GameModeSessionController(
+                base_segmenter=base_seg,
+                session_timeout_sec=6.0,
+                extend_on_detection=True
+            )
+            self.vad_algorithm = "GameModeSessionController"
         else:
             self.segmenter = UtteranceSegmenter(
                 sample_rate=16000,
@@ -692,6 +784,17 @@ class LiveKWSPipeline:
 
             if self.event_callback:
                 self.event_callback(event)
+            return event
+        return None
+
+    def flush(self) -> Optional[DetectionEvent]:
+        """Flushes segmenter at stream or session termination and evaluates any pending segment."""
+        if hasattr(self.segmenter, "flush"):
+            res = self.segmenter.flush()
+            if res is not None:
+                audio_1s, seg_dur_ms = res
+                return self._evaluate_segmented_utterance(audio_1s, seg_dur_ms)
+        return None
 
     def _run_in_memory_inference(self, audio_1s: np.ndarray) -> Tuple[str, float, Dict[str, float], float]:
         """
@@ -828,6 +931,59 @@ class LiveKWSPipeline:
                 self.consecutive_candidate = None
                 self.consecutive_count = 0
 
+    def _continuous_decoder_loop(self):
+        """Worker thread executing sliding-window trajectory decoding with ContinuousEventDecoder (Approach B)."""
+        hop_ms = 40
+        step_samples = int(16000 * (hop_ms / 1000.0))  # 640 samples
+        last_processed_count = 0
+        decoder = ContinuousEventDecoder(theta_cmd=self.theta_cmd, min_distance_ms=250, dip_delta=0.15)
+
+        while self.is_running:
+            now_samples = self.ring_buffer.samples_appended
+            if now_samples - last_processed_count < step_samples:
+                time.sleep(0.01)
+                continue
+
+            last_processed_count = now_samples
+            current_time = time.time()
+            audio_window = self.ring_buffer.get_window()
+
+            pred_class, conf, probs, dt_ms = self._run_in_memory_inference(audio_window)
+            probs_arr = np.array([probs[c] for c in CLASSES], dtype=np.float32)
+
+            self.last_prediction = {
+                "predicted_class": pred_class,
+                "confidence": conf,
+                "probabilities": probs,
+                "latency_ms": dt_ms,
+                "vad_active": True,
+                "is_speech": True
+            }
+
+            event_dict = decoder.process_frame(current_time, probs_arr)
+            if event_dict is not None:
+                event = DetectionEvent(
+                    timestamp=current_time,
+                    time_str=time.strftime("%H:%M:%S", time.localtime(current_time)),
+                    command=event_dict["command"],
+                    confidence=event_dict["confidence"],
+                    probabilities=probs,
+                    latency_ms=dt_ms,
+                    vad_active=True,
+                    db_level=self.stream_mgr.current_rms_db,
+                    profile_name=self.profile_name,
+                    vad_algorithm="ContinuousEventDecoder"
+                )
+                self.recent_events.append(event)
+                if len(self.recent_events) > 15:
+                    self.recent_events.pop(0)
+
+                self.last_trigger_time = current_time
+                self.last_trigger_cmd = event_dict["command"]
+
+                if self.event_callback:
+                    self.event_callback(event)
+
     def start(self):
         """Starts audio capture and processing."""
         if self.is_running:
@@ -838,6 +994,9 @@ class LiveKWSPipeline:
 
         if self.mode == "streaming":
             self.inference_thread = threading.Thread(target=self._streaming_inference_loop, daemon=True)
+            self.inference_thread.start()
+        elif self.mode == "continuous_decoder":
+            self.inference_thread = threading.Thread(target=self._continuous_decoder_loop, daemon=True)
             self.inference_thread.start()
 
     def stop(self):

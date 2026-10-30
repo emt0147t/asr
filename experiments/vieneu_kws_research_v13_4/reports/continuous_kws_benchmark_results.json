@@ -1,0 +1,7170 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-29 21:54:34",
+    "model_reference": "legacy_v11_hard_negative_weighted_seed42",
+    "threshold_theta_cmd": 0.2,
+    "num_patterns": 4,
+    "gaps_ms": [
+      0,
+      50,
+      100,
+      150,
+      250,
+      400
+    ],
+    "num_triads": 3,
+    "total_streams_per_config": 72,
+    "negative_control_files": 15
+  },
+  "summary_table": [
+    {
+      "config_id": "baseline_segmented",
+      "config_name": "Baseline Segmented (300ms silence)",
+      "event_precision": 82.61,
+      "event_recall": 42.22,
+      "event_f1": 55.88,
+      "exact_sequence_match_pct": 34.72,
+      "duplicate_rate_pct": 0.0,
+      "latency_p50_ms": 290.0,
+      "latency_p95_ms": 310.0,
+      "tp": 76,
+      "fp": 16,
+      "fn": 104,
+      "duplicates": 0,
+      "total_trials": 72,
+      "exact_matches": 25,
+      "by_gap_exact_pct": {
+        "0": 25.0,
+        "50": 25.0,
+        "100": 25.0,
+        "150": 25.0,
+        "250": 25.0,
+        "400": 83.3
+      },
+      "by_pattern_exact_pct": {
+        "pattern_1_len_len_phai": 16.7,
+        "pattern_2_trai_len_xuong": 11.1,
+        "pattern_3_len_len_len": 11.1,
+        "pattern_4_elongated_len": 100.0
+      },
+      "neg_trials": 15,
+      "neg_false_activations": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "config_name": "Baseline Streaming (160ms hop, 800ms cooldown)",
+      "event_precision": 95.06,
+      "event_recall": 42.78,
+      "event_f1": 59.0,
+      "exact_sequence_match_pct": 25.0,
+      "duplicate_rate_pct": 0.0,
+      "latency_p50_ms": 0.0,
+      "latency_p95_ms": 572.0,
+      "tp": 77,
+      "fp": 4,
+      "fn": 103,
+      "duplicates": 0,
+      "total_trials": 72,
+      "exact_matches": 18,
+      "by_gap_exact_pct": {
+        "0": 25.0,
+        "50": 25.0,
+        "100": 25.0,
+        "150": 25.0,
+        "250": 25.0,
+        "400": 25.0
+      },
+      "by_pattern_exact_pct": {
+        "pattern_1_len_len_phai": 0.0,
+        "pattern_2_trai_len_xuong": 0.0,
+        "pattern_3_len_len_len": 0.0,
+        "pattern_4_elongated_len": 100.0
+      },
+      "neg_trials": 15,
+      "neg_false_activations": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "config_name": "Approach A1: SpeechBandRatio (hangover=140ms)",
+      "event_precision": 96.9,
+      "event_recall": 69.44,
+      "event_f1": 80.91,
+      "exact_sequence_match_pct": 62.5,
+      "duplicate_rate_pct": 0.0,
+      "latency_p50_ms": 130.0,
+      "latency_p95_ms": 150.0,
+      "tp": 125,
+      "fp": 4,
+      "fn": 55,
+      "duplicates": 0,
+      "total_trials": 72,
+      "exact_matches": 45,
+      "by_gap_exact_pct": {
+        "0": 25.0,
+        "50": 50.0,
+        "100": 50.0,
+        "150": 83.3,
+        "250": 83.3,
+        "400": 83.3
+      },
+      "by_pattern_exact_pct": {
+        "pattern_1_len_len_phai": 72.2,
+        "pattern_2_trai_len_xuong": 50.0,
+        "pattern_3_len_len_len": 27.8,
+        "pattern_4_elongated_len": 100.0
+      },
+      "neg_trials": 15,
+      "neg_false_activations": 4
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "config_name": "Approach A2: Acoustic Valley Segmenter (dip=12dB)",
+      "event_precision": 100.0,
+      "event_recall": 100.0,
+      "event_f1": 100.0,
+      "exact_sequence_match_pct": 100.0,
+      "duplicate_rate_pct": 0.0,
+      "latency_p50_ms": 130.0,
+      "latency_p95_ms": 140.0,
+      "tp": 180,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0,
+      "total_trials": 72,
+      "exact_matches": 72,
+      "by_gap_exact_pct": {
+        "0": 100.0,
+        "50": 100.0,
+        "100": 100.0,
+        "150": 100.0,
+        "250": 100.0,
+        "400": 100.0
+      },
+      "by_pattern_exact_pct": {
+        "pattern_1_len_len_phai": 100.0,
+        "pattern_2_trai_len_xuong": 100.0,
+        "pattern_3_len_len_len": 100.0,
+        "pattern_4_elongated_len": 100.0
+      },
+      "neg_trials": 15,
+      "neg_false_activations": 27
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "config_name": "Approach B: Continuous Event Decoder (40ms hop, NMS min_dist=250ms)",
+      "event_precision": 65.2,
+      "event_recall": 82.22,
+      "event_f1": 72.73,
+      "exact_sequence_match_pct": 29.17,
+      "duplicate_rate_pct": 25.11,
+      "latency_p50_ms": 170.0,
+      "latency_p95_ms": 566.5,
+      "tp": 148,
+      "fp": 79,
+      "fn": 32,
+      "duplicates": 57,
+      "total_trials": 72,
+      "exact_matches": 21,
+      "by_gap_exact_pct": {
+        "0": 0.0,
+        "50": 33.3,
+        "100": 33.3,
+        "150": 25.0,
+        "250": 50.0,
+        "400": 33.3
+      },
+      "by_pattern_exact_pct": {
+        "pattern_1_len_len_phai": 66.7,
+        "pattern_2_trai_len_xuong": 0.0,
+        "pattern_3_len_len_len": 50.0,
+        "pattern_4_elongated_len": 0.0
+      },
+      "neg_trials": 15,
+      "neg_false_activations": 0
+    }
+  ],
+  "raw_trials": [
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 3,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_1_len_len_phai",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "XUONG",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 2,
+      "fn": 2,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 1,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "XUONG",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "XUONG",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 2,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 1,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 2,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "PHAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 3,
+      "fp": 2,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 3,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "XUONG",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 2,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "LEN",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 3,
+      "fp": 2,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "PHAI",
+        "LEN",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 3,
+      "fp": 3,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "PHAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 3,
+      "fp": 2,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "PHAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "LEN",
+        "LEN",
+        "XUONG",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 3,
+      "fp": 3,
+      "fn": 0,
+      "duplicates": 2
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "TRAI",
+        "PHAI",
+        "LEN",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 3,
+      "fp": 3,
+      "fn": 0,
+      "duplicates": 2
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_2_trai_len_xuong",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "TRAI",
+        "LEN",
+        "XUONG"
+      ],
+      "det_commands": [
+        "TRAI",
+        "PHAI",
+        "LEN",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 3,
+      "fp": 2,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [],
+      "exact_match": false,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 3,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 3,
+      "fn": 1,
+      "duplicates": 2
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 2,
+      "fn": 1,
+      "duplicates": 2
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "PHAI"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 2,
+      "fn": 1,
+      "duplicates": 2
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_3_len_len_len",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "XUONG"
+      ],
+      "exact_match": false,
+      "tp": 2,
+      "fp": 2,
+      "fn": 1,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 3,
+      "fn": 0,
+      "duplicates": 3
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 0,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 3,
+      "fn": 0,
+      "duplicates": 3
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 50,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 3,
+      "fn": 0,
+      "duplicates": 3
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 100,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 3,
+      "fn": 0,
+      "duplicates": 3
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 150,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 3,
+      "fn": 0,
+      "duplicates": 3
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 250,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 1,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 2,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN",
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 3,
+      "fn": 0,
+      "duplicates": 3
+    },
+    {
+      "config_id": "baseline_segmented",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "baseline_streaming",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a1_speechband",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_a2_acoustic_valley",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN"
+      ],
+      "exact_match": true,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "duplicates": 0
+    },
+    {
+      "config_id": "approach_b_continuous_decoder",
+      "pattern": "pattern_4_elongated_len",
+      "gap_ms": 400,
+      "triad_idx": 3,
+      "gt_commands": [
+        "LEN"
+      ],
+      "det_commands": [
+        "LEN",
+        "LEN"
+      ],
+      "exact_match": false,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "duplicates": 1
+    }
+  ]
+}

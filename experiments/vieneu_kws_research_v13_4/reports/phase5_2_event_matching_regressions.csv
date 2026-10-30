@@ -1,0 +1,7 @@
+profile,theta_cmd,pattern_id,trial_idx,gap_ms,gt_commands,pred_commands,greedy_tp,greedy_sub,greedy_ins,greedy_del,greedy_wer_pct,corrected_dp_tp,corrected_dp_sub,corrected_dp_ins,corrected_dp_del,corrected_dp_wer_pct,root_cause
+legacy_v11,0.2,len_len_phai,1,100,LEN LEN PHAI,LEN,0,1,0,2,100.0,1,0,0,2,66.7,Greedy tie-breaking in overlapping tolerance window matched delayed prediction to wrong-class GT syllable
+legacy_v11,0.2,len_len_phai,2,100,LEN LEN PHAI,LEN,0,1,0,2,100.0,1,0,0,2,66.7,Greedy tie-breaking in overlapping tolerance window matched delayed prediction to wrong-class GT syllable
+legacy_v11,0.2,len_len_phai,3,100,LEN LEN PHAI,LEN,0,1,0,2,100.0,1,0,0,2,66.7,Greedy tie-breaking in overlapping tolerance window matched delayed prediction to wrong-class GT syllable
+legacy_v11,0.2,trai_len_xuong,5,0,TRAI LEN XUONG,TRAI XUONG,1,1,0,1,66.7,2,0,0,1,33.3,Greedy tie-breaking in overlapping tolerance window matched delayed prediction to wrong-class GT syllable
+legacy_v11,0.2,trai_len_xuong,5,50,TRAI LEN XUONG,TRAI XUONG,1,1,0,1,66.7,2,0,0,1,33.3,Greedy tie-breaking in overlapping tolerance window matched delayed prediction to wrong-class GT syllable
+legacy_v11,0.2,trai_len_xuong,5,100,TRAI LEN XUONG,TRAI XUONG,1,1,0,1,66.7,2,0,0,1,33.3,Greedy tie-breaking in overlapping tolerance window matched delayed prediction to wrong-class GT syllable

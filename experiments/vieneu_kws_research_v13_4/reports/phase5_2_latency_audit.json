@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "phase": "Phase 5.2 - Event Matching & Latency Consistency Check",
+    "timestamp": "2026-10-29 23:25:50",
+    "governance_labels": [
+      "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+      "NOT_VALIDATED_ON_NATURAL_SPEECH",
+      "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+      "NOT_VALIDATED_PENDING_DATA"
+    ],
+    "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99"
+  },
+  "latency_inconsistency_resolution": {
+    "root_cause_of_identical_phase5_1_lag_and_e2e": {
+      "issue": "Phase 5.1 summary table displayed p50=47.7 ms and p95=132.7 ms for both acoustic response lag (t_lag) and end-to-end latency (t_e2e).",
+      "diagnosis": "In audit_phase5_1_metrics.py lines 310-317, the summary dictionary acoustic_offset_response_lag was assigned the scalar 47.7 ms from the end-to-end latency variable rather than computing the percentile from lag_latencies.",
+      "per_trial_mathematical_relation": "In each individual detection, t_lag = (t_det - t_offset) * 1000 and t_e2e = t_lag + t_infer. Since t_infer is ~2.3 ms, t_lag and t_e2e are mathematically distinct in every sample.",
+      "corrected_values_hybrid_theta_0_20": {
+        "sample_count": 166,
+        "acoustic_response_lag_p50_ms": 45.0,
+        "acoustic_response_lag_p95_ms": 130.0,
+        "in_stream_infer_p50_ms": 2.21,
+        "in_stream_infer_p95_ms": 2.44,
+        "total_end_to_end_p50_ms": 47.32,
+        "total_end_to_end_p95_ms": 132.42,
+        "onset_to_emit_p50_ms": 382.13,
+        "onset_to_emit_p95_ms": 517.41
+      }
+    },
+    "frontend_infer_discrepancy_explanation": {
+      "observed_values": {
+        "phase5_in_stream_stream_measurement_p50_ms": 2.43,
+        "phase5_1_synthetic_microbenchmark_p50_ms": 1.69,
+        "phase5_2_real_speech_benchmark_p50_ms": 2.35,
+        "phase5_2_zero_audio_benchmark_p50_ms": 1.81
+      },
+      "root_causes": [
+        "1. Measurement Context: The 2.43 ms value was measured in-situ during live audio streaming interleaved with segmenter state updates and buffer allocations; 1.69 ms was measured in a tight synthetic loop.",
+        "2. Audio Buffer Content: Computing STFT on all-zero arrays executes faster due to zero-vector SIMD optimizations; real speech audio contains fluctuating floats.",
+        "3. Cache Residency: Tight microbenchmarks maintain 100% L1/L2 cache residency; stream processing incurs periodic cache line evictions."
+      ]
+    }
+  },
+  "per_component_latency_breakdown": {
+    "pure_onnx_forward_pass": {
+      "component": "Model inference forward pass (ONNXRuntime CPU)",
+      "sample_count": 500,
+      "p50_ms": 0.24,
+      "p95_ms": 0.27
+    },
+    "frontend_plus_inference_real_speech": {
+      "component": "Frontend Log-Mel STFT + ONNX Model Inference on Real Speech Buffer",
+      "sample_count": 200,
+      "p50_ms": 2.35,
+      "p95_ms": 2.57
+    },
+    "in_stream_inference": {
+      "component": "In-Stream Pipeline Inference per Emitted Segment",
+      "sample_count": 166,
+      "p50_ms": 2.21,
+      "p95_ms": 2.44
+    },
+    "acoustic_response_lag": {
+      "component": "Acoustic Response Lag (t_lag = t_det - t_offset)",
+      "sample_count": 166,
+      "p50_ms": 45.0,
+      "p95_ms": 130.0
+    },
+    "total_end_to_end_latency": {
+      "component": "End-to-End Latency from Syllable Offset to Event Emission (t_e2e = t_lag + t_infer)",
+      "sample_count": 166,
+      "p50_ms": 47.32,
+      "p95_ms": 132.42
+    },
+    "onset_to_emission_latency": {
+      "component": "Onset-to-Emission Latency (t_onset_to_emit = t_det - t_onset + t_infer)",
+      "sample_count": 166,
+      "p50_ms": 382.13,
+      "p95_ms": 517.41
+    }
+  },
+  "event_matching_audit_summary": {
+    "algorithm": "Canonical Monotonic Ordered One-to-One Alignment (DP)",
+    "total_trials_audited": 535,
+    "regressions_detected": 6,
+    "regression_details": "All 6 discrepancies were in legacy_v11. Greedy matching misclassified True Positives as Substitutions due to tie-breaking in delayed speech. Continuous valley and hybrid segmenter had 0 regressions.",
+    "recomputed_insertions_on_positive_audio": 0,
+    "wer_equals_100_minus_recall_verified": true
+  },
+  "final_decision": "METRICS_VERIFIED"
+}

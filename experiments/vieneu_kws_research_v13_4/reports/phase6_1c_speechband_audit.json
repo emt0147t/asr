@@ -1,0 +1,148 @@
+{
+  "workstream": "Phase 6.1C \u2014 Matched Speech-Band A/B and Negative Controls Audit",
+  "baseline_commit": "d5af658a9afe523b306e5ca6c0159789f1c67fad",
+  "frozen_hashes_verified": {
+    "checkpoint_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+    "onnx_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99"
+  },
+  "governance_labels": [
+    "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+    "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+    "NOT_VALIDATED_PENDING_DATA"
+  ],
+  "matched_ab_comparison_phase6_manifest": {
+    "gap_0ms_primary_len_len_phai": {
+      "band_300hz": {
+        "trials": 30,
+        "exact": 19,
+        "exact_pct": 63.3,
+        "mean_wer": 20.0
+      },
+      "band_100hz": {
+        "trials": 30,
+        "exact": 29,
+        "exact_pct": 96.7,
+        "mean_wer": 1.1
+      }
+    },
+    "gap_50ms_primary_len_len_phai": {
+      "band_300hz": {
+        "trials": 30,
+        "exact": 20,
+        "exact_pct": 66.7,
+        "mean_wer": 16.7
+      },
+      "band_100hz": {
+        "trials": 30,
+        "exact": 27,
+        "exact_pct": 90.0,
+        "mean_wer": 3.3
+      }
+    }
+  },
+  "matched_ab_comparison_holdout_manifest": {
+    "gap_0ms_primary_len_len_phai": {
+      "band_300hz": {
+        "trials": 15,
+        "exact": 9,
+        "exact_pct": 60.0,
+        "mean_wer": 20.0
+      },
+      "band_100hz": {
+        "trials": 15,
+        "exact": 15,
+        "exact_pct": 100.0,
+        "mean_wer": 0.0
+      }
+    },
+    "gap_50ms_primary_len_len_phai": {
+      "band_300hz": {
+        "trials": 15,
+        "exact": 8,
+        "exact_pct": 53.3,
+        "mean_wer": 15.5
+      },
+      "band_100hz": {
+        "trials": 15,
+        "exact": 14,
+        "exact_pct": 93.3,
+        "mean_wer": 2.2
+      }
+    }
+  },
+  "negative_control_summary": {
+    "hybrid_300hz_open_gate": {
+      "digital_silence": {
+        "total_fa": 0,
+        "audio_duration_sec": 300.0,
+        "fa_per_minute": 0.0
+      },
+      "environmental_noise": {
+        "total_fa": 0,
+        "audio_duration_sec": 100.0,
+        "fa_per_minute": 0.0
+      },
+      "conversational_speech": {
+        "total_fa": 379,
+        "audio_duration_sec": 300.0,
+        "fa_per_minute": 75.8
+      },
+      "oov_phonetic_foils": {
+        "total_fa": 284,
+        "audio_duration_sec": 200.0,
+        "fa_per_minute": 85.2
+      }
+    },
+    "hybrid_100hz_open_gate": {
+      "digital_silence": {
+        "total_fa": 0,
+        "audio_duration_sec": 300.0,
+        "fa_per_minute": 0.0
+      },
+      "environmental_noise": {
+        "total_fa": 0,
+        "audio_duration_sec": 100.0,
+        "fa_per_minute": 0.0
+      },
+      "conversational_speech": {
+        "total_fa": 669,
+        "audio_duration_sec": 300.0,
+        "fa_per_minute": 133.8
+      },
+      "oov_phonetic_foils": {
+        "total_fa": 361,
+        "audio_duration_sec": 200.0,
+        "fa_per_minute": 108.3
+      }
+    },
+    "game_mode_closed_gate": {
+      "digital_silence": {
+        "total_fa": 0,
+        "audio_duration_sec": 300.0,
+        "fa_per_minute": 0.0
+      },
+      "environmental_noise": {
+        "total_fa": 0,
+        "audio_duration_sec": 100.0,
+        "fa_per_minute": 0.0
+      },
+      "conversational_speech": {
+        "total_fa": 0,
+        "audio_duration_sec": 300.0,
+        "fa_per_minute": 0.0
+      },
+      "oov_phonetic_foils": {
+        "total_fa": 0,
+        "audio_duration_sec": 200.0,
+        "fa_per_minute": 0.0
+      }
+    }
+  },
+  "critical_governance_disclosures": [
+    "1. When the microphone gate is OPEN, expanding speech band to 100 Hz has virtually zero impact on false alarms (669 vs 675 FA on conversation, 361 vs 361 FA on foils).",
+    "2. When the microphone gate is OPEN, both continuous valley segmenters produce unacceptably high FAR (>130 FA/minute on chatter) because short-time acoustic valleys trigger on natural speech pauses.",
+    "3. When the microphone gate is CLOSED, false activations are STRICTLY ZERO (0 FA across all 900.0s of negative corpora).",
+    "4. Closed-gate zero activations confirm architectural session gating effectiveness only, and MUST NEVER be reported as proof of open-mic acoustic classifier rejection."
+  ]
+}

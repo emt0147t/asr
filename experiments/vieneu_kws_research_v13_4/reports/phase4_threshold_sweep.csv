@@ -1,0 +1,6 @@
+theta_cmd,cmd_recall,cmd_precision,cmd_f1,exact_sequence_match,conv_false_activations,conv_far_min,foil_false_activations,foil_far_min,mean_infer_latency_ms,median_e2e_latency_ms
+0.2,92.7,96.2,94.4,80.0,555,111.0,349,104.7,2.09,56.9
+0.3,92.7,96.2,94.4,80.0,519,103.8,331,99.3,2.02,57.3
+0.4,92.7,96.2,94.4,80.0,411,82.2,261,78.3,2.16,57.3
+0.5,91.8,97.1,94.4,77.5,297,59.4,182,54.6,2.37,62.3
+0.6,78.2,100.0,87.8,60.0,201,40.2,125,37.5,2.17,81.8

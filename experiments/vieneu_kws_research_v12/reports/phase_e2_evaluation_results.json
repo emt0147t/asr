@@ -1,0 +1,1124 @@
+{
+  "baseline_138k_seed42": {
+    "training_meta": {
+      "model_family": "baseline_138k",
+      "seed": 42,
+      "trainable_params": 138469,
+      "best_epoch": 35,
+      "epochs_trained": 40,
+      "training_time_sec": 80.15,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\checkpoints\\baseline_138k_seed42.pt",
+      "checkpoint_sha256": "44f7e223974169d37e4a62e0668f1f8effcf70637f2a0cd9a8396046de61c24f"
+    },
+    "evaluation": {
+      "checkpoint_epoch": 35,
+      "train_loss": 0.1086,
+      "train_acc": 0.9623,
+      "val_loss": 0.212,
+      "val_acc_during_train": 0.9305,
+      "checkpoint_size_kb": 1648.5,
+      "benchmarks": {
+        "cpu_latency_ms": 1.289,
+        "device_latency_ms": 1.231,
+        "vram_mb": 256.4
+      },
+      "metrics_theta_020": {
+        "total_samples": 1280,
+        "correct_samples": 1177,
+        "accuracy": 0.9195,
+        "macro_f1_4cmd": 0.9222,
+        "macro_f1_5class": 0.9214,
+        "min_command_recall": 0.9563,
+        "oov_fa_count": 89,
+        "oov_fa_rate": 0.1391,
+        "reject_precision": 0.9839,
+        "reject_recall": 0.8609,
+        "confusion_matrix": [
+          [
+            153,
+            1,
+            0,
+            0,
+            6
+          ],
+          [
+            4,
+            156,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            158,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            159,
+            1
+          ],
+          [
+            7,
+            46,
+            25,
+            11,
+            551
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9329,
+            "recall": 0.9563,
+            "f1": 0.9444,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.7685,
+            "recall": 0.975,
+            "f1": 0.8595,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.8634,
+            "recall": 0.9875,
+            "f1": 0.9213,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9353,
+            "recall": 0.9938,
+            "f1": 0.9636,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9839,
+            "recall": 0.8609,
+            "f1": 0.9183,
+            "support": 640
+          }
+        }
+      },
+      "metrics_argmax": {
+        "total_samples": 1280,
+        "correct_samples": 1191,
+        "accuracy": 0.9305,
+        "macro_f1_4cmd": 0.9314,
+        "macro_f1_5class": 0.9313,
+        "min_command_recall": 0.9375,
+        "oov_fa_count": 61,
+        "oov_fa_rate": 0.0953,
+        "reject_precision": 0.9586,
+        "reject_recall": 0.9047,
+        "confusion_matrix": [
+          [
+            150,
+            1,
+            0,
+            0,
+            9
+          ],
+          [
+            2,
+            155,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            152,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            155,
+            5
+          ],
+          [
+            3,
+            36,
+            16,
+            6,
+            579
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9677,
+            "recall": 0.9375,
+            "f1": 0.9524,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.8073,
+            "recall": 0.9688,
+            "f1": 0.8807,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.9048,
+            "recall": 0.95,
+            "f1": 0.9268,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9627,
+            "recall": 0.9688,
+            "f1": 0.9657,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9586,
+            "recall": 0.9047,
+            "f1": 0.9309,
+            "support": 640
+          }
+        }
+      }
+    }
+  },
+  "baseline_138k_seed43": {
+    "training_meta": {
+      "model_family": "baseline_138k",
+      "seed": 43,
+      "trainable_params": 138469,
+      "best_epoch": 34,
+      "epochs_trained": 40,
+      "training_time_sec": 82.2,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\checkpoints\\baseline_138k_seed43.pt",
+      "checkpoint_sha256": "02171e45c2a123c7819a2b55fbdf5ebdc38aea7b253ce7d793c36bc68ef8e06d"
+    },
+    "evaluation": {
+      "checkpoint_epoch": 34,
+      "train_loss": 0.0902,
+      "train_acc": 0.9715,
+      "val_loss": 0.2051,
+      "val_acc_during_train": 0.9383,
+      "checkpoint_size_kb": 1648.5,
+      "benchmarks": {
+        "cpu_latency_ms": 2.229,
+        "device_latency_ms": 2.47,
+        "vram_mb": 256.4
+      },
+      "metrics_theta_020": {
+        "total_samples": 1280,
+        "correct_samples": 1196,
+        "accuracy": 0.9344,
+        "macro_f1_4cmd": 0.9355,
+        "macro_f1_5class": 0.9351,
+        "min_command_recall": 0.9625,
+        "oov_fa_count": 68,
+        "oov_fa_rate": 0.1062,
+        "reject_precision": 0.9778,
+        "reject_recall": 0.8938,
+        "confusion_matrix": [
+          [
+            154,
+            1,
+            0,
+            0,
+            5
+          ],
+          [
+            2,
+            156,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            154,
+            0,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            7,
+            32,
+            16,
+            13,
+            572
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9448,
+            "recall": 0.9625,
+            "f1": 0.9536,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.8254,
+            "recall": 0.975,
+            "f1": 0.894,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.9059,
+            "recall": 0.9625,
+            "f1": 0.9333,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9249,
+            "recall": 1.0,
+            "f1": 0.961,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9778,
+            "recall": 0.8938,
+            "f1": 0.9339,
+            "support": 640
+          }
+        }
+      },
+      "metrics_argmax": {
+        "total_samples": 1280,
+        "correct_samples": 1201,
+        "accuracy": 0.9383,
+        "macro_f1_4cmd": 0.9378,
+        "macro_f1_5class": 0.9381,
+        "min_command_recall": 0.9313,
+        "oov_fa_count": 53,
+        "oov_fa_rate": 0.0828,
+        "reject_precision": 0.9623,
+        "reject_recall": 0.9172,
+        "confusion_matrix": [
+          [
+            152,
+            1,
+            0,
+            0,
+            7
+          ],
+          [
+            2,
+            155,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            149,
+            0,
+            11
+          ],
+          [
+            0,
+            0,
+            0,
+            158,
+            2
+          ],
+          [
+            7,
+            27,
+            10,
+            9,
+            587
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9441,
+            "recall": 0.95,
+            "f1": 0.947,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.847,
+            "recall": 0.9688,
+            "f1": 0.9038,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.9371,
+            "recall": 0.9313,
+            "f1": 0.9342,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9461,
+            "recall": 0.9875,
+            "f1": 0.9664,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9623,
+            "recall": 0.9172,
+            "f1": 0.9392,
+            "support": 640
+          }
+        }
+      }
+    }
+  },
+  "baseline_138k_seed44": {
+    "training_meta": {
+      "model_family": "baseline_138k",
+      "seed": 44,
+      "trainable_params": 138469,
+      "best_epoch": 32,
+      "epochs_trained": 40,
+      "training_time_sec": 92.83,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\checkpoints\\baseline_138k_seed44.pt",
+      "checkpoint_sha256": "71628501c51ad01bfbc36901cd6e9f564d6522204b79a1ef8473340e7cf58798"
+    },
+    "evaluation": {
+      "checkpoint_epoch": 32,
+      "train_loss": 0.1036,
+      "train_acc": 0.9643,
+      "val_loss": 0.2008,
+      "val_acc_during_train": 0.9375,
+      "checkpoint_size_kb": 1648.5,
+      "benchmarks": {
+        "cpu_latency_ms": 2.763,
+        "device_latency_ms": 2.988,
+        "vram_mb": 258.0
+      },
+      "metrics_theta_020": {
+        "total_samples": 1280,
+        "correct_samples": 1187,
+        "accuracy": 0.9273,
+        "macro_f1_4cmd": 0.9277,
+        "macro_f1_5class": 0.9277,
+        "min_command_recall": 0.9625,
+        "oov_fa_count": 76,
+        "oov_fa_rate": 0.1187,
+        "reject_precision": 0.9792,
+        "reject_recall": 0.8812,
+        "confusion_matrix": [
+          [
+            154,
+            1,
+            0,
+            0,
+            5
+          ],
+          [
+            4,
+            156,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            154,
+            0,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            159,
+            1
+          ],
+          [
+            14,
+            34,
+            18,
+            10,
+            564
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.8953,
+            "recall": 0.9625,
+            "f1": 0.9277,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.8168,
+            "recall": 0.975,
+            "f1": 0.8889,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.8953,
+            "recall": 0.9625,
+            "f1": 0.9277,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9408,
+            "recall": 0.9938,
+            "f1": 0.9666,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9792,
+            "recall": 0.8812,
+            "f1": 0.9276,
+            "support": 640
+          }
+        }
+      },
+      "metrics_argmax": {
+        "total_samples": 1280,
+        "correct_samples": 1200,
+        "accuracy": 0.9375,
+        "macro_f1_4cmd": 0.9356,
+        "macro_f1_5class": 0.9365,
+        "min_command_recall": 0.9187,
+        "oov_fa_count": 53,
+        "oov_fa_rate": 0.0828,
+        "reject_precision": 0.9639,
+        "reject_recall": 0.9172,
+        "confusion_matrix": [
+          [
+            153,
+            1,
+            0,
+            0,
+            6
+          ],
+          [
+            4,
+            155,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            147,
+            0,
+            13
+          ],
+          [
+            0,
+            0,
+            0,
+            158,
+            2
+          ],
+          [
+            11,
+            26,
+            12,
+            4,
+            587
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9107,
+            "recall": 0.9563,
+            "f1": 0.9329,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.8516,
+            "recall": 0.9688,
+            "f1": 0.9064,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.9245,
+            "recall": 0.9187,
+            "f1": 0.9216,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9753,
+            "recall": 0.9875,
+            "f1": 0.9814,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9639,
+            "recall": 0.9172,
+            "f1": 0.94,
+            "support": 640
+          }
+        }
+      }
+    }
+  },
+  "e2_scaled_304k_seed42": {
+    "training_meta": {
+      "model_family": "e2_scaled_304k",
+      "seed": 42,
+      "trainable_params": 304277,
+      "best_epoch": 36,
+      "epochs_trained": 40,
+      "training_time_sec": 111.55,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\checkpoints\\e2_scaled_304k_seed42.pt",
+      "checkpoint_sha256": "0870b6222d50a93d2689870288727f56862cee305b64b4808edd69f8640afbbc"
+    },
+    "evaluation": {
+      "checkpoint_epoch": 36,
+      "train_loss": 0.0788,
+      "train_acc": 0.9744,
+      "val_loss": 0.1999,
+      "val_acc_during_train": 0.9414,
+      "checkpoint_size_kb": 3592.8,
+      "benchmarks": {
+        "cpu_latency_ms": 2.639,
+        "device_latency_ms": 2.381,
+        "vram_mb": 336.56
+      },
+      "metrics_theta_020": {
+        "total_samples": 1280,
+        "correct_samples": 1195,
+        "accuracy": 0.9336,
+        "macro_f1_4cmd": 0.9344,
+        "macro_f1_5class": 0.9342,
+        "min_command_recall": 0.9563,
+        "oov_fa_count": 75,
+        "oov_fa_rate": 0.1172,
+        "reject_precision": 0.9895,
+        "reject_recall": 0.8828,
+        "confusion_matrix": [
+          [
+            153,
+            2,
+            0,
+            0,
+            5
+          ],
+          [
+            2,
+            158,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            159,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            13,
+            30,
+            20,
+            12,
+            565
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9107,
+            "recall": 0.9563,
+            "f1": 0.9329,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.8316,
+            "recall": 0.9875,
+            "f1": 0.9029,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.8883,
+            "recall": 0.9938,
+            "f1": 0.9381,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9302,
+            "recall": 1.0,
+            "f1": 0.9639,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9895,
+            "recall": 0.8828,
+            "f1": 0.9331,
+            "support": 640
+          }
+        }
+      },
+      "metrics_argmax": {
+        "total_samples": 1280,
+        "correct_samples": 1205,
+        "accuracy": 0.9414,
+        "macro_f1_4cmd": 0.9414,
+        "macro_f1_5class": 0.9415,
+        "min_command_recall": 0.9563,
+        "oov_fa_count": 58,
+        "oov_fa_rate": 0.0906,
+        "reject_precision": 0.9765,
+        "reject_recall": 0.9094,
+        "confusion_matrix": [
+          [
+            153,
+            1,
+            0,
+            0,
+            6
+          ],
+          [
+            2,
+            157,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            155,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            158,
+            2
+          ],
+          [
+            10,
+            23,
+            18,
+            7,
+            582
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9273,
+            "recall": 0.9563,
+            "f1": 0.9415,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.8674,
+            "recall": 0.9812,
+            "f1": 0.9208,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.896,
+            "recall": 0.9688,
+            "f1": 0.9309,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9576,
+            "recall": 0.9875,
+            "f1": 0.9723,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9765,
+            "recall": 0.9094,
+            "f1": 0.9417,
+            "support": 640
+          }
+        }
+      }
+    }
+  },
+  "e2_scaled_304k_seed43": {
+    "training_meta": {
+      "model_family": "e2_scaled_304k",
+      "seed": 43,
+      "trainable_params": 304277,
+      "best_epoch": 39,
+      "epochs_trained": 40,
+      "training_time_sec": 100.9,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\checkpoints\\e2_scaled_304k_seed43.pt",
+      "checkpoint_sha256": "a1969f6e38a2d08d92f9d59965922897195d7d4acdc02d2d6e43893e7ad74668"
+    },
+    "evaluation": {
+      "checkpoint_epoch": 39,
+      "train_loss": 0.0781,
+      "train_acc": 0.9744,
+      "val_loss": 0.1909,
+      "val_acc_during_train": 0.943,
+      "checkpoint_size_kb": 3592.8,
+      "benchmarks": {
+        "cpu_latency_ms": 3.554,
+        "device_latency_ms": 2.655,
+        "vram_mb": 340.06
+      },
+      "metrics_theta_020": {
+        "total_samples": 1280,
+        "correct_samples": 1197,
+        "accuracy": 0.9352,
+        "macro_f1_4cmd": 0.936,
+        "macro_f1_5class": 0.9357,
+        "min_command_recall": 0.9625,
+        "oov_fa_count": 76,
+        "oov_fa_rate": 0.1187,
+        "reject_precision": 0.9947,
+        "reject_recall": 0.8812,
+        "confusion_matrix": [
+          [
+            154,
+            3,
+            0,
+            0,
+            3
+          ],
+          [
+            1,
+            159,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            160,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            12,
+            27,
+            23,
+            14,
+            564
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9222,
+            "recall": 0.9625,
+            "f1": 0.9419,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.8413,
+            "recall": 0.9938,
+            "f1": 0.9112,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.8743,
+            "recall": 1.0,
+            "f1": 0.9329,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9195,
+            "recall": 1.0,
+            "f1": 0.9581,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9947,
+            "recall": 0.8812,
+            "f1": 0.9345,
+            "support": 640
+          }
+        }
+      },
+      "metrics_argmax": {
+        "total_samples": 1280,
+        "correct_samples": 1207,
+        "accuracy": 0.943,
+        "macro_f1_4cmd": 0.9435,
+        "macro_f1_5class": 0.9434,
+        "min_command_recall": 0.9563,
+        "oov_fa_count": 63,
+        "oov_fa_rate": 0.0984,
+        "reject_precision": 0.988,
+        "reject_recall": 0.9016,
+        "confusion_matrix": [
+          [
+            153,
+            2,
+            0,
+            0,
+            5
+          ],
+          [
+            1,
+            159,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            158,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            160,
+            0
+          ],
+          [
+            10,
+            26,
+            18,
+            9,
+            577
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9329,
+            "recall": 0.9563,
+            "f1": 0.9444,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.8503,
+            "recall": 0.9938,
+            "f1": 0.9164,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.8977,
+            "recall": 0.9875,
+            "f1": 0.9405,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9467,
+            "recall": 1.0,
+            "f1": 0.9726,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.988,
+            "recall": 0.9016,
+            "f1": 0.9428,
+            "support": 640
+          }
+        }
+      }
+    }
+  },
+  "e2_scaled_304k_seed44": {
+    "training_meta": {
+      "model_family": "e2_scaled_304k",
+      "seed": 44,
+      "trainable_params": 304277,
+      "best_epoch": 28,
+      "epochs_trained": 36,
+      "training_time_sec": 98.16,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v12\\checkpoints\\e2_scaled_304k_seed44.pt",
+      "checkpoint_sha256": "71f609e54f85f7ac24e9a1aed58e261fdb6c5b7185758b0c7b6b5c015714d2d1"
+    },
+    "evaluation": {
+      "checkpoint_epoch": 28,
+      "train_loss": 0.1025,
+      "train_acc": 0.9649,
+      "val_loss": 0.2441,
+      "val_acc_during_train": 0.932,
+      "checkpoint_size_kb": 3592.8,
+      "benchmarks": {
+        "cpu_latency_ms": 3.001,
+        "device_latency_ms": 2.719,
+        "vram_mb": 343.56
+      },
+      "metrics_theta_020": {
+        "total_samples": 1280,
+        "correct_samples": 1176,
+        "accuracy": 0.9187,
+        "macro_f1_4cmd": 0.9238,
+        "macro_f1_5class": 0.9219,
+        "min_command_recall": 0.95,
+        "oov_fa_count": 92,
+        "oov_fa_rate": 0.1437,
+        "reject_precision": 0.9803,
+        "reject_recall": 0.8562,
+        "confusion_matrix": [
+          [
+            152,
+            1,
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            160,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            157,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            159,
+            1
+          ],
+          [
+            17,
+            41,
+            23,
+            11,
+            548
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.8994,
+            "recall": 0.95,
+            "f1": 0.924,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.7921,
+            "recall": 1.0,
+            "f1": 0.884,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.8722,
+            "recall": 0.9812,
+            "f1": 0.9235,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9353,
+            "recall": 0.9938,
+            "f1": 0.9636,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9803,
+            "recall": 0.8562,
+            "f1": 0.9141,
+            "support": 640
+          }
+        }
+      },
+      "metrics_argmax": {
+        "total_samples": 1280,
+        "correct_samples": 1193,
+        "accuracy": 0.932,
+        "macro_f1_4cmd": 0.9346,
+        "macro_f1_5class": 0.9337,
+        "min_command_recall": 0.95,
+        "oov_fa_count": 68,
+        "oov_fa_rate": 0.1062,
+        "reject_precision": 0.9695,
+        "reject_recall": 0.8938,
+        "confusion_matrix": [
+          [
+            152,
+            1,
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            159,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            153,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            0,
+            157,
+            3
+          ],
+          [
+            10,
+            33,
+            17,
+            8,
+            572
+          ]
+        ],
+        "per_class": {
+          "TRAI": {
+            "precision": 0.9383,
+            "recall": 0.95,
+            "f1": 0.9441,
+            "support": 160
+          },
+          "PHAI": {
+            "precision": 0.8238,
+            "recall": 0.9938,
+            "f1": 0.9008,
+            "support": 160
+          },
+          "LEN": {
+            "precision": 0.9,
+            "recall": 0.9563,
+            "f1": 0.9273,
+            "support": 160
+          },
+          "XUONG": {
+            "precision": 0.9515,
+            "recall": 0.9812,
+            "f1": 0.9662,
+            "support": 160
+          },
+          "REJECT": {
+            "precision": 0.9695,
+            "recall": 0.8938,
+            "f1": 0.9301,
+            "support": 640
+          }
+        }
+      }
+    }
+  }
+}

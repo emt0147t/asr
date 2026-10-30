@@ -1,0 +1,9 @@
+sequence_length_n,profile,event_precision,event_recall,event_f1,exact_sequence_match_pct,duplicate_rate_pct,latency_p50_ms,latency_p95_ms,tp,fp,fn,duplicates,total_trials,exact_matches
+3,legacy_v11,70.83,35.42,47.22,0.0,0.0,190.0,368.0,17,7,31,0,16,0
+3,continuous_valley,95.74,93.75,94.74,81.25,4.26,130.0,140.0,45,2,3,2,16,13
+5,legacy_v11,85.71,30.0,44.44,0.0,3.57,220.0,540.0,24,4,56,1,16,0
+5,continuous_valley,98.75,98.75,98.75,93.75,1.25,120.0,150.0,79,1,1,1,16,15
+10,legacy_v11,85.0,21.25,34.0,0.0,0.0,270.0,530.0,34,6,126,0,16,0
+10,continuous_valley,98.11,97.5,97.81,75.0,1.26,120.0,140.0,156,3,4,2,16,12
+20,legacy_v11,85.71,22.5,35.64,0.0,0.0,185.0,564.5,72,12,248,0,16,0
+20,continuous_valley,98.12,98.12,98.12,68.75,1.25,120.0,150.0,314,6,6,4,16,11
