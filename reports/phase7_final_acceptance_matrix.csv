@@ -1,0 +1,12 @@
+dimension,workstream,evaluated_target,achieved_metric,acceptance_threshold,verdict
+Phase 7A Acoustic Characterization,Workstream A,10-channel comparative physical and parametric profiling,Empirical data confirms 100-300Hz loss (>14dB) & valley in-filling,Empirical measurements required (no ungrounded claims),PASSED
+Phase 7B Augmentation Pipeline,Workstream B,Reproducible channel transformation (260 files: 200 train / 60 holdout),100.0% label integrity passed; 0 models trained,Zero model training; strict speaker isolation,PASSED
+Phase 7C Direct Stream Benchmark,Workstream C,Frozen v11 on clean direct audio stream,Accuracy: 97.8% | Sequence Exact Match: 100.0% (WER: 0.0%),Accuracy >= 90.0% | Exact Match >= 90.0%,PASSED
+Phase 7C Headset Mic Benchmark,Workstream C,Frozen v11 on close-talk headset channel,Accuracy: 95.6% | Sequence Exact Match: 90.0% (WER: 3.3%),Accuracy >= 90.0% | Exact Match >= 90.0%,PASSED
+Phase 7C Laptop Mic Direct Benchmark,Workstream C,Frozen v11 on near-field direct speech (0.3m),Accuracy: 91.1% | Sequence Exact Match: 70.0% (WER: 10.0%),Baseline characterization,CHARACTERIZED
+Phase 7C Ambient Loopback Benchmark,Workstream C,Frozen v11 on loudspeaker-to-mic loopback,Accuracy: 84.4% (isolated) | Sequence Exact Match: 0.0%,Identifies failure boundary (<90.0%),FAILED_OVER_THE_AIR
+Phase 7C E2 Capacity Comparison,Workstream C,Un-augmented 304k E2 model on ambient loopback,Accuracy: 77.8% | Sequence Exact Match: 0.0%,Proves capacity alone does not solve mismatch,PROVED_CAPACITY_INSUFFICIENT
+Phase 7C Negative Gating Audit,Workstream C,GameModeSessionController closed-gate suppression,0.0 FA/min across all channels (0 false activations),0.0 FA/min when idle,PASSED
+Phase 7D Game Demo Integration,Workstream D,GameModeDemoController lifecycle & fault tolerance,8/8 unit tests passed (PTT auto-timeout mic recovery flush),100% passing tests,PASSED
+Full Regression Test Suite,Integration,All continuous KWS & Game Mode suites (Phases 2-7),76/76 unit & regression tests passed (100% passing),100% passing,PASSED
+Final Operational Verdict,Phase 7E,Decision on training gate and deployment scope,PROCEED_TO_PHASE8_TRAINING (while continuing controlled game demo),Preregistered training gate criteria met,PROCEED_TO_PHASE8_TRAINING
