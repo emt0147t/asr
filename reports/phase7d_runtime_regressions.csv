@@ -1,0 +1,11 @@
+test_id,lifecycle_scenario,tested_mechanism,expected_behavior,achieved_behavior,verdict
+TEST-01-SESSION-PTT,Session Activation and PTT,start_session() & ptt_press(),Clean transitions between IDLE and listening states,Transitions verified (IDLE -> LISTENING_TIMEOUT -> LISTENING_PTT -> IDLE),PASSED
+TEST-02-SESSION-TIMEOUT,Session Timeout Expiry,session_timeout_sec=0.1s,Auto-closes to IDLE and drops audio when expired,Auto-closed to IDLE; 0 post-expiry chunks enqueued,PASSED
+TEST-03-MIC-UNAVAILABLE,Microphone Unavailable / Capture Error,feed_audio_chunk(capture_error=...),Graceful transition to ERROR_MIC_UNAVAILABLE without crash,Clean transition to ERROR_MIC_UNAVAILABLE; 0 uncaught exceptions,PASSED
+TEST-04-QUEUE-OVERFLOW,Queue Overflow Resilience,feed 15 chunks into size-5 queue,Drops oldest chunks and increments dropped_chunks_count,Queue bounded at 5; 10 dropped chunks tracked,PASSED
+TEST-05-FIFO-ORDERING,FIFO Event Ordering,Continuous LEN -> LEN -> PHAI,Events preserve chronological order,Emitted exactly [LEN, LEN, PHAI] in order,PASSED
+TEST-06-SAME-LABEL-REPEATS,Repeated Same-Label Commands,Valley separation between LEN and LEN,Emits two distinct events for repeated commands,Emitted 2 separate LEN events across acoustic valley,PASSED
+TEST-07-DUPLICATE-PREVENTION,Duplicate Action Prevention,Duplicate emission within <120ms,Suppresses immediate bounce duplicates,Suppressed 0ms repeat emission; exactly 1 event emitted,PASSED
+TEST-08-PENDING-FLUSH,Pending Utterance Stream Flush,flush_and_close() during active utterance,Recovers trailing speech before closing session,Flushed and emitted pending LEN; closed session to IDLE,PASSED
+TEST-09-UI-FEEDBACK-CONTRACT,UI Feedback Contract,on_state_callback & on_event_callback,Never emit success before event delivery to consumer,COMMAND_EMITTED fired strictly on consumer queue delivery,PASSED
+TEST-10-PRODUCTION-DEFAULT,Production Default Isolation,LiveKWSPipeline default instantiation,Default profile is legacy_v11 with UtteranceSegmenter,Default is legacy_v11; Game Mode is strictly opt-in,PASSED
