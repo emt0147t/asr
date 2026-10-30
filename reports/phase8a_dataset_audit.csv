@@ -1,0 +1,8 @@
+dataset_partition,total_files,independent_source_clips,unique_speakers,classes_covered,known_speakers_pct,device_metadata,environment_metadata,speaker_overlap_with_holdout,leakage_status
+v12_train_clean,5440,5440,700,"LEN(680), XUONG(680), TRAI(680), PHAI(680), REJECT(2720)",82.5,Standardized 16k Float32,Clean studio / synthetic mix,0,LEAKAGE_SAFE
+v12_val_clean,1280,1280,164,"LEN(160), XUONG(160), TRAI(160), PHAI(160), REJECT(640)",82.5,Standardized 16k Float32,Clean studio / synthetic mix,0,LEAKAGE_SAFE
+v12_test_clean,1280,1280,168,"LEN(160), XUONG(160), TRAI(160), PHAI(160), REJECT(640)",82.5,Standardized 16k Float32,Clean studio / synthetic mix,0,LEAKAGE_SAFE
+v13_confirmatory_raw,1000,1000,8,"LEN(50), XUONG(50), TRAI(50), PHAI(50), REJECT(800)",80.0,Realtek / Studio condenser,Controlled acoustic lab,3,PARTITIONED_BY_SPEAKER
+phase7b_aug_train,200,128,5,"LEN(50), XUONG(50), TRAI(50), PHAI(50)",100.0,Parametric Mic EQ & RIR,Simulated rooms RT60 0.15-0.45s,0,LEAKAGE_SAFE
+phase7b_aug_holdout,60,60,3,"LEN(15), XUONG(15), TRAI(15), PHAI(15)",100.0,Parametric Mic EQ & RIR,Simulated rooms RT60 0.30-0.65s,3,QUARANTINED_EVALUATION
+phase6_1a_holdout,55,55,3,"Continuous sequences: LEN, XUONG, TRAI, PHAI",100.0,Multi-command concatenations,0ms and 50ms gaps,3,QUARANTINED_EVALUATION
