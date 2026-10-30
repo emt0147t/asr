@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "phase": "PHASE_8D_EVALUATION_PROTOCOL",
+    "version": "1.0.0",
+    "channels_evaluated": [
+      "direct_digital_stream",
+      "close_talk_headset",
+      "laptop_mic_direct",
+      "ambient_loudspeaker_loopback"
+    ],
+    "classes": [
+      "TRAI",
+      "PHAI",
+      "LEN",
+      "XUONG",
+      "REJECT"
+    ],
+    "decision_threshold_theta_cmd": 0.2
+  },
+  "acceptance_criteria": {
+    "direct_digital_stream": {
+      "classification_accuracy_pct": {
+        "threshold": 90.0,
+        "operator": ">="
+      },
+      "macro_f1_pct": {
+        "threshold": 90.0,
+        "operator": ">="
+      },
+      "sequence_exact_match_0ms_pct": {
+        "threshold": 90.0,
+        "operator": ">="
+      },
+      "sequence_exact_match_50ms_pct": {
+        "threshold": 90.0,
+        "operator": ">="
+      },
+      "sequence_wer_pct": {
+        "threshold": 10.0,
+        "operator": "<="
+      }
+    },
+    "close_talk_headset": {
+      "classification_accuracy_pct": {
+        "threshold": 90.0,
+        "operator": ">="
+      },
+      "macro_f1_pct": {
+        "threshold": 88.0,
+        "operator": ">="
+      },
+      "sequence_exact_match_0ms_pct": {
+        "threshold": 85.0,
+        "operator": ">="
+      },
+      "sequence_exact_match_50ms_pct": {
+        "threshold": 85.0,
+        "operator": ">="
+      }
+    },
+    "laptop_mic_direct": {
+      "classification_accuracy_pct": {
+        "threshold": 80.0,
+        "operator": ">="
+      },
+      "macro_f1_pct": {
+        "threshold": 75.0,
+        "operator": ">="
+      }
+    },
+    "ambient_loudspeaker_loopback": {
+      "accuracy_improvement_vs_arm_a": {
+        "threshold": 10.0,
+        "operator": ">="
+      },
+      "sequence_exact_match_pct": {
+        "threshold": 10.0,
+        "operator": ">="
+      }
+    },
+    "runtime_safety_and_latency": {
+      "duplicate_events_emitted": {
+        "threshold": 0,
+        "operator": "=="
+      },
+      "session_gate_closed_false_activations": {
+        "threshold": 0,
+        "operator": "=="
+      },
+      "inference_latency_p50_ms": {
+        "threshold": 20.0,
+        "operator": "<="
+      }
+    }
+  }
+}
