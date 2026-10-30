@@ -1,0 +1,35 @@
+{
+  "arm_b_138k_aug_seed42": {
+    "cold_latency_ms": 2.57,
+    "inference_only_p50_ms": 0.24,
+    "inference_only_p90_ms": 0.26,
+    "inference_only_p95_ms": 0.27,
+    "frontend_p50_ms": 2.07,
+    "frontend_plus_inference_p50_ms": 2.29,
+    "frontend_plus_inference_p95_ms": 2.45,
+    "model_file_size_kb": 542.7,
+    "passes_latency_budget": true
+  },
+  "arm_b_138k_aug_seed43": {
+    "cold_latency_ms": 2.59,
+    "inference_only_p50_ms": 0.22,
+    "inference_only_p90_ms": 0.25,
+    "inference_only_p95_ms": 0.25,
+    "frontend_p50_ms": 2.04,
+    "frontend_plus_inference_p50_ms": 2.26,
+    "frontend_plus_inference_p95_ms": 2.34,
+    "model_file_size_kb": 542.7,
+    "passes_latency_budget": true
+  },
+  "arm_b_138k_aug_seed44": {
+    "cold_latency_ms": 2.89,
+    "inference_only_p50_ms": 0.24,
+    "inference_only_p90_ms": 0.27,
+    "inference_only_p95_ms": 0.27,
+    "frontend_p50_ms": 2.07,
+    "frontend_plus_inference_p50_ms": 2.31,
+    "frontend_plus_inference_p95_ms": 2.41,
+    "model_file_size_kb": 542.7,
+    "passes_latency_budget": true
+  }
+}
