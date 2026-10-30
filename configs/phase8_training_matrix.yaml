@@ -1,0 +1,95 @@
+# Phase 8: Controlled Acoustic Channel Augmentation Research
+# Training Matrix Configuration (2 x 2 Factorial Design)
+# Repository: D:\trainidentificationaudio
+# Base Commit: 91d91dbf6ec23486cb6f95e0a62a48d590360bad
+
+experiment_metadata:
+  phase: "PHASE_8_CONTROLLED_ACOUSTIC_AUGMENTATION"
+  governance:
+    - "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED"
+    - "NOT_VALIDATED_ON_NATURAL_SPEECH"
+    - "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION"
+    - "NOT_VALIDATED_PENDING_DATA"
+  created_at: "2026-10-31T00:45:00+07:00"
+
+common_training_settings:
+  sample_rate_hz: 16000
+  target_samples: 16000
+  num_classes: 5
+  classes: ["TRAI", "PHAI", "LEN", "XUONG", "REJECT"]
+  class_weights: [1.0, 1.0, 1.0, 1.0, 0.5]
+  decision_threshold_theta_cmd: 0.20
+  frontend:
+    name: "LogMelFrontend"
+    n_fft: 512
+    win_length: 400
+    hop_length: 160
+    n_mels: 40
+    mel_scale: "slaney"
+    norm: "slaney"
+    f_min: 20.0
+    f_max: 8000.0
+    eps: 1e-6
+  optimizer:
+    name: "AdamW"
+    learning_rate: 1e-3
+    weight_decay: 0.01
+  scheduler:
+    name: "CosineAnnealingLR"
+    t_max: 40
+    eta_min: 1e-5
+  training_budget:
+    batch_size: 64
+    max_epochs: 40
+    early_stopping_patience: 10
+  selection_criterion: "highest_val_macro_f1"
+
+dataset_splits:
+  train_manifest: "experiments/vieneu_kws_research_v12/manifests/train_manifest.csv"
+  train_samples: 5440
+  val_manifest: "experiments/vieneu_kws_research_v12/manifests/val_manifest.csv"
+  val_samples: 1280
+  test_clean_manifest: "experiments/vieneu_kws_research_v12/manifests/test_manifest.csv"
+  test_clean_samples: 1280
+  holdout_quarantined_manifest: "experiments/vieneu_kws_research_v13_4/reports/phase6_1a_holdout_manifest.csv"
+  holdout_quarantined_trials: 55
+
+experimental_arms:
+  arm_a:
+    name: "Baseline_138k_NoAug"
+    architecture: "CorrectedVietnameseKWSNet"
+    parameters: 138469
+    acoustic_augmentation: false
+    seeds: [42, 43, 44]
+    description: "Baseline 138k architecture trained with standard clean augmentation (random shift/gain only)."
+
+  arm_b:
+    name: "AcousticAug_138k"
+    architecture: "CorrectedVietnameseKWSNet"
+    parameters: 138469
+    acoustic_augmentation: true
+    seeds: [42, 43, 44]
+    description: "Candidate 138k architecture trained with Phase 7B acoustic channel augmentation (RIR, mic EQ, low-cut, background noise)."
+
+  arm_c:
+    name: "Scaled_304k_NoAug"
+    architecture: "ScaledVietnameseKWSNet_E2"
+    parameters: 304277
+    acoustic_augmentation: false
+    seeds: [42, 43, 44]
+    description: "Scaled capacity control (304k) trained with standard clean augmentation."
+
+  arm_d:
+    name: "AcousticAug_304k"
+    architecture: "ScaledVietnameseKWSNet_E2"
+    parameters: 304277
+    acoustic_augmentation: true
+    seeds: [42, 43, 44]
+    description: "Scaled capacity candidate (304k) trained with Phase 7B acoustic channel augmentation."
+
+external_reference_baseline:
+  name: "Frozen_v11_Historical"
+  checkpoint: "experiments/vieneu_kws_research_v11/checkpoints/variant_v11_hard_negative_weighted_seed42.pt"
+  onnx: "experiments/vieneu_kws_research_v13_4/bundle/onnx/vietnamese_kws_v11.onnx"
+  sha256: "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99"
+  parameters: 138469
