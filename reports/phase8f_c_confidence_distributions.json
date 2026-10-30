@@ -1,0 +1,1003 @@
+{
+  "arm_a_138k_noaug_seed42": {
+    "vietnamese_conversation": {
+      "fa_count": 16,
+      "duration_min": 2.4,
+      "far_per_min": 6.67,
+      "p50_conf": 0.614,
+      "p90_conf": 0.95,
+      "p99_conf": 0.983,
+      "max_conf": 0.986,
+      "class_breakdown": {
+        "TRAI": 1,
+        "PHAI": 1,
+        "LEN": 10,
+        "XUONG": 4
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 1,
+      "duration_min": 3.33,
+      "far_per_min": 0.3,
+      "p50_conf": 0.352,
+      "p90_conf": 0.352,
+      "p99_conf": 0.352,
+      "max_conf": 0.352,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 1
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 28,
+      "duration_min": 2.4,
+      "far_per_min": 11.65,
+      "p50_conf": 0.667,
+      "p90_conf": 0.949,
+      "p99_conf": 0.989,
+      "max_conf": 0.992,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 19,
+        "XUONG": 9
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 10,
+      "duration_min": 3.33,
+      "far_per_min": 3.0,
+      "p50_conf": 0.225,
+      "p90_conf": 0.226,
+      "p99_conf": 0.226,
+      "max_conf": 0.226,
+      "class_breakdown": {
+        "TRAI": 10,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_a_138k_noaug_seed43": {
+    "vietnamese_conversation": {
+      "fa_count": 12,
+      "duration_min": 2.4,
+      "far_per_min": 5.0,
+      "p50_conf": 0.841,
+      "p90_conf": 0.984,
+      "p99_conf": 0.992,
+      "max_conf": 0.992,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 6,
+        "XUONG": 6
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 1,
+      "duration_min": 3.33,
+      "far_per_min": 0.3,
+      "p50_conf": 0.895,
+      "p90_conf": 0.895,
+      "p99_conf": 0.895,
+      "max_conf": 0.895,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 1
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 44,
+      "duration_min": 2.4,
+      "far_per_min": 18.31,
+      "p50_conf": 0.501,
+      "p90_conf": 0.942,
+      "p99_conf": 0.986,
+      "max_conf": 0.987,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 14,
+        "XUONG": 30
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 0,
+      "duration_min": 3.33,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_a_138k_noaug_seed44": {
+    "vietnamese_conversation": {
+      "fa_count": 11,
+      "duration_min": 2.4,
+      "far_per_min": 4.58,
+      "p50_conf": 0.596,
+      "p90_conf": 0.887,
+      "p99_conf": 0.973,
+      "max_conf": 0.983,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 1,
+        "LEN": 2,
+        "XUONG": 8
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 0,
+      "duration_min": 3.33,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 32,
+      "duration_min": 2.4,
+      "far_per_min": 13.31,
+      "p50_conf": 0.426,
+      "p90_conf": 0.838,
+      "p99_conf": 0.918,
+      "max_conf": 0.918,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 21,
+        "XUONG": 11
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 0,
+      "duration_min": 3.33,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_b_138k_aug_seed42": {
+    "vietnamese_conversation": {
+      "fa_count": 37,
+      "duration_min": 2.4,
+      "far_per_min": 15.42,
+      "p50_conf": 0.536,
+      "p90_conf": 0.958,
+      "p99_conf": 0.997,
+      "max_conf": 0.998,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 5,
+        "LEN": 20,
+        "XUONG": 12
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 2,
+      "duration_min": 3.33,
+      "far_per_min": 0.6,
+      "p50_conf": 0.394,
+      "p90_conf": 0.539,
+      "p99_conf": 0.571,
+      "max_conf": 0.575,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 1,
+        "LEN": 0,
+        "XUONG": 1
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 69,
+      "duration_min": 2.4,
+      "far_per_min": 28.71,
+      "p50_conf": 0.729,
+      "p90_conf": 0.981,
+      "p99_conf": 0.997,
+      "max_conf": 0.997,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 1,
+        "LEN": 11,
+        "XUONG": 57
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 15,
+      "duration_min": 3.33,
+      "far_per_min": 4.5,
+      "p50_conf": 0.235,
+      "p90_conf": 0.469,
+      "p99_conf": 0.469,
+      "max_conf": 0.469,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 15,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_b_138k_aug_seed43": {
+    "vietnamese_conversation": {
+      "fa_count": 42,
+      "duration_min": 2.4,
+      "far_per_min": 17.5,
+      "p50_conf": 0.657,
+      "p90_conf": 0.966,
+      "p99_conf": 0.997,
+      "max_conf": 0.998,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 1,
+        "LEN": 33,
+        "XUONG": 8
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 2,
+      "duration_min": 3.33,
+      "far_per_min": 0.6,
+      "p50_conf": 0.5,
+      "p90_conf": 0.679,
+      "p99_conf": 0.719,
+      "max_conf": 0.724,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 1,
+        "LEN": 0,
+        "XUONG": 1
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 81,
+      "duration_min": 2.4,
+      "far_per_min": 33.7,
+      "p50_conf": 0.611,
+      "p90_conf": 0.974,
+      "p99_conf": 0.997,
+      "max_conf": 0.997,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 1,
+        "LEN": 27,
+        "XUONG": 53
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 10,
+      "duration_min": 3.33,
+      "far_per_min": 3.0,
+      "p50_conf": 0.276,
+      "p90_conf": 0.325,
+      "p99_conf": 0.325,
+      "max_conf": 0.325,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 10
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_b_138k_aug_seed44": {
+    "vietnamese_conversation": {
+      "fa_count": 49,
+      "duration_min": 2.4,
+      "far_per_min": 20.42,
+      "p50_conf": 0.674,
+      "p90_conf": 0.983,
+      "p99_conf": 0.998,
+      "max_conf": 0.999,
+      "class_breakdown": {
+        "TRAI": 1,
+        "PHAI": 3,
+        "LEN": 36,
+        "XUONG": 9
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 4,
+      "duration_min": 3.33,
+      "far_per_min": 1.2,
+      "p50_conf": 0.39,
+      "p90_conf": 0.71,
+      "p99_conf": 0.806,
+      "max_conf": 0.817,
+      "class_breakdown": {
+        "TRAI": 1,
+        "PHAI": 1,
+        "LEN": 1,
+        "XUONG": 1
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 72,
+      "duration_min": 2.4,
+      "far_per_min": 29.96,
+      "p50_conf": 0.649,
+      "p90_conf": 0.966,
+      "p99_conf": 0.995,
+      "max_conf": 0.998,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 2,
+        "LEN": 30,
+        "XUONG": 40
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 10,
+      "duration_min": 3.33,
+      "far_per_min": 3.0,
+      "p50_conf": 0.398,
+      "p90_conf": 0.539,
+      "p99_conf": 0.539,
+      "max_conf": 0.539,
+      "class_breakdown": {
+        "TRAI": 5,
+        "PHAI": 0,
+        "LEN": 5,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_c_304k_noaug_seed42": {
+    "vietnamese_conversation": {
+      "fa_count": 21,
+      "duration_min": 2.4,
+      "far_per_min": 8.75,
+      "p50_conf": 0.638,
+      "p90_conf": 0.947,
+      "p99_conf": 0.987,
+      "max_conf": 0.997,
+      "class_breakdown": {
+        "TRAI": 1,
+        "PHAI": 3,
+        "LEN": 10,
+        "XUONG": 7
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 2,
+      "duration_min": 3.33,
+      "far_per_min": 0.6,
+      "p50_conf": 0.758,
+      "p90_conf": 0.851,
+      "p99_conf": 0.872,
+      "max_conf": 0.874,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 1,
+        "XUONG": 1
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 29,
+      "duration_min": 2.4,
+      "far_per_min": 12.07,
+      "p50_conf": 0.553,
+      "p90_conf": 0.913,
+      "p99_conf": 0.958,
+      "max_conf": 0.968,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 19,
+        "XUONG": 10
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 5,
+      "duration_min": 3.33,
+      "far_per_min": 1.5,
+      "p50_conf": 0.205,
+      "p90_conf": 0.205,
+      "p99_conf": 0.205,
+      "max_conf": 0.205,
+      "class_breakdown": {
+        "TRAI": 5,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_c_304k_noaug_seed43": {
+    "vietnamese_conversation": {
+      "fa_count": 10,
+      "duration_min": 2.4,
+      "far_per_min": 4.17,
+      "p50_conf": 0.691,
+      "p90_conf": 0.987,
+      "p99_conf": 0.989,
+      "max_conf": 0.989,
+      "class_breakdown": {
+        "TRAI": 1,
+        "PHAI": 0,
+        "LEN": 5,
+        "XUONG": 4
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 1,
+      "duration_min": 3.33,
+      "far_per_min": 0.3,
+      "p50_conf": 0.848,
+      "p90_conf": 0.848,
+      "p99_conf": 0.848,
+      "max_conf": 0.848,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 1,
+        "XUONG": 0
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 33,
+      "duration_min": 2.4,
+      "far_per_min": 13.73,
+      "p50_conf": 0.728,
+      "p90_conf": 0.908,
+      "p99_conf": 0.987,
+      "max_conf": 0.992,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 23,
+        "XUONG": 10
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 0,
+      "duration_min": 3.33,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_c_304k_noaug_seed44": {
+    "vietnamese_conversation": {
+      "fa_count": 14,
+      "duration_min": 2.4,
+      "far_per_min": 5.83,
+      "p50_conf": 0.56,
+      "p90_conf": 0.956,
+      "p99_conf": 0.98,
+      "max_conf": 0.98,
+      "class_breakdown": {
+        "TRAI": 1,
+        "PHAI": 3,
+        "LEN": 4,
+        "XUONG": 6
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 2,
+      "duration_min": 3.33,
+      "far_per_min": 0.6,
+      "p50_conf": 0.456,
+      "p90_conf": 0.567,
+      "p99_conf": 0.592,
+      "max_conf": 0.595,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 1,
+        "LEN": 0,
+        "XUONG": 1
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 33,
+      "duration_min": 2.4,
+      "far_per_min": 13.73,
+      "p50_conf": 0.635,
+      "p90_conf": 0.847,
+      "p99_conf": 0.879,
+      "max_conf": 0.881,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 25,
+        "XUONG": 8
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 0,
+      "duration_min": 3.33,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_d_304k_aug_seed42": {
+    "vietnamese_conversation": {
+      "fa_count": 45,
+      "duration_min": 2.4,
+      "far_per_min": 18.75,
+      "p50_conf": 0.685,
+      "p90_conf": 0.987,
+      "p99_conf": 0.999,
+      "max_conf": 1.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 5,
+        "LEN": 31,
+        "XUONG": 9
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 3,
+      "duration_min": 3.33,
+      "far_per_min": 0.9,
+      "p50_conf": 0.731,
+      "p90_conf": 0.732,
+      "p99_conf": 0.732,
+      "max_conf": 0.732,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 1,
+        "LEN": 1,
+        "XUONG": 1
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 70,
+      "duration_min": 2.4,
+      "far_per_min": 29.13,
+      "p50_conf": 0.68,
+      "p90_conf": 0.956,
+      "p99_conf": 0.994,
+      "max_conf": 0.999,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 3,
+        "LEN": 30,
+        "XUONG": 37
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 0,
+      "duration_min": 3.33,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_d_304k_aug_seed43": {
+    "vietnamese_conversation": {
+      "fa_count": 32,
+      "duration_min": 2.4,
+      "far_per_min": 13.33,
+      "p50_conf": 0.627,
+      "p90_conf": 0.99,
+      "p99_conf": 0.999,
+      "max_conf": 0.999,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 1,
+        "LEN": 20,
+        "XUONG": 11
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 3,
+      "duration_min": 3.33,
+      "far_per_min": 0.9,
+      "p50_conf": 0.644,
+      "p90_conf": 0.676,
+      "p99_conf": 0.683,
+      "max_conf": 0.684,
+      "class_breakdown": {
+        "TRAI": 1,
+        "PHAI": 0,
+        "LEN": 1,
+        "XUONG": 1
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 79,
+      "duration_min": 2.4,
+      "far_per_min": 32.87,
+      "p50_conf": 0.694,
+      "p90_conf": 0.975,
+      "p99_conf": 0.997,
+      "max_conf": 0.998,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 3,
+        "LEN": 28,
+        "XUONG": 48
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 25,
+      "duration_min": 3.33,
+      "far_per_min": 7.5,
+      "p50_conf": 0.527,
+      "p90_conf": 0.689,
+      "p99_conf": 0.689,
+      "max_conf": 0.689,
+      "class_breakdown": {
+        "TRAI": 5,
+        "PHAI": 0,
+        "LEN": 20,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "arm_d_304k_aug_seed44": {
+    "vietnamese_conversation": {
+      "fa_count": 19,
+      "duration_min": 2.4,
+      "far_per_min": 7.92,
+      "p50_conf": 0.501,
+      "p90_conf": 0.975,
+      "p99_conf": 0.999,
+      "max_conf": 0.999,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 2,
+        "LEN": 9,
+        "XUONG": 8
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 2,
+      "duration_min": 3.33,
+      "far_per_min": 0.6,
+      "p50_conf": 0.49,
+      "p90_conf": 0.525,
+      "p99_conf": 0.533,
+      "max_conf": 0.534,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 1,
+        "LEN": 0,
+        "XUONG": 1
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 31,
+      "duration_min": 2.4,
+      "far_per_min": 12.9,
+      "p50_conf": 0.642,
+      "p90_conf": 0.942,
+      "p99_conf": 0.988,
+      "max_conf": 0.997,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 5,
+        "LEN": 10,
+        "XUONG": 16
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 15,
+      "duration_min": 3.33,
+      "far_per_min": 4.5,
+      "p50_conf": 0.261,
+      "p90_conf": 0.547,
+      "p99_conf": 0.547,
+      "max_conf": 0.547,
+      "class_breakdown": {
+        "TRAI": 15,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  },
+  "frozen_v11_onnx": {
+    "vietnamese_conversation": {
+      "fa_count": 320,
+      "duration_min": 2.4,
+      "far_per_min": 133.33,
+      "p50_conf": 0.467,
+      "p90_conf": 0.786,
+      "p99_conf": 0.895,
+      "max_conf": 0.924,
+      "class_breakdown": {
+        "TRAI": 21,
+        "PHAI": 45,
+        "LEN": 24,
+        "XUONG": 230
+      }
+    },
+    "fleurs_natural_speech": {
+      "fa_count": 136,
+      "duration_min": 3.33,
+      "far_per_min": 40.8,
+      "p50_conf": 0.336,
+      "p90_conf": 0.502,
+      "p99_conf": 0.704,
+      "max_conf": 0.758,
+      "class_breakdown": {
+        "TRAI": 1,
+        "PHAI": 26,
+        "LEN": 41,
+        "XUONG": 68
+      }
+    },
+    "ambient_speaker_playback": {
+      "fa_count": 268,
+      "duration_min": 2.4,
+      "far_per_min": 111.51,
+      "p50_conf": 0.479,
+      "p90_conf": 0.736,
+      "p99_conf": 0.842,
+      "max_conf": 0.909,
+      "class_breakdown": {
+        "TRAI": 27,
+        "PHAI": 42,
+        "LEN": 8,
+        "XUONG": 191
+      }
+    },
+    "environmental_noise": {
+      "fa_count": 135,
+      "duration_min": 3.33,
+      "far_per_min": 40.5,
+      "p50_conf": 0.383,
+      "p90_conf": 0.662,
+      "p99_conf": 0.756,
+      "max_conf": 0.756,
+      "class_breakdown": {
+        "TRAI": 65,
+        "PHAI": 20,
+        "LEN": 0,
+        "XUONG": 50
+      }
+    },
+    "digital_silence": {
+      "fa_count": 0,
+      "duration_min": 1.0,
+      "far_per_min": 0.0,
+      "p50_conf": 0.0,
+      "p90_conf": 0.0,
+      "p99_conf": 0.0,
+      "max_conf": 0.0,
+      "class_breakdown": {
+        "TRAI": 0,
+        "PHAI": 0,
+        "LEN": 0,
+        "XUONG": 0
+      }
+    }
+  }
+}
