@@ -1,0 +1,37 @@
+corpus_a,corpus_b,corpus_a_size,corpus_b_size,audio_file_overlap_count,speaker_overlap_count,is_disjoint,leakage_risk
+V12 Training Set,V12 Training Set,5440,5440,5440,700,False,NO_LEAKAGE
+V12 Training Set,V12 Validation Set,5440,1280,0,0,True,NO_LEAKAGE
+V12 Training Set,V12 Test Benchmark,5440,1280,0,0,True,NO_LEAKAGE
+V12 Training Set,Phase 7B Augmentation Sources,5440,260,0,0,True,NO_LEAKAGE
+V12 Training Set,Phase 6.1A Sequence Benchmark,5440,55,0,0,True,NO_LEAKAGE
+V12 Training Set,Phase 8D Evaluation Manifest,5440,620,0,0,True,NO_LEAKAGE
+V12 Validation Set,V12 Training Set,1280,5440,0,0,True,NO_LEAKAGE
+V12 Validation Set,V12 Validation Set,1280,1280,1280,164,False,NO_LEAKAGE
+V12 Validation Set,V12 Test Benchmark,1280,1280,0,0,True,NO_LEAKAGE
+V12 Validation Set,Phase 7B Augmentation Sources,1280,260,0,0,True,NO_LEAKAGE
+V12 Validation Set,Phase 6.1A Sequence Benchmark,1280,55,0,0,True,NO_LEAKAGE
+V12 Validation Set,Phase 8D Evaluation Manifest,1280,620,0,0,True,NO_LEAKAGE
+V12 Test Benchmark,V12 Training Set,1280,5440,0,0,True,NO_LEAKAGE
+V12 Test Benchmark,V12 Validation Set,1280,1280,0,0,True,NO_LEAKAGE
+V12 Test Benchmark,V12 Test Benchmark,1280,1280,1280,168,False,NO_LEAKAGE
+V12 Test Benchmark,Phase 7B Augmentation Sources,1280,260,0,0,True,NO_LEAKAGE
+V12 Test Benchmark,Phase 6.1A Sequence Benchmark,1280,55,0,0,True,NO_LEAKAGE
+V12 Test Benchmark,Phase 8D Evaluation Manifest,1280,620,0,0,True,NO_LEAKAGE
+Phase 7B Augmentation Sources,V12 Training Set,260,5440,0,0,True,NO_LEAKAGE
+Phase 7B Augmentation Sources,V12 Validation Set,260,1280,0,0,True,NO_LEAKAGE
+Phase 7B Augmentation Sources,V12 Test Benchmark,260,1280,0,0,True,NO_LEAKAGE
+Phase 7B Augmentation Sources,Phase 7B Augmentation Sources,260,260,188,8,False,NO_LEAKAGE
+Phase 7B Augmentation Sources,Phase 6.1A Sequence Benchmark,260,55,38,3,False,NO_LEAKAGE
+Phase 7B Augmentation Sources,Phase 8D Evaluation Manifest,260,620,102,8,False,NO_LEAKAGE
+Phase 6.1A Sequence Benchmark,V12 Training Set,55,5440,0,0,True,NO_LEAKAGE
+Phase 6.1A Sequence Benchmark,V12 Validation Set,55,1280,0,0,True,NO_LEAKAGE
+Phase 6.1A Sequence Benchmark,V12 Test Benchmark,55,1280,0,0,True,NO_LEAKAGE
+Phase 6.1A Sequence Benchmark,Phase 7B Augmentation Sources,55,260,38,3,False,NO_LEAKAGE
+Phase 6.1A Sequence Benchmark,Phase 6.1A Sequence Benchmark,55,55,40,3,False,NO_LEAKAGE
+Phase 6.1A Sequence Benchmark,Phase 8D Evaluation Manifest,55,620,40,3,False,NO_LEAKAGE
+Phase 8D Evaluation Manifest,V12 Training Set,620,5440,0,0,True,NO_LEAKAGE
+Phase 8D Evaluation Manifest,V12 Validation Set,620,1280,0,0,True,NO_LEAKAGE
+Phase 8D Evaluation Manifest,V12 Test Benchmark,620,1280,0,0,True,NO_LEAKAGE
+Phase 8D Evaluation Manifest,Phase 7B Augmentation Sources,620,260,102,8,False,NO_LEAKAGE
+Phase 8D Evaluation Manifest,Phase 6.1A Sequence Benchmark,620,55,40,3,False,NO_LEAKAGE
+Phase 8D Evaluation Manifest,Phase 8D Evaluation Manifest,620,620,124,8,False,NO_LEAKAGE
