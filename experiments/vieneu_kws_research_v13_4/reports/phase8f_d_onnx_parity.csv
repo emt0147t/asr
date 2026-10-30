@@ -1,0 +1,4 @@
+model_id,seed,onnx_filename,onnx_sha256,file_size_kb,samples_evaluated,max_logit_abs_diff,max_prob_abs_diff,label_agreement_pct,passes_fp32_tolerance
+arm_b_138k_aug_seed42,42,arm_b_138k_aug_seed42.onnx,0970eeddcf99e3199e4c26e2f8ebe209a49678f8430a72c5ff2fe031a8d26f1a,542.7,100,2e-05,2.5e-06,100.0,True
+arm_b_138k_aug_seed43,43,arm_b_138k_aug_seed43.onnx,6b4e43de51c8bb4a1a3fea1b8b38b454671acc0e186162588b766ec505743ad1,542.7,100,1.91e-05,2.3e-06,100.0,True
+arm_b_138k_aug_seed44,44,arm_b_138k_aug_seed44.onnx,560b7a3621d4fd4e4cb74c3cbc289c062be53ecb18130dae7b7d93b70e9beb7b,542.7,100,1.62e-05,7e-07,100.0,True
