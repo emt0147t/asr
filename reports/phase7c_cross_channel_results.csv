@@ -1,0 +1,9 @@
+model,channel,accuracy_pct,macro_f1_pct,latency_p50_ms,latency_p95_ms,recall_TRAI,recall_PHAI,recall_LEN,recall_XUONG,recall_REJECT
+v11_frozen_138k,direct_stream,97.8,96.8,2.2,2.6,100.0,100.0,100.0,100.0,80.0
+v11_frozen_138k,headset,95.6,94.8,2.3,2.6,90.0,100.0,100.0,100.0,80.0
+v11_frozen_138k,laptop_mic_direct,91.1,86.8,2.3,2.4,90.0,100.0,100.0,100.0,40.0
+v11_frozen_138k,ambient_loudspeaker_loopback,84.4,77.3,2.3,2.4,70.0,100.0,100.0,100.0,20.0
+e2_scaled_304k,direct_stream,97.8,96.8,1.9,2.8,100.0,100.0,100.0,100.0,80.0
+e2_scaled_304k,headset,97.8,97.1,2.0,2.4,100.0,100.0,100.0,90.0,100.0
+e2_scaled_304k,laptop_mic_direct,97.8,96.8,2.0,4.3,100.0,100.0,100.0,100.0,80.0
+e2_scaled_304k,ambient_loudspeaker_loopback,77.8,76.0,2.0,2.5,30.0,80.0,100.0,90.0,100.0
