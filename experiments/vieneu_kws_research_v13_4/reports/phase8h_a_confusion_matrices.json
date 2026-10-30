@@ -1,0 +1,356 @@
+{
+  "arm_b_138k_aug_seed42": {
+    "classes": [
+      "TRAI",
+      "PHAI",
+      "LEN",
+      "XUONG",
+      "REJECT"
+    ],
+    "matrix": [
+      [
+        152,
+        5,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        160,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        160,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        160,
+        0
+      ],
+      [
+        12,
+        15,
+        38,
+        9,
+        566
+      ]
+    ],
+    "per_class_metrics": {
+      "TRAI": {
+        "tp": 152,
+        "fp": 12,
+        "fn": 8,
+        "precision": 92.68,
+        "recall": 95.0,
+        "f1": 93.83
+      },
+      "PHAI": {
+        "tp": 160,
+        "fp": 20,
+        "fn": 0,
+        "precision": 88.89,
+        "recall": 100.0,
+        "f1": 94.12
+      },
+      "LEN": {
+        "tp": 160,
+        "fp": 38,
+        "fn": 0,
+        "precision": 80.81,
+        "recall": 100.0,
+        "f1": 89.39
+      },
+      "XUONG": {
+        "tp": 160,
+        "fp": 9,
+        "fn": 0,
+        "precision": 94.67,
+        "recall": 100.0,
+        "f1": 97.26
+      },
+      "REJECT": {
+        "tp": 566,
+        "fp": 3,
+        "fn": 74,
+        "precision": 99.47,
+        "recall": 88.44,
+        "f1": 93.63
+      }
+    },
+    "continuous_metrics": {
+      "total_continuous_trials": 60,
+      "exact_sequence_matches": 60,
+      "exact_sequence_match_pct": 100.0,
+      "total_gt_commands": 180,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "sequence_wer_pct": 0.0,
+      "breakdown_by_gap": {
+        "0ms": {
+          "trials": 20,
+          "exact_matches": 20,
+          "exact_match_pct": 100.0,
+          "sequence_wer_pct": 0.0
+        },
+        "50ms": {
+          "trials": 20,
+          "exact_matches": 20,
+          "exact_match_pct": 100.0,
+          "sequence_wer_pct": 0.0
+        },
+        "100ms": {
+          "trials": 20,
+          "exact_matches": 20,
+          "exact_match_pct": 100.0,
+          "sequence_wer_pct": 0.0
+        }
+      }
+    }
+  },
+  "arm_b_138k_aug_seed43": {
+    "classes": [
+      "TRAI",
+      "PHAI",
+      "LEN",
+      "XUONG",
+      "REJECT"
+    ],
+    "matrix": [
+      [
+        159,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        160,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        159,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        154,
+        6
+      ],
+      [
+        14,
+        10,
+        28,
+        5,
+        583
+      ]
+    ],
+    "per_class_metrics": {
+      "TRAI": {
+        "tp": 159,
+        "fp": 14,
+        "fn": 1,
+        "precision": 91.91,
+        "recall": 99.38,
+        "f1": 95.5
+      },
+      "PHAI": {
+        "tp": 160,
+        "fp": 10,
+        "fn": 0,
+        "precision": 94.12,
+        "recall": 100.0,
+        "f1": 96.97
+      },
+      "LEN": {
+        "tp": 159,
+        "fp": 28,
+        "fn": 1,
+        "precision": 85.03,
+        "recall": 99.38,
+        "f1": 91.64
+      },
+      "XUONG": {
+        "tp": 154,
+        "fp": 5,
+        "fn": 6,
+        "precision": 96.86,
+        "recall": 96.25,
+        "f1": 96.55
+      },
+      "REJECT": {
+        "tp": 583,
+        "fp": 8,
+        "fn": 57,
+        "precision": 98.65,
+        "recall": 91.09,
+        "f1": 94.72
+      }
+    },
+    "continuous_metrics": {
+      "total_continuous_trials": 60,
+      "exact_sequence_matches": 60,
+      "exact_sequence_match_pct": 100.0,
+      "total_gt_commands": 180,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "sequence_wer_pct": 0.0,
+      "breakdown_by_gap": {
+        "0ms": {
+          "trials": 20,
+          "exact_matches": 20,
+          "exact_match_pct": 100.0,
+          "sequence_wer_pct": 0.0
+        },
+        "50ms": {
+          "trials": 20,
+          "exact_matches": 20,
+          "exact_match_pct": 100.0,
+          "sequence_wer_pct": 0.0
+        },
+        "100ms": {
+          "trials": 20,
+          "exact_matches": 20,
+          "exact_match_pct": 100.0,
+          "sequence_wer_pct": 0.0
+        }
+      }
+    }
+  },
+  "arm_b_138k_aug_seed44": {
+    "classes": [
+      "TRAI",
+      "PHAI",
+      "LEN",
+      "XUONG",
+      "REJECT"
+    ],
+    "matrix": [
+      [
+        159,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        160,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        160,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        159,
+        1
+      ],
+      [
+        16,
+        14,
+        52,
+        10,
+        548
+      ]
+    ],
+    "per_class_metrics": {
+      "TRAI": {
+        "tp": 159,
+        "fp": 16,
+        "fn": 1,
+        "precision": 90.86,
+        "recall": 99.38,
+        "f1": 94.93
+      },
+      "PHAI": {
+        "tp": 160,
+        "fp": 14,
+        "fn": 0,
+        "precision": 91.95,
+        "recall": 100.0,
+        "f1": 95.81
+      },
+      "LEN": {
+        "tp": 160,
+        "fp": 52,
+        "fn": 0,
+        "precision": 75.47,
+        "recall": 100.0,
+        "f1": 86.02
+      },
+      "XUONG": {
+        "tp": 159,
+        "fp": 10,
+        "fn": 1,
+        "precision": 94.08,
+        "recall": 99.38,
+        "f1": 96.66
+      },
+      "REJECT": {
+        "tp": 548,
+        "fp": 2,
+        "fn": 92,
+        "precision": 99.64,
+        "recall": 85.62,
+        "f1": 92.1
+      }
+    },
+    "continuous_metrics": {
+      "total_continuous_trials": 60,
+      "exact_sequence_matches": 60,
+      "exact_sequence_match_pct": 100.0,
+      "total_gt_commands": 180,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "sequence_wer_pct": 0.0,
+      "breakdown_by_gap": {
+        "0ms": {
+          "trials": 20,
+          "exact_matches": 20,
+          "exact_match_pct": 100.0,
+          "sequence_wer_pct": 0.0
+        },
+        "50ms": {
+          "trials": 20,
+          "exact_matches": 20,
+          "exact_match_pct": 100.0,
+          "sequence_wer_pct": 0.0
+        },
+        "100ms": {
+          "trials": 20,
+          "exact_matches": 20,
+          "exact_match_pct": 100.0,
+          "sequence_wer_pct": 0.0
+        }
+      }
+    }
+  }
+}

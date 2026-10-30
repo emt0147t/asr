@@ -1,0 +1,125 @@
+{
+  "phase": "8H",
+  "timestamp": "2026-10-31 03:26:36",
+  "decision": "PROMOTE_TO_CONTROLLED_GAME_MODE_PROFILE",
+  "governance_labels": [
+    "EXPERIMENTAL_LIVE_MIC_DEMO_NOT_VALIDATED",
+    "NOT_VALIDATED_ON_NATURAL_SPEECH",
+    "NO_DEPLOYABLE_SYSTEM_AT_CURRENT_SPECIFICATION",
+    "NOT_VALIDATED_PENDING_DATA"
+  ],
+  "hash_verification": [
+    {
+      "artifact_id": "frozen_v11_pt",
+      "role": "Production Default Checkpoint",
+      "file_name": "variant_v11_hard_negative_weighted_seed42.pt",
+      "expected_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+      "actual_sha256": "3c4369d2f95059b973ba38ab5f2fd5aa611c7ef3322156b95be21278d32a60a2",
+      "status": "VERIFIED_BITWISE_EXACT"
+    },
+    {
+      "artifact_id": "frozen_v11_onnx",
+      "role": "Production Default ONNX Model",
+      "file_name": "vietnamese_kws_v11.onnx",
+      "expected_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+      "actual_sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99",
+      "status": "VERIFIED_BITWISE_EXACT"
+    },
+    {
+      "artifact_id": "baseline_e2_pt",
+      "role": "Baseline E2 Scaled Model (Phase 7 Reference)",
+      "file_name": "e2_scaled_304k_seed42.pt",
+      "expected_sha256": "0870b6222d50a93d2689870288727f56862cee305b64b4808edd69f8640afbbc",
+      "actual_sha256": "0870b6222d50a93d2689870288727f56862cee305b64b4808edd69f8640afbbc",
+      "status": "VERIFIED_BITWISE_EXACT"
+    },
+    {
+      "artifact_id": "arm_b_pt_seed42",
+      "role": "Arm B Candidate Checkpoint (Seed 42)",
+      "file_name": "arm_b_138k_aug_seed42.pt",
+      "expected_sha256": "de988f060077664c13b131a31c58a4983c59ddf7d0e3bf90bbc1edf12e25de8e",
+      "actual_sha256": "de988f060077664c13b131a31c58a4983c59ddf7d0e3bf90bbc1edf12e25de8e",
+      "status": "VERIFIED_BITWISE_EXACT"
+    },
+    {
+      "artifact_id": "arm_b_pt_seed43",
+      "role": "Arm B Candidate Checkpoint (Seed 43)",
+      "file_name": "arm_b_138k_aug_seed43.pt",
+      "expected_sha256": "17a0973b6253ca0b767c19a09f5e00ea6e3211c237acc31042101f98d2df8c58",
+      "actual_sha256": "17a0973b6253ca0b767c19a09f5e00ea6e3211c237acc31042101f98d2df8c58",
+      "status": "VERIFIED_BITWISE_EXACT"
+    },
+    {
+      "artifact_id": "arm_b_pt_seed44",
+      "role": "Arm B Candidate Checkpoint (Seed 44)",
+      "file_name": "arm_b_138k_aug_seed44.pt",
+      "expected_sha256": "e0e9db8a910b837623fd48590b749dee4a9f69358e4b14137b380c39512e3c3f",
+      "actual_sha256": "e0e9db8a910b837623fd48590b749dee4a9f69358e4b14137b380c39512e3c3f",
+      "status": "VERIFIED_BITWISE_EXACT"
+    },
+    {
+      "artifact_id": "arm_b_onnx_seed42",
+      "role": "Arm B Candidate ONNX (Seed 42)",
+      "file_name": "arm_b_138k_aug_seed42.onnx",
+      "expected_sha256": "0970eeddcf99e3199e4c26e2f8ebe209a49678f8430a72c5ff2fe031a8d26f1a",
+      "actual_sha256": "0970eeddcf99e3199e4c26e2f8ebe209a49678f8430a72c5ff2fe031a8d26f1a",
+      "status": "VERIFIED_BITWISE_EXACT"
+    },
+    {
+      "artifact_id": "arm_b_onnx_seed43",
+      "role": "Arm B Candidate ONNX (Seed 43)",
+      "file_name": "arm_b_138k_aug_seed43.onnx",
+      "expected_sha256": "6b4e43de51c8bb4a1a3fea1b8b38b454671acc0e186162588b766ec505743ad1",
+      "actual_sha256": "6b4e43de51c8bb4a1a3fea1b8b38b454671acc0e186162588b766ec505743ad1",
+      "status": "VERIFIED_BITWISE_EXACT"
+    },
+    {
+      "artifact_id": "arm_b_onnx_seed44",
+      "role": "Arm B Candidate ONNX (Seed 44)",
+      "file_name": "arm_b_138k_aug_seed44.onnx",
+      "expected_sha256": "560b7a3621d4fd4e4cb74c3cbc289c062be53ecb18130dae7b7d93b70e9beb7b",
+      "actual_sha256": "560b7a3621d4fd4e4cb74c3cbc289c062be53ecb18130dae7b7d93b70e9beb7b",
+      "status": "VERIFIED_BITWISE_EXACT"
+    }
+  ],
+  "holdout_summary": {
+    "num_trials": 1340,
+    "seed_42_acc": 0.9359,
+    "seed_43_acc": 0.9492,
+    "seed_44_acc": 0.9266,
+    "mean_acc": 0.9372,
+    "std_acc": 0.0114,
+    "target_command_mean_acc": 0.9906,
+    "continuous_sequence_exact_match_pct": 100.0,
+    "continuous_sequence_wer_pct": 0.0
+  },
+  "negative_controls_summary": {
+    "frozen_v11_open_gate_far_per_min": 133.33,
+    "arm_b_open_gate_far_per_min_mean": 17.78,
+    "open_gate_far_reduction_pct": 86.67,
+    "closed_gate_far_per_min": 0.0,
+    "closed_gate_duration_sec": 709.8
+  },
+  "onnx_parity_summary": {
+    "max_feature_diff": 2e-05,
+    "max_logit_diff_seed42": 6.68e-06,
+    "max_logit_diff_seed43": 9.54e-06,
+    "max_logit_diff_seed44": 6.68e-06,
+    "label_agreement_pct": 100.0,
+    "frontend_p50_ms": 6.7,
+    "cnn_p50_ms": 0.71,
+    "pipeline_p50_ms": 7.48,
+    "pipeline_p95_ms": 8.65
+  },
+  "game_mode_summary": {
+    "primary_len_len_phai_0ms_exact_match_pct": 90.0,
+    "primary_len_len_phai_50ms_exact_match_pct": 90.0,
+    "primary_close_talk_headset_exact_match_pct": 90.0,
+    "primary_ambient_loopback_exact_match_pct": 60.0,
+    "repeated_len_len_0ms_exact_match_pct": 100.0,
+    "repeated_len_len_50ms_exact_match_pct": 100.0,
+    "trai_len_xuong_exact_match_pct": 90.0,
+    "all_four_transitions_exact_match_pct": 80.0,
+    "elongated_len_exact_match_pct": 100.0
+  }
+}

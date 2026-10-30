@@ -1,0 +1,92 @@
+{
+  "arm_b_138k_aug_seed42": {
+    "onnx_filename": "arm_b_138k_aug_seed42.onnx",
+    "onnx_sha256": "0970eeddcf99e3199e4c26e2f8ebe209a49678f8430a72c5ff2fe031a8d26f1a",
+    "onnx_size_kb": 542.7,
+    "cold_latency_ms": 11.23,
+    "warmup_runs": 20,
+    "benchmark_iterations": 200,
+    "execution_provider": "CPUExecutionProvider",
+    "frontend_latency_ms": {
+      "p50": 6.7,
+      "p90": 7.33,
+      "p95": 7.58
+    },
+    "onnx_inference_ms": {
+      "p50": 0.71,
+      "p90": 1.12,
+      "p95": 1.31
+    },
+    "total_pipeline_ms": {
+      "p50": 7.48,
+      "p90": 8.3,
+      "p95": 8.65,
+      "max": 14.25
+    },
+    "latency_budget_limit_ms": 15.0,
+    "budget_consumed_pct": 49.9,
+    "passes_latency_budget": true
+  },
+  "arm_b_138k_aug_seed43": {
+    "onnx_filename": "arm_b_138k_aug_seed43.onnx",
+    "onnx_sha256": "6b4e43de51c8bb4a1a3fea1b8b38b454671acc0e186162588b766ec505743ad1",
+    "onnx_size_kb": 542.7,
+    "cold_latency_ms": 11.97,
+    "warmup_runs": 20,
+    "benchmark_iterations": 200,
+    "execution_provider": "CPUExecutionProvider",
+    "frontend_latency_ms": {
+      "p50": 7.11,
+      "p90": 12.23,
+      "p95": 12.68
+    },
+    "onnx_inference_ms": {
+      "p50": 0.77,
+      "p90": 1.43,
+      "p95": 1.68
+    },
+    "total_pipeline_ms": {
+      "p50": 8.0,
+      "p90": 13.23,
+      "p95": 13.87,
+      "max": 15.34
+    },
+    "latency_budget_limit_ms": 15.0,
+    "budget_consumed_pct": 53.3,
+    "passes_latency_budget": true
+  },
+  "arm_b_138k_aug_seed44": {
+    "onnx_filename": "arm_b_138k_aug_seed44.onnx",
+    "onnx_sha256": "560b7a3621d4fd4e4cb74c3cbc289c062be53ecb18130dae7b7d93b70e9beb7b",
+    "onnx_size_kb": 542.7,
+    "cold_latency_ms": 11.15,
+    "warmup_runs": 20,
+    "benchmark_iterations": 200,
+    "execution_provider": "CPUExecutionProvider",
+    "frontend_latency_ms": {
+      "p50": 7.31,
+      "p90": 11.81,
+      "p95": 12.32
+    },
+    "onnx_inference_ms": {
+      "p50": 0.72,
+      "p90": 1.27,
+      "p95": 1.55
+    },
+    "total_pipeline_ms": {
+      "p50": 8.12,
+      "p90": 12.87,
+      "p95": 13.88,
+      "max": 20.89
+    },
+    "latency_budget_limit_ms": 15.0,
+    "budget_consumed_pct": 54.1,
+    "passes_latency_budget": true
+  },
+  "resource_usage": {
+    "execution_provider": "CPUExecutionProvider",
+    "cpu_thread_count": 1,
+    "peak_traced_memory_mb": 0.46,
+    "current_traced_memory_mb": 0.33
+  }
+}

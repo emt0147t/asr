@@ -1,0 +1,6 @@
+model_id,arm,seed,architecture,parameters,acoustic_augmentation,checkpoint_sha256,holdout_samples_evaluated,single_accuracy_pct,target_command_acc_pct,reject_foil_acc_pct,macro_f1_pct,seq_exact_match_pct,seq_wer_pct,seq_0ms_exact_match_pct,seq_50ms_exact_match_pct,seq_100ms_exact_match_pct,trai_f1_pct,phai_f1_pct,len_f1_pct,xuong_f1_pct,reject_f1_pct
+arm_b_138k_aug_seed42,Arm B,42,CorrectedVietnameseKWSNet,138469,True,de988f060077664c13b131a31c58a4983c59ddf7d0e3bf90bbc1edf12e25de8e,1340,93.59,98.75,88.44,93.65,100.0,0.0,100.0,100.0,100.0,93.83,94.12,89.39,97.26,93.63
+arm_b_138k_aug_seed43,Arm B,43,CorrectedVietnameseKWSNet,138469,True,17a0973b6253ca0b767c19a09f5e00ea6e3211c237acc31042101f98d2df8c58,1340,94.92,98.75,91.09,95.08,100.0,0.0,100.0,100.0,100.0,95.5,96.97,91.64,96.55,94.72
+arm_b_138k_aug_seed44,Arm B,44,CorrectedVietnameseKWSNet,138469,True,e0e9db8a910b837623fd48590b749dee4a9f69358e4b14137b380c39512e3c3f,1340,92.66,99.69,85.62,93.1,100.0,0.0,100.0,100.0,100.0,94.93,95.81,86.02,96.66,92.1
+arm_b_138k_aug_mean,Arm B,mean,CorrectedVietnameseKWSNet,138469,True,N/A,1340,93.72,99.06,88.38,93.94,100.0,0.0,100.0,100.0,100.0,94.75,95.63,89.02,96.82,93.48
+arm_b_138k_aug_std,Arm B,std,CorrectedVietnameseKWSNet,138469,True,N/A,1340,1.14,0.54,2.74,1.02,0.0,0.0,0.0,0.0,0.0,0.85,1.43,2.83,0.38,1.32

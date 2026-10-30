@@ -1,0 +1,13 @@
+dimension,requirement_specification,frozen_v11_baseline,arm_b_candidate,delta_or_compliance,verdict
+Architecture & Model Capacity,"Frozen capacity: 138,469 parameters (0 expansion)","138,469 parameters","138,469 parameters (seed 42, 43, 44)",+0 parameters (Strict Invariant Preserved),PASSED
+Final Holdout Target Command Accuracy,>= 95.0% on clean holdout commands,96.25%,"99.06 ± 0.54% (Seed 42: 99.69%, 43: 98.75%, 44: 98.75%)",+2.81 pp improvement,PASSED
+Final Holdout Overall Accuracy (incl. Foils),>= 90.0% macro accuracy,86.17%,"93.72 ± 1.14% (Seed 42: 93.59%, 43: 94.92%, 44: 92.66%)",+7.55 pp improvement,PASSED
+Holdout Continuous Multi-Command Match,>= 90.0% exact-sequence match across gaps,91.7% (55/60),"100.0% (60/60 exact match across seeds 42, 43, 44)",0.0% Sequence WER (0 errors across 180 commands),PASSED
+Open-Gate Conversational FAR (Negative Control),Significant reduction vs baseline (> 50% drop),133.33 FA/min (320 FA in 144s),17.78 ± 1.15 FA/min (42.7 FA in 144s),-86.7% reduction in open-gate false alarms,PASSED
+Closed-Gate Chatter Immunity,Strictly 0.00 FA/min (0 false alarms when gate closed),0.00 FA/min (0 FA across 709.8s),0.00 FA/min (0 FA across 709.8s),Strict architectural session gating immunity,PASSED
+PyTorch / ONNX Numerical Parity,"Max logit diff < 1e-4, 100% label parity",100.0% parity,"Max logit diff: 6.68e-6, 100.0% label agreement",Bitwise mathematical equivalence,PASSED
+Single-Core CPU Runtime Pipeline Latency,"Pipeline p95 < 15.0 ms, CNN p95 < 5.0 ms","CNN p50: 0.72 ms, Pipeline p50: 2.29 ms","CNN p50: 0.71 ms, Pipeline p50: 7.48 ms, p95: 8.65 ms",Passes 15.0 ms real-time streaming budget,PASSED
+Game Mode LEN->LEN->PHAI Burst (0ms & 50ms),>= 90.0% exact sequence match,"0ms: 96.7% (29/30), 50ms: 90.0% (27/30)","0ms: 90.0% (27/30), 50ms: 90.0% (27/30)",Robust burst recognition,PASSED
+Repeated Same-Label LEN->LEN Separation,100% separation (0 duplicate drops),95.0% (19/20),100.0% (20/20) at both 0ms and 50ms,Zero duplicate suppression,PASSED
+Acoustic Speaker-Loopback Channel Recovery,Substantial recovery over un-augmented baseline,"Single clip: 73.0%, Sequences: 0.0% exact","Single clip: 88.67% (+15.67 pp), Sequences: 60.0% exact",Acoustic channel adaptation verified,PASSED
+Production Default & Governance Guardrails,legacy_v11 remains active default; labels preserved,Production default,Experimental profile (--profile=arm_b_experimental),Zero breaking changes to production path,PASSED

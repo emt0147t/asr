@@ -1,0 +1,6 @@
+evaluated_holdout,comparison_corpus,comparison_size,audio_file_overlap_count,speaker_overlap_count,provenance_verdict,eligible_for_blind_evaluation
+phase8f_b_final_holdout_manifest.csv (1340 instances),Phase 8 Training Split (train_phase8),5640,0,0,STRICTLY_DISJOINT,True
+phase8f_b_final_holdout_manifest.csv (1340 instances),Phase 8 Validation Split (val_phase8),1280,0,0,STRICTLY_DISJOINT,True
+phase8f_b_final_holdout_manifest.csv (1340 instances),Phase 7B Augmentation Sources,260,0,0,STRICTLY_DISJOINT,True
+phase8f_b_final_holdout_manifest.csv (1340 instances),Phase 6.1A Historical Development Benchmark,55,0,0,STRICTLY_DISJOINT,True
+phase8f_b_final_holdout_manifest.csv (1340 instances),Phase 8D Channel Tuning Manifest,620,0,0,STRICTLY_DISJOINT,True

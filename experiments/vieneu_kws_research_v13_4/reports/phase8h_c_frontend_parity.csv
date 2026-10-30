@@ -1,0 +1,2 @@
+frontend_comparison,samples_evaluated,target_tensor_shape,sample_rate_hz,n_fft,hop_length,win_length,n_mels,f_min_hz,f_max_hz,mel_scale,mel_norm,max_absolute_feature_error,mean_absolute_feature_error,max_relative_feature_error_pct,shape_agreement,passes_tolerance
+PyTorch LogMelFrontend vs NumPy LogMelFrontendNumPy,100,"(1, 1, 40, 101)",16000,512,160,400,40,20.0,8000.0,slaney,slaney,2.002716064453125e-05,3.520046287519563e-07,1.8896479159593582,True,True
