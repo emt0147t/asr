@@ -40,7 +40,11 @@ from torch.utils.data import Dataset, DataLoader
 import torchaudio.transforms as T
 from sklearn.metrics import precision_recall_fscore_support, confusion_matrix
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', line_buffering=True)
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
 
 PROJECT_ROOT = Path("D:/trainidentificationaudio")
 V13_4_DIR = PROJECT_ROOT / "experiments" / "vieneu_kws_research_v13_4"
