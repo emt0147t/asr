@@ -1,0 +1,55 @@
+{
+  "manifest_version": "1.0.0",
+  "phase": "PHASE_E2_CONTROLLED_CAPACITY_EXPERIMENT",
+  "created_at": "2026-10-28T14:53:00+07:00",
+  "artifacts": {
+    "PHASE_E2_ARCHITECTURE_DESIGN.md": {
+      "sha256": "b58b92d141c3819d6267e97502ed97101c0c30b163b993f76f4dd338f3202aa5",
+      "size_bytes": 10827
+    },
+    "PHASE_E2_PREREGISTRATION.md": {
+      "sha256": "e8c7d998846daf280e803696ab99e141c0dc98142a906b9f130e775df48adf54",
+      "size_bytes": 6718
+    },
+    "PHASE_E2_RUN_LEDGER.csv": {
+      "sha256": "ca12da4448e77ae30bac4e9c6062f6ca49d9ddd66e5643daa3df571466c78983",
+      "size_bytes": 1983
+    },
+    "PHASE_E2_VALIDATION_COMPARISON.md": {
+      "sha256": "a5b81c36bf0a509b403d2ae4602b5857725959af293939cbbf7ce66f1493a053",
+      "size_bytes": 13753
+    },
+    "experiments/vieneu_kws_research_v12/scripts/train_eval_phase_e2.py": {
+      "sha256": "b512c216813d9319ced83031628aabaf23de682e6a25d515a0e5b0781f27cd53",
+      "size_bytes": 25506
+    },
+    "experiments/vieneu_kws_research_v12/reports/phase_e2_evaluation_results.json": {
+      "sha256": "e84efd8fa4c798e2c1d85350b644058a71c9f017f28415e867540965ad45bf06",
+      "size_bytes": 26173
+    },
+    "experiments/vieneu_kws_research_v12/checkpoints/baseline_138k_seed42.pt": {
+      "sha256": "44f7e223974169d37e4a62e0668f1f8effcf70637f2a0cd9a8396046de61c24f",
+      "size_bytes": 1688066
+    },
+    "experiments/vieneu_kws_research_v12/checkpoints/baseline_138k_seed43.pt": {
+      "sha256": "02171e45c2a123c7819a2b55fbdf5ebdc38aea7b253ce7d793c36bc68ef8e06d",
+      "size_bytes": 1688066
+    },
+    "experiments/vieneu_kws_research_v12/checkpoints/baseline_138k_seed44.pt": {
+      "sha256": "71628501c51ad01bfbc36901cd6e9f564d6522204b79a1ef8473340e7cf58798",
+      "size_bytes": 1688066
+    },
+    "experiments/vieneu_kws_research_v12/checkpoints/e2_scaled_304k_seed42.pt": {
+      "sha256": "0870b6222d50a93d2689870288727f56862cee305b64b4808edd69f8640afbbc",
+      "size_bytes": 3678994
+    },
+    "experiments/vieneu_kws_research_v12/checkpoints/e2_scaled_304k_seed43.pt": {
+      "sha256": "a1969f6e38a2d08d92f9d59965922897195d7d4acdc02d2d6e43893e7ad74668",
+      "size_bytes": 3678994
+    },
+    "experiments/vieneu_kws_research_v12/checkpoints/e2_scaled_304k_seed44.pt": {
+      "sha256": "71f609e54f85f7ac24e9a1aed58e261fdb6c5b7185758b0c7b6b5c015714d2d1",
+      "size_bytes": 3678994
+    }
+  }
+}

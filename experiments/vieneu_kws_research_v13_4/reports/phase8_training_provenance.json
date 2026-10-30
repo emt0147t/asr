@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "phase": "PHASE_8_CONTROLLED_ACOUSTIC_AUGMENTATION",
+    "git_commit": "dcc39ea",
+    "device": "cuda",
+    "timestamp": "2026-10-31 01:19:25"
+  },
+  "training_ledger": [
+    {
+      "model_id": "arm_a_138k_noaug_seed42",
+      "arm": "Arm A",
+      "architecture": "CorrectedVietnameseKWSNet",
+      "parameters": 138469,
+      "acoustic_aug": false,
+      "seed": 42,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_a_138k_noaug_seed42.pt",
+      "sha256": "64a00dd5c9fb92f0e16589a9f20ddd5c7b6764c3097cad20dfd132e5a65697bc"
+    },
+    {
+      "model_id": "arm_a_138k_noaug_seed43",
+      "arm": "Arm A",
+      "architecture": "CorrectedVietnameseKWSNet",
+      "parameters": 138469,
+      "acoustic_aug": false,
+      "seed": 43,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_a_138k_noaug_seed43.pt",
+      "sha256": "06e79fbea9af0d1fd6184f528235769d8cfd6e31545cc3935a3369ce7f790fdb"
+    },
+    {
+      "model_id": "arm_a_138k_noaug_seed44",
+      "arm": "Arm A",
+      "architecture": "CorrectedVietnameseKWSNet",
+      "parameters": 138469,
+      "acoustic_aug": false,
+      "seed": 44,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_a_138k_noaug_seed44.pt",
+      "sha256": "af7f9e1693183da064651dc15bde71a3f2607b9c9b51fec7932622a330286030"
+    },
+    {
+      "model_id": "arm_b_138k_aug_seed42",
+      "arm": "Arm B",
+      "architecture": "CorrectedVietnameseKWSNet",
+      "parameters": 138469,
+      "acoustic_aug": true,
+      "seed": 42,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_b_138k_aug_seed42.pt",
+      "sha256": "de988f060077664c13b131a31c58a4983c59ddf7d0e3bf90bbc1edf12e25de8e"
+    },
+    {
+      "model_id": "arm_b_138k_aug_seed43",
+      "arm": "Arm B",
+      "architecture": "CorrectedVietnameseKWSNet",
+      "parameters": 138469,
+      "acoustic_aug": true,
+      "seed": 43,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_b_138k_aug_seed43.pt",
+      "sha256": "17a0973b6253ca0b767c19a09f5e00ea6e3211c237acc31042101f98d2df8c58"
+    },
+    {
+      "model_id": "arm_b_138k_aug_seed44",
+      "arm": "Arm B",
+      "architecture": "CorrectedVietnameseKWSNet",
+      "parameters": 138469,
+      "acoustic_aug": true,
+      "seed": 44,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_b_138k_aug_seed44.pt",
+      "sha256": "e0e9db8a910b837623fd48590b749dee4a9f69358e4b14137b380c39512e3c3f"
+    },
+    {
+      "model_id": "arm_c_304k_noaug_seed42",
+      "arm": "Arm C",
+      "architecture": "ScaledVietnameseKWSNet_E2",
+      "parameters": 304277,
+      "acoustic_aug": false,
+      "seed": 42,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_c_304k_noaug_seed42.pt",
+      "sha256": "35f4f7cc90e6468200a21bb2a4c4dd71ad634e4d8394bba82150bcb9e21e6b92"
+    },
+    {
+      "model_id": "arm_c_304k_noaug_seed43",
+      "arm": "Arm C",
+      "architecture": "ScaledVietnameseKWSNet_E2",
+      "parameters": 304277,
+      "acoustic_aug": false,
+      "seed": 43,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_c_304k_noaug_seed43.pt",
+      "sha256": "cf830c2e2576a54f8ae0daa1eadcd7326e39b9dafbaecca1f80131d9d31a421b"
+    },
+    {
+      "model_id": "arm_c_304k_noaug_seed44",
+      "arm": "Arm C",
+      "architecture": "ScaledVietnameseKWSNet_E2",
+      "parameters": 304277,
+      "acoustic_aug": false,
+      "seed": 44,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_c_304k_noaug_seed44.pt",
+      "sha256": "08d0b90a1e205834b1f97353b808e6f484f67b4c8beb9d8fb826af35f2ef5b0b"
+    },
+    {
+      "model_id": "arm_d_304k_aug_seed42",
+      "arm": "Arm D",
+      "architecture": "ScaledVietnameseKWSNet_E2",
+      "parameters": 304277,
+      "acoustic_aug": true,
+      "seed": 42,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_d_304k_aug_seed42.pt",
+      "sha256": "1bf6e623507d2acc8a57fe9f9dbdedb0643c707f6dc50f6ae3abac3b84e7a51a"
+    },
+    {
+      "model_id": "arm_d_304k_aug_seed43",
+      "arm": "Arm D",
+      "architecture": "ScaledVietnameseKWSNet_E2",
+      "parameters": 304277,
+      "acoustic_aug": true,
+      "seed": 43,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_d_304k_aug_seed43.pt",
+      "sha256": "0a14526adf8b9699d0f95d2aef05fb36320288a33ff2c54e45f7c59e4ec66675"
+    },
+    {
+      "model_id": "arm_d_304k_aug_seed44",
+      "arm": "Arm D",
+      "architecture": "ScaledVietnameseKWSNet_E2",
+      "parameters": 304277,
+      "acoustic_aug": true,
+      "seed": 44,
+      "checkpoint_path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\checkpoints\\phase8\\arm_d_304k_aug_seed44.pt",
+      "sha256": "f3e8f3780a8a45837db085e4d29e810f21cc1b11c2b7e6d74defb33aa9009cd3"
+    }
+  ],
+  "external_baseline": {
+    "model_id": "frozen_v11_onnx",
+    "path": "D:\\trainidentificationaudio\\experiments\\vieneu_kws_research_v13_4\\bundle\\onnx\\vietnamese_kws_v11.onnx",
+    "sha256": "54298c503f51c8299d86f6b4346d7cae4e1b7e045deb884a8650764fbe4bcc99"
+  }
+}

@@ -59,9 +59,9 @@ def main():
                 "audio_path": str(path)
             })
 
-    # Negative speech
-    conv_files = sorted(list(AUDIO_DIR.glob("v13_conf_neg_conv_*.wav")))
-    for idx, cf in enumerate(conv_files[:10]):
+    # Negative speech (12 conversation clips)
+    conv_files = sorted(list(AUDIO_DIR.glob("v13_conf_conv_*.wav")))
+    for idx, cf in enumerate(conv_files[:12]):
         base_samples.append({
             "sample_id": f"eval_reject_conv_{idx+1:02d}",
             "label": "REJECT",
@@ -69,9 +69,9 @@ def main():
             "audio_path": str(cf)
         })
 
-    # Negative noise
+    # Negative noise (8 noise clips)
     noise_files = sorted(list((PROJECT_ROOT / "data" / "processed" / "noise" / "esc50_16k").glob("*.wav")))
-    for idx, nf in enumerate(noise_files[:10]):
+    for idx, nf in enumerate(noise_files[:8]):
         base_samples.append({
             "sample_id": f"eval_reject_noise_{idx+1:02d}",
             "label": "REJECT",

@@ -1,0 +1,6 @@
+arm,parameters,acoustic_augmentation,n_seeds,direct_acc_mean,direct_acc_std,direct_f1_mean,direct_seq_exact_0ms_mean,direct_seq_exact_50ms_mean,direct_seq_wer_mean,headset_acc_mean,headset_f1_mean,laptop_mic_acc_mean,laptop_mic_f1_mean,ambient_loopback_acc_mean,ambient_loopback_acc_std,ambient_loopback_f1_mean,ambient_loopback_seq_exact_mean,ambient_loopback_seq_wer_mean,p50_latency_ms,session_gate_closed_fa
+Arm A,138469,True,3,96.0,1.0,97.44,100.0,100.0,0.0,95.0,96.75,96.33,97.64,73.67,3.51,75.34,74.47,8.9,1.52,0
+Arm B,138469,True,3,96.0,2.65,97.49,100.0,100.0,0.0,96.0,97.48,95.33,97.09,88.67,2.31,92.34,93.37,2.6,1.49,0
+Arm C,304277,True,3,97.67,0.58,98.11,100.0,97.77,0.37,96.0,97.33,97.0,97.68,74.0,3.0,75.18,91.13,3.7,1.97,0
+Arm D,304277,True,3,97.0,1.0,98.13,100.0,100.0,0.0,96.67,97.87,97.0,98.08,92.0,2.0,94.42,93.3,2.93,1.97,0
+Frozen Baseline,138469,False,1,97.0,0.0,98.26,100.0,93.3,1.1,96.0,96.95,92.0,94.1,84.0,0.0,85.85,90.0,4.4,2.59,0

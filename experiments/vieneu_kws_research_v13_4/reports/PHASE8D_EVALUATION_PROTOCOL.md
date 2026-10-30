@@ -61,6 +61,6 @@ Recorded in [`reports/phase8d_acceptance_metrics.json`](file:///d:/trainidentifi
 
 ## 4. Deliverables Index
 
-- **Channel Evaluation Manifest:** [`reports/phase8d_channel_evaluation_manifest.csv`](file:///d:/trainidentificationaudio/reports/phase8d_channel_evaluation_manifest.csv) (572 instances)
+- **Channel Evaluation Manifest:** [`reports/phase8d_channel_evaluation_manifest.csv`](file:///d:/trainidentificationaudio/reports/phase8d_channel_evaluation_manifest.csv) (620 instances)
 - **Acceptance Metrics JSON:** [`reports/phase8d_acceptance_metrics.json`](file:///d:/trainidentificationaudio/reports/phase8d_acceptance_metrics.json)
 - **Evaluation Protocol Report:** [`reports/PHASE8D_EVALUATION_PROTOCOL.md`](file:///d:/trainidentificationaudio/reports/PHASE8D_EVALUATION_PROTOCOL.md)
