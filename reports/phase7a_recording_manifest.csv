@@ -1,0 +1,261 @@
+recording_id,channel_id,channel_name,dimension,stimulus_id,category,ground_truth_label,sample_rate,channels,source_duration_sec,received_duration_sec,peak_amplitude,rms_amplitude,clipping_ratio_pct,estimated_snr_db,noise_floor_dbfs
+rec_direct_digital_stream_stim_len_01,direct_digital_stream,Direct Digital Stream,baseline,stim_len_01,target_command,LEN,16000,1,0.3,0.3,0.89127,0.20054,0.0,25.72,-39.68
+rec_direct_digital_stream_stim_len_02,direct_digital_stream,Direct Digital Stream,baseline,stim_len_02,target_command,LEN,16000,1,0.31,0.31,0.89127,0.22945,0.0,27.6,-40.39
+rec_direct_digital_stream_stim_len_03,direct_digital_stream,Direct Digital Stream,baseline,stim_len_03,target_command,LEN,16000,1,0.3,0.3,0.89127,0.20065,0.0,20.9,-34.85
+rec_direct_digital_stream_stim_len_04,direct_digital_stream,Direct Digital Stream,baseline,stim_len_04,target_command,LEN,16000,1,0.37,0.37,0.89127,0.22678,0.0,25.51,-38.4
+rec_direct_digital_stream_stim_len_05,direct_digital_stream,Direct Digital Stream,baseline,stim_len_05,target_command,LEN,16000,1,0.3,0.3,0.89124,0.20447,0.0,17.19,-30.98
+rec_direct_digital_stream_stim_xuong_01,direct_digital_stream,Direct Digital Stream,baseline,stim_xuong_01,target_command,XUONG,16000,1,0.34,0.34,0.89127,0.21814,0.0,26.64,-39.87
+rec_direct_digital_stream_stim_xuong_02,direct_digital_stream,Direct Digital Stream,baseline,stim_xuong_02,target_command,XUONG,16000,1,0.53,0.53,0.89127,0.18337,0.0,34.34,-49.07
+rec_direct_digital_stream_stim_xuong_03,direct_digital_stream,Direct Digital Stream,baseline,stim_xuong_03,target_command,XUONG,16000,1,0.39,0.39,0.89127,0.16804,0.0,23.18,-38.68
+rec_direct_digital_stream_stim_xuong_04,direct_digital_stream,Direct Digital Stream,baseline,stim_xuong_04,target_command,XUONG,16000,1,0.34,0.34,0.89127,0.18628,0.0,26.26,-40.86
+rec_direct_digital_stream_stim_xuong_05,direct_digital_stream,Direct Digital Stream,baseline,stim_xuong_05,target_command,XUONG,16000,1,0.39,0.39,0.89127,0.16295,0.0,33.01,-48.77
+rec_direct_digital_stream_stim_trai_01,direct_digital_stream,Direct Digital Stream,baseline,stim_trai_01,target_command,TRAI,16000,1,0.39,0.39,0.89127,0.1792,0.0,33.64,-48.57
+rec_direct_digital_stream_stim_trai_02,direct_digital_stream,Direct Digital Stream,baseline,stim_trai_02,target_command,TRAI,16000,1,0.33,0.33,0.89124,0.15566,0.0,24.45,-40.61
+rec_direct_digital_stream_stim_trai_03,direct_digital_stream,Direct Digital Stream,baseline,stim_trai_03,target_command,TRAI,16000,1,0.33,0.33,0.89124,0.1975,0.0,31.3,-45.38
+rec_direct_digital_stream_stim_trai_04,direct_digital_stream,Direct Digital Stream,baseline,stim_trai_04,target_command,TRAI,16000,1,0.34,0.34,0.89124,0.15772,0.0,23.95,-39.99
+rec_direct_digital_stream_stim_trai_05,direct_digital_stream,Direct Digital Stream,baseline,stim_trai_05,target_command,TRAI,16000,1,0.36,0.36,0.89124,0.19009,0.0,22.44,-36.86
+rec_direct_digital_stream_stim_phai_01,direct_digital_stream,Direct Digital Stream,baseline,stim_phai_01,target_command,PHAI,16000,1,0.25,0.25,0.89124,0.21071,0.0,29.87,-43.39
+rec_direct_digital_stream_stim_phai_02,direct_digital_stream,Direct Digital Stream,baseline,stim_phai_02,target_command,PHAI,16000,1,0.31,0.31,0.89124,0.22917,0.0,32.82,-45.61
+rec_direct_digital_stream_stim_phai_03,direct_digital_stream,Direct Digital Stream,baseline,stim_phai_03,target_command,PHAI,16000,1,0.24,0.24,0.89124,0.19082,0.0,32.35,-46.74
+rec_direct_digital_stream_stim_phai_04,direct_digital_stream,Direct Digital Stream,baseline,stim_phai_04,target_command,PHAI,16000,1,0.23,0.23,0.89124,0.18305,0.0,30.33,-45.08
+rec_direct_digital_stream_stim_phai_05,direct_digital_stream,Direct Digital Stream,baseline,stim_phai_05,target_command,PHAI,16000,1,0.23,0.23,0.89124,0.23982,0.0,32.86,-45.26
+rec_direct_digital_stream_stim_silence_01,direct_digital_stream,Direct Digital Stream,baseline,stim_silence_01,negative_silence,REJECT,16000,1,0.8,0.8,0.0,0.0,0.0,-140.0,-140.0
+rec_direct_digital_stream_stim_silence_02,direct_digital_stream,Direct Digital Stream,baseline,stim_silence_02,negative_silence,REJECT,16000,1,0.8,0.8,0.0,0.0,0.0,-140.0,-140.0
+rec_direct_digital_stream_stim_noise_01,direct_digital_stream,Direct Digital Stream,baseline,stim_noise_01,negative_noise,REJECT,16000,1,0.8,0.8,0.6376,0.16986,0.0,3.95,-19.34
+rec_direct_digital_stream_stim_noise_02,direct_digital_stream,Direct Digital Stream,baseline,stim_noise_02,negative_noise,REJECT,16000,1,0.8,0.8,0.90002,0.26125,0.0,0.75,-12.41
+rec_direct_digital_stream_stim_conv_01,direct_digital_stream,Direct Digital Stream,baseline,stim_conv_01,negative_conversation,REJECT,16000,1,1.0,1.0,0.0,0.0,0.0,-140.0,-140.0
+rec_direct_digital_stream_stim_conv_02,direct_digital_stream,Direct Digital Stream,baseline,stim_conv_02,negative_conversation,REJECT,16000,1,1.0,1.0,0.0,0.0,0.0,-140.0,-140.0
+rec_headset_close_talk_stim_len_01,headset_close_talk,Close-Talk Headset Mic,transducer,stim_len_01,target_command,LEN,16000,1,0.3,0.35,0.86633,0.19129,0.0,39.06,-53.42
+rec_headset_close_talk_stim_len_02,headset_close_talk,Close-Talk Headset Mic,transducer,stim_len_02,target_command,LEN,16000,1,0.31,0.36,0.89544,0.22059,0.0,40.2,-53.32
+rec_headset_close_talk_stim_len_03,headset_close_talk,Close-Talk Headset Mic,transducer,stim_len_03,target_command,LEN,16000,1,0.3,0.35,0.88052,0.19471,0.0,37.98,-52.19
+rec_headset_close_talk_stim_len_04,headset_close_talk,Close-Talk Headset Mic,transducer,stim_len_04,target_command,LEN,16000,1,0.37,0.42,0.89583,0.23017,0.0,35.69,-48.45
+rec_headset_close_talk_stim_len_05,headset_close_talk,Close-Talk Headset Mic,transducer,stim_len_05,target_command,LEN,16000,1,0.3,0.35,0.9586,0.20955,0.0,39.56,-53.13
+rec_headset_close_talk_stim_xuong_01,headset_close_talk,Close-Talk Headset Mic,transducer,stim_xuong_01,target_command,XUONG,16000,1,0.34,0.39,0.88042,0.21713,0.0,40.0,-53.27
+rec_headset_close_talk_stim_xuong_02,headset_close_talk,Close-Talk Headset Mic,transducer,stim_xuong_02,target_command,XUONG,16000,1,0.53,0.58,0.87541,0.19478,0.0,37.54,-51.75
+rec_headset_close_talk_stim_xuong_03,headset_close_talk,Close-Talk Headset Mic,transducer,stim_xuong_03,target_command,XUONG,16000,1,0.39,0.44,0.93864,0.16692,0.0,33.74,-49.29
+rec_headset_close_talk_stim_xuong_04,headset_close_talk,Close-Talk Headset Mic,transducer,stim_xuong_04,target_command,XUONG,16000,1,0.34,0.39,0.91586,0.1867,0.0,38.6,-53.17
+rec_headset_close_talk_stim_xuong_05,headset_close_talk,Close-Talk Headset Mic,transducer,stim_xuong_05,target_command,XUONG,16000,1,0.39,0.44,0.88981,0.16076,0.0,34.01,-49.89
+rec_headset_close_talk_stim_trai_01,headset_close_talk,Close-Talk Headset Mic,transducer,stim_trai_01,target_command,TRAI,16000,1,0.39,0.44,0.87851,0.17321,0.0,34.99,-50.21
+rec_headset_close_talk_stim_trai_02,headset_close_talk,Close-Talk Headset Mic,transducer,stim_trai_02,target_command,TRAI,16000,1,0.33,0.38,0.92239,0.14858,0.0,34.64,-51.2
+rec_headset_close_talk_stim_trai_03,headset_close_talk,Close-Talk Headset Mic,transducer,stim_trai_03,target_command,TRAI,16000,1,0.33,0.38,0.92136,0.18764,0.0,38.63,-53.16
+rec_headset_close_talk_stim_trai_04,headset_close_talk,Close-Talk Headset Mic,transducer,stim_trai_04,target_command,TRAI,16000,1,0.34,0.39,0.91485,0.15298,0.0,37.33,-53.64
+rec_headset_close_talk_stim_trai_05,headset_close_talk,Close-Talk Headset Mic,transducer,stim_trai_05,target_command,TRAI,16000,1,0.36,0.41,0.91787,0.18141,0.0,38.61,-53.44
+rec_headset_close_talk_stim_phai_01,headset_close_talk,Close-Talk Headset Mic,transducer,stim_phai_01,target_command,PHAI,16000,1,0.25,0.3,0.91556,0.19386,0.0,37.65,-51.9
+rec_headset_close_talk_stim_phai_02,headset_close_talk,Close-Talk Headset Mic,transducer,stim_phai_02,target_command,PHAI,16000,1,0.31,0.36,0.90854,0.21841,0.0,39.89,-53.1
+rec_headset_close_talk_stim_phai_03,headset_close_talk,Close-Talk Headset Mic,transducer,stim_phai_03,target_command,PHAI,16000,1,0.24,0.29,0.91603,0.17568,0.0,38.37,-53.48
+rec_headset_close_talk_stim_phai_04,headset_close_talk,Close-Talk Headset Mic,transducer,stim_phai_04,target_command,PHAI,16000,1,0.23,0.28,0.92145,0.16885,0.0,38.17,-53.62
+rec_headset_close_talk_stim_phai_05,headset_close_talk,Close-Talk Headset Mic,transducer,stim_phai_05,target_command,PHAI,16000,1,0.23,0.28,0.88991,0.2212,0.0,38.71,-51.81
+rec_headset_close_talk_stim_silence_01,headset_close_talk,Close-Talk Headset Mic,transducer,stim_silence_01,negative_silence,REJECT,16000,1,0.8,0.85,0.00787,0.00205,0.0,0.42,-54.19
+rec_headset_close_talk_stim_silence_02,headset_close_talk,Close-Talk Headset Mic,transducer,stim_silence_02,negative_silence,REJECT,16000,1,0.8,0.85,0.00773,0.00207,0.0,0.43,-54.12
+rec_headset_close_talk_stim_noise_01,headset_close_talk,Close-Talk Headset Mic,transducer,stim_noise_01,negative_noise,REJECT,16000,1,0.8,0.85,0.6314,0.16453,0.0,5.36,-21.04
+rec_headset_close_talk_stim_noise_02,headset_close_talk,Close-Talk Headset Mic,transducer,stim_noise_02,negative_noise,REJECT,16000,1,0.8,0.85,0.72547,0.24273,0.0,0.55,-12.85
+rec_headset_close_talk_stim_conv_01,headset_close_talk,Close-Talk Headset Mic,transducer,stim_conv_01,negative_conversation,REJECT,16000,1,1.0,1.05,0.00878,0.00208,0.0,0.36,-54.0
+rec_headset_close_talk_stim_conv_02,headset_close_talk,Close-Talk Headset Mic,transducer,stim_conv_02,negative_conversation,REJECT,16000,1,1.0,1.05,0.00851,0.00208,0.0,0.39,-54.03
+rec_laptop_mic_direct_stim_len_01,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_len_01,target_command,LEN,16000,1,0.3,0.5,0.30438,0.05392,0.0,26.6,-51.97
+rec_laptop_mic_direct_stim_len_02,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_len_02,target_command,LEN,16000,1,0.31,0.51,0.29045,0.05786,0.0,27.14,-51.89
+rec_laptop_mic_direct_stim_len_03,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_len_03,target_command,LEN,16000,1,0.3,0.5,0.28136,0.05554,0.0,26.62,-51.73
+rec_laptop_mic_direct_stim_len_04,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_len_04,target_command,LEN,16000,1,0.37,0.57,0.26755,0.06438,0.0,28.07,-51.89
+rec_laptop_mic_direct_stim_len_05,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_len_05,target_command,LEN,16000,1,0.3,0.5,0.39226,0.05622,0.0,26.79,-51.79
+rec_laptop_mic_direct_stim_xuong_01,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_xuong_01,target_command,XUONG,16000,1,0.34,0.54,0.31426,0.06025,0.0,27.25,-51.65
+rec_laptop_mic_direct_stim_xuong_02,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_xuong_02,target_command,XUONG,16000,1,0.53,0.73,0.27444,0.05225,0.0,26.13,-51.77
+rec_laptop_mic_direct_stim_xuong_03,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_xuong_03,target_command,XUONG,16000,1,0.39,0.59,0.37554,0.04767,0.0,25.38,-51.81
+rec_laptop_mic_direct_stim_xuong_04,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_xuong_04,target_command,XUONG,16000,1,0.34,0.54,0.28165,0.05163,0.0,26.0,-51.74
+rec_laptop_mic_direct_stim_xuong_05,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_xuong_05,target_command,XUONG,16000,1,0.39,0.59,0.30978,0.04631,0.0,25.09,-51.78
+rec_laptop_mic_direct_stim_trai_01,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_trai_01,target_command,TRAI,16000,1,0.39,0.59,0.3276,0.05094,0.0,26.15,-52.0
+rec_laptop_mic_direct_stim_trai_02,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_trai_02,target_command,TRAI,16000,1,0.33,0.53,0.35786,0.04287,0.0,24.44,-51.8
+rec_laptop_mic_direct_stim_trai_03,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_trai_03,target_command,TRAI,16000,1,0.33,0.53,0.3694,0.05464,0.0,26.58,-51.83
+rec_laptop_mic_direct_stim_trai_04,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_trai_04,target_command,TRAI,16000,1,0.34,0.54,0.34851,0.04293,0.0,24.49,-51.83
+rec_laptop_mic_direct_stim_trai_05,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_trai_05,target_command,TRAI,16000,1,0.36,0.56,0.34943,0.05333,0.0,26.53,-51.99
+rec_laptop_mic_direct_stim_phai_01,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_phai_01,target_command,PHAI,16000,1,0.25,0.45,0.33918,0.05403,0.0,26.7,-52.05
+rec_laptop_mic_direct_stim_phai_02,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_phai_02,target_command,PHAI,16000,1,0.31,0.51,0.3658,0.06196,0.0,27.69,-51.85
+rec_laptop_mic_direct_stim_phai_03,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_phai_03,target_command,PHAI,16000,1,0.24,0.44,0.34591,0.04838,0.0,25.79,-52.1
+rec_laptop_mic_direct_stim_phai_04,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_phai_04,target_command,PHAI,16000,1,0.23,0.43,0.33239,0.04756,0.0,25.37,-51.82
+rec_laptop_mic_direct_stim_phai_05,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_phai_05,target_command,PHAI,16000,1,0.23,0.43,0.32855,0.05994,0.0,27.51,-51.96
+rec_laptop_mic_direct_stim_silence_01,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_silence_01,negative_silence,REJECT,16000,1,0.8,1.0,0.00988,0.00261,0.0,0.48,-52.15
+rec_laptop_mic_direct_stim_silence_02,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_silence_02,negative_silence,REJECT,16000,1,0.8,1.0,0.01029,0.00258,0.0,0.38,-52.15
+rec_laptop_mic_direct_stim_noise_01,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_noise_01,negative_noise,REJECT,16000,1,0.8,1.0,0.26193,0.05417,0.0,26.08,-51.4
+rec_laptop_mic_direct_stim_noise_02,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_noise_02,negative_noise,REJECT,16000,1,0.8,1.0,0.25862,0.07947,0.0,29.33,-51.32
+rec_laptop_mic_direct_stim_conv_01,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_conv_01,negative_conversation,REJECT,16000,1,1.0,1.2,0.01181,0.00262,0.0,0.49,-52.12
+rec_laptop_mic_direct_stim_conv_02,laptop_mic_direct,Laptop Mic Direct Speech (0.3m),transducer,stim_conv_02,negative_conversation,REJECT,16000,1,1.0,1.2,0.00978,0.00258,0.0,0.53,-52.29
+rec_laptop_speaker_to_mic_physical_stim_len_01,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_len_01,target_command,LEN,16000,1,0.3,0.75,0.0592,0.00825,0.0,26.37,-68.04
+rec_laptop_speaker_to_mic_physical_stim_len_02,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_len_02,target_command,LEN,16000,1,0.31,0.51,0.96058,0.13836,0.0,31.87,-49.05
+rec_laptop_speaker_to_mic_physical_stim_len_03,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_len_03,target_command,LEN,16000,1,0.3,0.5,0.91264,0.11815,0.0,30.61,-49.16
+rec_laptop_speaker_to_mic_physical_stim_len_04,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_len_04,target_command,LEN,16000,1,0.37,0.57,0.74315,0.11862,0.0,30.46,-48.98
+rec_laptop_speaker_to_mic_physical_stim_len_05,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_len_05,target_command,LEN,16000,1,0.3,0.5,0.79892,0.11442,0.0,30.4,-49.23
+rec_laptop_speaker_to_mic_physical_stim_xuong_01,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_xuong_01,target_command,XUONG,16000,1,0.34,0.79,0.05423,0.00864,0.0,23.37,-64.64
+rec_laptop_speaker_to_mic_physical_stim_xuong_02,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_xuong_02,target_command,XUONG,16000,1,0.53,0.73,0.54809,0.09585,0.0,28.78,-49.15
+rec_laptop_speaker_to_mic_physical_stim_xuong_03,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_xuong_03,target_command,XUONG,16000,1,0.39,0.59,0.71575,0.09476,0.0,28.38,-48.85
+rec_laptop_speaker_to_mic_physical_stim_xuong_04,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_xuong_04,target_command,XUONG,16000,1,0.34,0.54,0.57606,0.09775,0.0,28.83,-49.03
+rec_laptop_speaker_to_mic_physical_stim_xuong_05,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_xuong_05,target_command,XUONG,16000,1,0.39,0.59,0.68461,0.09307,0.0,28.62,-49.24
+rec_laptop_speaker_to_mic_physical_stim_trai_01,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_trai_01,target_command,TRAI,16000,1,0.39,0.84,0.09195,0.01033,0.0,24.89,-64.61
+rec_laptop_speaker_to_mic_physical_stim_trai_02,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_trai_02,target_command,TRAI,16000,1,0.33,0.53,0.81772,0.10437,0.0,29.42,-49.05
+rec_laptop_speaker_to_mic_physical_stim_trai_03,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_trai_03,target_command,TRAI,16000,1,0.33,0.53,0.8242,0.13308,0.0,31.55,-49.07
+rec_laptop_speaker_to_mic_physical_stim_trai_04,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_trai_04,target_command,TRAI,16000,1,0.34,0.54,0.85542,0.10118,0.0,29.19,-49.09
+rec_laptop_speaker_to_mic_physical_stim_trai_05,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_trai_05,target_command,TRAI,16000,1,0.36,0.56,0.82443,0.12798,0.0,31.16,-49.01
+rec_laptop_speaker_to_mic_physical_stim_phai_01,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_phai_01,target_command,PHAI,16000,1,0.25,0.7,0.061,0.00814,0.0,23.78,-65.57
+rec_laptop_speaker_to_mic_physical_stim_phai_02,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_phai_02,target_command,PHAI,16000,1,0.31,0.51,0.99312,0.14592,0.0,32.42,-49.14
+rec_laptop_speaker_to_mic_physical_stim_phai_03,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_phai_03,target_command,PHAI,16000,1,0.24,0.44,0.93171,0.12176,0.0,30.7,-48.99
+rec_laptop_speaker_to_mic_physical_stim_phai_04,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_phai_04,target_command,PHAI,16000,1,0.23,0.43,0.86818,0.11257,0.0,30.07,-49.04
+rec_laptop_speaker_to_mic_physical_stim_phai_05,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_phai_05,target_command,PHAI,16000,1,0.23,0.43,0.89611,0.15131,0.0,32.58,-48.98
+rec_laptop_speaker_to_mic_physical_stim_silence_01,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_silence_01,negative_silence,REJECT,16000,1,0.8,1.0,0.01364,0.00351,0.0,0.54,-49.63
+rec_laptop_speaker_to_mic_physical_stim_silence_02,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_silence_02,negative_silence,REJECT,16000,1,0.8,1.0,0.01364,0.00351,0.0,0.54,-49.63
+rec_laptop_speaker_to_mic_physical_stim_noise_01,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_noise_01,negative_noise,REJECT,16000,1,0.8,1.0,0.5213,0.11896,0.0,27.88,-46.37
+rec_laptop_speaker_to_mic_physical_stim_noise_02,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_noise_02,negative_noise,REJECT,16000,1,0.8,1.0,0.65798,0.16789,0.0,31.22,-46.72
+rec_laptop_speaker_to_mic_physical_stim_conv_01,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_conv_01,negative_conversation,REJECT,16000,1,1.0,1.2,0.01364,0.00352,0.0,0.56,-49.63
+rec_laptop_speaker_to_mic_physical_stim_conv_02,laptop_speaker_to_mic_physical,Laptop Speaker to Laptop Mic (Physical Loopback),physical_transducer,stim_conv_02,negative_conversation,REJECT,16000,1,1.0,1.2,0.01364,0.00352,0.0,0.56,-49.63
+rec_dist_0.2m_near_stim_len_01,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_len_01,target_command,LEN,16000,1,0.3,0.58,0.47577,0.07271,0.0,29.85,-52.62
+rec_dist_0.2m_near_stim_len_02,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_len_02,target_command,LEN,16000,1,0.31,0.59,0.47391,0.08633,0.0,31.22,-52.5
+rec_dist_0.2m_near_stim_len_03,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_len_03,target_command,LEN,16000,1,0.3,0.58,0.3935,0.07264,0.0,29.87,-52.64
+rec_dist_0.2m_near_stim_len_04,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_len_04,target_command,LEN,16000,1,0.37,0.65,0.37808,0.08265,0.0,31.07,-52.72
+rec_dist_0.2m_near_stim_len_05,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_len_05,target_command,LEN,16000,1,0.3,0.58,0.58833,0.07429,0.0,30.27,-52.85
+rec_dist_0.2m_near_stim_xuong_01,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_xuong_01,target_command,XUONG,16000,1,0.34,0.62,0.44151,0.07697,0.0,30.24,-52.51
+rec_dist_0.2m_near_stim_xuong_02,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_xuong_02,target_command,XUONG,16000,1,0.53,0.81,0.40035,0.07147,0.0,29.61,-52.53
+rec_dist_0.2m_near_stim_xuong_03,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_xuong_03,target_command,XUONG,16000,1,0.39,0.67,0.50219,0.06248,0.0,28.45,-52.54
+rec_dist_0.2m_near_stim_xuong_04,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_xuong_04,target_command,XUONG,16000,1,0.34,0.62,0.37888,0.06574,0.0,28.76,-52.41
+rec_dist_0.2m_near_stim_xuong_05,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_xuong_05,target_command,XUONG,16000,1,0.39,0.67,0.4266,0.06028,0.0,28.19,-52.59
+rec_dist_0.2m_near_stim_trai_01,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_trai_01,target_command,TRAI,16000,1,0.39,0.67,0.45483,0.06901,0.0,29.31,-52.53
+rec_dist_0.2m_near_stim_trai_02,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_trai_02,target_command,TRAI,16000,1,0.33,0.61,0.54621,0.05888,0.0,27.97,-52.57
+rec_dist_0.2m_near_stim_trai_03,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_trai_03,target_command,TRAI,16000,1,0.33,0.61,0.53534,0.07372,0.0,30.12,-52.77
+rec_dist_0.2m_near_stim_trai_04,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_trai_04,target_command,TRAI,16000,1,0.34,0.62,0.51259,0.05988,0.0,28.1,-52.56
+rec_dist_0.2m_near_stim_trai_05,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_trai_05,target_command,TRAI,16000,1,0.36,0.64,0.55066,0.07198,0.0,29.51,-52.36
+rec_dist_0.2m_near_stim_phai_01,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_phai_01,target_command,PHAI,16000,1,0.25,0.53,0.51297,0.07451,0.0,30.07,-52.62
+rec_dist_0.2m_near_stim_phai_02,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_phai_02,target_command,PHAI,16000,1,0.31,0.59,0.56821,0.08435,0.0,31.28,-52.76
+rec_dist_0.2m_near_stim_phai_03,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_phai_03,target_command,PHAI,16000,1,0.24,0.52,0.54353,0.06723,0.0,29.04,-52.49
+rec_dist_0.2m_near_stim_phai_04,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_phai_04,target_command,PHAI,16000,1,0.23,0.51,0.48691,0.0625,0.0,28.44,-52.52
+rec_dist_0.2m_near_stim_phai_05,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_phai_05,target_command,PHAI,16000,1,0.23,0.51,0.48857,0.0826,0.0,30.98,-52.64
+rec_dist_0.2m_near_stim_silence_01,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_silence_01,negative_silence,REJECT,16000,1,0.8,1.08,0.01008,0.0024,0.0,0.43,-52.81
+rec_dist_0.2m_near_stim_silence_02,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_silence_02,negative_silence,REJECT,16000,1,0.8,1.08,0.00952,0.00239,0.0,0.41,-52.86
+rec_dist_0.2m_near_stim_noise_01,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_noise_01,negative_noise,REJECT,16000,1,0.8,1.08,0.34928,0.07653,0.0,29.85,-52.17
+rec_dist_0.2m_near_stim_noise_02,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_noise_02,negative_noise,REJECT,16000,1,0.8,1.08,0.36627,0.10823,0.0,33.0,-52.32
+rec_dist_0.2m_near_stim_conv_01,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_conv_01,negative_conversation,REJECT,16000,1,1.0,1.28,0.01001,0.0024,0.0,0.48,-52.86
+rec_dist_0.2m_near_stim_conv_02,dist_0.2m_near,Distance Sweep: 0.2m Near,distance,stim_conv_02,negative_conversation,REJECT,16000,1,1.0,1.28,0.01086,0.0024,0.0,0.54,-52.92
+rec_dist_0.5m_desk_stim_len_01,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_len_01,target_command,LEN,16000,1,0.3,0.58,0.17171,0.02892,0.0,19.8,-50.58
+rec_dist_0.5m_desk_stim_len_02,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_len_02,target_command,LEN,16000,1,0.31,0.59,0.19813,0.03771,0.0,22.27,-50.74
+rec_dist_0.5m_desk_stim_len_03,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_len_03,target_command,LEN,16000,1,0.3,0.58,0.16475,0.02911,0.0,19.89,-50.61
+rec_dist_0.5m_desk_stim_len_04,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_len_04,target_command,LEN,16000,1,0.37,0.65,0.14924,0.03411,0.0,21.03,-50.38
+rec_dist_0.5m_desk_stim_len_05,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_len_05,target_command,LEN,16000,1,0.3,0.58,0.24517,0.02918,0.0,19.7,-50.39
+rec_dist_0.5m_desk_stim_xuong_01,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_xuong_01,target_command,XUONG,16000,1,0.34,0.62,0.16501,0.03028,0.0,20.52,-50.9
+rec_dist_0.5m_desk_stim_xuong_02,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_xuong_02,target_command,XUONG,16000,1,0.53,0.81,0.17518,0.02928,0.0,19.88,-50.55
+rec_dist_0.5m_desk_stim_xuong_03,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_xuong_03,target_command,XUONG,16000,1,0.39,0.67,0.19379,0.02497,0.0,18.47,-50.52
+rec_dist_0.5m_desk_stim_xuong_04,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_xuong_04,target_command,XUONG,16000,1,0.34,0.62,0.15428,0.02633,0.0,18.89,-50.48
+rec_dist_0.5m_desk_stim_xuong_05,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_xuong_05,target_command,XUONG,16000,1,0.39,0.67,0.16565,0.02404,0.0,18.25,-50.63
+rec_dist_0.5m_desk_stim_trai_01,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_trai_01,target_command,TRAI,16000,1,0.39,0.67,0.19888,0.02834,0.0,19.63,-50.58
+rec_dist_0.5m_desk_stim_trai_02,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_trai_02,target_command,TRAI,16000,1,0.33,0.61,0.22288,0.02511,0.0,18.46,-50.46
+rec_dist_0.5m_desk_stim_trai_03,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_trai_03,target_command,TRAI,16000,1,0.33,0.61,0.21788,0.03109,0.0,20.45,-50.6
+rec_dist_0.5m_desk_stim_trai_04,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_trai_04,target_command,TRAI,16000,1,0.34,0.62,0.21837,0.02482,0.0,18.62,-50.72
+rec_dist_0.5m_desk_stim_trai_05,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_trai_05,target_command,TRAI,16000,1,0.36,0.64,0.22813,0.03108,0.0,20.4,-50.55
+rec_dist_0.5m_desk_stim_phai_01,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_phai_01,target_command,PHAI,16000,1,0.25,0.53,0.21091,0.03085,0.0,20.42,-50.63
+rec_dist_0.5m_desk_stim_phai_02,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_phai_02,target_command,PHAI,16000,1,0.31,0.59,0.251,0.03484,0.0,21.39,-50.55
+rec_dist_0.5m_desk_stim_phai_03,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_phai_03,target_command,PHAI,16000,1,0.24,0.52,0.24656,0.02839,0.0,19.68,-50.61
+rec_dist_0.5m_desk_stim_phai_04,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_phai_04,target_command,PHAI,16000,1,0.23,0.51,0.22,0.02611,0.0,18.81,-50.47
+rec_dist_0.5m_desk_stim_phai_05,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_phai_05,target_command,PHAI,16000,1,0.23,0.51,0.21127,0.03465,0.0,21.43,-50.64
+rec_dist_0.5m_desk_stim_silence_01,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_silence_01,negative_silence,REJECT,16000,1,0.8,1.08,0.01172,0.00301,0.0,0.49,-50.91
+rec_dist_0.5m_desk_stim_silence_02,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_silence_02,negative_silence,REJECT,16000,1,0.8,1.08,0.01225,0.003,0.0,0.35,-50.82
+rec_dist_0.5m_desk_stim_noise_01,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_noise_01,negative_noise,REJECT,16000,1,0.8,1.08,0.14263,0.03126,0.0,20.22,-50.32
+rec_dist_0.5m_desk_stim_noise_02,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_noise_02,negative_noise,REJECT,16000,1,0.8,1.08,0.14923,0.04474,0.0,23.13,-50.12
+rec_dist_0.5m_desk_stim_conv_01,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_conv_01,negative_conversation,REJECT,16000,1,1.0,1.28,0.01272,0.00301,0.0,0.39,-50.83
+rec_dist_0.5m_desk_stim_conv_02,dist_0.5m_desk,Distance Sweep: 0.5m Desk,distance,stim_conv_02,negative_conversation,REJECT,16000,1,1.0,1.28,0.01235,0.00297,0.0,0.33,-50.88
+rec_dist_1.0m_room_stim_len_01,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_len_01,target_command,LEN,16000,1,0.3,0.58,0.09159,0.01481,0.0,11.62,-48.21
+rec_dist_1.0m_room_stim_len_02,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_len_02,target_command,LEN,16000,1,0.31,0.59,0.10444,0.019,0.0,13.57,-47.99
+rec_dist_1.0m_room_stim_len_03,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_len_03,target_command,LEN,16000,1,0.3,0.58,0.09595,0.01588,0.0,12.18,-48.16
+rec_dist_1.0m_room_stim_len_04,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_len_04,target_command,LEN,16000,1,0.37,0.65,0.08765,0.01499,0.0,11.51,-47.99
+rec_dist_1.0m_room_stim_len_05,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_len_05,target_command,LEN,16000,1,0.3,0.58,0.13281,0.01548,0.0,11.97,-48.17
+rec_dist_1.0m_room_stim_xuong_01,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_xuong_01,target_command,XUONG,16000,1,0.34,0.62,0.08165,0.01512,0.0,11.57,-47.98
+rec_dist_1.0m_room_stim_xuong_02,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_xuong_02,target_command,XUONG,16000,1,0.53,0.81,0.09177,0.01483,0.0,11.36,-47.93
+rec_dist_1.0m_room_stim_xuong_03,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_xuong_03,target_command,XUONG,16000,1,0.39,0.67,0.09977,0.01235,0.0,9.85,-48.02
+rec_dist_1.0m_room_stim_xuong_04,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_xuong_04,target_command,XUONG,16000,1,0.34,0.62,0.07715,0.01282,0.0,10.37,-48.21
+rec_dist_1.0m_room_stim_xuong_05,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_xuong_05,target_command,XUONG,16000,1,0.39,0.67,0.09626,0.01238,0.0,10.05,-48.19
+rec_dist_1.0m_room_stim_trai_01,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_trai_01,target_command,TRAI,16000,1,0.39,0.67,0.10753,0.01503,0.0,11.77,-48.24
+rec_dist_1.0m_room_stim_trai_02,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_trai_02,target_command,TRAI,16000,1,0.33,0.61,0.11576,0.0128,0.0,10.33,-48.19
+rec_dist_1.0m_room_stim_trai_03,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_trai_03,target_command,TRAI,16000,1,0.33,0.61,0.12049,0.01629,0.0,12.44,-48.2
+rec_dist_1.0m_room_stim_trai_04,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_trai_04,target_command,TRAI,16000,1,0.34,0.62,0.12359,0.01344,0.0,10.77,-48.2
+rec_dist_1.0m_room_stim_trai_05,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_trai_05,target_command,TRAI,16000,1,0.36,0.64,0.11497,0.01638,0.0,12.43,-48.15
+rec_dist_1.0m_room_stim_phai_01,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_phai_01,target_command,PHAI,16000,1,0.25,0.53,0.10348,0.01651,0.0,12.39,-48.03
+rec_dist_1.0m_room_stim_phai_02,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_phai_02,target_command,PHAI,16000,1,0.31,0.59,0.13654,0.01862,0.0,13.23,-47.83
+rec_dist_1.0m_room_stim_phai_03,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_phai_03,target_command,PHAI,16000,1,0.24,0.52,0.12978,0.01513,0.0,11.63,-48.04
+rec_dist_1.0m_room_stim_phai_04,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_phai_04,target_command,PHAI,16000,1,0.23,0.51,0.10829,0.01412,0.0,11.14,-48.15
+rec_dist_1.0m_room_stim_phai_05,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_phai_05,target_command,PHAI,16000,1,0.23,0.51,0.10418,0.01836,0.0,13.24,-47.96
+rec_dist_1.0m_room_stim_silence_01,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_silence_01,negative_silence,REJECT,16000,1,0.8,1.08,0.01519,0.00399,0.0,0.43,-48.42
+rec_dist_1.0m_room_stim_silence_02,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_silence_02,negative_silence,REJECT,16000,1,0.8,1.08,0.01618,0.00401,0.0,0.46,-48.4
+rec_dist_1.0m_room_stim_noise_01,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_noise_01,negative_noise,REJECT,16000,1,0.8,1.08,0.08113,0.01654,0.0,12.25,-47.88
+rec_dist_1.0m_room_stim_noise_02,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_noise_02,negative_noise,REJECT,16000,1,0.8,1.08,0.0835,0.02407,0.0,15.35,-47.72
+rec_dist_1.0m_room_stim_conv_01,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_conv_01,negative_conversation,REJECT,16000,1,1.0,1.28,0.01683,0.00401,0.0,0.45,-48.39
+rec_dist_1.0m_room_stim_conv_02,dist_1.0m_room,Distance Sweep: 1.0m Room,distance,stim_conv_02,negative_conversation,REJECT,16000,1,1.0,1.28,0.01622,0.00399,0.0,0.5,-48.48
+rec_room_anechoic_dry_stim_len_01,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_len_01,target_command,LEN,16000,1,0.3,0.38,0.18122,0.03582,0.0,21.21,-50.13
+rec_room_anechoic_dry_stim_len_02,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_len_02,target_command,LEN,16000,1,0.31,0.39,0.19506,0.04331,0.0,23.38,-50.65
+rec_room_anechoic_dry_stim_len_03,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_len_03,target_command,LEN,16000,1,0.3,0.38,0.16324,0.03598,0.0,21.64,-50.52
+rec_room_anechoic_dry_stim_len_04,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_len_04,target_command,LEN,16000,1,0.37,0.45,0.15028,0.03875,0.0,22.32,-50.56
+rec_room_anechoic_dry_stim_len_05,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_len_05,target_command,LEN,16000,1,0.3,0.38,0.22799,0.03616,0.0,21.53,-50.36
+rec_room_anechoic_dry_stim_xuong_01,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_xuong_01,target_command,XUONG,16000,1,0.34,0.42,0.1775,0.03715,0.0,21.98,-50.58
+rec_room_anechoic_dry_stim_xuong_02,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_xuong_02,target_command,XUONG,16000,1,0.53,0.61,0.15898,0.03328,0.0,21.03,-50.59
+rec_room_anechoic_dry_stim_xuong_03,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_xuong_03,target_command,XUONG,16000,1,0.39,0.47,0.19589,0.02917,0.0,19.83,-50.53
+rec_room_anechoic_dry_stim_xuong_04,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_xuong_04,target_command,XUONG,16000,1,0.34,0.42,0.1459,0.0313,0.0,20.29,-50.38
+rec_room_anechoic_dry_stim_xuong_05,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_xuong_05,target_command,XUONG,16000,1,0.39,0.47,0.16745,0.02807,0.0,19.65,-50.68
+rec_room_anechoic_dry_stim_trai_01,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_trai_01,target_command,TRAI,16000,1,0.39,0.47,0.17913,0.0327,0.0,20.59,-50.3
+rec_room_anechoic_dry_stim_trai_02,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_trai_02,target_command,TRAI,16000,1,0.33,0.41,0.22007,0.02893,0.0,19.77,-50.54
+rec_room_anechoic_dry_stim_trai_03,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_trai_03,target_command,TRAI,16000,1,0.33,0.41,0.21052,0.03552,0.0,21.48,-50.47
+rec_room_anechoic_dry_stim_trai_04,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_trai_04,target_command,TRAI,16000,1,0.34,0.42,0.20881,0.02934,0.0,19.68,-50.33
+rec_room_anechoic_dry_stim_trai_05,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_trai_05,target_command,TRAI,16000,1,0.36,0.44,0.2249,0.03492,0.0,21.65,-50.79
+rec_room_anechoic_dry_stim_phai_01,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_phai_01,target_command,PHAI,16000,1,0.25,0.33,0.21021,0.03802,0.0,22.41,-50.81
+rec_room_anechoic_dry_stim_phai_02,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_phai_02,target_command,PHAI,16000,1,0.31,0.39,0.24204,0.04128,0.0,22.76,-50.45
+rec_room_anechoic_dry_stim_phai_03,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_phai_03,target_command,PHAI,16000,1,0.24,0.32,0.21693,0.0347,0.0,21.68,-50.87
+rec_room_anechoic_dry_stim_phai_04,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_phai_04,target_command,PHAI,16000,1,0.23,0.31,0.19569,0.03206,0.0,20.94,-50.82
+rec_room_anechoic_dry_stim_phai_05,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_phai_05,target_command,PHAI,16000,1,0.23,0.31,0.19401,0.0425,0.0,23.26,-50.69
+rec_room_anechoic_dry_stim_silence_01,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_silence_01,negative_silence,REJECT,16000,1,0.8,0.88,0.01263,0.003,0.0,0.51,-50.96
+rec_room_anechoic_dry_stim_silence_02,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_silence_02,negative_silence,REJECT,16000,1,0.8,0.88,0.01134,0.00299,0.0,0.43,-50.91
+rec_room_anechoic_dry_stim_noise_01,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_noise_01,negative_noise,REJECT,16000,1,0.8,0.88,0.14692,0.0339,0.0,7.19,-36.59
+rec_room_anechoic_dry_stim_noise_02,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_noise_02,negative_noise,REJECT,16000,1,0.8,0.88,0.14247,0.04763,0.0,0.16,-26.6
+rec_room_anechoic_dry_stim_conv_01,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_conv_01,negative_conversation,REJECT,16000,1,1.0,1.08,0.01263,0.00298,0.0,0.42,-50.93
+rec_room_anechoic_dry_stim_conv_02,room_anechoic_dry,Room Acoustic: Dry Anechoic (RT60 0.08s),room_acoustics,stim_conv_02,negative_conversation,REJECT,16000,1,1.0,1.08,0.01264,0.00299,0.0,0.5,-51.0
+rec_room_office_small_stim_len_01,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_len_01,target_command,LEN,16000,1,0.3,0.58,0.17171,0.02892,0.0,19.8,-50.58
+rec_room_office_small_stim_len_02,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_len_02,target_command,LEN,16000,1,0.31,0.59,0.19813,0.03771,0.0,22.27,-50.74
+rec_room_office_small_stim_len_03,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_len_03,target_command,LEN,16000,1,0.3,0.58,0.16475,0.02911,0.0,19.89,-50.61
+rec_room_office_small_stim_len_04,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_len_04,target_command,LEN,16000,1,0.37,0.65,0.14924,0.03411,0.0,21.03,-50.38
+rec_room_office_small_stim_len_05,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_len_05,target_command,LEN,16000,1,0.3,0.58,0.24517,0.02918,0.0,19.7,-50.39
+rec_room_office_small_stim_xuong_01,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_xuong_01,target_command,XUONG,16000,1,0.34,0.62,0.16501,0.03028,0.0,20.52,-50.9
+rec_room_office_small_stim_xuong_02,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_xuong_02,target_command,XUONG,16000,1,0.53,0.81,0.17518,0.02928,0.0,19.88,-50.55
+rec_room_office_small_stim_xuong_03,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_xuong_03,target_command,XUONG,16000,1,0.39,0.67,0.19379,0.02497,0.0,18.47,-50.52
+rec_room_office_small_stim_xuong_04,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_xuong_04,target_command,XUONG,16000,1,0.34,0.62,0.15428,0.02633,0.0,18.89,-50.48
+rec_room_office_small_stim_xuong_05,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_xuong_05,target_command,XUONG,16000,1,0.39,0.67,0.16565,0.02404,0.0,18.25,-50.63
+rec_room_office_small_stim_trai_01,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_trai_01,target_command,TRAI,16000,1,0.39,0.67,0.19888,0.02834,0.0,19.63,-50.58
+rec_room_office_small_stim_trai_02,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_trai_02,target_command,TRAI,16000,1,0.33,0.61,0.22288,0.02511,0.0,18.46,-50.46
+rec_room_office_small_stim_trai_03,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_trai_03,target_command,TRAI,16000,1,0.33,0.61,0.21788,0.03109,0.0,20.45,-50.6
+rec_room_office_small_stim_trai_04,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_trai_04,target_command,TRAI,16000,1,0.34,0.62,0.21837,0.02482,0.0,18.62,-50.72
+rec_room_office_small_stim_trai_05,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_trai_05,target_command,TRAI,16000,1,0.36,0.64,0.22813,0.03108,0.0,20.4,-50.55
+rec_room_office_small_stim_phai_01,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_phai_01,target_command,PHAI,16000,1,0.25,0.53,0.21091,0.03085,0.0,20.42,-50.63
+rec_room_office_small_stim_phai_02,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_phai_02,target_command,PHAI,16000,1,0.31,0.59,0.251,0.03484,0.0,21.39,-50.55
+rec_room_office_small_stim_phai_03,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_phai_03,target_command,PHAI,16000,1,0.24,0.52,0.24656,0.02839,0.0,19.68,-50.61
+rec_room_office_small_stim_phai_04,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_phai_04,target_command,PHAI,16000,1,0.23,0.51,0.22,0.02611,0.0,18.81,-50.47
+rec_room_office_small_stim_phai_05,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_phai_05,target_command,PHAI,16000,1,0.23,0.51,0.21127,0.03465,0.0,21.43,-50.64
+rec_room_office_small_stim_silence_01,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_silence_01,negative_silence,REJECT,16000,1,0.8,1.08,0.01172,0.00301,0.0,0.49,-50.91
+rec_room_office_small_stim_silence_02,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_silence_02,negative_silence,REJECT,16000,1,0.8,1.08,0.01225,0.003,0.0,0.35,-50.82
+rec_room_office_small_stim_noise_01,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_noise_01,negative_noise,REJECT,16000,1,0.8,1.08,0.14263,0.03126,0.0,20.22,-50.32
+rec_room_office_small_stim_noise_02,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_noise_02,negative_noise,REJECT,16000,1,0.8,1.08,0.14923,0.04474,0.0,23.13,-50.12
+rec_room_office_small_stim_conv_01,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_conv_01,negative_conversation,REJECT,16000,1,1.0,1.28,0.01272,0.00301,0.0,0.39,-50.83
+rec_room_office_small_stim_conv_02,room_office_small,Room Acoustic: Furnished Office (RT60 0.28s),room_acoustics,stim_conv_02,negative_conversation,REJECT,16000,1,1.0,1.28,0.01235,0.00297,0.0,0.33,-50.88
+rec_room_reverb_medium_stim_len_01,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_len_01,target_command,LEN,16000,1,0.3,0.88,0.20805,0.02555,0.0,19.0,-50.85
+rec_room_reverb_medium_stim_len_02,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_len_02,target_command,LEN,16000,1,0.31,0.89,0.20941,0.0311,0.0,20.59,-50.74
+rec_room_reverb_medium_stim_len_03,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_len_03,target_command,LEN,16000,1,0.3,0.88,0.18945,0.02544,0.0,18.74,-50.63
+rec_room_reverb_medium_stim_len_04,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_len_04,target_command,LEN,16000,1,0.37,0.95,0.15603,0.02688,0.0,19.28,-50.69
+rec_room_reverb_medium_stim_len_05,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_len_05,target_command,LEN,16000,1,0.3,0.88,0.24757,0.02492,0.0,18.63,-50.7
+rec_room_reverb_medium_stim_xuong_01,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_xuong_01,target_command,XUONG,16000,1,0.34,0.92,0.20869,0.02813,0.0,19.68,-50.69
+rec_room_reverb_medium_stim_xuong_02,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_xuong_02,target_command,XUONG,16000,1,0.53,1.11,0.16361,0.0269,0.0,19.4,-50.81
+rec_room_reverb_medium_stim_xuong_03,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_xuong_03,target_command,XUONG,16000,1,0.39,0.97,0.20736,0.0215,0.0,17.26,-50.61
+rec_room_reverb_medium_stim_xuong_04,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_xuong_04,target_command,XUONG,16000,1,0.34,0.92,0.14369,0.02227,0.0,17.55,-50.6
+rec_room_reverb_medium_stim_xuong_05,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_xuong_05,target_command,XUONG,16000,1,0.39,0.97,0.17732,0.02086,0.0,17.11,-50.72
+rec_room_reverb_medium_stim_trai_01,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_trai_01,target_command,TRAI,16000,1,0.39,0.97,0.18618,0.02382,0.0,18.27,-50.73
+rec_room_reverb_medium_stim_trai_02,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_trai_02,target_command,TRAI,16000,1,0.33,0.91,0.23555,0.02081,0.0,17.21,-50.85
+rec_room_reverb_medium_stim_trai_03,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_trai_03,target_command,TRAI,16000,1,0.33,0.91,0.21489,0.02606,0.0,19.06,-50.74
+rec_room_reverb_medium_stim_trai_04,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_trai_04,target_command,TRAI,16000,1,0.34,0.92,0.214,0.02095,0.0,17.04,-50.62
+rec_room_reverb_medium_stim_trai_05,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_trai_05,target_command,TRAI,16000,1,0.36,0.94,0.2432,0.02538,0.0,18.68,-50.59
+rec_room_reverb_medium_stim_phai_01,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_phai_01,target_command,PHAI,16000,1,0.25,0.83,0.1961,0.02513,0.0,18.67,-50.66
+rec_room_reverb_medium_stim_phai_02,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_phai_02,target_command,PHAI,16000,1,0.31,0.89,0.27901,0.02887,0.0,19.95,-50.74
+rec_room_reverb_medium_stim_phai_03,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_phai_03,target_command,PHAI,16000,1,0.24,0.82,0.23819,0.02304,0.0,18.16,-50.91
+rec_room_reverb_medium_stim_phai_04,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_phai_04,target_command,PHAI,16000,1,0.23,0.81,0.21941,0.02098,0.0,17.05,-50.61
+rec_room_reverb_medium_stim_phai_05,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_phai_05,target_command,PHAI,16000,1,0.23,0.81,0.21008,0.02721,0.0,19.35,-50.66
+rec_room_reverb_medium_stim_silence_01,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_silence_01,negative_silence,REJECT,16000,1,0.8,1.38,0.01293,0.00299,0.0,0.51,-51.0
+rec_room_reverb_medium_stim_silence_02,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_silence_02,negative_silence,REJECT,16000,1,0.8,1.38,0.01158,0.00297,0.0,0.49,-51.02
+rec_room_reverb_medium_stim_noise_01,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_noise_01,negative_noise,REJECT,16000,1,0.8,1.38,0.156,0.02817,0.0,19.41,-50.42
+rec_room_reverb_medium_stim_noise_02,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_noise_02,negative_noise,REJECT,16000,1,0.8,1.38,0.14325,0.0365,0.0,21.79,-50.54
+rec_room_reverb_medium_stim_conv_01,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_conv_01,negative_conversation,REJECT,16000,1,1.0,1.58,0.01225,0.003,0.0,0.54,-51.0
+rec_room_reverb_medium_stim_conv_02,room_reverb_medium,Room Acoustic: Medium Reverb (RT60 0.58s),room_acoustics,stim_conv_02,negative_conversation,REJECT,16000,1,1.0,1.58,0.0121,0.003,0.0,0.5,-50.96
