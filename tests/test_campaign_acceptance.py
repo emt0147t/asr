@@ -30,6 +30,8 @@ if sys.stdout.encoding != 'utf-8':
 if str(Path.cwd()) not in sys.path:
     sys.path.insert(0, str(Path.cwd()))
 
+import os
+import time
 from typing import Dict, Any, List, Optional, Tuple
 import hashlib
 import pytest
@@ -48,6 +50,19 @@ from src.acquisition.campaign_validator import (
     CLASS_ID_MAP
 )
 from src.acquisition.speaker_consent import revoke_speaker_consent
+
+
+def _mp_worker_reg(args):
+    worker_idx, ledger_path_str = args
+    from pathlib import Path
+    from src.acquisition.speaker_consent import register_speaker
+    return register_speaker(
+        dialect="Northern" if worker_idx % 2 == 0 else "Southern",
+        gender="FEMALE" if worker_idx % 2 == 0 else "MALE",
+        consent_given=True,
+        ledger_path=Path(ledger_path_str),
+        notes=f"mp_worker_{worker_idx}"
+    )
 
 
 EXPECTED_TEST_V2_SHA = "9E3904C8EA427244F7280A41140D7EFD19FD9625B359290ADB7ADCD4FA2E1C13"
@@ -625,8 +640,14 @@ def test_p0_3_pseudonymous_speaker_id_generation(tmp_path):
       5. register_speaker automatically generates compliant pseudonymous IDs.
     """
     import re
+    import json
     from src.acquisition.speaker_consent import (
-        generate_pseudonymous_speaker_id, SPEAKER_ID_REGEX, register_speaker
+        generate_pseudonymous_speaker_id,
+        generate_canonical_speaker_id,
+        SPEAKER_ID_REGEX,
+        CANONICAL_SPEAKER_ID_REGEX,
+        register_speaker,
+        save_consent_ledger,
     )
 
     # 1. Format regex verification across dialects
@@ -641,25 +662,36 @@ def test_p0_3_pseudonymous_speaker_id_generation(tmp_path):
     assert SPEAKER_ID_REGEX.match(spk_s) is not None, f"Southern ID invalid: {spk_s}"
     assert spk_s.startswith("SPK_H_S_")
 
-    # 2. Uniqueness across substantial sample (1,000 IDs)
+    # 2. Uniqueness across substantial sample (1,000 IDs) with active ledger tracking
     sample_size = 1000
-    generated_ids = [generate_pseudonymous_speaker_id("Northern") for _ in range(sample_size)]
-    assert len(set(generated_ids)) == sample_size, "Collision detected in 1,000 random samples!"
+    active_ledger = {}
+    generated_ids = []
+    for _ in range(sample_size):
+        sid = generate_pseudonymous_speaker_id("Northern", ledger=active_ledger)
+        active_ledger[sid] = {"consent_given": True}
+        generated_ids.append(sid)
+    assert len(set(generated_ids)) == sample_size, "Collision detected in 1,000 tracked samples!"
+    assert len(active_ledger) == sample_size
 
     # 3. Absence of sequential counters (not SPK_FIELD_N001, N002)
     for sid in generated_ids:
         assert not sid.startswith("SPK_FIELD_")
+        assert len(sid) == 14, f"Expected 14-char ID length, got {len(sid)} for {sid}"
+        nonce = sid.split("_")[-1]
+        assert len(nonce) == 6, f"Expected 6-char nonce, got {len(nonce)}"
+        assert not re.search(r"[g-zG-Z]", nonce), f"Nonce contains non-hex characters: {nonce}"
+
     # Verify non-sequential distribution: nonces converted to integers have large random differences
     nonces_int = [int(sid.split("_")[-1], 16) for sid in generated_ids[:20]]
     diffs = [abs(nonces_int[i+1] - nonces_int[i]) for i in range(len(nonces_int) - 1)]
     assert any(d > 1000 for d in diffs), "Nonces appear sequential rather than random!"
 
-    # 4. Collision detection & regeneration
-    simulated_ledger = {spk_n: {"consent_given": True}}
-    # When simulated_ledger contains spk_n, generator must return a different ID
-    new_id = generate_pseudonymous_speaker_id("Northern", ledger=simulated_ledger)
-    assert new_id != spk_n
-    assert new_id not in simulated_ledger
+    # 4. Deterministic collision detection & retry with mocked nonce source
+    from unittest.mock import patch
+    with patch("src.acquisition.speaker_consent.secrets.token_hex", side_effect=["112233", "112233", "445566"]):
+        colliding_ledger = {"SPK_H_N_112233": {"consent_given": True}}
+        resolved_id = generate_pseudonymous_speaker_id("Northern", ledger=colliding_ledger)
+        assert resolved_id == "SPK_H_N_445566", f"Expected resolved ID after collision retry, got {resolved_id}"
 
     # 5. Collision limit failure safety
     import pytest
@@ -667,7 +699,7 @@ def test_p0_3_pseudonymous_speaker_id_generation(tmp_path):
         # Force collision by providing max_attempts=0
         generate_pseudonymous_speaker_id("Northern", ledger={}, max_attempts=0)
 
-    # 6. Default registration uses pseudonymous ID
+    # 6. Default registration generates canonical 128-bit opaque ID (Phase 9A.4 invariant)
     mock_ledger_file = tmp_path / "mock_reg_ledger.json"
     record = register_speaker(
         dialect="Southern",
@@ -676,8 +708,181 @@ def test_p0_3_pseudonymous_speaker_id_generation(tmp_path):
         ledger_path=mock_ledger_file,
         notes="mock"
     )
-    assert SPEAKER_ID_REGEX.match(record["speaker_id"]) is not None
+    assert CANONICAL_SPEAKER_ID_REGEX.match(record["speaker_id"]) is not None
+    assert len(record["speaker_id"]) == 36
     assert mock_ledger_file.exists()
+
+    # 7. Silent overwrite prevention on duplicate registration
+    with pytest.raises(ValueError, match="already exists"):
+        register_speaker(
+            dialect="Southern",
+            gender="MALE",
+            consent_given=True,
+            custom_speaker_id=record["speaker_id"],
+            ledger_path=mock_ledger_file
+        )
+
+    # 8. Canonical Phase 9A.3/9A.4 128-bit opaque ID contract verification
+    canon_id = generate_canonical_speaker_id()
+    assert CANONICAL_SPEAKER_ID_REGEX.match(canon_id) is not None, f"Canonical ID invalid: {canon_id}"
+    assert len(canon_id) == 36, f"Expected 36 chars (SPK_ + 32 hex), got {len(canon_id)}"
+    assert canon_id.startswith("SPK_")
+    # Verify zero dialect or demographic prefix leakage in identifier
+    assert not any(canon_id.startswith(f"SPK_H_{p}_") for p in ["N", "C", "S"])
+    # Verify deterministic collision retry for canonical generator
+    with patch("src.acquisition.speaker_consent.secrets.token_hex", side_effect=["a" * 32, "a" * 32, "b" * 32]):
+        colliding_ledger = {f"SPK_{'a' * 32}": {"consent_given": True}}
+        resolved_canon = generate_canonical_speaker_id(ledger=colliding_ledger)
+        assert resolved_canon == f"SPK_{'b' * 32}"
+    # Verify explicit call without optional flags produces canonical format
+    def_record = register_speaker(
+        dialect="Northern",
+        gender="MALE",
+        consent_given=True,
+        ledger_path=mock_ledger_file
+    )
+    assert CANONICAL_SPEAKER_ID_REGEX.match(def_record["speaker_id"]) is not None
+    assert def_record["dialect"] == "Northern"  # Dialect preserved in metadata, not ID
+
+    # 9. Failed-write atomicity verification: serialization failure does not corrupt ledger
+    corrupt_candidate = {"unserializable": object()}
+    with pytest.raises(TypeError):
+        save_consent_ledger(corrupt_candidate, ledger_path=mock_ledger_file)
+    # Original ledger file on disk must remain completely intact and valid JSON
+    with open(mock_ledger_file, "r", encoding="utf-8") as f:
+        reloaded = json.load(f)
+    assert record["speaker_id"] in reloaded
+    assert def_record["speaker_id"] in reloaded
+
+    # 10. Multi-threaded concurrent speaker registration safety (Single-Writer Advisory Lock)
+    import concurrent.futures
+    concurrent_ledger_file = tmp_path / "concurrent_ledger.json"
+
+    def worker_reg(worker_idx):
+        return register_speaker(
+            dialect="Northern" if worker_idx % 2 == 0 else "Southern",
+            gender="FEMALE" if worker_idx % 2 == 0 else "MALE",
+            consent_given=True,
+            ledger_path=concurrent_ledger_file,
+            notes=f"concurrent_worker_{worker_idx}"
+        )
+
+    num_workers = 10
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+        futures = [executor.submit(worker_reg, i) for i in range(num_workers)]
+        results = [f.result() for f in concurrent.futures.as_completed(futures)]
+
+    assert len(results) == num_workers
+    with open(concurrent_ledger_file, "r", encoding="utf-8") as f:
+        concurrent_ledger = json.load(f)
+    assert len(concurrent_ledger) == num_workers, f"Expected {num_workers} entries, got {len(concurrent_ledger)}"
+    for r in results:
+        assert r["speaker_id"] in concurrent_ledger
+        assert CANONICAL_SPEAKER_ID_REGEX.match(r["speaker_id"]) is not None
+
+    # 11. Concurrent race on duplicate custom_speaker_id
+    shared_custom_id = "SPK_RACE_TEST_ID_001"
+    def worker_duplicate(worker_idx):
+        try:
+            register_speaker(
+                dialect="Central",
+                gender="MALE",
+                consent_given=True,
+                custom_speaker_id=shared_custom_id,
+                ledger_path=concurrent_ledger_file
+            )
+            return "SUCCESS"
+        except ValueError as e:
+            return "COLLISION_REJECTED"
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+        f1 = executor.submit(worker_duplicate, 1)
+        f2 = executor.submit(worker_duplicate, 2)
+        race_outcomes = {f1.result(), f2.result()}
+
+    # Exactly one succeeded and one was cleanly rejected with overwrite prevented
+    assert race_outcomes == {"SUCCESS", "COLLISION_REJECTED"}
+
+    # 12. OS-Level Advisory File Locking & Concurrency Protection (Phase 9A.6.2)
+    import socket
+    from src.acquisition.speaker_consent import ledger_lock, _acquire_kernel_lock, _release_kernel_lock
+
+    stale_lock_path = concurrent_ledger_file.with_suffix(".lock")
+
+    # 12a. Live Owner Lock Protection: When a process holds the kernel lock, contention raises TimeoutError
+    fd_owner = os.open(str(stale_lock_path), os.O_RDWR | os.O_CREAT, 0o666)
+    assert _acquire_kernel_lock(fd_owner) is True, "Failed to acquire kernel lock for owner test"
+
+    with pytest.raises(TimeoutError, match="lock contention timeout"):
+        with ledger_lock(concurrent_ledger_file, timeout=0.1, stale_timeout=60.0):
+            pass
+    assert stale_lock_path.exists()  # Stable lock file preserved
+
+    # 12b. Automatic Kernel Lock Release: Closing the owner fd releases the lock immediately
+    _release_kernel_lock(fd_owner)
+    os.close(fd_owner)
+
+    # Next caller acquires lock immediately without needing to delete or unlink the lock file
+    recovered_rec = register_speaker(
+        dialect="Central",
+        gender="FEMALE",
+        consent_given=True,
+        ledger_path=concurrent_ledger_file,
+        notes="kernel_lock_recovery_test"
+    )
+    assert CANONICAL_SPEAKER_ID_REGEX.match(recovered_rec["speaker_id"]) is not None
+    assert stale_lock_path.exists()  # Stable lock file persists on disk
+
+    # 12c. Nested Re-entrant Locking: Calling nested lock blocks on the same thread acquires without self-deadlock
+    with ledger_lock(concurrent_ledger_file, timeout=0.5):
+        with ledger_lock(concurrent_ledger_file, timeout=0.5):
+            nested_rec = register_speaker(
+                dialect="Southern",
+                gender="MALE",
+                consent_given=True,
+                ledger_path=concurrent_ledger_file,
+                notes="nested_transaction_test"
+            )
+            assert CANONICAL_SPEAKER_ID_REGEX.match(nested_rec["speaker_id"]) is not None
+    assert stale_lock_path.exists()  # Stable lock file persists without unlinking
+
+    # 13. Concurrent Registration vs Revocation safety
+    target_spk = results[0]["speaker_id"]
+    def worker_rev():
+        return revoke_speaker_consent(target_spk, ledger_path=concurrent_ledger_file)
+    def worker_new_reg():
+        return register_speaker(
+            dialect="Northern",
+            gender="MALE",
+            consent_given=True,
+            ledger_path=concurrent_ledger_file,
+            notes="parallel_with_revocation"
+        )
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+        f_rev = executor.submit(worker_rev)
+        f_reg = executor.submit(worker_new_reg)
+        assert f_rev.result() is True
+        assert CANONICAL_SPEAKER_ID_REGEX.match(f_reg.result()["speaker_id"]) is not None
+
+    with open(concurrent_ledger_file, "r", encoding="utf-8") as f:
+        ledger_after_rev = json.load(f)
+    assert ledger_after_rev[target_spk]["consent_given"] is False
+    assert ledger_after_rev[target_spk]["revoked_at"] is not None
+
+    # 14. Multi-Process Concurrent Execution (ProcessPoolExecutor)
+    mp_ledger_file = tmp_path / "mp_concurrent_ledger.json"
+    mp_args = [(i, str(mp_ledger_file)) for i in range(4)]
+    with concurrent.futures.ProcessPoolExecutor(max_workers=2) as executor:
+        mp_results = list(executor.map(_mp_worker_reg, mp_args))
+    assert len(mp_results) == 4
+    with open(mp_ledger_file, "r", encoding="utf-8") as f:
+        mp_ledger = json.load(f)
+    assert len(mp_ledger) == 4
+    for mpr in mp_results:
+        assert mpr["speaker_id"] in mp_ledger
+        assert CANONICAL_SPEAKER_ID_REGEX.match(mpr["speaker_id"]) is not None
+
 
 
 # ============================================================================

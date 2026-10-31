@@ -460,13 +460,13 @@ def ingest_recording(
         cid = consent_id
     elif "consent_id" in spk_meta and spk_meta["consent_id"]:
         cid = spk_meta["consent_id"]
-    elif speaker_id.startswith("SPK_H_"):
+    elif speaker_id.startswith("SPK_H_") or speaker_id.startswith("SPK_"):
         cid = f"CONSENT_{speaker_id[4:]}_v1.0"
     else:
         cid = f"CONSENT_{speaker_id}_v1.0"
 
     # Generate unique recording ID
-    if speaker_id.startswith("SPK_H_"):
+    if speaker_id.startswith("SPK_H_") or speaker_id.startswith("SPK_"):
         rec_id = f"rec_h_{command_label.lower()}_{speaker_id}_{session_id}_take{take_index:03d}"
     else:
         rec_id = f"field_{command_label.lower()}_{speaker_id}_{session_id}_take{take_index:03d}"

@@ -26,6 +26,11 @@ if str(Path.cwd()) not in sys.path:
     sys.path.insert(0, str(Path.cwd()))
 
 import json
+import os
+import time
+import socket
+import threading
+import contextlib
 from datetime import datetime, timezone
 from typing import Dict, Any, Optional, List
 
@@ -65,7 +70,12 @@ LEDGER_PATH = HUMAN_RECORDINGS_ROOT / "consent_ledger_human.json"
 # Historical fixture ledger path (preserved read-only for audit integrity)
 LEGACY_LEDGER_PATH = LEGACY_FIXTURES_ROOT / "consent_ledger.json"
 
-SPEAKER_ID_REGEX = re.compile(r"^SPK_H_([NCS])_([a-f0-9]{6})$")
+# Canonical Phase 9A.3 128-bit opaque pseudonymous speaker identifier regex
+CANONICAL_SPEAKER_ID_REGEX = re.compile(r"^SPK_[a-f0-9]{32}$")
+# Historical Phase 9A P0-3 remediation identifier regex (preserved for backward compatibility)
+LEGACY_SPEAKER_ID_REGEX = re.compile(r"^SPK_H_([NCS])_([a-f0-9]{6})$")
+# Master validation regex accepting canonical 128-bit opaque IDs and legacy P0-3 IDs
+SPEAKER_ID_REGEX = re.compile(r"^(?:SPK_[a-f0-9]{32}|SPK_H_([NCS])_([a-f0-9]{6}))$")
 
 
 def load_consent_ledger(ledger_path: Optional[Path] = None) -> Dict[str, Any]:
@@ -82,38 +92,270 @@ def load_consent_ledger(ledger_path: Optional[Path] = None) -> Dict[str, Any]:
         return {}
 
 
+_THREAD_LOCAL = threading.local()
+
+
+def is_process_alive(pid: int) -> bool:
+    """Checks whether a process with the given PID is currently running (diagnostic utility)."""
+    if pid <= 0:
+        return False
+    if os.name == "nt":
+        import ctypes
+        import ctypes.wintypes
+        PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
+        SYNCHRONIZE = 0x00100000
+        h_process = ctypes.windll.kernel32.OpenProcess(
+            PROCESS_QUERY_LIMITED_INFORMATION | SYNCHRONIZE,
+            False,
+            pid
+        )
+        if not h_process:
+            error = ctypes.windll.kernel32.GetLastError()
+            ERROR_INVALID_PARAMETER = 87
+            if error == ERROR_INVALID_PARAMETER:
+                return False
+            # Access denied indicates system/protected process, which is alive
+            return True
+        try:
+            exit_code = ctypes.wintypes.DWORD()
+            if ctypes.windll.kernel32.GetExitCodeProcess(h_process, ctypes.byref(exit_code)):
+                STILL_ACTIVE = 259
+                return exit_code.value == STILL_ACTIVE
+            return True
+        finally:
+            ctypes.windll.kernel32.CloseHandle(h_process)
+    else:
+        try:
+            os.kill(pid, 0)
+            return True
+        except ProcessLookupError:
+            return False
+        except PermissionError:
+            return True
+
+
+def _acquire_kernel_lock(fd: int) -> bool:
+    """
+    Attempts to acquire an exclusive, non-blocking kernel-level advisory lock on fd.
+    On Windows: uses msvcrt.locking(fd, msvcrt.LK_NBLCK, 1).
+    On POSIX: uses fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB).
+    Returns True if acquired, False if contested.
+    """
+    if os.name == "nt":
+        import msvcrt
+        try:
+            os.lseek(fd, 0, os.SEEK_SET)
+            msvcrt.locking(fd, msvcrt.LK_NBLCK, 1)
+            return True
+        except (BlockingIOError, PermissionError):
+            return False
+        except OSError as e:
+            if getattr(e, "winerror", None) in (33, 36) or e.errno in (13, 36):
+                return False
+            raise
+    else:
+        import fcntl
+        try:
+            fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            return True
+        except (BlockingIOError, PermissionError):
+            return False
+        except OSError as e:
+            import errno
+            if e.errno in (errno.EACCES, errno.EAGAIN, errno.EWOULDBLOCK):
+                return False
+            raise
+
+
+def _release_kernel_lock(fd: int) -> None:
+    """
+    Releases the kernel-level advisory lock on fd.
+    On Windows: uses msvcrt.locking(fd, msvcrt.LK_UNLCK, 1).
+    On POSIX: uses fcntl.flock(fd, fcntl.LOCK_UN).
+    """
+    if os.name == "nt":
+        import msvcrt
+        try:
+            os.lseek(fd, 0, os.SEEK_SET)
+            msvcrt.locking(fd, msvcrt.LK_UNLCK, 1)
+        except OSError:
+            pass
+    else:
+        import fcntl
+        try:
+            fcntl.flock(fd, fcntl.LOCK_UN)
+        except OSError:
+            pass
+
+
+@contextlib.contextmanager
+def ledger_lock(
+    ledger_path: Optional[Path] = None,
+    timeout: float = 5.0,
+    poll_interval: float = 0.02,
+    stale_timeout: float = 60.0
+):
+    """
+    Acquires an exclusive OS-level advisory file lock on a stable lock file for atomic
+    read-modify-write ledger transactions. Enforces the single-writer invariant across
+    multi-threaded and multi-process callers.
+
+    Architecture & Invariants (Phase 9A.6.2):
+      1. Stable Lock File: Uses a persistent .lock file that is NEVER deleted or unlinked
+         to acquire or release ownership, completely eliminating TOCTOU deletion races.
+      2. Kernel-Level Ownership: Uses OS kernel locking (msvcrt.locking on Windows,
+         fcntl.flock on POSIX). Lock ownership is strictly governed by the OS kernel.
+      3. Automatic Crash Recovery: When a process holding the lock exits or is terminated
+         (e.g., killed via SIGKILL / TerminateProcess), the OS kernel closes open file
+         descriptors and automatically releases the lock immediately without manual intervention.
+      4. Single Local Machine Scope: This implementation guarantees mutual exclusion on
+         local filesystems. Network-mounted filesystems (NFS, SMB/CIFS) are not supported.
+      5. Re-entrant (RLock) Semantics: Supports nested calls within the same thread.
+      6. Diagnostic Metadata: Lock holder writes PID, host, and timestamp to the lock file
+         for observability, but metadata does NOT authority lock ownership.
+      7. Bounded Timeout: Raises TimeoutError if lock cannot be acquired within timeout.
+    """
+    target_path = ledger_path if ledger_path is not None else LEDGER_PATH
+    canonical_lock_path = str(target_path.resolve().with_suffix(".lock"))
+    lock_path = Path(canonical_lock_path)
+    lock_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Check thread-local re-entrancy
+    if not hasattr(_THREAD_LOCAL, "active_locks"):
+        _THREAD_LOCAL.active_locks = {}
+
+    if canonical_lock_path in _THREAD_LOCAL.active_locks:
+        _THREAD_LOCAL.active_locks[canonical_lock_path] += 1
+        try:
+            yield
+        finally:
+            _THREAD_LOCAL.active_locks[canonical_lock_path] -= 1
+            if _THREAD_LOCAL.active_locks[canonical_lock_path] <= 0:
+                del _THREAD_LOCAL.active_locks[canonical_lock_path]
+        return
+
+    start_time = time.monotonic()
+    fd = None
+    current_host = socket.gethostname()
+    current_pid = os.getpid()
+
+    # Open the stable lock file (creating if it does not exist)
+    # Using O_RDWR | O_CREAT opens with shared access so other processes can also open and compete for lock
+    fd = os.open(str(lock_path), os.O_RDWR | os.O_CREAT, 0o666)
+
+    try:
+        acquired = False
+        while True:
+            if _acquire_kernel_lock(fd):
+                acquired = True
+                break
+
+            if time.monotonic() - start_time > timeout:
+                diag_info = ""
+                try:
+                    with open(lock_path, "r", encoding="utf-8", errors="ignore") as f_diag:
+                        content = f_diag.read().strip()
+                        if content:
+                            diag_info = f" [Current Holder: {content}]"
+                except Exception:
+                    pass
+                raise TimeoutError(
+                    f"Consent ledger lock contention timeout ({timeout}s) on {lock_path}."
+                    f"{diag_info} Exclusive kernel lock held by another process."
+                )
+            time.sleep(poll_interval)
+
+        # Write diagnostic payload for observability (never the authority for ownership)
+        try:
+            os.lseek(fd, 0, os.SEEK_SET)
+            lock_payload = (
+                f"pid={current_pid};"
+                f"host={current_host};"
+                f"acquired={time.time()};"
+                f"iso={datetime.now(timezone.utc).isoformat()}\n"
+            ).encode("utf-8")
+            os.write(fd, lock_payload)
+            os.ftruncate(fd, len(lock_payload))
+        except Exception:
+            pass
+
+        _THREAD_LOCAL.active_locks[canonical_lock_path] = 1
+        try:
+            yield
+        finally:
+            _THREAD_LOCAL.active_locks.pop(canonical_lock_path, None)
+            # Release kernel lock
+            _release_kernel_lock(fd)
+    finally:
+        if fd is not None:
+            try:
+                os.close(fd)
+            except Exception:
+                pass
+
+
 def save_consent_ledger(ledger: Dict[str, Any], ledger_path: Optional[Path] = None):
     target_path = ledger_path if ledger_path is not None else LEDGER_PATH
     target_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(target_path, "w", encoding="utf-8") as f:
-        json.dump(ledger, f, indent=2, ensure_ascii=False)
+    temp_path = target_path.with_suffix(f".tmp_{secrets.token_hex(4)}")
+    try:
+        with open(temp_path, "w", encoding="utf-8") as f:
+            json.dump(ledger, f, indent=2, ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(temp_path, target_path)
+    except Exception:
+        if temp_path.exists():
+            try:
+                temp_path.unlink()
+            except Exception:
+                pass
+        raise
 
 
-def generate_pseudonymous_speaker_id(
-    dialect: str,
+def generate_canonical_speaker_id(
     ledger: Optional[Dict[str, Any]] = None,
     max_attempts: int = 1000
 ) -> str:
     """
-    Generates a cryptographically random pseudonymous speaker identifier:
-    SPK_H_<N|C|S>_<6-hex-nonce> using Python's secrets module (P0-3 remediation).
-
-    Examples:
-      - Northern: SPK_H_N_8f2a1b
-      - Central:  SPK_H_C_4e7c09
-      - Southern: SPK_H_S_a1d3f5
+    Generates a 128-bit cryptographically secure, fully opaque pseudonymous speaker identifier:
+    SPK_<32-hex-characters> using Python's secrets module (Phase 9A.3 Canonical Contract).
 
     Guarantees:
-      1. Cryptographic Entropy: Generated via secrets.token_hex(3) (~16.78M combinations).
-      2. Direct Identifier Freedom: Does not embed names, birth dates, phone numbers, or sequence numbers.
-      3. Non-Sequential Distribution: Prevents order-of-enrollment leakage.
-      4. Safe Collision Handling: Re-samples if nonce already exists in active ledger;
-         fails safely with RuntimeError if max_attempts is exceeded.
-
-    Governance Notice:
-      Pseudonymization separates speech files from direct personal identity in storage.
-      It does NOT claim that physical human vocal acoustics are fully anonymized.
+      1. Zero PII/Demographic Leakage: Does NOT encode dialect, region, date, name, or contact info.
+         Dialect is strictly maintained in separately controlled metadata.
+      2. Cryptographic Entropy: 128 bits (secrets.token_hex(16)), yielding ~3.4e38 combinations.
+         Collision probability across 1,000,000 participants is < 1e-18.
+      3. Ledger Uniqueness: Re-samples if candidate exists in active ledger.
+      4. Safe Failure: Raises RuntimeError if max_attempts is exceeded.
     """
+    active_ledger = ledger if ledger is not None else {}
+    for _ in range(max_attempts):
+        nonce = secrets.token_hex(16).lower()
+        candidate_id = f"SPK_{nonce}"
+        if candidate_id not in active_ledger:
+            return candidate_id
+
+    raise RuntimeError(
+        f"Speaker ID collision avoidance limit ({max_attempts}) reached. "
+        "Active ledger may be congested."
+    )
+
+
+def generate_pseudonymous_speaker_id(
+    dialect: Optional[str] = None,
+    ledger: Optional[Dict[str, Any]] = None,
+    max_attempts: int = 1000,
+    canonical_opaque: bool = False
+) -> str:
+    """
+    Generates a pseudonymous speaker identifier.
+    If canonical_opaque=True or dialect is None, generates canonical 128-bit opaque ID (SPK_<32-hex>).
+    Otherwise, preserves historical P0-3 dialect-prefixed ID (SPK_H_<N|C|S>_<6-hex>) for backward compatibility.
+    """
+    if canonical_opaque or dialect is None:
+        return generate_canonical_speaker_id(ledger=ledger, max_attempts=max_attempts)
+
     prefix_map = {"Northern": "N", "Central": "C", "Southern": "S"}
     prefix = prefix_map.get(dialect, "X")
 
@@ -146,6 +388,7 @@ def register_speaker(
     acoustic_environment: str = "quiet_room",
     notes: str = "",
     custom_speaker_id: Optional[str] = None,
+    use_canonical_id: bool = True,
     ledger_path: Optional[Path] = None
 ) -> Dict[str, Any]:
     """
@@ -171,38 +414,44 @@ def register_speaker(
         raise ValueError(f"Invalid distance_category '{distance_category}'. Must be one of {VALID_DISTANCE_CATEGORIES}")
 
     target_ledger_path = ledger_path if ledger_path is not None else LEDGER_PATH
-    ledger = load_consent_ledger(target_ledger_path)
 
-    if custom_speaker_id:
-        if not re.match(r"^[A-Za-z0-9_\-]+$", custom_speaker_id):
-            raise ValueError(f"Invalid characters in custom_speaker_id '{custom_speaker_id}'. Only alphanumeric, underscores, and dashes allowed.")
-        spk_id = custom_speaker_id
-    else:
-        spk_id = generate_pseudonymous_speaker_id(dialect, ledger)
+    with ledger_lock(target_ledger_path):
+        ledger = load_consent_ledger(target_ledger_path)
 
-    cid = f"CONSENT_{spk_id[4:]}_v1.0" if spk_id.startswith("SPK_") else f"CONSENT_{spk_id}_v1.0"
+        if custom_speaker_id:
+            if not re.match(r"^[A-Za-z0-9_\-]+$", custom_speaker_id):
+                raise ValueError(f"Invalid characters in custom_speaker_id '{custom_speaker_id}'. Only alphanumeric, underscores, and dashes allowed.")
+            if custom_speaker_id in ledger:
+                raise ValueError(f"Cannot register speaker: ID '{custom_speaker_id}' already exists in consent ledger. Overwrite prevented.")
+            spk_id = custom_speaker_id
+        elif use_canonical_id:
+            spk_id = generate_canonical_speaker_id(ledger)
+        else:
+            spk_id = generate_pseudonymous_speaker_id(dialect, ledger)
 
-    record = {
-        "speaker_id": spk_id,
-        "consent_id": cid,
-        "consent_given": True,
-        "consent_version": CONSENT_VERSION,
-        "consent_timestamp": datetime.now(timezone.utc).isoformat(),
-        "dialect": dialect,
-        "gender": gender.upper(),
-        "age_bracket": age_bracket,
-        "primary_device": device_model,
-        "primary_microphone": microphone_type,
-        "distance_category": distance_category,
-        "speaking_distance": distance_category,
-        "primary_environment": acoustic_environment,
-        "notes": notes
-    }
+        cid = f"CONSENT_{spk_id[4:]}_v1.0" if spk_id.startswith("SPK_") else f"CONSENT_{spk_id}_v1.0"
 
-    ledger[spk_id] = record
-    save_consent_ledger(ledger, target_ledger_path)
-    print(f"[REGISTERED] Speaker {spk_id} ({dialect}, {gender}) registered with verified consent.")
-    return record
+        record = {
+            "speaker_id": spk_id,
+            "consent_id": cid,
+            "consent_given": True,
+            "consent_version": CONSENT_VERSION,
+            "consent_timestamp": datetime.now(timezone.utc).isoformat(),
+            "dialect": dialect,
+            "gender": gender.upper(),
+            "age_bracket": age_bracket,
+            "primary_device": device_model,
+            "primary_microphone": microphone_type,
+            "distance_category": distance_category,
+            "speaking_distance": distance_category,
+            "primary_environment": acoustic_environment,
+            "notes": notes
+        }
+
+        ledger[spk_id] = record
+        save_consent_ledger(ledger, target_ledger_path)
+        print(f"[REGISTERED] Speaker {spk_id} ({dialect}, {gender}) registered with verified consent.")
+        return record
 
 
 def verify_speaker_consent(speaker_id: str, ledger_path: Optional[Path] = None) -> bool:
@@ -231,7 +480,7 @@ def verify_speaker_consent(speaker_id: str, ledger_path: Optional[Path] = None) 
         return False
 
     # Revocation check: revoked_at timestamp or explicit revocation status
-    if rec.get("revoked_at") is not None:
+    if rec.get("revoked_at") is not None or rec.get("revocation_status") in ("QUARANTINE_PENDING", "QUARANTINE_COMPLETED", "REVOKED"):
         return False
 
     # Consent must be strictly boolean True
@@ -244,16 +493,43 @@ def verify_speaker_consent(speaker_id: str, ledger_path: Optional[Path] = None) 
 
 def revoke_speaker_consent(speaker_id: str, ledger_path: Optional[Path] = None) -> bool:
     """
-    Revokes consent for speaker_id. Sets consent_given to False and timestamps the revocation.
+    Revokes consent for speaker_id. Sets consent_given to False, timestamps the revocation,
+    and sets revocation_status to QUARANTINE_COMPLETED.
+    Acquires ledger_lock to guarantee multi-threaded and multi-process concurrency safety.
     """
     target_path = ledger_path if ledger_path is not None else LEDGER_PATH
-    ledger = load_consent_ledger(target_path)
-    if speaker_id not in ledger:
-        return False
-    ledger[speaker_id]["consent_given"] = False
-    ledger[speaker_id]["revoked_at"] = datetime.now(timezone.utc).isoformat()
-    save_consent_ledger(ledger, target_path)
-    return True
+    with ledger_lock(target_path):
+        ledger = load_consent_ledger(target_path)
+        if speaker_id not in ledger:
+            return False
+        ledger[speaker_id]["consent_given"] = False
+        ledger[speaker_id]["revoked_at"] = datetime.now(timezone.utc).isoformat()
+        ledger[speaker_id]["revocation_status"] = "QUARANTINE_COMPLETED"
+        save_consent_ledger(ledger, target_path)
+        return True
+
+
+def update_speaker_consent(
+    speaker_id: str,
+    updates: Dict[str, Any],
+    ledger_path: Optional[Path] = None
+) -> Dict[str, Any]:
+    """
+    Atomically updates specified metadata fields for an existing speaker in the consent ledger.
+    Guarantees single-writer consistency via ledger_lock.
+    """
+    target_path = ledger_path if ledger_path is not None else LEDGER_PATH
+    with ledger_lock(target_path):
+        ledger = load_consent_ledger(target_path)
+        if speaker_id not in ledger:
+            raise KeyError(f"Speaker ID '{speaker_id}' not found in ledger at {target_path}.")
+        for k, v in updates.items():
+            if k == "speaker_id":
+                continue  # Immutable primary key
+            ledger[speaker_id][k] = v
+        ledger[speaker_id]["updated_at"] = datetime.now(timezone.utc).isoformat()
+        save_consent_ledger(ledger, target_path)
+        return ledger[speaker_id]
 
 
 def get_speaker_metadata(speaker_id: str, ledger_path: Optional[Path] = None) -> Optional[Dict[str, Any]]:

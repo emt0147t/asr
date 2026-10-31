@@ -1,0 +1,6 @@
+# Field Recording Acquisition and Evaluation Protocol Dependencies
+# Isolated from runtime continuous KWS inference engine
+numpy>=1.24.0,<3.0.0
+scipy>=1.10.0,<2.0.0
+pandas>=2.0.0
+soundfile>=0.12.0

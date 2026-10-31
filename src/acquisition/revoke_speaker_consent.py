@@ -27,13 +27,14 @@ if sys.stdout.encoding != 'utf-8':
 if str(Path.cwd()) not in sys.path:
     sys.path.insert(0, str(Path.cwd()))
 
+import os
 import argparse
 import json
 import re
 import secrets
 import shutil
 from datetime import datetime, timezone
-from typing import Dict, Any, List, Optional, Tuple
+from typing import Dict, Any, List, Optional, Tuple, Union
 import pandas as pd
 
 from src.acquisition.ingest_field_recordings import (
@@ -47,7 +48,22 @@ from src.acquisition.ingest_field_recordings import (
     append_to_csv,
     compute_sha256
 )
-from src.acquisition.speaker_consent import load_consent_ledger, save_consent_ledger
+from src.acquisition.speaker_consent import load_consent_ledger, save_consent_ledger, ledger_lock
+
+
+__all__ = [
+    "execute_consent_revocation",
+    "audit_speaker_residual_artifacts",
+    "recover_pending_revocations"
+]
+
+
+def _win_long_path(p: Union[str, Path]) -> str:
+    """Prepends Windows extended-length path prefix (\\\\?\\) if path length >= 240."""
+    s = os.path.abspath(str(p))
+    if os.name == "nt" and len(s) >= 240 and not s.startswith("\\\\?\\"):
+        return "\\\\?\\" + s
+    return s
 
 
 def execute_consent_revocation(
@@ -60,11 +76,21 @@ def execute_consent_revocation(
     quarantine_dir: Optional[Path] = None,
     quarantine_log_path: Optional[Path] = None,
     raw_base_dir: Optional[Path] = None,
-    std_base_dir: Optional[Path] = None
+    std_base_dir: Optional[Path] = None,
+    _inject_crash_before_filesystem: bool = False,
+    _crash_boundary: Optional[str] = None
 ) -> Dict[str, Any]:
     """
     Executes consent revocation and file quarantine workflow for a given speaker.
+    Supports two-phase durable journaling:
+      Phase 1: Under ledger_lock, marks status as QUARANTINE_PENDING and consent_given=False.
+      Phase 2: Relocates raw and standardized audio files to quarantine idempotently,
+               updates manifest records to REVOKED_WITHDRAWN, appends to quarantine log.
+      Phase 3: Under ledger_lock, transitions status to QUARANTINE_COMPLETED.
+
     If confirm is False or dry_run is True, performs a non-destructive simulation.
+    If _inject_crash_before_filesystem or _crash_boundary is specified, simulates a crash
+    at the designated failure boundary for recovery testing.
     """
     target_manifest_path = manifest_path if manifest_path is not None else DEFAULT_MANIFEST_PATH
     target_ledger_path = ledger_path if ledger_path is not None else DEFAULT_LEDGER_PATH
@@ -89,7 +115,10 @@ def execute_consent_revocation(
         }
 
     speaker_info = ledger[speaker_id]
-    already_revoked = not speaker_info.get("consent_given", True)
+    already_revoked = (
+        speaker_info.get("consent_given") is False
+        and speaker_info.get("revocation_status") == "QUARANTINE_COMPLETED"
+    )
 
     # 3. Discover manifest records and audio files
     manifest_rows_indices = []
@@ -149,13 +178,37 @@ def execute_consent_revocation(
             )
         }
 
-    # 5. Handle Confirmed Execution (Idempotent)
-    relocated_files = []
-    withdrawal_dest_dir.mkdir(parents=True, exist_ok=True)
+    # 5. Handle Confirmed Execution (Two-Phase Durable Journaling)
+    audit_id = speaker_info.get("revocation_audit_id") or f"REV_{secrets.token_hex(4).upper()}"
+    timestamp_iso = datetime.now(timezone.utc).isoformat()
 
-    # 5a. Relocate audio files to quarantine without deleting
+    # Phase 1: Durable Journaling in Consent Ledger
+    with ledger_lock(target_ledger_path):
+        ledger = load_consent_ledger(target_ledger_path)
+        if speaker_id not in ledger:
+            return {
+                "status": "ERROR_SPEAKER_NOT_FOUND",
+                "speaker_id": speaker_id,
+                "message": f"Speaker ID '{speaker_id}' not found in consent ledger at {target_ledger_path}."
+            }
+        ledger[speaker_id]["consent_given"] = False
+        ledger[speaker_id]["revocation_status"] = "QUARANTINE_PENDING"
+        ledger[speaker_id]["revocation_initiated_at"] = timestamp_iso
+        ledger[speaker_id]["revocation_reason"] = reason
+        ledger[speaker_id]["revocation_audit_id"] = audit_id
+        save_consent_ledger(ledger, target_ledger_path)
+
+    # Crash Injection Hook at boundary between ledger journal and filesystem mutation
+    if _inject_crash_before_filesystem or _crash_boundary in ("after_journal_pending", "boundary_1"):
+        raise RuntimeError("CRASH_INJECTED_AT_BOUNDARY: Injected crash after ledger journal, before filesystem operations.")
+
+    # Phase 2: Filesystem Quarantine (Idempotent Relocation with Content-Integrity Verification)
+    relocated_files = []
+    Path(_win_long_path(withdrawal_dest_dir)).mkdir(parents=True, exist_ok=True)
+
     for src_file in files_to_quarantine:
-        if not src_file.exists():
+        src_file_long = Path(_win_long_path(src_file))
+        if not src_file_long.exists():
             continue
         # Preserve relative distinction between raw and standardized
         if "audio_raw" in str(src_file) or str(target_raw_base) in str(src_file):
@@ -165,31 +218,73 @@ def execute_consent_revocation(
         else:
             dest_subdir = withdrawal_dest_dir / "audio_other"
 
-        dest_subdir.mkdir(parents=True, exist_ok=True)
+        Path(_win_long_path(dest_subdir)).mkdir(parents=True, exist_ok=True)
         dest_file = dest_subdir / src_file.name
+        dest_file_long = Path(_win_long_path(dest_file))
 
-        # If dest file already exists, avoid overwriting with a suffix
-        if dest_file.exists() and dest_file != src_file:
-            nonce = secrets.token_hex(2)
-            dest_file = dest_subdir / f"{src_file.stem}_{nonce}{src_file.suffix}"
+        # Idempotency and collision check: if destination file already exists
+        if dest_file_long.exists() and dest_file != src_file:
+            try:
+                dest_size = dest_file_long.stat().st_size
+                src_size = src_file_long.stat().st_size
+                # Verify content integrity using both file size and SHA-256 hash
+                if (dest_size == src_size and
+                        compute_sha256(Path(_win_long_path(dest_file_long))) == compute_sha256(Path(_win_long_path(src_file_long)))):
+                    # Verified identical content: safely unlink redundant source
+                    src_file_long.unlink()
+                    relocated_files.append({
+                        "original": str(src_file).replace("\\\\?\\", "").replace("\\", "/"),
+                        "quarantined": str(dest_file).replace("\\\\?\\", "").replace("\\", "/"),
+                        "integrity": "VERIFIED_IDENTICAL_SHA256"
+                    })
+                    if _crash_boundary in ("after_first_file_move", "boundary_2") and len(relocated_files) == 1:
+                        raise RuntimeError("CRASH_INJECTED_AT_BOUNDARY: after_first_file_move")
+                    continue
+                else:
+                    # Content differs or size differs: prevent overwrite and allocate distinct nonce
+                    nonce = secrets.token_hex(4)
+                    dest_file = dest_subdir / f"{src_file.stem}_{nonce}{src_file.suffix}"
+                    dest_file_long = Path(_win_long_path(dest_file))
+            except RuntimeError:
+                raise
+            except Exception as e:
+                print(f"[WARN] Failed SHA-256 integrity check on {src_file} vs {dest_file}: {e}")
+                nonce = secrets.token_hex(4)
+                dest_file = dest_subdir / f"{src_file.stem}_{nonce}{src_file.suffix}"
+                dest_file_long = Path(_win_long_path(dest_file))
 
         try:
-            shutil.move(str(src_file), str(dest_file))
+            # Two-step durable relocation: copy first, then unlink source
+            shutil.copy2(_win_long_path(src_file), _win_long_path(dest_file))
+
+            # Boundary 3: Crash after file copy but before source deletion
+            if _crash_boundary in ("after_copy_before_source_delete", "boundary_3"):
+                raise RuntimeError("CRASH_INJECTED_AT_BOUNDARY: after_copy_before_source_delete")
+
+            src_file_long.unlink()
             relocated_files.append({
-                "original": str(src_file).replace("\\", "/"),
-                "quarantined": str(dest_file).replace("\\", "/")
+                "original": str(src_file).replace("\\\\?\\", "").replace("\\", "/"),
+                "quarantined": str(dest_file).replace("\\\\?\\", "").replace("\\", "/"),
+                "integrity": "RELOCATED_VERIFIED"
             })
+
+            # Boundary 2: Crash after first file moves in a multi-file batch
+            if _crash_boundary in ("after_first_file_move", "boundary_2") and len(relocated_files) == 1:
+                raise RuntimeError("CRASH_INJECTED_AT_BOUNDARY: after_first_file_move")
+        except RuntimeError:
+            raise
         except Exception as e:
             print(f"[ERROR] Failed to move {src_file} -> {dest_file}: {e}")
 
     # Remove empty parent directory in raw_base if left behind
-    if spk_raw_dir.exists() and not any(spk_raw_dir.iterdir()):
+    spk_raw_long = Path(_win_long_path(spk_raw_dir))
+    if spk_raw_long.exists() and not any(spk_raw_long.iterdir()):
         try:
-            spk_raw_dir.rmdir()
+            spk_raw_long.rmdir()
         except Exception:
             pass
 
-    # 5b. Update Manifest records
+    # Update Manifest records
     updated_manifest_rows = 0
     if not df_manifest.empty and manifest_rows_indices:
         df_manifest["status"] = df_manifest["status"].astype(object)
@@ -199,9 +294,8 @@ def execute_consent_revocation(
         df_manifest.to_csv(target_manifest_path, index=False, encoding="utf-8")
         updated_manifest_rows = len(manifest_rows_indices)
 
-    # 5c. Append to Quarantine Log
+    # Append to Quarantine Log
     target_quarantine_log.parent.mkdir(parents=True, exist_ok=True)
-    timestamp_iso = datetime.now(timezone.utc).isoformat()
     quarantine_log_rows = []
     for rel in relocated_files:
         quarantine_log_rows.append({
@@ -216,13 +310,20 @@ def execute_consent_revocation(
     if quarantine_log_rows:
         append_to_csv(pd.DataFrame(quarantine_log_rows), target_quarantine_log)
 
-    # 5d. Update Consent Ledger
-    audit_id = f"REV_{secrets.token_hex(4).upper()}"
-    ledger[speaker_id]["consent_given"] = False
-    ledger[speaker_id]["revoked_at"] = timestamp_iso
-    ledger[speaker_id]["revocation_reason"] = reason
-    ledger[speaker_id]["revocation_audit_id"] = audit_id
-    save_consent_ledger(ledger, target_ledger_path)
+    # Boundary 4: Crash after all files moved and manifest updated, but before ledger finalization
+    if _crash_boundary in ("after_files_before_completed", "boundary_4"):
+        raise RuntimeError("CRASH_INJECTED_AT_BOUNDARY: after_files_before_completed")
+
+    # Phase 3: Finalize status in Consent Ledger
+    with ledger_lock(target_ledger_path):
+        ledger = load_consent_ledger(target_ledger_path)
+        if speaker_id in ledger:
+            ledger[speaker_id]["consent_given"] = False
+            ledger[speaker_id]["revoked_at"] = datetime.now(timezone.utc).isoformat()
+            ledger[speaker_id]["revocation_status"] = "QUARANTINE_COMPLETED"
+            ledger[speaker_id]["revocation_reason"] = reason
+            ledger[speaker_id]["revocation_audit_id"] = audit_id
+            save_consent_ledger(ledger, target_ledger_path)
 
     execution_status = "ALREADY_REVOKED" if already_revoked and not relocated_files else "REVOKED_CONFIRMED"
 
@@ -243,6 +344,53 @@ def execute_consent_revocation(
             "Previously trained neural network checkpoints cannot automatically unlearn learned parameters; "
             "full model retraining is required to eliminate parameter-level representation."
         )
+    }
+
+
+def recover_pending_revocations(
+    manifest_path: Optional[Path] = None,
+    ledger_path: Optional[Path] = None,
+    quarantine_dir: Optional[Path] = None,
+    quarantine_log_path: Optional[Path] = None,
+    raw_base_dir: Optional[Path] = None,
+    std_base_dir: Optional[Path] = None
+) -> Dict[str, Any]:
+    """
+    Recovers any pending consent revocations interrupted by an unhandled crash or process termination.
+    Scans the consent ledger for records in 'QUARANTINE_PENDING' state and completes
+    filesystem relocation, manifest updates, and ledger finalization idempotently.
+    """
+    target_ledger_path = ledger_path if ledger_path is not None else DEFAULT_LEDGER_PATH
+    pending_speakers = []
+
+    with ledger_lock(target_ledger_path):
+        ledger = load_consent_ledger(target_ledger_path)
+        for spk_id, rec in ledger.items():
+            if isinstance(rec, dict) and rec.get("revocation_status") == "QUARANTINE_PENDING":
+                pending_speakers.append((spk_id, rec.get("revocation_reason", "participant_withdrawal")))
+
+    recovered_results = []
+    for spk_id, r_reason in pending_speakers:
+        res = execute_consent_revocation(
+            speaker_id=spk_id,
+            reason=r_reason,
+            confirm=True,
+            dry_run=False,
+            manifest_path=manifest_path,
+            ledger_path=ledger_path,
+            quarantine_dir=quarantine_dir,
+            quarantine_log_path=quarantine_log_path,
+            raw_base_dir=raw_base_dir,
+            std_base_dir=std_base_dir,
+            _inject_crash_before_filesystem=False
+        )
+        recovered_results.append(res)
+
+    return {
+        "status": "RECOVERY_COMPLETE",
+        "recovered_speakers_count": len(recovered_results),
+        "recovered_speakers": [r["speaker_id"] for r in recovered_results],
+        "details": recovered_results
     }
 
 
@@ -447,7 +595,7 @@ def main():
         description="Vietnamese KWS — Operator Consent Revocation and Data Quarantine CLI"
     )
     parser.add_argument(
-        "--speaker-id", type=str, required=True,
+        "--speaker-id", type=str, default=None,
         help="Registered pseudonymous speaker identifier to withdraw (e.g. SPK_H_N_8f2a1b)"
     )
     parser.add_argument(
@@ -461,6 +609,10 @@ def main():
     parser.add_argument(
         "--dry-run", action="store_true", default=False,
         help="Simulate revocation and display affected files without modifying disk"
+    )
+    parser.add_argument(
+        "--recover-pending", action="store_true", default=False,
+        help="Idempotently recover all pending consent revocations in QUARANTINE_PENDING state"
     )
     parser.add_argument(
         "--audit-residuals", action="store_true", default=False,
@@ -484,6 +636,22 @@ def main():
     manifest_p = Path(args.manifest_path) if args.manifest_path else None
     ledger_p = Path(args.ledger_path) if args.ledger_path else None
     quarantine_d = Path(args.quarantine_dir) if args.quarantine_dir else None
+
+    if args.recover_pending:
+        rec_res = recover_pending_revocations(
+            manifest_path=manifest_p,
+            ledger_path=ledger_p,
+            quarantine_dir=quarantine_d
+        )
+        print("\n" + "=" * 65)
+        print("PENDING REVOCATION RECOVERY SUMMARY")
+        print("=" * 65)
+        print(json.dumps(rec_res, indent=2))
+        print("=" * 65 + "\n")
+        sys.exit(0)
+
+    if not args.speaker_id:
+        parser.error("--speaker-id is required unless --recover-pending is specified.")
 
     if args.audit_residuals:
         audit_res = audit_speaker_residual_artifacts(
